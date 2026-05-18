@@ -1,4 +1,5 @@
-﻿1148d02 chore: prepare v0.5 release artifact
+﻿6a21694 chore: finalize v0.5 license and citation metadata
+9099913 chore: prepare v0.5 release artifact
 5cb64f4 chore: prepare JianMu v0.5 release fixes
 e56b593 feat: finalize JianMu v0.5 Chinese-first hierarchical router
 5b54646 feat: JianMu v0.4 — speculative execution routing runtime

@@ -4,6 +4,10 @@
 
 JianMu v0.5 is a Chinese-first deterministic program rewriting runtime with hierarchical semantic neurons, speculative route candidates, compiler-backed execution feedback, RouteMemory, and TraceCache.
 
+Author: Huang Linquan (空气)
+
+License: AGPL-3.0-only
+
 ## Verified Capabilities
 
 - Chinese-first natural language intent interface

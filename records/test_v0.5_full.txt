@@ -66,4 +66,4 @@ tests/test_speculative_routing.py::test_route_memory_is_not_trace_cache PASSED [
 tests/test_speculative_routing.py::test_deterministic_candidate_generation PASSED [ 98%]
 tests/test_speculative_routing.py::test_speculative_result_contains_full_audit_trail PASSED [100%]
 
-============================= 61 passed in 22.23s =============================
+============================= 61 passed in 22.07s =============================

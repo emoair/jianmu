@@ -1,3 +1,5 @@
+# SPDX-License-Identifier: AGPL-3.0-only
+
 import re
 from dataclasses import dataclass, field
 from typing import Dict, List, Optional

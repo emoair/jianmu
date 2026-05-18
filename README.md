@@ -1,6 +1,9 @@
 # JianMu MVP
 
-A **Deterministic Structural Program Rewriting Runtime** with **Speculative Execution Routing**.
+JianMu v0.5 is a Chinese-first hierarchical semantic routing runtime for
+compiler-validated deterministic program rewriting.
+
+Author: Huang Linquan (空气)
 
 ---
 
@@ -75,13 +78,18 @@ python -m pytest tests/ -v
 
 ## What v0.5 DOES prove
 
+- Chinese-first input can be routed through a deterministic rewriting runtime
+- Hierarchical semantic neurons can expose `SemanticFeatures` and `neuron_results`
 - A rule router can be demoted from **final decision-maker** to **candidate generator**
+- Multiple `RouteCandidate` paths can be generated from one input
+- `ProgramIR`-based C generation can remain separate from routing
 - Multiple expert chains can be executed speculatively and ranked by real compiler/runtime feedback
+- Compiler sandbox validation can act as execution feedback
 - `RouteMemory` can record route-level success/failure experience and influence future `prior_score`
 - `TraceCache` (result cache) and `RouteMemory` (path experience) serve distinct roles
 - The winner is always selected by `correctness_score == 1.0`, never by prior alone
-- Chinese-first hierarchical semantic neurons can expose `SemanticFeatures` and `neuron_results`
 - `expected_output_provenance` prevents candidates with untrusted expected outputs from self-certifying
+- Unsupported English natural-language input is rejected instead of guessed
 
 ## What v0.5 does NOT prove
 
@@ -93,6 +101,27 @@ python -m pytest tests/ -v
 - **A replacement for LLMs or compilers**
 - **AGI or general program synthesis**
 - **BPU hardware co-design**
+
+---
+
+## License
+
+JianMu is licensed under the GNU Affero General Public License v3.0 only
+(`AGPL-3.0-only`).
+
+Open-source and commercial use are permitted under the `AGPL-3.0-only` terms,
+provided that derivative works and network-accessible modified versions comply
+with the AGPL source disclosure requirements.
+
+Proprietary or closed-source commercial use requires a separate commercial
+license from the author.
+
+This is not a ban on commercial use; it is a strong copyleft license with an
+optional commercial dual-licensing path.
+
+## Author
+
+Author: Huang Linquan (空气)
 
 ---
 

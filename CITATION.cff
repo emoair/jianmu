@@ -1,7 +1,18 @@
 cff-version: 1.2.0
-message: "If you use JianMu, please cite this software."
-title: "JianMu v0.5: Chinese-first hierarchical semantic program rewriting runtime"
+title: "JianMu v0.5: Chinese-first Hierarchical Semantic Routing Runtime for Compiler-Validated Program Rewriting"
+message: "If you use this software artifact, please cite the archived release."
+type: software
+authors:
+  - family-names: "Huang"
+    given-names: "Linquan"
 version: "0.5"
 date-released: "2026-05-18"
-authors:
-  - name: "JianMu Project Contributors"
+abstract: "JianMu v0.5 is a Chinese-first deterministic program rewriting runtime prototype with hierarchical semantic neurons, speculative route candidates, compiler-backed sandbox validation, RouteMemory, TraceCache, and expected-output provenance checks."
+keywords:
+  - program rewriting
+  - compiler validation
+  - execution feedback
+  - Chinese NLP
+  - neural-symbolic AI
+  - program synthesis
+license: "AGPL-3.0-only"

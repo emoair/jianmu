@@ -1,3 +1,5 @@
+# SPDX-License-Identifier: AGPL-3.0-only
+
 import copy
 from dataclasses import dataclass, field
 from typing import List, Optional
