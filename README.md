@@ -160,3 +160,6 @@ A small prefix-evolution prototype is being explored under
 `jianmu/self_learning/`. It trains stateless prefix neurons to emit ProgramIR
 tokens under oracle supervision and compiler-backed validation. This is not part
 of the v0.5 release claims.
+
+v0.5.6 development branch adds a controlled Chinese intent-to-structure dataset
+seed for future self-learning and learned-router experiments.
