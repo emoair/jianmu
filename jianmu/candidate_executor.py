@@ -1,8 +1,7 @@
 import copy
-import string
 from typing import List, Optional
 
-from jianmu.ir import ProgramIR, Variable, SumExpression
+from jianmu.ir import ProgramIR
 from jianmu.routes import RouteCandidate, CandidateExecutionResult
 from jianmu.experts import (
     IncludeExpert, VariableDefinitionExpert, SumExpressionExpert,
@@ -64,6 +63,26 @@ class CandidateExecutor:
                 ir = PrintfExpert().apply(ir)
                 ir = MainFunctionExpert().apply(ir)
 
+            elif action == "keep_existing_program":
+                if previous_ir is None:
+                    raise ValueError("keep_existing_program requires previous_ir")
+                ir = copy.deepcopy(previous_ir)
+                ir = IncludeExpert().apply(ir)
+                ir = PrintfExpert().apply(ir)
+                ir = MainFunctionExpert().apply(ir)
+
+            elif action == "rewrite_expression":
+                ir = ProgramIR()
+                values = candidate.intent.get("values") or [1, 1]
+                ir = IncludeExpert().apply(ir)
+                ir = VariableDefinitionExpert(len(values), values).apply(ir)
+                ir = SumExpressionExpert().apply(ir)
+                ir = PrintfExpert().apply(ir)
+                ir = MainFunctionExpert().apply(ir)
+
+            elif action == "unsupported_input":
+                raise ValueError(candidate.intent.get("reason", "unsupported_input"))
+
             else:
                 raise ValueError(f"Unknown action: {action}")
 
@@ -88,13 +107,20 @@ class CandidateExecutor:
                 candidate=candidate, program_ir=None,
                 generated_code="", sandbox_result=fake,
                 score_report=score, success=False,
-                final_score=0.0, errors=errors,
+                final_score=0.0,
+                semantic_match_score=getattr(candidate, "semantic_match_score", 1.0),
+                errors=errors,
             )
 
         code = self._emitter.emit(ir)
         sandbox = self._sandbox.run(code)
 
-        exp_out = expected_output or f"{sum(v.value for v in ir.variables)}\n"
+        if expected_output is not None:
+            exp_out = expected_output
+        elif candidate.expected_output is not None and candidate.expected_output_provenance != "none":
+            exp_out = candidate.expected_output
+        else:
+            exp_out = "__NO_TRUSTED_EXPECTED_OUTPUT__\n"
         code_replay = self._emitter.emit(ir)
         score = self._scorer.score(
             sandbox, exp_out,
@@ -102,7 +128,9 @@ class CandidateExecutor:
             consistency_ok=consistency_ok,
         )
 
-        success = score.correctness_score == 1.0
+        semantic_match = getattr(candidate, "semantic_match_score", 1.0)
+        final_score = round(score.correctness_score * semantic_match, 4)
+        success = score.correctness_score == 1.0 and semantic_match >= 0.5
         return CandidateExecutionResult(
             candidate=candidate,
             program_ir=ir.to_dict(),
@@ -110,6 +138,7 @@ class CandidateExecutor:
             sandbox_result=sandbox,
             score_report=score,
             success=success,
-            final_score=score.correctness_score,
+            final_score=final_score,
+            semantic_match_score=semantic_match,
             errors=errors,
         )

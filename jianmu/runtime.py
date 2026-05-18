@@ -10,10 +10,13 @@ from jianmu.experts import (
 )
 from jianmu.emitter_c import CEmitter
 from jianmu.sandbox import Sandbox
+from jianmu.sandbox import SandboxResult
 from jianmu.scoring import Scorer
 from jianmu.trace_cache import TraceCache
 from jianmu.routes import RouteCandidate, CandidateExecutionResult
 from jianmu.speculative_router import SpeculativeRouter
+from jianmu.hierarchical_router import HierarchicalSemanticRouter
+from jianmu.semantic_neurons import NeuronResult, SemanticFeatures
 from jianmu.candidate_executor import CandidateExecutor
 from jianmu.route_memory import RouteMemory
 
@@ -35,6 +38,8 @@ class RuntimeResult:
     selected_candidate: Optional[CandidateExecutionResult] = None
     rejected_candidates: Optional[List[CandidateExecutionResult]] = None
     route_memory_updates: Optional[dict] = None
+    semantic_features: Optional[SemanticFeatures] = None
+    neuron_results: Optional[List[NeuronResult]] = None
 
 
 class Runtime:
@@ -45,6 +50,7 @@ class Runtime:
         self._scorer = Scorer()
         self._cache = TraceCache()
         self._spec_router = SpeculativeRouter()
+        self._hier_router = HierarchicalSemanticRouter()
         self._executor = CandidateExecutor()
         self._memory = RouteMemory()
 
@@ -61,6 +67,24 @@ class Runtime:
         errors = []
         prev_var_count = len(previous_ir.variables) if previous_ir else None
         intent = self._router.parse(user_input, previous_var_count=prev_var_count)
+        if intent["action"] == "unsupported_input":
+            sandbox = SandboxResult(
+                compiler="", compile_success=False, run_success=False,
+                stdout="", stderr=intent.get("reason", "unsupported_input"),
+                returncode=-1, error_type="unsupported_input", command="",
+            )
+            score = self._scorer.score(sandbox, expected_output or "", consistency_ok=False)
+            return RuntimeResult(
+                input=user_input,
+                normalized_intent=intent,
+                cache_hit=False,
+                activated_experts=[],
+                program_ir={},
+                generated_code="",
+                sandbox_result=sandbox,
+                score_report=score,
+                errors=[intent.get("reason", "unsupported_input")],
+            )
         prev_ir_dict = previous_ir.to_dict() if previous_ir else None
 
         cached = self._cache.get(intent, prev_ir_dict)
@@ -153,8 +177,10 @@ class Runtime:
                          top_k: int = 3) -> RuntimeResult:
         has_prev = previous_ir is not None
 
-        # 1. Generate candidates
-        candidates = self._spec_router.generate_candidates(user_input, previous_ir)
+        # 1. Analyze with neuron tree, then generate candidates from features.
+        semantic_features = self._hier_router.analyze(user_input, previous_ir)
+        neuron_results = list(semantic_features.neuron_results)
+        candidates = self._hier_router.generate_candidates(semantic_features, previous_ir)
 
         # 2. Boost prior_score from RouteMemory
         for c in candidates:
@@ -171,7 +197,7 @@ class Runtime:
             result = self._executor.execute(cand, previous_ir, expected_output)
             executed.append(result)
 
-        # 5. Select winner: highest correctness_score, must be 1.0 if any succeed
+        # 5. Select winner: executable feedback and semantic_match_score jointly decide.
         executed.sort(key=lambda r: r.final_score, reverse=True)
         winner = executed[0]
         losers = executed[1:]
@@ -196,6 +222,7 @@ class Runtime:
                 "program_ir": winner.program_ir,
                 "generated_code": winner.generated_code,
                 "expected_output": winner.sandbox_result.stdout,
+                "semantic_match_score": winner.semantic_match_score,
                 "sandbox_result_summary": {
                     "compile_success": winner.sandbox_result.compile_success,
                     "run_success": winner.sandbox_result.run_success,
@@ -220,4 +247,6 @@ class Runtime:
             selected_candidate=winner,
             rejected_candidates=losers,
             route_memory_updates=memory_updates,
+            semantic_features=semantic_features,
+            neuron_results=neuron_results,
         )

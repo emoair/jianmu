@@ -1,5 +1,12 @@
 # CRITIQUE.md — JianMu 红队审查报告
 
+## v0.5 Language Scope
+
+JianMu v0.5 intentionally does not support English natural-language input.
+This is a deliberate scope reduction, not a bug. The current interface is
+Chinese-first, while C technical tokens such as `C`, `int`, `printf`, `main`,
+`return`, and variable names remain allowed inside Chinese-first input.
+
 **审查日期：** 2026-05-18
 **审查立场：** 严格红队，不为项目背书，不圆谎
 
@@ -119,14 +126,14 @@ IR 存在，但 IR 到代码的桥梁是脆弱的字符串操作。
 ⚠️ **有改善但仍有限**
 
 `IntentRouter` 新增了以下覆盖范围：
-- 英文支持："sum of three numbers" 现在可命中（支持 three/numbers 关键词）
+- 英文自然语言已在 v0.5 中收缩为 unsupported；这是有意边界，不再维护 three/numbers 规则
 - 中文数字列举："1加2加3" 可解析并提取 values
 - 追加变体："多加一个X" 可解析并提取 new_value
 - 新关键词："扩展为" 作为触发词
 
 仍然存在的局限：
 - "三个整数相加"、"add one more variable"、"extend to include d" 等变体仍无法处理
-- 任意英文自然语言表达仍会失败，已支持英文 three/numbers 关键词，但覆盖依赖枚举正则
+- 英文自然语言表达会被结构化拒绝；C/int/printf/main/return 等技术 token 仍可出现在中文输入中
 - 覆盖依赖枚举正则，不是真正的 NLU，无法泛化到未见过的表达方式
 - 没有 benchmark 数据支撑覆盖率声明
 
@@ -182,7 +189,7 @@ v0.3 已修复：`scoring.py` 的 `score()` 现在接受 `previous_code` / `curr
 
 ### R3. IntentRouter 不是 NLU，是关键词匹配
 
-如果论文在任何地方使用"natural language"、"intent understanding"或类似措辞，reviewer 会要求展示对自然语言变体的鲁棒性测试。已支持英文 three/numbers 关键词，但任意英文自然语言表达仍会失败。这使得"自然语言 → 结构 intent"的 pipeline 描述仍具有一定误导性。
+如果论文在任何地方使用"natural language"、"intent understanding"或类似措辞，reviewer 会要求展示对自然语言变体的鲁棒性测试。v0.5 已明确收缩为 Chinese-first，英文自然语言输入不再作为接口目标；这应在论文和 README 中持续写清楚，避免"自然语言 → 结构 intent"被误读为多语言 NLU。
 
 ### R4. 泛化范围过窄，无法支撑任何规模声明
 
@@ -205,7 +212,7 @@ v0.3 已修复：`scoring.py` 的 `score()` 现在接受 `previous_code` / `curr
 - **变量值硬编码**：`IntentRouter` 提取 `values`，`VariableDefinitionExpert` 接受 `values` 参数按实际值生成变量声明，`ExpandSumExpert` 接受 `new_value` 参数支持追加指定值的变量。系统可生成 `1+2+3=6` 等非平凡求和，已支持有限数值泛化，但不支持负数、零、复杂表达式。
 - **deterministic_replay bug**：`scoring.py` 的 `score()` 现在接受 `previous_code` / `current_code` 参数并做字符串比较，byte-level 一致性有代码支撑。
 - **ExpandSumExpert 单向**：`new_value` 参数支持追加指定值的变量，语义不再锁死为全 1。
-- **IntentRouter 覆盖扩展**：新增英文支持（"sum of three numbers"，支持 three/numbers 关键词）、"1加2加3" 解析、"多加一个X" 解析、"扩展为" 关键词。任意英文自然语言表达仍会失败。
+- **IntentRouter 覆盖扩展**：v0.5 保留中文优先输入、数字表达式（如 `1+2+3`）、"多加一个X"、"扩展为" 等关键词；英文自然语言输入现在返回 unsupported。
 
 ### 仍然存在
 

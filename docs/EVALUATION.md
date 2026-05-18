@@ -6,7 +6,7 @@
 
 | 指标 | 说明 |
 |------|------|
-| `compile_success` | gcc 编译是否通过（exit code 0） |
+| `compile_success` | supported C compiler (gcc / clang / MSVC cl) 编译是否通过（exit code 0） |
 | `run_success` | 程序运行是否正常退出（exit code 0） |
 | `expected_output_match` | 运行输出是否与预期值完全一致（字符串精确匹配） |
 | `deterministic_replay` | 相同 IR 重复执行，生成代码是否 byte-level 一致 |
@@ -40,7 +40,7 @@
   - `"两数之和"`
   - `"两个数加起来"`
   - `"求两个整数的和"`
-  - `"add two integers"`
+  - `"定义两个 int 并输出和"`
 - 通过条件：所有变体解析到同一 `Intent`（`operation=sum`, `operand_count=2`）
 
 ### E5：确定性重放

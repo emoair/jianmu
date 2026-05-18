@@ -1,7 +1,10 @@
 __pycache__/
 *.pyc
 .pytest_cache/
+.claude/
 data/trace_cache.json
+data/route_memory.json
+*.zip
 *.egg-info/
 dist/
 build/

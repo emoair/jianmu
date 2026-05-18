@@ -2,7 +2,7 @@
 
 ## Why v0.3 Was Not Yet JianMu
 
-v0.3 proved that `ProgramIR + Expert + CEmitter + GCC Sandbox` works as an execution backend.
+v0.3 proved that `ProgramIR + Expert + CEmitter + C compiler Sandbox` works as an execution backend.
 But its `IntentRouter` was a **final decision-maker**: one input → one intent → one expert chain → one program.
 
 That is not JianMu. In JianMu, rules can only **propose candidates**. The compiler and runtime are the **judges**.
@@ -17,7 +17,7 @@ user_input
   → RouteMemory adjusts prior_score           # history-informed ranking
   → sort by prior_score, execute top_k
   → CandidateExecutor runs each candidate:
-      ProgramIR → CEmitter → gcc → run → ScoreReport
+      ProgramIR → CEmitter → gcc / clang / MSVC cl → run → ScoreReport
   → select winner by correctness_score == 1.0
   → RouteMemory.record(winner=success, losers=failure)
   → TraceCache.put() only for winner

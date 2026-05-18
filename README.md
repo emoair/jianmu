@@ -4,9 +4,30 @@ A **Deterministic Structural Program Rewriting Runtime** with **Speculative Exec
 
 ---
 
+## Language Scope (v0.5)
+
+JianMu v0.5 is a **Chinese-first deterministic program rewriting runtime**.
+
+Current natural-language input support is intentionally limited to Chinese.
+English is not a natural-language interface target at this stage. C language
+keywords and technical tokens such as `C`, `int`, `printf`, `main`, `return`,
+and variable names like `a`, `b`, `c` are still supported when they appear in
+Chinese-first input.
+
+Supported examples include:
+
+- `写一个 C 程序，输出 1+2+3`
+- `定义三个 int，分别是 1、2、3，然后 printf 输出和`
+- `再加一个二`
+
+Pure English natural-language inputs such as `sum of three numbers` are reported
+as unsupported instead of being guessed.
+
+---
+
 ## v0.3 → v0.4
 
-**JianMu v0.3** proved that `ProgramIR + Expert + CEmitter + GCC Sandbox` works as an execution scaffold.
+**JianMu v0.3** proved that `ProgramIR + Expert + CEmitter + C compiler Sandbox` works as an execution scaffold.
 
 **JianMu v0.4** adds speculative routing: a single input no longer maps directly to one path.
 Instead, multiple `RouteCandidate` are generated, each compiled and executed, and the winner
@@ -23,8 +44,16 @@ v0.4:  input → multiple RouteCandidate → parallel execution → feedback sel
 ## Requirements
 
 - Python 3.8+
-- `gcc` or `clang`
+- `gcc`, `clang`, or MSVC `cl.exe`
 - `pytest` (`pip install pytest`)
+
+Windows users can use any one of:
+
+1. MSYS2 UCRT64 `gcc`
+2. LLVM `clang`
+3. Visual Studio Developer Command Prompt / Developer PowerShell with MSVC `cl.exe`
+
+`cl.exe` usually needs to run from a Developer Command Prompt for VS or Developer PowerShell for VS. A normal PowerShell session may not find `cl`.
 
 ## Run demo
 
@@ -51,6 +80,7 @@ python -m pytest tests/ -v
 ## What v0.4 does NOT prove
 
 - **True natural language understanding** — `SpeculativeRouter` is still rule-based candidate generation
+- **Multilingual natural-language understanding** — English natural-language input is out of scope in v0.5
 - **Learned routing** — no statistical or neural route selection
 - **General code intelligence** — domain is still C integer summation only
 - **Scalability** beyond this minimal domain

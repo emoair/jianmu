@@ -24,7 +24,7 @@ JianMu 是一个面向程序任务的**确定性结构化程序重写运行时**
     → ProgramIR（结构化程序中间表示）
     → Expert 组合（原子结构专家）
     → CEmitter（C 代码生成）
-    → Sandbox（gcc 编译 + 运行验证）
+    → Sandbox（gcc / clang / MSVC cl 编译 + 运行验证）
     → Scoring（正确性评分）
     → TraceCache（记录成功路径）
 ```
@@ -39,7 +39,7 @@ JianMu 是一个面向程序任务的**确定性结构化程序重写运行时**
 
 - 输入：自然语言描述（如"计算两个整数之和"）
 - 输出：可编译、可运行、输出正确结果的 C 程序
-- 验证：gcc 编译通过 + 运行输出与预期一致
+- 验证：gcc / clang / MSVC cl 编译通过 + 运行输出与预期一致
 
 ---
 
@@ -62,7 +62,7 @@ JianMu 是一个面向程序任务的**确定性结构化程序重写运行时**
 | **ProgramIR** | 程序的结构化中间表示，包含变量、表达式、语句列表 |
 | **Experts** | 原子结构专家，每个专家负责一种程序结构操作（如"增加一个加法操作数"） |
 | **CEmitter** | 将 ProgramIR 转换为合法 C 源代码 |
-| **Sandbox** | 调用 gcc 编译并执行，捕获编译错误与运行输出 |
+| **Sandbox** | 调用 gcc / clang / MSVC cl 编译并执行，捕获编译错误与运行输出 |
 | **TraceCache** | 记录成功的 Intent→IR→Code→Output 路径，支持确定性复现 |
 | **Runtime** | 协调各模块的执行流程 |
 | **Scoring** | 根据编译结果、运行输出、预期值计算正确性得分 |
@@ -71,4 +71,4 @@ JianMu 是一个面向程序任务的**确定性结构化程序重写运行时**
 
 ## 核心研究假设
 
-> 若系统仅内置"两数求和"基础结构，通过专家组合能够生成"三数求和"和"四数求和"的 C 程序，并通过 gcc 编译与运行验证——则说明在极小程序域内存在最小级别的 **compiler-validated compositional structural generalization**。
+> 若系统仅内置"两数求和"基础结构，通过专家组合能够生成"三数求和"和"四数求和"的 C 程序，并通过 supported C compiler 编译与运行验证——则说明在极小程序域内存在最小级别的 **compiler-validated compositional structural generalization**。

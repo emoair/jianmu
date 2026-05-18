@@ -11,6 +11,9 @@ class RouteCandidate:
     prior_score: float
     requires_previous_ir: bool = False
     expected_output: Optional[str] = None
+    expected_output_provenance: str = "none"
+    semantic_match_score: float = 1.0
+    semantic_features: Optional[dict] = None
     rationale: str = ""
 
 
@@ -23,4 +26,5 @@ class CandidateExecutionResult:
     score_report: object
     success: bool
     final_score: float
+    semantic_match_score: float = 1.0
     errors: List[str] = field(default_factory=list)

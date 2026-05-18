@@ -17,7 +17,7 @@ def _situation_key(user_input: str, has_previous_ir: bool) -> str:
     # Detect operation class
     if re.search(r"多加|再加|扩展|改成|变成|加数", text):
         op_class = "expand"
-    elif re.search(r"sum\s+of|generate|生成|定义|写一个", text):
+    elif re.search(r"生成|定义|写一个", text):
         op_class = "generate"
     else:
         op_class = "other"

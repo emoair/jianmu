@@ -1,19 +1,15 @@
 import sys
 import os
-import shutil
 import pytest
 
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), ".."))
 
 from jianmu.runtime import Runtime
 from jianmu.ir import ProgramIR
+from jianmu.sandbox import has_supported_c_compiler
 
-HAS_COMPILER = bool(
-    shutil.which("gcc") or shutil.which("clang") or
-    shutil.which("gcc", path=os.environ.get("PATH", "") + os.pathsep + "/data/data/com.termux/files/usr/bin") or
-    shutil.which("clang", path=os.environ.get("PATH", "") + os.pathsep + "/data/data/com.termux/files/usr/bin")
-)
-needs_compiler = pytest.mark.skipif(not HAS_COMPILER, reason="gcc/clang not found")
+HAS_COMPILER = has_supported_c_compiler()
+needs_compiler = pytest.mark.skipif(not HAS_COMPILER, reason="gcc/clang/cl not found")
 
 ROOT = os.path.join(os.path.dirname(__file__), "..")
 

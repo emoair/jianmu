@@ -1,6 +1,5 @@
 import sys
 import os
-import shutil
 import pytest
 
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), ".."))
@@ -9,13 +8,10 @@ from jianmu.runtime import Runtime
 from jianmu.ir import ProgramIR, Variable, SumExpression
 from jianmu.experts import ExpandSumExpert, ConsistencyCheckExpert
 from jianmu.emitter_c import CEmitter
+from jianmu.sandbox import has_supported_c_compiler
 
-HAS_COMPILER = bool(
-    shutil.which("gcc") or shutil.which("clang") or
-    shutil.which("gcc", path=os.environ.get("PATH", "") + os.pathsep + "/data/data/com.termux/files/usr/bin") or
-    shutil.which("clang", path=os.environ.get("PATH", "") + os.pathsep + "/data/data/com.termux/files/usr/bin")
-)
-needs_compiler = pytest.mark.skipif(not HAS_COMPILER, reason="gcc/clang not found")
+HAS_COMPILER = has_supported_c_compiler()
+needs_compiler = pytest.mark.skipif(not HAS_COMPILER, reason="gcc/clang/cl not found")
 
 
 @pytest.fixture
@@ -166,11 +162,24 @@ def test_expand_add_value_outputs_correct_sum(rt):
     assert r2.sandbox_result.stdout.strip() == "4"
 
 
-# ── 12. 英文 sum of three numbers ─────────────────────────────────────────────
+# ── 12. Chinese-first expression and technical token inputs ──────────────────
 @needs_compiler
-def test_english_sum_of_three_numbers(rt):
+def test_chinese_c_program_expression_outputs_6(rt):
+    r = rt.run("写一个 C 程序，输出 1+2+3")
+    assert r.sandbox_result.stdout.strip() == "6"
+
+
+@needs_compiler
+def test_chinese_int_printf_token_input_outputs_6(rt):
+    r = rt.run("定义三个 int，分别是 1、2、3，然后 printf 输出和")
+    assert r.sandbox_result.stdout.strip() == "6"
+
+
+def test_english_natural_language_is_unsupported(rt):
     r = rt.run("sum of three numbers")
-    assert r.sandbox_result.stdout.strip() == "3"
+    assert r.normalized_intent["action"] == "unsupported_input"
+    assert r.sandbox_result.error_type == "unsupported_input"
+    assert r.generated_code == ""
 
 
 # ── 13. 扩展为 解析 target_var_count ──────────────────────────────────────────
