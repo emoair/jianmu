@@ -18,7 +18,7 @@ JianMu v0.5 is a Chinese-first deterministic program rewriting runtime with hier
 - TraceCache for verified result replay
 - expected_output_provenance anti-self-certification
 - unsupported English NL rejection
-- 58 tests passed
+- 61 tests passed, 0 skipped
 
 ## Current Proof Scope
 

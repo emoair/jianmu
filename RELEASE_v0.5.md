@@ -18,7 +18,8 @@ small C integer summation and editing domain.
 ## Verified Baseline
 
 - Full test command: `python -m pytest tests/ -v`
-- Expected release result after this patch: all tests pass, no skipped tests
+- Verified release result: `61 passed`, `0 skipped`
+- Validation record: `records/test_v0.5_full.txt`
 - Supported sandbox compilers: `gcc`, `clang`, or MSVC `cl.exe`
 
 ## Non-Claims
