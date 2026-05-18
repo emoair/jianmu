@@ -2,8 +2,9 @@
 
 ## Summary
 
-JianMu v0.5 is a Chinese-first deterministic program rewriting runtime for a
-small C integer summation and editing domain.
+JianMu v0.5 is a Chinese-first hierarchical semantic routing runtime for
+compiler-validated deterministic program rewriting in a small C integer
+summation and editing domain.
 
 Author: Huang Linquan (空气)
 
@@ -12,6 +13,7 @@ Author: Huang Linquan (空气)
 - Chinese-first natural-language interface with C technical tokens preserved
 - Hierarchical semantic neuron scaffold with `SemanticFeatures` and audit trail
 - Speculative `RouteCandidate` generation with compiler-backed execution feedback
+- `CandidateExecutor` execution through `ProgramIR`, `CEmitter`, and compiler sandbox validation
 - `RouteMemory` for route-level experience and `TraceCache` for verified replay
 - `expected_output_provenance` anti-self-certification guard
 - Unsupported English natural-language rejection

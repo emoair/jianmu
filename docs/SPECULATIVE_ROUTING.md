@@ -67,7 +67,7 @@ The winner is selected by `correctness_score == 1.0` (compile + run + output mat
 ## Current Limitations
 
 - `SpeculativeRouter` still uses rule-based candidate generation — not a learned router
-- Only 3 candidate routes are defined for the sum domain
+- Only a small fixed set of candidate routes is defined for the current summation/editing domain
 - `_situation_key` uses coarse operation-class matching — not true semantic similarity
 - No speculative execution across different program domains
 - RouteMemory does not yet implement decay or forgetting

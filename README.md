@@ -127,12 +127,29 @@ Author: Huang Linquan (空气)
 
 ## Known limitations (v0.5)
 
-1. `SpeculativeRouter` generates candidates by rules, not by learned priors
-2. `_situation_key` uses coarse operation-class hashing — not true semantic similarity
-3. Only 3 candidate routes exist for the sum domain
-4. No speculative execution across different program domains
-5. `CEmitter` is still string concatenation, not AST rewrite
-6. Non-addition expressions such as `1-2`, `1*2`, and `1/2` are intentionally unsupported in v0.5
-7. Limited negative literal cases are supported, but systematic arithmetic parsing is not
+1. Candidate generation is still handcrafted and rule-based, not learned.
+2. Only a small fixed set of candidate routes exists in the current summation/editing domain.
+3. `_situation_key` uses coarse operation-class hashing, not true semantic similarity.
+4. `CEmitter` is still string-based, not AST-level rewriting.
+5. Non-addition expressions such as `1-2`, `1*2`, and `1/2` are intentionally unsupported in v0.5.
+6. Limited negative literal cases are supported, but systematic arithmetic expression parsing is not.
+7. The system does not yet demonstrate scalability beyond this minimal domain.
 
-See `CRITIQUE.md`, `docs/SPECULATIVE_ROUTING.md`, and `ROADMAP_V03.md` for details.
+## Documentation
+
+- [Architecture](docs/ARCHITECTURE.md)
+- [Hierarchical Router](docs/HIERARCHICAL_ROUTER.md)
+- [Speculative Routing](docs/SPECULATIVE_ROUTING.md)
+- [Evaluation](docs/EVALUATION.md)
+- [Non-Claims](docs/NON_CLAIMS.md)
+- [Archived early planning notes](docs/archive/)
+- [Red-team critique](CRITIQUE.md)
+
+## Development Notes
+
+This artifact was developed with AI-assisted implementation and human-directed
+red-team review.
+
+All release claims are intentionally limited to reproducible tests,
+compiler-backed validation, and documented non-claims. The current router is a
+handcrafted semantic scaffold, not a learned model.
