@@ -153,3 +153,10 @@ red-team review.
 All release claims are intentionally limited to reproducible tests,
 compiler-backed validation, and documented non-claims. The current router is a
 handcrafted semantic scaffold, not a learned model.
+
+## v0.5.5 Development Experiment
+
+A small prefix-evolution prototype is being explored under
+`jianmu/self_learning/`. It trains stateless prefix neurons to emit ProgramIR
+tokens under oracle supervision and compiler-backed validation. This is not part
+of the v0.5 release claims.
