@@ -213,3 +213,46 @@ v0.3 已修复：`scoring.py` 的 `score()` 现在接受 `previous_code` / `curr
 - **IntentRouter 非真正 NLU**：覆盖依赖枚举正则，无法泛化到未见过的自然语言表达，不是真实意图理解。
 - **无 benchmark**：没有系统性的变体覆盖率测试数据，所有"支持"声明均为枚举而非统计。
 - **数值泛化有限**：不支持负数、零、多位数、中文顿号/逗号分隔等场景。
+
+---
+
+## v0.4 红队评估
+
+### 新增能力评估
+
+**✅ 规则 router 降级为候选生成器**
+SpeculativeRouter 不再直接决定路径，只生成候选。最终裁决由编译/运行反馈完成。这是 JianMu 核心机制的正确形状。
+
+**✅ 多候选真实执行**
+每个候选都走完整 ProgramIR → CEmitter → gcc → run 链路，没有捷径。失败候选有结构化错误记录。
+
+**✅ RouteMemory 与 TraceCache 分工**
+两者文件分离，语义分离：TraceCache 缓存结果，RouteMemory 缓存路径经验。
+
+**✅ 执行反馈裁决**
+winner 由 correctness_score == 1.0 决定，prior_score 只影响执行顺序，不决定胜负。
+
+### 仍然存在的问题
+
+**⚠️ SpeculativeRouter 仍是规则候选生成**
+候选列表是手工设计的 3 条路径，不是从数据中学习的。这不是真正的 learned router。
+
+**⚠️ _situation_key 粒度过粗**
+当前用操作类别（expand/generate）+ has_previous_ir 作为 key，无法区分"加一个值为2的变量"和"加一个值为100的变量"。RouteMemory 的经验迁移范围过宽。
+
+**⚠️ 只有 3 条候选路径**
+当前 sum 域只有 append/generate/replace 三条路径，候选空间极小，"投机"的意义有限。
+
+**❌ 没有真正的 learned prior**
+RouteMemory 的 prior boost 是基于历史成功率的简单线性提升，不是 Q-learning 或任何统计学习。
+
+### Reviewer 新增攻击点
+
+**R-v4-1. 候选空间太小，投机无意义**
+只有 3 条候选，其中 append 在有 previous_ir 时几乎必然胜出。这不是真正的"投机"，而是有序尝试。
+
+**R-v4-2. RouteMemory 的 situation_key 设计过于粗糙**
+同一 key 下混入了所有 expand 类操作，经验无法精确迁移。
+
+**R-v4-3. 仍然是规则系统，不是学习系统**
+v0.4 的核心机制形状正确，但所有决策仍由规则驱动。论文需要明确这一点，不能暗示存在任何学习。

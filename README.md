@@ -1,67 +1,71 @@
 # JianMu MVP
 
-A **Deterministic Structural Program Rewriting Runtime** for a minimal program domain.
+A **Deterministic Structural Program Rewriting Runtime** with **Speculative Execution Routing**.
 
-JianMu routes natural language intent through a structured IR, applies composable atomic experts,
-and validates correctness inline via compiler feedback.
+---
+
+## v0.3 → v0.4
+
+**JianMu v0.3** proved that `ProgramIR + Expert + CEmitter + GCC Sandbox` works as an execution scaffold.
+
+**JianMu v0.4** adds speculative routing: a single input no longer maps directly to one path.
+Instead, multiple `RouteCandidate` are generated, each compiled and executed, and the winner
+is selected by execution feedback — not by the rule router.
+
+```
+v0.3:  input → single intent → single expert chain → compile/run
+v0.4:  input → multiple RouteCandidate → parallel execution → feedback selects winner
+                                                             → RouteMemory records experience
+```
+
+---
 
 ## Requirements
 
 - Python 3.8+
-- `gcc` or `clang` (for compilation tests)
+- `gcc` or `clang`
 - `pytest` (`pip install pytest`)
 
-## Run the demo
+## Run demo
 
 ```bash
-cd jianmu-mvp
 python examples/demo_sum.py
 ```
 
 ## Run tests
 
 ```bash
-cd jianmu-mvp
 python -m pytest tests/ -v
 ```
 
-Compilation-dependent tests are automatically skipped if `gcc`/`clang` is not found.
+---
+
+## What v0.4 DOES prove
+
+- A rule router can be demoted from **final decision-maker** to **candidate generator**
+- Multiple expert chains can be executed speculatively and ranked by real compiler/runtime feedback
+- `RouteMemory` can record route-level success/failure experience and influence future `prior_score`
+- `TraceCache` (result cache) and `RouteMemory` (path experience) serve distinct roles
+- The winner is always selected by `correctness_score == 1.0`, never by prior alone
+
+## What v0.4 does NOT prove
+
+- **True natural language understanding** — `SpeculativeRouter` is still rule-based candidate generation
+- **Learned routing** — no statistical or neural route selection
+- **General code intelligence** — domain is still C integer summation only
+- **Scalability** beyond this minimal domain
+- **A replacement for LLMs or compilers**
+- **AGI or general program synthesis**
+- **BPU hardware co-design**
 
 ---
 
-## What this project DOES prove
+## Known limitations (v0.4)
 
-- In a minimal C integer summation domain, structural expert composition can extend a
-  two-operand addition to three- and four-operand addition **without hardcoded templates**.
-- Compiler feedback (GCC/Clang) serves as a deterministic inline correctness signal.
-- A trace cache can record and deterministically replay successful structural paths.
-- A limited set of natural language variants (Chinese and English) can be normalized to
-  structured intent via rule-based keyword matching.
-- `CEmitter` produces byte-identical C source for the same `ProgramIR`.
-- Limited value generalization is supported: e.g. `"1加2加3"` → compiles and outputs `6`.
+1. `SpeculativeRouter` generates candidates by rules, not by learned priors
+2. `_situation_key` uses coarse operation-class hashing — not true semantic similarity
+3. Only 3 candidate routes exist for the sum domain
+4. No speculative execution across different program domains
+5. `CEmitter` is still string concatenation, not AST rewrite
 
-## What this project does NOT prove
-
-- **General code intelligence** — the system only handles C integer summation.
-- **Scalability** beyond integer summation or variable counts beyond single digits.
-- **A replacement for LLMs** — no semantic understanding, no cross-domain generalization.
-- **A replacement for compilers** — GCC/Clang is used as the correctness oracle.
-- **True natural language understanding** — `IntentRouter` is keyword/regex matching,
-  not NLU. It fails on unseen phrasings.
-- **Complex arithmetic** — no support for negative numbers, zero, multi-digit edge cases,
-  multiplication, subtraction, or parenthesized expressions.
-- **Real-world software engineering effectiveness**.
-- **Hardware architecture feasibility** at any scale.
-- **AGI or general program synthesis**.
-
----
-
-## Known limitations (v0.3)
-
-1. `IntentRouter` covers a limited set of Chinese and English phrases; arbitrary natural
-   language input will fail.
-2. `CEmitter` is string concatenation, not AST rewrite — no syntactic validation of IR.
-3. No support for negative numbers, zero, or systematic benchmark across input variants.
-4. No support for multiplication, subtraction, or bracket precedence.
-
-See `CRITIQUE.md` for a full red-team audit and `ROADMAP_V03.md` for next steps.
+See `CRITIQUE.md`, `docs/SPECULATIVE_ROUTING.md`, and `ROADMAP_V03.md` for details.

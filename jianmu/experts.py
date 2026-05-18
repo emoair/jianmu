@@ -67,6 +67,20 @@ class ExpandSumExpert:
         return ir
 
 
+class ReplaceOperandExpert:
+    """Replace the last variable's value with new_value."""
+    def __init__(self, new_value: int = 1):
+        self.new_value = new_value
+
+    def apply(self, ir: ProgramIR) -> ProgramIR:
+        ir = copy.deepcopy(ir)
+        if not ir.variables:
+            raise ValueError("No variables to replace")
+        ir.variables[-1].value = self.new_value
+        ir.expression.operands = [v.name for v in ir.variables]
+        return ir
+
+
 class ConsistencyCheckExpert:
     def apply(self, ir: ProgramIR) -> ProgramIR:
         defined = {v.name for v in ir.variables}
