@@ -1,0 +1,37 @@
+============================= test session starts ==============================
+platform android -- Python 3.13.13, pytest-9.0.3, pluggy-1.6.0 -- /data/data/com.termux/files/usr/bin/python
+cachedir: .pytest_cache
+rootdir: /data/data/com.termux/files/home/jianmu-mvp
+collecting ... collected 29 items
+
+tests/test_cleanup.py::test_no_pycache_or_pyc_committed PASSED           [  3%]
+tests/test_cleanup.py::test_no_pytest_cache_committed PASSED             [  6%]
+tests/test_cleanup.py::test_no_trace_cache_json_committed PASSED         [ 10%]
+tests/test_cleanup.py::test_wrong_expected_output_not_cached PASSED      [ 13%]
+tests/test_redteam.py::test_no_generate_three_sum_template_function PASSED [ 17%]
+tests/test_redteam.py::test_three_and_four_share_same_expert_path_prefix PASSED [ 20%]
+tests/test_redteam.py::test_generated_code_contains_expected_operands PASSED [ 24%]
+tests/test_redteam.py::test_cache_key_changes_with_program_state PASSED  [ 27%]
+tests/test_redteam.py::test_consistency_check_rejects_undefined_operand PASSED [ 31%]
+tests/test_redteam.py::test_readme_non_claims_exist PASSED               [ 34%]
+tests/test_redteam.py::test_expand_sum_expert_supports_reduction PASSED  [ 37%]
+tests/test_redteam.py::test_deterministic_replay_compares_code_not_stdout PASSED [ 41%]
+tests/test_redteam.py::test_value_generalization_1_2_3_outputs_6 PASSED  [ 44%]
+tests/test_redteam.py::test_define_three_integers_1_2_3_outputs_6 PASSED [ 48%]
+tests/test_redteam.py::test_expand_add_value_outputs_correct_sum PASSED  [ 51%]
+tests/test_redteam.py::test_english_sum_of_three_numbers PASSED          [ 55%]
+tests/test_redteam.py::test_expand_phrase_target_num_after_扩展为 PASSED [ 58%]
+tests/test_redteam.py::test_no_cache_artifact_committed PASSED           [ 62%]
+tests/test_redteam.py::test_critique_not_stale PASSED                    [ 65%]
+tests/test_redteam.py::test_scoring_correctness_score_can_reach_1 PASSED [ 68%]
+tests/test_runtime.py::test_generate_two_sum_program PASSED              [ 72%]
+tests/test_runtime.py::test_expand_two_sum_to_three_sum PASSED           [ 75%]
+tests/test_runtime.py::test_expand_to_four_sum PASSED                    [ 79%]
+tests/test_runtime.py::test_chinese_variants_same_intent PASSED          [ 82%]
+tests/test_runtime.py::test_compile_and_run_output PASSED                [ 86%]
+tests/test_runtime.py::test_trace_cache_hit PASSED                       [ 89%]
+tests/test_runtime.py::test_deterministic_replay PASSED                  [ 93%]
+tests/test_runtime.py::test_no_hardcoded_three_or_four_sum_template PASSED [ 96%]
+tests/test_runtime.py::test_invalid_variable_detection_or_repair PASSED  [100%]
+
+============================== 29 passed in 9.53s ==============================
