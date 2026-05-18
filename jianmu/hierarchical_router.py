@@ -27,6 +27,7 @@ from jianmu.semantic_neurons import (
     SubtractionNeuron,
     UnknownDomainNeuron,
     VariableExtractorNeuron,
+    has_unsupported_non_addition_expression,
     is_unsupported_english_natural_language,
 )
 
@@ -75,6 +76,7 @@ class HierarchicalSemanticRouter:
     def analyze(self, user_input: str, previous_ir: Optional[ProgramIR] = None) -> SemanticFeatures:
         features = SemanticFeatures(has_previous_context=previous_ir is not None)
         features.unsupported_language = is_unsupported_english_natural_language(user_input)
+        features.unsupported_expression = has_unsupported_non_addition_expression(user_input)
         results: List[NeuronResult] = []
 
         for neuron in self._extraction_neurons:
@@ -121,6 +123,22 @@ class HierarchicalSemanticRouter:
                 semantic_match_score=1.0,
                 semantic_features=features.to_dict(),
                 rationale="Chinese-first v0.5 rejects English natural-language input",
+            )]
+        if features.unsupported_expression:
+            return [RouteCandidate(
+                route_id="unsupported_expression_input",
+                source="hierarchical_neuron_tree",
+                intent={
+                    "action": "unsupported_input",
+                    "reason": "non_addition_expression_out_of_scope",
+                },
+                expert_plan=[],
+                prior_score=1.0,
+                requires_previous_ir=False,
+                expected_output_provenance="none",
+                semantic_match_score=1.0,
+                semantic_features=features.to_dict(),
+                rationale="v0.5 rejects unsupported non-addition expressions",
             )]
 
         numbers = list(features.extracted_numbers)

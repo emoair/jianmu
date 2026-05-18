@@ -1,6 +1,9 @@
 import re
 
-from jianmu.semantic_neurons import is_unsupported_english_natural_language
+from jianmu.semantic_neurons import (
+    has_unsupported_non_addition_expression,
+    is_unsupported_english_natural_language,
+)
 
 
 CHINESE_NUM = {
@@ -113,6 +116,14 @@ class IntentRouter:
             return {
                 "action": "unsupported_input",
                 "reason": "english_natural_language_out_of_scope",
+                "operation": "unknown",
+                "print": False,
+                "language": "unsupported",
+            }
+        if has_unsupported_non_addition_expression(text):
+            return {
+                "action": "unsupported_input",
+                "reason": "non_addition_expression_out_of_scope",
                 "operation": "unknown",
                 "print": False,
                 "language": "unsupported",

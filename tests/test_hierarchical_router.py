@@ -6,6 +6,7 @@ from jianmu.routes import RouteCandidate
 from jianmu.runtime import Runtime
 from jianmu.sandbox import has_supported_c_compiler
 from jianmu.candidate_executor import CandidateExecutor
+from jianmu.trace_cache import TraceCache
 
 
 HAS_COMPILER = has_supported_c_compiler()
@@ -71,6 +72,7 @@ def test_chinese_number_value_extraction(router):
 
 def test_negative_number_extraction(router):
     features = router.analyze("再加一个-2", make_two_sum_ir())
+    assert features.unsupported_expression is False
     assert features.extracted_numbers == [-2]
     candidates = router.generate_candidates(features, make_two_sum_ir())
     append = next(c for c in candidates if c.route_id == "append_literal_to_existing_sum")
@@ -92,6 +94,32 @@ def test_pure_english_natural_language_returns_unsupported(router):
     candidates = router.generate_candidates(features)
     assert candidates[0].route_id == "unsupported_language_input"
     assert candidates[0].intent["action"] == "unsupported_input"
+
+
+def _assert_unsupported_expression_result(result, rt):
+    assert result.selected_candidate is not None
+    assert result.selected_candidate.candidate.route_id == "unsupported_expression_input"
+    assert result.selected_candidate.success is False
+    assert result.generated_code == ""
+    assert result.program_ir == {}
+    assert result.sandbox_result.compile_success is False
+    assert result.sandbox_result.run_success is False
+    assert TraceCache(rt._cache._path)._load() == {}
+
+
+def test_subtraction_expression_is_unsupported_in_v05(rt):
+    result = rt.run("输出1-2", speculative=True)
+    _assert_unsupported_expression_result(result, rt)
+
+
+def test_multiplication_expression_is_unsupported_in_v05(rt):
+    result = rt.run("输出1*2", speculative=True)
+    _assert_unsupported_expression_result(result, rt)
+
+
+def test_division_expression_is_unsupported_in_v05(rt):
+    result = rt.run("输出1/2", speculative=True)
+    _assert_unsupported_expression_result(result, rt)
 
 
 def test_negation_detector_does_not_trigger_on_fenbie(rt):

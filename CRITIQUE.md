@@ -22,7 +22,7 @@ Chinese-first, while C technical tokens such as `C`, `int`, `printf`, `main`,
 
 变量值硬编码为 `1` 的问题已在 v0.3 修复：`IntentRouter` 现在从用户输入中提取 `values` 参数，`VariableDefinitionExpert` 接受 `values` 参数并按实际值生成变量声明，`ExpandSumExpert` 接受 `new_value` 参数支持追加指定值的变量。系统现在可以生成 `1+2+3=6` 这类非平凡求和，correctness signal 具有真实区分度。
 
-已支持有限数值泛化，但不支持负数、零、复杂表达式。
+已支持有限数值泛化和有限负数/零场景，但不支持系统性四则表达式与 AST 级表达式解析。
 
 ---
 
@@ -168,7 +168,7 @@ README 的 non-claims 部分存在遗漏：
 
 ### 13. 当前结果不能证明什么？
 
-- **不能证明**完整数值泛化：已支持有限数值泛化，但不支持负数、零、复杂表达式
+- **不能证明**完整数值泛化：已支持有限数值泛化和有限负数/零场景，但不支持系统性四则表达式与 AST 级表达式解析
 - **不能证明**自然语言通用理解：IntentRouter 是关键词匹配，任意自然语言仍会失败
 - **不能证明**缩减操作（target < current）：ExpandSumExpert 单向
 - **不能证明**通用程序合成、大规模软件工程有效性
@@ -181,7 +181,7 @@ README 的 non-claims 部分存在遗漏：
 
 ### R1. 变量值硬编码为 1，求和验证无意义 [已修复]
 
-v0.3 已修复：`IntentRouter` 提取 `values`，`VariableDefinitionExpert` 按实际值初始化变量，系统可正确生成并验证 `1+2+3=6`。已支持有限数值泛化，但不支持负数、零、复杂表达式，这些场景仍需后续扩展。
+v0.3 已修复：`IntentRouter` 提取 `values`，`VariableDefinitionExpert` 按实际值初始化变量，系统可正确生成并验证 `1+2+3=6`。当前只支持有限负数/零场景，不支持系统性四则表达式与 AST 级表达式解析，这些场景仍需后续扩展。
 
 ### R2. deterministic_replay 的实现与声明不符 [已修复]
 
@@ -209,7 +209,7 @@ v0.3 已修复：`scoring.py` 的 `score()` 现在接受 `previous_code` / `curr
 
 ### v0.3 已修复
 
-- **变量值硬编码**：`IntentRouter` 提取 `values`，`VariableDefinitionExpert` 接受 `values` 参数按实际值生成变量声明，`ExpandSumExpert` 接受 `new_value` 参数支持追加指定值的变量。系统可生成 `1+2+3=6` 等非平凡求和，已支持有限数值泛化，但不支持负数、零、复杂表达式。
+- **变量值硬编码**：`IntentRouter` 提取 `values`，`VariableDefinitionExpert` 接受 `values` 参数按实际值生成变量声明，`ExpandSumExpert` 接受 `new_value` 参数支持追加指定值的变量。系统可生成 `1+2+3=6` 等非平凡求和，已支持有限数值泛化和有限负数/零场景，但不支持系统性四则表达式与 AST 级表达式解析。
 - **deterministic_replay bug**：`scoring.py` 的 `score()` 现在接受 `previous_code` / `current_code` 参数并做字符串比较，byte-level 一致性有代码支撑。
 - **ExpandSumExpert 单向**：`new_value` 参数支持追加指定值的变量，语义不再锁死为全 1。
 - **IntentRouter 覆盖扩展**：v0.5 保留中文优先输入、数字表达式（如 `1+2+3`）、"多加一个X"、"扩展为" 等关键词；英文自然语言输入现在返回 unsupported。
@@ -219,7 +219,7 @@ v0.3 已修复：`scoring.py` 的 `score()` 现在接受 `previous_code` / `curr
 - **CEmitter 字符串拼接**：`emitter_c.py` 仍是字符串拼接生成 C 代码，非 AST rewrite，边界情况可能静默生成语法错误代码。
 - **IntentRouter 非真正 NLU**：覆盖依赖枚举正则，无法泛化到未见过的自然语言表达，不是真实意图理解。
 - **无 benchmark**：没有系统性的变体覆盖率测试数据，所有"支持"声明均为枚举而非统计。
-- **数值泛化有限**：不支持负数、零、多位数、中文顿号/逗号分隔等场景。
+- **数值泛化有限**：当前只支持有限负数/零场景和少量中文顿号/逗号分隔输入，不支持系统性四则表达式与 AST 级表达式解析。
 
 ---
 

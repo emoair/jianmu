@@ -24,6 +24,7 @@ class SemanticFeatures:
     has_previous_context: bool = False
     variable_focus: Optional[str] = None
     unsupported_language: bool = False
+    unsupported_expression: bool = False
     neuron_results: List[NeuronResult] = field(default_factory=list)
 
     def to_dict(self) -> dict:
@@ -39,6 +40,7 @@ class SemanticFeatures:
             "has_previous_context": self.has_previous_context,
             "variable_focus": self.variable_focus,
             "unsupported_language": self.unsupported_language,
+            "unsupported_expression": self.unsupported_expression,
         }
 
 
@@ -59,6 +61,7 @@ CHINESE_DIGITS = {
 
 NUMBER_RE = re.compile(r"(?<![A-Za-z0-9_.])-?\d+")
 NUMERIC_EXPRESSION_RE = re.compile(r"^\s*-?\d+(?:\s*\+\s*-?\d+)*\s*$")
+UNSUPPORTED_NON_ADDITION_EXPRESSION_RE = re.compile(r"-?\d+\s*[-*/]\s*-?\d+")
 
 
 def has_cjk(text: str) -> bool:
@@ -72,6 +75,11 @@ def is_unsupported_english_natural_language(text: str) -> bool:
     if NUMERIC_EXPRESSION_RE.match(text):
         return False
     return bool(re.search(r"[A-Za-z]", text))
+
+
+def has_unsupported_non_addition_expression(text: str) -> bool:
+    """Reject binary -, *, / expressions in v0.5 without rejecting negative literals."""
+    return bool(UNSUPPORTED_NON_ADDITION_EXPRESSION_RE.search(text))
 
 
 def _score(value: float) -> float:
