@@ -1,0 +1,85 @@
+{
+  "compile_checked": 100,
+  "compile_success_rate": 1.0,
+  "eval_count": 1000,
+  "expected_output_match": 0.805,
+  "expression_form_accuracy": 0.93,
+  "expression_form_label_count": 7,
+  "head_params": 349525,
+  "majority_expression_form_accuracy": 0.17,
+  "majority_labels": {
+    "expression_form": "addition_only",
+    "structure_label": "BIN_MUL",
+    "supported": "supported"
+  },
+  "majority_structure_label_accuracy": 0.17,
+  "majority_supported_accuracy": 0.85,
+  "max_compile_checks": 100,
+  "model_path": "records\\v0_5_8\\arithmetic_targetir_model.json",
+  "most_common_errors": [
+    [
+      "BIN_ADD -> PAREN_ADD_THEN_MUL",
+      18
+    ],
+    [
+      "BIN_DIV -> PAREN_SUB_THEN_DIV",
+      11
+    ],
+    [
+      "BIN_MUL -> SUB_THEN_MUL",
+      7
+    ],
+    [
+      "ADD_THEN_MUL -> PAREN_ADD_THEN_MUL",
+      3
+    ],
+    [
+      "ADD_THEN_MUL -> SUB_THEN_MUL",
+      2
+    ],
+    [
+      "BIN_ADD -> BIN_SUB",
+      1
+    ],
+    [
+      "SUB_THEN_MUL -> BIN_SUB",
+      1
+    ],
+    [
+      "MUL_THEN_ADD -> SUB_THEN_MUL",
+      1
+    ],
+    [
+      "BIN_SUB -> SUB_THEN_MUL",
+      1
+    ]
+  ],
+  "num_params": 1048576,
+  "oracle_parser_upper_bound": 1.0,
+  "per_structure_accuracy": {
+    "ADD_REDUCE": 1.0,
+    "ADD_THEN_MUL": 0.9242,
+    "BIN_ADD": 0.8288,
+    "BIN_DIV": 0.9141,
+    "BIN_MUL": 0.9588,
+    "BIN_SUB": 0.9922,
+    "MUL_THEN_ADD": 0.98,
+    "PAREN_ADD_THEN_MUL": 1.0,
+    "PAREN_SUB_THEN_DIV": 1.0,
+    "SUB_THEN_MUL": 0.9815
+  },
+  "predictions_path": "records\\v0_5_8\\arithmetic_targetir_predictions_eval.jsonl",
+  "report_path": "records\\v0_5_8\\arithmetic_targetir_report.md",
+  "run_success_rate": 1.0,
+  "sandbox_output_match_rate": 1.0,
+  "structure_label_accuracy": 0.955,
+  "structure_label_count": 11,
+  "structure_wrong_but_target_correct": 0,
+  "supported_accuracy": 0.957,
+  "target_ir_exact_match": 0.805,
+  "task_success_rate": 0.805,
+  "train_count": 5000,
+  "unsupported_f1": 0.8902,
+  "unsupported_precision": 0.8021,
+  "unsupported_recall": 1.0
+}

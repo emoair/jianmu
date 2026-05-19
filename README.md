@@ -163,3 +163,7 @@ of the v0.5 release claims.
 
 v0.5.6 development branch adds a controlled Chinese intent-to-structure dataset
 seed for future self-learning and learned-router experiments.
+
+v0.5.8 development branch explores a 1M-parameter hashed routing baseline for
+Chinese-first arithmetic TargetIR regeneration. It predicts canonical arithmetic
+structure, not C source text.
