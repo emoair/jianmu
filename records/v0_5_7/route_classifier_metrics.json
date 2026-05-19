@@ -1,0 +1,107 @@
+{
+  "confusion_matrix_route_id": {
+    "append_literal_to_existing_sum": {
+      "append_literal_to_existing_sum": 28,
+      "append_multiple_literals_to_existing_sum": 4,
+      "unsupported_language_input": 4
+    },
+    "append_multiple_literals_to_existing_sum": {
+      "append_literal_to_existing_sum": 2,
+      "append_multiple_literals_to_existing_sum": 22
+    },
+    "explicit_expression_rewrite": {
+      "explicit_expression_rewrite": 9,
+      "generate_new_sum_from_text": 11
+    },
+    "generate_new_sum_from_text": {
+      "explicit_expression_rewrite": 13,
+      "generate_new_sum_from_text": 36,
+      "unsupported_expression_input": 1
+    },
+    "no_op_keep_existing": {
+      "no_op_keep_existing": 20
+    },
+    "replace_operand_by_index": {
+      "replace_last_operand": 1,
+      "replace_operand_by_index": 21,
+      "unsupported_language_input": 2
+    },
+    "unsupported_expression_input": {
+      "explicit_expression_rewrite": 1,
+      "unsupported_expression_input": 17
+    },
+    "unsupported_language_input": {
+      "unsupported_language_input": 8
+    }
+  },
+  "eval_count": 200,
+  "learned_route_id_accuracy": 0.805,
+  "learned_supported_accuracy": 0.965,
+  "learned_task_family_accuracy": 0.735,
+  "macro_accuracy_by_route_id": 0.8355,
+  "majority_labels": {
+    "route_id": "generate_new_sum_from_text",
+    "supported": "supported",
+    "task_family": "generate_sum_program"
+  },
+  "majority_route_id_accuracy": 0.25,
+  "majority_supported_accuracy": 0.87,
+  "majority_task_family_accuracy": 0.25,
+  "most_common_errors": [
+    [
+      "generate_new_sum_from_text -> explicit_expression_rewrite",
+      13
+    ],
+    [
+      "explicit_expression_rewrite -> generate_new_sum_from_text",
+      11
+    ],
+    [
+      "append_literal_to_existing_sum -> append_multiple_literals_to_existing_sum",
+      4
+    ],
+    [
+      "append_literal_to_existing_sum -> unsupported_language_input",
+      4
+    ],
+    [
+      "append_multiple_literals_to_existing_sum -> append_literal_to_existing_sum",
+      2
+    ],
+    [
+      "replace_operand_by_index -> unsupported_language_input",
+      2
+    ],
+    [
+      "generate_new_sum_from_text -> unsupported_expression_input",
+      1
+    ],
+    [
+      "replace_operand_by_index -> replace_last_operand",
+      1
+    ],
+    [
+      "unsupported_expression_input -> explicit_expression_rewrite",
+      1
+    ]
+  ],
+  "per_route_id_accuracy": {
+    "append_literal_to_existing_sum": 0.7778,
+    "append_multiple_literals_to_existing_sum": 0.9167,
+    "explicit_expression_rewrite": 0.45,
+    "generate_new_sum_from_text": 0.72,
+    "no_op_keep_existing": 1.0,
+    "replace_operand_by_index": 0.875,
+    "unsupported_expression_input": 0.9444,
+    "unsupported_language_input": 1.0
+  },
+  "route_id_accuracy": 0.805,
+  "route_id_label_count": 9,
+  "supported_accuracy": 0.965,
+  "task_family_accuracy": 0.735,
+  "task_family_label_count": 8,
+  "train_count": 800,
+  "unsupported_f1": 0.8511,
+  "unsupported_precision": 0.9524,
+  "unsupported_recall": 0.7692
+}
