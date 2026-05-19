@@ -49,6 +49,9 @@ def compute_fitness(
     unsupported_correct = (not supported) and phenotype.unsupported_pred
     unsupported_generated = (not supported) and not phenotype.unsupported_pred
     supported_rejected = supported and phenotype.unsupported_pred
+    no_confidence_reject = phenotype.unsupported_pred and genome.branch_path.reject_type == "no_confident_branch"
+    correct_no_confidence_reject = (not supported) and no_confidence_reject
+    wrong_no_confidence_reject = supported and no_confidence_reject
     invalid_targetir = supported and not phenotype.unsupported_pred and not phenotype.target_ir_canonical
     target_exact = supported and phenotype.target_ir_canonical == target_ir
     similarity = target_ir_similarity(phenotype.target_ir_canonical, target_ir)
@@ -67,14 +70,16 @@ def compute_fitness(
 
     total = 0.0
     total += 2.0 if unsupported_correct else 0.0
+    total += 2.0 if correct_no_confidence_reject else 0.0
     total += 3.0 if target_exact else 0.0
     total += 2.0 if expected_match else 0.0
     total += 1.0 if compile_success else 0.0
     total += 1.0 if run_success else 0.0
     total += efficiency_bonus
     total += similarity
-    total -= 3.0 if unsupported_generated else 0.0
-    total -= 3.0 if supported_rejected else 0.0
+    total -= 4.0 if unsupported_generated else 0.0
+    total -= 1.0 if supported_rejected else 0.0
+    total -= 2.5 if wrong_no_confidence_reject else 0.0
     total += invalid_penalty + wrong_output_penalty + path_length_penalty
 
     return FitnessReport(
@@ -92,6 +97,9 @@ def compute_fitness(
         components={
             "unsupported_generated": unsupported_generated,
             "supported_rejected": supported_rejected,
+            "no_confidence_reject": no_confidence_reject,
+            "correct_no_confidence_reject": correct_no_confidence_reject,
+            "wrong_no_confidence_reject": wrong_no_confidence_reject,
             "invalid_targetir": invalid_targetir,
             "failure_reason": phenotype.failure_reason,
         },
@@ -123,4 +131,3 @@ def _tokens(canonical: str):
     if token:
         tokens.add(token)
     return tokens
-

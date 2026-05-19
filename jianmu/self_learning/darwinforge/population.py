@@ -1,22 +1,65 @@
 import random
 from collections import defaultdict
+from dataclasses import dataclass, field
 from typing import Dict, List
 
 from jianmu.self_learning.branchchain.branch_chain import LAYER_DEFINITIONS
 from jianmu.self_learning.branchchain.branch_neuron import BranchNeuron, make_random_neuron, make_seed_neurons
 from jianmu.self_learning.branchchain.branch_types import BranchPath
+from jianmu.self_learning.branchchain.confidence_gate import LayerGateConfig, apply_confidence_gate
 from jianmu.self_learning.darwinforge.candidate import CandidateGenome, CandidateRecord
 
 
+@dataclass
+class GuardedBranchChainConfig:
+    layer_gate_configs: Dict[str, LayerGateConfig] = field(default_factory=dict)
+    default_continue_threshold: int = 15
+    use_confidence_margin: bool = True
+
+    def __post_init__(self):
+        defaults = {
+            "task_scope": 20,
+            "language_target": 15,
+            "semantic_domain": 15,
+            "support_gate": 15,
+            "arithmetic_family": 15,
+            "structure_policy": 10,
+            "slot_binding_policy": 10,
+            "target_builder": 10,
+        }
+        for layer_name, _ in LAYER_DEFINITIONS:
+            self.layer_gate_configs.setdefault(
+                layer_name,
+                LayerGateConfig(
+                    layer_name=layer_name,
+                    continue_threshold=defaults.get(layer_name, self.default_continue_threshold),
+                    min_margin=0 if self.use_confidence_margin else 0,
+                ),
+            )
+
+    def config_for(self, layer_name: str) -> LayerGateConfig:
+        return self.layer_gate_configs[layer_name]
+
+    def to_dict(self):
+        return {
+            "default_continue_threshold": self.default_continue_threshold,
+            "use_confidence_margin": self.use_confidence_margin,
+            "layer_gate_configs": {
+                layer: config.__dict__ for layer, config in self.layer_gate_configs.items()
+            },
+        }
+
+
 class LayerPreservedPopulation:
-    def __init__(self, per_layer: Dict[str, List[BranchNeuron]], seed: int = 42, generation: int = 0):
+    def __init__(self, per_layer: Dict[str, List[BranchNeuron]], seed: int = 42, generation: int = 0, guarded_config: GuardedBranchChainConfig = None):
         self.per_layer = per_layer
         self.seed = seed
         self.generation = generation
         self.rng = random.Random(seed)
+        self.guarded_config = guarded_config or GuardedBranchChainConfig()
 
     @classmethod
-    def initialize(cls, layer_definitions=None, population_per_layer: int = 16, seed: int = 42):
+    def initialize(cls, layer_definitions=None, population_per_layer: int = 16, seed: int = 42, guarded_config: GuardedBranchChainConfig = None):
         layer_definitions = layer_definitions or LAYER_DEFINITIONS
         rng = random.Random(seed)
         per_layer: Dict[str, List[BranchNeuron]] = {}
@@ -27,9 +70,10 @@ class LayerPreservedPopulation:
                 option = rng.choice(options)
                 neurons.append(make_random_neuron(layer_name, option, f"{layer_name}:immigrant:{len(neurons)}", rng))
             per_layer[layer_name] = neurons[:population_per_layer]
-        return cls(per_layer=per_layer, seed=seed)
+        return cls(per_layer=per_layer, seed=seed, guarded_config=guarded_config)
 
-    def candidate_paths(self, features: Dict, top_k: int = 3) -> List[BranchPath]:
+    def candidate_paths(self, features: Dict, top_k: int = 3, guarded_config: GuardedBranchChainConfig = None) -> List[BranchPath]:
+        guarded_config = guarded_config or self.guarded_config
         partials = [([], 0, False, None)]
         for layer_name, options in LAYER_DEFINITIONS:
             expanded = []
@@ -45,12 +89,26 @@ class LayerPreservedPopulation:
                         adjusted = proposal.confidence + int(max(min(neuron.score_value, 20), -20))
                         proposals.append((adjusted, proposal))
                 if not proposals:
-                    expanded.append((decisions, cumulative, True, f"missing_layer:{layer_name}"))
+                    gate = apply_confidence_gate(layer_name, [], guarded_config.config_for(layer_name))
+                    expanded.append((decisions, cumulative, True, gate.reject_reason))
+                    continue
+                proposal_only = [proposal for _, proposal in proposals]
+                gate = apply_confidence_gate(layer_name, proposal_only, guarded_config.config_for(layer_name))
+                if not gate.can_continue:
+                    selected = gate.selected_proposal
+                    next_decisions = decisions + ([selected] if selected else [])
+                    if selected:
+                        selected.can_continue = False
+                        selected.reject_reason = gate.reject_reason
+                        selected.confidence_margin = gate.confidence_margin
+                        selected.gate_threshold = gate.threshold
+                    expanded.append((next_decisions, cumulative + gate.best_confidence, True, gate.reject_reason))
                     continue
                 for adjusted, proposal in sorted(proposals, key=lambda item: (item[0], item[1].selected), reverse=True)[:top_k]:
+                    proposal.can_continue = True
                     next_decisions = decisions + [proposal]
-                    stopped_now = proposal.selected in {"unsupported", "early_exit"}
-                    reason_now = f"{layer_name}:{proposal.selected}" if stopped_now else None
+                    stopped_now = False
+                    reason_now = None
                     expanded.append((next_decisions, cumulative + adjusted, stopped_now, reason_now))
             partials = sorted(expanded, key=lambda item: item[1], reverse=True)[:top_k]
         paths = []
@@ -63,13 +121,16 @@ class LayerPreservedPopulation:
                     target_builder=decisions[-1].selected if decisions else "early_exit",
                     early_exit=early_exit,
                     unsupported_reason=reason,
+                    rejected_by_layer=_rejected_layer(decisions, reason) if early_exit else None,
+                    reject_reason=reason,
+                    reject_type=_reject_type(reason),
                 )
             )
         return paths
 
-    def sample_candidate_paths(self, features: Dict, top_k: int = 3) -> List[CandidateGenome]:
+    def sample_candidate_paths(self, features: Dict, top_k: int = 3, guarded_config: GuardedBranchChainConfig = None) -> List[CandidateGenome]:
         genomes: List[CandidateGenome] = []
-        for candidate_index, path in enumerate(self.candidate_paths(features, top_k=top_k)):
+        for candidate_index, path in enumerate(self.candidate_paths(features, top_k=top_k, guarded_config=guarded_config)):
             decisions_by_layer = {d.layer_name: d.selected for d in path.decisions}
             genomes.append(
                 CandidateGenome(
@@ -124,6 +185,24 @@ class LayerPreservedPopulation:
             }
             for layer, neurons in sorted(self.per_layer.items())
         }
+
+
+def _reject_type(reason: str):
+    if not reason:
+        return None
+    if reason.startswith("missing_layer"):
+        return "missing_layer"
+    if reason == "no_confident_branch_reject":
+        return "no_confident_branch"
+    return "typed_rejection"
+
+
+def _rejected_layer(decisions, reason: str):
+    if reason and reason.startswith("missing_layer:"):
+        return reason.split(":", 1)[1]
+    if decisions:
+        return decisions[-1].layer_name
+    return None
 
 
 def _preserve_option_coverage(next_neurons, ranked, layer_name, options, rng):

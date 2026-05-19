@@ -8,7 +8,14 @@ class AtomicSynthesis:
     def synthesize(self, genome: CandidateGenome, features: Dict) -> CandidatePhenotype:
         decisions = {decision.layer_name: decision.selected for decision in genome.branch_path.decisions}
         if genome.branch_path.early_exit or decisions.get("support_gate") == "unsupported":
-            return CandidatePhenotype(genome.genome_id, None, None, None, True, genome.branch_path.unsupported_reason)
+            reason_parts = [
+                part for part in [
+                    genome.branch_path.rejected_by_layer,
+                    genome.branch_path.reject_reason or genome.branch_path.unsupported_reason,
+                    genome.branch_path.reject_type,
+                ] if part
+            ]
+            return CandidatePhenotype(genome.genome_id, None, None, None, True, ":".join(reason_parts) or genome.branch_path.unsupported_reason)
         if genome.target_builder_policy != "canonical_arithmetic_targetir":
             return CandidatePhenotype(genome.genome_id, None, None, None, False, "unsupported_target_builder")
         try:
@@ -122,4 +129,3 @@ def _canonical_to_c(canonical: str) -> str:
     if final != len(canonical):
         raise ValueError("trailing canonical")
     return expr
-

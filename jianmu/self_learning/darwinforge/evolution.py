@@ -236,7 +236,18 @@ def _metrics_for_generation(generation: int, winners: List[CandidateRecord], dat
     compile_success = 0
     run_success = 0
     wrong_branches = Counter()
+    reject_by_layer = Counter()
+    per_layer_reject = Counter()
+    per_layer_seen = Counter()
+    per_layer_continue = Counter()
+    confidence_margin_by_layer = Counter()
     fitness_values = []
+    no_confidence_reject_count = 0
+    correct_no_confidence_reject_count = 0
+    wrong_no_confidence_reject_count = 0
+    typed_reject_count = 0
+    false_accept_unsupported_count = 0
+    false_reject_supported_count = 0
     for record, task in zip(winners, dataset):
         fitness = record.fitness_report
         fitness_values.append(fitness.total_fitness)
@@ -255,6 +266,23 @@ def _metrics_for_generation(generation: int, winners: List[CandidateRecord], dat
             if target not in pred_pairs:
                 selected = next((pair[1] for pair in pred_pairs if pair[0] == target[0]), "<missing>")
                 wrong_branches[f"{target[0]}:{target[1]} -> {selected}"] += 1
+        if record.genome.branch_path.reject_type:
+            reject_by_layer[record.genome.branch_path.rejected_by_layer or "<unknown>"] += 1
+            if record.genome.branch_path.reject_type == "no_confident_branch":
+                no_confidence_reject_count += 1
+                correct_no_confidence_reject_count += int(not task["supported"])
+                wrong_no_confidence_reject_count += int(task["supported"])
+            if record.genome.branch_path.reject_type == "typed_rejection":
+                typed_reject_count += 1
+        false_accept_unsupported_count += int((not task["supported"]) and not record.phenotype.unsupported_pred)
+        false_reject_supported_count += int(task["supported"] and record.phenotype.unsupported_pred)
+        for decision in record.genome.branch_path.decisions:
+            per_layer_seen[decision.layer_name] += 1
+            confidence_margin_by_layer[decision.layer_name] += decision.confidence_margin or 0
+            if decision.can_continue:
+                per_layer_continue[decision.layer_name] += 1
+            else:
+                per_layer_reject[decision.layer_name] += 1
     return {
         "generation": generation,
         "mean_fitness": round(sum(fitness_values) / total, 4),
@@ -267,6 +295,22 @@ def _metrics_for_generation(generation: int, winners: List[CandidateRecord], dat
         "branch_path_exact_match_rate": round(branch_exact / total, 4),
         "missing_layer_rate": round(missing_layers / total, 4),
         "most_common_wrong_branch_decisions": wrong_branches.most_common(10),
+        "no_confidence_reject_count": no_confidence_reject_count,
+        "correct_no_confidence_reject_count": correct_no_confidence_reject_count,
+        "wrong_no_confidence_reject_count": wrong_no_confidence_reject_count,
+        "typed_reject_count": typed_reject_count,
+        "false_accept_unsupported_count": false_accept_unsupported_count,
+        "false_reject_supported_count": false_reject_supported_count,
+        "per_layer_reject_count": dict(per_layer_reject),
+        "per_layer_continue_rate": {
+            layer: round(per_layer_continue[layer] / max(count, 1), 4)
+            for layer, count in per_layer_seen.items()
+        },
+        "rejected_by_layer_distribution": dict(reject_by_layer),
+        "confidence_margin_by_layer": {
+            layer: round(confidence_margin_by_layer[layer] / max(count, 1), 4)
+            for layer, count in per_layer_seen.items()
+        },
     }
 
 

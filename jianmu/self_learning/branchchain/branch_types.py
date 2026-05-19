@@ -11,6 +11,10 @@ class BranchDecision:
     neuron_id: str
     evidence: Dict
     reward: float = 0.0
+    can_continue: bool = True
+    reject_reason: Optional[str] = None
+    confidence_margin: Optional[int] = None
+    gate_threshold: Optional[int] = None
 
     def to_dict(self) -> Dict:
         return {
@@ -21,6 +25,10 @@ class BranchDecision:
             "neuron_id": self.neuron_id,
             "evidence": dict(self.evidence),
             "reward": self.reward,
+            "can_continue": self.can_continue,
+            "reject_reason": self.reject_reason,
+            "confidence_margin": self.confidence_margin,
+            "gate_threshold": self.gate_threshold,
         }
 
     @classmethod
@@ -33,6 +41,10 @@ class BranchDecision:
             neuron_id=payload.get("neuron_id", ""),
             evidence=dict(payload.get("evidence", {})),
             reward=float(payload.get("reward", 0.0)),
+            can_continue=bool(payload.get("can_continue", True)),
+            reject_reason=payload.get("reject_reason"),
+            confidence_margin=payload.get("confidence_margin"),
+            gate_threshold=payload.get("gate_threshold"),
         )
 
 
@@ -44,6 +56,9 @@ class BranchPath:
     target_builder: str = ""
     early_exit: bool = False
     unsupported_reason: Optional[str] = None
+    rejected_by_layer: Optional[str] = None
+    reject_reason: Optional[str] = None
+    reject_type: Optional[str] = None
 
     def to_dict(self) -> Dict:
         return {
@@ -53,6 +68,9 @@ class BranchPath:
             "target_builder": self.target_builder,
             "early_exit": self.early_exit,
             "unsupported_reason": self.unsupported_reason,
+            "rejected_by_layer": self.rejected_by_layer,
+            "reject_reason": self.reject_reason,
+            "reject_type": self.reject_type,
         }
 
     @classmethod
@@ -64,6 +82,9 @@ class BranchPath:
             target_builder=payload.get("target_builder", ""),
             early_exit=bool(payload.get("early_exit", False)),
             unsupported_reason=payload.get("unsupported_reason"),
+            rejected_by_layer=payload.get("rejected_by_layer"),
+            reject_reason=payload.get("reject_reason"),
+            reject_type=payload.get("reject_type"),
         )
 
 
@@ -91,4 +112,3 @@ class PathExecutionResult:
             "reward": self.reward,
             "failure_reason": self.failure_reason,
         }
-

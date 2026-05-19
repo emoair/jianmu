@@ -195,3 +195,11 @@ v0.6.2 explores Layerwise Highest-Stable Threshold Search（分层最高稳定�
 BranchChain（分支链） curriculum training. Each layer starts from a high freeze
 threshold（冻结阈值） and gradually anneals downward（向下退火） only when stalled,
 freezing at the highest threshold it can stably satisfy.
+
+## v0.6.3 Development Direction
+
+v0.6.3 explores Confidence-Gated Guarded BranchChain（置信度守卫式带守卫分支链）.
+Instead of relying on a single SupportGate（支持/拒绝门）, each routing layer can
+stop early when no sufficiently confident continuation branch exists. Rejection
+becomes a natural no-confidence early stop, not a source-code patch or hardcoded
+parser rule.

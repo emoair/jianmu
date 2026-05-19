@@ -20,6 +20,11 @@ THRESHOLD_METRICS_PATH = THRESHOLD_DIR / "highest_stable_threshold_metrics.json"
 THRESHOLD_REPORT_PATH = THRESHOLD_DIR / "highest_stable_threshold_report.md"
 THRESHOLD_CANDIDATES_PATH = THRESHOLD_DIR / "highest_stable_threshold_candidates.jsonl"
 
+GATED_DIR = Path("records/v0_6_3")
+GATED_METRICS_PATH = GATED_DIR / "confidence_gated_metrics.json"
+GATED_REPORT_PATH = GATED_DIR / "confidence_gated_report.md"
+GATED_CANDIDATES_PATH = GATED_DIR / "confidence_gated_candidates.jsonl"
+
 
 def run_darwinforge_toy(
     population_per_layer: int = 16,
@@ -293,4 +298,81 @@ def _threshold_report_markdown(metrics):
             "- This does not prove AGI, Transformer replacement, or hardware BPU implementation.",
         ]
     )
+    return "\n".join(lines) + "\n"
+
+
+def run_confidence_gated_branchchain_toy(
+    population_per_layer: int = 16,
+    generations: int = 60,
+    top_k_candidates: int = 3,
+    seed: int = 42,
+    compile_checks_per_generation: int = 0,
+):
+    GATED_DIR.mkdir(parents=True, exist_ok=True)
+    trainer = CurriculumDarwinForgeTrainer(
+        population_per_layer=population_per_layer,
+        generations=generations,
+        top_k_candidates=top_k_candidates,
+        seed=seed,
+        compile_checks_per_generation=compile_checks_per_generation,
+    )
+    metrics = trainer.train()
+    candidate_records = metrics.pop("candidate_records")
+    metrics["guarded_branchchain"] = trainer.population.guarded_config.to_dict()
+    GATED_METRICS_PATH.write_text(json.dumps(metrics, ensure_ascii=False, indent=2, sort_keys=True), encoding="utf-8")
+    GATED_REPORT_PATH.write_text(_confidence_gated_report_markdown(metrics), encoding="utf-8")
+    GATED_CANDIDATES_PATH.write_text(
+        "".join(json.dumps(record.to_dict(), ensure_ascii=False, sort_keys=True) + "\n" for record in candidate_records[-200:]),
+        encoding="utf-8",
+    )
+    metrics["report_path"] = str(GATED_REPORT_PATH)
+    metrics["candidates_path"] = str(GATED_CANDIDATES_PATH)
+    return metrics
+
+
+def _confidence_gated_report_markdown(metrics):
+    first = metrics["metrics_by_generation"][0]
+    final = metrics["metrics_by_generation"][-1]
+    best = metrics["hall_of_fame"]["best_metrics"]
+    thresholds = {
+        layer: config["continue_threshold"]
+        for layer, config in metrics["guarded_branchchain"]["layer_gate_configs"].items()
+    }
+    lines = [
+        "# v0.6.3 Confidence-Gated Guarded BranchChain（置信度守卫式带守卫分支链） Report",
+        "",
+        "support_gate（支持/拒绝门） remains for compatibility but is downgraded to an ordinary BranchChain（分支链） layer.",
+        "",
+        "## No-Confidence Rejection（无置信拒绝） Summary",
+        "",
+        f"- no_confidence_reject_count（无置信拒绝数）: {final['no_confidence_reject_count']}",
+        f"- correct_no_confidence_reject_count（正确无置信拒绝数）: {final['correct_no_confidence_reject_count']}",
+        f"- wrong_no_confidence_reject_count（错误无置信拒绝数）: {final['wrong_no_confidence_reject_count']}",
+        f"- typed_reject_count（类型化拒绝数）: {final['typed_reject_count']}",
+        f"- false_accept_unsupported_count（误接收不支持数）: {final['false_accept_unsupported_count']}",
+        f"- false_reject_supported_count（误拒支持数）: {final['false_reject_supported_count']}",
+        f"- rejected_by_layer_distribution（拒绝层分布）: {final['rejected_by_layer_distribution']}",
+        f"- continue_threshold by layer（分层继续阈值）: {thresholds}",
+        "",
+        "## Final vs Best（最终与历史最佳）",
+        "",
+        f"- generation 0 target_ir_exact_match（目标中间表示精确匹配）: {first['target_ir_exact_match_rate']}",
+        f"- final target_ir_exact_match（最终目标中间表示精确匹配）: {final['target_ir_exact_match_rate']}",
+        f"- best target_ir_exact_match（历史最佳目标中间表示精确匹配）: {best.get('target_ir_exact_match_rate')}",
+        f"- final missing_layer_rate（最终缺层率）: {final['missing_layer_rate']}",
+        "",
+        "## Per-Layer Gate Metrics（分层守卫指标）",
+        "",
+        f"- per_layer_reject_count（分层拒绝数）: {final['per_layer_reject_count']}",
+        f"- per_layer_continue_rate（分层继续率）: {final['per_layer_continue_rate']}",
+        f"- confidence_margin_by_layer（分层置信度间隔）: {final['confidence_margin_by_layer']}",
+        "",
+        "## Non-Claims（非主张）",
+        "",
+        "- This does not prove stable DarwinForge（达尔文进化炉） convergence.",
+        "- This does not prove general program synthesis.",
+        "- This does not train C source text.",
+        "- This does not patch old source code.",
+        "- This does not prove AGI, Transformer replacement, or hardware BPU implementation.",
+    ]
     return "\n".join(lines) + "\n"
