@@ -1,0 +1,22 @@
+{
+  "candidate_generation_success_rate": 1.0,
+  "dataset_path": "datasets\\v0_6_8\\jianmu_v0_6_8_all.jsonl",
+  "early_reject_short_path_rate": 0.35,
+  "eval_ood_false_accept_rate": 0.25,
+  "eval_ood_rejection_rate": 0.75,
+  "eval_seen_target_targetir_exact_match": 0.0,
+  "eval_unseen_target_targetir_exact_match": 0.575,
+  "language_target_unknown_count": 0,
+  "loaded_sample_count": 6000,
+  "paraphrase_group_consistency_sampled": 0.8765,
+  "runtime_seconds": 1.0742,
+  "sample_target_ir_exact_match": 0.4813,
+  "sampled_size": 800,
+  "sampled_split_counts": {
+    "eval_ood": 160,
+    "eval_seen_target_unseen_paraphrase": 160,
+    "eval_unseen_target": 160,
+    "train": 320
+  },
+  "true_missing_layer_rate": 0.0
+}

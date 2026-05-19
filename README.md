@@ -235,3 +235,12 @@ for toy/synthetic BranchChain（分支链） training. Each layer attempts to re
 perfect accuracy（完美准确率） before freezing. If a Downstream Layer（下游层） stalls,
 Upstream Layer（上游层） entries can be conditionally unfrozen（条件解冻） and jointly
 retrained. The 100% rule is only for toy/synthetic deterministic data（玩具/合成确定性数据）.
+
+## v0.6.8 Development Direction
+
+v0.6.8 introduces a Large Architecture-Aligned Dataset（大规模架构对齐数据集）
+and Scale Smoke Benchmark（规模化冒烟基准）. The dataset is generated locally
+and deterministically, expanding Chinese natural-language descriptions（中文自然语言描述）,
+Chinese technical mixed inputs（中文技术混合输入）, pure math expressions（纯数学表达）,
+Paraphrase Groups（复述组）, and OOD Evaluation（分布外评测） while avoiding English
+natural-language positive training samples（英语自然语言正样本）.

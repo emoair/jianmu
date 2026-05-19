@@ -1,0 +1,59 @@
+{
+  "actual_total": 6000,
+  "average_paraphrases_per_group": 6.8571,
+  "dataset_name": "JianMu v0.6.8 Large Architecture-Aligned Dataset（大规模架构对齐数据集）",
+  "expression_family_counts": {
+    "addition": 1421,
+    "exact_division": 501,
+    "mixed_precedence": 601,
+    "multiplication": 791,
+    "parentheses": 692,
+    "subtraction": 794
+  },
+  "input_mode_counts": {
+    "comparison_future": 300,
+    "explicit_c": 700,
+    "implicit_c": 700,
+    "math_expression": 700,
+    "ood_english": 300,
+    "ood_unrelated": 300,
+    "unsupported_arithmetic": 300,
+    "zh_natural": 700,
+    "zh_number_expression": 600,
+    "zh_technical_mixed": 1400
+  },
+  "language_target_distribution": {
+    "None": 300,
+    "explicit_C": 2100,
+    "implicit_C": 2000,
+    "math_expression_context": 1300,
+    "reject_unsupported_language": 300
+  },
+  "paraphrase_group_count": 700,
+  "quality": {
+    "duplicate_input_count": 0,
+    "errors": [],
+    "eval_seen_input_text_leakage_count": 0,
+    "language_target_unknown_count": 0,
+    "ood_english_supported_count": 0,
+    "train_eval_unseen_target_group_leakage": [],
+    "train_eval_unseen_target_group_leakage_count": 0,
+    "valid": true
+  },
+  "requested_size": 6000,
+  "seed": 42,
+  "split_counts": {
+    "eval_ood": 600,
+    "eval_seen_target_unseen_paraphrase": 600,
+    "eval_unseen_target": 600,
+    "train": 4200
+  },
+  "structure_policy_counts": {
+    "binary_operation": 2848,
+    "parenthesized_tree": 692,
+    "precedence_tree": 601,
+    "reduce_chain": 659
+  },
+  "supported_count": 4800,
+  "unsupported_count": 1200
+}
