@@ -1,0 +1,584 @@
+{
+  "after_all_metrics": {
+    "by_curriculum_stage": {
+      "numeral_grounding": {
+        "expected_output_match": 0.0,
+        "false_accept_unsupported_rate": 0.0,
+        "false_reject_supported_rate": 1.0,
+        "sample_count": 646,
+        "target_ir_exact_match": 0.0,
+        "unsupported_rejection_rate": 0.0
+      },
+      "ood": {
+        "expected_output_match": 0.0,
+        "false_accept_unsupported_rate": 0.0,
+        "false_reject_supported_rate": 0.0,
+        "sample_count": 200,
+        "target_ir_exact_match": 0.0,
+        "unsupported_rejection_rate": 1.0
+      },
+      "operator_grounding": {
+        "expected_output_match": 0.0,
+        "false_accept_unsupported_rate": 0.0,
+        "false_reject_supported_rate": 1.0,
+        "sample_count": 1076,
+        "target_ir_exact_match": 0.0,
+        "unsupported_rejection_rate": 0.0
+      },
+      "structure_grounding": {
+        "expected_output_match": 0.0,
+        "false_accept_unsupported_rate": 0.0,
+        "false_reject_supported_rate": 1.0,
+        "sample_count": 1078,
+        "target_ir_exact_match": 0.0,
+        "unsupported_rejection_rate": 0.0
+      }
+    },
+    "by_input_mode": {
+      "arabic_math_expression": {
+        "expected_output_match": 0.0,
+        "false_accept_unsupported_rate": 0.0,
+        "false_reject_supported_rate": 1.0,
+        "sample_count": 701,
+        "target_ir_exact_match": 0.0,
+        "unsupported_rejection_rate": 0.0
+      },
+      "mixed_zh_arabic": {
+        "expected_output_match": 0.0,
+        "false_accept_unsupported_rate": 0.0,
+        "false_reject_supported_rate": 1.0,
+        "sample_count": 699,
+        "target_ir_exact_match": 0.0,
+        "unsupported_rejection_rate": 0.0
+      },
+      "ood_english": {
+        "expected_output_match": 0.0,
+        "false_accept_unsupported_rate": 0.0,
+        "false_reject_supported_rate": 0.0,
+        "sample_count": 67,
+        "target_ir_exact_match": 0.0,
+        "unsupported_rejection_rate": 1.0
+      },
+      "ood_unrelated": {
+        "expected_output_match": 0.0,
+        "false_accept_unsupported_rate": 0.0,
+        "false_reject_supported_rate": 0.0,
+        "sample_count": 67,
+        "target_ir_exact_match": 0.0,
+        "unsupported_rejection_rate": 1.0
+      },
+      "paired_zh_natural": {
+        "expected_output_match": 0.0,
+        "false_accept_unsupported_rate": 0.0,
+        "false_reject_supported_rate": 1.0,
+        "sample_count": 699,
+        "target_ir_exact_match": 0.0,
+        "unsupported_rejection_rate": 0.0
+      },
+      "unsupported_arithmetic": {
+        "expected_output_match": 0.0,
+        "false_accept_unsupported_rate": 0.0,
+        "false_reject_supported_rate": 0.0,
+        "sample_count": 66,
+        "target_ir_exact_match": 0.0,
+        "unsupported_rejection_rate": 1.0
+      },
+      "zh_number_expression": {
+        "expected_output_match": 0.0,
+        "false_accept_unsupported_rate": 0.0,
+        "false_reject_supported_rate": 1.0,
+        "sample_count": 701,
+        "target_ir_exact_match": 0.0,
+        "unsupported_rejection_rate": 0.0
+      }
+    },
+    "overall": {
+      "expected_output_match": 0.0,
+      "false_accept_unsupported_rate": 0.0,
+      "false_reject_supported_rate": 1.0,
+      "sample_count": 3000,
+      "target_ir_exact_match": 0.0,
+      "unsupported_rejection_rate": 1.0
+    },
+    "symbol_metrics": {
+      "numeral_slot_accuracy": 0.0,
+      "operator_slot_accuracy": 0.0,
+      "paired_arabic_zh_agreement": 0.0,
+      "paired_group_targetir_consistency": 0.0,
+      "symbol_slot_accuracy": 0.0,
+      "zh_number_expression_false_reject_rate": 1.0,
+      "zh_number_targetir_exact_match": 0.0,
+      "zh_number_task_scope_continue_rate": 0.0
+    }
+  },
+  "after_eval_metrics": {
+    "by_curriculum_stage": {
+      "structure_grounding": {
+        "expected_output_match": 0.0,
+        "false_accept_unsupported_rate": 0.0,
+        "false_reject_supported_rate": 1.0,
+        "sample_count": 600,
+        "target_ir_exact_match": 0.0,
+        "unsupported_rejection_rate": 0.0
+      }
+    },
+    "by_input_mode": {
+      "arabic_math_expression": {
+        "expected_output_match": 0.0,
+        "false_accept_unsupported_rate": 0.0,
+        "false_reject_supported_rate": 1.0,
+        "sample_count": 150,
+        "target_ir_exact_match": 0.0,
+        "unsupported_rejection_rate": 0.0
+      },
+      "mixed_zh_arabic": {
+        "expected_output_match": 0.0,
+        "false_accept_unsupported_rate": 0.0,
+        "false_reject_supported_rate": 1.0,
+        "sample_count": 150,
+        "target_ir_exact_match": 0.0,
+        "unsupported_rejection_rate": 0.0
+      },
+      "paired_zh_natural": {
+        "expected_output_match": 0.0,
+        "false_accept_unsupported_rate": 0.0,
+        "false_reject_supported_rate": 1.0,
+        "sample_count": 150,
+        "target_ir_exact_match": 0.0,
+        "unsupported_rejection_rate": 0.0
+      },
+      "zh_number_expression": {
+        "expected_output_match": 0.0,
+        "false_accept_unsupported_rate": 0.0,
+        "false_reject_supported_rate": 1.0,
+        "sample_count": 150,
+        "target_ir_exact_match": 0.0,
+        "unsupported_rejection_rate": 0.0
+      }
+    },
+    "overall": {
+      "expected_output_match": 0.0,
+      "false_accept_unsupported_rate": 0.0,
+      "false_reject_supported_rate": 1.0,
+      "sample_count": 600,
+      "target_ir_exact_match": 0.0,
+      "unsupported_rejection_rate": 0.0
+    },
+    "symbol_metrics": {
+      "numeral_slot_accuracy": 0.0,
+      "operator_slot_accuracy": 0.0,
+      "paired_arabic_zh_agreement": 0.0,
+      "paired_group_targetir_consistency": 0.0,
+      "symbol_slot_accuracy": 0.0,
+      "zh_number_expression_false_reject_rate": 1.0,
+      "zh_number_targetir_exact_match": 0.0,
+      "zh_number_task_scope_continue_rate": 0.0
+    }
+  },
+  "after_ood_metrics": {
+    "by_curriculum_stage": {
+      "ood": {
+        "expected_output_match": 0.0,
+        "false_accept_unsupported_rate": 0.0,
+        "false_reject_supported_rate": 0.0,
+        "sample_count": 200,
+        "target_ir_exact_match": 0.0,
+        "unsupported_rejection_rate": 1.0
+      }
+    },
+    "by_input_mode": {
+      "ood_english": {
+        "expected_output_match": 0.0,
+        "false_accept_unsupported_rate": 0.0,
+        "false_reject_supported_rate": 0.0,
+        "sample_count": 67,
+        "target_ir_exact_match": 0.0,
+        "unsupported_rejection_rate": 1.0
+      },
+      "ood_unrelated": {
+        "expected_output_match": 0.0,
+        "false_accept_unsupported_rate": 0.0,
+        "false_reject_supported_rate": 0.0,
+        "sample_count": 67,
+        "target_ir_exact_match": 0.0,
+        "unsupported_rejection_rate": 1.0
+      },
+      "unsupported_arithmetic": {
+        "expected_output_match": 0.0,
+        "false_accept_unsupported_rate": 0.0,
+        "false_reject_supported_rate": 0.0,
+        "sample_count": 66,
+        "target_ir_exact_match": 0.0,
+        "unsupported_rejection_rate": 1.0
+      }
+    },
+    "overall": {
+      "expected_output_match": 0.0,
+      "false_accept_unsupported_rate": 0.0,
+      "false_reject_supported_rate": 0.0,
+      "sample_count": 200,
+      "target_ir_exact_match": 0.0,
+      "unsupported_rejection_rate": 1.0
+    },
+    "symbol_metrics": {
+      "numeral_slot_accuracy": 0.0,
+      "operator_slot_accuracy": 0.0,
+      "paired_arabic_zh_agreement": 0.0,
+      "paired_group_targetir_consistency": 0.0,
+      "symbol_slot_accuracy": 0.0,
+      "zh_number_expression_false_reject_rate": 0.0,
+      "zh_number_targetir_exact_match": 0.0,
+      "zh_number_task_scope_continue_rate": 0.0
+    }
+  },
+  "after_train_metrics": {
+    "by_curriculum_stage": {
+      "numeral_grounding": {
+        "expected_output_match": 0.0,
+        "false_accept_unsupported_rate": 0.0,
+        "false_reject_supported_rate": 1.0,
+        "sample_count": 646,
+        "target_ir_exact_match": 0.0,
+        "unsupported_rejection_rate": 0.0
+      },
+      "operator_grounding": {
+        "expected_output_match": 0.0,
+        "false_accept_unsupported_rate": 0.0,
+        "false_reject_supported_rate": 1.0,
+        "sample_count": 1076,
+        "target_ir_exact_match": 0.0,
+        "unsupported_rejection_rate": 0.0
+      },
+      "structure_grounding": {
+        "expected_output_match": 0.0,
+        "false_accept_unsupported_rate": 0.0,
+        "false_reject_supported_rate": 1.0,
+        "sample_count": 478,
+        "target_ir_exact_match": 0.0,
+        "unsupported_rejection_rate": 0.0
+      }
+    },
+    "by_input_mode": {
+      "arabic_math_expression": {
+        "expected_output_match": 0.0,
+        "false_accept_unsupported_rate": 0.0,
+        "false_reject_supported_rate": 1.0,
+        "sample_count": 551,
+        "target_ir_exact_match": 0.0,
+        "unsupported_rejection_rate": 0.0
+      },
+      "mixed_zh_arabic": {
+        "expected_output_match": 0.0,
+        "false_accept_unsupported_rate": 0.0,
+        "false_reject_supported_rate": 1.0,
+        "sample_count": 549,
+        "target_ir_exact_match": 0.0,
+        "unsupported_rejection_rate": 0.0
+      },
+      "paired_zh_natural": {
+        "expected_output_match": 0.0,
+        "false_accept_unsupported_rate": 0.0,
+        "false_reject_supported_rate": 1.0,
+        "sample_count": 549,
+        "target_ir_exact_match": 0.0,
+        "unsupported_rejection_rate": 0.0
+      },
+      "zh_number_expression": {
+        "expected_output_match": 0.0,
+        "false_accept_unsupported_rate": 0.0,
+        "false_reject_supported_rate": 1.0,
+        "sample_count": 551,
+        "target_ir_exact_match": 0.0,
+        "unsupported_rejection_rate": 0.0
+      }
+    },
+    "overall": {
+      "expected_output_match": 0.0,
+      "false_accept_unsupported_rate": 0.0,
+      "false_reject_supported_rate": 1.0,
+      "sample_count": 2200,
+      "target_ir_exact_match": 0.0,
+      "unsupported_rejection_rate": 0.0
+    },
+    "symbol_metrics": {
+      "numeral_slot_accuracy": 0.0,
+      "operator_slot_accuracy": 0.0,
+      "paired_arabic_zh_agreement": 0.0,
+      "paired_group_targetir_consistency": 0.0,
+      "symbol_slot_accuracy": 0.0,
+      "zh_number_expression_false_reject_rate": 1.0,
+      "zh_number_targetir_exact_match": 0.0,
+      "zh_number_task_scope_continue_rate": 0.0
+    }
+  },
+  "before_metrics": {
+    "by_curriculum_stage": {
+      "ood": {
+        "expected_output_match": 0.0,
+        "false_accept_unsupported_rate": 0.33,
+        "false_reject_supported_rate": 0.0,
+        "sample_count": 200,
+        "target_ir_exact_match": 0.0,
+        "unsupported_rejection_rate": 0.67
+      },
+      "structure_grounding": {
+        "expected_output_match": 0.0483,
+        "false_accept_unsupported_rate": 0.0,
+        "false_reject_supported_rate": 0.5017,
+        "sample_count": 600,
+        "target_ir_exact_match": 0.0483,
+        "unsupported_rejection_rate": 0.0
+      }
+    },
+    "by_input_mode": {
+      "arabic_math_expression": {
+        "expected_output_match": 0.1933,
+        "false_accept_unsupported_rate": 0.0,
+        "false_reject_supported_rate": 0.24,
+        "sample_count": 150,
+        "target_ir_exact_match": 0.1933,
+        "unsupported_rejection_rate": 0.0
+      },
+      "mixed_zh_arabic": {
+        "expected_output_match": 0.0,
+        "false_accept_unsupported_rate": 0.0,
+        "false_reject_supported_rate": 0.0,
+        "sample_count": 150,
+        "target_ir_exact_match": 0.0,
+        "unsupported_rejection_rate": 0.0
+      },
+      "ood_english": {
+        "expected_output_match": 0.0,
+        "false_accept_unsupported_rate": 0.0,
+        "false_reject_supported_rate": 0.0,
+        "sample_count": 67,
+        "target_ir_exact_match": 0.0,
+        "unsupported_rejection_rate": 1.0
+      },
+      "ood_unrelated": {
+        "expected_output_match": 0.0,
+        "false_accept_unsupported_rate": 0.0,
+        "false_reject_supported_rate": 0.0,
+        "sample_count": 67,
+        "target_ir_exact_match": 0.0,
+        "unsupported_rejection_rate": 1.0
+      },
+      "paired_zh_natural": {
+        "expected_output_match": 0.0,
+        "false_accept_unsupported_rate": 0.0,
+        "false_reject_supported_rate": 0.7667,
+        "sample_count": 150,
+        "target_ir_exact_match": 0.0,
+        "unsupported_rejection_rate": 0.0
+      },
+      "unsupported_arithmetic": {
+        "expected_output_match": 0.0,
+        "false_accept_unsupported_rate": 1.0,
+        "false_reject_supported_rate": 0.0,
+        "sample_count": 66,
+        "target_ir_exact_match": 0.0,
+        "unsupported_rejection_rate": 0.0
+      },
+      "zh_number_expression": {
+        "expected_output_match": 0.0,
+        "false_accept_unsupported_rate": 0.0,
+        "false_reject_supported_rate": 1.0,
+        "sample_count": 150,
+        "target_ir_exact_match": 0.0,
+        "unsupported_rejection_rate": 0.0
+      }
+    },
+    "overall": {
+      "expected_output_match": 0.0483,
+      "false_accept_unsupported_rate": 0.33,
+      "false_reject_supported_rate": 0.5017,
+      "sample_count": 800,
+      "target_ir_exact_match": 0.0483,
+      "unsupported_rejection_rate": 0.67
+    },
+    "symbol_metrics": {
+      "numeral_slot_accuracy": 0.0,
+      "operator_slot_accuracy": 0.1136,
+      "paired_arabic_zh_agreement": 0.0,
+      "paired_group_targetir_consistency": 1.0,
+      "symbol_slot_accuracy": 0.0525,
+      "zh_number_expression_false_reject_rate": 1.0,
+      "zh_number_targetir_exact_match": 0.0,
+      "zh_number_task_scope_continue_rate": 1.0
+    }
+  },
+  "config": {
+    "generations": 20,
+    "mode": "medium",
+    "population_per_layer": 32,
+    "seed": 42,
+    "top_k": 5,
+    "train_limit": 2200
+  },
+  "curve": [
+    {
+      "false_reject_supported_count": 433,
+      "generation": 0,
+      "record_count": 2002,
+      "sample_count": 646,
+      "stage": "numeral_grounding",
+      "target_ir_exact_match": 0.0
+    },
+    {
+      "false_reject_supported_count": 646,
+      "generation": 1,
+      "record_count": 646,
+      "sample_count": 646,
+      "stage": "numeral_grounding",
+      "target_ir_exact_match": 0.0
+    },
+    {
+      "false_reject_supported_count": 646,
+      "generation": 2,
+      "record_count": 646,
+      "sample_count": 646,
+      "stage": "numeral_grounding",
+      "target_ir_exact_match": 0.0
+    },
+    {
+      "false_reject_supported_count": 646,
+      "generation": 3,
+      "record_count": 646,
+      "sample_count": 646,
+      "stage": "numeral_grounding",
+      "target_ir_exact_match": 0.0
+    },
+    {
+      "false_reject_supported_count": 646,
+      "generation": 4,
+      "record_count": 646,
+      "sample_count": 646,
+      "stage": "numeral_grounding",
+      "target_ir_exact_match": 0.0
+    },
+    {
+      "false_reject_supported_count": 1076,
+      "generation": 5,
+      "record_count": 1076,
+      "sample_count": 1076,
+      "stage": "operator_grounding",
+      "target_ir_exact_match": 0.0
+    },
+    {
+      "false_reject_supported_count": 1076,
+      "generation": 6,
+      "record_count": 1076,
+      "sample_count": 1076,
+      "stage": "operator_grounding",
+      "target_ir_exact_match": 0.0
+    },
+    {
+      "false_reject_supported_count": 1076,
+      "generation": 7,
+      "record_count": 1076,
+      "sample_count": 1076,
+      "stage": "operator_grounding",
+      "target_ir_exact_match": 0.0
+    },
+    {
+      "false_reject_supported_count": 1076,
+      "generation": 8,
+      "record_count": 1076,
+      "sample_count": 1076,
+      "stage": "operator_grounding",
+      "target_ir_exact_match": 0.0
+    },
+    {
+      "false_reject_supported_count": 1076,
+      "generation": 9,
+      "record_count": 1076,
+      "sample_count": 1076,
+      "stage": "operator_grounding",
+      "target_ir_exact_match": 0.0
+    },
+    {
+      "false_reject_supported_count": 478,
+      "generation": 10,
+      "record_count": 478,
+      "sample_count": 478,
+      "stage": "structure_grounding",
+      "target_ir_exact_match": 0.0
+    },
+    {
+      "false_reject_supported_count": 478,
+      "generation": 11,
+      "record_count": 478,
+      "sample_count": 478,
+      "stage": "structure_grounding",
+      "target_ir_exact_match": 0.0
+    },
+    {
+      "false_reject_supported_count": 478,
+      "generation": 12,
+      "record_count": 478,
+      "sample_count": 478,
+      "stage": "structure_grounding",
+      "target_ir_exact_match": 0.0
+    },
+    {
+      "false_reject_supported_count": 478,
+      "generation": 13,
+      "record_count": 478,
+      "sample_count": 478,
+      "stage": "structure_grounding",
+      "target_ir_exact_match": 0.0
+    },
+    {
+      "false_reject_supported_count": 478,
+      "generation": 14,
+      "record_count": 478,
+      "sample_count": 478,
+      "stage": "structure_grounding",
+      "target_ir_exact_match": 0.0
+    },
+    {
+      "false_reject_supported_count": 2200,
+      "generation": 15,
+      "record_count": 2200,
+      "sample_count": 2200,
+      "stage": "mixed_replay",
+      "target_ir_exact_match": 0.0
+    },
+    {
+      "false_reject_supported_count": 2200,
+      "generation": 16,
+      "record_count": 2200,
+      "sample_count": 2200,
+      "stage": "mixed_replay",
+      "target_ir_exact_match": 0.0
+    },
+    {
+      "false_reject_supported_count": 2200,
+      "generation": 17,
+      "record_count": 2200,
+      "sample_count": 2200,
+      "stage": "mixed_replay",
+      "target_ir_exact_match": 0.0
+    },
+    {
+      "false_reject_supported_count": 2200,
+      "generation": 18,
+      "record_count": 2200,
+      "sample_count": 2200,
+      "stage": "mixed_replay",
+      "target_ir_exact_match": 0.0
+    },
+    {
+      "false_reject_supported_count": 2200,
+      "generation": 19,
+      "record_count": 2200,
+      "sample_count": 2200,
+      "stage": "mixed_replay",
+      "target_ir_exact_match": 0.0
+    }
+  ],
+  "eval_sample_count": 600,
+  "ood_sample_count": 200,
+  "runtime_seconds": 19.7954,
+  "train_sample_count": 2200
+}

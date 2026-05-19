@@ -253,3 +253,11 @@ It scales population_per_layer（每层种群数量）, top_k_candidates（候�
 and generations（训练代数）, then reports Full-Split Evaluation（全切分评测）
 and Stratified Evaluation（分层评测） by input mode（输入模式）, expression
 family（表达式族）, and OOD behavior（分布外行为）.
+
+## v0.7.0 Development Direction
+
+v0.7.0 begins Symbol Grounding Curriculum（符号接地课程）. It studies whether
+BranchChain（分支链） and AtomicSynthesis（原子结构合成） can learn Chinese numeral
+symbols（中文数字符号） and operator words（运算词） from paired paraphrase
+groups（成对复述组） and TargetIR（目标中间表示） feedback, without hardcoding Chinese
+numeral parsing（中文数字解析） or operator mapping（运算符映射） into inference.

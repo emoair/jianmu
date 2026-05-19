@@ -10,8 +10,8 @@ LAYER_DEFINITIONS = [
     ("language_target", ["C", "unknown", "explicit_C", "implicit_C", "math_expression_context", "reject_unsupported_language"]),
     ("semantic_domain", ["arithmetic", "comparison_future", "unsupported"]),
     ("support_gate", ["supported", "unsupported"]),
-    ("arithmetic_family", ["addition", "subtraction", "multiplication", "exact_division", "mixed_precedence", "parentheses", "unsupported"]),
-    ("structure_policy", ["binary_operation", "reduce_chain", "precedence_tree", "parenthesized_tree", "unsupported"]),
+    ("arithmetic_family", ["literal_only", "addition", "subtraction", "multiplication", "exact_division", "mixed_precedence", "parentheses", "unsupported"]),
+    ("structure_policy", ["literal_value", "binary_operation", "reduce_chain", "precedence_tree", "parenthesized_tree", "unsupported"]),
     ("slot_binding_policy", ["surface_number_order", "chinese_number_order", "signed_number_order", "previous_targetir_delta", "unsupported"]),
     ("target_builder", ["canonical_arithmetic_targetir", "canonical_program_targetir", "early_exit"]),
 ]

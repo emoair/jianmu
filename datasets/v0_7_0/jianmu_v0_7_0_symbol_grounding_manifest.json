@@ -1,0 +1,33 @@
+{
+  "actual_total": 3000,
+  "curriculum_stage_counts": {
+    "numeral_grounding": 646,
+    "ood": 200,
+    "operator_grounding": 1076,
+    "structure_grounding": 1078
+  },
+  "dataset_name": "JianMu v0.7.0 Symbol Grounding Curriculum（符号接地课程）",
+  "input_mode_counts": {
+    "arabic_math_expression": 701,
+    "mixed_zh_arabic": 699,
+    "ood_english": 67,
+    "ood_unrelated": 67,
+    "paired_zh_natural": 699,
+    "unsupported_arithmetic": 66,
+    "zh_number_expression": 701
+  },
+  "paired_group_count": 634,
+  "quality": {
+    "duplicate_input_count": 0,
+    "paired_groups_with_arabic_and_zh": 634
+  },
+  "requested_size": 3000,
+  "seed": 42,
+  "split_counts": {
+    "eval": 600,
+    "ood": 200,
+    "train": 2200
+  },
+  "supported_count": 2800,
+  "unsupported_count": 200
+}
