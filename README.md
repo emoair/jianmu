@@ -174,3 +174,10 @@ v0.5.9 introduces a BranchChain Training Charter and a toy branch-chain training
 scaffold. It corrects the direction from flat label classification toward
 layered branch decisions, path-level reward, and Canonical TargetIR
 regeneration. This is a development experiment, not a v0.5 release claim.
+
+## v0.6 Development Direction
+
+v0.6 development introduces a minimal DarwinForge scaffold that connects
+BranchChain candidate generation, AtomicSynthesis TargetIR construction,
+compiler-backed validation, and path-level evolutionary fitness. It is a
+development experiment and not a v0.5 release claim.

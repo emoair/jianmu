@@ -1,0 +1,1736 @@
+{
+  "compile_checks_per_generation": 8,
+  "dataset_size": 20,
+  "generations": 30,
+  "hard_case_count": 122,
+  "metrics_by_generation": [
+    {
+      "best_fitness": 8.2,
+      "branch_path_exact_match_rate": 0.35,
+      "checked_compile_success_rate": 1.0,
+      "checked_run_success_rate": 1.0,
+      "expected_output_match_rate": 0.5,
+      "generation": 0,
+      "mean_fitness": 4.3217,
+      "missing_layer_rate": 0.25,
+      "most_common_wrong_branch_decisions": [
+        [
+          "support_gate:unsupported -> <missing>",
+          5
+        ],
+        [
+          "slot_binding_policy:chinese_number_order -> surface_number_order",
+          2
+        ],
+        [
+          "arithmetic_family:mixed_precedence -> multiplication",
+          2
+        ],
+        [
+          "structure_policy:precedence_tree -> binary_operation",
+          2
+        ],
+        [
+          "task_scope:programming -> unsupported",
+          2
+        ],
+        [
+          "arithmetic_family:addition -> subtraction",
+          1
+        ],
+        [
+          "language_target:unknown -> <missing>",
+          1
+        ],
+        [
+          "semantic_domain:arithmetic -> <missing>",
+          1
+        ],
+        [
+          "support_gate:supported -> <missing>",
+          1
+        ],
+        [
+          "arithmetic_family:subtraction -> <missing>",
+          1
+        ]
+      ],
+      "target_ir_exact_match_rate": 0.5,
+      "unsupported_correct_rate": 1.0
+    },
+    {
+      "best_fitness": 8.2,
+      "branch_path_exact_match_rate": 0.15,
+      "checked_compile_success_rate": 1.0,
+      "checked_run_success_rate": 1.0,
+      "expected_output_match_rate": 0.55,
+      "generation": 1,
+      "mean_fitness": 4.3417,
+      "missing_layer_rate": 0.2,
+      "most_common_wrong_branch_decisions": [
+        [
+          "language_target:unknown -> C",
+          7
+        ],
+        [
+          "slot_binding_policy:chinese_number_order -> surface_number_order",
+          3
+        ],
+        [
+          "support_gate:unsupported -> <missing>",
+          3
+        ],
+        [
+          "arithmetic_family:mixed_precedence -> addition",
+          2
+        ],
+        [
+          "structure_policy:precedence_tree -> binary_operation",
+          2
+        ],
+        [
+          "arithmetic_family:parentheses -> addition",
+          2
+        ],
+        [
+          "slot_binding_policy:signed_number_order -> surface_number_order",
+          2
+        ],
+        [
+          "support_gate:unsupported -> supported",
+          2
+        ],
+        [
+          "language_target:unknown -> <missing>",
+          1
+        ],
+        [
+          "semantic_domain:arithmetic -> <missing>",
+          1
+        ]
+      ],
+      "target_ir_exact_match_rate": 0.55,
+      "unsupported_correct_rate": 1.0
+    },
+    {
+      "best_fitness": 8.2,
+      "branch_path_exact_match_rate": 0.2,
+      "checked_compile_success_rate": 1.0,
+      "checked_run_success_rate": 1.0,
+      "expected_output_match_rate": 0.55,
+      "generation": 2,
+      "mean_fitness": 4.1067,
+      "missing_layer_rate": 0.25,
+      "most_common_wrong_branch_decisions": [
+        [
+          "language_target:unknown -> C",
+          7
+        ],
+        [
+          "support_gate:unsupported -> <missing>",
+          4
+        ],
+        [
+          "slot_binding_policy:chinese_number_order -> surface_number_order",
+          2
+        ],
+        [
+          "arithmetic_family:mixed_precedence -> multiplication",
+          2
+        ],
+        [
+          "structure_policy:precedence_tree -> binary_operation",
+          2
+        ],
+        [
+          "slot_binding_policy:signed_number_order -> surface_number_order",
+          2
+        ],
+        [
+          "language_target:unknown -> <missing>",
+          1
+        ],
+        [
+          "semantic_domain:arithmetic -> <missing>",
+          1
+        ],
+        [
+          "support_gate:supported -> <missing>",
+          1
+        ],
+        [
+          "arithmetic_family:subtraction -> <missing>",
+          1
+        ]
+      ],
+      "target_ir_exact_match_rate": 0.55,
+      "unsupported_correct_rate": 0.8
+    },
+    {
+      "best_fitness": 8.2,
+      "branch_path_exact_match_rate": 0.25,
+      "checked_compile_success_rate": 1.0,
+      "checked_run_success_rate": 1.0,
+      "expected_output_match_rate": 0.6,
+      "generation": 3,
+      "mean_fitness": 4.5417,
+      "missing_layer_rate": 0.15,
+      "most_common_wrong_branch_decisions": [
+        [
+          "language_target:unknown -> C",
+          6
+        ],
+        [
+          "support_gate:unsupported -> <missing>",
+          4
+        ],
+        [
+          "slot_binding_policy:signed_number_order -> surface_number_order",
+          3
+        ],
+        [
+          "slot_binding_policy:chinese_number_order -> surface_number_order",
+          2
+        ],
+        [
+          "arithmetic_family:mixed_precedence -> multiplication",
+          2
+        ],
+        [
+          "structure_policy:precedence_tree -> binary_operation",
+          2
+        ],
+        [
+          "task_scope:programming -> unsupported",
+          2
+        ],
+        [
+          "support_gate:unsupported -> supported",
+          1
+        ],
+        [
+          "task_scope:non_programming -> programming",
+          1
+        ]
+      ],
+      "target_ir_exact_match_rate": 0.6,
+      "unsupported_correct_rate": 0.8
+    },
+    {
+      "best_fitness": 8.2,
+      "branch_path_exact_match_rate": 0.2,
+      "checked_compile_success_rate": 1.0,
+      "checked_run_success_rate": 1.0,
+      "expected_output_match_rate": 0.6,
+      "generation": 4,
+      "mean_fitness": 4.4417,
+      "missing_layer_rate": 0.15,
+      "most_common_wrong_branch_decisions": [
+        [
+          "language_target:unknown -> C",
+          8
+        ],
+        [
+          "support_gate:unsupported -> <missing>",
+          4
+        ],
+        [
+          "slot_binding_policy:signed_number_order -> surface_number_order",
+          3
+        ],
+        [
+          "slot_binding_policy:chinese_number_order -> surface_number_order",
+          2
+        ],
+        [
+          "arithmetic_family:mixed_precedence -> multiplication",
+          2
+        ],
+        [
+          "structure_policy:precedence_tree -> binary_operation",
+          2
+        ],
+        [
+          "task_scope:programming -> unsupported",
+          2
+        ],
+        [
+          "arithmetic_family:addition -> subtraction",
+          1
+        ],
+        [
+          "arithmetic_family:addition -> exact_division",
+          1
+        ],
+        [
+          "support_gate:unsupported -> supported",
+          1
+        ]
+      ],
+      "target_ir_exact_match_rate": 0.6,
+      "unsupported_correct_rate": 0.8
+    },
+    {
+      "best_fitness": 8.2,
+      "branch_path_exact_match_rate": 0.2,
+      "checked_compile_success_rate": 1.0,
+      "checked_run_success_rate": 1.0,
+      "expected_output_match_rate": 0.6,
+      "generation": 5,
+      "mean_fitness": 4.5567,
+      "missing_layer_rate": 0.2,
+      "most_common_wrong_branch_decisions": [
+        [
+          "language_target:unknown -> C",
+          8
+        ],
+        [
+          "support_gate:unsupported -> <missing>",
+          4
+        ],
+        [
+          "slot_binding_policy:signed_number_order -> surface_number_order",
+          3
+        ],
+        [
+          "slot_binding_policy:chinese_number_order -> surface_number_order",
+          2
+        ],
+        [
+          "arithmetic_family:mixed_precedence -> multiplication",
+          2
+        ],
+        [
+          "structure_policy:precedence_tree -> binary_operation",
+          2
+        ],
+        [
+          "task_scope:programming -> unsupported",
+          2
+        ],
+        [
+          "arithmetic_family:addition -> subtraction",
+          1
+        ],
+        [
+          "arithmetic_family:addition -> exact_division",
+          1
+        ],
+        [
+          "support_gate:unsupported -> supported",
+          1
+        ]
+      ],
+      "target_ir_exact_match_rate": 0.6,
+      "unsupported_correct_rate": 0.8
+    },
+    {
+      "best_fitness": 8.2,
+      "branch_path_exact_match_rate": 0.2,
+      "checked_compile_success_rate": 1.0,
+      "checked_run_success_rate": 1.0,
+      "expected_output_match_rate": 0.6,
+      "generation": 6,
+      "mean_fitness": 4.8167,
+      "missing_layer_rate": 0.2,
+      "most_common_wrong_branch_decisions": [
+        [
+          "language_target:unknown -> C",
+          8
+        ],
+        [
+          "support_gate:unsupported -> <missing>",
+          4
+        ],
+        [
+          "slot_binding_policy:signed_number_order -> surface_number_order",
+          3
+        ],
+        [
+          "slot_binding_policy:chinese_number_order -> surface_number_order",
+          2
+        ],
+        [
+          "arithmetic_family:mixed_precedence -> multiplication",
+          2
+        ],
+        [
+          "structure_policy:precedence_tree -> binary_operation",
+          2
+        ],
+        [
+          "task_scope:programming -> unsupported",
+          2
+        ],
+        [
+          "arithmetic_family:addition -> subtraction",
+          1
+        ],
+        [
+          "arithmetic_family:addition -> exact_division",
+          1
+        ],
+        [
+          "support_gate:unsupported -> supported",
+          1
+        ]
+      ],
+      "target_ir_exact_match_rate": 0.6,
+      "unsupported_correct_rate": 1.0
+    },
+    {
+      "best_fitness": 8.2,
+      "branch_path_exact_match_rate": 0.2,
+      "checked_compile_success_rate": 1.0,
+      "checked_run_success_rate": 1.0,
+      "expected_output_match_rate": 0.6,
+      "generation": 7,
+      "mean_fitness": 4.8217,
+      "missing_layer_rate": 0.2,
+      "most_common_wrong_branch_decisions": [
+        [
+          "language_target:unknown -> C",
+          8
+        ],
+        [
+          "support_gate:unsupported -> <missing>",
+          4
+        ],
+        [
+          "slot_binding_policy:signed_number_order -> surface_number_order",
+          3
+        ],
+        [
+          "slot_binding_policy:chinese_number_order -> surface_number_order",
+          2
+        ],
+        [
+          "arithmetic_family:mixed_precedence -> multiplication",
+          2
+        ],
+        [
+          "structure_policy:precedence_tree -> binary_operation",
+          2
+        ],
+        [
+          "task_scope:programming -> unsupported",
+          2
+        ],
+        [
+          "arithmetic_family:addition -> subtraction",
+          1
+        ],
+        [
+          "support_gate:unsupported -> supported",
+          1
+        ],
+        [
+          "task_scope:non_programming -> unsupported",
+          1
+        ]
+      ],
+      "target_ir_exact_match_rate": 0.6,
+      "unsupported_correct_rate": 1.0
+    },
+    {
+      "best_fitness": 8.2,
+      "branch_path_exact_match_rate": 0.2,
+      "checked_compile_success_rate": 1.0,
+      "checked_run_success_rate": 1.0,
+      "expected_output_match_rate": 0.6,
+      "generation": 8,
+      "mean_fitness": 4.5567,
+      "missing_layer_rate": 0.2,
+      "most_common_wrong_branch_decisions": [
+        [
+          "language_target:unknown -> C",
+          8
+        ],
+        [
+          "support_gate:unsupported -> <missing>",
+          4
+        ],
+        [
+          "slot_binding_policy:signed_number_order -> surface_number_order",
+          3
+        ],
+        [
+          "slot_binding_policy:chinese_number_order -> surface_number_order",
+          2
+        ],
+        [
+          "arithmetic_family:mixed_precedence -> multiplication",
+          2
+        ],
+        [
+          "structure_policy:precedence_tree -> binary_operation",
+          2
+        ],
+        [
+          "task_scope:programming -> unsupported",
+          2
+        ],
+        [
+          "arithmetic_family:addition -> subtraction",
+          1
+        ],
+        [
+          "arithmetic_family:addition -> exact_division",
+          1
+        ],
+        [
+          "support_gate:unsupported -> supported",
+          1
+        ]
+      ],
+      "target_ir_exact_match_rate": 0.6,
+      "unsupported_correct_rate": 0.8
+    },
+    {
+      "best_fitness": 8.2,
+      "branch_path_exact_match_rate": 0.2,
+      "checked_compile_success_rate": 1.0,
+      "checked_run_success_rate": 1.0,
+      "expected_output_match_rate": 0.6,
+      "generation": 9,
+      "mean_fitness": 4.4567,
+      "missing_layer_rate": 0.2,
+      "most_common_wrong_branch_decisions": [
+        [
+          "language_target:unknown -> C",
+          8
+        ],
+        [
+          "support_gate:unsupported -> <missing>",
+          4
+        ],
+        [
+          "slot_binding_policy:signed_number_order -> surface_number_order",
+          3
+        ],
+        [
+          "slot_binding_policy:chinese_number_order -> surface_number_order",
+          2
+        ],
+        [
+          "arithmetic_family:mixed_precedence -> multiplication",
+          2
+        ],
+        [
+          "structure_policy:precedence_tree -> binary_operation",
+          2
+        ],
+        [
+          "task_scope:programming -> unsupported",
+          2
+        ],
+        [
+          "arithmetic_family:addition -> subtraction",
+          1
+        ],
+        [
+          "arithmetic_family:addition -> exact_division",
+          1
+        ],
+        [
+          "support_gate:unsupported -> supported",
+          1
+        ]
+      ],
+      "target_ir_exact_match_rate": 0.6,
+      "unsupported_correct_rate": 0.8
+    },
+    {
+      "best_fitness": 8.2,
+      "branch_path_exact_match_rate": 0.2,
+      "checked_compile_success_rate": 1.0,
+      "checked_run_success_rate": 1.0,
+      "expected_output_match_rate": 0.55,
+      "generation": 10,
+      "mean_fitness": 3.9967,
+      "missing_layer_rate": 0.2,
+      "most_common_wrong_branch_decisions": [
+        [
+          "language_target:unknown -> C",
+          8
+        ],
+        [
+          "support_gate:unsupported -> <missing>",
+          4
+        ],
+        [
+          "slot_binding_policy:signed_number_order -> surface_number_order",
+          3
+        ],
+        [
+          "slot_binding_policy:chinese_number_order -> surface_number_order",
+          2
+        ],
+        [
+          "arithmetic_family:mixed_precedence -> multiplication",
+          2
+        ],
+        [
+          "structure_policy:precedence_tree -> binary_operation",
+          2
+        ],
+        [
+          "task_scope:programming -> unsupported",
+          2
+        ],
+        [
+          "arithmetic_family:addition -> subtraction",
+          1
+        ],
+        [
+          "structure_policy:reduce_chain -> binary_operation",
+          1
+        ],
+        [
+          "support_gate:unsupported -> supported",
+          1
+        ]
+      ],
+      "target_ir_exact_match_rate": 0.55,
+      "unsupported_correct_rate": 0.8
+    },
+    {
+      "best_fitness": 8.2,
+      "branch_path_exact_match_rate": 0.2,
+      "checked_compile_success_rate": 1.0,
+      "checked_run_success_rate": 1.0,
+      "expected_output_match_rate": 0.6,
+      "generation": 11,
+      "mean_fitness": 4.3567,
+      "missing_layer_rate": 0.2,
+      "most_common_wrong_branch_decisions": [
+        [
+          "language_target:unknown -> C",
+          8
+        ],
+        [
+          "support_gate:unsupported -> <missing>",
+          4
+        ],
+        [
+          "slot_binding_policy:signed_number_order -> surface_number_order",
+          3
+        ],
+        [
+          "slot_binding_policy:chinese_number_order -> surface_number_order",
+          2
+        ],
+        [
+          "arithmetic_family:mixed_precedence -> multiplication",
+          2
+        ],
+        [
+          "structure_policy:precedence_tree -> binary_operation",
+          2
+        ],
+        [
+          "task_scope:programming -> unsupported",
+          2
+        ],
+        [
+          "arithmetic_family:addition -> subtraction",
+          1
+        ],
+        [
+          "arithmetic_family:addition -> mixed_precedence",
+          1
+        ],
+        [
+          "support_gate:unsupported -> supported",
+          1
+        ]
+      ],
+      "target_ir_exact_match_rate": 0.6,
+      "unsupported_correct_rate": 0.8
+    },
+    {
+      "best_fitness": 8.2,
+      "branch_path_exact_match_rate": 0.2,
+      "checked_compile_success_rate": 1.0,
+      "checked_run_success_rate": 1.0,
+      "expected_output_match_rate": 0.55,
+      "generation": 12,
+      "mean_fitness": 3.9967,
+      "missing_layer_rate": 0.2,
+      "most_common_wrong_branch_decisions": [
+        [
+          "language_target:unknown -> C",
+          8
+        ],
+        [
+          "support_gate:unsupported -> <missing>",
+          4
+        ],
+        [
+          "slot_binding_policy:signed_number_order -> surface_number_order",
+          3
+        ],
+        [
+          "slot_binding_policy:chinese_number_order -> surface_number_order",
+          2
+        ],
+        [
+          "arithmetic_family:mixed_precedence -> multiplication",
+          2
+        ],
+        [
+          "structure_policy:precedence_tree -> binary_operation",
+          2
+        ],
+        [
+          "task_scope:programming -> unsupported",
+          2
+        ],
+        [
+          "arithmetic_family:addition -> subtraction",
+          1
+        ],
+        [
+          "structure_policy:reduce_chain -> binary_operation",
+          1
+        ],
+        [
+          "support_gate:unsupported -> supported",
+          1
+        ]
+      ],
+      "target_ir_exact_match_rate": 0.55,
+      "unsupported_correct_rate": 0.8
+    },
+    {
+      "best_fitness": 8.2,
+      "branch_path_exact_match_rate": 0.2,
+      "checked_compile_success_rate": 1.0,
+      "checked_run_success_rate": 1.0,
+      "expected_output_match_rate": 0.55,
+      "generation": 13,
+      "mean_fitness": 3.9967,
+      "missing_layer_rate": 0.2,
+      "most_common_wrong_branch_decisions": [
+        [
+          "language_target:unknown -> C",
+          8
+        ],
+        [
+          "support_gate:unsupported -> <missing>",
+          4
+        ],
+        [
+          "slot_binding_policy:signed_number_order -> surface_number_order",
+          3
+        ],
+        [
+          "slot_binding_policy:chinese_number_order -> surface_number_order",
+          2
+        ],
+        [
+          "arithmetic_family:mixed_precedence -> multiplication",
+          2
+        ],
+        [
+          "structure_policy:precedence_tree -> binary_operation",
+          2
+        ],
+        [
+          "task_scope:programming -> unsupported",
+          2
+        ],
+        [
+          "arithmetic_family:addition -> subtraction",
+          1
+        ],
+        [
+          "structure_policy:reduce_chain -> binary_operation",
+          1
+        ],
+        [
+          "support_gate:unsupported -> supported",
+          1
+        ]
+      ],
+      "target_ir_exact_match_rate": 0.55,
+      "unsupported_correct_rate": 0.8
+    },
+    {
+      "best_fitness": 8.2,
+      "branch_path_exact_match_rate": 0.2,
+      "checked_compile_success_rate": 1.0,
+      "checked_run_success_rate": 1.0,
+      "expected_output_match_rate": 0.7,
+      "generation": 14,
+      "mean_fitness": 5.09,
+      "missing_layer_rate": 0.2,
+      "most_common_wrong_branch_decisions": [
+        [
+          "language_target:unknown -> C",
+          8
+        ],
+        [
+          "support_gate:unsupported -> <missing>",
+          4
+        ],
+        [
+          "slot_binding_policy:signed_number_order -> surface_number_order",
+          3
+        ],
+        [
+          "slot_binding_policy:chinese_number_order -> surface_number_order",
+          2
+        ],
+        [
+          "task_scope:programming -> unsupported",
+          2
+        ],
+        [
+          "arithmetic_family:addition -> subtraction",
+          1
+        ],
+        [
+          "support_gate:unsupported -> supported",
+          1
+        ],
+        [
+          "task_scope:non_programming -> unsupported",
+          1
+        ]
+      ],
+      "target_ir_exact_match_rate": 0.7,
+      "unsupported_correct_rate": 0.8
+    },
+    {
+      "best_fitness": 8.2,
+      "branch_path_exact_match_rate": 0.2,
+      "checked_compile_success_rate": 1.0,
+      "checked_run_success_rate": 1.0,
+      "expected_output_match_rate": 0.7,
+      "generation": 15,
+      "mean_fitness": 5.09,
+      "missing_layer_rate": 0.2,
+      "most_common_wrong_branch_decisions": [
+        [
+          "language_target:unknown -> C",
+          8
+        ],
+        [
+          "support_gate:unsupported -> <missing>",
+          4
+        ],
+        [
+          "slot_binding_policy:signed_number_order -> surface_number_order",
+          3
+        ],
+        [
+          "slot_binding_policy:chinese_number_order -> surface_number_order",
+          2
+        ],
+        [
+          "task_scope:programming -> unsupported",
+          2
+        ],
+        [
+          "arithmetic_family:addition -> subtraction",
+          1
+        ],
+        [
+          "arithmetic_family:addition -> mixed_precedence",
+          1
+        ],
+        [
+          "support_gate:unsupported -> supported",
+          1
+        ],
+        [
+          "task_scope:non_programming -> unsupported",
+          1
+        ]
+      ],
+      "target_ir_exact_match_rate": 0.7,
+      "unsupported_correct_rate": 0.8
+    },
+    {
+      "best_fitness": 8.2,
+      "branch_path_exact_match_rate": 0.2,
+      "checked_compile_success_rate": 1.0,
+      "checked_run_success_rate": 1.0,
+      "expected_output_match_rate": 0.55,
+      "generation": 16,
+      "mean_fitness": 3.9967,
+      "missing_layer_rate": 0.2,
+      "most_common_wrong_branch_decisions": [
+        [
+          "language_target:unknown -> C",
+          8
+        ],
+        [
+          "support_gate:unsupported -> <missing>",
+          4
+        ],
+        [
+          "slot_binding_policy:signed_number_order -> surface_number_order",
+          3
+        ],
+        [
+          "slot_binding_policy:chinese_number_order -> surface_number_order",
+          2
+        ],
+        [
+          "arithmetic_family:mixed_precedence -> multiplication",
+          2
+        ],
+        [
+          "structure_policy:precedence_tree -> binary_operation",
+          2
+        ],
+        [
+          "task_scope:programming -> unsupported",
+          2
+        ],
+        [
+          "arithmetic_family:addition -> subtraction",
+          1
+        ],
+        [
+          "structure_policy:reduce_chain -> binary_operation",
+          1
+        ],
+        [
+          "support_gate:unsupported -> supported",
+          1
+        ]
+      ],
+      "target_ir_exact_match_rate": 0.55,
+      "unsupported_correct_rate": 0.8
+    },
+    {
+      "best_fitness": 8.2,
+      "branch_path_exact_match_rate": 0.2,
+      "checked_compile_success_rate": 1.0,
+      "checked_run_success_rate": 1.0,
+      "expected_output_match_rate": 0.6,
+      "generation": 17,
+      "mean_fitness": 4.3567,
+      "missing_layer_rate": 0.2,
+      "most_common_wrong_branch_decisions": [
+        [
+          "language_target:unknown -> C",
+          6
+        ],
+        [
+          "support_gate:unsupported -> <missing>",
+          4
+        ],
+        [
+          "slot_binding_policy:signed_number_order -> surface_number_order",
+          3
+        ],
+        [
+          "slot_binding_policy:chinese_number_order -> surface_number_order",
+          2
+        ],
+        [
+          "arithmetic_family:mixed_precedence -> multiplication",
+          2
+        ],
+        [
+          "structure_policy:precedence_tree -> binary_operation",
+          2
+        ],
+        [
+          "task_scope:programming -> unsupported",
+          2
+        ],
+        [
+          "arithmetic_family:addition -> subtraction",
+          1
+        ],
+        [
+          "arithmetic_family:addition -> mixed_precedence",
+          1
+        ],
+        [
+          "support_gate:unsupported -> supported",
+          1
+        ]
+      ],
+      "target_ir_exact_match_rate": 0.6,
+      "unsupported_correct_rate": 0.8
+    },
+    {
+      "best_fitness": 8.2,
+      "branch_path_exact_match_rate": 0.2,
+      "checked_compile_success_rate": 1.0,
+      "checked_run_success_rate": 1.0,
+      "expected_output_match_rate": 0.6,
+      "generation": 18,
+      "mean_fitness": 4.3567,
+      "missing_layer_rate": 0.2,
+      "most_common_wrong_branch_decisions": [
+        [
+          "language_target:unknown -> C",
+          6
+        ],
+        [
+          "support_gate:unsupported -> <missing>",
+          4
+        ],
+        [
+          "slot_binding_policy:signed_number_order -> surface_number_order",
+          3
+        ],
+        [
+          "slot_binding_policy:chinese_number_order -> surface_number_order",
+          2
+        ],
+        [
+          "arithmetic_family:mixed_precedence -> multiplication",
+          2
+        ],
+        [
+          "structure_policy:precedence_tree -> binary_operation",
+          2
+        ],
+        [
+          "task_scope:programming -> unsupported",
+          2
+        ],
+        [
+          "arithmetic_family:addition -> subtraction",
+          1
+        ],
+        [
+          "arithmetic_family:addition -> exact_division",
+          1
+        ],
+        [
+          "support_gate:unsupported -> supported",
+          1
+        ]
+      ],
+      "target_ir_exact_match_rate": 0.6,
+      "unsupported_correct_rate": 0.8
+    },
+    {
+      "best_fitness": 8.2,
+      "branch_path_exact_match_rate": 0.2,
+      "checked_compile_success_rate": 1.0,
+      "checked_run_success_rate": 1.0,
+      "expected_output_match_rate": 0.6,
+      "generation": 19,
+      "mean_fitness": 4.3567,
+      "missing_layer_rate": 0.2,
+      "most_common_wrong_branch_decisions": [
+        [
+          "language_target:unknown -> C",
+          6
+        ],
+        [
+          "support_gate:unsupported -> <missing>",
+          4
+        ],
+        [
+          "slot_binding_policy:signed_number_order -> surface_number_order",
+          3
+        ],
+        [
+          "slot_binding_policy:chinese_number_order -> surface_number_order",
+          2
+        ],
+        [
+          "arithmetic_family:mixed_precedence -> multiplication",
+          2
+        ],
+        [
+          "structure_policy:precedence_tree -> binary_operation",
+          2
+        ],
+        [
+          "task_scope:programming -> unsupported",
+          2
+        ],
+        [
+          "arithmetic_family:addition -> subtraction",
+          1
+        ],
+        [
+          "arithmetic_family:addition -> exact_division",
+          1
+        ],
+        [
+          "support_gate:unsupported -> supported",
+          1
+        ]
+      ],
+      "target_ir_exact_match_rate": 0.6,
+      "unsupported_correct_rate": 0.8
+    },
+    {
+      "best_fitness": 8.2,
+      "branch_path_exact_match_rate": 0.25,
+      "checked_compile_success_rate": 1.0,
+      "checked_run_success_rate": 1.0,
+      "expected_output_match_rate": 0.7,
+      "generation": 20,
+      "mean_fitness": 5.45,
+      "missing_layer_rate": 0.2,
+      "most_common_wrong_branch_decisions": [
+        [
+          "language_target:unknown -> C",
+          5
+        ],
+        [
+          "support_gate:unsupported -> <missing>",
+          4
+        ],
+        [
+          "slot_binding_policy:signed_number_order -> surface_number_order",
+          3
+        ],
+        [
+          "slot_binding_policy:chinese_number_order -> surface_number_order",
+          2
+        ],
+        [
+          "task_scope:programming -> unsupported",
+          2
+        ],
+        [
+          "arithmetic_family:addition -> subtraction",
+          1
+        ],
+        [
+          "arithmetic_family:addition -> mixed_precedence",
+          1
+        ],
+        [
+          "support_gate:unsupported -> supported",
+          1
+        ],
+        [
+          "task_scope:non_programming -> unsupported",
+          1
+        ]
+      ],
+      "target_ir_exact_match_rate": 0.7,
+      "unsupported_correct_rate": 1.0
+    },
+    {
+      "best_fitness": 8.2,
+      "branch_path_exact_match_rate": 0.2,
+      "checked_compile_success_rate": 1.0,
+      "checked_run_success_rate": 1.0,
+      "expected_output_match_rate": 0.6,
+      "generation": 21,
+      "mean_fitness": 4.3567,
+      "missing_layer_rate": 0.2,
+      "most_common_wrong_branch_decisions": [
+        [
+          "language_target:unknown -> C",
+          6
+        ],
+        [
+          "support_gate:unsupported -> <missing>",
+          4
+        ],
+        [
+          "slot_binding_policy:signed_number_order -> surface_number_order",
+          3
+        ],
+        [
+          "slot_binding_policy:chinese_number_order -> surface_number_order",
+          2
+        ],
+        [
+          "arithmetic_family:mixed_precedence -> multiplication",
+          2
+        ],
+        [
+          "structure_policy:precedence_tree -> binary_operation",
+          2
+        ],
+        [
+          "task_scope:programming -> unsupported",
+          2
+        ],
+        [
+          "arithmetic_family:addition -> subtraction",
+          1
+        ],
+        [
+          "arithmetic_family:addition -> exact_division",
+          1
+        ],
+        [
+          "support_gate:unsupported -> supported",
+          1
+        ]
+      ],
+      "target_ir_exact_match_rate": 0.6,
+      "unsupported_correct_rate": 0.8
+    },
+    {
+      "best_fitness": 8.2,
+      "branch_path_exact_match_rate": 0.2,
+      "checked_compile_success_rate": 1.0,
+      "checked_run_success_rate": 1.0,
+      "expected_output_match_rate": 0.55,
+      "generation": 22,
+      "mean_fitness": 3.9967,
+      "missing_layer_rate": 0.2,
+      "most_common_wrong_branch_decisions": [
+        [
+          "language_target:unknown -> C",
+          6
+        ],
+        [
+          "support_gate:unsupported -> <missing>",
+          4
+        ],
+        [
+          "slot_binding_policy:signed_number_order -> surface_number_order",
+          3
+        ],
+        [
+          "slot_binding_policy:chinese_number_order -> surface_number_order",
+          2
+        ],
+        [
+          "arithmetic_family:mixed_precedence -> multiplication",
+          2
+        ],
+        [
+          "structure_policy:precedence_tree -> binary_operation",
+          2
+        ],
+        [
+          "task_scope:programming -> unsupported",
+          2
+        ],
+        [
+          "arithmetic_family:addition -> subtraction",
+          1
+        ],
+        [
+          "structure_policy:reduce_chain -> binary_operation",
+          1
+        ],
+        [
+          "support_gate:unsupported -> supported",
+          1
+        ]
+      ],
+      "target_ir_exact_match_rate": 0.55,
+      "unsupported_correct_rate": 0.8
+    },
+    {
+      "best_fitness": 8.2,
+      "branch_path_exact_match_rate": 0.2,
+      "checked_compile_success_rate": 1.0,
+      "checked_run_success_rate": 1.0,
+      "expected_output_match_rate": 0.6,
+      "generation": 23,
+      "mean_fitness": 4.3567,
+      "missing_layer_rate": 0.2,
+      "most_common_wrong_branch_decisions": [
+        [
+          "language_target:unknown -> C",
+          6
+        ],
+        [
+          "support_gate:unsupported -> <missing>",
+          4
+        ],
+        [
+          "slot_binding_policy:signed_number_order -> surface_number_order",
+          3
+        ],
+        [
+          "slot_binding_policy:chinese_number_order -> surface_number_order",
+          2
+        ],
+        [
+          "arithmetic_family:mixed_precedence -> multiplication",
+          2
+        ],
+        [
+          "structure_policy:precedence_tree -> binary_operation",
+          2
+        ],
+        [
+          "task_scope:programming -> unsupported",
+          2
+        ],
+        [
+          "arithmetic_family:addition -> subtraction",
+          1
+        ],
+        [
+          "arithmetic_family:addition -> exact_division",
+          1
+        ],
+        [
+          "support_gate:unsupported -> supported",
+          1
+        ]
+      ],
+      "target_ir_exact_match_rate": 0.6,
+      "unsupported_correct_rate": 0.8
+    },
+    {
+      "best_fitness": 8.2,
+      "branch_path_exact_match_rate": 0.2,
+      "checked_compile_success_rate": 1.0,
+      "checked_run_success_rate": 1.0,
+      "expected_output_match_rate": 0.55,
+      "generation": 24,
+      "mean_fitness": 3.9967,
+      "missing_layer_rate": 0.2,
+      "most_common_wrong_branch_decisions": [
+        [
+          "language_target:unknown -> C",
+          6
+        ],
+        [
+          "support_gate:unsupported -> <missing>",
+          4
+        ],
+        [
+          "slot_binding_policy:signed_number_order -> surface_number_order",
+          3
+        ],
+        [
+          "slot_binding_policy:chinese_number_order -> surface_number_order",
+          2
+        ],
+        [
+          "arithmetic_family:mixed_precedence -> multiplication",
+          2
+        ],
+        [
+          "structure_policy:precedence_tree -> binary_operation",
+          2
+        ],
+        [
+          "task_scope:programming -> unsupported",
+          2
+        ],
+        [
+          "arithmetic_family:addition -> subtraction",
+          1
+        ],
+        [
+          "structure_policy:reduce_chain -> binary_operation",
+          1
+        ],
+        [
+          "support_gate:unsupported -> supported",
+          1
+        ]
+      ],
+      "target_ir_exact_match_rate": 0.55,
+      "unsupported_correct_rate": 0.8
+    },
+    {
+      "best_fitness": 8.2,
+      "branch_path_exact_match_rate": 0.2,
+      "checked_compile_success_rate": 1.0,
+      "checked_run_success_rate": 1.0,
+      "expected_output_match_rate": 0.7,
+      "generation": 25,
+      "mean_fitness": 5.09,
+      "missing_layer_rate": 0.2,
+      "most_common_wrong_branch_decisions": [
+        [
+          "language_target:unknown -> C",
+          6
+        ],
+        [
+          "support_gate:unsupported -> <missing>",
+          4
+        ],
+        [
+          "slot_binding_policy:signed_number_order -> surface_number_order",
+          3
+        ],
+        [
+          "slot_binding_policy:chinese_number_order -> surface_number_order",
+          2
+        ],
+        [
+          "task_scope:programming -> unsupported",
+          2
+        ],
+        [
+          "arithmetic_family:addition -> subtraction",
+          1
+        ],
+        [
+          "arithmetic_family:addition -> mixed_precedence",
+          1
+        ],
+        [
+          "support_gate:unsupported -> supported",
+          1
+        ],
+        [
+          "task_scope:non_programming -> unsupported",
+          1
+        ]
+      ],
+      "target_ir_exact_match_rate": 0.7,
+      "unsupported_correct_rate": 0.8
+    },
+    {
+      "best_fitness": 8.2,
+      "branch_path_exact_match_rate": 0.2,
+      "checked_compile_success_rate": 1.0,
+      "checked_run_success_rate": 1.0,
+      "expected_output_match_rate": 0.55,
+      "generation": 26,
+      "mean_fitness": 3.9967,
+      "missing_layer_rate": 0.2,
+      "most_common_wrong_branch_decisions": [
+        [
+          "language_target:unknown -> C",
+          6
+        ],
+        [
+          "support_gate:unsupported -> <missing>",
+          4
+        ],
+        [
+          "slot_binding_policy:signed_number_order -> surface_number_order",
+          3
+        ],
+        [
+          "slot_binding_policy:chinese_number_order -> surface_number_order",
+          2
+        ],
+        [
+          "arithmetic_family:mixed_precedence -> multiplication",
+          2
+        ],
+        [
+          "structure_policy:precedence_tree -> binary_operation",
+          2
+        ],
+        [
+          "task_scope:programming -> unsupported",
+          2
+        ],
+        [
+          "arithmetic_family:addition -> subtraction",
+          1
+        ],
+        [
+          "structure_policy:reduce_chain -> binary_operation",
+          1
+        ],
+        [
+          "support_gate:unsupported -> supported",
+          1
+        ]
+      ],
+      "target_ir_exact_match_rate": 0.55,
+      "unsupported_correct_rate": 0.8
+    },
+    {
+      "best_fitness": 8.2,
+      "branch_path_exact_match_rate": 0.2,
+      "checked_compile_success_rate": 1.0,
+      "checked_run_success_rate": 1.0,
+      "expected_output_match_rate": 0.55,
+      "generation": 27,
+      "mean_fitness": 3.9967,
+      "missing_layer_rate": 0.2,
+      "most_common_wrong_branch_decisions": [
+        [
+          "language_target:unknown -> C",
+          6
+        ],
+        [
+          "support_gate:unsupported -> <missing>",
+          4
+        ],
+        [
+          "slot_binding_policy:signed_number_order -> surface_number_order",
+          3
+        ],
+        [
+          "slot_binding_policy:chinese_number_order -> surface_number_order",
+          2
+        ],
+        [
+          "arithmetic_family:mixed_precedence -> multiplication",
+          2
+        ],
+        [
+          "structure_policy:precedence_tree -> binary_operation",
+          2
+        ],
+        [
+          "task_scope:programming -> unsupported",
+          2
+        ],
+        [
+          "arithmetic_family:addition -> subtraction",
+          1
+        ],
+        [
+          "structure_policy:reduce_chain -> binary_operation",
+          1
+        ],
+        [
+          "support_gate:unsupported -> supported",
+          1
+        ]
+      ],
+      "target_ir_exact_match_rate": 0.55,
+      "unsupported_correct_rate": 0.8
+    },
+    {
+      "best_fitness": 8.2,
+      "branch_path_exact_match_rate": 0.2,
+      "checked_compile_success_rate": 1.0,
+      "checked_run_success_rate": 1.0,
+      "expected_output_match_rate": 0.6,
+      "generation": 28,
+      "mean_fitness": 4.3567,
+      "missing_layer_rate": 0.2,
+      "most_common_wrong_branch_decisions": [
+        [
+          "language_target:unknown -> C",
+          6
+        ],
+        [
+          "support_gate:unsupported -> <missing>",
+          4
+        ],
+        [
+          "slot_binding_policy:signed_number_order -> surface_number_order",
+          3
+        ],
+        [
+          "slot_binding_policy:chinese_number_order -> surface_number_order",
+          2
+        ],
+        [
+          "arithmetic_family:mixed_precedence -> multiplication",
+          2
+        ],
+        [
+          "structure_policy:precedence_tree -> binary_operation",
+          2
+        ],
+        [
+          "task_scope:programming -> unsupported",
+          2
+        ],
+        [
+          "arithmetic_family:addition -> subtraction",
+          1
+        ],
+        [
+          "arithmetic_family:addition -> exact_division",
+          1
+        ],
+        [
+          "support_gate:unsupported -> supported",
+          1
+        ]
+      ],
+      "target_ir_exact_match_rate": 0.6,
+      "unsupported_correct_rate": 0.8
+    },
+    {
+      "best_fitness": 8.2,
+      "branch_path_exact_match_rate": 0.2,
+      "checked_compile_success_rate": 1.0,
+      "checked_run_success_rate": 1.0,
+      "expected_output_match_rate": 0.7,
+      "generation": 29,
+      "mean_fitness": 5.09,
+      "missing_layer_rate": 0.2,
+      "most_common_wrong_branch_decisions": [
+        [
+          "language_target:unknown -> C",
+          6
+        ],
+        [
+          "support_gate:unsupported -> <missing>",
+          4
+        ],
+        [
+          "slot_binding_policy:signed_number_order -> surface_number_order",
+          3
+        ],
+        [
+          "slot_binding_policy:chinese_number_order -> surface_number_order",
+          2
+        ],
+        [
+          "task_scope:programming -> unsupported",
+          2
+        ],
+        [
+          "arithmetic_family:addition -> subtraction",
+          1
+        ],
+        [
+          "arithmetic_family:addition -> mixed_precedence",
+          1
+        ],
+        [
+          "support_gate:unsupported -> supported",
+          1
+        ],
+        [
+          "task_scope:non_programming -> unsupported",
+          1
+        ]
+      ],
+      "target_ir_exact_match_rate": 0.7,
+      "unsupported_correct_rate": 0.8
+    },
+    {
+      "best_fitness": 8.2,
+      "branch_path_exact_match_rate": 0.2,
+      "checked_compile_success_rate": 1.0,
+      "checked_run_success_rate": 1.0,
+      "expected_output_match_rate": 0.55,
+      "generation": 30,
+      "mean_fitness": 3.9967,
+      "missing_layer_rate": 0.2,
+      "most_common_wrong_branch_decisions": [
+        [
+          "language_target:unknown -> C",
+          6
+        ],
+        [
+          "support_gate:unsupported -> <missing>",
+          4
+        ],
+        [
+          "slot_binding_policy:signed_number_order -> surface_number_order",
+          3
+        ],
+        [
+          "slot_binding_policy:chinese_number_order -> surface_number_order",
+          2
+        ],
+        [
+          "arithmetic_family:mixed_precedence -> multiplication",
+          2
+        ],
+        [
+          "structure_policy:precedence_tree -> binary_operation",
+          2
+        ],
+        [
+          "task_scope:programming -> unsupported",
+          2
+        ],
+        [
+          "arithmetic_family:addition -> subtraction",
+          1
+        ],
+        [
+          "structure_policy:reduce_chain -> binary_operation",
+          1
+        ],
+        [
+          "support_gate:unsupported -> supported",
+          1
+        ]
+      ],
+      "target_ir_exact_match_rate": 0.55,
+      "unsupported_correct_rate": 0.8
+    }
+  ],
+  "population_per_layer": 16,
+  "population_summary": {
+    "arithmetic_family": {
+      "count": 16,
+      "options": [
+        "addition",
+        "exact_division",
+        "mixed_precedence",
+        "multiplication",
+        "parentheses",
+        "subtraction",
+        "unsupported"
+      ],
+      "top_score": 1177.3334000000002
+    },
+    "language_target": {
+      "count": 16,
+      "options": [
+        "C",
+        "unknown"
+      ],
+      "top_score": 1636.1343000000006
+    },
+    "semantic_domain": {
+      "count": 16,
+      "options": [
+        "arithmetic",
+        "comparison_future",
+        "unsupported"
+      ],
+      "top_score": 2792.3362
+    },
+    "slot_binding_policy": {
+      "count": 16,
+      "options": [
+        "chinese_number_order",
+        "previous_targetir_delta",
+        "signed_number_order",
+        "surface_number_order",
+        "unsupported"
+      ],
+      "top_score": 3010.6048000000005
+    },
+    "structure_policy": {
+      "count": 16,
+      "options": [
+        "binary_operation",
+        "parenthesized_tree",
+        "precedence_tree",
+        "reduce_chain",
+        "unsupported"
+      ],
+      "top_score": 1590.8705999999997
+    },
+    "support_gate": {
+      "count": 16,
+      "options": [
+        "supported",
+        "unsupported"
+      ],
+      "top_score": 2551.1030000000005
+    },
+    "target_builder": {
+      "count": 16,
+      "options": [
+        "canonical_arithmetic_targetir",
+        "canonical_program_targetir",
+        "early_exit"
+      ],
+      "top_score": 2513.1368000000007
+    },
+    "task_scope": {
+      "count": 16,
+      "options": [
+        "non_programming",
+        "programming",
+        "unsupported"
+      ],
+      "top_score": 4664.005199999999
+    }
+  },
+  "top_k_candidates": 3
+}

@@ -4,6 +4,10 @@ This document defines the v0.5.9 development correction from flat label
 classification toward layered BranchChain training. It is a development charter,
 not a JianMu v0.5 release claim.
 
+Note: v0.5.9 established the BranchChain training shape but its toy trainer can
+degenerate without layer-wise population preservation. v0.6 introduces
+LayerPreservedPopulation and DarwinForge candidate-level fitness evolution.
+
 ## Why v0.5.8 Is Insufficient
 
 v0.5.8 is an oracle-assisted flat hashed classifier.
@@ -205,4 +209,3 @@ Required metrics:
 - This does not train C source text.
 - This is a training-shape correction from flat classifier to branch-chain
   routing.
-
