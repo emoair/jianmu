@@ -7,7 +7,12 @@ from jianmu.self_learning.branchchain.toy_dataset import (
     dataset_summary,
 )
 from jianmu.self_learning.branchchain.surface_features import extract_surface_features
-from jianmu.self_learning.darwinforge.evolution import CurriculumDarwinForgeTrainer, DarwinForgeTrainer, ParaphraseInvariantDarwinForgeTrainer
+from jianmu.self_learning.darwinforge.evolution import (
+    CurriculumDarwinForgeTrainer,
+    DarwinForgeTrainer,
+    HindsightReRankingDarwinForgeTrainer,
+    ParaphraseInvariantDarwinForgeTrainer,
+)
 from jianmu.self_learning.darwinforge.fitness import compute_fitness
 
 
@@ -41,6 +46,12 @@ PARAPHRASE_DIR = Path("records/v0_6_5")
 PARAPHRASE_METRICS_PATH = PARAPHRASE_DIR / "paraphrase_invariant_metrics.json"
 PARAPHRASE_REPORT_PATH = PARAPHRASE_DIR / "paraphrase_invariant_report.md"
 PARAPHRASE_CANDIDATES_PATH = PARAPHRASE_DIR / "paraphrase_invariant_candidates.jsonl"
+
+RERANK_DIR = Path("records/v0_6_6")
+RERANK_METRICS_PATH = RERANK_DIR / "hindsight_reranking_metrics.json"
+RERANK_REPORT_PATH = RERANK_DIR / "hindsight_reranking_report.md"
+RERANK_CANDIDATES_PATH = RERANK_DIR / "hindsight_reranking_candidates.jsonl"
+RERANK_PRUNING_PATH = RERANK_DIR / "pruning_candidates.jsonl"
 
 
 def run_darwinforge_toy(
@@ -636,6 +647,109 @@ def _paraphrase_invariant_report_markdown(metrics):
             "- This does not patch old source code.",
             "- This does not prove AGI, Transformer replacement, or hardware BPU implementation.",
             "- This is a Paraphrase-Invariant TargetIR Training（复述不变目标中间表示训练） scaffold.",
+        ]
+    )
+    return "\n".join(lines) + "\n"
+
+
+def run_hindsight_branch_reranking_toy(
+    population_per_layer: int = 16,
+    generations: int = 80,
+    top_k_candidates: int = 3,
+    beam_width: int = 5,
+    seed: int = 42,
+    compile_checks_per_generation: int = 0,
+):
+    RERANK_DIR.mkdir(parents=True, exist_ok=True)
+    dataset = build_architecture_aligned_toy_dataset()
+    trainer = HindsightReRankingDarwinForgeTrainer(
+        population_per_layer=population_per_layer,
+        generations=generations,
+        top_k_candidates=top_k_candidates,
+        beam_width=beam_width,
+        seed=seed,
+        compile_checks_per_generation=compile_checks_per_generation,
+    )
+    metrics = trainer.train(dataset)
+    candidate_records = metrics.pop("candidate_records")
+    pruning_candidates = metrics.get("pruning_candidates", [])
+    RERANK_METRICS_PATH.write_text(json.dumps(metrics, ensure_ascii=False, indent=2, sort_keys=True), encoding="utf-8")
+    RERANK_REPORT_PATH.write_text(_hindsight_reranking_report_markdown(metrics), encoding="utf-8")
+    RERANK_CANDIDATES_PATH.write_text(
+        "".join(json.dumps(record.to_dict(), ensure_ascii=False, sort_keys=True) + "\n" for record in candidate_records[-240:]),
+        encoding="utf-8",
+    )
+    RERANK_PRUNING_PATH.write_text(
+        "".join(json.dumps(item, ensure_ascii=False, sort_keys=True) + "\n" for item in pruning_candidates),
+        encoding="utf-8",
+    )
+    metrics["report_path"] = str(RERANK_REPORT_PATH)
+    metrics["candidates_path"] = str(RERANK_CANDIDATES_PATH)
+    metrics["pruning_candidates_path"] = str(RERANK_PRUNING_PATH)
+    return metrics
+
+
+def _hindsight_reranking_report_markdown(metrics):
+    first = metrics["metrics_by_generation"][0]
+    final = metrics["metrics_by_generation"][-1]
+    best = metrics["best_metrics"]
+    lines = [
+        "# v0.6.6 Hindsight Branch Re-Ranking（回看式分支重排） Report",
+        "",
+        "This is a Group Beam Selection（组级束搜索） scaffold over top-k BranchPath（分支路径） candidates. It uses TargetIR（目标中间表示） and Paraphrase Group（复述组） feedback after prediction.",
+        "",
+        "## Dataset Summary（数据集摘要）",
+        "",
+        f"- dataset size（数据集规模）: {metrics['dataset_size']}",
+        f"- supported group count（支持复述组数量）: {metrics['supported_group_count']}",
+        f"- OOD count（分布外数量）: {metrics['ood_count']}",
+        f"- top_k_candidates（候选保留数量）: {metrics['top_k_candidates']}",
+        f"- beam_width（束宽）: {metrics['beam_width']}",
+        "",
+        "## Single Winner vs Re-Ranked vs Group Beam（单赢家 / 重排 / 组级束搜索）",
+        "",
+        f"- generation 0 single_winner_sample_exact_match（第 0 代单赢家精确匹配）: {first['single_winner_sample_exact_match']}",
+        f"- final single_winner_sample_exact_match（最终单赢家精确匹配）: {final['single_winner_sample_exact_match']}",
+        f"- final reranked_sample_exact_match（最终重排单样本精确匹配）: {final['reranked_sample_exact_match']}",
+        f"- final group_beam_exact_match（最终组级束搜索精确匹配）: {final['group_beam_exact_match']}",
+        f"- group_beam_consistency（组级束搜索一致性）: {final['group_beam_consistency']}",
+        "",
+        "## Candidate Quadrants（候选四象限）",
+        "",
+        f"- candidate_quadrant_counts（候选四象限计数）: {final['candidate_quadrant_counts']}",
+        f"- low_score_correct_count（低分正确候选数量）: {final['low_score_correct_count']}",
+        f"- high_score_wrong_count（高分错误候选数量）: {final['high_score_wrong_count']}",
+        f"- rerank_improvement_count（重排改进数量）: {final['rerank_improvement_count']}",
+        f"- rerank_regression_count（重排退化数量）: {final['rerank_regression_count']}",
+        "",
+        "## Branch Pruning（分支剪枝）",
+        "",
+        f"- wrong_consistent_group_count（一致但错误组数量）: {final['wrong_consistent_group_count']}",
+        f"- pruning_candidate_count（剪枝候选数量）: {final['pruning_candidate_count']}",
+        f"- collapse_penalty_hits（坍缩惩罚触发次数）: {final['collapse_penalty_hits']}",
+        "",
+        "## OOD Evaluation（分布外评测）",
+        "",
+        f"- ood_rejection_rate（分布外拒绝率）: {final['ood_rejection_rate']}",
+        f"- ood_false_accept_rate（分布外误接收率）: {final['ood_false_accept_rate']}",
+        "",
+        "## Correct-Low-Score Candidate（低分正确候选） Examples",
+        "",
+    ]
+    for item in final["low_score_correct_examples"][:3]:
+        lines.append(f"- {item['sample_id']}: original_rank={item['original_rank']}, rerank_rank={item['rerank_rank']}, pred={item['target_ir_pred']}")
+    lines.extend(["", "## Wrong-High-Score Candidate（高分错误候选） Examples", ""])
+    for item in final["high_score_wrong_examples"][:3]:
+        lines.append(f"- {item['sample_id']}: original_score={item['original_score']}, pred={item['target_ir_pred']}, true={item['target_ir_true']}")
+    lines.extend(["", "## Non-Claims（非主张）", ""])
+    lines.extend(
+        [
+            "- This does not prove stable DarwinForge（达尔文进化炉） convergence.",
+            "- This does not prove general program synthesis.",
+            "- This does not train C source text.",
+            "- This does not patch old source code.",
+            "- This does not prove AGI, Transformer replacement, or hardware BPU implementation.",
+            "- This is a Hindsight Branch Re-Ranking（回看式分支重排） scaffold.",
         ]
     )
     return "\n".join(lines) + "\n"

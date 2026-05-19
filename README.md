@@ -218,3 +218,12 @@ v0.6.5 explores Paraphrase-Invariant TargetIR Training（复述不变目标中�
 Multiple Chinese natural-language descriptions（中文自然语言描述）, Chinese technical
 mixed inputs（中文技术混合输入）, and pure math expressions（纯数学表达） in the same
 Paraphrase Group（复述组） are evaluated for convergence toward the same TargetIR（目标中间表示）.
+
+## v0.6.6 Development Direction
+
+v0.6.6 explores Hindsight Branch Re-Ranking（回看式分支重排） and Group Beam
+Selection（组级束搜索）. Instead of discarding non-winner candidates immediately,
+JianMu keeps top-k BranchPath（分支路径） candidates, evaluates them with
+TargetIR（目标中间表示） and Paraphrase Group（复述组） feedback, then promotes
+Correct-Low-Score Candidate（低分正确候选） paths and downranks
+Wrong-High-Score Candidate（高分错误候选） shortcuts.

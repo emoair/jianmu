@@ -1,5 +1,5 @@
 import json
-from collections import Counter
+from collections import Counter, defaultdict
 from dataclasses import dataclass, field
 from pathlib import Path
 from typing import Dict, List
@@ -17,6 +17,11 @@ from jianmu.self_learning.darwinforge.hard_cases import HardCase, HardCaseBuffer
 from jianmu.self_learning.darwinforge.hall_of_fame import HallOfFame
 from jianmu.self_learning.darwinforge.paraphrase import apply_group_fitness, compute_group_metrics, group_dataset_by_paraphrase
 from jianmu.self_learning.darwinforge.population import LayerPreservedPopulation
+from jianmu.self_learning.darwinforge.reranking import (
+    collect_pruning_candidates,
+    rerank_candidates_for_sample,
+    select_group_beam,
+)
 
 
 @dataclass
@@ -301,6 +306,106 @@ class ParaphraseInvariantDarwinForgeTrainer:
         }
 
 
+class HindsightReRankingDarwinForgeTrainer:
+    def __init__(
+        self,
+        population_per_layer: int = 16,
+        generations: int = 80,
+        top_k_candidates: int = 3,
+        beam_width: int = 5,
+        seed: int = 42,
+        compile_checks_per_generation: int = 0,
+    ):
+        self.population_per_layer = population_per_layer
+        self.generations = generations
+        self.top_k_candidates = top_k_candidates
+        self.beam_width = beam_width
+        self.seed = seed
+        self.compile_checks_per_generation = compile_checks_per_generation
+        self.population = LayerPreservedPopulation.initialize(population_per_layer=population_per_layer, seed=seed)
+        self.synthesis = AtomicSynthesis()
+
+    def train(self, dataset: List[Dict]) -> Dict:
+        groups = group_dataset_by_paraphrase(dataset)
+        ordered_groups = [groups[group_id] for group_id in sorted(groups)]
+        metrics_by_generation = []
+        candidate_records_log = []
+        pruning_log = []
+        best_metrics = None
+        for generation in range(self.generations + 1):
+            group_selected_records = []
+            group_all_records = []
+            group_rank_records = []
+            beam_results = []
+            for group in ordered_groups:
+                records_by_sample = []
+                for task in group.samples:
+                    features = extract_surface_features(task["input_text"])
+                    records = []
+                    for candidate_index, genome in enumerate(self.population.sample_candidate_paths(features, top_k=self.top_k_candidates)):
+                        phenotype = self.synthesis.synthesize(genome, features)
+                        fitness = compute_fitness(
+                            genome,
+                            phenotype,
+                            task,
+                            sandbox_optional=candidate_index < self.compile_checks_per_generation,
+                        )
+                        records.append(CandidateRecord(genome, phenotype, fitness))
+                    records_by_sample.append(records)
+                    group_all_records.extend(records)
+                    group_rank_records.extend(rerank_candidates_for_sample(records, task))
+                beam = select_group_beam(records_by_sample, group.samples, beam_width=self.beam_width)
+                beam_results.append(beam)
+                records_by_id = {record.genome.genome_id: record for records in records_by_sample for record in records}
+                selected = [records_by_id[candidate_id] for candidate_id in beam.selected_candidate_ids if candidate_id in records_by_id]
+                self._apply_hindsight_feedback(selected, group_all_records, group_rank_records, beam)
+                group_selected_records.extend(selected)
+            pruning_candidates = collect_pruning_candidates(group_rank_records, group_all_records)
+            pruning_log.extend(pruning_candidates)
+            metrics = _hindsight_metrics(generation, group_selected_records, group_all_records, group_rank_records, beam_results, dataset)
+            metrics_by_generation.append(metrics)
+            if best_metrics is None or _hindsight_metric_key(metrics) > _hindsight_metric_key(best_metrics):
+                best_metrics = metrics
+            candidate_records_log.extend(group_all_records)
+            if generation < self.generations:
+                self.population.evolve(group_all_records, seed=self.seed + generation)
+        return {
+            "dataset_size": len(dataset),
+            "population_per_layer": self.population_per_layer,
+            "generations": self.generations,
+            "top_k_candidates": self.top_k_candidates,
+            "beam_width": self.beam_width,
+            "compile_checks_per_generation": self.compile_checks_per_generation,
+            "supported_group_count": sum(1 for group in groups.values() if group.supported),
+            "ood_count": sum(1 for sample in dataset if sample.get("input_mode", "").startswith("ood_")),
+            "metrics_by_generation": metrics_by_generation,
+            "best_metrics": best_metrics or {},
+            "population_summary": self.population.summary(),
+            "candidate_records": candidate_records_log,
+            "pruning_candidates": [item.to_dict() for item in pruning_log[-200:]],
+        }
+
+    def _apply_hindsight_feedback(self, selected, all_records, rank_records, beam):
+        selected_ids = {record.genome.genome_id for record in selected}
+        by_id = {record.genome.genome_id: record for record in all_records}
+        for record in selected:
+            _add_component(record, "group_beam_selected_bonus", 1.0)
+            if beam.group_targetir_exact_match:
+                _add_component(record, "group_beam_exact_match_bonus", 4.0)
+            elif beam.collapse_detected:
+                _add_component(record, "collapse_penalty", -4.0)
+        for rank in rank_records:
+            record = by_id.get(rank.candidate_id)
+            if not record:
+                continue
+            if rank.quadrant == "low_score_correct":
+                _add_component(record, "rerank_bonus", 3.0)
+            elif rank.quadrant == "high_score_wrong":
+                _add_component(record, "pruning_penalty", -3.0)
+            elif rank.candidate_id in selected_ids and rank.quadrant == "high_score_correct":
+                _add_component(record, "high_score_correct_reinforcement", 1.0)
+
+
 def _winner_succeeds(record: CandidateRecord, task: Dict) -> bool:
     if not task["supported"]:
         return record.fitness_report.unsupported_correct
@@ -320,6 +425,69 @@ def _paraphrase_metric_key(metrics: Dict):
 def _count_values(values) -> Dict[str, int]:
     counter = Counter(values)
     return dict(sorted(counter.items()))
+
+
+def _add_component(record: CandidateRecord, name: str, delta: float):
+    record.fitness_report.total_fitness = round(record.fitness_report.total_fitness + delta, 4)
+    record.fitness_report.components[name] = round(record.fitness_report.components.get(name, 0.0) + delta, 4)
+
+
+def _hindsight_metric_key(metrics: Dict):
+    return (
+        metrics.get("group_beam_exact_match", 0.0),
+        metrics.get("reranked_sample_exact_match", 0.0),
+        metrics.get("ood_rejection_rate", 0.0),
+        -metrics.get("paraphrase_collapse_rate", 1.0),
+    )
+
+
+def _hindsight_metrics(generation: int, selected_records: List[CandidateRecord], all_records: List[CandidateRecord], rank_records, beam_results, dataset: List[Dict]) -> Dict:
+    total = max(len(dataset), 1)
+    single_winner_exact = 0
+    reranked_exact = 0
+    rerank_improvement = 0
+    rerank_regression = 0
+    by_sample = defaultdict(list)
+    for rank in rank_records:
+        by_sample[rank.sample_id].append(rank)
+    for sample_id, ranks in by_sample.items():
+        original_top = next(item for item in ranks if item.original_rank == 0)
+        reranked_top = next(item for item in ranks if item.rerank_rank == 0)
+        single_winner_exact += int(original_top.exact_match)
+        reranked_exact += int(reranked_top.exact_match)
+        rerank_improvement += int((not original_top.exact_match) and reranked_top.exact_match)
+        rerank_regression += int(original_top.exact_match and not reranked_top.exact_match)
+    supported_beams = [beam for beam in beam_results if any(sample["paraphrase_group"] == beam.group_id and sample["supported"] for sample in dataset)]
+    group_beam_exact = sum(1 for beam in supported_beams if beam.group_targetir_exact_match)
+    group_beam_consistent = sum(1 for beam in supported_beams if beam.group_targetir_consistency)
+    wrong_consistent = sum(1 for beam in supported_beams if beam.collapse_detected)
+    ood_samples = [sample for sample in dataset if sample.get("input_mode", "").startswith("ood_")]
+    rank_by_sample = {sample_id: sorted(ranks, key=lambda item: item.rerank_rank)[0] for sample_id, ranks in by_sample.items()}
+    ood_rejected = sum(1 for sample in ood_samples if rank_by_sample.get(sample["sample_id"]) and rank_by_sample[sample["sample_id"]].rejected)
+    ood_false_accept = len(ood_samples) - ood_rejected
+    quadrant_counts = Counter(rank.quadrant for rank in rank_records)
+    pruning_candidates = collect_pruning_candidates(rank_records, all_records)
+    return {
+        "generation": generation,
+        "single_winner_sample_exact_match": round(single_winner_exact / total, 4),
+        "reranked_sample_exact_match": round(reranked_exact / total, 4),
+        "group_beam_exact_match": round(group_beam_exact / max(len(supported_beams), 1), 4),
+        "group_beam_consistency": round(group_beam_consistent / max(len(supported_beams), 1), 4),
+        "low_score_correct_count": quadrant_counts.get("low_score_correct", 0),
+        "high_score_wrong_count": quadrant_counts.get("high_score_wrong", 0),
+        "rerank_improvement_count": rerank_improvement,
+        "rerank_regression_count": rerank_regression,
+        "wrong_consistent_group_count": wrong_consistent,
+        "pruning_candidate_count": len(pruning_candidates),
+        "collapse_penalty_hits": sum(1 for record in all_records if record.fitness_report.components.get("collapse_penalty")),
+        "ood_rejection_rate": round(ood_rejected / max(len(ood_samples), 1), 4),
+        "ood_false_accept_rate": round(ood_false_accept / max(len(ood_samples), 1), 4),
+        "candidate_quadrant_counts": dict(quadrant_counts),
+        "low_score_correct_examples": [rank.to_dict() for rank in rank_records if rank.quadrant == "low_score_correct"][:5],
+        "high_score_wrong_examples": [rank.to_dict() for rank in rank_records if rank.quadrant == "high_score_wrong"][:5],
+        "wrong_consistent_group_examples": [beam.to_dict() for beam in beam_results if beam.collapse_detected][:5],
+        "representative_group_beams": [beam.to_dict() for beam in beam_results[:8]],
+    }
 
 
 def _metrics_for_generation(generation: int, winners: List[CandidateRecord], dataset: List[Dict]) -> Dict:
