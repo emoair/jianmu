@@ -12,6 +12,7 @@ from jianmu.self_learning.darwinforge.attribution import attribute_candidate_err
 from jianmu.self_learning.darwinforge.candidate import CandidateRecord
 from jianmu.self_learning.darwinforge.curriculum import CurriculumPlan
 from jianmu.self_learning.darwinforge.fitness import compute_fitness
+from jianmu.self_learning.darwinforge.freezing import required_correct_count
 from jianmu.self_learning.darwinforge.hard_cases import HardCase, HardCaseBuffer
 from jianmu.self_learning.darwinforge.hall_of_fame import HallOfFame
 from jianmu.self_learning.darwinforge.population import LayerPreservedPopulation
@@ -142,6 +143,7 @@ class CurriculumDarwinForgeTrainer:
             winners: List[CandidateRecord] = []
             compile_checks_remaining = self.compile_checks_per_generation
             hard_case_attrs = []
+            records_by_task = []
             for task in dataset:
                 features = extract_surface_features(task["input_text"])
                 records = []
@@ -155,6 +157,7 @@ class CurriculumDarwinForgeTrainer:
                     records.append(record)
                     generation_records.append(record)
                 winner = max(records, key=lambda rec: rec.fitness_report.total_fitness)
+                records_by_task.append(records)
                 winners.append(winner)
                 if not _winner_succeeds(winner, task):
                     self.hard_cases.add(
@@ -171,6 +174,7 @@ class CurriculumDarwinForgeTrainer:
                     )
                     hard_case_attrs.extend(attribute_candidate_error(winner, task))
             metrics = _metrics_for_generation(generation, winners, dataset)
+            metrics.update(_candidate_recall_metrics(records_by_task, dataset, self.curriculum.criteria))
             layer_metrics = _per_layer_metrics(winners, dataset)
             metrics["active_layer"] = self.curriculum.active_layer()
             metrics["per_layer_accuracy"] = {k: v["accuracy"] for k, v in layer_metrics.items()}
@@ -179,6 +183,15 @@ class CurriculumDarwinForgeTrainer:
             metrics["hard_case_attribution"] = _aggregate_attrs(hard_case_attrs, max(len(dataset), 1))
             for layer, values in layer_metrics.items():
                 self.curriculum.update_layer_metrics(layer, values["accuracy"], values["missing_rate"], values["confidence_margin"])
+            active = self.curriculum.active_layer()
+            active_search_metrics = {
+                "accuracy": metrics["per_layer_winner_accuracy"].get(active, 0.0),
+                "recall_at_k": metrics["per_layer_recall_at_k"].get(active, 0.0),
+                "missing_rate": metrics["per_layer_missing_rate"].get(active, 1.0),
+                "correct_count": metrics["per_layer_correct_count"].get(active, 0),
+                "total_count": metrics["per_layer_total_count"].get(active, 0),
+            }
+            self.curriculum.threshold_controller.update(active, active_search_metrics)
             freeze_before = len(self.curriculum.freeze_events)
             unfreeze_before = len(self.curriculum.unfreeze_events)
             self.curriculum.maybe_freeze_active_layer()
@@ -280,6 +293,63 @@ def _per_layer_metrics(winners: List[CandidateRecord], dataset: List[Dict]) -> D
             "confidence_margin": round(confidence_sum[layer] / max(total, 1) / 100.0, 4),
         }
     return result
+
+
+def _candidate_recall_metrics(records_by_task: List[List[CandidateRecord]], dataset: List[Dict], criteria) -> Dict:
+    totals = Counter()
+    winner_correct = Counter()
+    recall_correct = Counter()
+    false_reject = 0
+    false_accept = 0
+    true_supported_pred_supported = 0
+    true_supported_pred_unsupported = 0
+    true_unsupported_pred_supported = 0
+    true_unsupported_pred_unsupported = 0
+    for records, task in zip(records_by_task, dataset):
+        winner = max(records, key=lambda rec: rec.fitness_report.total_fitness)
+        winner_pairs = dict(decision_pairs(winner.genome.branch_path))
+        candidate_pairs = [dict(decision_pairs(record.genome.branch_path)) for record in records]
+        for layer, expected in task["target_branch_path"]:
+            totals[layer] += 1
+            winner_correct[layer] += int(winner_pairs.get(layer) == expected)
+            recall_correct[layer] += int(any(pairs.get(layer) == expected for pairs in candidate_pairs))
+        target_support = "supported" if task["supported"] else "unsupported"
+        pred_support = winner_pairs.get("support_gate")
+        if target_support == "supported" and pred_support == "supported":
+            true_supported_pred_supported += 1
+        elif target_support == "supported":
+            true_supported_pred_unsupported += 1
+            false_reject += 1
+        elif pred_support == "supported":
+            true_unsupported_pred_supported += 1
+            false_accept += 1
+        else:
+            true_unsupported_pred_unsupported += 1
+    winner_accuracy = {layer: round(winner_correct[layer] / max(total, 1), 4) for layer, total in totals.items()}
+    recall_at_k = {layer: round(recall_correct[layer] / max(total, 1), 4) for layer, total in totals.items()}
+    required = {
+        layer: required_correct_count(total, criteria.get_start_threshold(layer))
+        for layer, total in totals.items()
+    }
+    support_precision = true_supported_pred_supported / max(true_supported_pred_supported + true_unsupported_pred_supported, 1)
+    support_recall = true_supported_pred_supported / max(true_supported_pred_supported + true_supported_pred_unsupported, 1)
+    return {
+        "per_layer_winner_accuracy": winner_accuracy,
+        "per_layer_recall_at_k": recall_at_k,
+        "per_layer_correct_count": dict(winner_correct),
+        "per_layer_required_correct_count": required,
+        "per_layer_total_count": dict(totals),
+        "support_gate_confusion_matrix": {
+            "true_supported_pred_supported": true_supported_pred_supported,
+            "true_supported_pred_unsupported": true_supported_pred_unsupported,
+            "true_unsupported_pred_supported": true_unsupported_pred_supported,
+            "true_unsupported_pred_unsupported": true_unsupported_pred_unsupported,
+        },
+        "support_gate_precision": round(support_precision, 4),
+        "support_gate_recall": round(support_recall, 4),
+        "support_gate_false_reject_count": false_reject,
+        "support_gate_false_accept_count": false_accept,
+    }
 
 
 def _aggregate_attrs(attrs, denominator: int) -> Dict[str, Dict]:

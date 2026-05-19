@@ -188,3 +188,10 @@ v0.6.1 explores BranchChain curriculum freezing: early routing layers are
 trained first, frozen after stability criteria are met, and kept active during
 downstream routing while later layers continue learning. This is a
 training-dynamics experiment, not a v0.5 release claim.
+
+## v0.6.2 Development Direction
+
+v0.6.2 explores Layerwise Highest-Stable Threshold Search（分层最高稳定冻结阈值搜索） for
+BranchChain（分支链） curriculum training. Each layer starts from a high freeze
+threshold（冻结阈值） and gradually anneals downward（向下退火） only when stalled,
+freezing at the highest threshold it can stably satisfy.

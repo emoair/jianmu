@@ -15,6 +15,11 @@ CURRICULUM_METRICS_PATH = CURRICULUM_DIR / "curriculum_freezing_metrics.json"
 CURRICULUM_REPORT_PATH = CURRICULUM_DIR / "curriculum_freezing_report.md"
 CURRICULUM_CANDIDATES_PATH = CURRICULUM_DIR / "curriculum_freezing_candidates.jsonl"
 
+THRESHOLD_DIR = Path("records/v0_6_2")
+THRESHOLD_METRICS_PATH = THRESHOLD_DIR / "highest_stable_threshold_metrics.json"
+THRESHOLD_REPORT_PATH = THRESHOLD_DIR / "highest_stable_threshold_report.md"
+THRESHOLD_CANDIDATES_PATH = THRESHOLD_DIR / "highest_stable_threshold_candidates.jsonl"
+
 
 def run_darwinforge_toy(
     population_per_layer: int = 16,
@@ -179,6 +184,109 @@ def _curriculum_report_markdown(metrics):
             "## Non-Claims",
             "",
             "- This does not prove stable DarwinForge convergence.",
+            "- This does not prove general program synthesis.",
+            "- This does not train C source text.",
+            "- This does not patch old source code.",
+            "- This does not prove AGI, Transformer replacement, or hardware BPU implementation.",
+        ]
+    )
+    return "\n".join(lines) + "\n"
+
+
+def run_highest_stable_threshold_search_toy(
+    population_per_layer: int = 16,
+    generations: int = 60,
+    top_k_candidates: int = 3,
+    seed: int = 42,
+    compile_checks_per_generation: int = 0,
+):
+    THRESHOLD_DIR.mkdir(parents=True, exist_ok=True)
+    trainer = CurriculumDarwinForgeTrainer(
+        population_per_layer=population_per_layer,
+        generations=generations,
+        top_k_candidates=top_k_candidates,
+        seed=seed,
+        compile_checks_per_generation=compile_checks_per_generation,
+    )
+    metrics = trainer.train()
+    candidate_records = metrics.pop("candidate_records")
+    THRESHOLD_METRICS_PATH.write_text(json.dumps(metrics, ensure_ascii=False, indent=2, sort_keys=True), encoding="utf-8")
+    THRESHOLD_REPORT_PATH.write_text(_threshold_report_markdown(metrics), encoding="utf-8")
+    THRESHOLD_CANDIDATES_PATH.write_text(
+        "".join(json.dumps(record.to_dict(), ensure_ascii=False, sort_keys=True) + "\n" for record in candidate_records[-200:]),
+        encoding="utf-8",
+    )
+    metrics["report_path"] = str(THRESHOLD_REPORT_PATH)
+    metrics["candidates_path"] = str(THRESHOLD_CANDIDATES_PATH)
+    return metrics
+
+
+def _threshold_report_markdown(metrics):
+    first = metrics["metrics_by_generation"][0]
+    final = metrics["metrics_by_generation"][-1]
+    best = metrics["hall_of_fame"]["best_metrics"]
+    curriculum = metrics["curriculum"]
+    threshold = curriculum["threshold_controller"]
+    support_state = threshold["states"].get("support_gate", {})
+    selection_notes = []
+    for layer, recall in final.get("per_layer_recall_at_k", {}).items():
+        winner = final.get("per_layer_winner_accuracy", {}).get(layer, 0.0)
+        if recall > winner:
+            selection_notes.append(f"- {layer}: layer_recall@k（层级候选召回）={recall} > winner_accuracy（赢家准确率）={winner}")
+    lines = [
+        "# v0.6.2 Highest-Stable Threshold Search（最高稳定阈值搜索） Report",
+        "",
+        "This is a threshold-search scaffold for BranchChain（分支链） curriculum training.",
+        "",
+        "## Final vs Best（最终与历史最佳）",
+        "",
+        f"- generation 0 mean_fitness（平均适应度）: {first['mean_fitness']}",
+        f"- final mean_fitness（最终平均适应度）: {final['mean_fitness']}",
+        f"- best mean_fitness（历史最佳平均适应度）: {best.get('mean_fitness')}",
+        f"- generation 0 target_ir_exact_match（目标中间表示精确匹配）: {first['target_ir_exact_match_rate']}",
+        f"- final target_ir_exact_match（最终目标中间表示精确匹配）: {final['target_ir_exact_match_rate']}",
+        f"- best target_ir_exact_match（历史最佳目标中间表示精确匹配）: {best.get('target_ir_exact_match_rate')}",
+        f"- final missing_layer_rate（最终缺层率）: {final['missing_layer_rate']}",
+        "",
+        "## Threshold Events（阈值事件）",
+        "",
+        f"- freeze events（冻结事件）: {curriculum['freeze_events']}",
+        f"- threshold anneal events（阈值退火事件）: {curriculum['threshold_anneal_events']}",
+        f"- threshold block events（阈值阻塞事件）: {curriculum['threshold_block_events']}",
+        f"- frozen_threshold_by_layer（各层冻结阈值）: {curriculum['frozen_threshold_by_layer']}",
+        "",
+        "## support_gate（支持/拒绝门）",
+        "",
+        f"- threshold history（阈值历史）: {support_state.get('threshold_history', [])}",
+        f"- winner accuracy（赢家准确率）: {final.get('per_layer_winner_accuracy', {}).get('support_gate')}",
+        f"- layer_recall@k（层级候选召回）: {final.get('per_layer_recall_at_k', {}).get('support_gate')}",
+        f"- confusion matrix（混淆矩阵）: {final.get('support_gate_confusion_matrix')}",
+        f"- false reject supported（误拒支持样本）: {final.get('support_gate_false_reject_count')}",
+        f"- false accept unsupported（误接收不支持样本）: {final.get('support_gate_false_accept_count')}",
+        "",
+        "## Per-Layer Counts（分层整数正确数）",
+        "",
+    ]
+    for layer, total in sorted(final.get("per_layer_total_count", {}).items()):
+        lines.append(
+            f"- {layer}: actual_correct（实际正确数）={final['per_layer_correct_count'].get(layer)}, "
+            f"required_correct（要求正确数）={final['per_layer_required_correct_count'].get(layer)}, total（总数）={total}"
+        )
+    lines.extend(["", "## Selection Problem Notes（选择问题提示）", ""])
+    lines.extend(selection_notes or ["- none"])
+    lines.extend(
+        [
+            "",
+            "## Curves（曲线）",
+            "",
+            "- active_layer（当前训练层）: " + ", ".join(row["active_layer"] for row in metrics["metrics_by_generation"]),
+            "- target_ir_exact_match（目标中间表示精确匹配）: " + ", ".join(str(row["target_ir_exact_match_rate"]) for row in metrics["metrics_by_generation"]),
+            "- mean_fitness（平均适应度）: " + ", ".join(str(row["mean_fitness"]) for row in metrics["metrics_by_generation"]),
+            "- missing_layer_rate（缺层率）: " + ", ".join(str(row["missing_layer_rate"]) for row in metrics["metrics_by_generation"]),
+            "",
+            "## Non-Claims（非主张）",
+            "",
+            "- This does not prove stable DarwinForge（达尔文进化炉） convergence.",
             "- This does not prove general program synthesis.",
             "- This does not train C source text.",
             "- This does not patch old source code.",
