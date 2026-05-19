@@ -1,0 +1,5727 @@
+{
+  "compile_checks_per_generation": 4,
+  "curriculum": {
+    "active_layer": "support_gate",
+    "active_layer_index": 3,
+    "criteria": {
+      "accuracy_threshold": 0.9,
+      "max_missing_rate": 0.05,
+      "min_confidence_margin": null,
+      "stability_window": 3
+    },
+    "freeze_events": [
+      {
+        "generation": 2,
+        "layer": "task_scope",
+        "reason": "freeze_criteria_met"
+      },
+      {
+        "generation": 5,
+        "layer": "language_target",
+        "reason": "freeze_criteria_met"
+      },
+      {
+        "generation": 6,
+        "layer": "semantic_domain",
+        "reason": "freeze_criteria_met"
+      }
+    ],
+    "freeze_states": {
+      "arithmetic_family": {
+        "accuracy_history": [
+          0.7333,
+          0.7333,
+          0.7333,
+          0.8,
+          0.8,
+          0.8,
+          0.8,
+          0.8,
+          0.8,
+          0.8,
+          0.8,
+          0.8,
+          0.8,
+          0.8,
+          0.8,
+          0.8,
+          0.8,
+          0.8,
+          0.8,
+          0.8,
+          0.8,
+          0.8,
+          0.8,
+          0.8,
+          0.8,
+          0.8,
+          0.8,
+          0.8,
+          0.8,
+          0.8,
+          0.8,
+          0.8,
+          0.8,
+          0.8,
+          0.8,
+          0.8,
+          0.8,
+          0.8,
+          0.8,
+          0.8,
+          0.8
+        ],
+        "confidence_margin_history": [
+          0.2327,
+          0.2327,
+          0.2327,
+          0.2493,
+          0.2493,
+          0.2493,
+          0.2493,
+          0.2493,
+          0.2493,
+          0.2493,
+          0.2493,
+          0.2493,
+          0.2493,
+          0.2493,
+          0.2493,
+          0.2493,
+          0.2493,
+          0.2493,
+          0.2493,
+          0.2493,
+          0.2493,
+          0.2493,
+          0.2493,
+          0.2493,
+          0.2493,
+          0.2493,
+          0.2493,
+          0.2493,
+          0.2493,
+          0.2493,
+          0.2493,
+          0.2493,
+          0.2493,
+          0.2493,
+          0.2493,
+          0.2493,
+          0.2493,
+          0.2493,
+          0.2493,
+          0.2493,
+          0.2493
+        ],
+        "frozen": false,
+        "frozen_generation": null,
+        "layer_name": "arithmetic_family",
+        "missing_rate_history": [
+          0.0667,
+          0.0667,
+          0.0667,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "reason": null,
+        "temporary_unfreeze_until": null,
+        "unfreeze_count": 0
+      },
+      "language_target": {
+        "accuracy_history": [
+          0.8667,
+          0.8667,
+          0.8667,
+          0.9333,
+          0.9333,
+          0.9333,
+          0.9333,
+          0.9333,
+          0.9333,
+          0.9333,
+          0.9333,
+          0.9333,
+          0.9333,
+          0.9333,
+          0.9333,
+          0.9333,
+          0.9333,
+          0.9333,
+          0.9333,
+          0.9333,
+          0.9333,
+          0.9333,
+          0.9333,
+          0.9333,
+          0.9333,
+          0.9333,
+          0.9333,
+          0.9333,
+          0.9333,
+          0.9333,
+          0.9333,
+          0.9333,
+          0.9333,
+          0.9333,
+          0.9333,
+          0.9333,
+          0.9333,
+          0.9333,
+          0.9333,
+          0.9333,
+          0.9333
+        ],
+        "confidence_margin_history": [
+          0.0967,
+          0.0967,
+          0.0967,
+          0.0967,
+          0.0967,
+          0.0967,
+          0.0967,
+          0.0967,
+          0.0967,
+          0.0967,
+          0.0967,
+          0.0967,
+          0.0967,
+          0.0967,
+          0.0967,
+          0.0967,
+          0.0967,
+          0.0967,
+          0.0967,
+          0.0967,
+          0.0967,
+          0.0967,
+          0.0967,
+          0.0967,
+          0.0967,
+          0.0967,
+          0.0967,
+          0.0967,
+          0.0967,
+          0.0967,
+          0.0967,
+          0.0967,
+          0.0967,
+          0.0967,
+          0.0967,
+          0.0967,
+          0.0967,
+          0.0967,
+          0.0967,
+          0.0967,
+          0.0967
+        ],
+        "frozen": true,
+        "frozen_generation": 5,
+        "layer_name": "language_target",
+        "missing_rate_history": [
+          0.0667,
+          0.0667,
+          0.0667,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "reason": "freeze_criteria_met",
+        "temporary_unfreeze_until": null,
+        "unfreeze_count": 0
+      },
+      "semantic_domain": {
+        "accuracy_history": [
+          0.9333,
+          0.9333,
+          0.9333,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "confidence_margin_history": [
+          0.2333,
+          0.2333,
+          0.2333,
+          0.25,
+          0.25,
+          0.25,
+          0.25,
+          0.25,
+          0.25,
+          0.25,
+          0.25,
+          0.25,
+          0.25,
+          0.25,
+          0.25,
+          0.25,
+          0.25,
+          0.25,
+          0.25,
+          0.25,
+          0.25,
+          0.25,
+          0.25,
+          0.25,
+          0.25,
+          0.25,
+          0.25,
+          0.25,
+          0.25,
+          0.25,
+          0.25,
+          0.25,
+          0.25,
+          0.25,
+          0.25,
+          0.25,
+          0.25,
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ],
+        "frozen": true,
+        "frozen_generation": 6,
+        "layer_name": "semantic_domain",
+        "missing_rate_history": [
+          0.0667,
+          0.0667,
+          0.0667,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "reason": "freeze_criteria_met",
+        "temporary_unfreeze_until": null,
+        "unfreeze_count": 0
+      },
+      "slot_binding_policy": {
+        "accuracy_history": [
+          0.7333,
+          0.7333,
+          0.7333,
+          0.7333,
+          0.7333,
+          0.7333,
+          0.7333,
+          0.7333,
+          0.7333,
+          0.7333,
+          0.7333,
+          0.7333,
+          0.7333,
+          0.7333,
+          0.7333,
+          0.7333,
+          0.7333,
+          0.7333,
+          0.7333,
+          0.7333,
+          0.7333,
+          0.7333,
+          0.7333,
+          0.7333,
+          0.7333,
+          0.7333,
+          0.7333,
+          0.7333,
+          0.7333,
+          0.7333,
+          0.7333,
+          0.7333,
+          0.7333,
+          0.7333,
+          0.7333,
+          0.7333,
+          0.7333,
+          0.7333,
+          0.7333,
+          0.7333,
+          0.7333
+        ],
+        "confidence_margin_history": [
+          0.2333,
+          0.2333,
+          0.2333,
+          0.2467,
+          0.2467,
+          0.2467,
+          0.2467,
+          0.2467,
+          0.2467,
+          0.2467,
+          0.2467,
+          0.2467,
+          0.2467,
+          0.2467,
+          0.2467,
+          0.2467,
+          0.2467,
+          0.2467,
+          0.2467,
+          0.2467,
+          0.2467,
+          0.2467,
+          0.2467,
+          0.2467,
+          0.2467,
+          0.2467,
+          0.2467,
+          0.2467,
+          0.2467,
+          0.2467,
+          0.2467,
+          0.2467,
+          0.2467,
+          0.2467,
+          0.2467,
+          0.2467,
+          0.2467,
+          0.2467,
+          0.2467,
+          0.2467,
+          0.2467
+        ],
+        "frozen": false,
+        "frozen_generation": null,
+        "layer_name": "slot_binding_policy",
+        "missing_rate_history": [
+          0.0667,
+          0.0667,
+          0.0667,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "reason": null,
+        "temporary_unfreeze_until": null,
+        "unfreeze_count": 0
+      },
+      "structure_policy": {
+        "accuracy_history": [
+          0.7333,
+          0.7333,
+          0.7333,
+          0.8,
+          0.8,
+          0.8,
+          0.8,
+          0.8,
+          0.8,
+          0.8,
+          0.8,
+          0.8,
+          0.8,
+          0.8,
+          0.8,
+          0.8,
+          0.8,
+          0.8,
+          0.8,
+          0.8,
+          0.8,
+          0.8,
+          0.8,
+          0.8,
+          0.8,
+          0.8,
+          0.8,
+          0.8,
+          0.8,
+          0.8,
+          0.8,
+          0.8,
+          0.8,
+          0.8,
+          0.8,
+          0.8,
+          0.8,
+          0.8,
+          0.8,
+          0.8,
+          0.8
+        ],
+        "confidence_margin_history": [
+          0.26,
+          0.26,
+          0.26,
+          0.2733,
+          0.2733,
+          0.2733,
+          0.2733,
+          0.2733,
+          0.2733,
+          0.2733,
+          0.2733,
+          0.2733,
+          0.2733,
+          0.2733,
+          0.2733,
+          0.2733,
+          0.2733,
+          0.2733,
+          0.2733,
+          0.2733,
+          0.2733,
+          0.2733,
+          0.2733,
+          0.2733,
+          0.2733,
+          0.2733,
+          0.2733,
+          0.2733,
+          0.2733,
+          0.2733,
+          0.2733,
+          0.2733,
+          0.2733,
+          0.2733,
+          0.2733,
+          0.2733,
+          0.2733,
+          0.2733,
+          0.2733,
+          0.2733,
+          0.2733
+        ],
+        "frozen": false,
+        "frozen_generation": null,
+        "layer_name": "structure_policy",
+        "missing_rate_history": [
+          0.0667,
+          0.0667,
+          0.0667,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "reason": null,
+        "temporary_unfreeze_until": null,
+        "unfreeze_count": 0
+      },
+      "support_gate": {
+        "accuracy_history": [
+          0.7,
+          0.7,
+          0.7,
+          0.75,
+          0.75,
+          0.75,
+          0.8,
+          0.8,
+          0.8,
+          0.8,
+          0.8,
+          0.8,
+          0.8,
+          0.8,
+          0.8,
+          0.8,
+          0.8,
+          0.8,
+          0.8,
+          0.8,
+          0.8,
+          0.8,
+          0.8,
+          0.8,
+          0.8,
+          0.8,
+          0.8,
+          0.8,
+          0.8,
+          0.8,
+          0.8,
+          0.8,
+          0.8,
+          0.8,
+          0.8,
+          0.8,
+          0.8,
+          0.8,
+          0.8,
+          0.8,
+          0.8
+        ],
+        "confidence_margin_history": [
+          0.16,
+          0.16,
+          0.16,
+          0.173,
+          0.173,
+          0.173,
+          0.1735,
+          0.1735,
+          0.1735,
+          0.1735,
+          0.1735,
+          0.1735,
+          0.1735,
+          0.1735,
+          0.1735,
+          0.1735,
+          0.1735,
+          0.1735,
+          0.1735,
+          0.1735,
+          0.1735,
+          0.1735,
+          0.1735,
+          0.1735,
+          0.1735,
+          0.1735,
+          0.1735,
+          0.1735,
+          0.1735,
+          0.1735,
+          0.1735,
+          0.1735,
+          0.1735,
+          0.1735,
+          0.1735,
+          0.1735,
+          0.1735,
+          0.1735,
+          0.1735,
+          0.1735,
+          0.1735
+        ],
+        "frozen": false,
+        "frozen_generation": null,
+        "layer_name": "support_gate",
+        "missing_rate_history": [
+          0.2,
+          0.2,
+          0.2,
+          0.1,
+          0.1,
+          0.1,
+          0.05,
+          0.05,
+          0.05,
+          0.05,
+          0.05,
+          0.05,
+          0.05,
+          0.05,
+          0.05,
+          0.05,
+          0.05,
+          0.05,
+          0.05,
+          0.05,
+          0.05,
+          0.05,
+          0.05,
+          0.05,
+          0.05,
+          0.05,
+          0.05,
+          0.05,
+          0.05,
+          0.05,
+          0.05,
+          0.05,
+          0.05,
+          0.05,
+          0.05,
+          0.05,
+          0.05,
+          0.05,
+          0.05,
+          0.05,
+          0.05
+        ],
+        "reason": null,
+        "temporary_unfreeze_until": null,
+        "unfreeze_count": 0
+      },
+      "target_builder": {
+        "accuracy_history": [
+          0.9333,
+          0.9333,
+          0.9333,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "confidence_margin_history": [
+          0.1867,
+          0.1867,
+          0.1867,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2
+        ],
+        "frozen": false,
+        "frozen_generation": null,
+        "layer_name": "target_builder",
+        "missing_rate_history": [
+          0.0667,
+          0.0667,
+          0.0667,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "reason": null,
+        "temporary_unfreeze_until": null,
+        "unfreeze_count": 0
+      },
+      "task_scope": {
+        "accuracy_history": [
+          0.9,
+          0.9,
+          0.95,
+          0.95,
+          0.95,
+          0.95,
+          0.95,
+          0.95,
+          0.95,
+          0.95,
+          0.95,
+          0.95,
+          0.95,
+          0.95,
+          0.95,
+          0.95,
+          0.95,
+          0.95,
+          0.95,
+          0.95,
+          0.95,
+          0.95,
+          0.95,
+          0.95,
+          0.95,
+          0.95,
+          0.95,
+          0.95,
+          0.95,
+          0.95,
+          0.95,
+          0.95,
+          0.95,
+          0.95,
+          0.95,
+          0.95,
+          0.95,
+          0.95,
+          0.95,
+          0.95,
+          0.95
+        ],
+        "confidence_margin_history": [
+          0.224,
+          0.226,
+          0.224,
+          0.224,
+          0.224,
+          0.224,
+          0.224,
+          0.224,
+          0.224,
+          0.224,
+          0.224,
+          0.224,
+          0.224,
+          0.224,
+          0.224,
+          0.224,
+          0.224,
+          0.224,
+          0.224,
+          0.224,
+          0.224,
+          0.224,
+          0.224,
+          0.224,
+          0.224,
+          0.224,
+          0.224,
+          0.224,
+          0.224,
+          0.224,
+          0.224,
+          0.224,
+          0.224,
+          0.224,
+          0.224,
+          0.224,
+          0.224,
+          0.224,
+          0.224,
+          0.224,
+          0.224
+        ],
+        "frozen": true,
+        "frozen_generation": 2,
+        "layer_name": "task_scope",
+        "missing_rate_history": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "reason": "freeze_criteria_met",
+        "temporary_unfreeze_until": null,
+        "unfreeze_count": 0
+      }
+    },
+    "generation": 40,
+    "layer_order": [
+      "task_scope",
+      "language_target",
+      "semantic_domain",
+      "support_gate",
+      "arithmetic_family",
+      "structure_policy",
+      "slot_binding_policy",
+      "target_builder"
+    ],
+    "unfreeze_events": [],
+    "unfreeze_generations": 3
+  },
+  "dataset_size": 20,
+  "generations": 40,
+  "hall_of_fame": {
+    "best_generation": 3,
+    "best_metrics": {
+      "active_layer": "language_target",
+      "best_fitness": 8.2,
+      "branch_path_exact_match_rate": 0.35,
+      "checked_compile_success_rate": 1.0,
+      "checked_run_success_rate": 1.0,
+      "expected_output_match_rate": 0.55,
+      "freeze_events": [],
+      "frozen_layers": [
+        "task_scope"
+      ],
+      "generation": 3,
+      "hard_case_attribution": {
+        "arithmetic_family": {
+          "error_count": 3,
+          "error_rate": 0.15,
+          "severity": 0.09
+        },
+        "slot_binding_policy": {
+          "error_count": 1,
+          "error_rate": 0.05,
+          "severity": 0.03
+        },
+        "structure_policy": {
+          "error_count": 3,
+          "error_rate": 0.15,
+          "severity": 0.09
+        },
+        "support_gate": {
+          "error_count": 2,
+          "error_rate": 0.1,
+          "severity": 0.1
+        }
+      },
+      "mean_fitness": 3.4867,
+      "missing_layer_rate": 0.0,
+      "most_common_wrong_branch_decisions": [
+        [
+          "support_gate:unsupported -> supported",
+          3
+        ],
+        [
+          "slot_binding_policy:chinese_number_order -> surface_number_order",
+          2
+        ],
+        [
+          "arithmetic_family:mixed_precedence -> multiplication",
+          2
+        ],
+        [
+          "structure_policy:precedence_tree -> binary_operation",
+          2
+        ],
+        [
+          "slot_binding_policy:signed_number_order -> surface_number_order",
+          2
+        ],
+        [
+          "support_gate:unsupported -> <missing>",
+          2
+        ],
+        [
+          "arithmetic_family:addition -> subtraction",
+          1
+        ],
+        [
+          "structure_policy:reduce_chain -> binary_operation",
+          1
+        ],
+        [
+          "task_scope:unsupported -> programming",
+          1
+        ],
+        [
+          "language_target:C -> unknown",
+          1
+        ]
+      ],
+      "per_layer_accuracy": {
+        "arithmetic_family": 0.8,
+        "language_target": 0.9333,
+        "semantic_domain": 1.0,
+        "slot_binding_policy": 0.7333,
+        "structure_policy": 0.8,
+        "support_gate": 0.75,
+        "target_builder": 1.0,
+        "task_scope": 0.95
+      },
+      "per_layer_missing_rate": {
+        "arithmetic_family": 0.0,
+        "language_target": 0.0,
+        "semantic_domain": 0.0,
+        "slot_binding_policy": 0.0,
+        "structure_policy": 0.0,
+        "support_gate": 0.1,
+        "target_builder": 0.0,
+        "task_scope": 0.0
+      },
+      "target_ir_exact_match_rate": 0.55,
+      "unfreeze_events": [],
+      "unsupported_correct_rate": 0.6
+    },
+    "best_population_summary": {
+      "arithmetic_family": {
+        "count": 16,
+        "options": [
+          "addition",
+          "exact_division",
+          "mixed_precedence",
+          "multiplication",
+          "parentheses",
+          "subtraction",
+          "unsupported"
+        ],
+        "top_score": 0.0
+      },
+      "language_target": {
+        "count": 16,
+        "options": [
+          "C",
+          "unknown"
+        ],
+        "top_score": 71.60010000000003
+      },
+      "semantic_domain": {
+        "count": 16,
+        "options": [
+          "arithmetic",
+          "comparison_future",
+          "unsupported"
+        ],
+        "top_score": 0.0
+      },
+      "slot_binding_policy": {
+        "count": 16,
+        "options": [
+          "chinese_number_order",
+          "previous_targetir_delta",
+          "signed_number_order",
+          "surface_number_order",
+          "unsupported"
+        ],
+        "top_score": 0.0
+      },
+      "structure_policy": {
+        "count": 16,
+        "options": [
+          "binary_operation",
+          "parenthesized_tree",
+          "precedence_tree",
+          "reduce_chain",
+          "unsupported"
+        ],
+        "top_score": 0.0
+      },
+      "support_gate": {
+        "count": 16,
+        "options": [
+          "supported",
+          "unsupported"
+        ],
+        "top_score": 0.0
+      },
+      "target_builder": {
+        "count": 16,
+        "options": [
+          "canonical_arithmetic_targetir",
+          "canonical_program_targetir",
+          "early_exit"
+        ],
+        "top_score": 0.0
+      },
+      "task_scope": {
+        "count": 16,
+        "options": [
+          "non_programming",
+          "programming",
+          "unsupported"
+        ],
+        "top_score": 258.6672000000001
+      }
+    },
+    "best_records_path": null
+  },
+  "hard_case_count": 249,
+  "metrics_by_generation": [
+    {
+      "active_layer": "task_scope",
+      "best_fitness": 8.2,
+      "branch_path_exact_match_rate": 0.35,
+      "checked_compile_success_rate": 1.0,
+      "checked_run_success_rate": 1.0,
+      "expected_output_match_rate": 0.5,
+      "freeze_events": [],
+      "frozen_layers": [],
+      "generation": 0,
+      "hard_case_attribution": {
+        "arithmetic_family": {
+          "error_count": 4,
+          "error_rate": 0.2,
+          "severity": 0.13
+        },
+        "language_target": {
+          "error_count": 1,
+          "error_rate": 0.05,
+          "severity": 0.04
+        },
+        "semantic_domain": {
+          "error_count": 1,
+          "error_rate": 0.05,
+          "severity": 0.04
+        },
+        "slot_binding_policy": {
+          "error_count": 2,
+          "error_rate": 0.1,
+          "severity": 0.07
+        },
+        "structure_policy": {
+          "error_count": 4,
+          "error_rate": 0.2,
+          "severity": 0.13
+        },
+        "support_gate": {
+          "error_count": 3,
+          "error_rate": 0.15,
+          "severity": 0.14
+        },
+        "target_builder": {
+          "error_count": 1,
+          "error_rate": 0.05,
+          "severity": 0.04
+        }
+      },
+      "mean_fitness": 3.1067,
+      "missing_layer_rate": 0.2,
+      "most_common_wrong_branch_decisions": [
+        [
+          "support_gate:unsupported -> <missing>",
+          3
+        ],
+        [
+          "slot_binding_policy:chinese_number_order -> surface_number_order",
+          2
+        ],
+        [
+          "arithmetic_family:mixed_precedence -> multiplication",
+          2
+        ],
+        [
+          "structure_policy:precedence_tree -> binary_operation",
+          2
+        ],
+        [
+          "support_gate:unsupported -> supported",
+          2
+        ],
+        [
+          "arithmetic_family:addition -> subtraction",
+          1
+        ],
+        [
+          "language_target:unknown -> <missing>",
+          1
+        ],
+        [
+          "semantic_domain:arithmetic -> <missing>",
+          1
+        ],
+        [
+          "support_gate:supported -> <missing>",
+          1
+        ],
+        [
+          "arithmetic_family:subtraction -> <missing>",
+          1
+        ]
+      ],
+      "per_layer_accuracy": {
+        "arithmetic_family": 0.7333,
+        "language_target": 0.8667,
+        "semantic_domain": 0.9333,
+        "slot_binding_policy": 0.7333,
+        "structure_policy": 0.7333,
+        "support_gate": 0.7,
+        "target_builder": 0.9333,
+        "task_scope": 0.9
+      },
+      "per_layer_missing_rate": {
+        "arithmetic_family": 0.0667,
+        "language_target": 0.0667,
+        "semantic_domain": 0.0667,
+        "slot_binding_policy": 0.0667,
+        "structure_policy": 0.0667,
+        "support_gate": 0.2,
+        "target_builder": 0.0667,
+        "task_scope": 0.0
+      },
+      "target_ir_exact_match_rate": 0.5,
+      "unfreeze_events": [],
+      "unsupported_correct_rate": 0.6
+    },
+    {
+      "active_layer": "task_scope",
+      "best_fitness": 8.2,
+      "branch_path_exact_match_rate": 0.35,
+      "checked_compile_success_rate": 1.0,
+      "checked_run_success_rate": 1.0,
+      "expected_output_match_rate": 0.5,
+      "freeze_events": [],
+      "frozen_layers": [],
+      "generation": 1,
+      "hard_case_attribution": {
+        "arithmetic_family": {
+          "error_count": 4,
+          "error_rate": 0.2,
+          "severity": 0.13
+        },
+        "language_target": {
+          "error_count": 1,
+          "error_rate": 0.05,
+          "severity": 0.04
+        },
+        "semantic_domain": {
+          "error_count": 1,
+          "error_rate": 0.05,
+          "severity": 0.04
+        },
+        "slot_binding_policy": {
+          "error_count": 2,
+          "error_rate": 0.1,
+          "severity": 0.07
+        },
+        "structure_policy": {
+          "error_count": 4,
+          "error_rate": 0.2,
+          "severity": 0.13
+        },
+        "support_gate": {
+          "error_count": 3,
+          "error_rate": 0.15,
+          "severity": 0.14
+        },
+        "target_builder": {
+          "error_count": 1,
+          "error_rate": 0.05,
+          "severity": 0.04
+        },
+        "task_scope": {
+          "error_count": 1,
+          "error_rate": 0.05,
+          "severity": 0.03
+        }
+      },
+      "mean_fitness": 3.1067,
+      "missing_layer_rate": 0.2,
+      "most_common_wrong_branch_decisions": [
+        [
+          "support_gate:unsupported -> <missing>",
+          3
+        ],
+        [
+          "slot_binding_policy:chinese_number_order -> surface_number_order",
+          2
+        ],
+        [
+          "arithmetic_family:mixed_precedence -> multiplication",
+          2
+        ],
+        [
+          "structure_policy:precedence_tree -> binary_operation",
+          2
+        ],
+        [
+          "support_gate:unsupported -> supported",
+          2
+        ],
+        [
+          "arithmetic_family:addition -> subtraction",
+          1
+        ],
+        [
+          "language_target:unknown -> <missing>",
+          1
+        ],
+        [
+          "semantic_domain:arithmetic -> <missing>",
+          1
+        ],
+        [
+          "support_gate:supported -> <missing>",
+          1
+        ],
+        [
+          "arithmetic_family:subtraction -> <missing>",
+          1
+        ]
+      ],
+      "per_layer_accuracy": {
+        "arithmetic_family": 0.7333,
+        "language_target": 0.8667,
+        "semantic_domain": 0.9333,
+        "slot_binding_policy": 0.7333,
+        "structure_policy": 0.7333,
+        "support_gate": 0.7,
+        "target_builder": 0.9333,
+        "task_scope": 0.9
+      },
+      "per_layer_missing_rate": {
+        "arithmetic_family": 0.0667,
+        "language_target": 0.0667,
+        "semantic_domain": 0.0667,
+        "slot_binding_policy": 0.0667,
+        "structure_policy": 0.0667,
+        "support_gate": 0.2,
+        "target_builder": 0.0667,
+        "task_scope": 0.0
+      },
+      "target_ir_exact_match_rate": 0.5,
+      "unfreeze_events": [],
+      "unsupported_correct_rate": 0.6
+    },
+    {
+      "active_layer": "task_scope",
+      "best_fitness": 8.2,
+      "branch_path_exact_match_rate": 0.35,
+      "checked_compile_success_rate": 1.0,
+      "checked_run_success_rate": 1.0,
+      "expected_output_match_rate": 0.5,
+      "freeze_events": [
+        {
+          "generation": 2,
+          "layer": "task_scope",
+          "reason": "freeze_criteria_met"
+        }
+      ],
+      "frozen_layers": [],
+      "generation": 2,
+      "hard_case_attribution": {
+        "arithmetic_family": {
+          "error_count": 4,
+          "error_rate": 0.2,
+          "severity": 0.13
+        },
+        "language_target": {
+          "error_count": 1,
+          "error_rate": 0.05,
+          "severity": 0.04
+        },
+        "semantic_domain": {
+          "error_count": 1,
+          "error_rate": 0.05,
+          "severity": 0.04
+        },
+        "slot_binding_policy": {
+          "error_count": 2,
+          "error_rate": 0.1,
+          "severity": 0.07
+        },
+        "structure_policy": {
+          "error_count": 4,
+          "error_rate": 0.2,
+          "severity": 0.13
+        },
+        "support_gate": {
+          "error_count": 3,
+          "error_rate": 0.15,
+          "severity": 0.14
+        },
+        "target_builder": {
+          "error_count": 1,
+          "error_rate": 0.05,
+          "severity": 0.04
+        }
+      },
+      "mean_fitness": 3.1067,
+      "missing_layer_rate": 0.2,
+      "most_common_wrong_branch_decisions": [
+        [
+          "support_gate:unsupported -> <missing>",
+          3
+        ],
+        [
+          "slot_binding_policy:chinese_number_order -> surface_number_order",
+          2
+        ],
+        [
+          "arithmetic_family:mixed_precedence -> multiplication",
+          2
+        ],
+        [
+          "structure_policy:precedence_tree -> binary_operation",
+          2
+        ],
+        [
+          "support_gate:unsupported -> supported",
+          2
+        ],
+        [
+          "arithmetic_family:addition -> subtraction",
+          1
+        ],
+        [
+          "language_target:unknown -> <missing>",
+          1
+        ],
+        [
+          "semantic_domain:arithmetic -> <missing>",
+          1
+        ],
+        [
+          "support_gate:supported -> <missing>",
+          1
+        ],
+        [
+          "arithmetic_family:subtraction -> <missing>",
+          1
+        ]
+      ],
+      "per_layer_accuracy": {
+        "arithmetic_family": 0.7333,
+        "language_target": 0.8667,
+        "semantic_domain": 0.9333,
+        "slot_binding_policy": 0.7333,
+        "structure_policy": 0.7333,
+        "support_gate": 0.7,
+        "target_builder": 0.9333,
+        "task_scope": 0.95
+      },
+      "per_layer_missing_rate": {
+        "arithmetic_family": 0.0667,
+        "language_target": 0.0667,
+        "semantic_domain": 0.0667,
+        "slot_binding_policy": 0.0667,
+        "structure_policy": 0.0667,
+        "support_gate": 0.2,
+        "target_builder": 0.0667,
+        "task_scope": 0.0
+      },
+      "target_ir_exact_match_rate": 0.5,
+      "unfreeze_events": [],
+      "unsupported_correct_rate": 0.6
+    },
+    {
+      "active_layer": "language_target",
+      "best_fitness": 8.2,
+      "branch_path_exact_match_rate": 0.35,
+      "checked_compile_success_rate": 1.0,
+      "checked_run_success_rate": 1.0,
+      "expected_output_match_rate": 0.55,
+      "freeze_events": [],
+      "frozen_layers": [
+        "task_scope"
+      ],
+      "generation": 3,
+      "hard_case_attribution": {
+        "arithmetic_family": {
+          "error_count": 3,
+          "error_rate": 0.15,
+          "severity": 0.09
+        },
+        "slot_binding_policy": {
+          "error_count": 1,
+          "error_rate": 0.05,
+          "severity": 0.03
+        },
+        "structure_policy": {
+          "error_count": 3,
+          "error_rate": 0.15,
+          "severity": 0.09
+        },
+        "support_gate": {
+          "error_count": 2,
+          "error_rate": 0.1,
+          "severity": 0.1
+        }
+      },
+      "mean_fitness": 3.4867,
+      "missing_layer_rate": 0.0,
+      "most_common_wrong_branch_decisions": [
+        [
+          "support_gate:unsupported -> supported",
+          3
+        ],
+        [
+          "slot_binding_policy:chinese_number_order -> surface_number_order",
+          2
+        ],
+        [
+          "arithmetic_family:mixed_precedence -> multiplication",
+          2
+        ],
+        [
+          "structure_policy:precedence_tree -> binary_operation",
+          2
+        ],
+        [
+          "slot_binding_policy:signed_number_order -> surface_number_order",
+          2
+        ],
+        [
+          "support_gate:unsupported -> <missing>",
+          2
+        ],
+        [
+          "arithmetic_family:addition -> subtraction",
+          1
+        ],
+        [
+          "structure_policy:reduce_chain -> binary_operation",
+          1
+        ],
+        [
+          "task_scope:unsupported -> programming",
+          1
+        ],
+        [
+          "language_target:C -> unknown",
+          1
+        ]
+      ],
+      "per_layer_accuracy": {
+        "arithmetic_family": 0.8,
+        "language_target": 0.9333,
+        "semantic_domain": 1.0,
+        "slot_binding_policy": 0.7333,
+        "structure_policy": 0.8,
+        "support_gate": 0.75,
+        "target_builder": 1.0,
+        "task_scope": 0.95
+      },
+      "per_layer_missing_rate": {
+        "arithmetic_family": 0.0,
+        "language_target": 0.0,
+        "semantic_domain": 0.0,
+        "slot_binding_policy": 0.0,
+        "structure_policy": 0.0,
+        "support_gate": 0.1,
+        "target_builder": 0.0,
+        "task_scope": 0.0
+      },
+      "target_ir_exact_match_rate": 0.55,
+      "unfreeze_events": [],
+      "unsupported_correct_rate": 0.6
+    },
+    {
+      "active_layer": "language_target",
+      "best_fitness": 8.2,
+      "branch_path_exact_match_rate": 0.35,
+      "checked_compile_success_rate": 1.0,
+      "checked_run_success_rate": 1.0,
+      "expected_output_match_rate": 0.55,
+      "freeze_events": [],
+      "frozen_layers": [
+        "task_scope"
+      ],
+      "generation": 4,
+      "hard_case_attribution": {
+        "arithmetic_family": {
+          "error_count": 3,
+          "error_rate": 0.15,
+          "severity": 0.09
+        },
+        "slot_binding_policy": {
+          "error_count": 1,
+          "error_rate": 0.05,
+          "severity": 0.03
+        },
+        "structure_policy": {
+          "error_count": 3,
+          "error_rate": 0.15,
+          "severity": 0.09
+        },
+        "support_gate": {
+          "error_count": 2,
+          "error_rate": 0.1,
+          "severity": 0.1
+        }
+      },
+      "mean_fitness": 3.4867,
+      "missing_layer_rate": 0.0,
+      "most_common_wrong_branch_decisions": [
+        [
+          "support_gate:unsupported -> supported",
+          3
+        ],
+        [
+          "slot_binding_policy:chinese_number_order -> surface_number_order",
+          2
+        ],
+        [
+          "arithmetic_family:mixed_precedence -> multiplication",
+          2
+        ],
+        [
+          "structure_policy:precedence_tree -> binary_operation",
+          2
+        ],
+        [
+          "slot_binding_policy:signed_number_order -> surface_number_order",
+          2
+        ],
+        [
+          "support_gate:unsupported -> <missing>",
+          2
+        ],
+        [
+          "arithmetic_family:addition -> subtraction",
+          1
+        ],
+        [
+          "structure_policy:reduce_chain -> binary_operation",
+          1
+        ],
+        [
+          "task_scope:unsupported -> programming",
+          1
+        ],
+        [
+          "language_target:C -> unknown",
+          1
+        ]
+      ],
+      "per_layer_accuracy": {
+        "arithmetic_family": 0.8,
+        "language_target": 0.9333,
+        "semantic_domain": 1.0,
+        "slot_binding_policy": 0.7333,
+        "structure_policy": 0.8,
+        "support_gate": 0.75,
+        "target_builder": 1.0,
+        "task_scope": 0.95
+      },
+      "per_layer_missing_rate": {
+        "arithmetic_family": 0.0,
+        "language_target": 0.0,
+        "semantic_domain": 0.0,
+        "slot_binding_policy": 0.0,
+        "structure_policy": 0.0,
+        "support_gate": 0.1,
+        "target_builder": 0.0,
+        "task_scope": 0.0
+      },
+      "target_ir_exact_match_rate": 0.55,
+      "unfreeze_events": [],
+      "unsupported_correct_rate": 0.6
+    },
+    {
+      "active_layer": "language_target",
+      "best_fitness": 8.2,
+      "branch_path_exact_match_rate": 0.35,
+      "checked_compile_success_rate": 1.0,
+      "checked_run_success_rate": 1.0,
+      "expected_output_match_rate": 0.55,
+      "freeze_events": [
+        {
+          "generation": 5,
+          "layer": "language_target",
+          "reason": "freeze_criteria_met"
+        }
+      ],
+      "frozen_layers": [
+        "task_scope"
+      ],
+      "generation": 5,
+      "hard_case_attribution": {
+        "arithmetic_family": {
+          "error_count": 3,
+          "error_rate": 0.15,
+          "severity": 0.09
+        },
+        "slot_binding_policy": {
+          "error_count": 1,
+          "error_rate": 0.05,
+          "severity": 0.03
+        },
+        "structure_policy": {
+          "error_count": 3,
+          "error_rate": 0.15,
+          "severity": 0.09
+        },
+        "support_gate": {
+          "error_count": 2,
+          "error_rate": 0.1,
+          "severity": 0.1
+        }
+      },
+      "mean_fitness": 3.4867,
+      "missing_layer_rate": 0.0,
+      "most_common_wrong_branch_decisions": [
+        [
+          "support_gate:unsupported -> supported",
+          3
+        ],
+        [
+          "slot_binding_policy:chinese_number_order -> surface_number_order",
+          2
+        ],
+        [
+          "arithmetic_family:mixed_precedence -> multiplication",
+          2
+        ],
+        [
+          "structure_policy:precedence_tree -> binary_operation",
+          2
+        ],
+        [
+          "slot_binding_policy:signed_number_order -> surface_number_order",
+          2
+        ],
+        [
+          "support_gate:unsupported -> <missing>",
+          2
+        ],
+        [
+          "arithmetic_family:addition -> subtraction",
+          1
+        ],
+        [
+          "structure_policy:reduce_chain -> binary_operation",
+          1
+        ],
+        [
+          "task_scope:unsupported -> programming",
+          1
+        ],
+        [
+          "language_target:C -> unknown",
+          1
+        ]
+      ],
+      "per_layer_accuracy": {
+        "arithmetic_family": 0.8,
+        "language_target": 0.9333,
+        "semantic_domain": 1.0,
+        "slot_binding_policy": 0.7333,
+        "structure_policy": 0.8,
+        "support_gate": 0.75,
+        "target_builder": 1.0,
+        "task_scope": 0.95
+      },
+      "per_layer_missing_rate": {
+        "arithmetic_family": 0.0,
+        "language_target": 0.0,
+        "semantic_domain": 0.0,
+        "slot_binding_policy": 0.0,
+        "structure_policy": 0.0,
+        "support_gate": 0.1,
+        "target_builder": 0.0,
+        "task_scope": 0.0
+      },
+      "target_ir_exact_match_rate": 0.55,
+      "unfreeze_events": [],
+      "unsupported_correct_rate": 0.6
+    },
+    {
+      "active_layer": "semantic_domain",
+      "best_fitness": 8.2,
+      "branch_path_exact_match_rate": 0.35,
+      "checked_compile_success_rate": 1.0,
+      "checked_run_success_rate": 1.0,
+      "expected_output_match_rate": 0.55,
+      "freeze_events": [
+        {
+          "generation": 6,
+          "layer": "semantic_domain",
+          "reason": "freeze_criteria_met"
+        }
+      ],
+      "frozen_layers": [
+        "task_scope",
+        "language_target"
+      ],
+      "generation": 6,
+      "hard_case_attribution": {
+        "arithmetic_family": {
+          "error_count": 3,
+          "error_rate": 0.15,
+          "severity": 0.09
+        },
+        "slot_binding_policy": {
+          "error_count": 1,
+          "error_rate": 0.05,
+          "severity": 0.03
+        },
+        "structure_policy": {
+          "error_count": 3,
+          "error_rate": 0.15,
+          "severity": 0.09
+        },
+        "support_gate": {
+          "error_count": 2,
+          "error_rate": 0.1,
+          "severity": 0.1
+        }
+      },
+      "mean_fitness": 3.4817,
+      "missing_layer_rate": 0.0,
+      "most_common_wrong_branch_decisions": [
+        [
+          "support_gate:unsupported -> supported",
+          3
+        ],
+        [
+          "slot_binding_policy:chinese_number_order -> surface_number_order",
+          2
+        ],
+        [
+          "arithmetic_family:mixed_precedence -> multiplication",
+          2
+        ],
+        [
+          "structure_policy:precedence_tree -> binary_operation",
+          2
+        ],
+        [
+          "slot_binding_policy:signed_number_order -> surface_number_order",
+          2
+        ],
+        [
+          "arithmetic_family:addition -> subtraction",
+          1
+        ],
+        [
+          "structure_policy:reduce_chain -> binary_operation",
+          1
+        ],
+        [
+          "support_gate:unsupported -> <missing>",
+          1
+        ],
+        [
+          "task_scope:unsupported -> programming",
+          1
+        ],
+        [
+          "language_target:C -> unknown",
+          1
+        ]
+      ],
+      "per_layer_accuracy": {
+        "arithmetic_family": 0.8,
+        "language_target": 0.9333,
+        "semantic_domain": 1.0,
+        "slot_binding_policy": 0.7333,
+        "structure_policy": 0.8,
+        "support_gate": 0.8,
+        "target_builder": 1.0,
+        "task_scope": 0.95
+      },
+      "per_layer_missing_rate": {
+        "arithmetic_family": 0.0,
+        "language_target": 0.0,
+        "semantic_domain": 0.0,
+        "slot_binding_policy": 0.0,
+        "structure_policy": 0.0,
+        "support_gate": 0.05,
+        "target_builder": 0.0,
+        "task_scope": 0.0
+      },
+      "target_ir_exact_match_rate": 0.55,
+      "unfreeze_events": [],
+      "unsupported_correct_rate": 0.6
+    },
+    {
+      "active_layer": "support_gate",
+      "best_fitness": 8.2,
+      "branch_path_exact_match_rate": 0.35,
+      "checked_compile_success_rate": 1.0,
+      "checked_run_success_rate": 1.0,
+      "expected_output_match_rate": 0.55,
+      "freeze_events": [],
+      "frozen_layers": [
+        "task_scope",
+        "language_target",
+        "semantic_domain"
+      ],
+      "generation": 7,
+      "hard_case_attribution": {
+        "arithmetic_family": {
+          "error_count": 3,
+          "error_rate": 0.15,
+          "severity": 0.09
+        },
+        "slot_binding_policy": {
+          "error_count": 1,
+          "error_rate": 0.05,
+          "severity": 0.03
+        },
+        "structure_policy": {
+          "error_count": 3,
+          "error_rate": 0.15,
+          "severity": 0.09
+        },
+        "support_gate": {
+          "error_count": 2,
+          "error_rate": 0.1,
+          "severity": 0.1
+        }
+      },
+      "mean_fitness": 3.4817,
+      "missing_layer_rate": 0.0,
+      "most_common_wrong_branch_decisions": [
+        [
+          "support_gate:unsupported -> supported",
+          3
+        ],
+        [
+          "slot_binding_policy:chinese_number_order -> surface_number_order",
+          2
+        ],
+        [
+          "arithmetic_family:mixed_precedence -> multiplication",
+          2
+        ],
+        [
+          "structure_policy:precedence_tree -> binary_operation",
+          2
+        ],
+        [
+          "slot_binding_policy:signed_number_order -> surface_number_order",
+          2
+        ],
+        [
+          "arithmetic_family:addition -> subtraction",
+          1
+        ],
+        [
+          "structure_policy:reduce_chain -> binary_operation",
+          1
+        ],
+        [
+          "support_gate:unsupported -> <missing>",
+          1
+        ],
+        [
+          "task_scope:unsupported -> programming",
+          1
+        ],
+        [
+          "language_target:C -> unknown",
+          1
+        ]
+      ],
+      "per_layer_accuracy": {
+        "arithmetic_family": 0.8,
+        "language_target": 0.9333,
+        "semantic_domain": 1.0,
+        "slot_binding_policy": 0.7333,
+        "structure_policy": 0.8,
+        "support_gate": 0.8,
+        "target_builder": 1.0,
+        "task_scope": 0.95
+      },
+      "per_layer_missing_rate": {
+        "arithmetic_family": 0.0,
+        "language_target": 0.0,
+        "semantic_domain": 0.0,
+        "slot_binding_policy": 0.0,
+        "structure_policy": 0.0,
+        "support_gate": 0.05,
+        "target_builder": 0.0,
+        "task_scope": 0.0
+      },
+      "target_ir_exact_match_rate": 0.55,
+      "unfreeze_events": [],
+      "unsupported_correct_rate": 0.6
+    },
+    {
+      "active_layer": "support_gate",
+      "best_fitness": 8.2,
+      "branch_path_exact_match_rate": 0.35,
+      "checked_compile_success_rate": 1.0,
+      "checked_run_success_rate": 1.0,
+      "expected_output_match_rate": 0.55,
+      "freeze_events": [],
+      "frozen_layers": [
+        "task_scope",
+        "language_target",
+        "semantic_domain"
+      ],
+      "generation": 8,
+      "hard_case_attribution": {
+        "arithmetic_family": {
+          "error_count": 3,
+          "error_rate": 0.15,
+          "severity": 0.09
+        },
+        "slot_binding_policy": {
+          "error_count": 1,
+          "error_rate": 0.05,
+          "severity": 0.03
+        },
+        "structure_policy": {
+          "error_count": 3,
+          "error_rate": 0.15,
+          "severity": 0.09
+        },
+        "support_gate": {
+          "error_count": 2,
+          "error_rate": 0.1,
+          "severity": 0.1
+        }
+      },
+      "mean_fitness": 3.4817,
+      "missing_layer_rate": 0.0,
+      "most_common_wrong_branch_decisions": [
+        [
+          "support_gate:unsupported -> supported",
+          3
+        ],
+        [
+          "slot_binding_policy:chinese_number_order -> surface_number_order",
+          2
+        ],
+        [
+          "arithmetic_family:mixed_precedence -> multiplication",
+          2
+        ],
+        [
+          "structure_policy:precedence_tree -> binary_operation",
+          2
+        ],
+        [
+          "slot_binding_policy:signed_number_order -> surface_number_order",
+          2
+        ],
+        [
+          "arithmetic_family:addition -> subtraction",
+          1
+        ],
+        [
+          "structure_policy:reduce_chain -> binary_operation",
+          1
+        ],
+        [
+          "support_gate:unsupported -> <missing>",
+          1
+        ],
+        [
+          "task_scope:unsupported -> programming",
+          1
+        ],
+        [
+          "language_target:C -> unknown",
+          1
+        ]
+      ],
+      "per_layer_accuracy": {
+        "arithmetic_family": 0.8,
+        "language_target": 0.9333,
+        "semantic_domain": 1.0,
+        "slot_binding_policy": 0.7333,
+        "structure_policy": 0.8,
+        "support_gate": 0.8,
+        "target_builder": 1.0,
+        "task_scope": 0.95
+      },
+      "per_layer_missing_rate": {
+        "arithmetic_family": 0.0,
+        "language_target": 0.0,
+        "semantic_domain": 0.0,
+        "slot_binding_policy": 0.0,
+        "structure_policy": 0.0,
+        "support_gate": 0.05,
+        "target_builder": 0.0,
+        "task_scope": 0.0
+      },
+      "target_ir_exact_match_rate": 0.55,
+      "unfreeze_events": [],
+      "unsupported_correct_rate": 0.6
+    },
+    {
+      "active_layer": "support_gate",
+      "best_fitness": 8.2,
+      "branch_path_exact_match_rate": 0.35,
+      "checked_compile_success_rate": 1.0,
+      "checked_run_success_rate": 1.0,
+      "expected_output_match_rate": 0.55,
+      "freeze_events": [],
+      "frozen_layers": [
+        "task_scope",
+        "language_target",
+        "semantic_domain"
+      ],
+      "generation": 9,
+      "hard_case_attribution": {
+        "arithmetic_family": {
+          "error_count": 3,
+          "error_rate": 0.15,
+          "severity": 0.09
+        },
+        "slot_binding_policy": {
+          "error_count": 1,
+          "error_rate": 0.05,
+          "severity": 0.03
+        },
+        "structure_policy": {
+          "error_count": 3,
+          "error_rate": 0.15,
+          "severity": 0.09
+        },
+        "support_gate": {
+          "error_count": 2,
+          "error_rate": 0.1,
+          "severity": 0.1
+        }
+      },
+      "mean_fitness": 3.4817,
+      "missing_layer_rate": 0.0,
+      "most_common_wrong_branch_decisions": [
+        [
+          "support_gate:unsupported -> supported",
+          3
+        ],
+        [
+          "slot_binding_policy:chinese_number_order -> surface_number_order",
+          2
+        ],
+        [
+          "arithmetic_family:mixed_precedence -> multiplication",
+          2
+        ],
+        [
+          "structure_policy:precedence_tree -> binary_operation",
+          2
+        ],
+        [
+          "slot_binding_policy:signed_number_order -> surface_number_order",
+          2
+        ],
+        [
+          "arithmetic_family:addition -> subtraction",
+          1
+        ],
+        [
+          "structure_policy:reduce_chain -> binary_operation",
+          1
+        ],
+        [
+          "support_gate:unsupported -> <missing>",
+          1
+        ],
+        [
+          "task_scope:unsupported -> programming",
+          1
+        ],
+        [
+          "language_target:C -> unknown",
+          1
+        ]
+      ],
+      "per_layer_accuracy": {
+        "arithmetic_family": 0.8,
+        "language_target": 0.9333,
+        "semantic_domain": 1.0,
+        "slot_binding_policy": 0.7333,
+        "structure_policy": 0.8,
+        "support_gate": 0.8,
+        "target_builder": 1.0,
+        "task_scope": 0.95
+      },
+      "per_layer_missing_rate": {
+        "arithmetic_family": 0.0,
+        "language_target": 0.0,
+        "semantic_domain": 0.0,
+        "slot_binding_policy": 0.0,
+        "structure_policy": 0.0,
+        "support_gate": 0.05,
+        "target_builder": 0.0,
+        "task_scope": 0.0
+      },
+      "target_ir_exact_match_rate": 0.55,
+      "unfreeze_events": [],
+      "unsupported_correct_rate": 0.6
+    },
+    {
+      "active_layer": "support_gate",
+      "best_fitness": 8.2,
+      "branch_path_exact_match_rate": 0.35,
+      "checked_compile_success_rate": 1.0,
+      "checked_run_success_rate": 1.0,
+      "expected_output_match_rate": 0.55,
+      "freeze_events": [],
+      "frozen_layers": [
+        "task_scope",
+        "language_target",
+        "semantic_domain"
+      ],
+      "generation": 10,
+      "hard_case_attribution": {
+        "arithmetic_family": {
+          "error_count": 3,
+          "error_rate": 0.15,
+          "severity": 0.09
+        },
+        "slot_binding_policy": {
+          "error_count": 1,
+          "error_rate": 0.05,
+          "severity": 0.03
+        },
+        "structure_policy": {
+          "error_count": 3,
+          "error_rate": 0.15,
+          "severity": 0.09
+        },
+        "support_gate": {
+          "error_count": 2,
+          "error_rate": 0.1,
+          "severity": 0.1
+        }
+      },
+      "mean_fitness": 3.4817,
+      "missing_layer_rate": 0.0,
+      "most_common_wrong_branch_decisions": [
+        [
+          "support_gate:unsupported -> supported",
+          3
+        ],
+        [
+          "slot_binding_policy:chinese_number_order -> surface_number_order",
+          2
+        ],
+        [
+          "arithmetic_family:mixed_precedence -> multiplication",
+          2
+        ],
+        [
+          "structure_policy:precedence_tree -> binary_operation",
+          2
+        ],
+        [
+          "slot_binding_policy:signed_number_order -> surface_number_order",
+          2
+        ],
+        [
+          "arithmetic_family:addition -> subtraction",
+          1
+        ],
+        [
+          "structure_policy:reduce_chain -> binary_operation",
+          1
+        ],
+        [
+          "support_gate:unsupported -> <missing>",
+          1
+        ],
+        [
+          "task_scope:unsupported -> programming",
+          1
+        ],
+        [
+          "language_target:C -> unknown",
+          1
+        ]
+      ],
+      "per_layer_accuracy": {
+        "arithmetic_family": 0.8,
+        "language_target": 0.9333,
+        "semantic_domain": 1.0,
+        "slot_binding_policy": 0.7333,
+        "structure_policy": 0.8,
+        "support_gate": 0.8,
+        "target_builder": 1.0,
+        "task_scope": 0.95
+      },
+      "per_layer_missing_rate": {
+        "arithmetic_family": 0.0,
+        "language_target": 0.0,
+        "semantic_domain": 0.0,
+        "slot_binding_policy": 0.0,
+        "structure_policy": 0.0,
+        "support_gate": 0.05,
+        "target_builder": 0.0,
+        "task_scope": 0.0
+      },
+      "target_ir_exact_match_rate": 0.55,
+      "unfreeze_events": [],
+      "unsupported_correct_rate": 0.6
+    },
+    {
+      "active_layer": "support_gate",
+      "best_fitness": 8.2,
+      "branch_path_exact_match_rate": 0.35,
+      "checked_compile_success_rate": 1.0,
+      "checked_run_success_rate": 1.0,
+      "expected_output_match_rate": 0.55,
+      "freeze_events": [],
+      "frozen_layers": [
+        "task_scope",
+        "language_target",
+        "semantic_domain"
+      ],
+      "generation": 11,
+      "hard_case_attribution": {
+        "arithmetic_family": {
+          "error_count": 3,
+          "error_rate": 0.15,
+          "severity": 0.09
+        },
+        "slot_binding_policy": {
+          "error_count": 1,
+          "error_rate": 0.05,
+          "severity": 0.03
+        },
+        "structure_policy": {
+          "error_count": 3,
+          "error_rate": 0.15,
+          "severity": 0.09
+        },
+        "support_gate": {
+          "error_count": 2,
+          "error_rate": 0.1,
+          "severity": 0.1
+        }
+      },
+      "mean_fitness": 3.4817,
+      "missing_layer_rate": 0.0,
+      "most_common_wrong_branch_decisions": [
+        [
+          "support_gate:unsupported -> supported",
+          3
+        ],
+        [
+          "slot_binding_policy:chinese_number_order -> surface_number_order",
+          2
+        ],
+        [
+          "arithmetic_family:mixed_precedence -> multiplication",
+          2
+        ],
+        [
+          "structure_policy:precedence_tree -> binary_operation",
+          2
+        ],
+        [
+          "slot_binding_policy:signed_number_order -> surface_number_order",
+          2
+        ],
+        [
+          "arithmetic_family:addition -> subtraction",
+          1
+        ],
+        [
+          "structure_policy:reduce_chain -> binary_operation",
+          1
+        ],
+        [
+          "support_gate:unsupported -> <missing>",
+          1
+        ],
+        [
+          "task_scope:unsupported -> programming",
+          1
+        ],
+        [
+          "language_target:C -> unknown",
+          1
+        ]
+      ],
+      "per_layer_accuracy": {
+        "arithmetic_family": 0.8,
+        "language_target": 0.9333,
+        "semantic_domain": 1.0,
+        "slot_binding_policy": 0.7333,
+        "structure_policy": 0.8,
+        "support_gate": 0.8,
+        "target_builder": 1.0,
+        "task_scope": 0.95
+      },
+      "per_layer_missing_rate": {
+        "arithmetic_family": 0.0,
+        "language_target": 0.0,
+        "semantic_domain": 0.0,
+        "slot_binding_policy": 0.0,
+        "structure_policy": 0.0,
+        "support_gate": 0.05,
+        "target_builder": 0.0,
+        "task_scope": 0.0
+      },
+      "target_ir_exact_match_rate": 0.55,
+      "unfreeze_events": [],
+      "unsupported_correct_rate": 0.6
+    },
+    {
+      "active_layer": "support_gate",
+      "best_fitness": 8.2,
+      "branch_path_exact_match_rate": 0.35,
+      "checked_compile_success_rate": 1.0,
+      "checked_run_success_rate": 1.0,
+      "expected_output_match_rate": 0.55,
+      "freeze_events": [],
+      "frozen_layers": [
+        "task_scope",
+        "language_target",
+        "semantic_domain"
+      ],
+      "generation": 12,
+      "hard_case_attribution": {
+        "arithmetic_family": {
+          "error_count": 3,
+          "error_rate": 0.15,
+          "severity": 0.09
+        },
+        "slot_binding_policy": {
+          "error_count": 1,
+          "error_rate": 0.05,
+          "severity": 0.03
+        },
+        "structure_policy": {
+          "error_count": 3,
+          "error_rate": 0.15,
+          "severity": 0.09
+        },
+        "support_gate": {
+          "error_count": 2,
+          "error_rate": 0.1,
+          "severity": 0.1
+        }
+      },
+      "mean_fitness": 3.4817,
+      "missing_layer_rate": 0.0,
+      "most_common_wrong_branch_decisions": [
+        [
+          "support_gate:unsupported -> supported",
+          3
+        ],
+        [
+          "slot_binding_policy:chinese_number_order -> surface_number_order",
+          2
+        ],
+        [
+          "arithmetic_family:mixed_precedence -> multiplication",
+          2
+        ],
+        [
+          "structure_policy:precedence_tree -> binary_operation",
+          2
+        ],
+        [
+          "slot_binding_policy:signed_number_order -> surface_number_order",
+          2
+        ],
+        [
+          "arithmetic_family:addition -> subtraction",
+          1
+        ],
+        [
+          "structure_policy:reduce_chain -> binary_operation",
+          1
+        ],
+        [
+          "support_gate:unsupported -> <missing>",
+          1
+        ],
+        [
+          "task_scope:unsupported -> programming",
+          1
+        ],
+        [
+          "language_target:C -> unknown",
+          1
+        ]
+      ],
+      "per_layer_accuracy": {
+        "arithmetic_family": 0.8,
+        "language_target": 0.9333,
+        "semantic_domain": 1.0,
+        "slot_binding_policy": 0.7333,
+        "structure_policy": 0.8,
+        "support_gate": 0.8,
+        "target_builder": 1.0,
+        "task_scope": 0.95
+      },
+      "per_layer_missing_rate": {
+        "arithmetic_family": 0.0,
+        "language_target": 0.0,
+        "semantic_domain": 0.0,
+        "slot_binding_policy": 0.0,
+        "structure_policy": 0.0,
+        "support_gate": 0.05,
+        "target_builder": 0.0,
+        "task_scope": 0.0
+      },
+      "target_ir_exact_match_rate": 0.55,
+      "unfreeze_events": [],
+      "unsupported_correct_rate": 0.6
+    },
+    {
+      "active_layer": "support_gate",
+      "best_fitness": 8.2,
+      "branch_path_exact_match_rate": 0.35,
+      "checked_compile_success_rate": 1.0,
+      "checked_run_success_rate": 1.0,
+      "expected_output_match_rate": 0.55,
+      "freeze_events": [],
+      "frozen_layers": [
+        "task_scope",
+        "language_target",
+        "semantic_domain"
+      ],
+      "generation": 13,
+      "hard_case_attribution": {
+        "arithmetic_family": {
+          "error_count": 3,
+          "error_rate": 0.15,
+          "severity": 0.09
+        },
+        "slot_binding_policy": {
+          "error_count": 1,
+          "error_rate": 0.05,
+          "severity": 0.03
+        },
+        "structure_policy": {
+          "error_count": 3,
+          "error_rate": 0.15,
+          "severity": 0.09
+        },
+        "support_gate": {
+          "error_count": 2,
+          "error_rate": 0.1,
+          "severity": 0.1
+        }
+      },
+      "mean_fitness": 3.4817,
+      "missing_layer_rate": 0.0,
+      "most_common_wrong_branch_decisions": [
+        [
+          "support_gate:unsupported -> supported",
+          3
+        ],
+        [
+          "slot_binding_policy:chinese_number_order -> surface_number_order",
+          2
+        ],
+        [
+          "arithmetic_family:mixed_precedence -> multiplication",
+          2
+        ],
+        [
+          "structure_policy:precedence_tree -> binary_operation",
+          2
+        ],
+        [
+          "slot_binding_policy:signed_number_order -> surface_number_order",
+          2
+        ],
+        [
+          "arithmetic_family:addition -> subtraction",
+          1
+        ],
+        [
+          "structure_policy:reduce_chain -> binary_operation",
+          1
+        ],
+        [
+          "support_gate:unsupported -> <missing>",
+          1
+        ],
+        [
+          "task_scope:unsupported -> programming",
+          1
+        ],
+        [
+          "language_target:C -> unknown",
+          1
+        ]
+      ],
+      "per_layer_accuracy": {
+        "arithmetic_family": 0.8,
+        "language_target": 0.9333,
+        "semantic_domain": 1.0,
+        "slot_binding_policy": 0.7333,
+        "structure_policy": 0.8,
+        "support_gate": 0.8,
+        "target_builder": 1.0,
+        "task_scope": 0.95
+      },
+      "per_layer_missing_rate": {
+        "arithmetic_family": 0.0,
+        "language_target": 0.0,
+        "semantic_domain": 0.0,
+        "slot_binding_policy": 0.0,
+        "structure_policy": 0.0,
+        "support_gate": 0.05,
+        "target_builder": 0.0,
+        "task_scope": 0.0
+      },
+      "target_ir_exact_match_rate": 0.55,
+      "unfreeze_events": [],
+      "unsupported_correct_rate": 0.6
+    },
+    {
+      "active_layer": "support_gate",
+      "best_fitness": 8.2,
+      "branch_path_exact_match_rate": 0.35,
+      "checked_compile_success_rate": 1.0,
+      "checked_run_success_rate": 1.0,
+      "expected_output_match_rate": 0.55,
+      "freeze_events": [],
+      "frozen_layers": [
+        "task_scope",
+        "language_target",
+        "semantic_domain"
+      ],
+      "generation": 14,
+      "hard_case_attribution": {
+        "arithmetic_family": {
+          "error_count": 3,
+          "error_rate": 0.15,
+          "severity": 0.09
+        },
+        "slot_binding_policy": {
+          "error_count": 1,
+          "error_rate": 0.05,
+          "severity": 0.03
+        },
+        "structure_policy": {
+          "error_count": 3,
+          "error_rate": 0.15,
+          "severity": 0.09
+        },
+        "support_gate": {
+          "error_count": 2,
+          "error_rate": 0.1,
+          "severity": 0.1
+        }
+      },
+      "mean_fitness": 3.4817,
+      "missing_layer_rate": 0.0,
+      "most_common_wrong_branch_decisions": [
+        [
+          "support_gate:unsupported -> supported",
+          3
+        ],
+        [
+          "slot_binding_policy:chinese_number_order -> surface_number_order",
+          2
+        ],
+        [
+          "arithmetic_family:mixed_precedence -> multiplication",
+          2
+        ],
+        [
+          "structure_policy:precedence_tree -> binary_operation",
+          2
+        ],
+        [
+          "slot_binding_policy:signed_number_order -> surface_number_order",
+          2
+        ],
+        [
+          "arithmetic_family:addition -> subtraction",
+          1
+        ],
+        [
+          "structure_policy:reduce_chain -> binary_operation",
+          1
+        ],
+        [
+          "support_gate:unsupported -> <missing>",
+          1
+        ],
+        [
+          "task_scope:unsupported -> programming",
+          1
+        ],
+        [
+          "language_target:C -> unknown",
+          1
+        ]
+      ],
+      "per_layer_accuracy": {
+        "arithmetic_family": 0.8,
+        "language_target": 0.9333,
+        "semantic_domain": 1.0,
+        "slot_binding_policy": 0.7333,
+        "structure_policy": 0.8,
+        "support_gate": 0.8,
+        "target_builder": 1.0,
+        "task_scope": 0.95
+      },
+      "per_layer_missing_rate": {
+        "arithmetic_family": 0.0,
+        "language_target": 0.0,
+        "semantic_domain": 0.0,
+        "slot_binding_policy": 0.0,
+        "structure_policy": 0.0,
+        "support_gate": 0.05,
+        "target_builder": 0.0,
+        "task_scope": 0.0
+      },
+      "target_ir_exact_match_rate": 0.55,
+      "unfreeze_events": [],
+      "unsupported_correct_rate": 0.6
+    },
+    {
+      "active_layer": "support_gate",
+      "best_fitness": 8.2,
+      "branch_path_exact_match_rate": 0.35,
+      "checked_compile_success_rate": 1.0,
+      "checked_run_success_rate": 1.0,
+      "expected_output_match_rate": 0.55,
+      "freeze_events": [],
+      "frozen_layers": [
+        "task_scope",
+        "language_target",
+        "semantic_domain"
+      ],
+      "generation": 15,
+      "hard_case_attribution": {
+        "arithmetic_family": {
+          "error_count": 3,
+          "error_rate": 0.15,
+          "severity": 0.09
+        },
+        "slot_binding_policy": {
+          "error_count": 1,
+          "error_rate": 0.05,
+          "severity": 0.03
+        },
+        "structure_policy": {
+          "error_count": 3,
+          "error_rate": 0.15,
+          "severity": 0.09
+        },
+        "support_gate": {
+          "error_count": 2,
+          "error_rate": 0.1,
+          "severity": 0.1
+        }
+      },
+      "mean_fitness": 3.4817,
+      "missing_layer_rate": 0.0,
+      "most_common_wrong_branch_decisions": [
+        [
+          "support_gate:unsupported -> supported",
+          3
+        ],
+        [
+          "slot_binding_policy:chinese_number_order -> surface_number_order",
+          2
+        ],
+        [
+          "arithmetic_family:mixed_precedence -> multiplication",
+          2
+        ],
+        [
+          "structure_policy:precedence_tree -> binary_operation",
+          2
+        ],
+        [
+          "slot_binding_policy:signed_number_order -> surface_number_order",
+          2
+        ],
+        [
+          "arithmetic_family:addition -> subtraction",
+          1
+        ],
+        [
+          "structure_policy:reduce_chain -> binary_operation",
+          1
+        ],
+        [
+          "support_gate:unsupported -> <missing>",
+          1
+        ],
+        [
+          "task_scope:unsupported -> programming",
+          1
+        ],
+        [
+          "language_target:C -> unknown",
+          1
+        ]
+      ],
+      "per_layer_accuracy": {
+        "arithmetic_family": 0.8,
+        "language_target": 0.9333,
+        "semantic_domain": 1.0,
+        "slot_binding_policy": 0.7333,
+        "structure_policy": 0.8,
+        "support_gate": 0.8,
+        "target_builder": 1.0,
+        "task_scope": 0.95
+      },
+      "per_layer_missing_rate": {
+        "arithmetic_family": 0.0,
+        "language_target": 0.0,
+        "semantic_domain": 0.0,
+        "slot_binding_policy": 0.0,
+        "structure_policy": 0.0,
+        "support_gate": 0.05,
+        "target_builder": 0.0,
+        "task_scope": 0.0
+      },
+      "target_ir_exact_match_rate": 0.55,
+      "unfreeze_events": [],
+      "unsupported_correct_rate": 0.6
+    },
+    {
+      "active_layer": "support_gate",
+      "best_fitness": 8.2,
+      "branch_path_exact_match_rate": 0.35,
+      "checked_compile_success_rate": 1.0,
+      "checked_run_success_rate": 1.0,
+      "expected_output_match_rate": 0.55,
+      "freeze_events": [],
+      "frozen_layers": [
+        "task_scope",
+        "language_target",
+        "semantic_domain"
+      ],
+      "generation": 16,
+      "hard_case_attribution": {
+        "arithmetic_family": {
+          "error_count": 3,
+          "error_rate": 0.15,
+          "severity": 0.09
+        },
+        "slot_binding_policy": {
+          "error_count": 1,
+          "error_rate": 0.05,
+          "severity": 0.03
+        },
+        "structure_policy": {
+          "error_count": 3,
+          "error_rate": 0.15,
+          "severity": 0.09
+        },
+        "support_gate": {
+          "error_count": 2,
+          "error_rate": 0.1,
+          "severity": 0.1
+        }
+      },
+      "mean_fitness": 3.4817,
+      "missing_layer_rate": 0.0,
+      "most_common_wrong_branch_decisions": [
+        [
+          "support_gate:unsupported -> supported",
+          3
+        ],
+        [
+          "slot_binding_policy:chinese_number_order -> surface_number_order",
+          2
+        ],
+        [
+          "arithmetic_family:mixed_precedence -> multiplication",
+          2
+        ],
+        [
+          "structure_policy:precedence_tree -> binary_operation",
+          2
+        ],
+        [
+          "slot_binding_policy:signed_number_order -> surface_number_order",
+          2
+        ],
+        [
+          "arithmetic_family:addition -> subtraction",
+          1
+        ],
+        [
+          "structure_policy:reduce_chain -> binary_operation",
+          1
+        ],
+        [
+          "support_gate:unsupported -> <missing>",
+          1
+        ],
+        [
+          "task_scope:unsupported -> programming",
+          1
+        ],
+        [
+          "language_target:C -> unknown",
+          1
+        ]
+      ],
+      "per_layer_accuracy": {
+        "arithmetic_family": 0.8,
+        "language_target": 0.9333,
+        "semantic_domain": 1.0,
+        "slot_binding_policy": 0.7333,
+        "structure_policy": 0.8,
+        "support_gate": 0.8,
+        "target_builder": 1.0,
+        "task_scope": 0.95
+      },
+      "per_layer_missing_rate": {
+        "arithmetic_family": 0.0,
+        "language_target": 0.0,
+        "semantic_domain": 0.0,
+        "slot_binding_policy": 0.0,
+        "structure_policy": 0.0,
+        "support_gate": 0.05,
+        "target_builder": 0.0,
+        "task_scope": 0.0
+      },
+      "target_ir_exact_match_rate": 0.55,
+      "unfreeze_events": [],
+      "unsupported_correct_rate": 0.6
+    },
+    {
+      "active_layer": "support_gate",
+      "best_fitness": 8.2,
+      "branch_path_exact_match_rate": 0.35,
+      "checked_compile_success_rate": 1.0,
+      "checked_run_success_rate": 1.0,
+      "expected_output_match_rate": 0.55,
+      "freeze_events": [],
+      "frozen_layers": [
+        "task_scope",
+        "language_target",
+        "semantic_domain"
+      ],
+      "generation": 17,
+      "hard_case_attribution": {
+        "arithmetic_family": {
+          "error_count": 3,
+          "error_rate": 0.15,
+          "severity": 0.09
+        },
+        "slot_binding_policy": {
+          "error_count": 1,
+          "error_rate": 0.05,
+          "severity": 0.03
+        },
+        "structure_policy": {
+          "error_count": 3,
+          "error_rate": 0.15,
+          "severity": 0.09
+        },
+        "support_gate": {
+          "error_count": 2,
+          "error_rate": 0.1,
+          "severity": 0.1
+        }
+      },
+      "mean_fitness": 3.4817,
+      "missing_layer_rate": 0.0,
+      "most_common_wrong_branch_decisions": [
+        [
+          "support_gate:unsupported -> supported",
+          3
+        ],
+        [
+          "slot_binding_policy:chinese_number_order -> surface_number_order",
+          2
+        ],
+        [
+          "arithmetic_family:mixed_precedence -> multiplication",
+          2
+        ],
+        [
+          "structure_policy:precedence_tree -> binary_operation",
+          2
+        ],
+        [
+          "slot_binding_policy:signed_number_order -> surface_number_order",
+          2
+        ],
+        [
+          "arithmetic_family:addition -> subtraction",
+          1
+        ],
+        [
+          "structure_policy:reduce_chain -> binary_operation",
+          1
+        ],
+        [
+          "support_gate:unsupported -> <missing>",
+          1
+        ],
+        [
+          "task_scope:unsupported -> programming",
+          1
+        ],
+        [
+          "language_target:C -> unknown",
+          1
+        ]
+      ],
+      "per_layer_accuracy": {
+        "arithmetic_family": 0.8,
+        "language_target": 0.9333,
+        "semantic_domain": 1.0,
+        "slot_binding_policy": 0.7333,
+        "structure_policy": 0.8,
+        "support_gate": 0.8,
+        "target_builder": 1.0,
+        "task_scope": 0.95
+      },
+      "per_layer_missing_rate": {
+        "arithmetic_family": 0.0,
+        "language_target": 0.0,
+        "semantic_domain": 0.0,
+        "slot_binding_policy": 0.0,
+        "structure_policy": 0.0,
+        "support_gate": 0.05,
+        "target_builder": 0.0,
+        "task_scope": 0.0
+      },
+      "target_ir_exact_match_rate": 0.55,
+      "unfreeze_events": [],
+      "unsupported_correct_rate": 0.6
+    },
+    {
+      "active_layer": "support_gate",
+      "best_fitness": 8.2,
+      "branch_path_exact_match_rate": 0.35,
+      "checked_compile_success_rate": 1.0,
+      "checked_run_success_rate": 1.0,
+      "expected_output_match_rate": 0.55,
+      "freeze_events": [],
+      "frozen_layers": [
+        "task_scope",
+        "language_target",
+        "semantic_domain"
+      ],
+      "generation": 18,
+      "hard_case_attribution": {
+        "arithmetic_family": {
+          "error_count": 3,
+          "error_rate": 0.15,
+          "severity": 0.09
+        },
+        "slot_binding_policy": {
+          "error_count": 1,
+          "error_rate": 0.05,
+          "severity": 0.03
+        },
+        "structure_policy": {
+          "error_count": 3,
+          "error_rate": 0.15,
+          "severity": 0.09
+        },
+        "support_gate": {
+          "error_count": 2,
+          "error_rate": 0.1,
+          "severity": 0.1
+        }
+      },
+      "mean_fitness": 3.4817,
+      "missing_layer_rate": 0.0,
+      "most_common_wrong_branch_decisions": [
+        [
+          "support_gate:unsupported -> supported",
+          3
+        ],
+        [
+          "slot_binding_policy:chinese_number_order -> surface_number_order",
+          2
+        ],
+        [
+          "arithmetic_family:mixed_precedence -> multiplication",
+          2
+        ],
+        [
+          "structure_policy:precedence_tree -> binary_operation",
+          2
+        ],
+        [
+          "slot_binding_policy:signed_number_order -> surface_number_order",
+          2
+        ],
+        [
+          "arithmetic_family:addition -> subtraction",
+          1
+        ],
+        [
+          "structure_policy:reduce_chain -> binary_operation",
+          1
+        ],
+        [
+          "support_gate:unsupported -> <missing>",
+          1
+        ],
+        [
+          "task_scope:unsupported -> programming",
+          1
+        ],
+        [
+          "language_target:C -> unknown",
+          1
+        ]
+      ],
+      "per_layer_accuracy": {
+        "arithmetic_family": 0.8,
+        "language_target": 0.9333,
+        "semantic_domain": 1.0,
+        "slot_binding_policy": 0.7333,
+        "structure_policy": 0.8,
+        "support_gate": 0.8,
+        "target_builder": 1.0,
+        "task_scope": 0.95
+      },
+      "per_layer_missing_rate": {
+        "arithmetic_family": 0.0,
+        "language_target": 0.0,
+        "semantic_domain": 0.0,
+        "slot_binding_policy": 0.0,
+        "structure_policy": 0.0,
+        "support_gate": 0.05,
+        "target_builder": 0.0,
+        "task_scope": 0.0
+      },
+      "target_ir_exact_match_rate": 0.55,
+      "unfreeze_events": [],
+      "unsupported_correct_rate": 0.6
+    },
+    {
+      "active_layer": "support_gate",
+      "best_fitness": 8.2,
+      "branch_path_exact_match_rate": 0.35,
+      "checked_compile_success_rate": 1.0,
+      "checked_run_success_rate": 1.0,
+      "expected_output_match_rate": 0.55,
+      "freeze_events": [],
+      "frozen_layers": [
+        "task_scope",
+        "language_target",
+        "semantic_domain"
+      ],
+      "generation": 19,
+      "hard_case_attribution": {
+        "arithmetic_family": {
+          "error_count": 3,
+          "error_rate": 0.15,
+          "severity": 0.09
+        },
+        "slot_binding_policy": {
+          "error_count": 1,
+          "error_rate": 0.05,
+          "severity": 0.03
+        },
+        "structure_policy": {
+          "error_count": 3,
+          "error_rate": 0.15,
+          "severity": 0.09
+        },
+        "support_gate": {
+          "error_count": 2,
+          "error_rate": 0.1,
+          "severity": 0.1
+        }
+      },
+      "mean_fitness": 3.4817,
+      "missing_layer_rate": 0.0,
+      "most_common_wrong_branch_decisions": [
+        [
+          "support_gate:unsupported -> supported",
+          3
+        ],
+        [
+          "slot_binding_policy:chinese_number_order -> surface_number_order",
+          2
+        ],
+        [
+          "arithmetic_family:mixed_precedence -> multiplication",
+          2
+        ],
+        [
+          "structure_policy:precedence_tree -> binary_operation",
+          2
+        ],
+        [
+          "slot_binding_policy:signed_number_order -> surface_number_order",
+          2
+        ],
+        [
+          "arithmetic_family:addition -> subtraction",
+          1
+        ],
+        [
+          "structure_policy:reduce_chain -> binary_operation",
+          1
+        ],
+        [
+          "support_gate:unsupported -> <missing>",
+          1
+        ],
+        [
+          "task_scope:unsupported -> programming",
+          1
+        ],
+        [
+          "language_target:C -> unknown",
+          1
+        ]
+      ],
+      "per_layer_accuracy": {
+        "arithmetic_family": 0.8,
+        "language_target": 0.9333,
+        "semantic_domain": 1.0,
+        "slot_binding_policy": 0.7333,
+        "structure_policy": 0.8,
+        "support_gate": 0.8,
+        "target_builder": 1.0,
+        "task_scope": 0.95
+      },
+      "per_layer_missing_rate": {
+        "arithmetic_family": 0.0,
+        "language_target": 0.0,
+        "semantic_domain": 0.0,
+        "slot_binding_policy": 0.0,
+        "structure_policy": 0.0,
+        "support_gate": 0.05,
+        "target_builder": 0.0,
+        "task_scope": 0.0
+      },
+      "target_ir_exact_match_rate": 0.55,
+      "unfreeze_events": [],
+      "unsupported_correct_rate": 0.6
+    },
+    {
+      "active_layer": "support_gate",
+      "best_fitness": 8.2,
+      "branch_path_exact_match_rate": 0.35,
+      "checked_compile_success_rate": 1.0,
+      "checked_run_success_rate": 1.0,
+      "expected_output_match_rate": 0.55,
+      "freeze_events": [],
+      "frozen_layers": [
+        "task_scope",
+        "language_target",
+        "semantic_domain"
+      ],
+      "generation": 20,
+      "hard_case_attribution": {
+        "arithmetic_family": {
+          "error_count": 3,
+          "error_rate": 0.15,
+          "severity": 0.09
+        },
+        "slot_binding_policy": {
+          "error_count": 1,
+          "error_rate": 0.05,
+          "severity": 0.03
+        },
+        "structure_policy": {
+          "error_count": 3,
+          "error_rate": 0.15,
+          "severity": 0.09
+        },
+        "support_gate": {
+          "error_count": 2,
+          "error_rate": 0.1,
+          "severity": 0.1
+        }
+      },
+      "mean_fitness": 3.4817,
+      "missing_layer_rate": 0.0,
+      "most_common_wrong_branch_decisions": [
+        [
+          "support_gate:unsupported -> supported",
+          3
+        ],
+        [
+          "slot_binding_policy:chinese_number_order -> surface_number_order",
+          2
+        ],
+        [
+          "arithmetic_family:mixed_precedence -> multiplication",
+          2
+        ],
+        [
+          "structure_policy:precedence_tree -> binary_operation",
+          2
+        ],
+        [
+          "slot_binding_policy:signed_number_order -> surface_number_order",
+          2
+        ],
+        [
+          "arithmetic_family:addition -> subtraction",
+          1
+        ],
+        [
+          "structure_policy:reduce_chain -> binary_operation",
+          1
+        ],
+        [
+          "support_gate:unsupported -> <missing>",
+          1
+        ],
+        [
+          "task_scope:unsupported -> programming",
+          1
+        ],
+        [
+          "language_target:C -> unknown",
+          1
+        ]
+      ],
+      "per_layer_accuracy": {
+        "arithmetic_family": 0.8,
+        "language_target": 0.9333,
+        "semantic_domain": 1.0,
+        "slot_binding_policy": 0.7333,
+        "structure_policy": 0.8,
+        "support_gate": 0.8,
+        "target_builder": 1.0,
+        "task_scope": 0.95
+      },
+      "per_layer_missing_rate": {
+        "arithmetic_family": 0.0,
+        "language_target": 0.0,
+        "semantic_domain": 0.0,
+        "slot_binding_policy": 0.0,
+        "structure_policy": 0.0,
+        "support_gate": 0.05,
+        "target_builder": 0.0,
+        "task_scope": 0.0
+      },
+      "target_ir_exact_match_rate": 0.55,
+      "unfreeze_events": [],
+      "unsupported_correct_rate": 0.6
+    },
+    {
+      "active_layer": "support_gate",
+      "best_fitness": 8.2,
+      "branch_path_exact_match_rate": 0.35,
+      "checked_compile_success_rate": 1.0,
+      "checked_run_success_rate": 1.0,
+      "expected_output_match_rate": 0.55,
+      "freeze_events": [],
+      "frozen_layers": [
+        "task_scope",
+        "language_target",
+        "semantic_domain"
+      ],
+      "generation": 21,
+      "hard_case_attribution": {
+        "arithmetic_family": {
+          "error_count": 3,
+          "error_rate": 0.15,
+          "severity": 0.09
+        },
+        "slot_binding_policy": {
+          "error_count": 1,
+          "error_rate": 0.05,
+          "severity": 0.03
+        },
+        "structure_policy": {
+          "error_count": 3,
+          "error_rate": 0.15,
+          "severity": 0.09
+        },
+        "support_gate": {
+          "error_count": 2,
+          "error_rate": 0.1,
+          "severity": 0.1
+        }
+      },
+      "mean_fitness": 3.4817,
+      "missing_layer_rate": 0.0,
+      "most_common_wrong_branch_decisions": [
+        [
+          "support_gate:unsupported -> supported",
+          3
+        ],
+        [
+          "slot_binding_policy:chinese_number_order -> surface_number_order",
+          2
+        ],
+        [
+          "arithmetic_family:mixed_precedence -> multiplication",
+          2
+        ],
+        [
+          "structure_policy:precedence_tree -> binary_operation",
+          2
+        ],
+        [
+          "slot_binding_policy:signed_number_order -> surface_number_order",
+          2
+        ],
+        [
+          "arithmetic_family:addition -> subtraction",
+          1
+        ],
+        [
+          "structure_policy:reduce_chain -> binary_operation",
+          1
+        ],
+        [
+          "support_gate:unsupported -> <missing>",
+          1
+        ],
+        [
+          "task_scope:unsupported -> programming",
+          1
+        ],
+        [
+          "language_target:C -> unknown",
+          1
+        ]
+      ],
+      "per_layer_accuracy": {
+        "arithmetic_family": 0.8,
+        "language_target": 0.9333,
+        "semantic_domain": 1.0,
+        "slot_binding_policy": 0.7333,
+        "structure_policy": 0.8,
+        "support_gate": 0.8,
+        "target_builder": 1.0,
+        "task_scope": 0.95
+      },
+      "per_layer_missing_rate": {
+        "arithmetic_family": 0.0,
+        "language_target": 0.0,
+        "semantic_domain": 0.0,
+        "slot_binding_policy": 0.0,
+        "structure_policy": 0.0,
+        "support_gate": 0.05,
+        "target_builder": 0.0,
+        "task_scope": 0.0
+      },
+      "target_ir_exact_match_rate": 0.55,
+      "unfreeze_events": [],
+      "unsupported_correct_rate": 0.6
+    },
+    {
+      "active_layer": "support_gate",
+      "best_fitness": 8.2,
+      "branch_path_exact_match_rate": 0.35,
+      "checked_compile_success_rate": 1.0,
+      "checked_run_success_rate": 1.0,
+      "expected_output_match_rate": 0.55,
+      "freeze_events": [],
+      "frozen_layers": [
+        "task_scope",
+        "language_target",
+        "semantic_domain"
+      ],
+      "generation": 22,
+      "hard_case_attribution": {
+        "arithmetic_family": {
+          "error_count": 3,
+          "error_rate": 0.15,
+          "severity": 0.09
+        },
+        "slot_binding_policy": {
+          "error_count": 1,
+          "error_rate": 0.05,
+          "severity": 0.03
+        },
+        "structure_policy": {
+          "error_count": 3,
+          "error_rate": 0.15,
+          "severity": 0.09
+        },
+        "support_gate": {
+          "error_count": 2,
+          "error_rate": 0.1,
+          "severity": 0.1
+        }
+      },
+      "mean_fitness": 3.4817,
+      "missing_layer_rate": 0.0,
+      "most_common_wrong_branch_decisions": [
+        [
+          "support_gate:unsupported -> supported",
+          3
+        ],
+        [
+          "slot_binding_policy:chinese_number_order -> surface_number_order",
+          2
+        ],
+        [
+          "arithmetic_family:mixed_precedence -> multiplication",
+          2
+        ],
+        [
+          "structure_policy:precedence_tree -> binary_operation",
+          2
+        ],
+        [
+          "slot_binding_policy:signed_number_order -> surface_number_order",
+          2
+        ],
+        [
+          "arithmetic_family:addition -> subtraction",
+          1
+        ],
+        [
+          "structure_policy:reduce_chain -> binary_operation",
+          1
+        ],
+        [
+          "support_gate:unsupported -> <missing>",
+          1
+        ],
+        [
+          "task_scope:unsupported -> programming",
+          1
+        ],
+        [
+          "language_target:C -> unknown",
+          1
+        ]
+      ],
+      "per_layer_accuracy": {
+        "arithmetic_family": 0.8,
+        "language_target": 0.9333,
+        "semantic_domain": 1.0,
+        "slot_binding_policy": 0.7333,
+        "structure_policy": 0.8,
+        "support_gate": 0.8,
+        "target_builder": 1.0,
+        "task_scope": 0.95
+      },
+      "per_layer_missing_rate": {
+        "arithmetic_family": 0.0,
+        "language_target": 0.0,
+        "semantic_domain": 0.0,
+        "slot_binding_policy": 0.0,
+        "structure_policy": 0.0,
+        "support_gate": 0.05,
+        "target_builder": 0.0,
+        "task_scope": 0.0
+      },
+      "target_ir_exact_match_rate": 0.55,
+      "unfreeze_events": [],
+      "unsupported_correct_rate": 0.6
+    },
+    {
+      "active_layer": "support_gate",
+      "best_fitness": 8.2,
+      "branch_path_exact_match_rate": 0.35,
+      "checked_compile_success_rate": 1.0,
+      "checked_run_success_rate": 1.0,
+      "expected_output_match_rate": 0.55,
+      "freeze_events": [],
+      "frozen_layers": [
+        "task_scope",
+        "language_target",
+        "semantic_domain"
+      ],
+      "generation": 23,
+      "hard_case_attribution": {
+        "arithmetic_family": {
+          "error_count": 3,
+          "error_rate": 0.15,
+          "severity": 0.09
+        },
+        "slot_binding_policy": {
+          "error_count": 1,
+          "error_rate": 0.05,
+          "severity": 0.03
+        },
+        "structure_policy": {
+          "error_count": 3,
+          "error_rate": 0.15,
+          "severity": 0.09
+        },
+        "support_gate": {
+          "error_count": 2,
+          "error_rate": 0.1,
+          "severity": 0.1
+        }
+      },
+      "mean_fitness": 3.4817,
+      "missing_layer_rate": 0.0,
+      "most_common_wrong_branch_decisions": [
+        [
+          "support_gate:unsupported -> supported",
+          3
+        ],
+        [
+          "slot_binding_policy:chinese_number_order -> surface_number_order",
+          2
+        ],
+        [
+          "arithmetic_family:mixed_precedence -> multiplication",
+          2
+        ],
+        [
+          "structure_policy:precedence_tree -> binary_operation",
+          2
+        ],
+        [
+          "slot_binding_policy:signed_number_order -> surface_number_order",
+          2
+        ],
+        [
+          "arithmetic_family:addition -> subtraction",
+          1
+        ],
+        [
+          "structure_policy:reduce_chain -> binary_operation",
+          1
+        ],
+        [
+          "support_gate:unsupported -> <missing>",
+          1
+        ],
+        [
+          "task_scope:unsupported -> programming",
+          1
+        ],
+        [
+          "language_target:C -> unknown",
+          1
+        ]
+      ],
+      "per_layer_accuracy": {
+        "arithmetic_family": 0.8,
+        "language_target": 0.9333,
+        "semantic_domain": 1.0,
+        "slot_binding_policy": 0.7333,
+        "structure_policy": 0.8,
+        "support_gate": 0.8,
+        "target_builder": 1.0,
+        "task_scope": 0.95
+      },
+      "per_layer_missing_rate": {
+        "arithmetic_family": 0.0,
+        "language_target": 0.0,
+        "semantic_domain": 0.0,
+        "slot_binding_policy": 0.0,
+        "structure_policy": 0.0,
+        "support_gate": 0.05,
+        "target_builder": 0.0,
+        "task_scope": 0.0
+      },
+      "target_ir_exact_match_rate": 0.55,
+      "unfreeze_events": [],
+      "unsupported_correct_rate": 0.6
+    },
+    {
+      "active_layer": "support_gate",
+      "best_fitness": 8.2,
+      "branch_path_exact_match_rate": 0.35,
+      "checked_compile_success_rate": 1.0,
+      "checked_run_success_rate": 1.0,
+      "expected_output_match_rate": 0.55,
+      "freeze_events": [],
+      "frozen_layers": [
+        "task_scope",
+        "language_target",
+        "semantic_domain"
+      ],
+      "generation": 24,
+      "hard_case_attribution": {
+        "arithmetic_family": {
+          "error_count": 3,
+          "error_rate": 0.15,
+          "severity": 0.09
+        },
+        "slot_binding_policy": {
+          "error_count": 1,
+          "error_rate": 0.05,
+          "severity": 0.03
+        },
+        "structure_policy": {
+          "error_count": 3,
+          "error_rate": 0.15,
+          "severity": 0.09
+        },
+        "support_gate": {
+          "error_count": 2,
+          "error_rate": 0.1,
+          "severity": 0.1
+        }
+      },
+      "mean_fitness": 3.4817,
+      "missing_layer_rate": 0.0,
+      "most_common_wrong_branch_decisions": [
+        [
+          "support_gate:unsupported -> supported",
+          3
+        ],
+        [
+          "slot_binding_policy:chinese_number_order -> surface_number_order",
+          2
+        ],
+        [
+          "arithmetic_family:mixed_precedence -> multiplication",
+          2
+        ],
+        [
+          "structure_policy:precedence_tree -> binary_operation",
+          2
+        ],
+        [
+          "slot_binding_policy:signed_number_order -> surface_number_order",
+          2
+        ],
+        [
+          "arithmetic_family:addition -> subtraction",
+          1
+        ],
+        [
+          "structure_policy:reduce_chain -> binary_operation",
+          1
+        ],
+        [
+          "support_gate:unsupported -> <missing>",
+          1
+        ],
+        [
+          "task_scope:unsupported -> programming",
+          1
+        ],
+        [
+          "language_target:C -> unknown",
+          1
+        ]
+      ],
+      "per_layer_accuracy": {
+        "arithmetic_family": 0.8,
+        "language_target": 0.9333,
+        "semantic_domain": 1.0,
+        "slot_binding_policy": 0.7333,
+        "structure_policy": 0.8,
+        "support_gate": 0.8,
+        "target_builder": 1.0,
+        "task_scope": 0.95
+      },
+      "per_layer_missing_rate": {
+        "arithmetic_family": 0.0,
+        "language_target": 0.0,
+        "semantic_domain": 0.0,
+        "slot_binding_policy": 0.0,
+        "structure_policy": 0.0,
+        "support_gate": 0.05,
+        "target_builder": 0.0,
+        "task_scope": 0.0
+      },
+      "target_ir_exact_match_rate": 0.55,
+      "unfreeze_events": [],
+      "unsupported_correct_rate": 0.6
+    },
+    {
+      "active_layer": "support_gate",
+      "best_fitness": 8.2,
+      "branch_path_exact_match_rate": 0.35,
+      "checked_compile_success_rate": 1.0,
+      "checked_run_success_rate": 1.0,
+      "expected_output_match_rate": 0.55,
+      "freeze_events": [],
+      "frozen_layers": [
+        "task_scope",
+        "language_target",
+        "semantic_domain"
+      ],
+      "generation": 25,
+      "hard_case_attribution": {
+        "arithmetic_family": {
+          "error_count": 3,
+          "error_rate": 0.15,
+          "severity": 0.09
+        },
+        "slot_binding_policy": {
+          "error_count": 1,
+          "error_rate": 0.05,
+          "severity": 0.03
+        },
+        "structure_policy": {
+          "error_count": 3,
+          "error_rate": 0.15,
+          "severity": 0.09
+        },
+        "support_gate": {
+          "error_count": 2,
+          "error_rate": 0.1,
+          "severity": 0.1
+        }
+      },
+      "mean_fitness": 3.4817,
+      "missing_layer_rate": 0.0,
+      "most_common_wrong_branch_decisions": [
+        [
+          "support_gate:unsupported -> supported",
+          3
+        ],
+        [
+          "slot_binding_policy:chinese_number_order -> surface_number_order",
+          2
+        ],
+        [
+          "arithmetic_family:mixed_precedence -> multiplication",
+          2
+        ],
+        [
+          "structure_policy:precedence_tree -> binary_operation",
+          2
+        ],
+        [
+          "slot_binding_policy:signed_number_order -> surface_number_order",
+          2
+        ],
+        [
+          "arithmetic_family:addition -> subtraction",
+          1
+        ],
+        [
+          "structure_policy:reduce_chain -> binary_operation",
+          1
+        ],
+        [
+          "support_gate:unsupported -> <missing>",
+          1
+        ],
+        [
+          "task_scope:unsupported -> programming",
+          1
+        ],
+        [
+          "language_target:C -> unknown",
+          1
+        ]
+      ],
+      "per_layer_accuracy": {
+        "arithmetic_family": 0.8,
+        "language_target": 0.9333,
+        "semantic_domain": 1.0,
+        "slot_binding_policy": 0.7333,
+        "structure_policy": 0.8,
+        "support_gate": 0.8,
+        "target_builder": 1.0,
+        "task_scope": 0.95
+      },
+      "per_layer_missing_rate": {
+        "arithmetic_family": 0.0,
+        "language_target": 0.0,
+        "semantic_domain": 0.0,
+        "slot_binding_policy": 0.0,
+        "structure_policy": 0.0,
+        "support_gate": 0.05,
+        "target_builder": 0.0,
+        "task_scope": 0.0
+      },
+      "target_ir_exact_match_rate": 0.55,
+      "unfreeze_events": [],
+      "unsupported_correct_rate": 0.6
+    },
+    {
+      "active_layer": "support_gate",
+      "best_fitness": 8.2,
+      "branch_path_exact_match_rate": 0.35,
+      "checked_compile_success_rate": 1.0,
+      "checked_run_success_rate": 1.0,
+      "expected_output_match_rate": 0.55,
+      "freeze_events": [],
+      "frozen_layers": [
+        "task_scope",
+        "language_target",
+        "semantic_domain"
+      ],
+      "generation": 26,
+      "hard_case_attribution": {
+        "arithmetic_family": {
+          "error_count": 3,
+          "error_rate": 0.15,
+          "severity": 0.09
+        },
+        "slot_binding_policy": {
+          "error_count": 1,
+          "error_rate": 0.05,
+          "severity": 0.03
+        },
+        "structure_policy": {
+          "error_count": 3,
+          "error_rate": 0.15,
+          "severity": 0.09
+        },
+        "support_gate": {
+          "error_count": 2,
+          "error_rate": 0.1,
+          "severity": 0.1
+        }
+      },
+      "mean_fitness": 3.4817,
+      "missing_layer_rate": 0.0,
+      "most_common_wrong_branch_decisions": [
+        [
+          "support_gate:unsupported -> supported",
+          3
+        ],
+        [
+          "slot_binding_policy:chinese_number_order -> surface_number_order",
+          2
+        ],
+        [
+          "arithmetic_family:mixed_precedence -> multiplication",
+          2
+        ],
+        [
+          "structure_policy:precedence_tree -> binary_operation",
+          2
+        ],
+        [
+          "slot_binding_policy:signed_number_order -> surface_number_order",
+          2
+        ],
+        [
+          "arithmetic_family:addition -> subtraction",
+          1
+        ],
+        [
+          "structure_policy:reduce_chain -> binary_operation",
+          1
+        ],
+        [
+          "support_gate:unsupported -> <missing>",
+          1
+        ],
+        [
+          "task_scope:unsupported -> programming",
+          1
+        ],
+        [
+          "language_target:C -> unknown",
+          1
+        ]
+      ],
+      "per_layer_accuracy": {
+        "arithmetic_family": 0.8,
+        "language_target": 0.9333,
+        "semantic_domain": 1.0,
+        "slot_binding_policy": 0.7333,
+        "structure_policy": 0.8,
+        "support_gate": 0.8,
+        "target_builder": 1.0,
+        "task_scope": 0.95
+      },
+      "per_layer_missing_rate": {
+        "arithmetic_family": 0.0,
+        "language_target": 0.0,
+        "semantic_domain": 0.0,
+        "slot_binding_policy": 0.0,
+        "structure_policy": 0.0,
+        "support_gate": 0.05,
+        "target_builder": 0.0,
+        "task_scope": 0.0
+      },
+      "target_ir_exact_match_rate": 0.55,
+      "unfreeze_events": [],
+      "unsupported_correct_rate": 0.6
+    },
+    {
+      "active_layer": "support_gate",
+      "best_fitness": 8.2,
+      "branch_path_exact_match_rate": 0.35,
+      "checked_compile_success_rate": 1.0,
+      "checked_run_success_rate": 1.0,
+      "expected_output_match_rate": 0.55,
+      "freeze_events": [],
+      "frozen_layers": [
+        "task_scope",
+        "language_target",
+        "semantic_domain"
+      ],
+      "generation": 27,
+      "hard_case_attribution": {
+        "arithmetic_family": {
+          "error_count": 3,
+          "error_rate": 0.15,
+          "severity": 0.09
+        },
+        "slot_binding_policy": {
+          "error_count": 1,
+          "error_rate": 0.05,
+          "severity": 0.03
+        },
+        "structure_policy": {
+          "error_count": 3,
+          "error_rate": 0.15,
+          "severity": 0.09
+        },
+        "support_gate": {
+          "error_count": 2,
+          "error_rate": 0.1,
+          "severity": 0.1
+        }
+      },
+      "mean_fitness": 3.4817,
+      "missing_layer_rate": 0.0,
+      "most_common_wrong_branch_decisions": [
+        [
+          "support_gate:unsupported -> supported",
+          3
+        ],
+        [
+          "slot_binding_policy:chinese_number_order -> surface_number_order",
+          2
+        ],
+        [
+          "arithmetic_family:mixed_precedence -> multiplication",
+          2
+        ],
+        [
+          "structure_policy:precedence_tree -> binary_operation",
+          2
+        ],
+        [
+          "slot_binding_policy:signed_number_order -> surface_number_order",
+          2
+        ],
+        [
+          "arithmetic_family:addition -> subtraction",
+          1
+        ],
+        [
+          "structure_policy:reduce_chain -> binary_operation",
+          1
+        ],
+        [
+          "support_gate:unsupported -> <missing>",
+          1
+        ],
+        [
+          "task_scope:unsupported -> programming",
+          1
+        ],
+        [
+          "language_target:C -> unknown",
+          1
+        ]
+      ],
+      "per_layer_accuracy": {
+        "arithmetic_family": 0.8,
+        "language_target": 0.9333,
+        "semantic_domain": 1.0,
+        "slot_binding_policy": 0.7333,
+        "structure_policy": 0.8,
+        "support_gate": 0.8,
+        "target_builder": 1.0,
+        "task_scope": 0.95
+      },
+      "per_layer_missing_rate": {
+        "arithmetic_family": 0.0,
+        "language_target": 0.0,
+        "semantic_domain": 0.0,
+        "slot_binding_policy": 0.0,
+        "structure_policy": 0.0,
+        "support_gate": 0.05,
+        "target_builder": 0.0,
+        "task_scope": 0.0
+      },
+      "target_ir_exact_match_rate": 0.55,
+      "unfreeze_events": [],
+      "unsupported_correct_rate": 0.6
+    },
+    {
+      "active_layer": "support_gate",
+      "best_fitness": 8.2,
+      "branch_path_exact_match_rate": 0.35,
+      "checked_compile_success_rate": 1.0,
+      "checked_run_success_rate": 1.0,
+      "expected_output_match_rate": 0.55,
+      "freeze_events": [],
+      "frozen_layers": [
+        "task_scope",
+        "language_target",
+        "semantic_domain"
+      ],
+      "generation": 28,
+      "hard_case_attribution": {
+        "arithmetic_family": {
+          "error_count": 3,
+          "error_rate": 0.15,
+          "severity": 0.09
+        },
+        "slot_binding_policy": {
+          "error_count": 1,
+          "error_rate": 0.05,
+          "severity": 0.03
+        },
+        "structure_policy": {
+          "error_count": 3,
+          "error_rate": 0.15,
+          "severity": 0.09
+        },
+        "support_gate": {
+          "error_count": 2,
+          "error_rate": 0.1,
+          "severity": 0.1
+        }
+      },
+      "mean_fitness": 3.4817,
+      "missing_layer_rate": 0.0,
+      "most_common_wrong_branch_decisions": [
+        [
+          "support_gate:unsupported -> supported",
+          3
+        ],
+        [
+          "slot_binding_policy:chinese_number_order -> surface_number_order",
+          2
+        ],
+        [
+          "arithmetic_family:mixed_precedence -> multiplication",
+          2
+        ],
+        [
+          "structure_policy:precedence_tree -> binary_operation",
+          2
+        ],
+        [
+          "slot_binding_policy:signed_number_order -> surface_number_order",
+          2
+        ],
+        [
+          "arithmetic_family:addition -> subtraction",
+          1
+        ],
+        [
+          "structure_policy:reduce_chain -> binary_operation",
+          1
+        ],
+        [
+          "support_gate:unsupported -> <missing>",
+          1
+        ],
+        [
+          "task_scope:unsupported -> programming",
+          1
+        ],
+        [
+          "language_target:C -> unknown",
+          1
+        ]
+      ],
+      "per_layer_accuracy": {
+        "arithmetic_family": 0.8,
+        "language_target": 0.9333,
+        "semantic_domain": 1.0,
+        "slot_binding_policy": 0.7333,
+        "structure_policy": 0.8,
+        "support_gate": 0.8,
+        "target_builder": 1.0,
+        "task_scope": 0.95
+      },
+      "per_layer_missing_rate": {
+        "arithmetic_family": 0.0,
+        "language_target": 0.0,
+        "semantic_domain": 0.0,
+        "slot_binding_policy": 0.0,
+        "structure_policy": 0.0,
+        "support_gate": 0.05,
+        "target_builder": 0.0,
+        "task_scope": 0.0
+      },
+      "target_ir_exact_match_rate": 0.55,
+      "unfreeze_events": [],
+      "unsupported_correct_rate": 0.6
+    },
+    {
+      "active_layer": "support_gate",
+      "best_fitness": 8.2,
+      "branch_path_exact_match_rate": 0.35,
+      "checked_compile_success_rate": 1.0,
+      "checked_run_success_rate": 1.0,
+      "expected_output_match_rate": 0.55,
+      "freeze_events": [],
+      "frozen_layers": [
+        "task_scope",
+        "language_target",
+        "semantic_domain"
+      ],
+      "generation": 29,
+      "hard_case_attribution": {
+        "arithmetic_family": {
+          "error_count": 3,
+          "error_rate": 0.15,
+          "severity": 0.09
+        },
+        "slot_binding_policy": {
+          "error_count": 1,
+          "error_rate": 0.05,
+          "severity": 0.03
+        },
+        "structure_policy": {
+          "error_count": 3,
+          "error_rate": 0.15,
+          "severity": 0.09
+        },
+        "support_gate": {
+          "error_count": 2,
+          "error_rate": 0.1,
+          "severity": 0.1
+        }
+      },
+      "mean_fitness": 3.4817,
+      "missing_layer_rate": 0.0,
+      "most_common_wrong_branch_decisions": [
+        [
+          "support_gate:unsupported -> supported",
+          3
+        ],
+        [
+          "slot_binding_policy:chinese_number_order -> surface_number_order",
+          2
+        ],
+        [
+          "arithmetic_family:mixed_precedence -> multiplication",
+          2
+        ],
+        [
+          "structure_policy:precedence_tree -> binary_operation",
+          2
+        ],
+        [
+          "slot_binding_policy:signed_number_order -> surface_number_order",
+          2
+        ],
+        [
+          "arithmetic_family:addition -> subtraction",
+          1
+        ],
+        [
+          "structure_policy:reduce_chain -> binary_operation",
+          1
+        ],
+        [
+          "support_gate:unsupported -> <missing>",
+          1
+        ],
+        [
+          "task_scope:unsupported -> programming",
+          1
+        ],
+        [
+          "language_target:C -> unknown",
+          1
+        ]
+      ],
+      "per_layer_accuracy": {
+        "arithmetic_family": 0.8,
+        "language_target": 0.9333,
+        "semantic_domain": 1.0,
+        "slot_binding_policy": 0.7333,
+        "structure_policy": 0.8,
+        "support_gate": 0.8,
+        "target_builder": 1.0,
+        "task_scope": 0.95
+      },
+      "per_layer_missing_rate": {
+        "arithmetic_family": 0.0,
+        "language_target": 0.0,
+        "semantic_domain": 0.0,
+        "slot_binding_policy": 0.0,
+        "structure_policy": 0.0,
+        "support_gate": 0.05,
+        "target_builder": 0.0,
+        "task_scope": 0.0
+      },
+      "target_ir_exact_match_rate": 0.55,
+      "unfreeze_events": [],
+      "unsupported_correct_rate": 0.6
+    },
+    {
+      "active_layer": "support_gate",
+      "best_fitness": 8.2,
+      "branch_path_exact_match_rate": 0.35,
+      "checked_compile_success_rate": 1.0,
+      "checked_run_success_rate": 1.0,
+      "expected_output_match_rate": 0.55,
+      "freeze_events": [],
+      "frozen_layers": [
+        "task_scope",
+        "language_target",
+        "semantic_domain"
+      ],
+      "generation": 30,
+      "hard_case_attribution": {
+        "arithmetic_family": {
+          "error_count": 3,
+          "error_rate": 0.15,
+          "severity": 0.09
+        },
+        "slot_binding_policy": {
+          "error_count": 1,
+          "error_rate": 0.05,
+          "severity": 0.03
+        },
+        "structure_policy": {
+          "error_count": 3,
+          "error_rate": 0.15,
+          "severity": 0.09
+        },
+        "support_gate": {
+          "error_count": 2,
+          "error_rate": 0.1,
+          "severity": 0.1
+        }
+      },
+      "mean_fitness": 3.4817,
+      "missing_layer_rate": 0.0,
+      "most_common_wrong_branch_decisions": [
+        [
+          "support_gate:unsupported -> supported",
+          3
+        ],
+        [
+          "slot_binding_policy:chinese_number_order -> surface_number_order",
+          2
+        ],
+        [
+          "arithmetic_family:mixed_precedence -> multiplication",
+          2
+        ],
+        [
+          "structure_policy:precedence_tree -> binary_operation",
+          2
+        ],
+        [
+          "slot_binding_policy:signed_number_order -> surface_number_order",
+          2
+        ],
+        [
+          "arithmetic_family:addition -> subtraction",
+          1
+        ],
+        [
+          "structure_policy:reduce_chain -> binary_operation",
+          1
+        ],
+        [
+          "support_gate:unsupported -> <missing>",
+          1
+        ],
+        [
+          "task_scope:unsupported -> programming",
+          1
+        ],
+        [
+          "language_target:C -> unknown",
+          1
+        ]
+      ],
+      "per_layer_accuracy": {
+        "arithmetic_family": 0.8,
+        "language_target": 0.9333,
+        "semantic_domain": 1.0,
+        "slot_binding_policy": 0.7333,
+        "structure_policy": 0.8,
+        "support_gate": 0.8,
+        "target_builder": 1.0,
+        "task_scope": 0.95
+      },
+      "per_layer_missing_rate": {
+        "arithmetic_family": 0.0,
+        "language_target": 0.0,
+        "semantic_domain": 0.0,
+        "slot_binding_policy": 0.0,
+        "structure_policy": 0.0,
+        "support_gate": 0.05,
+        "target_builder": 0.0,
+        "task_scope": 0.0
+      },
+      "target_ir_exact_match_rate": 0.55,
+      "unfreeze_events": [],
+      "unsupported_correct_rate": 0.6
+    },
+    {
+      "active_layer": "support_gate",
+      "best_fitness": 8.2,
+      "branch_path_exact_match_rate": 0.35,
+      "checked_compile_success_rate": 1.0,
+      "checked_run_success_rate": 1.0,
+      "expected_output_match_rate": 0.55,
+      "freeze_events": [],
+      "frozen_layers": [
+        "task_scope",
+        "language_target",
+        "semantic_domain"
+      ],
+      "generation": 31,
+      "hard_case_attribution": {
+        "arithmetic_family": {
+          "error_count": 3,
+          "error_rate": 0.15,
+          "severity": 0.09
+        },
+        "slot_binding_policy": {
+          "error_count": 1,
+          "error_rate": 0.05,
+          "severity": 0.03
+        },
+        "structure_policy": {
+          "error_count": 3,
+          "error_rate": 0.15,
+          "severity": 0.09
+        },
+        "support_gate": {
+          "error_count": 2,
+          "error_rate": 0.1,
+          "severity": 0.1
+        }
+      },
+      "mean_fitness": 3.4817,
+      "missing_layer_rate": 0.0,
+      "most_common_wrong_branch_decisions": [
+        [
+          "support_gate:unsupported -> supported",
+          3
+        ],
+        [
+          "slot_binding_policy:chinese_number_order -> surface_number_order",
+          2
+        ],
+        [
+          "arithmetic_family:mixed_precedence -> multiplication",
+          2
+        ],
+        [
+          "structure_policy:precedence_tree -> binary_operation",
+          2
+        ],
+        [
+          "slot_binding_policy:signed_number_order -> surface_number_order",
+          2
+        ],
+        [
+          "arithmetic_family:addition -> subtraction",
+          1
+        ],
+        [
+          "structure_policy:reduce_chain -> binary_operation",
+          1
+        ],
+        [
+          "support_gate:unsupported -> <missing>",
+          1
+        ],
+        [
+          "task_scope:unsupported -> programming",
+          1
+        ],
+        [
+          "language_target:C -> unknown",
+          1
+        ]
+      ],
+      "per_layer_accuracy": {
+        "arithmetic_family": 0.8,
+        "language_target": 0.9333,
+        "semantic_domain": 1.0,
+        "slot_binding_policy": 0.7333,
+        "structure_policy": 0.8,
+        "support_gate": 0.8,
+        "target_builder": 1.0,
+        "task_scope": 0.95
+      },
+      "per_layer_missing_rate": {
+        "arithmetic_family": 0.0,
+        "language_target": 0.0,
+        "semantic_domain": 0.0,
+        "slot_binding_policy": 0.0,
+        "structure_policy": 0.0,
+        "support_gate": 0.05,
+        "target_builder": 0.0,
+        "task_scope": 0.0
+      },
+      "target_ir_exact_match_rate": 0.55,
+      "unfreeze_events": [],
+      "unsupported_correct_rate": 0.6
+    },
+    {
+      "active_layer": "support_gate",
+      "best_fitness": 8.2,
+      "branch_path_exact_match_rate": 0.35,
+      "checked_compile_success_rate": 1.0,
+      "checked_run_success_rate": 1.0,
+      "expected_output_match_rate": 0.55,
+      "freeze_events": [],
+      "frozen_layers": [
+        "task_scope",
+        "language_target",
+        "semantic_domain"
+      ],
+      "generation": 32,
+      "hard_case_attribution": {
+        "arithmetic_family": {
+          "error_count": 3,
+          "error_rate": 0.15,
+          "severity": 0.09
+        },
+        "slot_binding_policy": {
+          "error_count": 1,
+          "error_rate": 0.05,
+          "severity": 0.03
+        },
+        "structure_policy": {
+          "error_count": 3,
+          "error_rate": 0.15,
+          "severity": 0.09
+        },
+        "support_gate": {
+          "error_count": 2,
+          "error_rate": 0.1,
+          "severity": 0.1
+        }
+      },
+      "mean_fitness": 3.4817,
+      "missing_layer_rate": 0.0,
+      "most_common_wrong_branch_decisions": [
+        [
+          "support_gate:unsupported -> supported",
+          3
+        ],
+        [
+          "slot_binding_policy:chinese_number_order -> surface_number_order",
+          2
+        ],
+        [
+          "arithmetic_family:mixed_precedence -> multiplication",
+          2
+        ],
+        [
+          "structure_policy:precedence_tree -> binary_operation",
+          2
+        ],
+        [
+          "slot_binding_policy:signed_number_order -> surface_number_order",
+          2
+        ],
+        [
+          "arithmetic_family:addition -> subtraction",
+          1
+        ],
+        [
+          "structure_policy:reduce_chain -> binary_operation",
+          1
+        ],
+        [
+          "support_gate:unsupported -> <missing>",
+          1
+        ],
+        [
+          "task_scope:unsupported -> programming",
+          1
+        ],
+        [
+          "language_target:C -> unknown",
+          1
+        ]
+      ],
+      "per_layer_accuracy": {
+        "arithmetic_family": 0.8,
+        "language_target": 0.9333,
+        "semantic_domain": 1.0,
+        "slot_binding_policy": 0.7333,
+        "structure_policy": 0.8,
+        "support_gate": 0.8,
+        "target_builder": 1.0,
+        "task_scope": 0.95
+      },
+      "per_layer_missing_rate": {
+        "arithmetic_family": 0.0,
+        "language_target": 0.0,
+        "semantic_domain": 0.0,
+        "slot_binding_policy": 0.0,
+        "structure_policy": 0.0,
+        "support_gate": 0.05,
+        "target_builder": 0.0,
+        "task_scope": 0.0
+      },
+      "target_ir_exact_match_rate": 0.55,
+      "unfreeze_events": [],
+      "unsupported_correct_rate": 0.6
+    },
+    {
+      "active_layer": "support_gate",
+      "best_fitness": 8.2,
+      "branch_path_exact_match_rate": 0.35,
+      "checked_compile_success_rate": 1.0,
+      "checked_run_success_rate": 1.0,
+      "expected_output_match_rate": 0.55,
+      "freeze_events": [],
+      "frozen_layers": [
+        "task_scope",
+        "language_target",
+        "semantic_domain"
+      ],
+      "generation": 33,
+      "hard_case_attribution": {
+        "arithmetic_family": {
+          "error_count": 3,
+          "error_rate": 0.15,
+          "severity": 0.09
+        },
+        "slot_binding_policy": {
+          "error_count": 1,
+          "error_rate": 0.05,
+          "severity": 0.03
+        },
+        "structure_policy": {
+          "error_count": 3,
+          "error_rate": 0.15,
+          "severity": 0.09
+        },
+        "support_gate": {
+          "error_count": 2,
+          "error_rate": 0.1,
+          "severity": 0.1
+        }
+      },
+      "mean_fitness": 3.4817,
+      "missing_layer_rate": 0.0,
+      "most_common_wrong_branch_decisions": [
+        [
+          "support_gate:unsupported -> supported",
+          3
+        ],
+        [
+          "slot_binding_policy:chinese_number_order -> surface_number_order",
+          2
+        ],
+        [
+          "arithmetic_family:mixed_precedence -> multiplication",
+          2
+        ],
+        [
+          "structure_policy:precedence_tree -> binary_operation",
+          2
+        ],
+        [
+          "slot_binding_policy:signed_number_order -> surface_number_order",
+          2
+        ],
+        [
+          "arithmetic_family:addition -> subtraction",
+          1
+        ],
+        [
+          "structure_policy:reduce_chain -> binary_operation",
+          1
+        ],
+        [
+          "support_gate:unsupported -> <missing>",
+          1
+        ],
+        [
+          "task_scope:unsupported -> programming",
+          1
+        ],
+        [
+          "language_target:C -> unknown",
+          1
+        ]
+      ],
+      "per_layer_accuracy": {
+        "arithmetic_family": 0.8,
+        "language_target": 0.9333,
+        "semantic_domain": 1.0,
+        "slot_binding_policy": 0.7333,
+        "structure_policy": 0.8,
+        "support_gate": 0.8,
+        "target_builder": 1.0,
+        "task_scope": 0.95
+      },
+      "per_layer_missing_rate": {
+        "arithmetic_family": 0.0,
+        "language_target": 0.0,
+        "semantic_domain": 0.0,
+        "slot_binding_policy": 0.0,
+        "structure_policy": 0.0,
+        "support_gate": 0.05,
+        "target_builder": 0.0,
+        "task_scope": 0.0
+      },
+      "target_ir_exact_match_rate": 0.55,
+      "unfreeze_events": [],
+      "unsupported_correct_rate": 0.6
+    },
+    {
+      "active_layer": "support_gate",
+      "best_fitness": 8.2,
+      "branch_path_exact_match_rate": 0.35,
+      "checked_compile_success_rate": 1.0,
+      "checked_run_success_rate": 1.0,
+      "expected_output_match_rate": 0.55,
+      "freeze_events": [],
+      "frozen_layers": [
+        "task_scope",
+        "language_target",
+        "semantic_domain"
+      ],
+      "generation": 34,
+      "hard_case_attribution": {
+        "arithmetic_family": {
+          "error_count": 3,
+          "error_rate": 0.15,
+          "severity": 0.09
+        },
+        "slot_binding_policy": {
+          "error_count": 1,
+          "error_rate": 0.05,
+          "severity": 0.03
+        },
+        "structure_policy": {
+          "error_count": 3,
+          "error_rate": 0.15,
+          "severity": 0.09
+        },
+        "support_gate": {
+          "error_count": 2,
+          "error_rate": 0.1,
+          "severity": 0.1
+        }
+      },
+      "mean_fitness": 3.4817,
+      "missing_layer_rate": 0.0,
+      "most_common_wrong_branch_decisions": [
+        [
+          "support_gate:unsupported -> supported",
+          3
+        ],
+        [
+          "slot_binding_policy:chinese_number_order -> surface_number_order",
+          2
+        ],
+        [
+          "arithmetic_family:mixed_precedence -> multiplication",
+          2
+        ],
+        [
+          "structure_policy:precedence_tree -> binary_operation",
+          2
+        ],
+        [
+          "slot_binding_policy:signed_number_order -> surface_number_order",
+          2
+        ],
+        [
+          "arithmetic_family:addition -> subtraction",
+          1
+        ],
+        [
+          "structure_policy:reduce_chain -> binary_operation",
+          1
+        ],
+        [
+          "support_gate:unsupported -> <missing>",
+          1
+        ],
+        [
+          "task_scope:unsupported -> programming",
+          1
+        ],
+        [
+          "language_target:C -> unknown",
+          1
+        ]
+      ],
+      "per_layer_accuracy": {
+        "arithmetic_family": 0.8,
+        "language_target": 0.9333,
+        "semantic_domain": 1.0,
+        "slot_binding_policy": 0.7333,
+        "structure_policy": 0.8,
+        "support_gate": 0.8,
+        "target_builder": 1.0,
+        "task_scope": 0.95
+      },
+      "per_layer_missing_rate": {
+        "arithmetic_family": 0.0,
+        "language_target": 0.0,
+        "semantic_domain": 0.0,
+        "slot_binding_policy": 0.0,
+        "structure_policy": 0.0,
+        "support_gate": 0.05,
+        "target_builder": 0.0,
+        "task_scope": 0.0
+      },
+      "target_ir_exact_match_rate": 0.55,
+      "unfreeze_events": [],
+      "unsupported_correct_rate": 0.6
+    },
+    {
+      "active_layer": "support_gate",
+      "best_fitness": 8.2,
+      "branch_path_exact_match_rate": 0.35,
+      "checked_compile_success_rate": 1.0,
+      "checked_run_success_rate": 1.0,
+      "expected_output_match_rate": 0.55,
+      "freeze_events": [],
+      "frozen_layers": [
+        "task_scope",
+        "language_target",
+        "semantic_domain"
+      ],
+      "generation": 35,
+      "hard_case_attribution": {
+        "arithmetic_family": {
+          "error_count": 3,
+          "error_rate": 0.15,
+          "severity": 0.09
+        },
+        "slot_binding_policy": {
+          "error_count": 1,
+          "error_rate": 0.05,
+          "severity": 0.03
+        },
+        "structure_policy": {
+          "error_count": 3,
+          "error_rate": 0.15,
+          "severity": 0.09
+        },
+        "support_gate": {
+          "error_count": 2,
+          "error_rate": 0.1,
+          "severity": 0.1
+        }
+      },
+      "mean_fitness": 3.4817,
+      "missing_layer_rate": 0.0,
+      "most_common_wrong_branch_decisions": [
+        [
+          "support_gate:unsupported -> supported",
+          3
+        ],
+        [
+          "slot_binding_policy:chinese_number_order -> surface_number_order",
+          2
+        ],
+        [
+          "arithmetic_family:mixed_precedence -> multiplication",
+          2
+        ],
+        [
+          "structure_policy:precedence_tree -> binary_operation",
+          2
+        ],
+        [
+          "slot_binding_policy:signed_number_order -> surface_number_order",
+          2
+        ],
+        [
+          "arithmetic_family:addition -> subtraction",
+          1
+        ],
+        [
+          "structure_policy:reduce_chain -> binary_operation",
+          1
+        ],
+        [
+          "support_gate:unsupported -> <missing>",
+          1
+        ],
+        [
+          "task_scope:unsupported -> programming",
+          1
+        ],
+        [
+          "language_target:C -> unknown",
+          1
+        ]
+      ],
+      "per_layer_accuracy": {
+        "arithmetic_family": 0.8,
+        "language_target": 0.9333,
+        "semantic_domain": 1.0,
+        "slot_binding_policy": 0.7333,
+        "structure_policy": 0.8,
+        "support_gate": 0.8,
+        "target_builder": 1.0,
+        "task_scope": 0.95
+      },
+      "per_layer_missing_rate": {
+        "arithmetic_family": 0.0,
+        "language_target": 0.0,
+        "semantic_domain": 0.0,
+        "slot_binding_policy": 0.0,
+        "structure_policy": 0.0,
+        "support_gate": 0.05,
+        "target_builder": 0.0,
+        "task_scope": 0.0
+      },
+      "target_ir_exact_match_rate": 0.55,
+      "unfreeze_events": [],
+      "unsupported_correct_rate": 0.6
+    },
+    {
+      "active_layer": "support_gate",
+      "best_fitness": 8.2,
+      "branch_path_exact_match_rate": 0.35,
+      "checked_compile_success_rate": 1.0,
+      "checked_run_success_rate": 1.0,
+      "expected_output_match_rate": 0.55,
+      "freeze_events": [],
+      "frozen_layers": [
+        "task_scope",
+        "language_target",
+        "semantic_domain"
+      ],
+      "generation": 36,
+      "hard_case_attribution": {
+        "arithmetic_family": {
+          "error_count": 3,
+          "error_rate": 0.15,
+          "severity": 0.09
+        },
+        "slot_binding_policy": {
+          "error_count": 1,
+          "error_rate": 0.05,
+          "severity": 0.03
+        },
+        "structure_policy": {
+          "error_count": 3,
+          "error_rate": 0.15,
+          "severity": 0.09
+        },
+        "support_gate": {
+          "error_count": 2,
+          "error_rate": 0.1,
+          "severity": 0.1
+        }
+      },
+      "mean_fitness": 3.4817,
+      "missing_layer_rate": 0.0,
+      "most_common_wrong_branch_decisions": [
+        [
+          "support_gate:unsupported -> supported",
+          3
+        ],
+        [
+          "slot_binding_policy:chinese_number_order -> surface_number_order",
+          2
+        ],
+        [
+          "arithmetic_family:mixed_precedence -> multiplication",
+          2
+        ],
+        [
+          "structure_policy:precedence_tree -> binary_operation",
+          2
+        ],
+        [
+          "slot_binding_policy:signed_number_order -> surface_number_order",
+          2
+        ],
+        [
+          "arithmetic_family:addition -> subtraction",
+          1
+        ],
+        [
+          "structure_policy:reduce_chain -> binary_operation",
+          1
+        ],
+        [
+          "support_gate:unsupported -> <missing>",
+          1
+        ],
+        [
+          "task_scope:unsupported -> programming",
+          1
+        ],
+        [
+          "language_target:C -> unknown",
+          1
+        ]
+      ],
+      "per_layer_accuracy": {
+        "arithmetic_family": 0.8,
+        "language_target": 0.9333,
+        "semantic_domain": 1.0,
+        "slot_binding_policy": 0.7333,
+        "structure_policy": 0.8,
+        "support_gate": 0.8,
+        "target_builder": 1.0,
+        "task_scope": 0.95
+      },
+      "per_layer_missing_rate": {
+        "arithmetic_family": 0.0,
+        "language_target": 0.0,
+        "semantic_domain": 0.0,
+        "slot_binding_policy": 0.0,
+        "structure_policy": 0.0,
+        "support_gate": 0.05,
+        "target_builder": 0.0,
+        "task_scope": 0.0
+      },
+      "target_ir_exact_match_rate": 0.55,
+      "unfreeze_events": [],
+      "unsupported_correct_rate": 0.6
+    },
+    {
+      "active_layer": "support_gate",
+      "best_fitness": 8.2,
+      "branch_path_exact_match_rate": 0.35,
+      "checked_compile_success_rate": 1.0,
+      "checked_run_success_rate": 1.0,
+      "expected_output_match_rate": 0.55,
+      "freeze_events": [],
+      "frozen_layers": [
+        "task_scope",
+        "language_target",
+        "semantic_domain"
+      ],
+      "generation": 37,
+      "hard_case_attribution": {
+        "arithmetic_family": {
+          "error_count": 3,
+          "error_rate": 0.15,
+          "severity": 0.09
+        },
+        "slot_binding_policy": {
+          "error_count": 1,
+          "error_rate": 0.05,
+          "severity": 0.03
+        },
+        "structure_policy": {
+          "error_count": 3,
+          "error_rate": 0.15,
+          "severity": 0.09
+        },
+        "support_gate": {
+          "error_count": 2,
+          "error_rate": 0.1,
+          "severity": 0.1
+        }
+      },
+      "mean_fitness": 3.4817,
+      "missing_layer_rate": 0.0,
+      "most_common_wrong_branch_decisions": [
+        [
+          "support_gate:unsupported -> supported",
+          3
+        ],
+        [
+          "slot_binding_policy:chinese_number_order -> surface_number_order",
+          2
+        ],
+        [
+          "arithmetic_family:mixed_precedence -> multiplication",
+          2
+        ],
+        [
+          "structure_policy:precedence_tree -> binary_operation",
+          2
+        ],
+        [
+          "slot_binding_policy:signed_number_order -> surface_number_order",
+          2
+        ],
+        [
+          "arithmetic_family:addition -> subtraction",
+          1
+        ],
+        [
+          "structure_policy:reduce_chain -> binary_operation",
+          1
+        ],
+        [
+          "support_gate:unsupported -> <missing>",
+          1
+        ],
+        [
+          "task_scope:unsupported -> programming",
+          1
+        ],
+        [
+          "language_target:C -> unknown",
+          1
+        ]
+      ],
+      "per_layer_accuracy": {
+        "arithmetic_family": 0.8,
+        "language_target": 0.9333,
+        "semantic_domain": 1.0,
+        "slot_binding_policy": 0.7333,
+        "structure_policy": 0.8,
+        "support_gate": 0.8,
+        "target_builder": 1.0,
+        "task_scope": 0.95
+      },
+      "per_layer_missing_rate": {
+        "arithmetic_family": 0.0,
+        "language_target": 0.0,
+        "semantic_domain": 0.0,
+        "slot_binding_policy": 0.0,
+        "structure_policy": 0.0,
+        "support_gate": 0.05,
+        "target_builder": 0.0,
+        "task_scope": 0.0
+      },
+      "target_ir_exact_match_rate": 0.55,
+      "unfreeze_events": [],
+      "unsupported_correct_rate": 0.6
+    },
+    {
+      "active_layer": "support_gate",
+      "best_fitness": 8.2,
+      "branch_path_exact_match_rate": 0.35,
+      "checked_compile_success_rate": 1.0,
+      "checked_run_success_rate": 1.0,
+      "expected_output_match_rate": 0.55,
+      "freeze_events": [],
+      "frozen_layers": [
+        "task_scope",
+        "language_target",
+        "semantic_domain"
+      ],
+      "generation": 38,
+      "hard_case_attribution": {
+        "arithmetic_family": {
+          "error_count": 3,
+          "error_rate": 0.15,
+          "severity": 0.09
+        },
+        "slot_binding_policy": {
+          "error_count": 1,
+          "error_rate": 0.05,
+          "severity": 0.03
+        },
+        "structure_policy": {
+          "error_count": 3,
+          "error_rate": 0.15,
+          "severity": 0.09
+        },
+        "support_gate": {
+          "error_count": 2,
+          "error_rate": 0.1,
+          "severity": 0.1
+        }
+      },
+      "mean_fitness": 3.4817,
+      "missing_layer_rate": 0.0,
+      "most_common_wrong_branch_decisions": [
+        [
+          "support_gate:unsupported -> supported",
+          3
+        ],
+        [
+          "slot_binding_policy:chinese_number_order -> surface_number_order",
+          2
+        ],
+        [
+          "arithmetic_family:mixed_precedence -> multiplication",
+          2
+        ],
+        [
+          "structure_policy:precedence_tree -> binary_operation",
+          2
+        ],
+        [
+          "slot_binding_policy:signed_number_order -> surface_number_order",
+          2
+        ],
+        [
+          "arithmetic_family:addition -> subtraction",
+          1
+        ],
+        [
+          "structure_policy:reduce_chain -> binary_operation",
+          1
+        ],
+        [
+          "support_gate:unsupported -> <missing>",
+          1
+        ],
+        [
+          "task_scope:unsupported -> programming",
+          1
+        ],
+        [
+          "language_target:C -> unknown",
+          1
+        ]
+      ],
+      "per_layer_accuracy": {
+        "arithmetic_family": 0.8,
+        "language_target": 0.9333,
+        "semantic_domain": 1.0,
+        "slot_binding_policy": 0.7333,
+        "structure_policy": 0.8,
+        "support_gate": 0.8,
+        "target_builder": 1.0,
+        "task_scope": 0.95
+      },
+      "per_layer_missing_rate": {
+        "arithmetic_family": 0.0,
+        "language_target": 0.0,
+        "semantic_domain": 0.0,
+        "slot_binding_policy": 0.0,
+        "structure_policy": 0.0,
+        "support_gate": 0.05,
+        "target_builder": 0.0,
+        "task_scope": 0.0
+      },
+      "target_ir_exact_match_rate": 0.55,
+      "unfreeze_events": [],
+      "unsupported_correct_rate": 0.6
+    },
+    {
+      "active_layer": "support_gate",
+      "best_fitness": 8.2,
+      "branch_path_exact_match_rate": 0.35,
+      "checked_compile_success_rate": 1.0,
+      "checked_run_success_rate": 1.0,
+      "expected_output_match_rate": 0.55,
+      "freeze_events": [],
+      "frozen_layers": [
+        "task_scope",
+        "language_target",
+        "semantic_domain"
+      ],
+      "generation": 39,
+      "hard_case_attribution": {
+        "arithmetic_family": {
+          "error_count": 3,
+          "error_rate": 0.15,
+          "severity": 0.09
+        },
+        "slot_binding_policy": {
+          "error_count": 1,
+          "error_rate": 0.05,
+          "severity": 0.03
+        },
+        "structure_policy": {
+          "error_count": 3,
+          "error_rate": 0.15,
+          "severity": 0.09
+        },
+        "support_gate": {
+          "error_count": 2,
+          "error_rate": 0.1,
+          "severity": 0.1
+        }
+      },
+      "mean_fitness": 3.4817,
+      "missing_layer_rate": 0.0,
+      "most_common_wrong_branch_decisions": [
+        [
+          "support_gate:unsupported -> supported",
+          3
+        ],
+        [
+          "slot_binding_policy:chinese_number_order -> surface_number_order",
+          2
+        ],
+        [
+          "arithmetic_family:mixed_precedence -> multiplication",
+          2
+        ],
+        [
+          "structure_policy:precedence_tree -> binary_operation",
+          2
+        ],
+        [
+          "slot_binding_policy:signed_number_order -> surface_number_order",
+          2
+        ],
+        [
+          "arithmetic_family:addition -> subtraction",
+          1
+        ],
+        [
+          "structure_policy:reduce_chain -> binary_operation",
+          1
+        ],
+        [
+          "support_gate:unsupported -> <missing>",
+          1
+        ],
+        [
+          "task_scope:unsupported -> programming",
+          1
+        ],
+        [
+          "language_target:C -> unknown",
+          1
+        ]
+      ],
+      "per_layer_accuracy": {
+        "arithmetic_family": 0.8,
+        "language_target": 0.9333,
+        "semantic_domain": 1.0,
+        "slot_binding_policy": 0.7333,
+        "structure_policy": 0.8,
+        "support_gate": 0.8,
+        "target_builder": 1.0,
+        "task_scope": 0.95
+      },
+      "per_layer_missing_rate": {
+        "arithmetic_family": 0.0,
+        "language_target": 0.0,
+        "semantic_domain": 0.0,
+        "slot_binding_policy": 0.0,
+        "structure_policy": 0.0,
+        "support_gate": 0.05,
+        "target_builder": 0.0,
+        "task_scope": 0.0
+      },
+      "target_ir_exact_match_rate": 0.55,
+      "unfreeze_events": [],
+      "unsupported_correct_rate": 0.6
+    },
+    {
+      "active_layer": "support_gate",
+      "best_fitness": 8.2,
+      "branch_path_exact_match_rate": 0.35,
+      "checked_compile_success_rate": 1.0,
+      "checked_run_success_rate": 1.0,
+      "expected_output_match_rate": 0.55,
+      "freeze_events": [],
+      "frozen_layers": [
+        "task_scope",
+        "language_target",
+        "semantic_domain"
+      ],
+      "generation": 40,
+      "hard_case_attribution": {
+        "arithmetic_family": {
+          "error_count": 3,
+          "error_rate": 0.15,
+          "severity": 0.09
+        },
+        "slot_binding_policy": {
+          "error_count": 1,
+          "error_rate": 0.05,
+          "severity": 0.03
+        },
+        "structure_policy": {
+          "error_count": 3,
+          "error_rate": 0.15,
+          "severity": 0.09
+        },
+        "support_gate": {
+          "error_count": 2,
+          "error_rate": 0.1,
+          "severity": 0.1
+        }
+      },
+      "mean_fitness": 3.4817,
+      "missing_layer_rate": 0.0,
+      "most_common_wrong_branch_decisions": [
+        [
+          "support_gate:unsupported -> supported",
+          3
+        ],
+        [
+          "slot_binding_policy:chinese_number_order -> surface_number_order",
+          2
+        ],
+        [
+          "arithmetic_family:mixed_precedence -> multiplication",
+          2
+        ],
+        [
+          "structure_policy:precedence_tree -> binary_operation",
+          2
+        ],
+        [
+          "slot_binding_policy:signed_number_order -> surface_number_order",
+          2
+        ],
+        [
+          "arithmetic_family:addition -> subtraction",
+          1
+        ],
+        [
+          "structure_policy:reduce_chain -> binary_operation",
+          1
+        ],
+        [
+          "support_gate:unsupported -> <missing>",
+          1
+        ],
+        [
+          "task_scope:unsupported -> programming",
+          1
+        ],
+        [
+          "language_target:C -> unknown",
+          1
+        ]
+      ],
+      "per_layer_accuracy": {
+        "arithmetic_family": 0.8,
+        "language_target": 0.9333,
+        "semantic_domain": 1.0,
+        "slot_binding_policy": 0.7333,
+        "structure_policy": 0.8,
+        "support_gate": 0.8,
+        "target_builder": 1.0,
+        "task_scope": 0.95
+      },
+      "per_layer_missing_rate": {
+        "arithmetic_family": 0.0,
+        "language_target": 0.0,
+        "semantic_domain": 0.0,
+        "slot_binding_policy": 0.0,
+        "structure_policy": 0.0,
+        "support_gate": 0.05,
+        "target_builder": 0.0,
+        "task_scope": 0.0
+      },
+      "target_ir_exact_match_rate": 0.55,
+      "unfreeze_events": [],
+      "unsupported_correct_rate": 0.6
+    }
+  ],
+  "population_per_layer": 16,
+  "population_summary": {
+    "arithmetic_family": {
+      "count": 16,
+      "options": [
+        "addition",
+        "exact_division",
+        "mixed_precedence",
+        "multiplication",
+        "parentheses",
+        "subtraction",
+        "unsupported"
+      ],
+      "top_score": 0.0
+    },
+    "language_target": {
+      "count": 16,
+      "options": [
+        "C",
+        "unknown"
+      ],
+      "top_score": 214.80030000000008
+    },
+    "semantic_domain": {
+      "count": 16,
+      "options": [
+        "arithmetic",
+        "comparison_future",
+        "unsupported"
+      ],
+      "top_score": 139.9336
+    },
+    "slot_binding_policy": {
+      "count": 16,
+      "options": [
+        "chinese_number_order",
+        "previous_targetir_delta",
+        "signed_number_order",
+        "surface_number_order",
+        "unsupported"
+      ],
+      "top_score": 0.0
+    },
+    "structure_policy": {
+      "count": 16,
+      "options": [
+        "binary_operation",
+        "parenthesized_tree",
+        "precedence_tree",
+        "reduce_chain",
+        "unsupported"
+      ],
+      "top_score": 0.0
+    },
+    "support_gate": {
+      "count": 16,
+      "options": [
+        "supported",
+        "unsupported"
+      ],
+      "top_score": 3356.942400000001
+    },
+    "target_builder": {
+      "count": 16,
+      "options": [
+        "canonical_arithmetic_targetir",
+        "canonical_program_targetir",
+        "early_exit"
+      ],
+      "top_score": 0.0
+    },
+    "task_scope": {
+      "count": 16,
+      "options": [
+        "non_programming",
+        "programming",
+        "unsupported"
+      ],
+      "top_score": 258.6672000000001
+    }
+  },
+  "top_k_candidates": 3
+}

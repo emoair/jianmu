@@ -111,3 +111,6 @@ must keep at least minimal coverage, or record a disabled reason.
 - This does not train C source text.
 - This is a minimal DarwinForge scaffold.
 
+Note: v0.6 connected the minimal DarwinForge loop but did not show stable
+convergence. v0.6.1 introduces layer-wise curriculum freezing and hall-of-fame
+tracking to reduce branch drift and preserve high-performing generations.

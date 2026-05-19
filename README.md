@@ -181,3 +181,10 @@ v0.6 development introduces a minimal DarwinForge scaffold that connects
 BranchChain candidate generation, AtomicSynthesis TargetIR construction,
 compiler-backed validation, and path-level evolutionary fitness. It is a
 development experiment and not a v0.5 release claim.
+
+## v0.6.1 Development Direction
+
+v0.6.1 explores BranchChain curriculum freezing: early routing layers are
+trained first, frozen after stability criteria are met, and kept active during
+downstream routing while later layers continue learning. This is a
+training-dynamics experiment, not a v0.5 release claim.
