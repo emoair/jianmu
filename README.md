@@ -211,3 +211,10 @@ Chinese natural-language descriptions（中文自然语言描述）, pure math e
 and Chinese technical mixed inputs（中文技术混合输入） map to the same TargetIR（目标中间表示）.
 This corrects earlier toy labels where implicit C（隐式 C） inputs were incorrectly
 treated as unknown language（未知语言）.
+
+## v0.6.5 Development Direction
+
+v0.6.5 explores Paraphrase-Invariant TargetIR Training（复述不变目标中间表示训练）.
+Multiple Chinese natural-language descriptions（中文自然语言描述）, Chinese technical
+mixed inputs（中文技术混合输入）, and pure math expressions（纯数学表达） in the same
+Paraphrase Group（复述组） are evaluated for convergence toward the same TargetIR（目标中间表示）.

@@ -7,7 +7,7 @@ from jianmu.self_learning.branchchain.toy_dataset import (
     dataset_summary,
 )
 from jianmu.self_learning.branchchain.surface_features import extract_surface_features
-from jianmu.self_learning.darwinforge.evolution import CurriculumDarwinForgeTrainer, DarwinForgeTrainer
+from jianmu.self_learning.darwinforge.evolution import CurriculumDarwinForgeTrainer, DarwinForgeTrainer, ParaphraseInvariantDarwinForgeTrainer
 from jianmu.self_learning.darwinforge.fitness import compute_fitness
 
 
@@ -36,6 +36,11 @@ ARCH_ALIGNED_DIR = Path("records/v0_6_4")
 ARCH_ALIGNED_METRICS_PATH = ARCH_ALIGNED_DIR / "architecture_aligned_dataset_metrics.json"
 ARCH_ALIGNED_REPORT_PATH = ARCH_ALIGNED_DIR / "architecture_aligned_dataset_report.md"
 ARCH_ALIGNED_CANDIDATES_PATH = ARCH_ALIGNED_DIR / "architecture_aligned_dataset_candidates.jsonl"
+
+PARAPHRASE_DIR = Path("records/v0_6_5")
+PARAPHRASE_METRICS_PATH = PARAPHRASE_DIR / "paraphrase_invariant_metrics.json"
+PARAPHRASE_REPORT_PATH = PARAPHRASE_DIR / "paraphrase_invariant_report.md"
+PARAPHRASE_CANDIDATES_PATH = PARAPHRASE_DIR / "paraphrase_invariant_candidates.jsonl"
 
 
 def run_darwinforge_toy(
@@ -543,4 +548,94 @@ def _architecture_aligned_report_markdown(metrics):
         "- This does not prove AGI, Transformer replacement, or hardware BPU implementation.",
         "- This is a dataset realignment experiment.",
     ]
+    return "\n".join(lines) + "\n"
+
+
+def run_paraphrase_invariant_targetir_toy(
+    population_per_layer: int = 16,
+    generations: int = 80,
+    top_k_candidates: int = 3,
+    seed: int = 42,
+    compile_checks_per_generation: int = 0,
+):
+    PARAPHRASE_DIR.mkdir(parents=True, exist_ok=True)
+    dataset = build_architecture_aligned_toy_dataset()
+    trainer = ParaphraseInvariantDarwinForgeTrainer(
+        population_per_layer=population_per_layer,
+        generations=generations,
+        top_k_candidates=top_k_candidates,
+        seed=seed,
+        compile_checks_per_generation=compile_checks_per_generation,
+    )
+    metrics = trainer.train(dataset)
+    candidate_records = metrics.pop("candidate_records")
+    PARAPHRASE_METRICS_PATH.write_text(json.dumps(metrics, ensure_ascii=False, indent=2, sort_keys=True), encoding="utf-8")
+    PARAPHRASE_REPORT_PATH.write_text(_paraphrase_invariant_report_markdown(metrics), encoding="utf-8")
+    PARAPHRASE_CANDIDATES_PATH.write_text(
+        "".join(json.dumps(record.to_dict(), ensure_ascii=False, sort_keys=True) + "\n" for record in candidate_records[-240:]),
+        encoding="utf-8",
+    )
+    metrics["report_path"] = str(PARAPHRASE_REPORT_PATH)
+    metrics["candidates_path"] = str(PARAPHRASE_CANDIDATES_PATH)
+    return metrics
+
+
+def _paraphrase_invariant_report_markdown(metrics):
+    first = metrics["metrics_by_generation"][0]
+    final = metrics["metrics_by_generation"][-1]
+    best = metrics["best_metrics"]
+    lines = [
+        "# v0.6.5 Paraphrase-Invariant TargetIR Training（复述不变目标中间表示训练） Report",
+        "",
+        "This is a group-level DarwinForge（达尔文进化炉） scaffold for BranchChain（分支链）, AtomicSynthesis（原子结构合成）, and TargetIR（目标中间表示） convergence.",
+        "",
+        "## Dataset（数据集）",
+        "",
+        f"- dataset size（数据集规模）: {metrics['dataset_size']}",
+        f"- supported paraphrase group count（支持复述组数量）: {metrics['supported_paraphrase_group_count']}",
+        f"- OOD count（分布外数量）: {metrics['ood_count']}",
+        f"- input_mode counts（输入模式计数）: {metrics['input_mode_counts']}",
+        "",
+        "## Sample-Level Metrics（单样本指标）",
+        "",
+        f"- generation 0 sample_target_ir_exact_match（第 0 代单样本目标中间表示精确匹配）: {first['sample_target_ir_exact_match']}",
+        f"- final sample_target_ir_exact_match（最终单样本目标中间表示精确匹配）: {final['sample_target_ir_exact_match']}",
+        f"- best sample_target_ir_exact_match（最佳单样本目标中间表示精确匹配）: {best['sample_target_ir_exact_match']}",
+        "",
+        "## Group-Level Metrics（组级指标）",
+        "",
+        f"- generation 0 group_targetir_consistency（第 0 代组内一致性）: {first['group_targetir_consistency']}",
+        f"- final group_targetir_consistency（最终组内一致性）: {final['group_targetir_consistency']}",
+        f"- best group_targetir_consistency（最佳组内一致性）: {best['group_targetir_consistency']}",
+        f"- generation 0 group_targetir_exact_match（第 0 代组内目标中间表示正确率）: {first['group_targetir_exact_match']}",
+        f"- final group_targetir_exact_match（最终组内目标中间表示正确率）: {final['group_targetir_exact_match']}",
+        f"- best group_targetir_exact_match（最佳组内目标中间表示正确率）: {best['group_targetir_exact_match']}",
+        f"- cross_mode_consistency（跨输入模式一致性）: {final['cross_mode_consistency']}",
+        f"- paraphrase_collapse_rate（复述坍缩率）: {final['paraphrase_collapse_rate']}",
+        f"- supported_all_rejected_group_count（支持组全拒绝数量）: {final['supported_all_rejected_group_count']}",
+        f"- group_inconsistent_count（组内不一致数量）: {final['group_inconsistent_count']}",
+        "",
+        "## OOD Evaluation（分布外评测）",
+        "",
+        f"- ood_rejection_rate（分布外拒绝率）: {final['ood_rejection_rate']}",
+        f"- ood_false_accept_rate（分布外误接收率）: {final['ood_false_accept_rate']}",
+        "",
+        "## Representative Group Predictions（代表性复述组预测）",
+        "",
+    ]
+    for row in final["representative_group_predictions"][:6]:
+        lines.append(f"- {row['group_id']}: target={row['target_ir']}, predicted={row['predicted_targetirs']}, exact={row['exact']}, consistent={row['consistent']}")
+    lines.extend(
+        [
+            "",
+            "## Non-Claims（非主张）",
+            "",
+            "- This does not prove stable DarwinForge（达尔文进化炉） convergence.",
+            "- This does not prove general program synthesis.",
+            "- This does not train C source text.",
+            "- This does not patch old source code.",
+            "- This does not prove AGI, Transformer replacement, or hardware BPU implementation.",
+            "- This is a Paraphrase-Invariant TargetIR Training（复述不变目标中间表示训练） scaffold.",
+        ]
+    )
     return "\n".join(lines) + "\n"

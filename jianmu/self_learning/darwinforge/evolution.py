@@ -15,6 +15,7 @@ from jianmu.self_learning.darwinforge.fitness import compute_fitness
 from jianmu.self_learning.darwinforge.freezing import required_correct_count
 from jianmu.self_learning.darwinforge.hard_cases import HardCase, HardCaseBuffer
 from jianmu.self_learning.darwinforge.hall_of_fame import HallOfFame
+from jianmu.self_learning.darwinforge.paraphrase import apply_group_fitness, compute_group_metrics, group_dataset_by_paraphrase
 from jianmu.self_learning.darwinforge.population import LayerPreservedPopulation
 
 
@@ -219,10 +220,106 @@ class CurriculumDarwinForgeTrainer:
         }
 
 
+class ParaphraseInvariantDarwinForgeTrainer:
+    def __init__(
+        self,
+        population_per_layer: int = 16,
+        generations: int = 80,
+        top_k_candidates: int = 3,
+        seed: int = 42,
+        compile_checks_per_generation: int = 0,
+    ):
+        self.population_per_layer = population_per_layer
+        self.generations = generations
+        self.top_k_candidates = top_k_candidates
+        self.seed = seed
+        self.compile_checks_per_generation = compile_checks_per_generation
+        self.population = LayerPreservedPopulation.initialize(population_per_layer=population_per_layer, seed=seed)
+        self.synthesis = AtomicSynthesis()
+
+    def train(self, dataset: List[Dict]) -> Dict:
+        groups = group_dataset_by_paraphrase(dataset)
+        ordered_samples = [sample for group_id in sorted(groups) for sample in groups[group_id].samples]
+        metrics_by_generation = []
+        candidate_records_log = []
+        best_metrics = None
+        for generation in range(self.generations + 1):
+            winners = []
+            generation_records = []
+            for task in ordered_samples:
+                features = extract_surface_features(task["input_text"])
+                records = []
+                for candidate_index, genome in enumerate(self.population.sample_candidate_paths(features, top_k=self.top_k_candidates)):
+                    phenotype = self.synthesis.synthesize(genome, features)
+                    fitness = compute_fitness(
+                        genome,
+                        phenotype,
+                        task,
+                        sandbox_optional=candidate_index < self.compile_checks_per_generation,
+                    )
+                    records.append(CandidateRecord(genome, phenotype, fitness))
+                winner = max(records, key=lambda record: record.fitness_report.total_fitness)
+                winners.append(winner)
+                generation_records.extend(records)
+            group_metrics_before = compute_group_metrics(winners, ordered_samples)
+            group_metrics_after = apply_group_fitness(winners, ordered_samples)
+            metrics = _metrics_for_generation(generation, winners, ordered_samples)
+            metrics.update(
+                {
+                    "sample_target_ir_exact_match": group_metrics_after["sample_target_ir_exact_match"],
+                    "group_targetir_consistency": group_metrics_after["group_targetir_consistency"],
+                    "group_targetir_exact_match": group_metrics_after["group_targetir_exact_match"],
+                    "cross_mode_consistency": group_metrics_after["cross_mode_consistency"],
+                    "paraphrase_collapse_rate": group_metrics_after["paraphrase_collapse_rate"],
+                    "ood_rejection_rate": group_metrics_after["ood_rejection_rate"],
+                    "ood_false_accept_rate": group_metrics_after["ood_false_accept_rate"],
+                    "supported_all_rejected_group_count": group_metrics_after["supported_all_rejected_group_count"],
+                    "group_inconsistent_count": group_metrics_after["group_inconsistent_count"],
+                    "group_metrics_before_reward": group_metrics_before,
+                    "representative_group_predictions": group_metrics_after["representative_group_predictions"],
+                }
+            )
+            metrics_by_generation.append(metrics)
+            if best_metrics is None or _paraphrase_metric_key(metrics) > _paraphrase_metric_key(best_metrics):
+                best_metrics = metrics
+            candidate_records_log.extend(generation_records)
+            if generation < self.generations:
+                self.population.evolve(winners, seed=self.seed + generation)
+        return {
+            "dataset_size": len(ordered_samples),
+            "population_per_layer": self.population_per_layer,
+            "generations": self.generations,
+            "top_k_candidates": self.top_k_candidates,
+            "compile_checks_per_generation": self.compile_checks_per_generation,
+            "supported_paraphrase_group_count": sum(1 for group in groups.values() if group.supported),
+            "ood_count": sum(1 for sample in ordered_samples if sample.get("input_mode", "").startswith("ood_")),
+            "input_mode_counts": _count_values(sample.get("input_mode", "") for sample in ordered_samples),
+            "metrics_by_generation": metrics_by_generation,
+            "best_metrics": best_metrics or {},
+            "population_summary": self.population.summary(),
+            "candidate_records": candidate_records_log,
+        }
+
+
 def _winner_succeeds(record: CandidateRecord, task: Dict) -> bool:
     if not task["supported"]:
         return record.fitness_report.unsupported_correct
     return record.fitness_report.target_ir_exact_match and record.fitness_report.expected_output_match
+
+
+def _paraphrase_metric_key(metrics: Dict):
+    return (
+        metrics.get("group_targetir_exact_match", 0.0),
+        metrics.get("sample_target_ir_exact_match", 0.0),
+        metrics.get("cross_mode_consistency", 0.0),
+        -metrics.get("paraphrase_collapse_rate", 1.0),
+        metrics.get("ood_rejection_rate", 0.0),
+    )
+
+
+def _count_values(values) -> Dict[str, int]:
+    counter = Counter(values)
+    return dict(sorted(counter.items()))
 
 
 def _metrics_for_generation(generation: int, winners: List[CandidateRecord], dataset: List[Dict]) -> Dict:
