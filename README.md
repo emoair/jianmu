@@ -203,3 +203,11 @@ Instead of relying on a single SupportGate（支持/拒绝门）, each routing l
 stop early when no sufficiently confident continuation branch exists. Rejection
 becomes a natural no-confidence early stop, not a source-code patch or hardcoded
 parser rule.
+
+## v0.6.4 Development Direction
+
+v0.6.4 explores an Architecture-Aligned Dataset（架构对齐数据集） where multiple
+Chinese natural-language descriptions（中文自然语言描述）, pure math expressions（纯数学表达）,
+and Chinese technical mixed inputs（中文技术混合输入） map to the same TargetIR（目标中间表示）.
+This corrects earlier toy labels where implicit C（隐式 C） inputs were incorrectly
+treated as unknown language（未知语言）.

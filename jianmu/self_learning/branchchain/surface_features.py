@@ -19,19 +19,30 @@ CHINESE_NUMBERS = {
 
 UNRELATED_KEYWORDS = ["诗", "天气", "故事", "笑话", "新闻"]
 DANGEROUS_KEYWORDS = ["联网", "下载", "访问文件", "删除文件", "API key", "token"]
+TECHNICAL_TOKENS = ["C", "int", "printf", "main"]
 
 
 def extract_surface_features(input_text: str) -> Dict:
     text = input_text.strip()
-    normalized = text.replace("（", "(").replace("）", ")")
+    normalized = text.replace("（", "(").replace("）", ")").replace("，", ",").replace("、", ",")
     signed_numbers = _extract_signed_numbers(normalized)
     chinese_numbers = _extract_chinese_numbers(normalized)
-    operators = "".join(ch for ch in normalized if ch in "+-*/")
+    operators = _operator_sequence(normalized)
+    chinese_char_count = sum(1 for ch in text if "\u4e00" <= ch <= "\u9fff")
+    english_char_count = sum(1 for ch in text if ("a" <= ch.lower() <= "z"))
+    visible_count = max(sum(1 for ch in text if not ch.isspace()), 1)
+    is_pure_math = _is_pure_math_expression(normalized)
+    has_c_token = bool(re.search(r"(?<![A-Za-z])C(?![A-Za-z])", text))
+    has_printf_token = "printf" in text
+    has_main_token = bool(re.search(r"\bmain\b", text))
+    has_technical = has_c_token or has_printf_token or has_main_token or bool(re.search(r"\bint\b", text))
+    contains_output = any(keyword in text for keyword in ["输出", "打印", "计算", "结果"])
+    contains_program = "程序" in text or has_main_token
     return {
-        "contains_C": "C" in text,
-        "contains_program": "程序" in text or "main" in text,
-        "contains_output": "输出" in text or "打印" in text,
-        "contains_printf": "printf" in text,
+        "contains_C": has_c_token,
+        "contains_program": contains_program,
+        "contains_output": contains_output,
+        "contains_printf": has_printf_token,
         "contains_arithmetic_operator": bool(operators),
         "contains_plus": "+" in operators,
         "contains_minus": "-" in operators,
@@ -49,29 +60,53 @@ def extract_surface_features(input_text: str) -> Dict:
         "dangerous_keyword_signal": any(keyword in text for keyword in DANGEROUS_KEYWORDS),
         "has_chinese_number": bool(chinese_numbers),
         "has_negative": any(value < 0 for value in signed_numbers + chinese_numbers),
+        "input_mode_guess_zh_natural": bool(chinese_char_count and contains_output and not has_technical),
+        "input_mode_guess_math_expression": is_pure_math,
+        "input_mode_guess_zh_technical_mixed": bool(chinese_char_count and has_technical),
+        "contains_chinese_chars": bool(chinese_char_count),
+        "chinese_char_ratio": round(chinese_char_count / visible_count, 4),
+        "english_char_ratio": round(english_char_count / visible_count, 4),
+        "is_pure_math_expression": is_pure_math,
+        "has_c_token": has_c_token,
+        "has_printf_token": has_printf_token,
+        "has_main_token": has_main_token,
+        "has_technical_token": has_technical,
     }
 
 
 def numeric_feature_view(features: Dict) -> Dict[str, int]:
-    return {
-        "contains_C": int(features.get("contains_C", False)),
-        "contains_program": int(features.get("contains_program", False)),
-        "contains_output": int(features.get("contains_output", False)),
-        "contains_printf": int(features.get("contains_printf", False)),
-        "contains_arithmetic_operator": int(features.get("contains_arithmetic_operator", False)),
-        "contains_plus": int(features.get("contains_plus", False)),
-        "contains_minus": int(features.get("contains_minus", False)),
-        "contains_mul": int(features.get("contains_mul", False)),
-        "contains_div": int(features.get("contains_div", False)),
-        "contains_parentheses": int(features.get("contains_parentheses", False)),
-        "number_count": int(features.get("number_count", 0)),
-        "operator_count": int(features.get("operator_count", 0)),
-        "has_english_sentence": int(features.get("has_english_sentence", False)),
-        "unrelated_keyword_signal": int(features.get("unrelated_keyword_signal", False)),
-        "dangerous_keyword_signal": int(features.get("dangerous_keyword_signal", False)),
-        "has_chinese_number": int(features.get("has_chinese_number", False)),
-        "has_negative": int(features.get("has_negative", False)),
-    }
+    names = [
+        "contains_C",
+        "contains_program",
+        "contains_output",
+        "contains_printf",
+        "contains_arithmetic_operator",
+        "contains_plus",
+        "contains_minus",
+        "contains_mul",
+        "contains_div",
+        "contains_parentheses",
+        "has_english_sentence",
+        "unrelated_keyword_signal",
+        "dangerous_keyword_signal",
+        "has_chinese_number",
+        "has_negative",
+        "input_mode_guess_zh_natural",
+        "input_mode_guess_math_expression",
+        "input_mode_guess_zh_technical_mixed",
+        "contains_chinese_chars",
+        "is_pure_math_expression",
+        "has_c_token",
+        "has_printf_token",
+        "has_main_token",
+        "has_technical_token",
+    ]
+    numeric = {name: int(features.get(name, False)) for name in names}
+    numeric["number_count"] = int(features.get("number_count", 0))
+    numeric["operator_count"] = int(features.get("operator_count", 0))
+    numeric["chinese_char_ratio_bucket"] = int(float(features.get("chinese_char_ratio", 0.0)) * 10)
+    numeric["english_char_ratio_bucket"] = int(float(features.get("english_char_ratio", 0.0)) * 10)
+    return numeric
 
 
 def _extract_signed_numbers(text: str) -> List[int]:
@@ -93,3 +128,27 @@ def _extract_chinese_numbers(text: str) -> List[int]:
             value = -value
         values.append(value)
     return values
+
+
+def _operator_sequence(text: str) -> str:
+    ops = [ch for ch in text if ch in "+-*/"]
+    if ops:
+        return "".join(ops)
+    word_ops = []
+    for ch in text:
+        if ch == "加":
+            word_ops.append("+")
+        elif ch == "减":
+            word_ops.append("-")
+        elif ch == "乘":
+            word_ops.append("*")
+        elif ch in {"除"}:
+            word_ops.append("/")
+    return "".join(word_ops)
+
+
+def _is_pure_math_expression(text: str) -> bool:
+    compact = re.sub(r"\s+", "", text)
+    if not compact:
+        return False
+    return bool(re.fullmatch(r"[-+*/()0-9一二两三四五六七八九十负]+", compact)) and any(ch in compact for ch in "+-*/加减乘除")

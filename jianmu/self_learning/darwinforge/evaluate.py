@@ -1,7 +1,14 @@
 import json
 from pathlib import Path
 
+from jianmu.self_learning.branchchain.toy_dataset import (
+    build_architecture_aligned_toy_dataset,
+    build_branchchain_toy_dataset,
+    dataset_summary,
+)
+from jianmu.self_learning.branchchain.surface_features import extract_surface_features
 from jianmu.self_learning.darwinforge.evolution import CurriculumDarwinForgeTrainer, DarwinForgeTrainer
+from jianmu.self_learning.darwinforge.fitness import compute_fitness
 
 
 RECORD_DIR = Path("records/v0_6")
@@ -24,6 +31,11 @@ GATED_DIR = Path("records/v0_6_3")
 GATED_METRICS_PATH = GATED_DIR / "confidence_gated_metrics.json"
 GATED_REPORT_PATH = GATED_DIR / "confidence_gated_report.md"
 GATED_CANDIDATES_PATH = GATED_DIR / "confidence_gated_candidates.jsonl"
+
+ARCH_ALIGNED_DIR = Path("records/v0_6_4")
+ARCH_ALIGNED_METRICS_PATH = ARCH_ALIGNED_DIR / "architecture_aligned_dataset_metrics.json"
+ARCH_ALIGNED_REPORT_PATH = ARCH_ALIGNED_DIR / "architecture_aligned_dataset_report.md"
+ARCH_ALIGNED_CANDIDATES_PATH = ARCH_ALIGNED_DIR / "architecture_aligned_dataset_candidates.jsonl"
 
 
 def run_darwinforge_toy(
@@ -374,5 +386,161 @@ def _confidence_gated_report_markdown(metrics):
         "- This does not train C source text.",
         "- This does not patch old source code.",
         "- This does not prove AGI, Transformer replacement, or hardware BPU implementation.",
+    ]
+    return "\n".join(lines) + "\n"
+
+
+def run_architecture_aligned_dataset_toy(
+    population_per_layer: int = 16,
+    generations: int = 60,
+    top_k_candidates: int = 3,
+    seed: int = 42,
+    compile_checks_per_generation: int = 0,
+):
+    ARCH_ALIGNED_DIR.mkdir(parents=True, exist_ok=True)
+    old_dataset = build_branchchain_toy_dataset()
+    new_dataset = build_architecture_aligned_toy_dataset()
+    old_metrics, _old_records, _old_trainer = _train_dataset_for_v064(
+        old_dataset,
+        population_per_layer,
+        generations,
+        top_k_candidates,
+        seed,
+        compile_checks_per_generation,
+    )
+    new_metrics, new_records, new_trainer = _train_dataset_for_v064(
+        new_dataset,
+        population_per_layer,
+        generations,
+        top_k_candidates,
+        seed,
+        compile_checks_per_generation,
+    )
+    new_summary = dataset_summary(new_dataset)
+    final = new_metrics["metrics_by_generation"][-1]
+    old_final = old_metrics["metrics_by_generation"][-1]
+    comparison = {
+        "old_target_ir_exact_match": old_final["target_ir_exact_match_rate"],
+        "new_target_ir_exact_match": final["target_ir_exact_match_rate"],
+        "old_false_reject_supported_count": old_final["false_reject_supported_count"],
+        "new_false_reject_supported_count": final["false_reject_supported_count"],
+        "old_language_target_reject_count": old_final.get("rejected_by_layer_distribution", {}).get("language_target", 0),
+        "new_language_target_reject_count": final.get("rejected_by_layer_distribution", {}).get("language_target", 0),
+    }
+    ood_english = _ood_english_behavior(new_dataset, new_trainer, top_k_candidates)
+    metrics = {
+        "dataset_summary": new_summary,
+        "old_dataset_size": len(old_dataset),
+        "new_dataset_size": len(new_dataset),
+        "old_metrics": _strip_candidate_records(old_metrics),
+        "new_metrics": _strip_candidate_records(new_metrics),
+        "comparison": comparison,
+        "ood_english_rejection_behavior": ood_english,
+    }
+    ARCH_ALIGNED_METRICS_PATH.write_text(json.dumps(metrics, ensure_ascii=False, indent=2, sort_keys=True), encoding="utf-8")
+    ARCH_ALIGNED_REPORT_PATH.write_text(_architecture_aligned_report_markdown(metrics), encoding="utf-8")
+    ARCH_ALIGNED_CANDIDATES_PATH.write_text(
+        "".join(json.dumps(record.to_dict(), ensure_ascii=False, sort_keys=True) + "\n" for record in new_records[-200:]),
+        encoding="utf-8",
+    )
+    metrics["report_path"] = str(ARCH_ALIGNED_REPORT_PATH)
+    metrics["candidates_path"] = str(ARCH_ALIGNED_CANDIDATES_PATH)
+    return metrics
+
+
+def _train_dataset_for_v064(dataset, population_per_layer, generations, top_k_candidates, seed, compile_checks_per_generation):
+    trainer = CurriculumDarwinForgeTrainer(
+        population_per_layer=population_per_layer,
+        generations=generations,
+        top_k_candidates=top_k_candidates,
+        seed=seed,
+        compile_checks_per_generation=compile_checks_per_generation,
+    )
+    metrics = trainer.train(dataset)
+    records = metrics.pop("candidate_records")
+    metrics["guarded_branchchain"] = trainer.population.guarded_config.to_dict()
+    return metrics, records, trainer
+
+
+def _strip_candidate_records(metrics):
+    return {key: value for key, value in metrics.items() if key != "candidate_records"}
+
+
+def _ood_english_behavior(dataset, trainer, top_k):
+    ood_indexes = [index for index, sample in enumerate(dataset) if sample.get("input_mode") == "ood_english"]
+    if not ood_indexes:
+        return {"ood_english_count": 0, "rejected_count": 0, "accepted_count": 0}
+    rejected = 0
+    for index in ood_indexes:
+        task = dataset[index]
+        features = extract_surface_features(task["input_text"])
+        records = []
+        for genome in trainer.population.sample_candidate_paths(features, top_k=top_k):
+            phenotype = trainer.synthesis.synthesize(genome, features)
+            fitness = compute_fitness(genome, phenotype, task, sandbox_optional=False)
+            records.append((fitness.total_fitness, phenotype))
+        if records and max(records, key=lambda item: item[0])[1].unsupported_pred:
+            rejected += 1
+    return {
+        "ood_english_count": len(ood_indexes),
+        "rejected_count": rejected,
+        "accepted_count": len(ood_indexes) - rejected,
+        "behavior": "rejected" if rejected == len(ood_indexes) else "mixed",
+    }
+
+
+def _architecture_aligned_report_markdown(metrics):
+    summary = metrics["dataset_summary"]
+    old_final = metrics["old_metrics"]["metrics_by_generation"][-1]
+    new_final = metrics["new_metrics"]["metrics_by_generation"][-1]
+    best = metrics["new_metrics"]["hall_of_fame"]["best_metrics"]
+    comparison = metrics["comparison"]
+    lines = [
+        "# v0.6.4 Architecture-Aligned Dataset（架构对齐数据集） Report",
+        "",
+        "This is a dataset realignment experiment for BranchChain（分支链） and TargetIR（目标中间表示） regeneration.",
+        "",
+        "## Dataset Summary（数据集摘要）",
+        "",
+        f"- dataset size（数据集规模）: {summary['dataset_size']}",
+        f"- input_mode counts（输入模式计数）: {summary['input_mode_counts']}",
+        f"- paraphrase_group counts（复述组计数）: {summary['paraphrase_group_counts']}",
+        f"- supported count（支持样本数）: {summary['supported_count']}",
+        f"- OOD count（分布外样本数）: {summary['ood_count']}",
+        f"- language_target distribution（目标语言分布）: {summary['language_target_distribution']}",
+        "",
+        "## Old vs New Dataset Comparison（旧/新数据集对比）",
+        "",
+        f"- old toy target_ir_exact_match（旧目标中间表示精确匹配）: {comparison['old_target_ir_exact_match']}",
+        f"- new architecture-aligned target_ir_exact_match（新架构对齐目标中间表示精确匹配）: {comparison['new_target_ir_exact_match']}",
+        f"- old false_reject_supported_count（旧误拒支持数）: {comparison['old_false_reject_supported_count']}",
+        f"- new false_reject_supported_count（新误拒支持数）: {comparison['new_false_reject_supported_count']}",
+        f"- old language_target reject count（旧目标语言层拒绝数）: {comparison['old_language_target_reject_count']}",
+        f"- new language_target reject count（新目标语言层拒绝数）: {comparison['new_language_target_reject_count']}",
+        "",
+        "## Rejection and Missing-Layer Metrics（拒绝与缺层指标）",
+        "",
+        f"- no_confidence_reject_count（无置信拒绝数）: {new_final['no_confidence_reject_count']}",
+        f"- correct_no_confidence_reject_count（正确无置信拒绝数）: {new_final['correct_no_confidence_reject_count']}",
+        f"- wrong_no_confidence_reject_count（错误无置信拒绝数）: {new_final['wrong_no_confidence_reject_count']}",
+        f"- false_accept_unsupported_count（误接收不支持数）: {new_final['false_accept_unsupported_count']}",
+        f"- false_reject_supported_count（误拒支持数）: {new_final['false_reject_supported_count']}",
+        f"- true_missing_layer_rate（真正缺层率）: {new_final['true_missing_layer_rate']}",
+        f"- early_reject_short_path_rate（早停短路径率）: {new_final['early_reject_short_path_rate']}",
+        f"- final target_ir_exact_match（最终目标中间表示精确匹配）: {new_final['target_ir_exact_match_rate']}",
+        f"- best target_ir_exact_match（最佳目标中间表示精确匹配）: {best['target_ir_exact_match_rate']}",
+        "",
+        "## OOD Evaluation（分布外评测）",
+        "",
+        f"- OOD english rejection behavior（英语分布外拒绝行为）: {metrics['ood_english_rejection_behavior']}",
+        "",
+        "## Non-Claims（非主张）",
+        "",
+        "- This does not prove stable DarwinForge（达尔文进化炉） convergence.",
+        "- This does not prove general program synthesis.",
+        "- This does not train C source text.",
+        "- This does not patch old source code.",
+        "- This does not prove AGI, Transformer replacement, or hardware BPU implementation.",
+        "- This is a dataset realignment experiment.",
     ]
     return "\n".join(lines) + "\n"

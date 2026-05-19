@@ -103,6 +103,15 @@ def make_random_neuron(layer_name: str, option: str, neuron_id: str, rng: random
         "dangerous_keyword_signal",
         "has_chinese_number",
         "has_negative",
+        "input_mode_guess_zh_natural",
+        "input_mode_guess_math_expression",
+        "input_mode_guess_zh_technical_mixed",
+        "contains_chinese_chars",
+        "is_pure_math_expression",
+        "has_c_token",
+        "has_printf_token",
+        "has_main_token",
+        "has_technical_token",
     ]
     weights = {rng.choice(feature_names): rng.randint(-2, 3) for _ in range(4)}
     return BranchNeuron(
@@ -120,11 +129,23 @@ def _default_weights(layer_name: str, option: str) -> Dict[str, int]:
             "contains_output": 20 if option == "programming" else -5,
             "contains_program": 12 if option == "programming" else -3,
             "contains_printf": 12 if option == "programming" else -3,
-            "unrelated_keyword_signal": 30 if option == "non_programming" else -12,
+            "contains_arithmetic_operator": 18 if option == "programming" else -5,
+            "is_pure_math_expression": 18 if option == "programming" else -5,
+            "unrelated_keyword_signal": 30 if option in {"non_programming", "reject_non_programming"} else -12,
+            "dangerous_keyword_signal": 35 if option == "reject_out_of_scope" else -10,
             "has_english_sentence": 30 if option == "unsupported" else -10,
         }
     if layer_name == "language_target":
-        return {"contains_C": 25 if option == "C" else -5, "contains_printf": 18 if option == "C" else -5}
+        return {
+            "contains_C": 25 if option in {"C", "explicit_C"} else -5,
+            "contains_printf": 22 if option in {"C", "explicit_C"} else -5,
+            "has_main_token": 18 if option in {"C", "explicit_C"} else -5,
+            "input_mode_guess_zh_technical_mixed": 25 if option == "explicit_C" else -5,
+            "input_mode_guess_zh_natural": 25 if option == "implicit_C" else -5,
+            "input_mode_guess_math_expression": 30 if option == "math_expression_context" else -5,
+            "has_english_sentence": 35 if option == "reject_unsupported_language" else -12,
+            "contains_chinese_chars": 12 if option in {"implicit_C", "explicit_C"} else -4,
+        }
     if layer_name == "semantic_domain":
         return {
             "contains_arithmetic_operator": 25 if option == "arithmetic" else -8,

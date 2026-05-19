@@ -6,8 +6,8 @@ from jianmu.self_learning.branchchain.branch_types import BranchPath
 
 
 LAYER_DEFINITIONS = [
-    ("task_scope", ["programming", "non_programming", "unsupported"]),
-    ("language_target", ["C", "unknown"]),
+    ("task_scope", ["programming", "non_programming", "unsupported", "reject_non_programming", "reject_out_of_scope"]),
+    ("language_target", ["C", "unknown", "explicit_C", "implicit_C", "math_expression_context", "reject_unsupported_language"]),
     ("semantic_domain", ["arithmetic", "comparison_future", "unsupported"]),
     ("support_gate", ["supported", "unsupported"]),
     ("arithmetic_family", ["addition", "subtraction", "multiplication", "exact_division", "mixed_precedence", "parentheses", "unsupported"]),

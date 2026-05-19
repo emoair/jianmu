@@ -228,6 +228,10 @@ def _winner_succeeds(record: CandidateRecord, task: Dict) -> bool:
 def _metrics_for_generation(generation: int, winners: List[CandidateRecord], dataset: List[Dict]) -> Dict:
     total = max(len(winners), 1)
     missing_layers = 0
+    true_missing_layers = 0
+    early_reject_short_paths = 0
+    correct_early_rejects = 0
+    wrong_early_rejects = 0
     branch_exact = 0
     target_exact = 0
     output_match = 0
@@ -257,7 +261,13 @@ def _metrics_for_generation(generation: int, winners: List[CandidateRecord], dat
         target_exact += int(fitness.target_ir_exact_match)
         output_match += int(fitness.expected_output_match)
         unsupported_correct += int(fitness.unsupported_correct)
-        missing_layers += int(len(pred_pairs) < len(target_pairs))
+        short_path = len(pred_pairs) < len(target_pairs)
+        is_early_reject = bool(record.genome.branch_path.reject_type)
+        missing_layers += int(short_path)
+        true_missing_layers += int(short_path and not is_early_reject)
+        early_reject_short_paths += int(short_path and is_early_reject)
+        correct_early_rejects += int(is_early_reject and not task["supported"])
+        wrong_early_rejects += int(is_early_reject and task["supported"])
         if fitness.compile_success is not None:
             compile_checked += 1
             compile_success += int(fitness.compile_success)
@@ -294,6 +304,10 @@ def _metrics_for_generation(generation: int, winners: List[CandidateRecord], dat
         "checked_run_success_rate": round(run_success / max(compile_checked, 1), 4),
         "branch_path_exact_match_rate": round(branch_exact / total, 4),
         "missing_layer_rate": round(missing_layers / total, 4),
+        "true_missing_layer_rate": round(true_missing_layers / total, 4),
+        "early_reject_short_path_rate": round(early_reject_short_paths / total, 4),
+        "correct_early_reject_rate": round(correct_early_rejects / total, 4),
+        "wrong_early_reject_rate": round(wrong_early_rejects / total, 4),
         "most_common_wrong_branch_decisions": wrong_branches.most_common(10),
         "no_confidence_reject_count": no_confidence_reject_count,
         "correct_no_confidence_reject_count": correct_no_confidence_reject_count,
