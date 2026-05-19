@@ -167,3 +167,10 @@ seed for future self-learning and learned-router experiments.
 v0.5.8 development branch explores a 1M-parameter hashed routing baseline for
 Chinese-first arithmetic TargetIR regeneration. It predicts canonical arithmetic
 structure, not C source text.
+
+## v0.5.9 Development Direction
+
+v0.5.9 introduces a BranchChain Training Charter and a toy branch-chain training
+scaffold. It corrects the direction from flat label classification toward
+layered branch decisions, path-level reward, and Canonical TargetIR
+regeneration. This is a development experiment, not a v0.5 release claim.

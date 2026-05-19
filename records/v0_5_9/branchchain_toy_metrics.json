@@ -1,0 +1,2040 @@
+{
+  "dataset_size": 20,
+  "final_population_summary": [
+    {
+      "layer_name": "language_target",
+      "mutation_count": 0,
+      "neuron_id": "language_target:C:3.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite",
+      "option": "C",
+      "score": 104.025
+    },
+    {
+      "layer_name": "structure_policy",
+      "mutation_count": 0,
+      "neuron_id": "structure_policy:binary_operation:17.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite",
+      "option": "binary_operation",
+      "score": 82.9493
+    },
+    {
+      "layer_name": "target_builder",
+      "mutation_count": 0,
+      "neuron_id": "target_builder:canonical_arithmetic_targetir:27.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite",
+      "option": "canonical_arithmetic_targetir",
+      "score": 74.8618
+    },
+    {
+      "layer_name": "slot_binding_policy",
+      "mutation_count": 0,
+      "neuron_id": "slot_binding_policy:surface_number_order:22.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite",
+      "option": "surface_number_order",
+      "score": 73.8767
+    },
+    {
+      "layer_name": "semantic_domain",
+      "mutation_count": 0,
+      "neuron_id": "semantic_domain:arithmetic:5.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite",
+      "option": "arithmetic",
+      "score": 57.6698
+    },
+    {
+      "layer_name": "support_gate",
+      "mutation_count": 0,
+      "neuron_id": "support_gate:supported:8.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite",
+      "option": "supported",
+      "score": 54.7863
+    },
+    {
+      "layer_name": "arithmetic_family",
+      "mutation_count": 0,
+      "neuron_id": "arithmetic_family:addition:10.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite",
+      "option": "addition",
+      "score": 46.5898
+    },
+    {
+      "layer_name": "arithmetic_family",
+      "mutation_count": 0,
+      "neuron_id": "arithmetic_family:subtraction:11.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite",
+      "option": "subtraction",
+      "score": 21.0957
+    },
+    {
+      "layer_name": "language_target",
+      "mutation_count": 1,
+      "neuron_id": "immigrant:936239102.elite.m1.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite",
+      "option": "unknown",
+      "score": 20.52
+    },
+    {
+      "layer_name": "language_target",
+      "mutation_count": 1,
+      "neuron_id": "immigrant:936239102.elite.m1.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite",
+      "option": "unknown",
+      "score": 20.52
+    },
+    {
+      "layer_name": "language_target",
+      "mutation_count": 1,
+      "neuron_id": "immigrant:936239102.elite.m1.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite",
+      "option": "unknown",
+      "score": 20.52
+    },
+    {
+      "layer_name": "language_target",
+      "mutation_count": 1,
+      "neuron_id": "immigrant:936239102.elite.m1.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite",
+      "option": "unknown",
+      "score": 20.52
+    },
+    {
+      "layer_name": "arithmetic_family",
+      "mutation_count": 0,
+      "neuron_id": "arithmetic_family:multiplication:12.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite",
+      "option": "multiplication",
+      "score": 19.3038
+    },
+    {
+      "layer_name": "language_target",
+      "mutation_count": 0,
+      "neuron_id": "immigrant:936239102.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite",
+      "option": "unknown",
+      "score": 1.71
+    },
+    {
+      "layer_name": "slot_binding_policy",
+      "mutation_count": 0,
+      "neuron_id": "slot_binding_policy:chinese_number_order:23.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite",
+      "option": "chinese_number_order",
+      "score": 1.1026
+    },
+    {
+      "layer_name": "task_scope",
+      "mutation_count": 0,
+      "neuron_id": "immigrant:614055603",
+      "option": "non_programming",
+      "score": 1.0
+    },
+    {
+      "layer_name": "slot_binding_policy",
+      "mutation_count": 1,
+      "neuron_id": "slot_binding_policy:chinese_number_order:23.elite.m1.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite",
+      "option": "chinese_number_order",
+      "score": 0.8821
+    },
+    {
+      "layer_name": "slot_binding_policy",
+      "mutation_count": 1,
+      "neuron_id": "slot_binding_policy:chinese_number_order:23.elite.m1.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite",
+      "option": "chinese_number_order",
+      "score": 0.8821
+    },
+    {
+      "layer_name": "slot_binding_policy",
+      "mutation_count": 1,
+      "neuron_id": "slot_binding_policy:chinese_number_order:23.elite.m1.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite",
+      "option": "chinese_number_order",
+      "score": 0.8821
+    },
+    {
+      "layer_name": "slot_binding_policy",
+      "mutation_count": 1,
+      "neuron_id": "slot_binding_policy:chinese_number_order:23.elite.m1.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite.elite",
+      "option": "chinese_number_order",
+      "score": 0.8821
+    }
+  ],
+  "generation_count": 30,
+  "metrics_by_generation": [
+    {
+      "branch_path_accuracy": 0.15,
+      "early_exit_accuracy": 0.65,
+      "early_exit_precision": 0.4167,
+      "early_exit_recall": 1.0,
+      "generation": 0,
+      "mean_reward": -0.695,
+      "most_common_wrong_branch_decisions": [
+        [
+          "language_target:unknown -> <missing>",
+          7
+        ],
+        [
+          "semantic_domain:arithmetic -> <missing>",
+          7
+        ],
+        [
+          "support_gate:supported -> <missing>",
+          7
+        ],
+        [
+          "target_builder:canonical_arithmetic_targetir -> <missing>",
+          7
+        ],
+        [
+          "slot_binding_policy:surface_number_order -> <missing>",
+          6
+        ],
+        [
+          "support_gate:unsupported -> <missing>",
+          5
+        ],
+        [
+          "structure_policy:binary_operation -> <missing>",
+          3
+        ],
+        [
+          "slot_binding_policy:chinese_number_order -> surface_number_order",
+          2
+        ],
+        [
+          "arithmetic_family:exact_division -> <missing>",
+          2
+        ],
+        [
+          "arithmetic_family:parentheses -> <missing>",
+          2
+        ]
+      ],
+      "per_layer_accuracy": {
+        "arithmetic_family": 0.4,
+        "language_target": 0.4667,
+        "semantic_domain": 0.5333,
+        "slot_binding_policy": 0.3333,
+        "structure_policy": 0.4667,
+        "support_gate": 0.4,
+        "target_builder": 0.5333,
+        "task_scope": 0.9
+      },
+      "target_ir_accuracy": 0.35
+    },
+    {
+      "branch_path_accuracy": 0.0,
+      "early_exit_accuracy": 0.8,
+      "early_exit_precision": 0.6,
+      "early_exit_recall": 0.6,
+      "generation": 1,
+      "mean_reward": -0.195,
+      "most_common_wrong_branch_decisions": [
+        [
+          "task_scope:programming -> non_programming",
+          15
+        ],
+        [
+          "slot_binding_policy:signed_number_order -> surface_number_order",
+          3
+        ],
+        [
+          "support_gate:unsupported -> <missing>",
+          3
+        ],
+        [
+          "slot_binding_policy:chinese_number_order -> surface_number_order",
+          2
+        ],
+        [
+          "arithmetic_family:mixed_precedence -> addition",
+          2
+        ],
+        [
+          "structure_policy:precedence_tree -> binary_operation",
+          2
+        ],
+        [
+          "task_scope:programming -> unsupported",
+          2
+        ],
+        [
+          "language_target:unknown -> <missing>",
+          2
+        ],
+        [
+          "semantic_domain:arithmetic -> <missing>",
+          2
+        ],
+        [
+          "support_gate:supported -> <missing>",
+          2
+        ]
+      ],
+      "per_layer_accuracy": {
+        "arithmetic_family": 0.7333,
+        "language_target": 0.8,
+        "semantic_domain": 0.8667,
+        "slot_binding_policy": 0.5333,
+        "structure_policy": 0.6667,
+        "support_gate": 0.65,
+        "target_builder": 0.8667,
+        "task_scope": 0.05
+      },
+      "target_ir_accuracy": 0.6
+    },
+    {
+      "branch_path_accuracy": 0.0,
+      "early_exit_accuracy": 0.55,
+      "early_exit_precision": 0.3571,
+      "early_exit_recall": 1.0,
+      "generation": 2,
+      "mean_reward": -1.28,
+      "most_common_wrong_branch_decisions": [
+        [
+          "task_scope:programming -> non_programming",
+          17
+        ],
+        [
+          "semantic_domain:arithmetic -> <missing>",
+          9
+        ],
+        [
+          "support_gate:supported -> <missing>",
+          9
+        ],
+        [
+          "target_builder:canonical_arithmetic_targetir -> <missing>",
+          9
+        ],
+        [
+          "language_target:unknown -> <missing>",
+          8
+        ],
+        [
+          "slot_binding_policy:surface_number_order -> <missing>",
+          7
+        ],
+        [
+          "structure_policy:binary_operation -> <missing>",
+          5
+        ],
+        [
+          "support_gate:unsupported -> <missing>",
+          5
+        ],
+        [
+          "arithmetic_family:exact_division -> <missing>",
+          3
+        ],
+        [
+          "slot_binding_policy:chinese_number_order -> surface_number_order",
+          2
+        ]
+      ],
+      "per_layer_accuracy": {
+        "arithmetic_family": 0.3333,
+        "language_target": 0.4,
+        "semantic_domain": 0.4,
+        "slot_binding_policy": 0.2,
+        "structure_policy": 0.3333,
+        "support_gate": 0.3,
+        "target_builder": 0.4,
+        "task_scope": 0.05
+      },
+      "target_ir_accuracy": 0.3
+    },
+    {
+      "branch_path_accuracy": 0.0,
+      "early_exit_accuracy": 0.25,
+      "early_exit_precision": 0.25,
+      "early_exit_recall": 1.0,
+      "generation": 3,
+      "mean_reward": -2.6,
+      "most_common_wrong_branch_decisions": [
+        [
+          "task_scope:programming -> <missing>",
+          18
+        ],
+        [
+          "semantic_domain:arithmetic -> <missing>",
+          15
+        ],
+        [
+          "support_gate:supported -> <missing>",
+          15
+        ],
+        [
+          "target_builder:canonical_arithmetic_targetir -> <missing>",
+          15
+        ],
+        [
+          "structure_policy:binary_operation -> <missing>",
+          10
+        ],
+        [
+          "slot_binding_policy:surface_number_order -> <missing>",
+          9
+        ],
+        [
+          "language_target:unknown -> <missing>",
+          8
+        ],
+        [
+          "language_target:C -> <missing>",
+          7
+        ],
+        [
+          "arithmetic_family:addition -> <missing>",
+          5
+        ],
+        [
+          "support_gate:unsupported -> <missing>",
+          5
+        ]
+      ],
+      "per_layer_accuracy": {
+        "arithmetic_family": 0.0,
+        "language_target": 0.0,
+        "semantic_domain": 0.0,
+        "slot_binding_policy": 0.0,
+        "structure_policy": 0.0,
+        "support_gate": 0.0,
+        "target_builder": 0.0,
+        "task_scope": 0.05
+      },
+      "target_ir_accuracy": 0.0
+    },
+    {
+      "branch_path_accuracy": 0.0,
+      "early_exit_accuracy": 0.25,
+      "early_exit_precision": 0.25,
+      "early_exit_recall": 1.0,
+      "generation": 4,
+      "mean_reward": -2.6,
+      "most_common_wrong_branch_decisions": [
+        [
+          "task_scope:programming -> <missing>",
+          18
+        ],
+        [
+          "semantic_domain:arithmetic -> <missing>",
+          15
+        ],
+        [
+          "support_gate:supported -> <missing>",
+          15
+        ],
+        [
+          "target_builder:canonical_arithmetic_targetir -> <missing>",
+          15
+        ],
+        [
+          "structure_policy:binary_operation -> <missing>",
+          10
+        ],
+        [
+          "slot_binding_policy:surface_number_order -> <missing>",
+          9
+        ],
+        [
+          "language_target:unknown -> <missing>",
+          8
+        ],
+        [
+          "language_target:C -> <missing>",
+          7
+        ],
+        [
+          "arithmetic_family:addition -> <missing>",
+          5
+        ],
+        [
+          "support_gate:unsupported -> <missing>",
+          5
+        ]
+      ],
+      "per_layer_accuracy": {
+        "arithmetic_family": 0.0,
+        "language_target": 0.0,
+        "semantic_domain": 0.0,
+        "slot_binding_policy": 0.0,
+        "structure_policy": 0.0,
+        "support_gate": 0.0,
+        "target_builder": 0.0,
+        "task_scope": 0.05
+      },
+      "target_ir_accuracy": 0.0
+    },
+    {
+      "branch_path_accuracy": 0.0,
+      "early_exit_accuracy": 0.25,
+      "early_exit_precision": 0.25,
+      "early_exit_recall": 1.0,
+      "generation": 5,
+      "mean_reward": -2.57,
+      "most_common_wrong_branch_decisions": [
+        [
+          "task_scope:programming -> unsupported",
+          17
+        ],
+        [
+          "semantic_domain:arithmetic -> <missing>",
+          15
+        ],
+        [
+          "support_gate:supported -> <missing>",
+          15
+        ],
+        [
+          "target_builder:canonical_arithmetic_targetir -> <missing>",
+          15
+        ],
+        [
+          "structure_policy:binary_operation -> <missing>",
+          10
+        ],
+        [
+          "slot_binding_policy:surface_number_order -> <missing>",
+          9
+        ],
+        [
+          "language_target:unknown -> <missing>",
+          8
+        ],
+        [
+          "language_target:C -> <missing>",
+          7
+        ],
+        [
+          "arithmetic_family:addition -> <missing>",
+          5
+        ],
+        [
+          "support_gate:unsupported -> <missing>",
+          5
+        ]
+      ],
+      "per_layer_accuracy": {
+        "arithmetic_family": 0.0,
+        "language_target": 0.0,
+        "semantic_domain": 0.0,
+        "slot_binding_policy": 0.0,
+        "structure_policy": 0.0,
+        "support_gate": 0.0,
+        "target_builder": 0.0,
+        "task_scope": 0.1
+      },
+      "target_ir_accuracy": 0.0
+    },
+    {
+      "branch_path_accuracy": 0.0,
+      "early_exit_accuracy": 0.25,
+      "early_exit_precision": 0.25,
+      "early_exit_recall": 1.0,
+      "generation": 6,
+      "mean_reward": -2.6,
+      "most_common_wrong_branch_decisions": [
+        [
+          "task_scope:programming -> <missing>",
+          18
+        ],
+        [
+          "semantic_domain:arithmetic -> <missing>",
+          15
+        ],
+        [
+          "support_gate:supported -> <missing>",
+          15
+        ],
+        [
+          "target_builder:canonical_arithmetic_targetir -> <missing>",
+          15
+        ],
+        [
+          "structure_policy:binary_operation -> <missing>",
+          10
+        ],
+        [
+          "slot_binding_policy:surface_number_order -> <missing>",
+          9
+        ],
+        [
+          "language_target:unknown -> <missing>",
+          8
+        ],
+        [
+          "language_target:C -> <missing>",
+          7
+        ],
+        [
+          "arithmetic_family:addition -> <missing>",
+          5
+        ],
+        [
+          "support_gate:unsupported -> <missing>",
+          5
+        ]
+      ],
+      "per_layer_accuracy": {
+        "arithmetic_family": 0.0,
+        "language_target": 0.0,
+        "semantic_domain": 0.0,
+        "slot_binding_policy": 0.0,
+        "structure_policy": 0.0,
+        "support_gate": 0.0,
+        "target_builder": 0.0,
+        "task_scope": 0.05
+      },
+      "target_ir_accuracy": 0.0
+    },
+    {
+      "branch_path_accuracy": 0.0,
+      "early_exit_accuracy": 0.25,
+      "early_exit_precision": 0.25,
+      "early_exit_recall": 1.0,
+      "generation": 7,
+      "mean_reward": -2.6,
+      "most_common_wrong_branch_decisions": [
+        [
+          "task_scope:programming -> <missing>",
+          18
+        ],
+        [
+          "semantic_domain:arithmetic -> <missing>",
+          15
+        ],
+        [
+          "support_gate:supported -> <missing>",
+          15
+        ],
+        [
+          "target_builder:canonical_arithmetic_targetir -> <missing>",
+          15
+        ],
+        [
+          "structure_policy:binary_operation -> <missing>",
+          10
+        ],
+        [
+          "slot_binding_policy:surface_number_order -> <missing>",
+          9
+        ],
+        [
+          "language_target:unknown -> <missing>",
+          8
+        ],
+        [
+          "language_target:C -> <missing>",
+          7
+        ],
+        [
+          "arithmetic_family:addition -> <missing>",
+          5
+        ],
+        [
+          "support_gate:unsupported -> <missing>",
+          5
+        ]
+      ],
+      "per_layer_accuracy": {
+        "arithmetic_family": 0.0,
+        "language_target": 0.0,
+        "semantic_domain": 0.0,
+        "slot_binding_policy": 0.0,
+        "structure_policy": 0.0,
+        "support_gate": 0.0,
+        "target_builder": 0.0,
+        "task_scope": 0.05
+      },
+      "target_ir_accuracy": 0.0
+    },
+    {
+      "branch_path_accuracy": 0.0,
+      "early_exit_accuracy": 0.25,
+      "early_exit_precision": 0.25,
+      "early_exit_recall": 1.0,
+      "generation": 8,
+      "mean_reward": -2.57,
+      "most_common_wrong_branch_decisions": [
+        [
+          "task_scope:programming -> unsupported",
+          17
+        ],
+        [
+          "semantic_domain:arithmetic -> <missing>",
+          15
+        ],
+        [
+          "support_gate:supported -> <missing>",
+          15
+        ],
+        [
+          "target_builder:canonical_arithmetic_targetir -> <missing>",
+          15
+        ],
+        [
+          "structure_policy:binary_operation -> <missing>",
+          10
+        ],
+        [
+          "slot_binding_policy:surface_number_order -> <missing>",
+          9
+        ],
+        [
+          "language_target:unknown -> <missing>",
+          8
+        ],
+        [
+          "language_target:C -> <missing>",
+          7
+        ],
+        [
+          "arithmetic_family:addition -> <missing>",
+          5
+        ],
+        [
+          "support_gate:unsupported -> <missing>",
+          5
+        ]
+      ],
+      "per_layer_accuracy": {
+        "arithmetic_family": 0.0,
+        "language_target": 0.0,
+        "semantic_domain": 0.0,
+        "slot_binding_policy": 0.0,
+        "structure_policy": 0.0,
+        "support_gate": 0.0,
+        "target_builder": 0.0,
+        "task_scope": 0.1
+      },
+      "target_ir_accuracy": 0.0
+    },
+    {
+      "branch_path_accuracy": 0.0,
+      "early_exit_accuracy": 0.25,
+      "early_exit_precision": 0.25,
+      "early_exit_recall": 1.0,
+      "generation": 9,
+      "mean_reward": -2.585,
+      "most_common_wrong_branch_decisions": [
+        [
+          "task_scope:programming -> unsupported",
+          17
+        ],
+        [
+          "semantic_domain:arithmetic -> <missing>",
+          15
+        ],
+        [
+          "support_gate:supported -> <missing>",
+          15
+        ],
+        [
+          "target_builder:canonical_arithmetic_targetir -> <missing>",
+          15
+        ],
+        [
+          "structure_policy:binary_operation -> <missing>",
+          10
+        ],
+        [
+          "slot_binding_policy:surface_number_order -> <missing>",
+          9
+        ],
+        [
+          "language_target:unknown -> <missing>",
+          8
+        ],
+        [
+          "language_target:C -> <missing>",
+          7
+        ],
+        [
+          "arithmetic_family:addition -> <missing>",
+          5
+        ],
+        [
+          "support_gate:unsupported -> <missing>",
+          5
+        ]
+      ],
+      "per_layer_accuracy": {
+        "arithmetic_family": 0.0,
+        "language_target": 0.0,
+        "semantic_domain": 0.0,
+        "slot_binding_policy": 0.0,
+        "structure_policy": 0.0,
+        "support_gate": 0.0,
+        "target_builder": 0.0,
+        "task_scope": 0.05
+      },
+      "target_ir_accuracy": 0.0
+    },
+    {
+      "branch_path_accuracy": 0.0,
+      "early_exit_accuracy": 0.25,
+      "early_exit_precision": 0.25,
+      "early_exit_recall": 1.0,
+      "generation": 10,
+      "mean_reward": -2.57,
+      "most_common_wrong_branch_decisions": [
+        [
+          "task_scope:programming -> unsupported",
+          17
+        ],
+        [
+          "semantic_domain:arithmetic -> <missing>",
+          15
+        ],
+        [
+          "support_gate:supported -> <missing>",
+          15
+        ],
+        [
+          "target_builder:canonical_arithmetic_targetir -> <missing>",
+          15
+        ],
+        [
+          "structure_policy:binary_operation -> <missing>",
+          10
+        ],
+        [
+          "slot_binding_policy:surface_number_order -> <missing>",
+          9
+        ],
+        [
+          "language_target:unknown -> <missing>",
+          8
+        ],
+        [
+          "language_target:C -> <missing>",
+          7
+        ],
+        [
+          "arithmetic_family:addition -> <missing>",
+          5
+        ],
+        [
+          "support_gate:unsupported -> <missing>",
+          5
+        ]
+      ],
+      "per_layer_accuracy": {
+        "arithmetic_family": 0.0,
+        "language_target": 0.0,
+        "semantic_domain": 0.0,
+        "slot_binding_policy": 0.0,
+        "structure_policy": 0.0,
+        "support_gate": 0.0,
+        "target_builder": 0.0,
+        "task_scope": 0.1
+      },
+      "target_ir_accuracy": 0.0
+    },
+    {
+      "branch_path_accuracy": 0.0,
+      "early_exit_accuracy": 0.55,
+      "early_exit_precision": 0.3571,
+      "early_exit_recall": 1.0,
+      "generation": 11,
+      "mean_reward": -1.19,
+      "most_common_wrong_branch_decisions": [
+        [
+          "task_scope:programming -> non_programming",
+          11
+        ],
+        [
+          "semantic_domain:arithmetic -> <missing>",
+          9
+        ],
+        [
+          "support_gate:supported -> <missing>",
+          9
+        ],
+        [
+          "target_builder:canonical_arithmetic_targetir -> <missing>",
+          9
+        ],
+        [
+          "language_target:unknown -> <missing>",
+          8
+        ],
+        [
+          "slot_binding_policy:surface_number_order -> <missing>",
+          7
+        ],
+        [
+          "structure_policy:binary_operation -> <missing>",
+          5
+        ],
+        [
+          "support_gate:unsupported -> <missing>",
+          5
+        ],
+        [
+          "arithmetic_family:exact_division -> <missing>",
+          3
+        ],
+        [
+          "slot_binding_policy:chinese_number_order -> surface_number_order",
+          2
+        ]
+      ],
+      "per_layer_accuracy": {
+        "arithmetic_family": 0.3333,
+        "language_target": 0.4,
+        "semantic_domain": 0.4,
+        "slot_binding_policy": 0.2,
+        "structure_policy": 0.3333,
+        "support_gate": 0.3,
+        "target_builder": 0.4,
+        "task_scope": 0.35
+      },
+      "target_ir_accuracy": 0.3
+    },
+    {
+      "branch_path_accuracy": 0.0,
+      "early_exit_accuracy": 0.75,
+      "early_exit_precision": 0.5,
+      "early_exit_recall": 0.8,
+      "generation": 12,
+      "mean_reward": -0.42,
+      "most_common_wrong_branch_decisions": [
+        [
+          "task_scope:programming -> non_programming",
+          11
+        ],
+        [
+          "semantic_domain:arithmetic -> <missing>",
+          4
+        ],
+        [
+          "support_gate:supported -> <missing>",
+          4
+        ],
+        [
+          "structure_policy:binary_operation -> <missing>",
+          4
+        ],
+        [
+          "target_builder:canonical_arithmetic_targetir -> <missing>",
+          4
+        ],
+        [
+          "support_gate:unsupported -> <missing>",
+          4
+        ],
+        [
+          "language_target:unknown -> <missing>",
+          3
+        ],
+        [
+          "arithmetic_family:exact_division -> <missing>",
+          3
+        ],
+        [
+          "slot_binding_policy:surface_number_order -> <missing>",
+          3
+        ],
+        [
+          "slot_binding_policy:chinese_number_order -> surface_number_order",
+          2
+        ]
+      ],
+      "per_layer_accuracy": {
+        "arithmetic_family": 0.4667,
+        "language_target": 0.7333,
+        "semantic_domain": 0.7333,
+        "slot_binding_policy": 0.4667,
+        "structure_policy": 0.4,
+        "support_gate": 0.55,
+        "target_builder": 0.7333,
+        "task_scope": 0.35
+      },
+      "target_ir_accuracy": 0.5
+    },
+    {
+      "branch_path_accuracy": 0.0,
+      "early_exit_accuracy": 0.25,
+      "early_exit_precision": 0.25,
+      "early_exit_recall": 1.0,
+      "generation": 13,
+      "mean_reward": -2.6,
+      "most_common_wrong_branch_decisions": [
+        [
+          "task_scope:programming -> <missing>",
+          18
+        ],
+        [
+          "semantic_domain:arithmetic -> <missing>",
+          15
+        ],
+        [
+          "support_gate:supported -> <missing>",
+          15
+        ],
+        [
+          "target_builder:canonical_arithmetic_targetir -> <missing>",
+          15
+        ],
+        [
+          "structure_policy:binary_operation -> <missing>",
+          10
+        ],
+        [
+          "slot_binding_policy:surface_number_order -> <missing>",
+          9
+        ],
+        [
+          "language_target:unknown -> <missing>",
+          8
+        ],
+        [
+          "language_target:C -> <missing>",
+          7
+        ],
+        [
+          "arithmetic_family:addition -> <missing>",
+          5
+        ],
+        [
+          "support_gate:unsupported -> <missing>",
+          5
+        ]
+      ],
+      "per_layer_accuracy": {
+        "arithmetic_family": 0.0,
+        "language_target": 0.0,
+        "semantic_domain": 0.0,
+        "slot_binding_policy": 0.0,
+        "structure_policy": 0.0,
+        "support_gate": 0.0,
+        "target_builder": 0.0,
+        "task_scope": 0.0
+      },
+      "target_ir_accuracy": 0.0
+    },
+    {
+      "branch_path_accuracy": 0.0,
+      "early_exit_accuracy": 0.95,
+      "early_exit_precision": 1.0,
+      "early_exit_recall": 0.8,
+      "generation": 14,
+      "mean_reward": 0.365,
+      "most_common_wrong_branch_decisions": [
+        [
+          "task_scope:programming -> non_programming",
+          17
+        ],
+        [
+          "support_gate:unsupported -> <missing>",
+          4
+        ],
+        [
+          "slot_binding_policy:signed_number_order -> surface_number_order",
+          3
+        ],
+        [
+          "slot_binding_policy:chinese_number_order -> surface_number_order",
+          2
+        ],
+        [
+          "arithmetic_family:mixed_precedence -> addition",
+          2
+        ],
+        [
+          "structure_policy:precedence_tree -> binary_operation",
+          2
+        ],
+        [
+          "arithmetic_family:parentheses -> addition",
+          2
+        ],
+        [
+          "structure_policy:parenthesized_tree -> binary_operation",
+          2
+        ],
+        [
+          "structure_policy:reduce_chain -> binary_operation",
+          1
+        ],
+        [
+          "support_gate:unsupported -> supported",
+          1
+        ]
+      ],
+      "per_layer_accuracy": {
+        "arithmetic_family": 0.7333,
+        "language_target": 0.9333,
+        "semantic_domain": 1.0,
+        "slot_binding_policy": 0.6667,
+        "structure_policy": 0.6667,
+        "support_gate": 0.75,
+        "target_builder": 1.0,
+        "task_scope": 0.0
+      },
+      "target_ir_accuracy": 0.7
+    },
+    {
+      "branch_path_accuracy": 0.0,
+      "early_exit_accuracy": 0.95,
+      "early_exit_precision": 1.0,
+      "early_exit_recall": 0.8,
+      "generation": 15,
+      "mean_reward": 0.35,
+      "most_common_wrong_branch_decisions": [
+        [
+          "task_scope:programming -> non_programming",
+          17
+        ],
+        [
+          "support_gate:unsupported -> <missing>",
+          4
+        ],
+        [
+          "slot_binding_policy:chinese_number_order -> surface_number_order",
+          3
+        ],
+        [
+          "slot_binding_policy:signed_number_order -> surface_number_order",
+          3
+        ],
+        [
+          "arithmetic_family:mixed_precedence -> addition",
+          2
+        ],
+        [
+          "structure_policy:precedence_tree -> binary_operation",
+          2
+        ],
+        [
+          "arithmetic_family:parentheses -> addition",
+          2
+        ],
+        [
+          "structure_policy:parenthesized_tree -> binary_operation",
+          2
+        ],
+        [
+          "structure_policy:reduce_chain -> binary_operation",
+          1
+        ],
+        [
+          "support_gate:unsupported -> supported",
+          1
+        ]
+      ],
+      "per_layer_accuracy": {
+        "arithmetic_family": 0.7333,
+        "language_target": 0.9333,
+        "semantic_domain": 1.0,
+        "slot_binding_policy": 0.6,
+        "structure_policy": 0.6667,
+        "support_gate": 0.75,
+        "target_builder": 1.0,
+        "task_scope": 0.0
+      },
+      "target_ir_accuracy": 0.7
+    },
+    {
+      "branch_path_accuracy": 0.0,
+      "early_exit_accuracy": 0.95,
+      "early_exit_precision": 1.0,
+      "early_exit_recall": 0.8,
+      "generation": 16,
+      "mean_reward": 0.35,
+      "most_common_wrong_branch_decisions": [
+        [
+          "task_scope:programming -> non_programming",
+          17
+        ],
+        [
+          "support_gate:unsupported -> <missing>",
+          4
+        ],
+        [
+          "slot_binding_policy:chinese_number_order -> surface_number_order",
+          3
+        ],
+        [
+          "slot_binding_policy:signed_number_order -> surface_number_order",
+          3
+        ],
+        [
+          "arithmetic_family:mixed_precedence -> addition",
+          2
+        ],
+        [
+          "structure_policy:precedence_tree -> binary_operation",
+          2
+        ],
+        [
+          "arithmetic_family:parentheses -> addition",
+          2
+        ],
+        [
+          "structure_policy:parenthesized_tree -> binary_operation",
+          2
+        ],
+        [
+          "structure_policy:reduce_chain -> binary_operation",
+          1
+        ],
+        [
+          "support_gate:unsupported -> supported",
+          1
+        ]
+      ],
+      "per_layer_accuracy": {
+        "arithmetic_family": 0.7333,
+        "language_target": 0.9333,
+        "semantic_domain": 1.0,
+        "slot_binding_policy": 0.6,
+        "structure_policy": 0.6667,
+        "support_gate": 0.75,
+        "target_builder": 1.0,
+        "task_scope": 0.0
+      },
+      "target_ir_accuracy": 0.7
+    },
+    {
+      "branch_path_accuracy": 0.0,
+      "early_exit_accuracy": 0.9,
+      "early_exit_precision": 1.0,
+      "early_exit_recall": 0.6,
+      "generation": 17,
+      "mean_reward": 0.19,
+      "most_common_wrong_branch_decisions": [
+        [
+          "task_scope:programming -> non_programming",
+          17
+        ],
+        [
+          "slot_binding_policy:chinese_number_order -> surface_number_order",
+          3
+        ],
+        [
+          "slot_binding_policy:signed_number_order -> surface_number_order",
+          3
+        ],
+        [
+          "support_gate:unsupported -> <missing>",
+          3
+        ],
+        [
+          "arithmetic_family:mixed_precedence -> addition",
+          2
+        ],
+        [
+          "structure_policy:precedence_tree -> binary_operation",
+          2
+        ],
+        [
+          "arithmetic_family:parentheses -> addition",
+          2
+        ],
+        [
+          "structure_policy:parenthesized_tree -> binary_operation",
+          2
+        ],
+        [
+          "support_gate:unsupported -> supported",
+          2
+        ],
+        [
+          "structure_policy:reduce_chain -> binary_operation",
+          1
+        ]
+      ],
+      "per_layer_accuracy": {
+        "arithmetic_family": 0.7333,
+        "language_target": 0.9333,
+        "semantic_domain": 1.0,
+        "slot_binding_policy": 0.6,
+        "structure_policy": 0.6667,
+        "support_gate": 0.75,
+        "target_builder": 1.0,
+        "task_scope": 0.0
+      },
+      "target_ir_accuracy": 0.7
+    },
+    {
+      "branch_path_accuracy": 0.0,
+      "early_exit_accuracy": 0.95,
+      "early_exit_precision": 1.0,
+      "early_exit_recall": 0.8,
+      "generation": 18,
+      "mean_reward": 0.35,
+      "most_common_wrong_branch_decisions": [
+        [
+          "task_scope:programming -> non_programming",
+          17
+        ],
+        [
+          "support_gate:unsupported -> <missing>",
+          4
+        ],
+        [
+          "slot_binding_policy:chinese_number_order -> surface_number_order",
+          3
+        ],
+        [
+          "slot_binding_policy:signed_number_order -> surface_number_order",
+          3
+        ],
+        [
+          "arithmetic_family:mixed_precedence -> addition",
+          2
+        ],
+        [
+          "structure_policy:precedence_tree -> binary_operation",
+          2
+        ],
+        [
+          "arithmetic_family:parentheses -> addition",
+          2
+        ],
+        [
+          "structure_policy:parenthesized_tree -> binary_operation",
+          2
+        ],
+        [
+          "structure_policy:reduce_chain -> binary_operation",
+          1
+        ],
+        [
+          "support_gate:unsupported -> supported",
+          1
+        ]
+      ],
+      "per_layer_accuracy": {
+        "arithmetic_family": 0.7333,
+        "language_target": 0.9333,
+        "semantic_domain": 1.0,
+        "slot_binding_policy": 0.6,
+        "structure_policy": 0.6667,
+        "support_gate": 0.75,
+        "target_builder": 1.0,
+        "task_scope": 0.0
+      },
+      "target_ir_accuracy": 0.7
+    },
+    {
+      "branch_path_accuracy": 0.0,
+      "early_exit_accuracy": 0.9,
+      "early_exit_precision": 1.0,
+      "early_exit_recall": 0.6,
+      "generation": 19,
+      "mean_reward": 0.19,
+      "most_common_wrong_branch_decisions": [
+        [
+          "task_scope:programming -> non_programming",
+          17
+        ],
+        [
+          "slot_binding_policy:chinese_number_order -> surface_number_order",
+          3
+        ],
+        [
+          "slot_binding_policy:signed_number_order -> surface_number_order",
+          3
+        ],
+        [
+          "support_gate:unsupported -> <missing>",
+          3
+        ],
+        [
+          "arithmetic_family:mixed_precedence -> addition",
+          2
+        ],
+        [
+          "structure_policy:precedence_tree -> binary_operation",
+          2
+        ],
+        [
+          "arithmetic_family:parentheses -> addition",
+          2
+        ],
+        [
+          "structure_policy:parenthesized_tree -> binary_operation",
+          2
+        ],
+        [
+          "support_gate:unsupported -> supported",
+          2
+        ],
+        [
+          "structure_policy:reduce_chain -> binary_operation",
+          1
+        ]
+      ],
+      "per_layer_accuracy": {
+        "arithmetic_family": 0.7333,
+        "language_target": 0.9333,
+        "semantic_domain": 1.0,
+        "slot_binding_policy": 0.6,
+        "structure_policy": 0.6667,
+        "support_gate": 0.75,
+        "target_builder": 1.0,
+        "task_scope": 0.0
+      },
+      "target_ir_accuracy": 0.7
+    },
+    {
+      "branch_path_accuracy": 0.0,
+      "early_exit_accuracy": 0.95,
+      "early_exit_precision": 1.0,
+      "early_exit_recall": 0.8,
+      "generation": 20,
+      "mean_reward": 0.365,
+      "most_common_wrong_branch_decisions": [
+        [
+          "task_scope:programming -> non_programming",
+          17
+        ],
+        [
+          "support_gate:unsupported -> <missing>",
+          4
+        ],
+        [
+          "slot_binding_policy:chinese_number_order -> surface_number_order",
+          3
+        ],
+        [
+          "slot_binding_policy:signed_number_order -> surface_number_order",
+          3
+        ],
+        [
+          "arithmetic_family:mixed_precedence -> addition",
+          2
+        ],
+        [
+          "structure_policy:precedence_tree -> binary_operation",
+          2
+        ],
+        [
+          "arithmetic_family:parentheses -> addition",
+          2
+        ],
+        [
+          "structure_policy:parenthesized_tree -> binary_operation",
+          2
+        ],
+        [
+          "structure_policy:reduce_chain -> binary_operation",
+          1
+        ],
+        [
+          "support_gate:unsupported -> supported",
+          1
+        ]
+      ],
+      "per_layer_accuracy": {
+        "arithmetic_family": 0.7333,
+        "language_target": 0.9333,
+        "semantic_domain": 1.0,
+        "slot_binding_policy": 0.6,
+        "structure_policy": 0.6667,
+        "support_gate": 0.75,
+        "target_builder": 1.0,
+        "task_scope": 0.05
+      },
+      "target_ir_accuracy": 0.7
+    },
+    {
+      "branch_path_accuracy": 0.0,
+      "early_exit_accuracy": 0.8,
+      "early_exit_precision": 0.5714,
+      "early_exit_recall": 0.8,
+      "generation": 21,
+      "mean_reward": -0.235,
+      "most_common_wrong_branch_decisions": [
+        [
+          "task_scope:programming -> non_programming",
+          17
+        ],
+        [
+          "slot_binding_policy:chinese_number_order -> surface_number_order",
+          3
+        ],
+        [
+          "arithmetic_family:exact_division -> <missing>",
+          3
+        ],
+        [
+          "structure_policy:binary_operation -> <missing>",
+          3
+        ],
+        [
+          "slot_binding_policy:surface_number_order -> <missing>",
+          3
+        ],
+        [
+          "target_builder:canonical_arithmetic_targetir -> <missing>",
+          3
+        ],
+        [
+          "slot_binding_policy:signed_number_order -> surface_number_order",
+          3
+        ],
+        [
+          "support_gate:unsupported -> <missing>",
+          3
+        ],
+        [
+          "arithmetic_family:mixed_precedence -> addition",
+          2
+        ],
+        [
+          "structure_policy:precedence_tree -> binary_operation",
+          2
+        ]
+      ],
+      "per_layer_accuracy": {
+        "arithmetic_family": 0.5333,
+        "language_target": 0.9333,
+        "semantic_domain": 1.0,
+        "slot_binding_policy": 0.4,
+        "structure_policy": 0.4667,
+        "support_gate": 0.75,
+        "target_builder": 0.8,
+        "task_scope": 0.0
+      },
+      "target_ir_accuracy": 0.55
+    },
+    {
+      "branch_path_accuracy": 0.0,
+      "early_exit_accuracy": 0.8,
+      "early_exit_precision": 0.5714,
+      "early_exit_recall": 0.8,
+      "generation": 22,
+      "mean_reward": -0.265,
+      "most_common_wrong_branch_decisions": [
+        [
+          "task_scope:programming -> non_programming",
+          17
+        ],
+        [
+          "slot_binding_policy:chinese_number_order -> surface_number_order",
+          3
+        ],
+        [
+          "arithmetic_family:exact_division -> unsupported",
+          3
+        ],
+        [
+          "structure_policy:binary_operation -> <missing>",
+          3
+        ],
+        [
+          "slot_binding_policy:surface_number_order -> <missing>",
+          3
+        ],
+        [
+          "target_builder:canonical_arithmetic_targetir -> <missing>",
+          3
+        ],
+        [
+          "slot_binding_policy:signed_number_order -> surface_number_order",
+          3
+        ],
+        [
+          "support_gate:unsupported -> <missing>",
+          3
+        ],
+        [
+          "arithmetic_family:mixed_precedence -> addition",
+          2
+        ],
+        [
+          "structure_policy:precedence_tree -> binary_operation",
+          2
+        ]
+      ],
+      "per_layer_accuracy": {
+        "arithmetic_family": 0.5333,
+        "language_target": 0.8,
+        "semantic_domain": 1.0,
+        "slot_binding_policy": 0.4,
+        "structure_policy": 0.4667,
+        "support_gate": 0.75,
+        "target_builder": 0.8,
+        "task_scope": 0.05
+      },
+      "target_ir_accuracy": 0.55
+    },
+    {
+      "branch_path_accuracy": 0.0,
+      "early_exit_accuracy": 0.8,
+      "early_exit_precision": 0.5714,
+      "early_exit_recall": 0.8,
+      "generation": 23,
+      "mean_reward": -0.235,
+      "most_common_wrong_branch_decisions": [
+        [
+          "task_scope:programming -> non_programming",
+          17
+        ],
+        [
+          "slot_binding_policy:chinese_number_order -> surface_number_order",
+          3
+        ],
+        [
+          "arithmetic_family:exact_division -> <missing>",
+          3
+        ],
+        [
+          "structure_policy:binary_operation -> <missing>",
+          3
+        ],
+        [
+          "slot_binding_policy:surface_number_order -> <missing>",
+          3
+        ],
+        [
+          "target_builder:canonical_arithmetic_targetir -> <missing>",
+          3
+        ],
+        [
+          "slot_binding_policy:signed_number_order -> surface_number_order",
+          3
+        ],
+        [
+          "support_gate:unsupported -> <missing>",
+          3
+        ],
+        [
+          "arithmetic_family:mixed_precedence -> addition",
+          2
+        ],
+        [
+          "structure_policy:precedence_tree -> binary_operation",
+          2
+        ]
+      ],
+      "per_layer_accuracy": {
+        "arithmetic_family": 0.5333,
+        "language_target": 0.9333,
+        "semantic_domain": 1.0,
+        "slot_binding_policy": 0.4,
+        "structure_policy": 0.4667,
+        "support_gate": 0.75,
+        "target_builder": 0.8,
+        "task_scope": 0.05
+      },
+      "target_ir_accuracy": 0.55
+    },
+    {
+      "branch_path_accuracy": 0.0,
+      "early_exit_accuracy": 0.8,
+      "early_exit_precision": 0.5714,
+      "early_exit_recall": 0.8,
+      "generation": 24,
+      "mean_reward": -0.22,
+      "most_common_wrong_branch_decisions": [
+        [
+          "task_scope:programming -> non_programming",
+          17
+        ],
+        [
+          "slot_binding_policy:chinese_number_order -> surface_number_order",
+          3
+        ],
+        [
+          "arithmetic_family:exact_division -> <missing>",
+          3
+        ],
+        [
+          "structure_policy:binary_operation -> <missing>",
+          3
+        ],
+        [
+          "slot_binding_policy:surface_number_order -> <missing>",
+          3
+        ],
+        [
+          "target_builder:canonical_arithmetic_targetir -> <missing>",
+          3
+        ],
+        [
+          "slot_binding_policy:signed_number_order -> surface_number_order",
+          3
+        ],
+        [
+          "support_gate:unsupported -> <missing>",
+          3
+        ],
+        [
+          "arithmetic_family:mixed_precedence -> addition",
+          2
+        ],
+        [
+          "structure_policy:precedence_tree -> binary_operation",
+          2
+        ]
+      ],
+      "per_layer_accuracy": {
+        "arithmetic_family": 0.5333,
+        "language_target": 0.9333,
+        "semantic_domain": 1.0,
+        "slot_binding_policy": 0.4,
+        "structure_policy": 0.4667,
+        "support_gate": 0.75,
+        "target_builder": 0.8,
+        "task_scope": 0.05
+      },
+      "target_ir_accuracy": 0.55
+    },
+    {
+      "branch_path_accuracy": 0.0,
+      "early_exit_accuracy": 0.75,
+      "early_exit_precision": 0.5,
+      "early_exit_recall": 0.8,
+      "generation": 25,
+      "mean_reward": -0.54,
+      "most_common_wrong_branch_decisions": [
+        [
+          "task_scope:programming -> non_programming",
+          17
+        ],
+        [
+          "semantic_domain:arithmetic -> <missing>",
+          4
+        ],
+        [
+          "support_gate:supported -> <missing>",
+          4
+        ],
+        [
+          "structure_policy:binary_operation -> <missing>",
+          4
+        ],
+        [
+          "target_builder:canonical_arithmetic_targetir -> <missing>",
+          4
+        ],
+        [
+          "support_gate:unsupported -> <missing>",
+          4
+        ],
+        [
+          "slot_binding_policy:chinese_number_order -> surface_number_order",
+          3
+        ],
+        [
+          "language_target:unknown -> <missing>",
+          3
+        ],
+        [
+          "arithmetic_family:exact_division -> <missing>",
+          3
+        ],
+        [
+          "slot_binding_policy:surface_number_order -> <missing>",
+          3
+        ]
+      ],
+      "per_layer_accuracy": {
+        "arithmetic_family": 0.4,
+        "language_target": 0.7333,
+        "semantic_domain": 0.7333,
+        "slot_binding_policy": 0.4,
+        "structure_policy": 0.4,
+        "support_gate": 0.55,
+        "target_builder": 0.7333,
+        "task_scope": 0.05
+      },
+      "target_ir_accuracy": 0.5
+    },
+    {
+      "branch_path_accuracy": 0.0,
+      "early_exit_accuracy": 0.7,
+      "early_exit_precision": 0.4444,
+      "early_exit_recall": 0.8,
+      "generation": 26,
+      "mean_reward": -0.64,
+      "most_common_wrong_branch_decisions": [
+        [
+          "task_scope:programming -> non_programming",
+          17
+        ],
+        [
+          "semantic_domain:arithmetic -> <missing>",
+          5
+        ],
+        [
+          "support_gate:supported -> <missing>",
+          5
+        ],
+        [
+          "structure_policy:binary_operation -> <missing>",
+          5
+        ],
+        [
+          "target_builder:canonical_arithmetic_targetir -> <missing>",
+          5
+        ],
+        [
+          "language_target:unknown -> <missing>",
+          4
+        ],
+        [
+          "support_gate:unsupported -> <missing>",
+          4
+        ],
+        [
+          "slot_binding_policy:chinese_number_order -> surface_number_order",
+          3
+        ],
+        [
+          "arithmetic_family:exact_division -> <missing>",
+          3
+        ],
+        [
+          "slot_binding_policy:surface_number_order -> <missing>",
+          3
+        ]
+      ],
+      "per_layer_accuracy": {
+        "arithmetic_family": 0.4,
+        "language_target": 0.6667,
+        "semantic_domain": 0.6667,
+        "slot_binding_policy": 0.4,
+        "structure_policy": 0.3333,
+        "support_gate": 0.5,
+        "target_builder": 0.6667,
+        "task_scope": 0.05
+      },
+      "target_ir_accuracy": 0.5
+    },
+    {
+      "branch_path_accuracy": 0.0,
+      "early_exit_accuracy": 0.8,
+      "early_exit_precision": 0.5714,
+      "early_exit_recall": 0.8,
+      "generation": 27,
+      "mean_reward": -0.25,
+      "most_common_wrong_branch_decisions": [
+        [
+          "task_scope:programming -> non_programming",
+          17
+        ],
+        [
+          "slot_binding_policy:chinese_number_order -> surface_number_order",
+          3
+        ],
+        [
+          "arithmetic_family:exact_division -> <missing>",
+          3
+        ],
+        [
+          "structure_policy:binary_operation -> <missing>",
+          3
+        ],
+        [
+          "slot_binding_policy:surface_number_order -> <missing>",
+          3
+        ],
+        [
+          "target_builder:canonical_arithmetic_targetir -> <missing>",
+          3
+        ],
+        [
+          "slot_binding_policy:signed_number_order -> surface_number_order",
+          3
+        ],
+        [
+          "support_gate:unsupported -> <missing>",
+          3
+        ],
+        [
+          "arithmetic_family:mixed_precedence -> addition",
+          2
+        ],
+        [
+          "structure_policy:precedence_tree -> binary_operation",
+          2
+        ]
+      ],
+      "per_layer_accuracy": {
+        "arithmetic_family": 0.4667,
+        "language_target": 0.9333,
+        "semantic_domain": 1.0,
+        "slot_binding_policy": 0.4,
+        "structure_policy": 0.4667,
+        "support_gate": 0.75,
+        "target_builder": 0.8,
+        "task_scope": 0.0
+      },
+      "target_ir_accuracy": 0.55
+    },
+    {
+      "branch_path_accuracy": 0.0,
+      "early_exit_accuracy": 0.25,
+      "early_exit_precision": 0.25,
+      "early_exit_recall": 1.0,
+      "generation": 28,
+      "mean_reward": -2.6,
+      "most_common_wrong_branch_decisions": [
+        [
+          "task_scope:programming -> <missing>",
+          18
+        ],
+        [
+          "semantic_domain:arithmetic -> <missing>",
+          15
+        ],
+        [
+          "support_gate:supported -> <missing>",
+          15
+        ],
+        [
+          "target_builder:canonical_arithmetic_targetir -> <missing>",
+          15
+        ],
+        [
+          "structure_policy:binary_operation -> <missing>",
+          10
+        ],
+        [
+          "slot_binding_policy:surface_number_order -> <missing>",
+          9
+        ],
+        [
+          "language_target:unknown -> <missing>",
+          8
+        ],
+        [
+          "language_target:C -> <missing>",
+          7
+        ],
+        [
+          "arithmetic_family:addition -> <missing>",
+          5
+        ],
+        [
+          "support_gate:unsupported -> <missing>",
+          5
+        ]
+      ],
+      "per_layer_accuracy": {
+        "arithmetic_family": 0.0,
+        "language_target": 0.0,
+        "semantic_domain": 0.0,
+        "slot_binding_policy": 0.0,
+        "structure_policy": 0.0,
+        "support_gate": 0.0,
+        "target_builder": 0.0,
+        "task_scope": 0.0
+      },
+      "target_ir_accuracy": 0.0
+    },
+    {
+      "branch_path_accuracy": 0.0,
+      "early_exit_accuracy": 0.25,
+      "early_exit_precision": 0.25,
+      "early_exit_recall": 1.0,
+      "generation": 29,
+      "mean_reward": -2.6,
+      "most_common_wrong_branch_decisions": [
+        [
+          "task_scope:programming -> <missing>",
+          18
+        ],
+        [
+          "semantic_domain:arithmetic -> <missing>",
+          15
+        ],
+        [
+          "support_gate:supported -> <missing>",
+          15
+        ],
+        [
+          "target_builder:canonical_arithmetic_targetir -> <missing>",
+          15
+        ],
+        [
+          "structure_policy:binary_operation -> <missing>",
+          10
+        ],
+        [
+          "slot_binding_policy:surface_number_order -> <missing>",
+          9
+        ],
+        [
+          "language_target:unknown -> <missing>",
+          8
+        ],
+        [
+          "language_target:C -> <missing>",
+          7
+        ],
+        [
+          "arithmetic_family:addition -> <missing>",
+          5
+        ],
+        [
+          "support_gate:unsupported -> <missing>",
+          5
+        ]
+      ],
+      "per_layer_accuracy": {
+        "arithmetic_family": 0.0,
+        "language_target": 0.0,
+        "semantic_domain": 0.0,
+        "slot_binding_policy": 0.0,
+        "structure_policy": 0.0,
+        "support_gate": 0.0,
+        "target_builder": 0.0,
+        "task_scope": 0.0
+      },
+      "target_ir_accuracy": 0.0
+    },
+    {
+      "branch_path_accuracy": 0.0,
+      "early_exit_accuracy": 0.5,
+      "early_exit_precision": 0.3333,
+      "early_exit_recall": 1.0,
+      "generation": 30,
+      "mean_reward": -1.7,
+      "most_common_wrong_branch_decisions": [
+        [
+          "task_scope:programming -> <missing>",
+          13
+        ],
+        [
+          "semantic_domain:arithmetic -> <missing>",
+          10
+        ],
+        [
+          "support_gate:supported -> <missing>",
+          10
+        ],
+        [
+          "target_builder:canonical_arithmetic_targetir -> <missing>",
+          10
+        ],
+        [
+          "slot_binding_policy:surface_number_order -> <missing>",
+          9
+        ],
+        [
+          "structure_policy:binary_operation -> <missing>",
+          6
+        ],
+        [
+          "language_target:unknown -> <missing>",
+          6
+        ],
+        [
+          "task_scope:programming -> non_programming",
+          5
+        ],
+        [
+          "support_gate:unsupported -> <missing>",
+          5
+        ],
+        [
+          "language_target:C -> <missing>",
+          4
+        ]
+      ],
+      "per_layer_accuracy": {
+        "arithmetic_family": 0.2,
+        "language_target": 0.2,
+        "semantic_domain": 0.3333,
+        "slot_binding_policy": 0.0,
+        "structure_policy": 0.2667,
+        "support_gate": 0.25,
+        "target_builder": 0.3333,
+        "task_scope": 0.0
+      },
+      "target_ir_accuracy": 0.2
+    }
+  ],
+  "population_size": 128
+}

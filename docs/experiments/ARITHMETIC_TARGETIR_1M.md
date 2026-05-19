@@ -2,6 +2,12 @@
 
 This is a development experiment, not a JianMu v0.5 release claim.
 
+Note: v0.5.8 is retained as an oracle-assisted flat classifier calibration
+experiment. It revealed that oracle-assisted slot extraction and flat
+structure-label classification do not match JianMu's intended BranchChain
+training model. v0.5.9 shifts toward layered branch decisions and path-level
+reward.
+
 The goal is to test whether a pure-Python hashed perceptron branch table with an
 approximately 1M-parameter budget can learn a controlled Chinese-first mapping:
 
@@ -65,4 +71,3 @@ the primary correctness object.
 - This does not prove replacement of Transformer models.
 - This does not prove hardware BPU implementation.
 - This does not replace compiler validation.
-
