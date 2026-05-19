@@ -11,6 +11,7 @@ from jianmu.self_learning.darwinforge.evolution import (
     CurriculumDarwinForgeTrainer,
     DarwinForgeTrainer,
     HindsightReRankingDarwinForgeTrainer,
+    PerfectLayerBacktrackingTrainer,
     ParaphraseInvariantDarwinForgeTrainer,
 )
 from jianmu.self_learning.darwinforge.fitness import compute_fitness
@@ -52,6 +53,11 @@ RERANK_METRICS_PATH = RERANK_DIR / "hindsight_reranking_metrics.json"
 RERANK_REPORT_PATH = RERANK_DIR / "hindsight_reranking_report.md"
 RERANK_CANDIDATES_PATH = RERANK_DIR / "hindsight_reranking_candidates.jsonl"
 RERANK_PRUNING_PATH = RERANK_DIR / "pruning_candidates.jsonl"
+
+PERFECT_DIR = Path("records/v0_6_7")
+PERFECT_METRICS_PATH = PERFECT_DIR / "perfect_layer_backtracking_metrics.json"
+PERFECT_REPORT_PATH = PERFECT_DIR / "perfect_layer_backtracking_report.md"
+PERFECT_CANDIDATES_PATH = PERFECT_DIR / "perfect_layer_backtracking_candidates.jsonl"
 
 
 def run_darwinforge_toy(
@@ -750,6 +756,96 @@ def _hindsight_reranking_report_markdown(metrics):
             "- This does not patch old source code.",
             "- This does not prove AGI, Transformer replacement, or hardware BPU implementation.",
             "- This is a Hindsight Branch Re-Ranking（回看式分支重排） scaffold.",
+        ]
+    )
+    return "\n".join(lines) + "\n"
+
+
+def run_perfect_layer_backtracking_toy(
+    population_per_layer: int = 16,
+    generations: int = 120,
+    top_k_candidates: int = 3,
+    seed: int = 42,
+    compile_checks_per_generation: int = 0,
+):
+    PERFECT_DIR.mkdir(parents=True, exist_ok=True)
+    dataset = build_architecture_aligned_toy_dataset()
+    trainer = PerfectLayerBacktrackingTrainer(
+        population_per_layer=population_per_layer,
+        generations=generations,
+        top_k_candidates=top_k_candidates,
+        seed=seed,
+        compile_checks_per_generation=compile_checks_per_generation,
+    )
+    metrics = trainer.train(dataset)
+    candidate_records = metrics.pop("candidate_records")
+    PERFECT_METRICS_PATH.write_text(json.dumps(metrics, ensure_ascii=False, indent=2, sort_keys=True), encoding="utf-8")
+    PERFECT_REPORT_PATH.write_text(_perfect_layer_report_markdown(metrics), encoding="utf-8")
+    PERFECT_CANDIDATES_PATH.write_text(
+        "".join(json.dumps(record.to_dict(), ensure_ascii=False, sort_keys=True) + "\n" for record in candidate_records[-240:]),
+        encoding="utf-8",
+    )
+    metrics["report_path"] = str(PERFECT_REPORT_PATH)
+    metrics["candidates_path"] = str(PERFECT_CANDIDATES_PATH)
+    return metrics
+
+
+def _perfect_layer_report_markdown(metrics):
+    final = metrics["metrics_by_generation"][-1]
+    best_target = max(row["target_ir_exact_match"] for row in metrics["metrics_by_generation"])
+    curriculum = metrics["curriculum"]
+    lines = [
+        "# v0.6.7 Perfect-Layer Backtracking Curriculum（完美层回溯课程训练） Report",
+        "",
+        "This is a toy/synthetic BranchChain（分支链） curriculum scaffold. The 100% perfect layer rule is only for toy/synthetic deterministic data（玩具/合成确定性数据）.",
+        "",
+        "## Summary（摘要）",
+        "",
+        f"- dataset size（数据集规模）: {metrics['dataset_size']}",
+        f"- generations（代数）: {metrics['generations']}",
+        f"- layer order（层顺序）: {curriculum['layer_order']}",
+        f"- perfect_layer_count（完美冻结层数）: {final['perfect_layer_count']}",
+        f"- active_layer_final（最终当前训练层）: {final['active_layer']}",
+        f"- trainable_layers_final（最终可训练层）: {final['trainable_layers']}",
+        f"- blocked_layers（阻塞层）: {final['blocked_layers']}",
+        "",
+        "## Perfect Freeze Events（完美冻结事件）",
+        "",
+    ]
+    for event in curriculum["freeze_events"]:
+        lines.append(f"- generation {event['generation']}: {event['layer']} actual={event['actual_correct']} required={event['required_correct']}")
+    if not curriculum["freeze_events"]:
+        lines.append("- none")
+    lines.extend(["", "## Backtracking Events（回溯事件）", ""])
+    for event in curriculum["backtracking_events"]:
+        lines.append(f"- generation {event['generation']}: active={event['active_layer']}, unfrozen={event['unfrozen_layers']}, outcome={event['outcome']}")
+    if not curriculum["backtracking_events"]:
+        lines.append("- none")
+    lines.extend(
+        [
+            "",
+            "## Metrics（指标）",
+            "",
+            f"- per_layer_exact_accuracy（分层精确准确率）: {final['per_layer_accuracy']}",
+            f"- per_layer_correct_count（分层正确数）: {final['per_layer_correct_count']}",
+            f"- per_layer_required_count（分层要求数）: {final['per_layer_required_count']}",
+            f"- target_ir_exact_match_final（最终目标中间表示精确匹配）: {final['target_ir_exact_match']}",
+            f"- target_ir_exact_match_best（最佳目标中间表示精确匹配）: {best_target}",
+            f"- low_score_correct_count（低分正确候选数量）: {final['low_score_correct_count']}",
+            f"- high_score_wrong_count（高分错误候选数量）: {final['high_score_wrong_count']}",
+            "",
+            "## Toy-Only Warning（玩具数据限定警告）",
+            "",
+            "Perfect-Layer Curriculum（完美层课程） assumes deterministic toy labels. Larger or noisy data must use Highest-Stable Threshold Search（最高稳定阈值搜索） instead of hard 100%.",
+            "",
+            "## Non-Claims（非主张）",
+            "",
+            "- This does not prove stable DarwinForge（达尔文进化炉） convergence.",
+            "- This does not prove general program synthesis.",
+            "- This does not train C source text.",
+            "- This does not patch old source code.",
+            "- This does not prove AGI, Transformer replacement, or hardware BPU implementation.",
+            "- This is a toy/synthetic curriculum dynamics scaffold.",
         ]
     )
     return "\n".join(lines) + "\n"

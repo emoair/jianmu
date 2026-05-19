@@ -9,6 +9,7 @@ from jianmu.self_learning.branchchain.surface_features import extract_surface_fe
 from jianmu.self_learning.branchchain.toy_dataset import build_branchchain_toy_dataset
 from jianmu.self_learning.darwinforge.atomic_synthesis import AtomicSynthesis
 from jianmu.self_learning.darwinforge.attribution import attribute_candidate_error
+from jianmu.self_learning.darwinforge.backtracking_curriculum import PerfectLayerCurriculumPlan
 from jianmu.self_learning.darwinforge.candidate import CandidateRecord
 from jianmu.self_learning.darwinforge.curriculum import CurriculumPlan
 from jianmu.self_learning.darwinforge.fitness import compute_fitness
@@ -406,6 +407,103 @@ class HindsightReRankingDarwinForgeTrainer:
                 _add_component(record, "high_score_correct_reinforcement", 1.0)
 
 
+class PerfectLayerBacktrackingTrainer:
+    def __init__(
+        self,
+        population_per_layer: int = 16,
+        generations: int = 120,
+        top_k_candidates: int = 3,
+        seed: int = 42,
+        curriculum: PerfectLayerCurriculumPlan = None,
+        compile_checks_per_generation: int = 0,
+    ):
+        self.population_per_layer = population_per_layer
+        self.generations = generations
+        self.top_k_candidates = top_k_candidates
+        self.seed = seed
+        self.compile_checks_per_generation = compile_checks_per_generation
+        self.curriculum = curriculum or PerfectLayerCurriculumPlan()
+        self.population = LayerPreservedPopulation.initialize(population_per_layer=population_per_layer, seed=seed)
+        self.synthesis = AtomicSynthesis()
+
+    def train(self, dataset: List[Dict]) -> Dict:
+        metrics_by_generation = []
+        candidate_records_log = []
+        best_target_ir = 0.0
+        for generation in range(self.generations + 1):
+            winners = []
+            records_by_task = []
+            generation_records = []
+            rank_records = []
+            for task in dataset:
+                features = extract_surface_features(task["input_text"])
+                records = []
+                for candidate_index, genome in enumerate(self.population.sample_candidate_paths(features, top_k=self.top_k_candidates)):
+                    phenotype = self.synthesis.synthesize(genome, features)
+                    fitness = compute_fitness(
+                        genome,
+                        phenotype,
+                        task,
+                        sandbox_optional=candidate_index < self.compile_checks_per_generation,
+                    )
+                    records.append(CandidateRecord(genome, phenotype, fitness))
+                ranks = rerank_candidates_for_sample(records, task)
+                winner = next(record for record in records if record.genome.genome_id == ranks[0].candidate_id)
+                winners.append(winner)
+                records_by_task.append(records)
+                generation_records.extend(records)
+                rank_records.extend(ranks)
+            per_layer = _perfect_per_layer_metrics(winners, records_by_task, dataset)
+            for layer, values in per_layer.items():
+                self.curriculum.update_layer_metrics(
+                    layer,
+                    values["accuracy"],
+                    values["recall_at_k"],
+                    values["missing_rate"],
+                    values["correct_count"],
+                    values["total_count"],
+                    generation,
+                )
+            self.curriculum.step(generation)
+            base = _metrics_for_generation(generation, winners, dataset)
+            best_target_ir = max(best_target_ir, base["target_ir_exact_match_rate"])
+            quadrants = Counter(rank.quadrant for rank in rank_records)
+            metrics = {
+                "generation": generation,
+                "active_layer": self.curriculum.active_layer(),
+                "trainable_layers": self.curriculum.trainable_layers(),
+                "frozen_layers": [layer for layer in self.curriculum.layer_order if self.curriculum.is_frozen(layer)],
+                "perfect_layer_count": sum(1 for layer in self.curriculum.layer_order if self.curriculum.is_frozen(layer)),
+                "per_layer_accuracy": {layer: values["accuracy"] for layer, values in per_layer.items()},
+                "per_layer_correct_count": {layer: values["correct_count"] for layer, values in per_layer.items()},
+                "per_layer_required_count": {layer: values["total_count"] for layer, values in per_layer.items()},
+                "per_layer_recall_at_k": {layer: values["recall_at_k"] for layer, values in per_layer.items()},
+                "target_ir_exact_match": base["target_ir_exact_match_rate"],
+                "target_ir_exact_match_best": best_target_ir,
+                "low_score_correct_count": quadrants.get("low_score_correct", 0),
+                "high_score_wrong_count": quadrants.get("high_score_wrong", 0),
+                "backtracking_event_count": len(self.curriculum.backtracking_events),
+                "backtracking_events": [event.to_dict() for event in self.curriculum.backtracking_events],
+                "freeze_events": list(self.curriculum.freeze_events),
+                "blocked_layer_count": len(self.curriculum.blocked_layers),
+                "blocked_layers": list(self.curriculum.blocked_layers),
+            }
+            metrics_by_generation.append(metrics)
+            candidate_records_log.extend(generation_records)
+            if generation < self.generations:
+                self.population.evolve(generation_records, seed=self.seed + generation, curriculum_plan=self.curriculum)
+        return {
+            "dataset_size": len(dataset),
+            "population_per_layer": self.population_per_layer,
+            "generations": self.generations,
+            "top_k_candidates": self.top_k_candidates,
+            "curriculum": self.curriculum.to_dict(),
+            "metrics_by_generation": metrics_by_generation,
+            "population_summary": self.population.summary(),
+            "candidate_records": candidate_records_log,
+        }
+
+
 def _winner_succeeds(record: CandidateRecord, task: Dict) -> bool:
     if not task["supported"]:
         return record.fitness_report.unsupported_correct
@@ -487,6 +585,34 @@ def _hindsight_metrics(generation: int, selected_records: List[CandidateRecord],
         "high_score_wrong_examples": [rank.to_dict() for rank in rank_records if rank.quadrant == "high_score_wrong"][:5],
         "wrong_consistent_group_examples": [beam.to_dict() for beam in beam_results if beam.collapse_detected][:5],
         "representative_group_beams": [beam.to_dict() for beam in beam_results[:8]],
+    }
+
+
+def _perfect_per_layer_metrics(winners: List[CandidateRecord], records_by_task: List[List[CandidateRecord]], dataset: List[Dict]) -> Dict[str, Dict]:
+    totals = Counter()
+    correct = Counter()
+    missing = Counter()
+    recall = Counter()
+    for winner, records, task in zip(winners, records_by_task, dataset):
+        winner_pairs = dict(decision_pairs(winner.genome.branch_path))
+        candidate_pairs = [dict(decision_pairs(record.genome.branch_path)) for record in records]
+        for layer, expected in task["target_branch_path"]:
+            totals[layer] += 1
+            if layer not in winner_pairs:
+                missing[layer] += 1
+            elif winner_pairs[layer] == expected:
+                correct[layer] += 1
+            if any(pairs.get(layer) == expected for pairs in candidate_pairs):
+                recall[layer] += 1
+    return {
+        layer: {
+            "accuracy": round(correct[layer] / max(total, 1), 4),
+            "recall_at_k": round(recall[layer] / max(total, 1), 4),
+            "missing_rate": round(missing[layer] / max(total, 1), 4),
+            "correct_count": correct[layer],
+            "total_count": total,
+        }
+        for layer, total in totals.items()
     }
 
 

@@ -227,3 +227,11 @@ JianMu keeps top-k BranchPath（分支路径） candidates, evaluates them with
 TargetIR（目标中间表示） and Paraphrase Group（复述组） feedback, then promotes
 Correct-Low-Score Candidate（低分正确候选） paths and downranks
 Wrong-High-Score Candidate（高分错误候选） shortcuts.
+
+## v0.6.7 Development Direction
+
+v0.6.7 explores Perfect-Layer Backtracking Curriculum（完美层回溯课程训练）
+for toy/synthetic BranchChain（分支链） training. Each layer attempts to reach
+perfect accuracy（完美准确率） before freezing. If a Downstream Layer（下游层） stalls,
+Upstream Layer（上游层） entries can be conditionally unfrozen（条件解冻） and jointly
+retrained. The 100% rule is only for toy/synthetic deterministic data（玩具/合成确定性数据）.

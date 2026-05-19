@@ -166,9 +166,13 @@ class LayerPreservedPopulation:
             next_neurons = elites[:]
             _preserve_option_coverage(next_neurons, ranked, layer_name, options, rng)
             if curriculum_plan is None or curriculum_plan.can_mutate(layer_name):
+                mutation_scale = curriculum_plan.mutation_scale(layer_name) if curriculum_plan is not None and hasattr(curriculum_plan, "mutation_scale") else 1.0
                 while len(next_neurons) < max(layer_size - len(options), 1):
                     parent = rng.choice(elites)
-                    next_neurons.append(parent.mutate(rng))
+                    if rng.random() <= mutation_scale:
+                        next_neurons.append(parent.mutate(rng))
+                    else:
+                        next_neurons.append(parent.clone(f"{parent.neuron_id}.lowmut"))
             while len(next_neurons) < layer_size:
                 option = rng.choice(options)
                 next_neurons.append(make_random_neuron(layer_name, option, f"{layer_name}:immigrant:{rng.randint(0, 10**9)}", rng))
