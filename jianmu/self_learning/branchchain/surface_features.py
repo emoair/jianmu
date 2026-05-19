@@ -77,6 +77,47 @@ def extract_surface_features(input_text: str) -> Dict:
     }
 
 
+def extract_canonical_surface_features(input_text: str, canonicalization_enabled: bool = True) -> Dict:
+    """Extract features after Canonical Symbol Layer（规范符号层） preprocessing."""
+    if not canonicalization_enabled:
+        features = extract_surface_features(input_text)
+        features.update(
+            {
+                "raw_text": input_text,
+                "canonical_text": input_text,
+                "canonical_changed": False,
+                "canonical_token_count": 0,
+                "source_map_coverage": 0.0,
+                "contains_canonicalized_zh_number": False,
+                "contains_canonicalized_zh_operator": False,
+            }
+        )
+        return features
+    from jianmu.self_learning.preprocessing.symbol_canonicalizer import canonicalize_symbols
+
+    canonical = canonicalize_symbols(input_text)
+    routed_text = canonical.canonical_text or input_text
+    features = extract_surface_features(routed_text)
+    non_text = [token for token in canonical.tokens if token.token_type != "TEXT"]
+    mapped = [token for token in non_text if token.raw and token.canonical]
+    features.update(
+        {
+            "raw_text": input_text,
+            "canonical_text": routed_text,
+            "canonical_changed": canonical.changed,
+            "canonical_token_count": len(canonical.tokens),
+            "source_map_coverage": round(len(mapped) / max(len(non_text), 1), 4),
+            "contains_canonicalized_zh_number": any(
+                token.token_type == "NUM" and token.raw != token.canonical for token in canonical.tokens
+            ),
+            "contains_canonicalized_zh_operator": any(
+                token.token_type.startswith("OP_") and token.raw != token.canonical for token in canonical.tokens
+            ),
+        }
+    )
+    return features
+
+
 def numeric_feature_view(features: Dict) -> Dict[str, int]:
     names = [
         "contains_C",

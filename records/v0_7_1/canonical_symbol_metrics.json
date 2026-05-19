@@ -1,0 +1,62 @@
+{
+  "without_canonicalization": {
+    "overall": {
+      "sample_count": 3000,
+      "target_ir_exact_match": 0.095,
+      "expected_output_match": 0.0954,
+      "unsupported_rejection_rate": 0.67,
+      "false_reject_supported_rate": 0.6418,
+      "false_accept_unsupported_rate": 0.33
+    },
+    "canonical_metrics": {
+      "canonicalization_success_rate": 1.0,
+      "canonical_changed_rate": 0.83,
+      "source_map_coverage": 1.0,
+      "canonical_warning_count": 112,
+      "canonical_input_rejection_rate": 0.6437
+    },
+    "zh_number_metrics": {
+      "zh_number_expression_false_reject_rate": 1.0,
+      "zh_number_targetir_exact_match": 0.0,
+      "zh_number_task_scope_continue_rate": 1.0
+    },
+    "ood_metrics": {
+      "ood_rejection_rate": 0.67,
+      "ood_false_accept_rate": 0.33
+    }
+  },
+  "with_canonicalization": {
+    "overall": {
+      "sample_count": 3000,
+      "target_ir_exact_match": 0.3421,
+      "expected_output_match": 0.3432,
+      "unsupported_rejection_rate": 0.955,
+      "false_reject_supported_rate": 0.465,
+      "false_accept_unsupported_rate": 0.045
+    },
+    "canonical_metrics": {
+      "canonicalization_success_rate": 1.0,
+      "canonical_changed_rate": 0.83,
+      "source_map_coverage": 1.0,
+      "canonical_warning_count": 112,
+      "canonical_input_rejection_rate": 0.4977
+    },
+    "zh_number_metrics": {
+      "zh_number_expression_false_reject_rate": 0.3638,
+      "zh_number_targetir_exact_match": 0.3795,
+      "zh_number_task_scope_continue_rate": 0.933
+    },
+    "ood_metrics": {
+      "ood_rejection_rate": 0.955,
+      "ood_false_accept_rate": 0.045
+    }
+  },
+  "delta": {
+    "target_ir_exact_match": 0.2471,
+    "zh_number_expression_false_reject_rate": -0.6362,
+    "zh_number_targetir_exact_match": 0.3795,
+    "raw_vs_canonical_targetir_gap": 0.2471
+  },
+  "dataset": "datasets\\v0_7_0\\jianmu_v0_7_0_symbol_grounding_all.jsonl",
+  "sample_size": 3000
+}

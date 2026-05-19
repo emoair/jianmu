@@ -261,3 +261,11 @@ BranchChain（分支链） and AtomicSynthesis（原子结构合成） can learn
 symbols（中文数字符号） and operator words（运算词） from paired paraphrase
 groups（成对复述组） and TargetIR（目标中间表示） feedback, without hardcoding Chinese
 numeral parsing（中文数字解析） or operator mapping（运算符映射） into inference.
+
+## v0.7.1 Development Direction
+
+v0.7.1 introduces a Canonical Symbol Layer（规范符号层） before BranchChain（分支链）.
+It normalizes Chinese numerals（中文数字） and operator words（运算词） into canonical
+text（规范文本）, such as “三加二” → “3+2”, while preserving Source Map（源映射）.
+The layer does not generate TargetIR（目标中间表示） or C source; it only standardizes
+equivalent input symbols before routing and synthesis.
