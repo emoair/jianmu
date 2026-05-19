@@ -1,0 +1,293 @@
+[
+  {
+    "best_target_ir_exact_match_so_far": 0.6325,
+    "generation": 0,
+    "population_summary": {
+      "arithmetic_family": {
+        "count": 32,
+        "options": [
+          "addition",
+          "exact_division",
+          "mixed_precedence",
+          "multiplication",
+          "parentheses",
+          "subtraction",
+          "unsupported"
+        ],
+        "top_score": 3556.9945000000575
+      },
+      "language_target": {
+        "count": 32,
+        "options": [
+          "C",
+          "explicit_C",
+          "implicit_C",
+          "math_expression_context",
+          "reject_unsupported_language",
+          "unknown"
+        ],
+        "top_score": 7778.4080999996595
+      },
+      "semantic_domain": {
+        "count": 32,
+        "options": [
+          "arithmetic",
+          "comparison_future",
+          "unsupported"
+        ],
+        "top_score": 12415.632899998958
+      },
+      "slot_binding_policy": {
+        "count": 32,
+        "options": [
+          "chinese_number_order",
+          "previous_targetir_delta",
+          "signed_number_order",
+          "surface_number_order",
+          "unsupported"
+        ],
+        "top_score": 8585.16589999936
+      },
+      "structure_policy": {
+        "count": 32,
+        "options": [
+          "binary_operation",
+          "parenthesized_tree",
+          "precedence_tree",
+          "reduce_chain",
+          "unsupported"
+        ],
+        "top_score": 9648.932899999223
+      },
+      "support_gate": {
+        "count": 32,
+        "options": [
+          "supported",
+          "unsupported"
+        ],
+        "top_score": 13146.332899998972
+      },
+      "target_builder": {
+        "count": 32,
+        "options": [
+          "canonical_arithmetic_targetir",
+          "canonical_program_targetir",
+          "early_exit"
+        ],
+        "top_score": 14665.532899999394
+      },
+      "task_scope": {
+        "count": 32,
+        "options": [
+          "non_programming",
+          "programming",
+          "reject_non_programming",
+          "reject_out_of_scope",
+          "unsupported"
+        ],
+        "top_score": 12944.232899998942
+      }
+    },
+    "train_metrics_snapshot": {
+      "generation": 0,
+      "record_count": 6000,
+      "train_false_accept_unsupported_count": 0,
+      "train_false_reject_supported_count": 0,
+      "train_target_ir_exact_match": 0.6325
+    }
+  },
+  {
+    "best_target_ir_exact_match_so_far": 0.6325,
+    "generation": 5,
+    "population_summary": {
+      "arithmetic_family": {
+        "count": 32,
+        "options": [
+          "addition",
+          "exact_division",
+          "mixed_precedence",
+          "multiplication",
+          "parentheses",
+          "subtraction",
+          "unsupported"
+        ],
+        "top_score": 30395.96899999988
+      },
+      "language_target": {
+        "count": 32,
+        "options": [
+          "C",
+          "explicit_C",
+          "implicit_C",
+          "math_expression_context",
+          "reject_unsupported_language",
+          "unknown"
+        ],
+        "top_score": 67777.47959999774
+      },
+      "semantic_domain": {
+        "count": 32,
+        "options": [
+          "arithmetic",
+          "comparison_future",
+          "unsupported"
+        ],
+        "top_score": 106959.69589999862
+      },
+      "slot_binding_policy": {
+        "count": 32,
+        "options": [
+          "chinese_number_order",
+          "previous_targetir_delta",
+          "signed_number_order",
+          "surface_number_order",
+          "unsupported"
+        ],
+        "top_score": 93377.5098999974
+      },
+      "structure_policy": {
+        "count": 32,
+        "options": [
+          "binary_operation",
+          "parenthesized_tree",
+          "precedence_tree",
+          "reduce_chain",
+          "unsupported"
+        ],
+        "top_score": 92040.57089999666
+      },
+      "support_gate": {
+        "count": 32,
+        "options": [
+          "supported",
+          "unsupported"
+        ],
+        "top_score": 119873.07090000175
+      },
+      "target_builder": {
+        "count": 32,
+        "options": [
+          "canonical_arithmetic_targetir",
+          "canonical_program_targetir",
+          "early_exit"
+        ],
+        "top_score": 108732.77089999897
+      },
+      "task_scope": {
+        "count": 32,
+        "options": [
+          "non_programming",
+          "programming",
+          "reject_non_programming",
+          "reject_out_of_scope",
+          "unsupported"
+        ],
+        "top_score": 121058.0709000024
+      }
+    },
+    "train_metrics_snapshot": {
+      "generation": 5,
+      "record_count": 6000,
+      "train_false_accept_unsupported_count": 0,
+      "train_false_reject_supported_count": 0,
+      "train_target_ir_exact_match": 0.6325
+    }
+  },
+  {
+    "best_target_ir_exact_match_so_far": 0.6325,
+    "generation": 7,
+    "population_summary": {
+      "arithmetic_family": {
+        "count": 32,
+        "options": [
+          "addition",
+          "exact_division",
+          "mixed_precedence",
+          "multiplication",
+          "parentheses",
+          "subtraction",
+          "unsupported"
+        ],
+        "top_score": 41131.55879999981
+      },
+      "language_target": {
+        "count": 32,
+        "options": [
+          "C",
+          "explicit_C",
+          "implicit_C",
+          "math_expression_context",
+          "reject_unsupported_language",
+          "unknown"
+        ],
+        "top_score": 91777.10819999698
+      },
+      "semantic_domain": {
+        "count": 32,
+        "options": [
+          "arithmetic",
+          "comparison_future",
+          "unsupported"
+        ],
+        "top_score": 144693.5610999985
+      },
+      "slot_binding_policy": {
+        "count": 32,
+        "options": [
+          "chinese_number_order",
+          "previous_targetir_delta",
+          "signed_number_order",
+          "surface_number_order",
+          "unsupported"
+        ],
+        "top_score": 127468.94749999659
+      },
+      "structure_policy": {
+        "count": 32,
+        "options": [
+          "binary_operation",
+          "parenthesized_tree",
+          "precedence_tree",
+          "reduce_chain",
+          "unsupported"
+        ],
+        "top_score": 124969.30609999564
+      },
+      "support_gate": {
+        "count": 32,
+        "options": [
+          "supported",
+          "unsupported"
+        ],
+        "top_score": 162549.80610000287
+      },
+      "target_builder": {
+        "count": 32,
+        "options": [
+          "canonical_arithmetic_targetir",
+          "canonical_program_targetir",
+          "early_exit"
+        ],
+        "top_score": 146310.80609999882
+      },
+      "task_scope": {
+        "count": 32,
+        "options": [
+          "non_programming",
+          "programming",
+          "reject_non_programming",
+          "reject_out_of_scope",
+          "unsupported"
+        ],
+        "top_score": 164303.6061000038
+      }
+    },
+    "train_metrics_snapshot": {
+      "generation": 7,
+      "record_count": 6000,
+      "train_false_accept_unsupported_count": 0,
+      "train_false_reject_supported_count": 0,
+      "train_target_ir_exact_match": 0.6325
+    }
+  }
+]

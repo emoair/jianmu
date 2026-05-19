@@ -244,3 +244,12 @@ and deterministically, expanding Chinese natural-language descriptions（中文�
 Chinese technical mixed inputs（中文技术混合输入）, pure math expressions（纯数学表达）,
 Paraphrase Groups（复述组）, and OOD Evaluation（分布外评测） while avoiding English
 natural-language positive training samples（英语自然语言正样本）.
+
+## v0.6.9 Development Direction
+
+v0.6.9 explores a Large Dataset Full Training Probe（大数据集全量训练探针）
+over the v0.6.8 Large Architecture-Aligned Dataset（大规模架构对齐数据集）.
+It scales population_per_layer（每层种群数量）, top_k_candidates（候选保留数量）,
+and generations（训练代数）, then reports Full-Split Evaluation（全切分评测）
+and Stratified Evaluation（分层评测） by input mode（输入模式）, expression
+family（表达式族）, and OOD behavior（分布外行为）.
