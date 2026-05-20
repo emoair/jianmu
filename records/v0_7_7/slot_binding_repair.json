@@ -1,0 +1,11 @@
+{
+  "slot_binding_correct_rank_after": 2.5,
+  "slot_binding_correct_rank_before": 2.8175,
+  "slot_binding_correct_score_after": 75.495,
+  "slot_binding_correct_score_before": 5.4938,
+  "slot_binding_low_score_layer_count_after": 0,
+  "slot_binding_low_score_layer_count_before": 147,
+  "slot_binding_update_distribution": {
+    "surface_number_order": 4800
+  }
+}

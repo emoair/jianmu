@@ -308,3 +308,7 @@ failure（原子结构合成能力失败）.
 ## v0.7.6 Development Direction
 
 v0.7.6 introduces RootFork Sub-Beam Regrowth（根叉子束再生）. After v0.7.5 proved that supported samples are synthesizable under forced BranchPath（强制分支路径）, this version diagnoses which layer assigns low score or prunes the correct option, then starts Prefix-Conditioned Sub-Beam（前缀条件子束） regrowth from that fork point. It also adds Path-Prior Seeding（路径先验播种）, OOD Guard Balancing（分布外守卫平衡）, and Scale Ladder（规模阶梯） diagnostics.
+
+## v0.7.7 Development Direction
+
+v0.7.7 explores RootFork Global Assimilation（根叉全局吸收）. It turns sub-beam rescued paths（子束救援路径） into global BranchChain（全局分支链） scoring updates, repairs Slot Binding（槽位绑定）, adds Root Lifecycle Manager（根生命周期管理器）, reconciles OOD Metrics（分布外指标）, and replaces the previous scale ladder with Real Scale Ladder（真实规模阶梯） runs.

@@ -1,0 +1,6 @@
+{
+  "inconsistent_metric_names": [],
+  "metric_consistency_passed": true,
+  "ood_metric_consistency_passed": true,
+  "scale_metric_consistency_passed": true
+}
