@@ -296,3 +296,11 @@ candidate-space gaps such as literal-only TargetIR（字面量目标中间表示
 precedence patterns（优先级结构）, then explores Nutrient-Guided Regrowth（养分引导再生）,
 Root Necrosis（根系坏死）, Nutrient Contrast（养分对比）, and Annealed Pruning（退火枝剪）
 over canonicalized BranchChain（规范化分支链） paths.
+
+## v0.7.5 Development Direction
+
+v0.7.5 focuses on RootForge Capability Alignment（根铸能力对齐）. It repairs
+BranchChain（分支链） priors for Literal-Only TargetIR（单字面量目标中间表示）,
+fixes negative-number routing（负数路由）, adds Path-Forcing Smoke Test（强制路径冒烟测试）,
+and separates router candidate failure（路由候选失败） from AtomicSynthesis capability
+failure（原子结构合成能力失败）.

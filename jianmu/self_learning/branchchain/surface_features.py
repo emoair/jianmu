@@ -28,6 +28,9 @@ def extract_surface_features(input_text: str) -> Dict:
     has_technical = has_c_token or has_printf_token or has_main_token or bool(re.search(r"\bint\b", text))
     contains_output = any(keyword in text for keyword in ["输出", "打印", "计算", "结果"])
     contains_program = "程序" in text or has_main_token
+    unary_negative_only = len(signed_numbers) == 1 and signed_numbers[0] < 0 and not operators
+    signed_literal_only = len(signed_numbers) == 1 and not operators
+    binary_minus_present = "-" in operators
     return {
         "contains_C": has_c_token,
         "contains_program": contains_program,
@@ -50,6 +53,9 @@ def extract_surface_features(input_text: str) -> Dict:
         "dangerous_keyword_signal": any(keyword in text for keyword in DANGEROUS_KEYWORDS),
         "has_chinese_number": bool(raw_numeral_chars),
         "has_negative": any(value < 0 for value in signed_numbers) or "负" in text,
+        "unary_negative_only": unary_negative_only,
+        "signed_literal_only": signed_literal_only,
+        "binary_minus_present": binary_minus_present,
         "input_mode_guess_zh_natural": bool(chinese_char_count and contains_output and not has_technical),
         "input_mode_guess_math_expression": is_pure_math,
         "input_mode_guess_zh_technical_mixed": bool(chinese_char_count and has_technical),
@@ -149,6 +155,12 @@ def numeric_feature_view(features: Dict) -> Dict[str, int]:
         "contains_negative_zh_marker",
         "contains_parenthesis_zh_marker",
         "contains_equal_question_pattern",
+        "canonical_changed",
+        "contains_canonicalized_zh_number",
+        "contains_canonicalized_zh_operator",
+        "unary_negative_only",
+        "signed_literal_only",
+        "binary_minus_present",
     ]
     numeric = {name: int(features.get(name, False)) for name in names}
     numeric["number_count"] = int(features.get("number_count", 0))
@@ -169,7 +181,17 @@ def _extract_signed_numbers(text: str) -> List[int]:
 
 
 def _operator_sequence(text: str) -> str:
-    return "".join(ch for ch in text if ch in "+-*/")
+    operators = []
+    compact = re.sub(r"\s+", "", text)
+    for index, ch in enumerate(compact):
+        if ch not in "+-*/":
+            continue
+        if ch == "-" and index + 1 < len(compact) and compact[index + 1].isdigit():
+            previous = compact[index - 1] if index > 0 else ""
+            if index == 0 or previous in "(+-*/":
+                continue
+        operators.append(ch)
+    return "".join(operators)
 
 
 def _is_pure_math_expression(text: str) -> bool:

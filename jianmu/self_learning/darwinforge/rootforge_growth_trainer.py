@@ -81,6 +81,7 @@ class RootForgeGrowthTrainer:
         self.annealing_rows: List[Dict] = []
         self.contrast_events: List[Dict] = []
         self.artifact_suffix_stripped_count = 0
+        self.action_counts = Counter()
 
     def train(self) -> Dict:
         started = time.time()
@@ -95,7 +96,7 @@ class RootForgeGrowthTrainer:
                 generation_diags.append(diag)
                 roots = self._roots_for_sample(sample, records, diag)
                 records_for_evolution.extend(self._select_records(records, roots))
-                self._process_roots(roots, generation, annealing.annealing_phase)
+                self._process_roots(roots, generation, annealing.annealing_phase, split="train")
             self.population.evolve(records_for_evolution)
             row = _aggregate_diagnostics(generation_diags)
             row.update({"generation": generation, "annealing_phase": annealing.annealing_phase})
@@ -105,6 +106,8 @@ class RootForgeGrowthTrainer:
             records, diag = self._run_sample(sample, WideBeamBacktrackingSearch(self.config.to_search_config()), self.config.generations)
             eval_diags.append(diag)
             self._roots_for_sample(sample, records, diag, keep_candidates=True)
+        train_low = sum(1 for row in self.viability_rows if row.get("split") == "train")
+        eval_low = sum(1 for row in self.candidate_rows if row.get("split") == "eval" and row.get("root_type") == "low_score_correct")
         metrics = _aggregate_diagnostics(eval_diags)
         metrics.update(_repair_metrics(eval_diags))
         metrics.update(summarize_viability([_report_from_dict(row) for row in self.viability_rows]))
@@ -118,6 +121,12 @@ class RootForgeGrowthTrainer:
                 "ood_sample_count": len(self.ood_samples),
                 "runtime_seconds": round(time.time() - started, 4),
                 "artifact_suffix_stripped_count": self.artifact_suffix_stripped_count,
+                "train_low_score_correct_count": train_low,
+                "eval_low_score_correct_count": eval_low,
+                "low_score_correct_without_action_count": self.action_counts["low_score_correct_without_action"],
+                "regrowth_queue_added_count": self.action_counts["regrowth_queue_added"],
+                "stable_root_buffer_added_count": self.action_counts["stable_root_buffer_added"],
+                "necrosis_queue_added_count": self.action_counts["necrosis_queue_added"],
                 "nutrient_contrast_event_count": len(self.contrast_events),
                 "positive_negative_margin_avg": _avg([event["positive_score"] - event["negative_score"] for event in self.contrast_events]),
                 "annealing_phases_completed": sorted({row["annealing_phase"] for row in self.annealing_rows}),
@@ -128,6 +137,7 @@ class RootForgeGrowthTrainer:
                 "necrosis_events": [event.to_dict() for event in self.necrosis_queue.events],
                 "annealing": self.annealing_rows,
                 "failure_examples": _failure_examples(eval_diags),
+                "eval_diagnostics": eval_diags,
                 "by_input_mode": _group_diag(eval_diags, "input_mode"),
                 "by_structure_policy": _group_diag(eval_diags, "structure_policy"),
             }
@@ -163,19 +173,46 @@ class RootForgeGrowthTrainer:
             if keep_candidates or len(self.candidate_rows) < 5000:
                 row = root.to_dict()
                 row["target_ir_true"] = sample.get("target_ir_canonical")
+                row["split"] = sample.get("split", "train")
                 self.candidate_rows.append(row)
         return roots
 
-    def _process_roots(self, roots, generation, phase):
+    def _process_roots(self, roots, generation, phase, split: str):
         positives = [root for root in roots if root.target_ir_exact_match or root.unsupported_correct]
         negatives = [root for root in roots if root.root_type == "high_score_wrong" or (root.nutrient_score <= 0 and not root.target_ir_exact_match)]
         for root in roots:
             if root.root_type == "low_score_correct":
                 report = diagnose_root_viability(root, perturbation_reproduction_rate=0.6 if len(root.stable_prefix) >= 4 else 0.2)
-                self.viability_rows.append(report.to_dict())
-                if report.classification in {"lucky_correct_root", "unstable_correct_root"}:
+                report_row = report.to_dict()
+                report_row.update(
+                    {
+                        "split": split,
+                        "generation": generation,
+                        "sample_id": root.sample_id,
+                        "target_ir_exact_match": root.target_ir_exact_match,
+                        "beam_eval_scope": split,
+                    }
+                )
+                self.viability_rows.append(report_row)
+                acted = False
+                if report.classification in {"undervalued_correct_root", "alternative_valid_root"}:
+                    self.action_counts["stable_root_buffer_added"] += 1
+                    acted = True
+                    if root.rank > 3 or root.nutrient_score < 4.0:
+                        event = plan_regrowth(root, generation, [name for name, _ in LAYER_DEFINITIONS], window=1, reason=report.classification)
+                        self.regrowth_events.append(event.to_dict())
+                        self.action_counts["regrowth_queue_added"] += 1
+                elif report.classification == "lucky_correct_root":
                     event = plan_regrowth(root, generation, [name for name, _ in LAYER_DEFINITIONS], window=1)
                     self.regrowth_events.append(event.to_dict())
+                    self.action_counts["regrowth_queue_added"] += 1
+                    acted = True
+                elif report.classification == "unstable_correct_root":
+                    self.necrosis_queue.observe(root, generation, phase=phase)
+                    self.action_counts["necrosis_queue_added"] += 1
+                    acted = True
+                if not acted:
+                    self.action_counts["low_score_correct_without_action"] += 1
             if root.root_type == "high_score_wrong" or root.nutrient_score <= 0:
                 self.necrosis_queue.observe(root, generation, phase=phase)
         if positives and negatives:
@@ -205,7 +242,7 @@ def write_rootforge_outputs(metrics: Dict, records_dir: Path) -> Dict[str, str]:
         "annealing_path": records_dir / "rootforge_annealing.jsonl",
         "failure_examples_path": records_dir / "rootforge_failure_examples.json",
     }
-    compact = {key: value for key, value in metrics.items() if key not in {"curve", "candidates", "viability", "regrowth_events", "necrosis_events", "annealing", "failure_examples"}}
+    compact = {key: value for key, value in metrics.items() if key not in {"curve", "candidates", "viability", "regrowth_events", "necrosis_events", "annealing", "failure_examples", "eval_diagnostics"}}
     paths["metrics_path"].write_text(json.dumps(compact, ensure_ascii=False, indent=2, sort_keys=True), encoding="utf-8")
     paths["curve_path"].write_text("".join(json.dumps(row, ensure_ascii=False, sort_keys=True) + "\n" for row in metrics["curve"]), encoding="utf-8")
     paths["candidates_path"].write_text("".join(json.dumps(row, ensure_ascii=False, sort_keys=True) + "\n" for row in metrics["candidates"]), encoding="utf-8")

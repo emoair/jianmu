@@ -168,7 +168,7 @@ def canonicalize_symbols(text: str) -> CanonicalizationResult:
 
 
 def _strip_dataset_artifact_suffix(text: str) -> Tuple[str, List[str]]:
-    match = re.search(r"\s*(?:（|\()jm-v070-[^)）]+(?:）|\))\s*$", text)
+    match = re.search(r"\s*(?:（|\()(?:jm-v070|sample)-[^)）]+(?:）|\))\s*$", text)
     if not match:
         return text, []
     return text[: match.start()], ["stripped_dataset_artifact_suffix"]

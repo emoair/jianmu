@@ -1,0 +1,973 @@
+{
+  "artifact_suffix_examples": [
+    {
+      "canonical_text": "28",
+      "raw_text": "28（jm-v070-000029）",
+      "warnings": [
+        "stripped_dataset_artifact_suffix"
+      ]
+    },
+    {
+      "canonical_text": "28",
+      "raw_text": "二十八（jm-v070-000030）",
+      "warnings": [
+        "stripped_dataset_artifact_suffix"
+      ]
+    },
+    {
+      "canonical_text": "28",
+      "raw_text": "计算二十八（jm-v070-000031）",
+      "warnings": [
+        "stripped_dataset_artifact_suffix"
+      ]
+    },
+    {
+      "canonical_text": "28",
+      "raw_text": "输出二十八（jm-v070-000032）",
+      "warnings": [
+        "stripped_dataset_artifact_suffix"
+      ]
+    },
+    {
+      "canonical_text": "34",
+      "raw_text": "34（jm-v070-000049）",
+      "warnings": [
+        "stripped_dataset_artifact_suffix"
+      ]
+    },
+    {
+      "canonical_text": "34",
+      "raw_text": "三十四（jm-v070-000050）",
+      "warnings": [
+        "stripped_dataset_artifact_suffix"
+      ]
+    },
+    {
+      "canonical_text": "34",
+      "raw_text": "计算三十四（jm-v070-000051）",
+      "warnings": [
+        "stripped_dataset_artifact_suffix"
+      ]
+    },
+    {
+      "canonical_text": "34",
+      "raw_text": "输出三十四（jm-v070-000052）",
+      "warnings": [
+        "stripped_dataset_artifact_suffix"
+      ]
+    },
+    {
+      "canonical_text": "-6",
+      "raw_text": "-6（jm-v070-000061）",
+      "warnings": [
+        "stripped_dataset_artifact_suffix"
+      ]
+    },
+    {
+      "canonical_text": "-6",
+      "raw_text": "负六（jm-v070-000062）",
+      "warnings": [
+        "stripped_dataset_artifact_suffix"
+      ]
+    }
+  ],
+  "artifact_suffix_stripped_count": 203,
+  "candidate_space_failure_rate": 1.0,
+  "config": {
+    "beam_size": 24,
+    "canonicalization_enabled": true,
+    "clone_count_per_layer": 2,
+    "eval_limit": 150,
+    "generations": 4,
+    "mode": "quick",
+    "ood_limit": 100,
+    "perturbation_scale": 0.15,
+    "population_per_layer": 24,
+    "proposals_per_layer": 6,
+    "seed": 42,
+    "stochastic_samples_per_layer": 3,
+    "train_limit": 300
+  },
+  "correct_targetir_in_beam_rate": 0.0,
+  "dataset_capability_mismatch_count": 0,
+  "dataset_dir": "datasets\\v0_7_0",
+  "eval_low_score_correct_count": 0,
+  "eval_sample_count": 150,
+  "examples": [
+    {
+      "canonical_text": "-6",
+      "exact_match": true,
+      "expression_family": "literal_only",
+      "failure_reason": null,
+      "input_mode": "arabic_math_expression",
+      "input_text": "-6",
+      "sample_id": "jm-v070-000001",
+      "structure_policy": "literal_value",
+      "target_branch_path": [
+        [
+          "task_scope",
+          "programming"
+        ],
+        [
+          "language_target",
+          "math_expression_context"
+        ],
+        [
+          "semantic_domain",
+          "arithmetic"
+        ],
+        [
+          "arithmetic_family",
+          "literal_only"
+        ],
+        [
+          "structure_policy",
+          "literal_value"
+        ],
+        [
+          "slot_binding_policy",
+          "surface_number_order"
+        ],
+        [
+          "target_builder",
+          "canonical_arithmetic_targetir"
+        ]
+      ],
+      "target_ir_pred": "lit(-6)",
+      "target_ir_true": "lit(-6)"
+    },
+    {
+      "canonical_text": "-6",
+      "exact_match": true,
+      "expression_family": "literal_only",
+      "failure_reason": null,
+      "input_mode": "zh_number_expression",
+      "input_text": "负六",
+      "sample_id": "jm-v070-000002",
+      "structure_policy": "literal_value",
+      "target_branch_path": [
+        [
+          "task_scope",
+          "programming"
+        ],
+        [
+          "language_target",
+          "math_expression_context"
+        ],
+        [
+          "semantic_domain",
+          "arithmetic"
+        ],
+        [
+          "arithmetic_family",
+          "literal_only"
+        ],
+        [
+          "structure_policy",
+          "literal_value"
+        ],
+        [
+          "slot_binding_policy",
+          "chinese_number_order"
+        ],
+        [
+          "target_builder",
+          "canonical_arithmetic_targetir"
+        ]
+      ],
+      "target_ir_pred": "lit(-6)",
+      "target_ir_true": "lit(-6)"
+    },
+    {
+      "canonical_text": "-6",
+      "exact_match": true,
+      "expression_family": "literal_only",
+      "failure_reason": null,
+      "input_mode": "paired_zh_natural",
+      "input_text": "计算负六",
+      "sample_id": "jm-v070-000003",
+      "structure_policy": "literal_value",
+      "target_branch_path": [
+        [
+          "task_scope",
+          "programming"
+        ],
+        [
+          "language_target",
+          "implicit_C"
+        ],
+        [
+          "semantic_domain",
+          "arithmetic"
+        ],
+        [
+          "arithmetic_family",
+          "literal_only"
+        ],
+        [
+          "structure_policy",
+          "literal_value"
+        ],
+        [
+          "slot_binding_policy",
+          "chinese_number_order"
+        ],
+        [
+          "target_builder",
+          "canonical_arithmetic_targetir"
+        ]
+      ],
+      "target_ir_pred": "lit(-6)",
+      "target_ir_true": "lit(-6)"
+    },
+    {
+      "canonical_text": "-6",
+      "exact_match": true,
+      "expression_family": "literal_only",
+      "failure_reason": null,
+      "input_mode": "mixed_zh_arabic",
+      "input_text": "输出负六",
+      "sample_id": "jm-v070-000004",
+      "structure_policy": "literal_value",
+      "target_branch_path": [
+        [
+          "task_scope",
+          "programming"
+        ],
+        [
+          "language_target",
+          "implicit_C"
+        ],
+        [
+          "semantic_domain",
+          "arithmetic"
+        ],
+        [
+          "arithmetic_family",
+          "literal_only"
+        ],
+        [
+          "structure_policy",
+          "literal_value"
+        ],
+        [
+          "slot_binding_policy",
+          "chinese_number_order"
+        ],
+        [
+          "target_builder",
+          "canonical_arithmetic_targetir"
+        ]
+      ],
+      "target_ir_pred": "lit(-6)",
+      "target_ir_true": "lit(-6)"
+    },
+    {
+      "canonical_text": "49",
+      "exact_match": true,
+      "expression_family": "literal_only",
+      "failure_reason": null,
+      "input_mode": "arabic_math_expression",
+      "input_text": "49",
+      "sample_id": "jm-v070-000005",
+      "structure_policy": "literal_value",
+      "target_branch_path": [
+        [
+          "task_scope",
+          "programming"
+        ],
+        [
+          "language_target",
+          "math_expression_context"
+        ],
+        [
+          "semantic_domain",
+          "arithmetic"
+        ],
+        [
+          "arithmetic_family",
+          "literal_only"
+        ],
+        [
+          "structure_policy",
+          "literal_value"
+        ],
+        [
+          "slot_binding_policy",
+          "surface_number_order"
+        ],
+        [
+          "target_builder",
+          "canonical_arithmetic_targetir"
+        ]
+      ],
+      "target_ir_pred": "lit(49)",
+      "target_ir_true": "lit(49)"
+    },
+    {
+      "canonical_text": "49",
+      "exact_match": true,
+      "expression_family": "literal_only",
+      "failure_reason": null,
+      "input_mode": "zh_number_expression",
+      "input_text": "四十九",
+      "sample_id": "jm-v070-000006",
+      "structure_policy": "literal_value",
+      "target_branch_path": [
+        [
+          "task_scope",
+          "programming"
+        ],
+        [
+          "language_target",
+          "math_expression_context"
+        ],
+        [
+          "semantic_domain",
+          "arithmetic"
+        ],
+        [
+          "arithmetic_family",
+          "literal_only"
+        ],
+        [
+          "structure_policy",
+          "literal_value"
+        ],
+        [
+          "slot_binding_policy",
+          "chinese_number_order"
+        ],
+        [
+          "target_builder",
+          "canonical_arithmetic_targetir"
+        ]
+      ],
+      "target_ir_pred": "lit(49)",
+      "target_ir_true": "lit(49)"
+    },
+    {
+      "canonical_text": "49",
+      "exact_match": true,
+      "expression_family": "literal_only",
+      "failure_reason": null,
+      "input_mode": "paired_zh_natural",
+      "input_text": "计算四十九",
+      "sample_id": "jm-v070-000007",
+      "structure_policy": "literal_value",
+      "target_branch_path": [
+        [
+          "task_scope",
+          "programming"
+        ],
+        [
+          "language_target",
+          "implicit_C"
+        ],
+        [
+          "semantic_domain",
+          "arithmetic"
+        ],
+        [
+          "arithmetic_family",
+          "literal_only"
+        ],
+        [
+          "structure_policy",
+          "literal_value"
+        ],
+        [
+          "slot_binding_policy",
+          "chinese_number_order"
+        ],
+        [
+          "target_builder",
+          "canonical_arithmetic_targetir"
+        ]
+      ],
+      "target_ir_pred": "lit(49)",
+      "target_ir_true": "lit(49)"
+    },
+    {
+      "canonical_text": "49",
+      "exact_match": true,
+      "expression_family": "literal_only",
+      "failure_reason": null,
+      "input_mode": "mixed_zh_arabic",
+      "input_text": "输出四十九",
+      "sample_id": "jm-v070-000008",
+      "structure_policy": "literal_value",
+      "target_branch_path": [
+        [
+          "task_scope",
+          "programming"
+        ],
+        [
+          "language_target",
+          "implicit_C"
+        ],
+        [
+          "semantic_domain",
+          "arithmetic"
+        ],
+        [
+          "arithmetic_family",
+          "literal_only"
+        ],
+        [
+          "structure_policy",
+          "literal_value"
+        ],
+        [
+          "slot_binding_policy",
+          "chinese_number_order"
+        ],
+        [
+          "target_builder",
+          "canonical_arithmetic_targetir"
+        ]
+      ],
+      "target_ir_pred": "lit(49)",
+      "target_ir_true": "lit(49)"
+    },
+    {
+      "canonical_text": "5",
+      "exact_match": true,
+      "expression_family": "literal_only",
+      "failure_reason": null,
+      "input_mode": "arabic_math_expression",
+      "input_text": "5",
+      "sample_id": "jm-v070-000009",
+      "structure_policy": "literal_value",
+      "target_branch_path": [
+        [
+          "task_scope",
+          "programming"
+        ],
+        [
+          "language_target",
+          "math_expression_context"
+        ],
+        [
+          "semantic_domain",
+          "arithmetic"
+        ],
+        [
+          "arithmetic_family",
+          "literal_only"
+        ],
+        [
+          "structure_policy",
+          "literal_value"
+        ],
+        [
+          "slot_binding_policy",
+          "surface_number_order"
+        ],
+        [
+          "target_builder",
+          "canonical_arithmetic_targetir"
+        ]
+      ],
+      "target_ir_pred": "lit(5)",
+      "target_ir_true": "lit(5)"
+    },
+    {
+      "canonical_text": "5",
+      "exact_match": true,
+      "expression_family": "literal_only",
+      "failure_reason": null,
+      "input_mode": "zh_number_expression",
+      "input_text": "五",
+      "sample_id": "jm-v070-000010",
+      "structure_policy": "literal_value",
+      "target_branch_path": [
+        [
+          "task_scope",
+          "programming"
+        ],
+        [
+          "language_target",
+          "math_expression_context"
+        ],
+        [
+          "semantic_domain",
+          "arithmetic"
+        ],
+        [
+          "arithmetic_family",
+          "literal_only"
+        ],
+        [
+          "structure_policy",
+          "literal_value"
+        ],
+        [
+          "slot_binding_policy",
+          "chinese_number_order"
+        ],
+        [
+          "target_builder",
+          "canonical_arithmetic_targetir"
+        ]
+      ],
+      "target_ir_pred": "lit(5)",
+      "target_ir_true": "lit(5)"
+    },
+    {
+      "canonical_text": "5",
+      "exact_match": true,
+      "expression_family": "literal_only",
+      "failure_reason": null,
+      "input_mode": "paired_zh_natural",
+      "input_text": "计算五",
+      "sample_id": "jm-v070-000011",
+      "structure_policy": "literal_value",
+      "target_branch_path": [
+        [
+          "task_scope",
+          "programming"
+        ],
+        [
+          "language_target",
+          "implicit_C"
+        ],
+        [
+          "semantic_domain",
+          "arithmetic"
+        ],
+        [
+          "arithmetic_family",
+          "literal_only"
+        ],
+        [
+          "structure_policy",
+          "literal_value"
+        ],
+        [
+          "slot_binding_policy",
+          "chinese_number_order"
+        ],
+        [
+          "target_builder",
+          "canonical_arithmetic_targetir"
+        ]
+      ],
+      "target_ir_pred": "lit(5)",
+      "target_ir_true": "lit(5)"
+    },
+    {
+      "canonical_text": "5",
+      "exact_match": true,
+      "expression_family": "literal_only",
+      "failure_reason": null,
+      "input_mode": "mixed_zh_arabic",
+      "input_text": "输出五",
+      "sample_id": "jm-v070-000012",
+      "structure_policy": "literal_value",
+      "target_branch_path": [
+        [
+          "task_scope",
+          "programming"
+        ],
+        [
+          "language_target",
+          "implicit_C"
+        ],
+        [
+          "semantic_domain",
+          "arithmetic"
+        ],
+        [
+          "arithmetic_family",
+          "literal_only"
+        ],
+        [
+          "structure_policy",
+          "literal_value"
+        ],
+        [
+          "slot_binding_policy",
+          "chinese_number_order"
+        ],
+        [
+          "target_builder",
+          "canonical_arithmetic_targetir"
+        ]
+      ],
+      "target_ir_pred": "lit(5)",
+      "target_ir_true": "lit(5)"
+    },
+    {
+      "canonical_text": "34",
+      "exact_match": true,
+      "expression_family": "literal_only",
+      "failure_reason": null,
+      "input_mode": "arabic_math_expression",
+      "input_text": "34",
+      "sample_id": "jm-v070-000013",
+      "structure_policy": "literal_value",
+      "target_branch_path": [
+        [
+          "task_scope",
+          "programming"
+        ],
+        [
+          "language_target",
+          "math_expression_context"
+        ],
+        [
+          "semantic_domain",
+          "arithmetic"
+        ],
+        [
+          "arithmetic_family",
+          "literal_only"
+        ],
+        [
+          "structure_policy",
+          "literal_value"
+        ],
+        [
+          "slot_binding_policy",
+          "surface_number_order"
+        ],
+        [
+          "target_builder",
+          "canonical_arithmetic_targetir"
+        ]
+      ],
+      "target_ir_pred": "lit(34)",
+      "target_ir_true": "lit(34)"
+    },
+    {
+      "canonical_text": "34",
+      "exact_match": true,
+      "expression_family": "literal_only",
+      "failure_reason": null,
+      "input_mode": "zh_number_expression",
+      "input_text": "三十四",
+      "sample_id": "jm-v070-000014",
+      "structure_policy": "literal_value",
+      "target_branch_path": [
+        [
+          "task_scope",
+          "programming"
+        ],
+        [
+          "language_target",
+          "math_expression_context"
+        ],
+        [
+          "semantic_domain",
+          "arithmetic"
+        ],
+        [
+          "arithmetic_family",
+          "literal_only"
+        ],
+        [
+          "structure_policy",
+          "literal_value"
+        ],
+        [
+          "slot_binding_policy",
+          "chinese_number_order"
+        ],
+        [
+          "target_builder",
+          "canonical_arithmetic_targetir"
+        ]
+      ],
+      "target_ir_pred": "lit(34)",
+      "target_ir_true": "lit(34)"
+    },
+    {
+      "canonical_text": "34",
+      "exact_match": true,
+      "expression_family": "literal_only",
+      "failure_reason": null,
+      "input_mode": "paired_zh_natural",
+      "input_text": "计算三十四",
+      "sample_id": "jm-v070-000015",
+      "structure_policy": "literal_value",
+      "target_branch_path": [
+        [
+          "task_scope",
+          "programming"
+        ],
+        [
+          "language_target",
+          "implicit_C"
+        ],
+        [
+          "semantic_domain",
+          "arithmetic"
+        ],
+        [
+          "arithmetic_family",
+          "literal_only"
+        ],
+        [
+          "structure_policy",
+          "literal_value"
+        ],
+        [
+          "slot_binding_policy",
+          "chinese_number_order"
+        ],
+        [
+          "target_builder",
+          "canonical_arithmetic_targetir"
+        ]
+      ],
+      "target_ir_pred": "lit(34)",
+      "target_ir_true": "lit(34)"
+    },
+    {
+      "canonical_text": "34",
+      "exact_match": true,
+      "expression_family": "literal_only",
+      "failure_reason": null,
+      "input_mode": "mixed_zh_arabic",
+      "input_text": "输出三十四",
+      "sample_id": "jm-v070-000016",
+      "structure_policy": "literal_value",
+      "target_branch_path": [
+        [
+          "task_scope",
+          "programming"
+        ],
+        [
+          "language_target",
+          "implicit_C"
+        ],
+        [
+          "semantic_domain",
+          "arithmetic"
+        ],
+        [
+          "arithmetic_family",
+          "literal_only"
+        ],
+        [
+          "structure_policy",
+          "literal_value"
+        ],
+        [
+          "slot_binding_policy",
+          "chinese_number_order"
+        ],
+        [
+          "target_builder",
+          "canonical_arithmetic_targetir"
+        ]
+      ],
+      "target_ir_pred": "lit(34)",
+      "target_ir_true": "lit(34)"
+    },
+    {
+      "canonical_text": "28",
+      "exact_match": true,
+      "expression_family": "literal_only",
+      "failure_reason": null,
+      "input_mode": "arabic_math_expression",
+      "input_text": "28",
+      "sample_id": "jm-v070-000017",
+      "structure_policy": "literal_value",
+      "target_branch_path": [
+        [
+          "task_scope",
+          "programming"
+        ],
+        [
+          "language_target",
+          "math_expression_context"
+        ],
+        [
+          "semantic_domain",
+          "arithmetic"
+        ],
+        [
+          "arithmetic_family",
+          "literal_only"
+        ],
+        [
+          "structure_policy",
+          "literal_value"
+        ],
+        [
+          "slot_binding_policy",
+          "surface_number_order"
+        ],
+        [
+          "target_builder",
+          "canonical_arithmetic_targetir"
+        ]
+      ],
+      "target_ir_pred": "lit(28)",
+      "target_ir_true": "lit(28)"
+    },
+    {
+      "canonical_text": "28",
+      "exact_match": true,
+      "expression_family": "literal_only",
+      "failure_reason": null,
+      "input_mode": "zh_number_expression",
+      "input_text": "二十八",
+      "sample_id": "jm-v070-000018",
+      "structure_policy": "literal_value",
+      "target_branch_path": [
+        [
+          "task_scope",
+          "programming"
+        ],
+        [
+          "language_target",
+          "math_expression_context"
+        ],
+        [
+          "semantic_domain",
+          "arithmetic"
+        ],
+        [
+          "arithmetic_family",
+          "literal_only"
+        ],
+        [
+          "structure_policy",
+          "literal_value"
+        ],
+        [
+          "slot_binding_policy",
+          "chinese_number_order"
+        ],
+        [
+          "target_builder",
+          "canonical_arithmetic_targetir"
+        ]
+      ],
+      "target_ir_pred": "lit(28)",
+      "target_ir_true": "lit(28)"
+    },
+    {
+      "canonical_text": "28",
+      "exact_match": true,
+      "expression_family": "literal_only",
+      "failure_reason": null,
+      "input_mode": "paired_zh_natural",
+      "input_text": "计算二十八",
+      "sample_id": "jm-v070-000019",
+      "structure_policy": "literal_value",
+      "target_branch_path": [
+        [
+          "task_scope",
+          "programming"
+        ],
+        [
+          "language_target",
+          "implicit_C"
+        ],
+        [
+          "semantic_domain",
+          "arithmetic"
+        ],
+        [
+          "arithmetic_family",
+          "literal_only"
+        ],
+        [
+          "structure_policy",
+          "literal_value"
+        ],
+        [
+          "slot_binding_policy",
+          "chinese_number_order"
+        ],
+        [
+          "target_builder",
+          "canonical_arithmetic_targetir"
+        ]
+      ],
+      "target_ir_pred": "lit(28)",
+      "target_ir_true": "lit(28)"
+    },
+    {
+      "canonical_text": "28",
+      "exact_match": true,
+      "expression_family": "literal_only",
+      "failure_reason": null,
+      "input_mode": "mixed_zh_arabic",
+      "input_text": "输出二十八",
+      "sample_id": "jm-v070-000020",
+      "structure_policy": "literal_value",
+      "target_branch_path": [
+        [
+          "task_scope",
+          "programming"
+        ],
+        [
+          "language_target",
+          "implicit_C"
+        ],
+        [
+          "semantic_domain",
+          "arithmetic"
+        ],
+        [
+          "arithmetic_family",
+          "literal_only"
+        ],
+        [
+          "structure_policy",
+          "literal_value"
+        ],
+        [
+          "slot_binding_policy",
+          "chinese_number_order"
+        ],
+        [
+          "target_builder",
+          "canonical_arithmetic_targetir"
+        ]
+      ],
+      "target_ir_pred": "lit(28)",
+      "target_ir_true": "lit(28)"
+    }
+  ],
+  "first_wrong_layer_distribution": {
+    "arithmetic_family": 131,
+    "language_target": 86,
+    "task_scope": 33
+  },
+  "literal_only_alignment_rate": 1.0,
+  "literal_only_targetir_exact_match": 0.0,
+  "low_score_correct_without_action_count": 0,
+  "mode": "quick",
+  "necrosis_queue_added_count": 992,
+  "ood_false_accept_rate": 0.33,
+  "ood_rejection_rate": 0.67,
+  "ood_sample_count": 100,
+  "parenthesized_alignment_rate": 1.0,
+  "path_forcing_exact_match_rate": 1.0,
+  "path_forcing_failure_by_expression_family": {},
+  "path_forcing_failure_by_structure_policy": {},
+  "path_forcing_failure_count": 0,
+  "path_forcing_literal_only_success_rate": 1.0,
+  "path_forcing_parentheses_success_rate": 1.0,
+  "path_forcing_precedence_success_rate": 1.0,
+  "path_forcing_sample_count": 450,
+  "precedence_alignment_rate": 1.0,
+  "precedence_div_add_success_rate": 0.0,
+  "ranking_failure_rate": 0.0,
+  "regrowth_queue_added_count": 5262,
+  "router_candidate_failure_rate": 0.3333,
+  "stable_root_buffer_added_count": 7408,
+  "supported_sample_count": 450,
+  "synthesis_capability_failure_rate": 0.0,
+  "synthesizable_by_forced_path_rate": 1.0,
+  "target_ir_exact_match_beam_oracle": 0.0,
+  "target_ir_exact_match_top1": 0.0,
+  "train_low_score_correct_count": 8400,
+  "train_sample_count": 300
+}

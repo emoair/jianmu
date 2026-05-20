@@ -112,6 +112,11 @@ def make_random_neuron(layer_name: str, option: str, neuron_id: str, rng: random
         "has_printf_token",
         "has_main_token",
         "has_technical_token",
+        "canonical_changed",
+        "contains_canonicalized_zh_number",
+        "unary_negative_only",
+        "signed_literal_only",
+        "binary_minus_present",
     ]
     weights = {rng.choice(feature_names): rng.randint(-2, 3) for _ in range(4)}
     return BranchNeuron(
@@ -131,6 +136,9 @@ def _default_weights(layer_name: str, option: str) -> Dict[str, int]:
             "contains_printf": 12 if option == "programming" else -3,
             "contains_arithmetic_operator": 18 if option == "programming" else -5,
             "is_pure_math_expression": 18 if option == "programming" else -5,
+            "number_count": 12 if option == "programming" else -4,
+            "canonical_changed": 14 if option == "programming" else -4,
+            "contains_canonicalized_zh_number": 14 if option == "programming" else -4,
             "unrelated_keyword_signal": 30 if option in {"non_programming", "reject_non_programming"} else -12,
             "dangerous_keyword_signal": 35 if option == "reject_out_of_scope" else -10,
             "has_english_sentence": 30 if option == "unsupported" else -10,
@@ -143,12 +151,17 @@ def _default_weights(layer_name: str, option: str) -> Dict[str, int]:
             "input_mode_guess_zh_technical_mixed": 25 if option == "explicit_C" else -5,
             "input_mode_guess_zh_natural": 25 if option == "implicit_C" else -5,
             "input_mode_guess_math_expression": 30 if option == "math_expression_context" else -5,
+            "number_count": 8 if option in {"implicit_C", "math_expression_context"} else -2,
+            "canonical_changed": 14 if option in {"implicit_C", "math_expression_context"} else -3,
+            "contains_canonicalized_zh_number": 16 if option in {"implicit_C", "math_expression_context"} else -4,
             "has_english_sentence": 35 if option == "reject_unsupported_language" else -12,
             "contains_chinese_chars": 12 if option in {"implicit_C", "explicit_C"} else -4,
         }
     if layer_name == "semantic_domain":
         return {
             "contains_arithmetic_operator": 25 if option == "arithmetic" else -8,
+            "number_count": 12 if option == "arithmetic" else -4,
+            "signed_literal_only": 20 if option == "arithmetic" else -8,
             "unrelated_keyword_signal": 25 if option == "unsupported" else -8,
         }
     if layer_name == "support_gate":
@@ -156,19 +169,42 @@ def _default_weights(layer_name: str, option: str) -> Dict[str, int]:
             "has_english_sentence": 40 if option == "unsupported" else -20,
             "unrelated_keyword_signal": 40 if option == "unsupported" else -20,
             "contains_arithmetic_operator": 20 if option == "supported" else -8,
+            "number_count": 10 if option == "supported" else -4,
+            "signed_literal_only": 16 if option == "supported" else -8,
         }
     if layer_name == "arithmetic_family":
+        if option == "literal_only":
+            return {
+                "signed_literal_only": 45,
+                "unary_negative_only": 45,
+                "number_count": 28,
+                "operator_count": -35,
+                "is_pure_math_expression": 12,
+                "canonical_changed": 10,
+                "contains_output": 8,
+            }
         return {
+            "signed_literal_only": -18,
+            "unary_negative_only": -18,
             "contains_plus": 25 if option == "addition" else -3,
-            "contains_minus": 25 if option == "subtraction" else -3,
+            "contains_minus": 20 if option == "subtraction" else -3,
+            "binary_minus_present": 35 if option == "subtraction" else -5,
             "contains_mul": 25 if option == "multiplication" else -3,
             "contains_div": 25 if option == "exact_division" else -3,
             "contains_parentheses": 35 if option == "parentheses" else -3,
             "operator_count": 12 if option == "mixed_precedence" else 0,
         }
     if layer_name == "structure_policy":
+        if option == "literal_value":
+            return {
+                "signed_literal_only": 45,
+                "unary_negative_only": 45,
+                "number_count": 26,
+                "operator_count": -30,
+            }
         return {
             "operator_count": 20 if option == "binary_operation" else 0,
+            "signed_literal_only": -20 if option in {"binary_operation", "precedence_tree", "parenthesized_tree"} else 0,
             "contains_parentheses": 35 if option == "parenthesized_tree" else -5,
         }
     if layer_name == "slot_binding_policy":
@@ -178,5 +214,11 @@ def _default_weights(layer_name: str, option: str) -> Dict[str, int]:
             "number_count": 10 if option == "surface_number_order" else 0,
         }
     if layer_name == "target_builder":
-        return {"contains_arithmetic_operator": 20 if option == "canonical_arithmetic_targetir" else -5}
+        return {
+            "contains_arithmetic_operator": 20 if option == "canonical_arithmetic_targetir" else -5,
+            "number_count": 18 if option == "canonical_arithmetic_targetir" else -5,
+            "signed_literal_only": 24 if option == "canonical_arithmetic_targetir" else -8,
+            "prev:semantic_domain=arithmetic": 18 if option == "canonical_arithmetic_targetir" else -6,
+            "prev:support_gate=supported": 10 if option == "canonical_arithmetic_targetir" else -4,
+        }
     return {}
