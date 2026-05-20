@@ -23,10 +23,12 @@ class PromotionCandidate:
 def evaluate_colony_for_promotion(colony, heldout_eval=None, ood_samples=None, min_support: int = 2, stability_threshold: float = 3.0, toxicity_threshold: float = 1.0) -> PromotionCandidate:
     support = len(colony.stable_roots) + int(colony.colony_stability_score > 0)
     decision = "keep_local"
-    if colony.toxicity_score > toxicity_threshold:
+    if colony.toxicity_score > toxicity_threshold and colony.toxicity_score > colony.colony_stability_score:
         decision = "quarantine"
     elif support >= min_support and colony.colony_stability_score >= stability_threshold:
         decision = "promote"
+    elif colony.colony_stability_score <= 0 and colony.toxicity_score <= 0:
+        decision = "reject"
     updates = list(colony.local_prior_updates)
     return PromotionCandidate(
         colony_id=colony.colony_id,

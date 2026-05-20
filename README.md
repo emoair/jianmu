@@ -316,3 +316,7 @@ v0.7.7 explores RootFork Global Assimilation（根叉全局吸收）. It turns s
 ## v0.7.8 Development Direction
 
 v0.7.8 explores Nutrient-Zone Root Colony（养分区根群）. Instead of broadcasting sub-beam rescued paths（子束救援路径） into global BranchChain（全局分支链） weights, JianMu groups rescued paths into local Nutrient Zones（养分区）, lets nourished root tips（有养分根尖） proliferate locally, tracks Toxic Nutrient（毒性养分） such as OOD false accept（分布外误接收）, and only promotes stable low-toxicity colonies（低毒稳定根群） through small rollback-safe updates.
+
+## v0.7.9 Development Direction
+
+v0.7.9 explores Colony Nutrient Activation（根群养分激活）. After v0.7.8 created local Nutrient-Zone Root Colonies（养分区根群）, this version activates Local Nutrient Cycle（局部养分循环）, fixes Toxic Nutrient（毒性养分） accounting for OOD false accept（分布外误接收）, introduces Keep-Local Colony（保持局部根群）, and uses Shadow Promotion（影子晋升） instead of directly modifying global BranchChain（全局分支链） weights.

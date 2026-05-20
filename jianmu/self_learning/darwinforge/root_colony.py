@@ -20,6 +20,8 @@ class RootTip:
     starvation_counter: int = 0
     ttl: int = 5
     state: str = "active"
+    positive_cycle_count: int = 0
+    stable_prefix: List[List[str]] = field(default_factory=list)
 
     def to_dict(self) -> Dict:
         return dict(self.__dict__)
@@ -76,14 +78,14 @@ def proliferate_colony(colony: RootColony, nutrient_signals: Dict[str, Dict], co
         tip.nutrient_history.append(positive)
         tip.toxicity_history.append(toxic)
         if toxic > 0:
-            tip.toxicity_history.append(toxic)
             tip.starvation_counter += 2
             tip.state = "necrosis_candidate"
             colony.toxicity_score += toxic
         elif positive > 0:
             tip.starvation_counter = 0
             tip.ttl = min(config.max_ttl, tip.ttl + 1)
-            tip.state = "stable" if sum(1 for value in tip.nutrient_history[-3:] if value > 0) >= 3 else "nourished"
+            tip.positive_cycle_count += 1
+            tip.state = "stable" if tip.positive_cycle_count >= 2 else "nourished"
             colony.colony_stability_score += positive
             if len(colony.root_tips) + len(new_tips) < colony.local_resource_budget:
                 for index in range(min(config.max_new_tips_per_nourished_root, colony.local_resource_budget - len(colony.root_tips) - len(new_tips))):
@@ -102,6 +104,19 @@ def proliferate_colony(colony: RootColony, nutrient_signals: Dict[str, Dict], co
             tip.starvation_counter += 1
             tip.ttl -= 1
             tip.state = "starving"
+            if tip.path_prefix and tip.starvation_counter >= 2 and len(colony.replacement_queue) < config.max_replacement_roots_per_generation:
+                replacement = RootTip(
+                    tip_id=f"{tip.tip_id}:replacement:{len(colony.replacement_queue)}",
+                    zone_id=tip.zone_id,
+                    parent_root_id=tip.tip_id,
+                    path_prefix=list(tip.path_prefix),
+                    current_layer=tip.current_layer,
+                    branch_path=list(tip.path_prefix),
+                    ttl=config.default_ttl,
+                    state="replacement",
+                    stable_prefix=list(tip.path_prefix),
+                )
+                colony.replacement_queue.append(replacement)
         if tip.starvation_counter >= config.starvation_patience or tip.ttl <= 0:
             tip.state = "necrotic_archived"
             colony.necrotic_archive.append(tip)
@@ -110,6 +125,7 @@ def proliferate_colony(colony: RootColony, nutrient_signals: Dict[str, Dict], co
         elif tip.state == "starving" and tip not in colony.starving_roots:
             colony.starving_roots.append(tip)
     colony.root_tips.extend(new_tips)
+    colony.root_tips.extend(colony.replacement_queue)
     colony.root_tips = colony.root_tips[: colony.local_resource_budget]
     return colony
 
