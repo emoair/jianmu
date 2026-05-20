@@ -1,0 +1,3 @@
+{"eval_sample_count": 150, "ood_sample_count": 100, "run_id": "small-5e68814a7c1c", "runtime_seconds": 24.872, "scale_label": "small", "train_sample_count": 300}
+{"eval_sample_count": 300, "ood_sample_count": 150, "run_id": "medium-d55be791b8ea", "runtime_seconds": 166.9696, "scale_label": "medium", "train_sample_count": 800}
+{"eval_sample_count": 600, "ood_sample_count": 200, "run_id": "large-1833179351e0", "runtime_seconds": 695.3677, "scale_label": "large", "train_sample_count": 1600}

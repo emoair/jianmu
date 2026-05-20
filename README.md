@@ -320,3 +320,7 @@ v0.7.8 explores Nutrient-Zone Root Colony（养分区根群）. Instead of broad
 ## v0.7.9 Development Direction
 
 v0.7.9 explores Colony Nutrient Activation（根群养分激活）. After v0.7.8 created local Nutrient-Zone Root Colonies（养分区根群）, this version activates Local Nutrient Cycle（局部养分循环）, fixes Toxic Nutrient（毒性养分） accounting for OOD false accept（分布外误接收）, introduces Keep-Local Colony（保持局部根群）, and uses Shadow Promotion（影子晋升） instead of directly modifying global BranchChain（全局分支链） weights.
+
+## v0.8.0 Development Direction
+
+v0.8.0 explores Colony Scale Stress Probe（根群规模压力探针）. After v0.7.9 activated local colony lifecycle（局部根群生命周期）, this version runs larger shadow-only scale probes（只影子晋升的大规模探针） to determine whether JianMu is currently scale-limited（规模受限）, promotion-limited（晋升受限）, routing-limited（路由受限）, OOD-limited（分布外受限）, or resource-limited（资源受限）.

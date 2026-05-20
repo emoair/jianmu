@@ -1,0 +1,8 @@
+{
+  "diagnosis_summary": "scale_limited（规模受限） signal: larger scale improved local/global metrics without OOD regression. ood_limited（分布外受限） signal: OOD false accept or toxic nutrient remains high.",
+  "ood_limited_likely": true,
+  "promotion_limited_likely": false,
+  "resource_limited_likely": false,
+  "routing_limited_likely": false,
+  "scale_limited_likely": true
+}
