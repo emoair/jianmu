@@ -1,0 +1,206 @@
+{
+  "alternative_valid_count": 0,
+  "annealing_phases_completed": [
+    "early",
+    "late",
+    "middle"
+  ],
+  "artifact_suffix_stripped_count": 699,
+  "by_input_mode": {
+    "arabic_math_expression": {
+      "candidate_space_failure_rate": 1.0,
+      "correct_targetir_in_beam_rate": 0.0,
+      "first_wrong_layer_distribution": {
+        "language_target": 32,
+        "task_scope": 5
+      },
+      "ood_false_accept_rate": 0.0,
+      "ood_rejection_rate": 0.0,
+      "ranking_failure_rate": 0.0,
+      "sample_count": 37,
+      "target_ir_exact_match_beam_oracle": 0.0,
+      "target_ir_exact_match_top1": 0.0
+    },
+    "mixed_zh_arabic": {
+      "candidate_space_failure_rate": 1.0,
+      "correct_targetir_in_beam_rate": 0.0,
+      "first_wrong_layer_distribution": {
+        "language_target": 21,
+        "task_scope": 17
+      },
+      "ood_false_accept_rate": 0.0,
+      "ood_rejection_rate": 0.0,
+      "ranking_failure_rate": 0.0,
+      "sample_count": 38,
+      "target_ir_exact_match_beam_oracle": 0.0,
+      "target_ir_exact_match_top1": 0.0
+    },
+    "ood_english": {
+      "candidate_space_failure_rate": 0.0,
+      "correct_targetir_in_beam_rate": 0.0,
+      "first_wrong_layer_distribution": {
+        "language_target": 34
+      },
+      "ood_false_accept_rate": 0.0,
+      "ood_rejection_rate": 1.0,
+      "ranking_failure_rate": 0.0,
+      "sample_count": 34,
+      "target_ir_exact_match_beam_oracle": 0.0,
+      "target_ir_exact_match_top1": 0.0
+    },
+    "ood_unrelated": {
+      "candidate_space_failure_rate": 0.0,
+      "correct_targetir_in_beam_rate": 0.0,
+      "first_wrong_layer_distribution": {},
+      "ood_false_accept_rate": 0.0,
+      "ood_rejection_rate": 1.0,
+      "ranking_failure_rate": 0.0,
+      "sample_count": 33,
+      "target_ir_exact_match_beam_oracle": 0.0,
+      "target_ir_exact_match_top1": 0.0
+    },
+    "paired_zh_natural": {
+      "candidate_space_failure_rate": 1.0,
+      "correct_targetir_in_beam_rate": 0.0,
+      "first_wrong_layer_distribution": {
+        "language_target": 21,
+        "task_scope": 17
+      },
+      "ood_false_accept_rate": 0.0,
+      "ood_rejection_rate": 0.0,
+      "ranking_failure_rate": 0.0,
+      "sample_count": 38,
+      "target_ir_exact_match_beam_oracle": 0.0,
+      "target_ir_exact_match_top1": 0.0
+    },
+    "unsupported_arithmetic": {
+      "candidate_space_failure_rate": 0.0,
+      "correct_targetir_in_beam_rate": 0.0,
+      "first_wrong_layer_distribution": {
+        "language_target": 33
+      },
+      "ood_false_accept_rate": 0.0,
+      "ood_rejection_rate": 1.0,
+      "ranking_failure_rate": 0.0,
+      "sample_count": 33,
+      "target_ir_exact_match_beam_oracle": 0.0,
+      "target_ir_exact_match_top1": 0.0
+    },
+    "zh_number_expression": {
+      "candidate_space_failure_rate": 1.0,
+      "correct_targetir_in_beam_rate": 0.0,
+      "first_wrong_layer_distribution": {
+        "language_target": 32,
+        "task_scope": 5
+      },
+      "ood_false_accept_rate": 0.0,
+      "ood_rejection_rate": 0.0,
+      "ranking_failure_rate": 0.0,
+      "sample_count": 37,
+      "target_ir_exact_match_beam_oracle": 0.0,
+      "target_ir_exact_match_top1": 0.0
+    }
+  },
+  "by_structure_policy": {
+    "None": {
+      "candidate_space_failure_rate": 0.0,
+      "correct_targetir_in_beam_rate": 0.0,
+      "first_wrong_layer_distribution": {
+        "language_target": 67
+      },
+      "ood_false_accept_rate": 0.0,
+      "ood_rejection_rate": 1.0,
+      "ranking_failure_rate": 0.0,
+      "sample_count": 100,
+      "target_ir_exact_match_beam_oracle": 0.0,
+      "target_ir_exact_match_top1": 0.0
+    },
+    "binary_operation": {
+      "candidate_space_failure_rate": 1.0,
+      "correct_targetir_in_beam_rate": 0.0,
+      "first_wrong_layer_distribution": {
+        "task_scope": 20
+      },
+      "ood_false_accept_rate": 0.0,
+      "ood_rejection_rate": 0.0,
+      "ranking_failure_rate": 0.0,
+      "sample_count": 20,
+      "target_ir_exact_match_beam_oracle": 0.0,
+      "target_ir_exact_match_top1": 0.0
+    },
+    "parenthesized_tree": {
+      "candidate_space_failure_rate": 1.0,
+      "correct_targetir_in_beam_rate": 0.0,
+      "first_wrong_layer_distribution": {
+        "language_target": 24,
+        "task_scope": 24
+      },
+      "ood_false_accept_rate": 0.0,
+      "ood_rejection_rate": 0.0,
+      "ranking_failure_rate": 0.0,
+      "sample_count": 48,
+      "target_ir_exact_match_beam_oracle": 0.0,
+      "target_ir_exact_match_top1": 0.0
+    },
+    "precedence_tree": {
+      "candidate_space_failure_rate": 1.0,
+      "correct_targetir_in_beam_rate": 0.0,
+      "first_wrong_layer_distribution": {
+        "language_target": 82
+      },
+      "ood_false_accept_rate": 0.0,
+      "ood_rejection_rate": 0.0,
+      "ranking_failure_rate": 0.0,
+      "sample_count": 82,
+      "target_ir_exact_match_beam_oracle": 0.0,
+      "target_ir_exact_match_top1": 0.0
+    }
+  },
+  "candidate_space_failure_rate": 1.0,
+  "config": {
+    "beam_size": 24,
+    "canonicalization_enabled": true,
+    "clone_count_per_layer": 2,
+    "eval_limit": 150,
+    "generations": 5,
+    "mode": "quick",
+    "ood_limit": 100,
+    "perturbation_scale": 0.15,
+    "population_per_layer": 24,
+    "proposals_per_layer": 6,
+    "seed": 42,
+    "stochastic_samples_per_layer": 3,
+    "train_limit": 300
+  },
+  "correct_targetir_in_beam_rate": 0.0,
+  "dataset_dir": "datasets\\v0_7_0",
+  "eval_sample_count": 150,
+  "first_wrong_layer_distribution": {
+    "language_target": 173,
+    "task_scope": 44
+  },
+  "high_score_wrong_necrosis_count": 1412,
+  "literal_only_targetir_exact_match": 0.0,
+  "low_score_correct_count": 88,
+  "lucky_correct_count": 0,
+  "lucky_correct_necrosis_count": 0,
+  "necrosis_candidate_count": 1412,
+  "necrosis_decay_count": 0,
+  "necrosis_pruned_count": 0,
+  "nutrient_contrast_event_count": 0,
+  "ood_false_accept_rate": 0.0,
+  "ood_rejection_rate": 1.0,
+  "ood_sample_count": 100,
+  "positive_negative_margin_avg": 0.0,
+  "precedence_div_add_success_rate": 0.0,
+  "ranking_failure_rate": 0.0,
+  "regrowth_event_count": 0,
+  "regrowth_success_count": 0,
+  "runtime_seconds": 5.6474,
+  "sample_count": 250,
+  "target_ir_exact_match_beam_oracle": 0.0,
+  "target_ir_exact_match_top1": 0.0,
+  "train_sample_count": 300,
+  "undervalued_correct_count": 88,
+  "unstable_correct_count": 0
+}

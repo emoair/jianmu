@@ -85,7 +85,7 @@ def diagnose_paths(sample: Dict, candidate_records: List, canonical_text: str = 
 
 
 def _path_matches(decisions, target_path) -> bool:
-    pairs = [(decision.layer_name, decision.selected) for decision in decisions]
+    pairs = _normalize_pairs([(decision.layer_name, decision.selected) for decision in decisions], target_path)
     target_pairs = [tuple(item) for item in target_path]
     if not target_pairs:
         return False
@@ -93,10 +93,17 @@ def _path_matches(decisions, target_path) -> bool:
 
 
 def _first_wrong(decisions, target_path):
-    by_layer = {decision.layer_name: decision.selected for decision in decisions}
+    pairs = _normalize_pairs([(decision.layer_name, decision.selected) for decision in decisions], target_path)
+    by_layer = {layer: selected for layer, selected in pairs}
     for layer, expected in target_path:
         actual = by_layer.get(layer)
         if actual != expected:
             return layer, expected, actual
     return None, None, None
 
+
+def _normalize_pairs(pairs, target_path):
+    target_layers = {layer for layer, _ in target_path}
+    if "support_gate" not in target_layers:
+        return [(layer, selected) for layer, selected in pairs if not (layer == "support_gate" and selected == "supported")]
+    return pairs

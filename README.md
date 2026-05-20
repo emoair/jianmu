@@ -288,3 +288,11 @@ ensembles, lets complete paths reach TargetIR（目标中间表示）, then uses
 Diagnostics（完整路径诊断） to decide whether failure is caused by candidate-space
 absence（候选空间缺失）, ranking failure（排序失败）, upstream boundary failure（上游边界失败）,
 or synthesis failure（合成失败）.
+
+## v0.7.4 Development Direction
+
+v0.7.4 introduces RootForge Growth Dynamics（根铸生长动力学）. It repairs
+candidate-space gaps such as literal-only TargetIR（字面量目标中间表示） and selected
+precedence patterns（优先级结构）, then explores Nutrient-Guided Regrowth（养分引导再生）,
+Root Necrosis（根系坏死）, Nutrient Contrast（养分对比）, and Annealed Pruning（退火枝剪）
+over canonicalized BranchChain（规范化分支链） paths.

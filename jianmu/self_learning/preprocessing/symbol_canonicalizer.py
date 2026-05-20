@@ -93,7 +93,9 @@ FILLER_WORDS = [
 def canonicalize_symbols(text: str) -> CanonicalizationResult:
     """Canonical Symbol Layer（规范符号层）: raw text -> canonical text and source map only."""
     raw_text = text
-    working, rewrite_tokens, warnings = _rewrite_parenthesis_phrase(raw_text)
+    cleaned_text, suffix_warnings = _strip_dataset_artifact_suffix(raw_text)
+    working, rewrite_tokens, warnings = _rewrite_parenthesis_phrase(cleaned_text)
+    warnings = suffix_warnings + warnings
     tokens: List[CanonicalToken] = list(rewrite_tokens)
     canonical_parts: List[str] = []
     index = 0
@@ -163,6 +165,13 @@ def canonicalize_symbols(text: str) -> CanonicalizationResult:
         changed=canonical_text != raw_text.strip(),
         warnings=warnings,
     )
+
+
+def _strip_dataset_artifact_suffix(text: str) -> Tuple[str, List[str]]:
+    match = re.search(r"\s*(?:（|\()jm-v070-[^)）]+(?:）|\))\s*$", text)
+    if not match:
+        return text, []
+    return text[: match.start()], ["stripped_dataset_artifact_suffix"]
 
 
 def _rewrite_parenthesis_phrase(text: str) -> Tuple[str, List[CanonicalToken], List[str]]:

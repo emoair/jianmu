@@ -1,0 +1,5 @@
+{"annealing_phase": "early", "effective_beam_size": 24, "effective_perturbation_scale": 0.15, "generation": 0, "pruning_strength": 0.1, "temperature": 1.0, "total_generations": 5}
+{"annealing_phase": "early", "effective_beam_size": 24, "effective_perturbation_scale": 0.15, "generation": 1, "pruning_strength": 0.1, "temperature": 1.0, "total_generations": 5}
+{"annealing_phase": "middle", "effective_beam_size": 18, "effective_perturbation_scale": 0.105, "generation": 2, "pruning_strength": 0.4, "temperature": 0.6, "total_generations": 5}
+{"annealing_phase": "late", "effective_beam_size": 12, "effective_perturbation_scale": 0.0525, "generation": 3, "pruning_strength": 0.8, "temperature": 0.25, "total_generations": 5}
+{"annealing_phase": "late", "effective_beam_size": 12, "effective_perturbation_scale": 0.0525, "generation": 4, "pruning_strength": 0.8, "temperature": 0.25, "total_generations": 5}

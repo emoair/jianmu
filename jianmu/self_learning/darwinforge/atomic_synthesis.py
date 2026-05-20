@@ -30,6 +30,10 @@ def build_arithmetic_target(decisions: Dict[str, str], features: Dict) -> Tuple[
     structure = decisions.get("structure_policy")
     numbers = list(features.get("signed_numbers", []))
     ops = features.get("operator_sequence", "")
+    if decisions.get("arithmetic_family") == "literal_only" or structure == "literal_value":
+        if len(numbers) != 1:
+            raise ValueError("literal_value requires one surface number")
+        return f"lit({numbers[0]})", f"{numbers[0]}\n"
     if len(numbers) < 2 or not ops:
         raise ValueError("missing surface slots")
     if structure == "binary_operation":
@@ -91,6 +95,18 @@ def _precedence(numbers, ops):
         return f"add(lit({a}),mul(lit({b}),lit({c})))", a + b * c
     if pattern == "*+":
         return f"add(mul(lit({a}),lit({b})),lit({c}))", a * b + c
+    if pattern == "/+":
+        if b == 0 or a % b != 0:
+            raise ValueError("unsupported precedence division")
+        return f"add(div(lit({a}),lit({b})),lit({c}))", int(a / b) + c
+    if pattern == "-*":
+        return f"sub(lit({a}),mul(lit({b}),lit({c})))", a - b * c
+    if pattern == "+/":
+        if c == 0 or b % c != 0:
+            raise ValueError("unsupported precedence division")
+        return f"add(lit({a}),div(lit({b}),lit({c})))", a + int(b / c)
+    if pattern == "*-":
+        return f"sub(mul(lit({a}),lit({b})),lit({c}))", a * b - c
     raise ValueError("unsupported precedence pattern")
 
 
@@ -105,6 +121,12 @@ def _parenthesized(numbers, ops):
         if c == 0 or (a - b) % c != 0:
             raise ValueError("unsupported parenthesized division")
         return f"div(sub(lit({a}),lit({b})),lit({c}))", int((a - b) / c)
+    if pattern == "+/":
+        if c == 0 or (a + b) % c != 0:
+            raise ValueError("unsupported parenthesized division")
+        return f"div(add(lit({a}),lit({b})),lit({c}))", int((a + b) / c)
+    if pattern == "-*":
+        return f"mul(sub(lit({a}),lit({b})),lit({c}))", (a - b) * c
     raise ValueError("unsupported parenthesized pattern")
 
 
