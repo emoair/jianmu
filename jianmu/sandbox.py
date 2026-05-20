@@ -81,7 +81,7 @@ class Sandbox:
     def __init__(self, compiler: str = None):
         self.compiler = compiler
 
-    def run(self, source_code: str, timeout: int = 5, compiler: str = None) -> SandboxResult:
+    def run(self, source_code: str, timeout: int = 15, compiler: str = None) -> SandboxResult:
         compiler, compiler_name = detect_supported_c_compiler(compiler or self.compiler)
 
         if not compiler:

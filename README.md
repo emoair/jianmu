@@ -269,3 +269,11 @@ It normalizes Chinese numerals（中文数字） and operator words（运算词�
 text（规范文本）, such as “三加二” → “3+2”, while preserving Source Map（源映射）.
 The layer does not generate TargetIR（目标中间表示） or C source; it only standardizes
 equivalent input symbols before routing and synthesis.
+
+## v0.7.2 Development Direction
+
+v0.7.2 explores Canonicalized Training Probe（规范化输入训练探针）. It compares Raw
+Input Training（原始输入训练） with Canonical Input Training（规范输入训练） by routing
+canonical_text（规范文本） from the Canonical Symbol Layer（规范符号层） into
+BranchChain（分支链） while preserving raw_text（原始文本） and Source Map（源映射）
+for evaluation.
