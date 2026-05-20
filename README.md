@@ -304,3 +304,7 @@ BranchChain（分支链） priors for Literal-Only TargetIR（单字面量目标
 fixes negative-number routing（负数路由）, adds Path-Forcing Smoke Test（强制路径冒烟测试）,
 and separates router candidate failure（路由候选失败） from AtomicSynthesis capability
 failure（原子结构合成能力失败）.
+
+## v0.7.6 Development Direction
+
+v0.7.6 introduces RootFork Sub-Beam Regrowth（根叉子束再生）. After v0.7.5 proved that supported samples are synthesizable under forced BranchPath（强制分支路径）, this version diagnoses which layer assigns low score or prunes the correct option, then starts Prefix-Conditioned Sub-Beam（前缀条件子束） regrowth from that fork point. It also adds Path-Prior Seeding（路径先验播种）, OOD Guard Balancing（分布外守卫平衡）, and Scale Ladder（规模阶梯） diagnostics.

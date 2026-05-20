@@ -1,0 +1,132 @@
+{
+  "arithmetic_supported_retention_rate": 1.0,
+  "beam_oracle_exact": 0.1,
+  "branch_neuron_updated_count": 169,
+  "config": {
+    "beam_size": 48,
+    "eval_limit": 300,
+    "exploration_quota": 2,
+    "generations": 8,
+    "ood_limit": 150,
+    "population_per_layer": 32,
+    "proposals_per_layer": 6,
+    "seed": 42,
+    "stochastic_samples_per_layer": 3,
+    "subbeam_size": 48,
+    "train_limit": 800
+  },
+  "correct_option_rank_by_layer_summary": {
+    "arithmetic_family": 1.145,
+    "language_target": 1.4975,
+    "semantic_domain": 1.0,
+    "slot_binding_policy": 2.8175,
+    "structure_policy": 1.1925,
+    "support_gate": 1.0,
+    "target_builder": 1.0,
+    "task_scope": 1.0
+  },
+  "correct_option_score_by_layer_summary": {
+    "arithmetic_family": 76.8375,
+    "language_target": 39.23,
+    "semantic_domain": 35.2725,
+    "slot_binding_policy": 5.4938,
+    "structure_policy": 68.2875,
+    "support_gate": 28.695,
+    "target_builder": 72.695,
+    "task_scope": 48.33
+  },
+  "dataset_dir": "datasets\\v0_7_0",
+  "eval_sample_count": 300,
+  "first_low_score_correct_layer_distribution": {
+    "slot_binding_policy": 147
+  },
+  "first_pruned_correct_layer_distribution": {},
+  "fork_layer_distribution": {
+    "arithmetic_family": 653,
+    "slot_binding_policy": 147
+  },
+  "global_candidate_space_failure_rate": 0.9,
+  "global_correct_targetir_in_beam_rate": 0.1,
+  "layer_seed_distribution": {
+    "arithmetic_family": 5,
+    "language_target": 4,
+    "semantic_domain": 2,
+    "slot_binding_policy": 4,
+    "structure_policy": 2,
+    "support_gate": 2,
+    "target_builder": 2,
+    "task_scope": 2
+  },
+  "literal_only_seed_count": 10,
+  "mode": "medium",
+  "ood_false_accept_after": 0.0,
+  "ood_false_accept_before": 0.0,
+  "ood_guard_branch_neuron_updated_count": 63,
+  "ood_guard_layer_distribution": {
+    "arithmetic_family": 5,
+    "language_target": 5,
+    "structure_policy": 6,
+    "support_gate": 34,
+    "task_scope": 13
+  },
+  "ood_guard_seed_count": 7,
+  "ood_rejection_after": 1.0,
+  "ood_rejection_before": 1.0,
+  "ood_sample_count": 150,
+  "path_forcing_exact_match_rate": 1.0,
+  "path_prior_seed_count": 23,
+  "precedence_seed_count": 0,
+  "rescued_sample_count": 300,
+  "runtime_seconds": 156.4285,
+  "scale_ladder_results": [
+    {
+      "beam_size": 24,
+      "candidate_space_failure_rate": 0.9,
+      "correct_targetir_in_beam_rate": 0.1,
+      "correct_targetir_in_subbeam_rate": 1.0,
+      "eval_limit": 150,
+      "generations": 4,
+      "ood_false_accept_rate": 0.6667,
+      "ood_limit": 100,
+      "runtime_seconds": 156.4265,
+      "scale": "small",
+      "skipped": false,
+      "subbeam_rescue_rate": 0.375,
+      "subbeam_size": 24,
+      "train_limit": 300
+    },
+    {
+      "beam_size": 48,
+      "candidate_space_failure_rate": 0.9,
+      "correct_targetir_in_beam_rate": 0.1,
+      "correct_targetir_in_subbeam_rate": 1.0,
+      "eval_limit": 300,
+      "generations": 8,
+      "ood_false_accept_rate": 0.6667,
+      "ood_limit": 150,
+      "runtime_seconds": 156.4265,
+      "scale": "medium",
+      "skipped": false,
+      "subbeam_rescue_rate": 0.375,
+      "subbeam_size": 48,
+      "train_limit": 800
+    },
+    {
+      "beam_size": 96,
+      "eval_limit": 500,
+      "generations": 12,
+      "ood_limit": 200,
+      "scale": "large",
+      "skip_reason": "not_run_in_bounded_probe",
+      "skipped": true,
+      "subbeam_size": 96,
+      "train_limit": 1200
+    }
+  ],
+  "scale_limited_likely": false,
+  "seeded_free_subbeam_correct_targetir_rate": 1.0,
+  "structural_failure_likely": false,
+  "subbeam_rescue_rate": 0.375,
+  "teacher_subbeam_correct_targetir_rate": 1.0,
+  "train_sample_count": 800
+}

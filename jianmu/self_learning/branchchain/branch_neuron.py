@@ -117,6 +117,10 @@ def make_random_neuron(layer_name: str, option: str, neuron_id: str, rng: random
         "unary_negative_only",
         "signed_literal_only",
         "binary_minus_present",
+        "unsupported_arithmetic_signal",
+        "division_by_zero_signal",
+        "non_exact_division_signal",
+        "unsupported_depth_signal",
     ]
     weights = {rng.choice(feature_names): rng.randint(-2, 3) for _ in range(4)}
     return BranchNeuron(
@@ -168,6 +172,7 @@ def _default_weights(layer_name: str, option: str) -> Dict[str, int]:
         return {
             "has_english_sentence": 40 if option == "unsupported" else -20,
             "unrelated_keyword_signal": 40 if option == "unsupported" else -20,
+            "unsupported_arithmetic_signal": 30 if option == "unsupported" else -10,
             "contains_arithmetic_operator": 20 if option == "supported" else -8,
             "number_count": 10 if option == "supported" else -4,
             "signed_literal_only": 16 if option == "supported" else -8,
@@ -186,6 +191,9 @@ def _default_weights(layer_name: str, option: str) -> Dict[str, int]:
         return {
             "signed_literal_only": -18,
             "unary_negative_only": -18,
+            "unsupported_arithmetic_signal": 35 if option == "unsupported" else -8,
+            "division_by_zero_signal": 35 if option == "unsupported" else -8,
+            "non_exact_division_signal": 25 if option == "unsupported" else -5,
             "contains_plus": 25 if option == "addition" else -3,
             "contains_minus": 20 if option == "subtraction" else -3,
             "binary_minus_present": 35 if option == "subtraction" else -5,
@@ -206,6 +214,8 @@ def _default_weights(layer_name: str, option: str) -> Dict[str, int]:
             "operator_count": 20 if option == "binary_operation" else 0,
             "signed_literal_only": -20 if option in {"binary_operation", "precedence_tree", "parenthesized_tree"} else 0,
             "contains_parentheses": 35 if option == "parenthesized_tree" else -5,
+            "unsupported_depth_signal": 30 if option == "unsupported" else -5,
+            "unsupported_arithmetic_signal": 18 if option == "unsupported" else -4,
         }
     if layer_name == "slot_binding_policy":
         return {

@@ -31,6 +31,10 @@ def extract_surface_features(input_text: str) -> Dict:
     unary_negative_only = len(signed_numbers) == 1 and signed_numbers[0] < 0 and not operators
     signed_literal_only = len(signed_numbers) == 1 and not operators
     binary_minus_present = "-" in operators
+    division_by_zero_signal = _division_by_zero_signal(signed_numbers, operators)
+    non_exact_division_signal = _non_exact_division_signal(signed_numbers, operators)
+    unsupported_depth_signal = len(signed_numbers) > 3 or len(operators) > 2
+    unsupported_arithmetic_signal = division_by_zero_signal or non_exact_division_signal or unsupported_depth_signal
     return {
         "contains_C": has_c_token,
         "contains_program": contains_program,
@@ -56,6 +60,10 @@ def extract_surface_features(input_text: str) -> Dict:
         "unary_negative_only": unary_negative_only,
         "signed_literal_only": signed_literal_only,
         "binary_minus_present": binary_minus_present,
+        "unsupported_arithmetic_signal": unsupported_arithmetic_signal,
+        "division_by_zero_signal": division_by_zero_signal,
+        "non_exact_division_signal": non_exact_division_signal,
+        "unsupported_depth_signal": unsupported_depth_signal,
         "input_mode_guess_zh_natural": bool(chinese_char_count and contains_output and not has_technical),
         "input_mode_guess_math_expression": is_pure_math,
         "input_mode_guess_zh_technical_mixed": bool(chinese_char_count and has_technical),
@@ -161,6 +169,10 @@ def numeric_feature_view(features: Dict) -> Dict[str, int]:
         "unary_negative_only",
         "signed_literal_only",
         "binary_minus_present",
+        "unsupported_arithmetic_signal",
+        "division_by_zero_signal",
+        "non_exact_division_signal",
+        "unsupported_depth_signal",
     ]
     numeric = {name: int(features.get(name, False)) for name in names}
     numeric["number_count"] = int(features.get("number_count", 0))
@@ -199,6 +211,23 @@ def _is_pure_math_expression(text: str) -> bool:
     if not compact:
         return False
     return bool(re.fullmatch(r"[-+*/()0-9一二两三四五六七八九十负]+", compact)) and any(ch in compact for ch in "+-*/加减乘除")
+
+
+def _division_by_zero_signal(numbers: List[int], operators: str) -> bool:
+    for index, operator in enumerate(operators):
+        if operator == "/" and index + 1 < len(numbers) and numbers[index + 1] == 0:
+            return True
+    return False
+
+
+def _non_exact_division_signal(numbers: List[int], operators: str) -> bool:
+    for index, operator in enumerate(operators):
+        if operator != "/" or index + 1 >= len(numbers):
+            continue
+        denominator = numbers[index + 1]
+        if denominator != 0 and numbers[index] % denominator != 0:
+            return True
+    return False
 
 
 def _raw_operator_words(text: str) -> List[str]:
