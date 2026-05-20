@@ -312,3 +312,7 @@ v0.7.6 introduces RootFork Sub-Beam Regrowth（根叉子束再生）. After v0.7
 ## v0.7.7 Development Direction
 
 v0.7.7 explores RootFork Global Assimilation（根叉全局吸收）. It turns sub-beam rescued paths（子束救援路径） into global BranchChain（全局分支链） scoring updates, repairs Slot Binding（槽位绑定）, adds Root Lifecycle Manager（根生命周期管理器）, reconciles OOD Metrics（分布外指标）, and replaces the previous scale ladder with Real Scale Ladder（真实规模阶梯） runs.
+
+## v0.7.8 Development Direction
+
+v0.7.8 explores Nutrient-Zone Root Colony（养分区根群）. Instead of broadcasting sub-beam rescued paths（子束救援路径） into global BranchChain（全局分支链） weights, JianMu groups rescued paths into local Nutrient Zones（养分区）, lets nourished root tips（有养分根尖） proliferate locally, tracks Toxic Nutrient（毒性养分） such as OOD false accept（分布外误接收）, and only promotes stable low-toxicity colonies（低毒稳定根群） through small rollback-safe updates.
