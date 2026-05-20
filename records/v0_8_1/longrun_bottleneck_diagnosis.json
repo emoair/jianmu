@@ -1,0 +1,8 @@
+{
+  "diagnosis_summary": "promotion_limited（晋升受限） signal: many keep-local colonies but no shadow promotion candidates. routing_limited（路由受限） signal: local colony lifecycle is active while global beam stays flat. ood_limited（分布外受限） signal: OOD false accept or toxic nutrient remains high.",
+  "guard_limited_likely": false,
+  "ood_limited_likely": true,
+  "resource_limited_likely": false,
+  "routing_limited_likely": true,
+  "scale_limited_likely": false
+}

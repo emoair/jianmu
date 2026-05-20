@@ -1,0 +1,305 @@
+{
+  "arithmetic_supported_retention_after_guard": 1.0,
+  "arithmetic_supported_retention_before_guard": 1.0,
+  "diagnosis_summary": "promotion_limited（晋升受限） signal: many keep-local colonies but no shadow promotion candidates. routing_limited（路由受限） signal: local colony lifecycle is active while global beam stays flat. ood_limited（分布外受限） signal: OOD false accept or toxic nutrient remains high.",
+  "global_beam_after_guard": 0.5017,
+  "global_beam_before_guard": 0.5017,
+  "guard_candidate_accepted_count": 1,
+  "guard_candidate_count": 2,
+  "guard_candidate_rollback_count": 1,
+  "guard_limited_likely": false,
+  "modes_attempted": [
+    "large",
+    "xlarge",
+    "full"
+  ],
+  "modes_completed": [
+    "large"
+  ],
+  "ood_false_accept_after_guard": 0.23500000000000001,
+  "ood_false_accept_before_guard": 0.335,
+  "ood_guard_stress": {
+    "most_common_false_accept_reason": "canonicalizer_made_it_look_supported",
+    "ood_class_distribution": {
+      "ood_english_sentence": 67,
+      "ood_unrelated_request": 67,
+      "unsupported_arithmetic": 66
+    },
+    "ood_correct_rejection_by_class": {
+      "ood_english_sentence": 44,
+      "ood_unrelated_request": 45,
+      "unsupported_arithmetic": 44
+    },
+    "ood_correct_rejection_rate": 0.665,
+    "ood_false_accept_by_class": {
+      "ood_english_sentence": 23,
+      "ood_unrelated_request": 22,
+      "unsupported_arithmetic": 22
+    },
+    "ood_false_accept_by_layer": {
+      "none": 67
+    },
+    "ood_false_accept_rate": 0.335,
+    "ood_toxicity_rate": 0.335,
+    "rejection_layer_by_class": {
+      "ood_english_sentence": {
+        "language_target": 44,
+        "none": 23
+      },
+      "ood_unrelated_request": {
+        "none": 22,
+        "task_scope": 45
+      },
+      "unsupported_arithmetic": {
+        "arithmetic_family": 44,
+        "none": 22
+      }
+    },
+    "toxic_event_by_class": {
+      "ood_english_sentence": 23,
+      "ood_unrelated_request": 22,
+      "unsupported_arithmetic": 22
+    }
+  },
+  "ood_limited_likely": true,
+  "ood_taxonomy": {
+    "ood_class_distribution": {
+      "ood_english_sentence": 67,
+      "ood_unrelated_request": 67,
+      "unsupported_arithmetic": 66
+    },
+    "ood_correct_rejection_by_class": {
+      "ood_english_sentence": 44,
+      "ood_unrelated_request": 45,
+      "unsupported_arithmetic": 44
+    },
+    "ood_false_accept_by_class": {
+      "ood_english_sentence": 23,
+      "ood_unrelated_request": 22,
+      "unsupported_arithmetic": 22
+    },
+    "rejection_layer_by_class": {
+      "ood_english_sentence": {
+        "language_target": 44,
+        "none": 23
+      },
+      "ood_unrelated_request": {
+        "none": 22,
+        "task_scope": 45
+      },
+      "unsupported_arithmetic": {
+        "arithmetic_family": 44,
+        "none": 22
+      }
+    },
+    "toxic_event_by_class": {
+      "ood_english_sentence": 23,
+      "ood_unrelated_request": 22,
+      "unsupported_arithmetic": 22
+    }
+  },
+  "partial_or_skipped": {
+    "full": "full skipped by bounded runtime policy（受限运行时间策略跳过 full）",
+    "large": "completed after bounded runtime target（超过受限运行目标后完成）",
+    "xlarge": "xlarge skipped because bounded_runtime_sec is below one hour（受限运行时间低于一小时）"
+  },
+  "resource_limited_likely": false,
+  "routing_limited_likely": true,
+  "run": {
+    "activated_colony_count": 13,
+    "active_budget_used": 1239,
+    "arithmetic_supported_retention_rate": 1.0,
+    "candidate_space_failure_rate": 0.4983,
+    "candidate_space_failure_rate_after_shadow": 0.4983,
+    "candidate_space_failure_rate_before": 0.1383,
+    "colony_budget_distribution": {
+      "colony:zone:11a5693c916d": 128,
+      "colony:zone:136cafb2cb6b": 128,
+      "colony:zone:210cd4f76e27": 128,
+      "colony:zone:22cc431c14f8": 128,
+      "colony:zone:2570397de390": 128,
+      "colony:zone:40cbf45141aa": 128,
+      "colony:zone:7d79d5c8b65c": 128,
+      "colony:zone:a8e86effe84d": 128,
+      "colony:zone:c27bfe1af2c3": 128,
+      "colony:zone:c641897ce347": 128,
+      "colony:zone:d057370b04d3": 128,
+      "colony:zone:f79b907254a5": 128,
+      "colony:zone:fff795251c54": 128
+    },
+    "colony_count": 13,
+    "completed": true,
+    "config": {
+      "beam_size": 96,
+      "cycle_count": 10,
+      "eval_limit": 600,
+      "exploration_quota": 2,
+      "generations": 12,
+      "max_roots_per_colony": 128,
+      "max_total_active_roots": 4096,
+      "mode": "large",
+      "ood_limit": 300,
+      "population_per_layer": 48,
+      "proposals_per_layer": 6,
+      "scale_label": "large",
+      "seed": 42,
+      "stochastic_samples_per_layer": 3,
+      "subbeam_size": 96,
+      "train_limit": 1600
+    },
+    "correct_ood_rejection_positive_count": 1000,
+    "eval_sample_count": 600,
+    "global_correct_targetir_in_beam_rate": 0.5017,
+    "global_correct_targetir_in_beam_rate_after_shadow": 0.5017,
+    "global_correct_targetir_in_beam_rate_before": 0.8617,
+    "high_confidence_wrong_toxic_count": 65,
+    "keep_local_budget_count": 13,
+    "keep_local_colony_count": 13,
+    "mode": "large",
+    "necrosis_budget_released": 425,
+    "necrotic_archived_count": 425,
+    "nourished_budget_bonus": 1664,
+    "nourished_root_count": 0,
+    "ood_false_accept_after_shadow": 0.335,
+    "ood_false_accept_before": 0.67,
+    "ood_false_accept_toxic_count": 134,
+    "ood_sample_count": 200,
+    "partial": true,
+    "quarantine_budget_reduced_count": 0,
+    "quarantined_colony_count": 0,
+    "real_promoted_colony_count": 0,
+    "rejected_colony_count": 0,
+    "replacement_root_count": 832,
+    "resource_budget_used": 1664,
+    "resource_released_count": 425,
+    "run_id": "large-87ebee9f579e",
+    "runtime_per_100_samples": 33.1302,
+    "runtime_seconds": 795.1221,
+    "scale_label": "large",
+    "shadow_global_delta_avg": 0.0,
+    "shadow_keep_local_count": 13,
+    "shadow_ood_delta_avg": 0.0,
+    "shadow_promote_candidate_count": 0,
+    "shadow_promotion_candidate_count": 13,
+    "shadow_rollback_count": 0,
+    "skip_reason": "completed after bounded runtime target（超过受限运行目标后完成）",
+    "skipped": false,
+    "stable_colony_count": 0,
+    "stable_root_count": 1239,
+    "starvation_budget_decay": 0,
+    "starving_root_count": 0,
+    "total_active_roots": 1239,
+    "toxic_event_count": 199,
+    "train_sample_count": 1600,
+    "unsupported_arithmetic_toxic_count": 0
+  },
+  "runs": [
+    {
+      "activated_colony_count": 13,
+      "active_budget_used": 1239,
+      "arithmetic_supported_retention_rate": 1.0,
+      "candidate_space_failure_rate": 0.4983,
+      "candidate_space_failure_rate_after_shadow": 0.4983,
+      "candidate_space_failure_rate_before": 0.1383,
+      "colony_budget_distribution": {
+        "colony:zone:11a5693c916d": 128,
+        "colony:zone:136cafb2cb6b": 128,
+        "colony:zone:210cd4f76e27": 128,
+        "colony:zone:22cc431c14f8": 128,
+        "colony:zone:2570397de390": 128,
+        "colony:zone:40cbf45141aa": 128,
+        "colony:zone:7d79d5c8b65c": 128,
+        "colony:zone:a8e86effe84d": 128,
+        "colony:zone:c27bfe1af2c3": 128,
+        "colony:zone:c641897ce347": 128,
+        "colony:zone:d057370b04d3": 128,
+        "colony:zone:f79b907254a5": 128,
+        "colony:zone:fff795251c54": 128
+      },
+      "colony_count": 13,
+      "completed": true,
+      "config": {
+        "beam_size": 96,
+        "cycle_count": 10,
+        "eval_limit": 600,
+        "exploration_quota": 2,
+        "generations": 12,
+        "max_roots_per_colony": 128,
+        "max_total_active_roots": 4096,
+        "mode": "large",
+        "ood_limit": 300,
+        "population_per_layer": 48,
+        "proposals_per_layer": 6,
+        "scale_label": "large",
+        "seed": 42,
+        "stochastic_samples_per_layer": 3,
+        "subbeam_size": 96,
+        "train_limit": 1600
+      },
+      "correct_ood_rejection_positive_count": 1000,
+      "eval_sample_count": 600,
+      "global_correct_targetir_in_beam_rate": 0.5017,
+      "global_correct_targetir_in_beam_rate_after_shadow": 0.5017,
+      "global_correct_targetir_in_beam_rate_before": 0.8617,
+      "high_confidence_wrong_toxic_count": 65,
+      "keep_local_budget_count": 13,
+      "keep_local_colony_count": 13,
+      "mode": "large",
+      "necrosis_budget_released": 425,
+      "necrotic_archived_count": 425,
+      "nourished_budget_bonus": 1664,
+      "nourished_root_count": 0,
+      "ood_false_accept_after_shadow": 0.335,
+      "ood_false_accept_before": 0.67,
+      "ood_false_accept_toxic_count": 134,
+      "ood_sample_count": 200,
+      "partial": true,
+      "quarantine_budget_reduced_count": 0,
+      "quarantined_colony_count": 0,
+      "real_promoted_colony_count": 0,
+      "rejected_colony_count": 0,
+      "replacement_root_count": 832,
+      "resource_budget_used": 1664,
+      "resource_released_count": 425,
+      "run_id": "large-87ebee9f579e",
+      "runtime_per_100_samples": 33.1302,
+      "runtime_seconds": 795.1221,
+      "scale_label": "large",
+      "shadow_global_delta_avg": 0.0,
+      "shadow_keep_local_count": 13,
+      "shadow_ood_delta_avg": 0.0,
+      "shadow_promote_candidate_count": 0,
+      "shadow_promotion_candidate_count": 13,
+      "shadow_rollback_count": 0,
+      "skip_reason": "completed after bounded runtime target（超过受限运行目标后完成）",
+      "skipped": false,
+      "stable_colony_count": 0,
+      "stable_root_count": 1239,
+      "starvation_budget_decay": 0,
+      "starving_root_count": 0,
+      "total_active_roots": 1239,
+      "toxic_event_count": 199,
+      "train_sample_count": 1600,
+      "unsupported_arithmetic_toxic_count": 0
+    },
+    {
+      "completed": false,
+      "mode": "xlarge",
+      "partial": false,
+      "run_id": "xlarge-3c5d0761edfd",
+      "scale_label": "xlarge",
+      "skip_reason": "xlarge skipped because bounded_runtime_sec is below one hour（受限运行时间低于一小时）",
+      "skipped": true
+    },
+    {
+      "completed": false,
+      "mode": "full",
+      "partial": false,
+      "run_id": "full-1f137911dd5c",
+      "scale_label": "full",
+      "skip_reason": "full skipped by bounded runtime policy（受限运行时间策略跳过 full）",
+      "skipped": true
+    }
+  ],
+  "scale_limited_likely": false
+}

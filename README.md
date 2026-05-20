@@ -324,3 +324,7 @@ v0.7.9 explores Colony Nutrient Activation（根群养分激活）. After v0.7.8
 ## v0.8.0 Development Direction
 
 v0.8.0 explores Colony Scale Stress Probe（根群规模压力探针）. After v0.7.9 activated local colony lifecycle（局部根群生命周期）, this version runs larger shadow-only scale probes（只影子晋升的大规模探针） to determine whether JianMu is currently scale-limited（规模受限）, promotion-limited（晋升受限）, routing-limited（路由受限）, OOD-limited（分布外受限）, or resource-limited（资源受限）.
+
+## v0.8.1 Development Direction
+
+v0.8.1 explores OOD Toxicity Stress & Long-Run Scale Probe（分布外毒性压力与长时规模探针）. After v0.8.0 showed that larger scale improves global beam（全局束） and stable roots（稳定根）, this version analyzes OOD false accept（分布外误接收） by class, evaluates rollback-safe OOD guard candidates（可回滚分布外守卫候选）, and allows bounded hour-level xlarge/full runs without enabling real promotion（真实晋升）.

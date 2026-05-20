@@ -1,0 +1,3 @@
+{"completed": true, "mode": "large", "partial": true, "run_id": "large-87ebee9f579e", "runtime_seconds": 795.1221, "skip_reason": "completed after bounded runtime target（超过受限运行目标后完成）"}
+{"completed": false, "mode": "xlarge", "partial": false, "run_id": "xlarge-3c5d0761edfd", "runtime_seconds": 0.0, "skip_reason": "xlarge skipped because bounded_runtime_sec is below one hour（受限运行时间低于一小时）"}
+{"completed": false, "mode": "full", "partial": false, "run_id": "full-1f137911dd5c", "runtime_seconds": 0.0, "skip_reason": "full skipped by bounded runtime policy（受限运行时间策略跳过 full）"}

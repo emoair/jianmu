@@ -1,0 +1,36 @@
+{
+  "ood_class_distribution": {
+    "ood_english_sentence": 67,
+    "ood_unrelated_request": 67,
+    "unsupported_arithmetic": 66
+  },
+  "ood_correct_rejection_by_class": {
+    "ood_english_sentence": 44,
+    "ood_unrelated_request": 45,
+    "unsupported_arithmetic": 44
+  },
+  "ood_false_accept_by_class": {
+    "ood_english_sentence": 23,
+    "ood_unrelated_request": 22,
+    "unsupported_arithmetic": 22
+  },
+  "rejection_layer_by_class": {
+    "ood_english_sentence": {
+      "language_target": 44,
+      "none": 23
+    },
+    "ood_unrelated_request": {
+      "none": 22,
+      "task_scope": 45
+    },
+    "unsupported_arithmetic": {
+      "arithmetic_family": 44,
+      "none": 22
+    }
+  },
+  "toxic_event_by_class": {
+    "ood_english_sentence": 23,
+    "ood_unrelated_request": 22,
+    "unsupported_arithmetic": 22
+  }
+}
