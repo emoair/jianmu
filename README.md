@@ -277,3 +277,14 @@ Input Training（原始输入训练） with Canonical Input Training（规范输
 canonical_text（规范文本） from the Canonical Symbol Layer（规范符号层） into
 BranchChain（分支链） while preserving raw_text（原始文本） and Source Map（源映射）
 for evaluation.
+
+## v0.7.3 Development Direction
+
+v0.7.3 explores Wide-Beam Backtracking Search（宽束回溯搜索） under canonicalized
+input（规范化输入）. It combines Wide Branch Beam Search（宽束分支搜索） with
+Conditional Upstream Unfreeze（条件上游解冻） and Layer Clone Perturbation（层克隆扰动）.
+Instead of freezing layers too early, JianMu keeps wider BranchPath（分支路径）
+ensembles, lets complete paths reach TargetIR（目标中间表示）, then uses Full Path
+Diagnostics（完整路径诊断） to decide whether failure is caused by candidate-space
+absence（候选空间缺失）, ranking failure（排序失败）, upstream boundary failure（上游边界失败）,
+or synthesis failure（合成失败）.

@@ -1,0 +1,823 @@
+{
+  "ranking_failure": [],
+  "candidate_space_failure": [
+    {
+      "sample_id": "jm-v070-002201",
+      "raw_text": "计算二十四除以四加三",
+      "canonical_text": "24/4+3",
+      "supported": true,
+      "target_ir_true": "add(div(lit(24),lit(4)),lit(3))",
+      "target_branch_path_true": [
+        [
+          "task_scope",
+          "programming"
+        ],
+        [
+          "language_target",
+          "implicit_C"
+        ],
+        [
+          "semantic_domain",
+          "arithmetic"
+        ],
+        [
+          "arithmetic_family",
+          "mixed_precedence"
+        ],
+        [
+          "structure_policy",
+          "precedence_tree"
+        ],
+        [
+          "slot_binding_policy",
+          "chinese_number_order"
+        ],
+        [
+          "target_builder",
+          "canonical_arithmetic_targetir"
+        ]
+      ],
+      "path_count": 4,
+      "complete_path_count": 0,
+      "top1_target_ir_pred": null,
+      "top1_exact": false,
+      "best_beam_target_ir_pred": null,
+      "best_beam_exact": false,
+      "correct_targetir_in_beam": false,
+      "correct_path_in_beam": false,
+      "correct_targetir_rank": null,
+      "correct_path_rank": null,
+      "top1_wrong_but_correct_in_beam": false,
+      "candidate_space_failure": true,
+      "ranking_failure": false,
+      "upstream_boundary_failure": true,
+      "synthesis_failure": false,
+      "first_wrong_layer": "language_target",
+      "first_wrong_expected": "implicit_C",
+      "first_wrong_actual": "math_expression_context",
+      "rejected_by_layer": "support_gate",
+      "source_clone_ids_used": [
+        "base",
+        "task_scope:clone:3:0",
+        "task_scope:clone:3:1"
+      ],
+      "input_mode": "paired_zh_natural",
+      "structure_policy": "precedence_tree"
+    },
+    {
+      "sample_id": "jm-v070-002202",
+      "raw_text": "计算二十四除以四加三（jm-v070-002202）",
+      "canonical_text": "24/4+3(jm-v070-002202)",
+      "supported": true,
+      "target_ir_true": "add(div(lit(24),lit(4)),lit(3))",
+      "target_branch_path_true": [
+        [
+          "task_scope",
+          "programming"
+        ],
+        [
+          "language_target",
+          "implicit_C"
+        ],
+        [
+          "semantic_domain",
+          "arithmetic"
+        ],
+        [
+          "arithmetic_family",
+          "mixed_precedence"
+        ],
+        [
+          "structure_policy",
+          "precedence_tree"
+        ],
+        [
+          "slot_binding_policy",
+          "chinese_number_order"
+        ],
+        [
+          "target_builder",
+          "canonical_arithmetic_targetir"
+        ]
+      ],
+      "path_count": 4,
+      "complete_path_count": 0,
+      "top1_target_ir_pred": null,
+      "top1_exact": false,
+      "best_beam_target_ir_pred": null,
+      "best_beam_exact": false,
+      "correct_targetir_in_beam": false,
+      "correct_path_in_beam": false,
+      "correct_targetir_rank": null,
+      "correct_path_rank": null,
+      "top1_wrong_but_correct_in_beam": false,
+      "candidate_space_failure": true,
+      "ranking_failure": false,
+      "upstream_boundary_failure": true,
+      "synthesis_failure": false,
+      "first_wrong_layer": "language_target",
+      "first_wrong_expected": "implicit_C",
+      "first_wrong_actual": "math_expression_context",
+      "rejected_by_layer": "language_target",
+      "source_clone_ids_used": [
+        "base",
+        "task_scope:clone:3:0",
+        "task_scope:clone:3:1"
+      ],
+      "input_mode": "mixed_zh_arabic",
+      "structure_policy": "precedence_tree"
+    },
+    {
+      "sample_id": "jm-v070-002203",
+      "raw_text": "-9+15",
+      "canonical_text": "-9+15",
+      "supported": true,
+      "target_ir_true": "add(lit(-9),lit(15))",
+      "target_branch_path_true": [
+        [
+          "task_scope",
+          "programming"
+        ],
+        [
+          "language_target",
+          "math_expression_context"
+        ],
+        [
+          "semantic_domain",
+          "arithmetic"
+        ],
+        [
+          "arithmetic_family",
+          "addition"
+        ],
+        [
+          "structure_policy",
+          "binary_operation"
+        ],
+        [
+          "slot_binding_policy",
+          "surface_number_order"
+        ],
+        [
+          "target_builder",
+          "canonical_arithmetic_targetir"
+        ]
+      ],
+      "path_count": 4,
+      "complete_path_count": 0,
+      "top1_target_ir_pred": null,
+      "top1_exact": false,
+      "best_beam_target_ir_pred": null,
+      "best_beam_exact": false,
+      "correct_targetir_in_beam": false,
+      "correct_path_in_beam": false,
+      "correct_targetir_rank": null,
+      "correct_path_rank": null,
+      "top1_wrong_but_correct_in_beam": false,
+      "candidate_space_failure": true,
+      "ranking_failure": false,
+      "upstream_boundary_failure": true,
+      "synthesis_failure": false,
+      "first_wrong_layer": "semantic_domain",
+      "first_wrong_expected": "arithmetic",
+      "first_wrong_actual": "comparison_future",
+      "rejected_by_layer": "support_gate",
+      "source_clone_ids_used": [
+        "base",
+        "task_scope:clone:3:1"
+      ],
+      "input_mode": "arabic_math_expression",
+      "structure_policy": "binary_operation"
+    },
+    {
+      "sample_id": "jm-v070-002204",
+      "raw_text": "负九加十五",
+      "canonical_text": "-9+15",
+      "supported": true,
+      "target_ir_true": "add(lit(-9),lit(15))",
+      "target_branch_path_true": [
+        [
+          "task_scope",
+          "programming"
+        ],
+        [
+          "language_target",
+          "math_expression_context"
+        ],
+        [
+          "semantic_domain",
+          "arithmetic"
+        ],
+        [
+          "arithmetic_family",
+          "addition"
+        ],
+        [
+          "structure_policy",
+          "binary_operation"
+        ],
+        [
+          "slot_binding_policy",
+          "chinese_number_order"
+        ],
+        [
+          "target_builder",
+          "canonical_arithmetic_targetir"
+        ]
+      ],
+      "path_count": 4,
+      "complete_path_count": 0,
+      "top1_target_ir_pred": null,
+      "top1_exact": false,
+      "best_beam_target_ir_pred": null,
+      "best_beam_exact": false,
+      "correct_targetir_in_beam": false,
+      "correct_path_in_beam": false,
+      "correct_targetir_rank": null,
+      "correct_path_rank": null,
+      "top1_wrong_but_correct_in_beam": false,
+      "candidate_space_failure": true,
+      "ranking_failure": false,
+      "upstream_boundary_failure": true,
+      "synthesis_failure": false,
+      "first_wrong_layer": "semantic_domain",
+      "first_wrong_expected": "arithmetic",
+      "first_wrong_actual": "comparison_future",
+      "rejected_by_layer": "support_gate",
+      "source_clone_ids_used": [
+        "base",
+        "task_scope:clone:3:1"
+      ],
+      "input_mode": "zh_number_expression",
+      "structure_policy": "binary_operation"
+    },
+    {
+      "sample_id": "jm-v070-002205",
+      "raw_text": "计算负九加十五",
+      "canonical_text": "-9+15",
+      "supported": true,
+      "target_ir_true": "add(lit(-9),lit(15))",
+      "target_branch_path_true": [
+        [
+          "task_scope",
+          "programming"
+        ],
+        [
+          "language_target",
+          "implicit_C"
+        ],
+        [
+          "semantic_domain",
+          "arithmetic"
+        ],
+        [
+          "arithmetic_family",
+          "addition"
+        ],
+        [
+          "structure_policy",
+          "binary_operation"
+        ],
+        [
+          "slot_binding_policy",
+          "chinese_number_order"
+        ],
+        [
+          "target_builder",
+          "canonical_arithmetic_targetir"
+        ]
+      ],
+      "path_count": 4,
+      "complete_path_count": 0,
+      "top1_target_ir_pred": null,
+      "top1_exact": false,
+      "best_beam_target_ir_pred": null,
+      "best_beam_exact": false,
+      "correct_targetir_in_beam": false,
+      "correct_path_in_beam": false,
+      "correct_targetir_rank": null,
+      "correct_path_rank": null,
+      "top1_wrong_but_correct_in_beam": false,
+      "candidate_space_failure": true,
+      "ranking_failure": false,
+      "upstream_boundary_failure": true,
+      "synthesis_failure": false,
+      "first_wrong_layer": "language_target",
+      "first_wrong_expected": "implicit_C",
+      "first_wrong_actual": "math_expression_context",
+      "rejected_by_layer": "support_gate",
+      "source_clone_ids_used": [
+        "base",
+        "task_scope:clone:3:1"
+      ],
+      "input_mode": "paired_zh_natural",
+      "structure_policy": "binary_operation"
+    }
+  ],
+  "upstream_boundary_failure": [
+    {
+      "sample_id": "jm-v070-002201",
+      "raw_text": "计算二十四除以四加三",
+      "canonical_text": "24/4+3",
+      "supported": true,
+      "target_ir_true": "add(div(lit(24),lit(4)),lit(3))",
+      "target_branch_path_true": [
+        [
+          "task_scope",
+          "programming"
+        ],
+        [
+          "language_target",
+          "implicit_C"
+        ],
+        [
+          "semantic_domain",
+          "arithmetic"
+        ],
+        [
+          "arithmetic_family",
+          "mixed_precedence"
+        ],
+        [
+          "structure_policy",
+          "precedence_tree"
+        ],
+        [
+          "slot_binding_policy",
+          "chinese_number_order"
+        ],
+        [
+          "target_builder",
+          "canonical_arithmetic_targetir"
+        ]
+      ],
+      "path_count": 4,
+      "complete_path_count": 0,
+      "top1_target_ir_pred": null,
+      "top1_exact": false,
+      "best_beam_target_ir_pred": null,
+      "best_beam_exact": false,
+      "correct_targetir_in_beam": false,
+      "correct_path_in_beam": false,
+      "correct_targetir_rank": null,
+      "correct_path_rank": null,
+      "top1_wrong_but_correct_in_beam": false,
+      "candidate_space_failure": true,
+      "ranking_failure": false,
+      "upstream_boundary_failure": true,
+      "synthesis_failure": false,
+      "first_wrong_layer": "language_target",
+      "first_wrong_expected": "implicit_C",
+      "first_wrong_actual": "math_expression_context",
+      "rejected_by_layer": "support_gate",
+      "source_clone_ids_used": [
+        "base",
+        "task_scope:clone:3:0",
+        "task_scope:clone:3:1"
+      ],
+      "input_mode": "paired_zh_natural",
+      "structure_policy": "precedence_tree"
+    },
+    {
+      "sample_id": "jm-v070-002202",
+      "raw_text": "计算二十四除以四加三（jm-v070-002202）",
+      "canonical_text": "24/4+3(jm-v070-002202)",
+      "supported": true,
+      "target_ir_true": "add(div(lit(24),lit(4)),lit(3))",
+      "target_branch_path_true": [
+        [
+          "task_scope",
+          "programming"
+        ],
+        [
+          "language_target",
+          "implicit_C"
+        ],
+        [
+          "semantic_domain",
+          "arithmetic"
+        ],
+        [
+          "arithmetic_family",
+          "mixed_precedence"
+        ],
+        [
+          "structure_policy",
+          "precedence_tree"
+        ],
+        [
+          "slot_binding_policy",
+          "chinese_number_order"
+        ],
+        [
+          "target_builder",
+          "canonical_arithmetic_targetir"
+        ]
+      ],
+      "path_count": 4,
+      "complete_path_count": 0,
+      "top1_target_ir_pred": null,
+      "top1_exact": false,
+      "best_beam_target_ir_pred": null,
+      "best_beam_exact": false,
+      "correct_targetir_in_beam": false,
+      "correct_path_in_beam": false,
+      "correct_targetir_rank": null,
+      "correct_path_rank": null,
+      "top1_wrong_but_correct_in_beam": false,
+      "candidate_space_failure": true,
+      "ranking_failure": false,
+      "upstream_boundary_failure": true,
+      "synthesis_failure": false,
+      "first_wrong_layer": "language_target",
+      "first_wrong_expected": "implicit_C",
+      "first_wrong_actual": "math_expression_context",
+      "rejected_by_layer": "language_target",
+      "source_clone_ids_used": [
+        "base",
+        "task_scope:clone:3:0",
+        "task_scope:clone:3:1"
+      ],
+      "input_mode": "mixed_zh_arabic",
+      "structure_policy": "precedence_tree"
+    },
+    {
+      "sample_id": "jm-v070-002203",
+      "raw_text": "-9+15",
+      "canonical_text": "-9+15",
+      "supported": true,
+      "target_ir_true": "add(lit(-9),lit(15))",
+      "target_branch_path_true": [
+        [
+          "task_scope",
+          "programming"
+        ],
+        [
+          "language_target",
+          "math_expression_context"
+        ],
+        [
+          "semantic_domain",
+          "arithmetic"
+        ],
+        [
+          "arithmetic_family",
+          "addition"
+        ],
+        [
+          "structure_policy",
+          "binary_operation"
+        ],
+        [
+          "slot_binding_policy",
+          "surface_number_order"
+        ],
+        [
+          "target_builder",
+          "canonical_arithmetic_targetir"
+        ]
+      ],
+      "path_count": 4,
+      "complete_path_count": 0,
+      "top1_target_ir_pred": null,
+      "top1_exact": false,
+      "best_beam_target_ir_pred": null,
+      "best_beam_exact": false,
+      "correct_targetir_in_beam": false,
+      "correct_path_in_beam": false,
+      "correct_targetir_rank": null,
+      "correct_path_rank": null,
+      "top1_wrong_but_correct_in_beam": false,
+      "candidate_space_failure": true,
+      "ranking_failure": false,
+      "upstream_boundary_failure": true,
+      "synthesis_failure": false,
+      "first_wrong_layer": "semantic_domain",
+      "first_wrong_expected": "arithmetic",
+      "first_wrong_actual": "comparison_future",
+      "rejected_by_layer": "support_gate",
+      "source_clone_ids_used": [
+        "base",
+        "task_scope:clone:3:1"
+      ],
+      "input_mode": "arabic_math_expression",
+      "structure_policy": "binary_operation"
+    },
+    {
+      "sample_id": "jm-v070-002204",
+      "raw_text": "负九加十五",
+      "canonical_text": "-9+15",
+      "supported": true,
+      "target_ir_true": "add(lit(-9),lit(15))",
+      "target_branch_path_true": [
+        [
+          "task_scope",
+          "programming"
+        ],
+        [
+          "language_target",
+          "math_expression_context"
+        ],
+        [
+          "semantic_domain",
+          "arithmetic"
+        ],
+        [
+          "arithmetic_family",
+          "addition"
+        ],
+        [
+          "structure_policy",
+          "binary_operation"
+        ],
+        [
+          "slot_binding_policy",
+          "chinese_number_order"
+        ],
+        [
+          "target_builder",
+          "canonical_arithmetic_targetir"
+        ]
+      ],
+      "path_count": 4,
+      "complete_path_count": 0,
+      "top1_target_ir_pred": null,
+      "top1_exact": false,
+      "best_beam_target_ir_pred": null,
+      "best_beam_exact": false,
+      "correct_targetir_in_beam": false,
+      "correct_path_in_beam": false,
+      "correct_targetir_rank": null,
+      "correct_path_rank": null,
+      "top1_wrong_but_correct_in_beam": false,
+      "candidate_space_failure": true,
+      "ranking_failure": false,
+      "upstream_boundary_failure": true,
+      "synthesis_failure": false,
+      "first_wrong_layer": "semantic_domain",
+      "first_wrong_expected": "arithmetic",
+      "first_wrong_actual": "comparison_future",
+      "rejected_by_layer": "support_gate",
+      "source_clone_ids_used": [
+        "base",
+        "task_scope:clone:3:1"
+      ],
+      "input_mode": "zh_number_expression",
+      "structure_policy": "binary_operation"
+    },
+    {
+      "sample_id": "jm-v070-002205",
+      "raw_text": "计算负九加十五",
+      "canonical_text": "-9+15",
+      "supported": true,
+      "target_ir_true": "add(lit(-9),lit(15))",
+      "target_branch_path_true": [
+        [
+          "task_scope",
+          "programming"
+        ],
+        [
+          "language_target",
+          "implicit_C"
+        ],
+        [
+          "semantic_domain",
+          "arithmetic"
+        ],
+        [
+          "arithmetic_family",
+          "addition"
+        ],
+        [
+          "structure_policy",
+          "binary_operation"
+        ],
+        [
+          "slot_binding_policy",
+          "chinese_number_order"
+        ],
+        [
+          "target_builder",
+          "canonical_arithmetic_targetir"
+        ]
+      ],
+      "path_count": 4,
+      "complete_path_count": 0,
+      "top1_target_ir_pred": null,
+      "top1_exact": false,
+      "best_beam_target_ir_pred": null,
+      "best_beam_exact": false,
+      "correct_targetir_in_beam": false,
+      "correct_path_in_beam": false,
+      "correct_targetir_rank": null,
+      "correct_path_rank": null,
+      "top1_wrong_but_correct_in_beam": false,
+      "candidate_space_failure": true,
+      "ranking_failure": false,
+      "upstream_boundary_failure": true,
+      "synthesis_failure": false,
+      "first_wrong_layer": "language_target",
+      "first_wrong_expected": "implicit_C",
+      "first_wrong_actual": "math_expression_context",
+      "rejected_by_layer": "support_gate",
+      "source_clone_ids_used": [
+        "base",
+        "task_scope:clone:3:1"
+      ],
+      "input_mode": "paired_zh_natural",
+      "structure_policy": "binary_operation"
+    }
+  ],
+  "synthesis_failure": [
+    {
+      "sample_id": "jm-v070-002802",
+      "raw_text": "写一首关于数字15的诗",
+      "canonical_text": "写1首关于数字15的诗",
+      "supported": false,
+      "target_ir_true": null,
+      "target_branch_path_true": [
+        [
+          "task_scope",
+          "reject_non_programming"
+        ]
+      ],
+      "path_count": 4,
+      "complete_path_count": 0,
+      "top1_target_ir_pred": null,
+      "top1_exact": false,
+      "best_beam_target_ir_pred": null,
+      "best_beam_exact": false,
+      "correct_targetir_in_beam": false,
+      "correct_path_in_beam": true,
+      "correct_targetir_rank": null,
+      "correct_path_rank": 1,
+      "top1_wrong_but_correct_in_beam": false,
+      "candidate_space_failure": false,
+      "ranking_failure": false,
+      "upstream_boundary_failure": false,
+      "synthesis_failure": true,
+      "first_wrong_layer": null,
+      "first_wrong_expected": null,
+      "first_wrong_actual": null,
+      "rejected_by_layer": "semantic_domain",
+      "source_clone_ids_used": [
+        "base",
+        "task_scope:clone:3:0"
+      ],
+      "input_mode": "ood_unrelated",
+      "structure_policy": null
+    },
+    {
+      "sample_id": "jm-v070-002805",
+      "raw_text": "写一首关于数字11的诗",
+      "canonical_text": "写1首关于数字11的诗",
+      "supported": false,
+      "target_ir_true": null,
+      "target_branch_path_true": [
+        [
+          "task_scope",
+          "reject_non_programming"
+        ]
+      ],
+      "path_count": 4,
+      "complete_path_count": 0,
+      "top1_target_ir_pred": null,
+      "top1_exact": false,
+      "best_beam_target_ir_pred": null,
+      "best_beam_exact": false,
+      "correct_targetir_in_beam": false,
+      "correct_path_in_beam": true,
+      "correct_targetir_rank": null,
+      "correct_path_rank": 1,
+      "top1_wrong_but_correct_in_beam": false,
+      "candidate_space_failure": false,
+      "ranking_failure": false,
+      "upstream_boundary_failure": false,
+      "synthesis_failure": true,
+      "first_wrong_layer": null,
+      "first_wrong_expected": null,
+      "first_wrong_actual": null,
+      "rejected_by_layer": "semantic_domain",
+      "source_clone_ids_used": [
+        "base",
+        "task_scope:clone:3:0"
+      ],
+      "input_mode": "ood_unrelated",
+      "structure_policy": null
+    },
+    {
+      "sample_id": "jm-v070-002808",
+      "raw_text": "写一首关于数字20的诗",
+      "canonical_text": "写1首关于数字20的诗",
+      "supported": false,
+      "target_ir_true": null,
+      "target_branch_path_true": [
+        [
+          "task_scope",
+          "reject_non_programming"
+        ]
+      ],
+      "path_count": 4,
+      "complete_path_count": 0,
+      "top1_target_ir_pred": null,
+      "top1_exact": false,
+      "best_beam_target_ir_pred": null,
+      "best_beam_exact": false,
+      "correct_targetir_in_beam": false,
+      "correct_path_in_beam": true,
+      "correct_targetir_rank": null,
+      "correct_path_rank": 1,
+      "top1_wrong_but_correct_in_beam": false,
+      "candidate_space_failure": false,
+      "ranking_failure": false,
+      "upstream_boundary_failure": false,
+      "synthesis_failure": true,
+      "first_wrong_layer": null,
+      "first_wrong_expected": null,
+      "first_wrong_actual": null,
+      "rejected_by_layer": "semantic_domain",
+      "source_clone_ids_used": [
+        "base",
+        "task_scope:clone:3:0"
+      ],
+      "input_mode": "ood_unrelated",
+      "structure_policy": null
+    },
+    {
+      "sample_id": "jm-v070-002811",
+      "raw_text": "写一首关于数字17的诗",
+      "canonical_text": "写1首关于数字17的诗",
+      "supported": false,
+      "target_ir_true": null,
+      "target_branch_path_true": [
+        [
+          "task_scope",
+          "reject_non_programming"
+        ]
+      ],
+      "path_count": 4,
+      "complete_path_count": 0,
+      "top1_target_ir_pred": null,
+      "top1_exact": false,
+      "best_beam_target_ir_pred": null,
+      "best_beam_exact": false,
+      "correct_targetir_in_beam": false,
+      "correct_path_in_beam": true,
+      "correct_targetir_rank": null,
+      "correct_path_rank": 1,
+      "top1_wrong_but_correct_in_beam": false,
+      "candidate_space_failure": false,
+      "ranking_failure": false,
+      "upstream_boundary_failure": false,
+      "synthesis_failure": true,
+      "first_wrong_layer": null,
+      "first_wrong_expected": null,
+      "first_wrong_actual": null,
+      "rejected_by_layer": "semantic_domain",
+      "source_clone_ids_used": [
+        "base",
+        "task_scope:clone:3:0"
+      ],
+      "input_mode": "ood_unrelated",
+      "structure_policy": null
+    },
+    {
+      "sample_id": "jm-v070-002814",
+      "raw_text": "写一首关于数字10的诗",
+      "canonical_text": "写1首关于数字10的诗",
+      "supported": false,
+      "target_ir_true": null,
+      "target_branch_path_true": [
+        [
+          "task_scope",
+          "reject_non_programming"
+        ]
+      ],
+      "path_count": 4,
+      "complete_path_count": 0,
+      "top1_target_ir_pred": null,
+      "top1_exact": false,
+      "best_beam_target_ir_pred": null,
+      "best_beam_exact": false,
+      "correct_targetir_in_beam": false,
+      "correct_path_in_beam": true,
+      "correct_targetir_rank": null,
+      "correct_path_rank": 1,
+      "top1_wrong_but_correct_in_beam": false,
+      "candidate_space_failure": false,
+      "ranking_failure": false,
+      "upstream_boundary_failure": false,
+      "synthesis_failure": true,
+      "first_wrong_layer": null,
+      "first_wrong_expected": null,
+      "first_wrong_actual": null,
+      "rejected_by_layer": "semantic_domain",
+      "source_clone_ids_used": [
+        "base",
+        "task_scope:clone:3:0"
+      ],
+      "input_mode": "ood_unrelated",
+      "structure_policy": null
+    }
+  ]
+}
