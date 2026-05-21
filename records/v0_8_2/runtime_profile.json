@@ -1,0 +1,19 @@
+{
+  "candidate_generation_time_seconds": 0.0,
+  "candidates_per_second": 3357.632376,
+  "compile_jobs_per_second": 0.0,
+  "compiler_sandbox_time_seconds": 0.0,
+  "estimated_cpu_utilization_note": "not_measured",
+  "idle_or_wait_time_seconds": 0.0,
+  "ood_audit_time_seconds": 0.159091,
+  "record_merge_time_seconds": 0.001213,
+  "record_write_time_seconds": 0.0,
+  "root_lifecycle_time_seconds": 0.0,
+  "runtime_per_100_samples": 0.029783,
+  "sample_eval_time_seconds": 0.016125,
+  "samples_per_second": 3357.632376,
+  "scoring_time_seconds": 0.0,
+  "speedup_vs_serial": 0.013498,
+  "total_runtime_seconds": 0.238263,
+  "toxic_nutrient_time_seconds": 0.0
+}

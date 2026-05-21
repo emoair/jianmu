@@ -1,0 +1,15 @@
+{
+  "future_domain_candidate_count": 0,
+  "hard_ood_count": 45,
+  "label_too_strict_count": 0,
+  "metric_equivalence_passed": true,
+  "near_ood_generalization_candidate_count": 44,
+  "ood_precision_distribution": {
+    "hard_ood": 45,
+    "near_ood_generalization_candidate": 44,
+    "true_false_accept": 89,
+    "unknown": 22
+  },
+  "true_false_accept_count": 89,
+  "unknown_count": 22
+}

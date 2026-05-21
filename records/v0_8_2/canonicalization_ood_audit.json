@@ -1,0 +1,10 @@
+{
+  "beneficial_generalization_candidate_count": 0,
+  "canonicalizer_made_supported_count": 0,
+  "dangerous_false_accept_count": 0,
+  "label_review_candidate_count": 0,
+  "suggested_action_distribution": {
+    "future_supported_slice": 66,
+    "unknown": 134
+  }
+}

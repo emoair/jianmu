@@ -1,0 +1,141 @@
+{
+  "buffered_records": {
+    "buffered_record_count": 800,
+    "checkpoint_count": 1,
+    "final_records_dir": "records\\v0_8_2",
+    "flush_count": 13,
+    "merged_path": "records\\v0_8_2\\runtime_parallelism_samples.jsonl",
+    "partial_checkpoint_count": 1,
+    "record_merge_time_seconds": 0.001213,
+    "record_write_time_seconds": 0.010617,
+    "runtime_tmp_dir": "D:\\jianmu-runtime-cache\\run_7ac55808904b"
+  },
+  "canonicalization_ood": {
+    "beneficial_generalization_candidate_count": 0,
+    "canonicalizer_made_supported_count": 0,
+    "dangerous_false_accept_count": 0,
+    "label_review_candidate_count": 0,
+    "suggested_action_distribution": {
+      "future_supported_slice": 66,
+      "unknown": 134
+    }
+  },
+  "compile_worker_count": 4,
+  "eval_sample_count": 600,
+  "mode": "xlarge-light",
+  "modes_completed": [
+    "xlarge-light"
+  ],
+  "ood_precision": {
+    "future_domain_candidate_count": 0,
+    "hard_ood_count": 45,
+    "label_too_strict_count": 0,
+    "near_ood_generalization_candidate_count": 44,
+    "ood_precision_distribution": {
+      "hard_ood": 45,
+      "near_ood_generalization_candidate": 44,
+      "true_false_accept": 89,
+      "unknown": 22
+    },
+    "true_false_accept_count": 89,
+    "unknown_count": 22
+  },
+  "ood_sample_count": 200,
+  "parallel_equivalence": {
+    "acceptable_delta": 0.0,
+    "differing_metric_names": [],
+    "max_abs_delta": 0.0,
+    "metric_equivalence_passed": true,
+    "nondeterminism_reason": "",
+    "parallel_runtime_seconds": 0.012386,
+    "serial_runtime_seconds": 0.003216,
+    "speedup_ratio": 0.259648
+  },
+  "parallel_metrics": {
+    "arithmetic_supported_retention_rate": 1.0,
+    "candidate_space_failure_rate": 0.25,
+    "global_correct_targetir_in_beam_rate": 0.75,
+    "ood_false_accept_rate": 0.665,
+    "runtime_seconds": 0.012386,
+    "samples_per_second": 64589.052156,
+    "stable_root_count": 450,
+    "toxic_event_count": 133
+  },
+  "parallel_run": {
+    "completed": true,
+    "failed_samples": 0,
+    "processed_samples": 800,
+    "runtime_seconds": 0.012386,
+    "samples_per_second": 64589.052156,
+    "total_samples": 800,
+    "worker_count": 8,
+    "worker_error_count": 0,
+    "worker_errors": [],
+    "worker_runtime_summary": {
+      "0": {
+        "runtime_seconds": 0.0
+      },
+      "1": {
+        "runtime_seconds": 0.0
+      },
+      "2": {
+        "runtime_seconds": 0.000539
+      },
+      "3": {
+        "runtime_seconds": 0.0
+      },
+      "4": {
+        "runtime_seconds": 0.0
+      },
+      "5": {
+        "runtime_seconds": 0.001002
+      },
+      "6": {
+        "runtime_seconds": 0.0
+      },
+      "7": {
+        "runtime_seconds": 0.0
+      }
+    }
+  },
+  "real_promotion_enabled": false,
+  "run_id": "v082-xlarge-light-f047cc2f4a",
+  "runtime_cache": {
+    "cache_free_space_mb": 1596833,
+    "cache_write_test_passed": true,
+    "cleanup_performed": false,
+    "project_inside_onedrive": true,
+    "runtime_cache_dir": "D:\\jianmu-runtime-cache\\run_7ac55808904b"
+  },
+  "runtime_profile": {
+    "candidate_generation_time_seconds": 0.0,
+    "candidates_per_second": 3357.632376,
+    "compile_jobs_per_second": 0.0,
+    "compiler_sandbox_time_seconds": 0.0,
+    "estimated_cpu_utilization_note": "not_measured",
+    "idle_or_wait_time_seconds": 0.0,
+    "ood_audit_time_seconds": 0.159091,
+    "record_merge_time_seconds": 0.001213,
+    "record_write_time_seconds": 0.0,
+    "root_lifecycle_time_seconds": 0.0,
+    "runtime_per_100_samples": 0.029783,
+    "sample_eval_time_seconds": 0.016125,
+    "samples_per_second": 3357.632376,
+    "scoring_time_seconds": 0.0,
+    "speedup_vs_serial": 0.013498,
+    "total_runtime_seconds": 0.238263,
+    "toxic_nutrient_time_seconds": 0.0
+  },
+  "serial_metrics": {
+    "arithmetic_supported_retention_rate": 1.0,
+    "candidate_space_failure_rate": 0.25,
+    "global_correct_targetir_in_beam_rate": 0.75,
+    "ood_false_accept_rate": 0.665,
+    "runtime_seconds": 0.003216,
+    "samples_per_second": 248756.218905,
+    "stable_root_count": 450,
+    "toxic_event_count": 133
+  },
+  "train_sample_count": 2200,
+  "worker_count": 8
+}

@@ -336,3 +336,10 @@ v0.8.1.1 performs Overnight Metric Reconciliation & XLarge Reproduction（过夜
 不要声称稳定收敛。
 不要声称四则运算已攻破。
 不要声称已经优于同体量 LLM。
+## v0.8.2 Development Direction
+
+v0.8.2 explores Runtime Parallelism & OOD Precision Audit（运行时并行与分布外精确审计）. After v0.8.1.1 confirmed the xlarge scale signal, this version adds 8-worker sample-level parallel execution（8 worker 样本级并行）, buffered records（缓冲记录）, runtime cache outside OneDrive（OneDrive 外运行缓存）, serial/parallel equivalence audit（串行/并行等价审计）, and OOD precision labeling（分布外精确标注） to distinguish true false accept（真正误接收） from near-OOD generalization candidates（近邻分布外泛化候选）.
+
+不要声称稳定收敛。
+不要声称四则运算已攻破。
+不要声称已经优于同体量 LLM。

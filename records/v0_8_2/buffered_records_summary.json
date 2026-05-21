@@ -1,0 +1,11 @@
+{
+  "buffered_record_count": 800,
+  "checkpoint_count": 1,
+  "final_records_dir": "records\\v0_8_2",
+  "flush_count": 13,
+  "merged_path": "records\\v0_8_2\\runtime_parallelism_samples.jsonl",
+  "partial_checkpoint_count": 1,
+  "record_merge_time_seconds": 0.001213,
+  "record_write_time_seconds": 0.010617,
+  "runtime_tmp_dir": "D:\\jianmu-runtime-cache\\run_7ac55808904b"
+}

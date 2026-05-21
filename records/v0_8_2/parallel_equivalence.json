@@ -1,0 +1,10 @@
+{
+  "acceptable_delta": 0.0,
+  "differing_metric_names": [],
+  "max_abs_delta": 0.0,
+  "metric_equivalence_passed": true,
+  "nondeterminism_reason": "",
+  "parallel_runtime_seconds": 0.012386,
+  "serial_runtime_seconds": 0.003216,
+  "speedup_ratio": 0.259648
+}
