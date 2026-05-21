@@ -1,0 +1,23 @@
+{
+  "audit_passed": true,
+  "auto_added_to_training": false,
+  "boundary_label_distribution": {
+    "current_supported": 13500,
+    "future_domain_candidate": 4500,
+    "hard_ood": 4500,
+    "label_review_candidate": 600,
+    "near_ood_generalization_candidate": 2400,
+    "true_false_accept_trap": 4500
+  },
+  "dataset_version": "v0_8_5_boundary_aware",
+  "scale": "medium",
+  "split_counts": {
+    "eval_future_domain": 228,
+    "eval_near_ood": 112,
+    "eval_ood_boundary": 504,
+    "eval_seen_target_unseen_paraphrase": 1348,
+    "eval_unseen_target": 1332,
+    "train": 26476
+  },
+  "total": 30000
+}

@@ -358,3 +358,12 @@ v0.8.4 explores OOD Slice Replay & Generalization Boundary（分布外切片回�
 不要声称稳定收敛。
 不要声称四则运算已攻破。
 不要声称 near-OOD 已经自动成为 supported success。
+
+## v0.8.5 Development Direction
+
+v0.8.5 explores Boundary-Aware Dataset Curriculum（边界感知数据课程）. After v0.8.4 showed that OOD accepted samples mostly fall into future-domain candidates（未来能力候选）, hard OOD（硬分布外）, and true false accept（真正误接收） rather than immediate supported expansion, this version builds a larger boundary-aware dataset with explicit nutrient/toxic pressure labels（养分/毒性压力标签） so rejection behavior can emerge from feedback rather than hard-coded rules.
+
+不要声称稳定收敛。
+不要声称四则运算已攻破。
+不要声称 OOD 已解决。
+不要声称拒绝门已完全自然涌现。

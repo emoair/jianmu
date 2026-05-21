@@ -1,0 +1,7 @@
+{
+  "neutral_on_current_reject": 8000,
+  "no_training_signal_review_only": 2000,
+  "positive_on_correct_accept": 45000,
+  "positive_on_correct_reject": 30000,
+  "weak_positive_on_current_reject": 15000
+}

@@ -1,0 +1,15 @@
+{
+  "audit_passed": true,
+  "boundary_reward_policy_valid": true,
+  "current_supported_count": 45000,
+  "curriculum_stage_count": 6,
+  "dataset_load_success": true,
+  "future_domain_candidate_count": 15000,
+  "future_domain_train_current_leak_count": 0,
+  "hard_ood_count": 15000,
+  "near_ood_candidate_count": 8000,
+  "near_ood_train_current_leak_count": 0,
+  "non_supported_targetir_leak_count": 0,
+  "sample_pipeline_success_rate": 1.0,
+  "true_false_accept_trap_count": 15000
+}

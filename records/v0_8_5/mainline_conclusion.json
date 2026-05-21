@@ -1,0 +1,39 @@
+{
+  "audit_passed": true,
+  "changes_mainline_judgment": false,
+  "future_domain_in_train_current": 0,
+  "handwritten_rejection_gate_added": false,
+  "large_dataset_generated": true,
+  "must_reproduce": [
+    "large/xlarge dataset generation",
+    "downstream rejection behavior"
+  ],
+  "near_ood_in_train_current": 0,
+  "new_bottleneck": "training must prove whether boundary pressure improves learned rejection without hard-coded gates",
+  "next_minimal_action": "run boundary curriculum training probe without real promotion",
+  "non_supported_targetir_leak": 0,
+  "not_proved": [
+    "stable convergence",
+    "solved arithmetic",
+    "OOD solved",
+    "fully emergent rejection gate"
+  ],
+  "paper_relevance": [
+    "dataset boundary distribution",
+    "nutrient/toxic pressure labels",
+    "leakage audit"
+  ],
+  "proved": [
+    "boundary-aware dataset generated",
+    "dataset audit passed",
+    "curriculum schedule generated"
+  ],
+  "real_promotion_enabled": false,
+  "risk": {
+    "negative_transfer": false,
+    "ood_pollution": true,
+    "pseudo_improvement": false
+  },
+  "toxic_pressure_present": true,
+  "train_eval_leakage": 0
+}

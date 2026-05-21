@@ -1,0 +1,8 @@
+{
+  "current_supported": 45000,
+  "future_domain_candidate": 15000,
+  "hard_ood": 15000,
+  "label_review_candidate": 2000,
+  "near_ood_generalization_candidate": 8000,
+  "true_false_accept_trap": 15000
+}

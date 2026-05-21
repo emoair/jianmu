@@ -1,0 +1,138 @@
+{
+  "curriculum_stage_count": 6,
+  "stage_sample_counts": {
+    "stage_0_supported_core": 13500,
+    "stage_1_hard_reject": 18000,
+    "stage_2_trap_boundary": 22500,
+    "stage_3_future_domain_isolation": 27000,
+    "stage_4_near_ood_audit": 29400,
+    "stage_5_mixed_boundary_stress": 30000
+  },
+  "stages": [
+    {
+      "included_boundary_labels": [
+        "current_supported"
+      ],
+      "order": 0,
+      "sample_count": 13500,
+      "stage": "stage_0_supported_core",
+      "stage_boundary_distribution": {
+        "current_supported": 13500
+      },
+      "stage_expected_actions": {
+        "accept_and_synthesize": 13500
+      }
+    },
+    {
+      "included_boundary_labels": [
+        "current_supported",
+        "hard_ood"
+      ],
+      "order": 1,
+      "sample_count": 18000,
+      "stage": "stage_1_hard_reject",
+      "stage_boundary_distribution": {
+        "current_supported": 13500,
+        "hard_ood": 4500
+      },
+      "stage_expected_actions": {
+        "accept_and_synthesize": 13500,
+        "reject": 4500
+      }
+    },
+    {
+      "included_boundary_labels": [
+        "current_supported",
+        "hard_ood",
+        "true_false_accept_trap"
+      ],
+      "order": 2,
+      "sample_count": 22500,
+      "stage": "stage_2_trap_boundary",
+      "stage_boundary_distribution": {
+        "current_supported": 13500,
+        "hard_ood": 4500,
+        "true_false_accept_trap": 4500
+      },
+      "stage_expected_actions": {
+        "accept_and_synthesize": 13500,
+        "reject": 9000
+      }
+    },
+    {
+      "included_boundary_labels": [
+        "current_supported",
+        "hard_ood",
+        "true_false_accept_trap",
+        "future_domain_candidate"
+      ],
+      "order": 3,
+      "sample_count": 27000,
+      "stage": "stage_3_future_domain_isolation",
+      "stage_boundary_distribution": {
+        "current_supported": 13500,
+        "future_domain_candidate": 4500,
+        "hard_ood": 4500,
+        "true_false_accept_trap": 4500
+      },
+      "stage_expected_actions": {
+        "accept_and_synthesize": 13500,
+        "reject": 9000,
+        "reject_but_keep_future_candidate": 4500
+      }
+    },
+    {
+      "included_boundary_labels": [
+        "current_supported",
+        "hard_ood",
+        "true_false_accept_trap",
+        "future_domain_candidate",
+        "near_ood_generalization_candidate"
+      ],
+      "order": 4,
+      "sample_count": 29400,
+      "stage": "stage_4_near_ood_audit",
+      "stage_boundary_distribution": {
+        "current_supported": 13500,
+        "future_domain_candidate": 4500,
+        "hard_ood": 4500,
+        "near_ood_generalization_candidate": 2400,
+        "true_false_accept_trap": 4500
+      },
+      "stage_expected_actions": {
+        "accept_and_synthesize": 13500,
+        "candidate_buffer_only": 2400,
+        "reject": 9000,
+        "reject_but_keep_future_candidate": 4500
+      }
+    },
+    {
+      "included_boundary_labels": [
+        "current_supported",
+        "hard_ood",
+        "true_false_accept_trap",
+        "future_domain_candidate",
+        "near_ood_generalization_candidate",
+        "label_review_candidate"
+      ],
+      "order": 5,
+      "sample_count": 30000,
+      "stage": "stage_5_mixed_boundary_stress",
+      "stage_boundary_distribution": {
+        "current_supported": 13500,
+        "future_domain_candidate": 4500,
+        "hard_ood": 4500,
+        "label_review_candidate": 600,
+        "near_ood_generalization_candidate": 2400,
+        "true_false_accept_trap": 4500
+      },
+      "stage_expected_actions": {
+        "accept_and_synthesize": 13500,
+        "candidate_buffer_only": 2400,
+        "quarantine_for_review": 600,
+        "reject": 9000,
+        "reject_but_keep_future_candidate": 4500
+      }
+    }
+  ]
+}

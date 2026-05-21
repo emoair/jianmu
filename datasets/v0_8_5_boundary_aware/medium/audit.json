@@ -1,0 +1,43 @@
+{
+  "audit_passed": true,
+  "blocking_issue_count": 0,
+  "boundary_label_distribution": {
+    "current_supported": 13500,
+    "future_domain_candidate": 4500,
+    "hard_ood": 4500,
+    "label_review_candidate": 600,
+    "near_ood_generalization_candidate": 2400,
+    "true_false_accept_trap": 4500
+  },
+  "current_supported_has_targetir_rate": 1.0,
+  "duplicate_input_count": 0,
+  "duplicate_sample_id_count": 0,
+  "expected_action_distribution": {
+    "accept_and_synthesize": 13500,
+    "candidate_buffer_only": 2400,
+    "quarantine_for_review": 600,
+    "reject": 9000,
+    "reject_but_keep_future_candidate": 4500
+  },
+  "future_domain_in_train_current_count": 0,
+  "hard_ood_has_positive_accept_reward_count": 0,
+  "issues": [],
+  "label_conflict_count": 0,
+  "malformed_sample_count": 0,
+  "missing_required_field_count": 0,
+  "near_ood_in_train_current_count": 0,
+  "non_supported_has_targetir_count": 0,
+  "nutrient_policy_distribution": {
+    "neutral_on_current_reject": 2400,
+    "no_training_signal_review_only": 600,
+    "positive_on_correct_accept": 13500,
+    "positive_on_correct_reject": 9000,
+    "weak_positive_on_current_reject": 4500
+  },
+  "paraphrase_group_leakage_count": 0,
+  "recommendations": [],
+  "target_group_leakage_count": 0,
+  "train_eval_input_leakage_count": 0,
+  "true_false_accept_has_positive_accept_reward_count": 0,
+  "warning_count": 0
+}
