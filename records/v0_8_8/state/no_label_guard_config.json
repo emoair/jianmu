@@ -1,0 +1,12 @@
+{
+  "evaluation_only": true,
+  "forbidden_fields_excluded": true,
+  "source": "records/v0_8_7/no_label_inference_guard.json",
+  "summary": {
+    "access_trace_path": "records\\v0_8_7\\inference_access_trace.jsonl",
+    "forbidden_field_access_count": 0,
+    "forbidden_fields_seen": [],
+    "no_label_inference_passed": true,
+    "violation_examples": []
+  }
+}

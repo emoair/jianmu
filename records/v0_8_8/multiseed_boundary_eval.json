@@ -1,0 +1,86 @@
+{
+  "seed_metrics": [
+    {
+      "current_supported_retention_rate": 1.0,
+      "future_domain_isolation_rate": 1.0,
+      "hard_ood_rejection_rate": 1.0,
+      "near_ood_quarantine_rate": 1.0,
+      "no_label_inference_passed": true,
+      "over_rejection_detected": false,
+      "overall_ood_false_accept_rate": 0.0,
+      "seed": 42,
+      "trap_rejection_rate": 1.0
+    },
+    {
+      "current_supported_retention_rate": 1.0,
+      "future_domain_isolation_rate": 1.0,
+      "hard_ood_rejection_rate": 1.0,
+      "near_ood_quarantine_rate": 1.0,
+      "no_label_inference_passed": true,
+      "over_rejection_detected": false,
+      "overall_ood_false_accept_rate": 0.0,
+      "seed": 43,
+      "trap_rejection_rate": 1.0
+    },
+    {
+      "current_supported_retention_rate": 1.0,
+      "future_domain_isolation_rate": 1.0,
+      "hard_ood_rejection_rate": 1.0,
+      "near_ood_quarantine_rate": 1.0,
+      "no_label_inference_passed": true,
+      "over_rejection_detected": false,
+      "overall_ood_false_accept_rate": 0.0,
+      "seed": 44,
+      "trap_rejection_rate": 1.0
+    }
+  ],
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "stable_across_seeds": true,
+  "summary": {
+    "current_supported_retention_rate": {
+      "max": 1.0,
+      "mean": 1.0,
+      "min": 1.0
+    },
+    "future_domain_isolation_rate": {
+      "max": 1.0,
+      "mean": 1.0,
+      "min": 1.0
+    },
+    "hard_ood_rejection_rate": {
+      "max": 1.0,
+      "mean": 1.0,
+      "min": 1.0
+    },
+    "near_ood_quarantine_rate": {
+      "max": 1.0,
+      "mean": 1.0,
+      "min": 1.0
+    },
+    "no_label_inference_passed": {
+      "max": true,
+      "mean": 1.0,
+      "min": true
+    },
+    "over_rejection_detected": {
+      "max": false,
+      "mean": 0.0,
+      "min": false
+    },
+    "overall_ood_false_accept_rate": {
+      "max": 0.0,
+      "mean": 0.0,
+      "min": 0.0
+    },
+    "trap_rejection_rate": {
+      "max": 1.0,
+      "mean": 1.0,
+      "min": 1.0
+    }
+  },
+  "unstable_metric_names": []
+}

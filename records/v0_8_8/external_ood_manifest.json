@@ -1,0 +1,13 @@
+{
+  "category_distribution": {
+    "external_arithmetic_traps": 750,
+    "external_future_domain": 750,
+    "external_hard_ood": 750,
+    "external_near_ood": 750
+  },
+  "contains_expected_output": false,
+  "contains_target_ir": false,
+  "contains_training_rows": false,
+  "external_ood_total_count": 3000,
+  "mode": "medium"
+}

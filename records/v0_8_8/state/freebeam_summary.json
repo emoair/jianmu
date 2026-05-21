@@ -1,0 +1,28 @@
+{
+  "evaluation_only": true,
+  "source": "records/v0_8_7/boundary_generalization_metrics.json",
+  "summary": {
+    "boundary_reward_total": 0,
+    "boundary_toxicity_total": 0,
+    "current_supported_false_reject_rate": 0.0,
+    "current_supported_retention_rate": 1.0,
+    "delta_current_supported_retention": 0.0,
+    "delta_future_domain_isolation": 0.0,
+    "delta_hard_ood_rejection": 0.0,
+    "delta_near_ood_quarantine": 0.0,
+    "delta_ood_false_accept": 0.0,
+    "delta_trap_rejection": 0.0,
+    "false_accept_toxicity_rate": 0.0,
+    "false_reject_supported_toxicity_rate": 0.0,
+    "future_domain_false_accept_rate": 0.0,
+    "future_domain_isolation_rate": 1.0,
+    "hard_ood_false_accept_rate": 0.0,
+    "hard_ood_rejection_rate": 1.0,
+    "near_ood_false_supported_accept_rate": 0.0,
+    "near_ood_quarantine_rate": 1.0,
+    "over_rejection_rate": 0.0,
+    "overall_ood_false_accept_rate": 0.0,
+    "true_false_accept_trap_false_accept_rate": 0.0,
+    "true_false_accept_trap_rejection_rate": 1.0
+  }
+}

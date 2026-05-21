@@ -1,0 +1,251 @@
+{
+  "arxiv_readiness": {
+    "blocking_issues": [
+      "persisted state support is summary_only, not full router/root state"
+    ],
+    "ready_for_arxiv_technical_report": false,
+    "recommended_claim_level": "needs_more_validation",
+    "recommended_title": "JianMu: Nutrient-Guided Root-Colony Routing for Compiler-Verified Program Synthesis",
+    "required_non_claims": [
+      "no stable convergence claim",
+      "no solved arithmetic claim",
+      "no solved OOD claim",
+      "no general program synthesis claim",
+      "no AGI claim",
+      "no Transformer replacement claim",
+      "no same-size LLM advantage claim",
+      "no safe real promotion claim"
+    ],
+    "suggested_next_experiments": [
+      "full router/root state persistence",
+      "external OOD from independently authored sources",
+      "more seeds and larger free-beam runs",
+      "same-size LLM / Transformer baseline"
+    ],
+    "v0_8_7_reference_available": true
+  },
+  "external_ood_manifest": {
+    "category_distribution": {
+      "external_arithmetic_traps": 750,
+      "external_future_domain": 750,
+      "external_hard_ood": 750,
+      "external_near_ood": 750
+    },
+    "contains_expected_output": false,
+    "contains_target_ir": false,
+    "contains_training_rows": false,
+    "external_ood_total_count": 3000,
+    "mode": "medium"
+  },
+  "external_ood_metrics": {
+    "current_supported_retention_rate": 0.0,
+    "false_accept_examples_count": 0,
+    "false_reject_supported_examples_count": 0,
+    "forbidden_field_access_count": 0,
+    "future_domain_isolation_rate": 1.0,
+    "hard_ood_rejection_rate": 1.0,
+    "hardcoded_rejection_gate_added": false,
+    "metrics": {
+      "boundary_reward_total": 0,
+      "boundary_toxicity_total": 0,
+      "current_supported_false_reject_rate": 0.0,
+      "current_supported_retention_rate": 0.0,
+      "delta_current_supported_retention": 0.0,
+      "delta_future_domain_isolation": 1.0,
+      "delta_hard_ood_rejection": 1.0,
+      "delta_near_ood_quarantine": 1.0,
+      "delta_ood_false_accept": 0.0,
+      "delta_trap_rejection": 1.0,
+      "false_accept_toxicity_rate": 0.0,
+      "false_reject_supported_toxicity_rate": 0.0,
+      "future_domain_false_accept_rate": 0.0,
+      "future_domain_isolation_rate": 1.0,
+      "hard_ood_false_accept_rate": 0.0,
+      "hard_ood_rejection_rate": 1.0,
+      "near_ood_false_supported_accept_rate": 0.0,
+      "near_ood_quarantine_rate": 1.0,
+      "over_rejection_rate": 0.0,
+      "overall_ood_false_accept_rate": 0.0,
+      "true_false_accept_trap_false_accept_rate": 0.0,
+      "true_false_accept_trap_rejection_rate": 1.0
+    },
+    "mode": "medium",
+    "near_ood_quarantine_rate": 1.0,
+    "no_label_inference_passed": true,
+    "over_rejection_detected": false,
+    "overall_ood_false_accept_rate": 0.0,
+    "persisted_state_support_level": "summary_only",
+    "real_promotion_enabled": false,
+    "reloaded_eval_completed": true,
+    "true_false_accept_trap_rejection_rate": 1.0
+  },
+  "hardcoded_rejection_gate_added": false,
+  "heldout_leakage_check_passed": true,
+  "mode": "medium",
+  "modes_attempted": [
+    "medium"
+  ],
+  "modes_completed": [
+    "medium"
+  ],
+  "multiseed_boundary_eval": {
+    "seed_metrics": [
+      {
+        "current_supported_retention_rate": 1.0,
+        "future_domain_isolation_rate": 1.0,
+        "hard_ood_rejection_rate": 1.0,
+        "near_ood_quarantine_rate": 1.0,
+        "no_label_inference_passed": true,
+        "over_rejection_detected": false,
+        "overall_ood_false_accept_rate": 0.0,
+        "seed": 42,
+        "trap_rejection_rate": 1.0
+      },
+      {
+        "current_supported_retention_rate": 1.0,
+        "future_domain_isolation_rate": 1.0,
+        "hard_ood_rejection_rate": 1.0,
+        "near_ood_quarantine_rate": 1.0,
+        "no_label_inference_passed": true,
+        "over_rejection_detected": false,
+        "overall_ood_false_accept_rate": 0.0,
+        "seed": 43,
+        "trap_rejection_rate": 1.0
+      },
+      {
+        "current_supported_retention_rate": 1.0,
+        "future_domain_isolation_rate": 1.0,
+        "hard_ood_rejection_rate": 1.0,
+        "near_ood_quarantine_rate": 1.0,
+        "no_label_inference_passed": true,
+        "over_rejection_detected": false,
+        "overall_ood_false_accept_rate": 0.0,
+        "seed": 44,
+        "trap_rejection_rate": 1.0
+      }
+    ],
+    "seeds": [
+      42,
+      43,
+      44
+    ],
+    "stable_across_seeds": true,
+    "summary": {
+      "current_supported_retention_rate": {
+        "max": 1.0,
+        "mean": 1.0,
+        "min": 1.0
+      },
+      "future_domain_isolation_rate": {
+        "max": 1.0,
+        "mean": 1.0,
+        "min": 1.0
+      },
+      "hard_ood_rejection_rate": {
+        "max": 1.0,
+        "mean": 1.0,
+        "min": 1.0
+      },
+      "near_ood_quarantine_rate": {
+        "max": 1.0,
+        "mean": 1.0,
+        "min": 1.0
+      },
+      "no_label_inference_passed": {
+        "max": true,
+        "mean": 1.0,
+        "min": true
+      },
+      "over_rejection_detected": {
+        "max": false,
+        "mean": 0.0,
+        "min": false
+      },
+      "overall_ood_false_accept_rate": {
+        "max": 0.0,
+        "mean": 0.0,
+        "min": 0.0
+      },
+      "trap_rejection_rate": {
+        "max": 1.0,
+        "mean": 1.0,
+        "min": 1.0
+      }
+    },
+    "unstable_metric_names": []
+  },
+  "persisted_state": {
+    "forbidden_field_in_state_count": 0,
+    "forbidden_fields_in_state": [],
+    "persisted_state_support_level": "summary_only",
+    "state_checksum": "67a62ef14323678d98fc6c303e2e61d1815e6c9391725924afe2d0c282d77593",
+    "state_loaded": true,
+    "state_manifest_path": "records\\v0_8_8\\state\\state_manifest.json",
+    "state_saved": true
+  },
+  "persisted_state_consistency": {
+    "allowed_delta": 0.02,
+    "consistency_failure_reason": null,
+    "degraded_metrics": [],
+    "improved_metrics": [],
+    "max_abs_metric_delta": 0.0,
+    "metric_delta_summary": {
+      "current_supported_retention_rate": 0.0,
+      "future_domain_isolation_rate": 0.0,
+      "hard_ood_rejection_rate": 0.0,
+      "near_ood_quarantine_rate": 0.0,
+      "overall_ood_false_accept_rate": 0.0,
+      "true_false_accept_trap_rejection_rate": 0.0
+    },
+    "persisted_state_consistency_passed": true
+  },
+  "real_promotion_enabled": false,
+  "reloaded_freebeam": {
+    "current_supported_retention_rate": 1.0,
+    "false_accept_examples_count": 0,
+    "false_reject_supported_examples_count": 0,
+    "forbidden_field_access_count": 0,
+    "future_domain_isolation_rate": 1.0,
+    "hard_ood_rejection_rate": 1.0,
+    "hardcoded_rejection_gate_added": false,
+    "metrics": {
+      "boundary_reward_total": 0,
+      "boundary_toxicity_total": 0,
+      "current_supported_false_reject_rate": 0.0,
+      "current_supported_retention_rate": 1.0,
+      "delta_current_supported_retention": 1.0,
+      "delta_future_domain_isolation": 1.0,
+      "delta_hard_ood_rejection": 1.0,
+      "delta_near_ood_quarantine": 1.0,
+      "delta_ood_false_accept": 0.0,
+      "delta_trap_rejection": 1.0,
+      "false_accept_toxicity_rate": 0.0,
+      "false_reject_supported_toxicity_rate": 0.0,
+      "future_domain_false_accept_rate": 0.0,
+      "future_domain_isolation_rate": 1.0,
+      "hard_ood_false_accept_rate": 0.0,
+      "hard_ood_rejection_rate": 1.0,
+      "near_ood_false_supported_accept_rate": 0.0,
+      "near_ood_quarantine_rate": 1.0,
+      "over_rejection_rate": 0.0,
+      "overall_ood_false_accept_rate": 0.0,
+      "true_false_accept_trap_false_accept_rate": 0.0,
+      "true_false_accept_trap_rejection_rate": 1.0
+    },
+    "mode": "medium",
+    "near_ood_quarantine_rate": 1.0,
+    "no_label_inference_passed": true,
+    "over_rejection_detected": false,
+    "overall_ood_false_accept_rate": 0.0,
+    "persisted_state_support_level": "summary_only",
+    "real_promotion_enabled": false,
+    "reloaded_eval_completed": true,
+    "true_false_accept_trap_rejection_rate": 1.0
+  },
+  "runtime": {
+    "external_ood_total_count": 3000,
+    "mode": "medium",
+    "runtime_seconds": 2.671387,
+    "worker_count": 4
+  }
+}

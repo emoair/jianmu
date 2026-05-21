@@ -384,3 +384,11 @@ v0.8.7 explores Boundary Free-Beam Generalization Probe（边界自由束泛化�
 不要声称稳定收敛。
 不要声称 OOD 已解决。
 不要声称拒绝门完全自然涌现，除非 freebeam_emergent_rejection_signal_confirmed 为 true 且 no-label guard 通过。
+## v0.8.8 Development Direction
+
+v0.8.8 explores Real Persisted Router-State & External OOD Eval（真实持久化路由状态与外部分布外评估）. After v0.8.7 showed no-label free-beam boundary behavior on held-out slices, this version saves and reloads router/probe state, evaluates reloaded no-label free-beam behavior, adds external OOD slices, checks multi-seed stability, and reports whether the project is ready for a conservative arXiv technical report.
+
+不要声称稳定收敛。
+不要声称 OOD 已解决。
+不要声称同体量 LLM 优势。
+不要声称 safe real promotion。

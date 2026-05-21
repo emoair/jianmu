@@ -1,0 +1,52 @@
+{
+  "changes_mainline_judgment": false,
+  "external_future_domain_isolation_rate": 1.0,
+  "external_hard_ood_rejection_rate": 1.0,
+  "external_near_ood_quarantine_rate": 1.0,
+  "external_ood_false_accept_rate": 0.0,
+  "external_trap_rejection_rate": 1.0,
+  "forbidden_field_in_state_count": 0,
+  "hardcoded_rejection_gate_added": false,
+  "multi_seed_stable": true,
+  "must_reproduce": [
+    "full persisted state",
+    "independent external OOD",
+    "more seeds"
+  ],
+  "new_bottleneck": "full router/root state persistence beyond summary-only state",
+  "next_minimal_action": "persist real router/root state objects and rerun external OOD",
+  "not_proved": [
+    "full persisted router/root state",
+    "stable convergence",
+    "solved OOD",
+    "solved arithmetic",
+    "same-size LLM advantage",
+    "safe real promotion"
+  ],
+  "paper_relevance": [
+    "summary-only reload caveat",
+    "external OOD audit",
+    "multi-seed table"
+  ],
+  "persisted_state_consistency_passed": true,
+  "persisted_state_support_level": "summary_only",
+  "proved": [
+    "summary-level persisted state can be saved and reloaded",
+    "reloaded no-label free-beam evaluation completed",
+    "external OOD slice was evaluated",
+    "multi-seed summary evaluation completed"
+  ],
+  "ready_for_arxiv_technical_report": false,
+  "real_promotion_enabled": false,
+  "recommended_claim_level": "needs_more_validation",
+  "reloaded_current_supported_retention_rate": 1.0,
+  "reloaded_no_label_inference_passed": true,
+  "reloaded_overall_ood_false_accept_rate": 0.0,
+  "risk": {
+    "negative_transfer": false,
+    "ood_pollution": false,
+    "pseudo_improvement": true
+  },
+  "state_loaded": true,
+  "state_saved": true
+}

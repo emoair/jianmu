@@ -1,0 +1,25 @@
+{
+  "blocking_issues": [
+    "persisted state support is summary_only, not full router/root state"
+  ],
+  "ready_for_arxiv_technical_report": false,
+  "recommended_claim_level": "needs_more_validation",
+  "recommended_title": "JianMu: Nutrient-Guided Root-Colony Routing for Compiler-Verified Program Synthesis",
+  "required_non_claims": [
+    "no stable convergence claim",
+    "no solved arithmetic claim",
+    "no solved OOD claim",
+    "no general program synthesis claim",
+    "no AGI claim",
+    "no Transformer replacement claim",
+    "no same-size LLM advantage claim",
+    "no safe real promotion claim"
+  ],
+  "suggested_next_experiments": [
+    "full router/root state persistence",
+    "external OOD from independently authored sources",
+    "more seeds and larger free-beam runs",
+    "same-size LLM / Transformer baseline"
+  ],
+  "v0_8_7_reference_available": true
+}
