@@ -1,0 +1,20 @@
+{
+  "metric_consistency_passed": true,
+  "inconsistency_count": 0,
+  "inconsistencies": [],
+  "corrected_summary": {
+    "record_count": 4,
+    "modes": [
+      "xlarge"
+    ],
+    "sample_count_tuples": [
+      [
+        "xlarge",
+        2200,
+        600,
+        200
+      ]
+    ]
+  },
+  "unresolved_issues": []
+}

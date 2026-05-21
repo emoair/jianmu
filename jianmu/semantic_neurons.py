@@ -76,6 +76,10 @@ def is_unsupported_english_natural_language(text: str) -> bool:
         return False
     if NUMERIC_EXPRESSION_RE.match(text):
         return False
+    lower = text.lower()
+    has_code_generation_cue = any(token in lower for token in ("int", "printf", "main", "return"))
+    if has_code_generation_cue and _numbers_from_text(text):
+        return False
     return bool(re.search(r"[A-Za-z]", text))
 
 
@@ -172,7 +176,7 @@ class NegationDetectorNeuron(SemanticNeuron):
     name = "NegationDetectorNeuron"
 
     def activate(self, text: str, features: SemanticFeatures) -> NeuronResult:
-        negated = bool(re.search(r"不要|不用|禁止|保持不变|别(?:加|改|动|修改|变)", text))
+        negated = bool(re.search(r"不要|不用|禁止|保持不变|别(?:加|改|动|修改|变)|\bnot\b|非(?:追加|修改|生成|替换)", text, re.IGNORECASE))
         return NeuronResult(
             self.name,
             _score(0.95 if negated else 0.0),

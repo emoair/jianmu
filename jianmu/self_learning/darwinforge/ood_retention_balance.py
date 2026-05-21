@@ -29,6 +29,8 @@ def evaluate_guard_candidate(population, guard_update: Dict, eval_samples: List[
         rollback_reason = "toxic_event_regression"
     return {
         "guard_update": guard_update,
+        "baseline_mode": guard_update.get("baseline_mode", guard_update.get("mode", "unknown")),
+        "baseline_run_id": guard_update.get("baseline_run_id", guard_update.get("run_id", "")),
         "ood_false_accept_before": before_ood,
         "ood_false_accept_after": after_ood,
         "arithmetic_supported_retention_before": before_retention,
@@ -57,4 +59,6 @@ def summarize_guard_balance(results: List[Dict]) -> Dict:
         "arithmetic_supported_retention_after_guard": best.get("arithmetic_supported_retention_after", first.get("arithmetic_supported_retention_before", 1.0)),
         "global_beam_before_guard": first.get("global_correct_targetir_in_beam_before", 0.0),
         "global_beam_after_guard": best.get("global_correct_targetir_in_beam_after", first.get("global_correct_targetir_in_beam_before", 0.0)),
+        "baseline_mode": best.get("baseline_mode", first.get("baseline_mode", "unknown")),
+        "baseline_run_id": best.get("baseline_run_id", first.get("baseline_run_id", "")),
     }

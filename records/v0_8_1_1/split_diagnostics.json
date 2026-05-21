@@ -1,0 +1,15 @@
+{
+  "requested_train_limit": 3000,
+  "requested_eval_limit": 1000,
+  "requested_ood_limit": 500,
+  "actual_train_count": 2200,
+  "actual_eval_count": 600,
+  "actual_ood_count": 200,
+  "dataset_capacity_train": 2200,
+  "dataset_capacity_eval": 600,
+  "dataset_capacity_ood": 200,
+  "split_hash_train": "bcb23048851e3fa0",
+  "split_hash_eval": "a5d7d6e49794e22b",
+  "split_hash_ood": "eab9100886f01600",
+  "reason_for_limit_mismatch": "dataset_capacity"
+}

@@ -1,0 +1,7 @@
+{
+  "final_nourished_root_count": 0,
+  "cumulative_nourished_event_count": 4548,
+  "final_stable_root_count": 4548,
+  "cumulative_stable_event_count": 4548,
+  "explanation": "final_nourished_root_count may be zero when nourished roots transition into stable roots."
+}

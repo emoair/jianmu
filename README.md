@@ -328,3 +328,11 @@ v0.8.0 explores Colony Scale Stress Probe（根群规模压力探针）. After v
 ## v0.8.1 Development Direction
 
 v0.8.1 explores OOD Toxicity Stress & Long-Run Scale Probe（分布外毒性压力与长时规模探针）. After v0.8.0 showed that larger scale improves global beam（全局束） and stable roots（稳定根）, this version analyzes OOD false accept（分布外误接收） by class, evaluates rollback-safe OOD guard candidates（可回滚分布外守卫候选）, and allows bounded hour-level xlarge/full runs without enabling real promotion（真实晋升）.
+
+## v0.8.1.1 Development Direction
+
+v0.8.1.1 performs Overnight Metric Reconciliation & XLarge Reproduction（过夜指标口径校验与 xlarge 复验）. After v0.8.1 overnight produced a strong xlarge signal, this version repairs test failures, reconciles before/after/guard metric definitions, diagnoses split mismatches, reruns xlarge with same and alternate seeds, and writes a Mainline Conclusion Ledger（主线结论账本）.
+
+不要声称稳定收敛。
+不要声称四则运算已攻破。
+不要声称已经优于同体量 LLM。

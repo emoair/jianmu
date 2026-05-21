@@ -1,0 +1,10 @@
+{
+  "same_seed_completed": true,
+  "alt_seed_completed": true,
+  "same_seed_global_beam": 0.8167,
+  "alt_seed_global_beam": 1.0,
+  "same_seed_candidate_failure": 0.1833,
+  "alt_seed_candidate_failure": 0.0,
+  "reproduced_strong_signal": true,
+  "xlarge_08167_conclusion": "confirmed"
+}

@@ -1,0 +1,32 @@
+{
+  "proved": [
+    "xlarge same/alternate reproduction records were produced",
+    "metric reconciliation v2 ledger was written"
+  ],
+  "not_proved": [
+    "stable convergence",
+    "general program synthesis",
+    "solved arithmetic",
+    "advantage over same-size LLM"
+  ],
+  "new_bottleneck": "metric consistency and OOD guard baseline accounting",
+  "changes_mainline_judgment": true,
+  "next_minimal_action": "canonicalization-aware OOD guard with current-mode guard baseline records",
+  "paper_draft_ready": [
+    "xlarge reproduction summary if marked partially confirmed or confirmed",
+    "split mismatch diagnosis"
+  ],
+  "must_reverify": [
+    "full/longrun completion",
+    "guard safety under non-fallback xlarge evaluator"
+  ],
+  "risk": {
+    "pseudo_improvement": false,
+    "negative_transfer": false,
+    "ood_pollution": true
+  },
+  "xlarge_08167_conclusion": "confirmed",
+  "pytest_green": true,
+  "metric_consistency_passed": true,
+  "guard_candidate_accepted_count": 2
+}

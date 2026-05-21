@@ -129,8 +129,22 @@ def test_negation_detector_does_not_trigger_on_fenbie(rt):
 
     result = rt.run(text, speculative=True)
     assert result.semantic_features.negated is False
+    if not HAS_COMPILER:
+        pytest.skip("gcc/clang/cl not found")
     assert result.sandbox_result.stdout.strip() == "6"
     assert result.selected_candidate.success is True
+
+
+@pytest.mark.parametrize("text", ["分别输出 1、2、3 的和", "fenbie"])
+def test_negation_detector_ignores_non_negation_tokens(text):
+    features = HierarchicalSemanticRouter().analyze(text)
+    assert features.negated is False
+
+
+@pytest.mark.parametrize("text", ["不要多加2，保持不变", "not change the current program", "非追加"])
+def test_negation_detector_still_detects_real_negation(text):
+    features = HierarchicalSemanticRouter().analyze(text, make_two_sum_ir())
+    assert features.negated is True
 
 
 def test_expected_output_provenance_present_on_candidates(router):
