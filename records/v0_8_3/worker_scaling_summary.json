@@ -1,0 +1,81 @@
+{
+  "xlarge": {
+    "best_worker_count": 4,
+    "best_worker_count_by_mode": {
+      "xlarge": 4
+    },
+    "by_worker": {
+      "1": {
+        "arithmetic_supported_retention_rate": 1.0,
+        "candidate_space_failure_rate": 0.25,
+        "efficiency_vs_worker_1": 1.0,
+        "global_correct_targetir_in_beam_rate": 0.75,
+        "ood_false_accept_rate": 0.665,
+        "runtime_seconds": 1.407926,
+        "samples_per_second": 568.211682,
+        "speedup_vs_worker_1": 1.0
+      },
+      "2": {
+        "arithmetic_supported_retention_rate": 1.0,
+        "candidate_space_failure_rate": 0.25,
+        "efficiency_vs_worker_1": 0.633516,
+        "global_correct_targetir_in_beam_rate": 0.75,
+        "ood_false_accept_rate": 0.665,
+        "runtime_seconds": 1.1112,
+        "samples_per_second": 719.942405,
+        "speedup_vs_worker_1": 1.267032
+      },
+      "4": {
+        "arithmetic_supported_retention_rate": 1.0,
+        "candidate_space_failure_rate": 0.25,
+        "efficiency_vs_worker_1": 0.401274,
+        "global_correct_targetir_in_beam_rate": 0.75,
+        "ood_false_accept_rate": 0.665,
+        "runtime_seconds": 0.877161,
+        "samples_per_second": 912.033253,
+        "speedup_vs_worker_1": 1.605094
+      },
+      "8": {
+        "arithmetic_supported_retention_rate": 1.0,
+        "candidate_space_failure_rate": 0.25,
+        "efficiency_vs_worker_1": 0.198715,
+        "global_correct_targetir_in_beam_rate": 0.75,
+        "ood_false_accept_rate": 0.665,
+        "runtime_seconds": 0.885645,
+        "samples_per_second": 903.296468,
+        "speedup_vs_worker_1": 1.589718
+      }
+    },
+    "highload_parallel_speedup_confirmed": true,
+    "metric_equivalence_failures": [],
+    "metric_equivalence_passed": true,
+    "samples_per_second_by_worker": {
+      "1": 568.211682,
+      "2": 719.942405,
+      "4": 912.033253,
+      "8": 903.296468
+    },
+    "worker_counts_tested": [
+      1,
+      2,
+      4,
+      8
+    ],
+    "worker_runtime_by_mode": {
+      "xlarge": {
+        "1": 1.407926,
+        "2": 1.1112,
+        "4": 0.877161,
+        "8": 0.885645
+      }
+    },
+    "worker_speedup_by_mode": {
+      "xlarge": {
+        "1": 1.0,
+        "2": 1.267032,
+        "4": 1.605094,
+        "8": 1.589718
+      }
+    }
+  }
+}

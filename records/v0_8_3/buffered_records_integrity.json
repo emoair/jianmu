@@ -1,0 +1,9 @@
+{
+  "duplicate_record_count": 0,
+  "duplicate_sample_ids": [],
+  "merge_integrity_passed": true,
+  "missing_record_count": 0,
+  "missing_sample_ids": [],
+  "shard_count": 1,
+  "total_record_count": 800
+}

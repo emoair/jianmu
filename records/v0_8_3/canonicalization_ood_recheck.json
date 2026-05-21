@@ -1,0 +1,13 @@
+{
+  "beneficial_generalization_candidate_count": 0,
+  "canonicalizer_audit_slice_source": "v0_8_3_xlarge_ood_slice",
+  "canonicalizer_made_supported_count": 0,
+  "compared_to_v0_8_1_reason": "v0.8.1 reported canonicalizer_made_it_look_supported as most_common_false_accept_reason",
+  "dangerous_false_accept_count": 0,
+  "label_review_candidate_count": 0,
+  "reason_not_reproduced": "not_reproduced; likely slice mismatch or detector mismatch against v0.8.1 guard-stress reason",
+  "suggested_action_distribution": {
+    "future_supported_slice": 66,
+    "unknown": 134
+  }
+}

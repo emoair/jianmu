@@ -1,0 +1,10 @@
+{
+  "cache_free_space_mb": 1263556,
+  "cache_policy_warning": "project path contains OneDrive; user_allows_project_local_cache=true; onedrive_sync_state not_measured",
+  "cache_write_test_passed": true,
+  "cleanup_performed": false,
+  "onedrive_sync_state": "not_measured",
+  "project_inside_onedrive": true,
+  "runtime_cache_dir": "C:\\Users\\Air\\OneDrive\\文档\\jianmu-mvp\\.jianmu_runtime_cache\\run_51368e8b37d3",
+  "user_allows_project_local_cache": true
+}

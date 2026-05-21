@@ -1,0 +1,4 @@
+{"mode": "xlarge", "runtime_seconds": 1.407926, "samples_per_second": 568.211682, "worker_count": 1}
+{"mode": "xlarge", "runtime_seconds": 1.1112, "samples_per_second": 719.942405, "worker_count": 2}
+{"mode": "xlarge", "runtime_seconds": 0.877161, "samples_per_second": 912.033253, "worker_count": 4}
+{"mode": "xlarge", "runtime_seconds": 0.885645, "samples_per_second": 903.296468, "worker_count": 8}

@@ -343,3 +343,11 @@ v0.8.2 explores Runtime Parallelism & OOD Precision Audit（运行时并行与�
 不要声称稳定收敛。
 不要声称四则运算已攻破。
 不要声称已经优于同体量 LLM。
+
+## v0.8.3 Development Direction
+
+v0.8.3 explores High-Load Parallel Runtime & OOD Precision Recheck（高负载并行运行时与分布外精审复查）. After v0.8.2 added parallelism and buffered records scaffolds, this version benchmarks worker_count 1/2/4/8 under medium and xlarge-light workloads, allows project-local runtime cache when OneDrive sync is disabled, verifies serial/parallel metric equivalence, and rechecks OOD accepted samples to distinguish true false accept（真正误接收） from near-OOD generalization candidates（近邻分布外泛化候选）.
+
+不要声称稳定收敛。
+不要声称四则运算已攻破。
+不要声称已经优于同体量 LLM。
