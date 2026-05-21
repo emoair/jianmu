@@ -1,0 +1,75 @@
+{
+  "candidate_dataset_manifest": {
+    "auto_added_to_training": false,
+    "counts": {
+      "future_domain_candidate": 193,
+      "hard_ood": 55,
+      "label_too_strict": 0,
+      "near_ood_generalization_candidate": 0,
+      "true_false_accept": 32,
+      "unknown": 0
+    },
+    "dataset_version": "v0_8_4_ood_boundary_candidates",
+    "files": {
+      "future_domain_candidate": "C:\\Users\\Air\\OneDrive\\文档\\jianmu-mvp\\datasets\\v0_8_4_ood_boundary_candidates\\future_domain_candidates.jsonl",
+      "hard_ood": "C:\\Users\\Air\\OneDrive\\文档\\jianmu-mvp\\datasets\\v0_8_4_ood_boundary_candidates\\hard_ood_cases.jsonl",
+      "label_too_strict": "C:\\Users\\Air\\OneDrive\\文档\\jianmu-mvp\\datasets\\v0_8_4_ood_boundary_candidates\\label_review_cases.jsonl",
+      "near_ood_generalization_candidate": "C:\\Users\\Air\\OneDrive\\文档\\jianmu-mvp\\datasets\\v0_8_4_ood_boundary_candidates\\supported_expansion_candidates.jsonl",
+      "true_false_accept": "C:\\Users\\Air\\OneDrive\\文档\\jianmu-mvp\\datasets\\v0_8_4_ood_boundary_candidates\\true_false_accept_cases.jsonl",
+      "unknown": "C:\\Users\\Air\\OneDrive\\文档\\jianmu-mvp\\datasets\\v0_8_4_ood_boundary_candidates\\unknown_cases.jsonl"
+    },
+    "manifest_path": "C:\\Users\\Air\\OneDrive\\文档\\jianmu-mvp\\datasets\\v0_8_4_ood_boundary_candidates\\dataset_manifest.json",
+    "report_path": "C:\\Users\\Air\\OneDrive\\文档\\jianmu-mvp\\datasets\\v0_8_4_ood_boundary_candidates\\dataset_report.md",
+    "total_records": 280
+  },
+  "canonicalizer_reason_replay": {
+    "boundary_spec_version": "v0.8.4",
+    "canonicalizer_reason_confirmed": false,
+    "detector_mismatch_count": 67,
+    "new_canonicalizer_reason_count": 0,
+    "old_canonicalizer_reason_count": 67,
+    "reason_match_count": 0,
+    "reason_match_distribution": {
+      "detector_mismatch": 67,
+      "not_matched": 133
+    },
+    "reason_not_match_count": 200,
+    "reason_not_reproduced": "not_reproduced; old v0.8.1 guard-stress reason was present but current detector did not reproduce it",
+    "slice_mismatch_likely": true
+  },
+  "current_sample_count": 80,
+  "future_domain_candidates_count": 193,
+  "label_review_cases_count": 0,
+  "missing_field_counts": {
+    "accepted_as_supported": 0,
+    "canonical_text": 0,
+    "false_accept_reason": 0,
+    "ood_class": 0,
+    "raw_text": 0,
+    "sample_id": 0
+  },
+  "ood_boundary_classification": {
+    "future_domain_candidate_count": 193,
+    "hard_ood_count": 55,
+    "label_too_strict_count": 0,
+    "near_ood_generalization_candidate_count": 0,
+    "ood_boundary_distribution": {
+      "future_domain_candidate": 193,
+      "hard_ood": 55,
+      "true_false_accept": 32
+    },
+    "true_false_accept_count": 32,
+    "unknown_count": 0
+  },
+  "partial_replay": false,
+  "real_promotion_enabled": false,
+  "replay_sample_count": 200,
+  "source_branch": "v0.8.1-ood-toxicity-longrun-scale",
+  "source_record_paths": [
+    "records/v0_8_1/ood_guard_stress.jsonl",
+    "records/v0_8_1/ood_toxicity_by_class.json",
+    "records/v0_8_1/ood_toxicity_longrun_metrics.json"
+  ],
+  "supported_expansion_candidates_count": 0,
+  "true_false_accept_cases_count": 32
+}

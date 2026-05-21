@@ -1,0 +1,37 @@
+{
+  "canonicalizer_made_it_look_supported_reproduced": false,
+  "changes_mainline_judgment": false,
+  "must_reproduce": [
+    "exact source-slice replay if future records add missing fields",
+    "manual review of supported expansion candidates"
+  ],
+  "new_bottleneck": "supported boundary requires human review before expansion",
+  "next_minimal_action": "review candidate datasets and rerun guard training only after boundary approval",
+  "not_proved": [
+    "stable convergence",
+    "general program synthesis",
+    "near-OOD automatic supported success",
+    "safe real promotion"
+  ],
+  "ood_boundary_distribution": {
+    "future_domain_candidate": 193,
+    "hard_ood": 55,
+    "true_false_accept": 32
+  },
+  "paper_relevance": [
+    "OOD boundary table",
+    "canonicalizer reason replay result"
+  ],
+  "proved": [
+    "v0.8.1 OOD guard-stress slice was loaded for replay where source records were available",
+    "boundary labels and candidate datasets were generated without changing training labels"
+  ],
+  "real_promotion_enabled": false,
+  "risk": {
+    "negative_transfer": false,
+    "ood_pollution": true,
+    "pseudo_improvement": false
+  },
+  "supported_expansion_candidates_generated": false,
+  "true_false_accept_guard_training_candidates_generated": true
+}

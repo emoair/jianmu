@@ -351,3 +351,10 @@ v0.8.3 explores High-Load Parallel Runtime & OOD Precision Recheck（高负载�
 不要声称稳定收敛。
 不要声称四则运算已攻破。
 不要声称已经优于同体量 LLM。
+## v0.8.4 Development Direction
+
+v0.8.4 explores OOD Slice Replay & Generalization Boundary（分布外切片回放与泛化边界）. After v0.8.3 showed that accepted OOD samples include both true false accepts（真正误接收） and near-OOD generalization candidates（近邻分布外泛化候选）, this version replays the v0.8.1 OOD guard-stress slice, checks whether canonicalizer_made_it_look_supported（规范化器使输入看似受支持） can be reproduced, defines a supported boundary spec（支持边界规格）, and exports candidate datasets for supported expansion, future domains, and guard training.
+
+不要声称稳定收敛。
+不要声称四则运算已攻破。
+不要声称 near-OOD 已经自动成为 supported success。

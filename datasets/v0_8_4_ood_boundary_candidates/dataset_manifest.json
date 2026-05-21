@@ -1,0 +1,21 @@
+{
+  "auto_added_to_training": false,
+  "counts": {
+    "future_domain_candidate": 193,
+    "hard_ood": 55,
+    "label_too_strict": 0,
+    "near_ood_generalization_candidate": 0,
+    "true_false_accept": 32,
+    "unknown": 0
+  },
+  "dataset_version": "v0_8_4_ood_boundary_candidates",
+  "files": {
+    "future_domain_candidate": "C:\\Users\\Air\\OneDrive\\文档\\jianmu-mvp\\datasets\\v0_8_4_ood_boundary_candidates\\future_domain_candidates.jsonl",
+    "hard_ood": "C:\\Users\\Air\\OneDrive\\文档\\jianmu-mvp\\datasets\\v0_8_4_ood_boundary_candidates\\hard_ood_cases.jsonl",
+    "label_too_strict": "C:\\Users\\Air\\OneDrive\\文档\\jianmu-mvp\\datasets\\v0_8_4_ood_boundary_candidates\\label_review_cases.jsonl",
+    "near_ood_generalization_candidate": "C:\\Users\\Air\\OneDrive\\文档\\jianmu-mvp\\datasets\\v0_8_4_ood_boundary_candidates\\supported_expansion_candidates.jsonl",
+    "true_false_accept": "C:\\Users\\Air\\OneDrive\\文档\\jianmu-mvp\\datasets\\v0_8_4_ood_boundary_candidates\\true_false_accept_cases.jsonl",
+    "unknown": "C:\\Users\\Air\\OneDrive\\文档\\jianmu-mvp\\datasets\\v0_8_4_ood_boundary_candidates\\unknown_cases.jsonl"
+  },
+  "total_records": 280
+}

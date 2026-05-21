@@ -1,0 +1,56 @@
+{
+  "hard_reject_categories": [
+    "poetry",
+    "image_generation",
+    "unrelated_request",
+    "pure_chat",
+    "http_server_request",
+    "non_programming_instruction",
+    "malicious_or_unsafe_request",
+    "malformed_expression_without_arithmetic_intent"
+  ],
+  "supported_arithmetic_families": [
+    "addition",
+    "subtraction",
+    "multiplication",
+    "exact_division",
+    "mixed_precedence",
+    "literal_only"
+  ],
+  "supported_input_forms": [
+    "zh_natural_arithmetic_request",
+    "zh_technical_mixed_arithmetic_request",
+    "explicit_c_arithmetic_like_supported_form",
+    "implicit_c_arithmetic_like_supported_form",
+    "math_expression",
+    "zh_number_expression"
+  ],
+  "supported_languages": [
+    "zh",
+    "math_expression",
+    "mixed_zh_arabic"
+  ],
+  "supported_number_forms": [
+    "arabic_integer",
+    "zh_integer",
+    "signed_integer"
+  ],
+  "supported_operators": [
+    "+",
+    "-",
+    "*",
+    "/",
+    "parentheses",
+    "mixed_precedence"
+  ],
+  "unsupported_current_but_future": [
+    "english_arithmetic",
+    "decimal_arithmetic",
+    "variable_expressions",
+    "equation_solving",
+    "non_exact_division",
+    "complex_multi_step_word_problem",
+    "code_generation_beyond_arithmetic_target"
+  ],
+  "version": "v0.8.4"
+}

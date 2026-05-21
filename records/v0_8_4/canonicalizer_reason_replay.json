@@ -1,0 +1,15 @@
+{
+  "boundary_spec_version": "v0.8.4",
+  "canonicalizer_reason_confirmed": false,
+  "detector_mismatch_count": 67,
+  "new_canonicalizer_reason_count": 0,
+  "old_canonicalizer_reason_count": 67,
+  "reason_match_count": 0,
+  "reason_match_distribution": {
+    "detector_mismatch": 67,
+    "not_matched": 133
+  },
+  "reason_not_match_count": 200,
+  "reason_not_reproduced": "not_reproduced; old v0.8.1 guard-stress reason was present but current detector did not reproduce it",
+  "slice_mismatch_likely": true
+}
