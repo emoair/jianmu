@@ -23,7 +23,7 @@ def compute_boundary_metrics(samples: List[Dict], candidate_results: List[Dict],
     ood = hard + trap + future + near
     return {
         "current_supported_retention_rate": _rate(current, lambda s, r: r.get("accepted_as_supported") and not r.get("rejected")),
-        "current_supported_false_reject_rate": _rate(current, lambda s, r: r.get("rejected")),
+        "current_supported_false_reject_rate": _rate(current, lambda s, r: not r.get("accepted_as_supported")),
         "hard_ood_rejection_rate": _rate(hard, lambda s, r: r.get("rejected")),
         "hard_ood_false_accept_rate": _rate(hard, lambda s, r: r.get("accepted_as_supported")),
         "true_false_accept_trap_rejection_rate": _rate(trap, lambda s, r: r.get("rejected")),

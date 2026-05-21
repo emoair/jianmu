@@ -1,0 +1,19 @@
+{
+  "boundary_label_distribution": {
+    "current_supported": 600,
+    "future_domain_candidate": 600,
+    "hard_ood": 600,
+    "near_ood_generalization_candidate": 409,
+    "true_false_accept_trap": 600
+  },
+  "heldout_slice_counts": {
+    "heldout_current_supported": 600,
+    "heldout_future_domain_candidate": 600,
+    "heldout_hard_ood": 600,
+    "heldout_mixed_boundary": 2809,
+    "heldout_near_ood_generalization_candidate": 409,
+    "heldout_true_false_accept_trap": 600
+  },
+  "leakage_check_passed": true,
+  "leakage_issues": []
+}

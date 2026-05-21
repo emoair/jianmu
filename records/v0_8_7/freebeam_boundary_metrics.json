@@ -1,0 +1,75 @@
+{
+  "dataset_scale_used": "large",
+  "diagnostics": {
+    "boundary_probe_did_not_generalize": false,
+    "false_accept_examples": [],
+    "false_reject_supported_examples": [],
+    "freebeam_emergent_rejection_signal_confirmed": true,
+    "future_domain_misclassified_examples": [],
+    "near_ood_misclassified_examples": [],
+    "over_rejection_detected": false,
+    "partial_boundary_generalization": false,
+    "rejection_layer_distribution": {
+      "accepted": 600,
+      "arithmetic_family": 600,
+      "candidate_buffer": 409,
+      "support_gate": 600,
+      "task_scope": 600
+    }
+  },
+  "hardcoded_rejection_gate_added": false,
+  "heldout_leakage_check_passed": true,
+  "heldout_slice_counts": {
+    "heldout_current_supported": 600,
+    "heldout_future_domain_candidate": 600,
+    "heldout_hard_ood": 600,
+    "heldout_mixed_boundary": 2809,
+    "heldout_near_ood_generalization_candidate": 409,
+    "heldout_true_false_accept_trap": 600
+  },
+  "metrics": {
+    "boundary_reward_total": 0,
+    "boundary_toxicity_total": 0,
+    "current_supported_false_reject_rate": 0.0,
+    "current_supported_retention_rate": 1.0,
+    "delta_current_supported_retention": 0.0,
+    "delta_future_domain_isolation": 0.0,
+    "delta_hard_ood_rejection": 0.0,
+    "delta_near_ood_quarantine": 0.0,
+    "delta_ood_false_accept": 0.0,
+    "delta_trap_rejection": 0.0,
+    "false_accept_toxicity_rate": 0.0,
+    "false_reject_supported_toxicity_rate": 0.0,
+    "future_domain_false_accept_rate": 0.0,
+    "future_domain_isolation_rate": 1.0,
+    "hard_ood_false_accept_rate": 0.0,
+    "hard_ood_rejection_rate": 1.0,
+    "near_ood_false_supported_accept_rate": 0.0,
+    "near_ood_quarantine_rate": 1.0,
+    "over_rejection_rate": 0.0,
+    "overall_ood_false_accept_rate": 0.0,
+    "true_false_accept_trap_false_accept_rate": 0.0,
+    "true_false_accept_trap_rejection_rate": 1.0
+  },
+  "mode": "medium",
+  "modes_attempted": [
+    "medium"
+  ],
+  "modes_completed": [
+    "medium"
+  ],
+  "no_label_inference": {
+    "access_trace_path": "records\\v0_8_7\\inference_access_trace.jsonl",
+    "forbidden_field_access_count": 0,
+    "forbidden_fields_seen": [],
+    "no_label_inference_passed": true,
+    "violation_examples": []
+  },
+  "real_promotion_enabled": false,
+  "runtime": {
+    "mode": "medium",
+    "runtime_seconds": 2.130169,
+    "worker_count": 4
+  },
+  "source_training_available": true
+}

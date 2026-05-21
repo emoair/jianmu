@@ -376,3 +376,11 @@ v0.8.6 explores Boundary Curriculum Training Probe（边界课程训练探针）
 不要声称四则运算已攻破。
 不要声称 OOD 已解决。
 不要声称拒绝门已经完全自然涌现，除非 emergent_rejection_signal_confirmed 为 true 且 supported retention 安全。
+
+## v0.8.7 Development Direction
+
+v0.8.7 explores Boundary Free-Beam Generalization Probe（边界自由束泛化探针）. After v0.8.6 showed strong boundary improvements under training-probe conditions, this version removes boundary labels from inference, evaluates held-out boundary slices under free-beam routing, and checks whether rejection behavior survives without hard-coded rejection gates or label leakage.
+
+不要声称稳定收敛。
+不要声称 OOD 已解决。
+不要声称拒绝门完全自然涌现，除非 freebeam_emergent_rejection_signal_confirmed 为 true 且 no-label guard 通过。

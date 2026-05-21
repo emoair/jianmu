@@ -1,0 +1,17 @@
+{
+  "boundary_probe_did_not_generalize": false,
+  "false_accept_examples": [],
+  "false_reject_supported_examples": [],
+  "freebeam_emergent_rejection_signal_confirmed": true,
+  "future_domain_misclassified_examples": [],
+  "near_ood_misclassified_examples": [],
+  "over_rejection_detected": false,
+  "partial_boundary_generalization": false,
+  "rejection_layer_distribution": {
+    "accepted": 600,
+    "arithmetic_family": 600,
+    "candidate_buffer": 409,
+    "support_gate": 600,
+    "task_scope": 600
+  }
+}
