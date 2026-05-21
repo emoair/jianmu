@@ -1,0 +1,16 @@
+{
+  "cross_process_eval_completed": true,
+  "cross_process_reload_passed": true,
+  "current_supported_retention_rate": 1.0,
+  "external_ood_false_accept_rate": 0.0,
+  "false_accept_examples_count": 0,
+  "false_reject_supported_examples_count": 0,
+  "forbidden_field_access_count": 0,
+  "no_label_inference_passed": true,
+  "over_rejection_detected": false,
+  "overall_ood_false_accept_rate": 0.0,
+  "persisted_state_support_level": "partial",
+  "state_loaded": true,
+  "subprocess_returncode": 0,
+  "used_new_process": true
+}

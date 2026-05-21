@@ -1,0 +1,28 @@
+{
+  "arxiv_blocking_if_not_full": true,
+  "checksum": "2a06158a6f8a6fe5514f28ad37528ab0795f43f9d38702be1cfdce4d1029e06a",
+  "created_at": "2026-05-21T17:38:57.451909+00:00",
+  "forbidden_fields_excluded": true,
+  "persisted_state_support_level": "partial",
+  "seed": 42,
+  "source_branch": "v0.8.8-persisted-router-external-ood",
+  "source_records_dir": "records\\v0_8_8",
+  "state_files": [
+    "full_router_state.json",
+    "full_root_state.json",
+    "boundary_probe_state.json",
+    "state_inventory.json",
+    "forbidden_field_scan.json"
+  ],
+  "state_inventory_summary": {
+    "inventory_passed": true,
+    "missing_for_full_state": [
+      "trained_branch_population",
+      "trained_root_colonies",
+      "root_lifecycle_runtime_states",
+      "nutrient_toxic_runtime_memory"
+    ],
+    "serializable_component_count": 7
+  },
+  "state_version": "v0.8.9.full_state"
+}

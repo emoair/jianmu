@@ -1,0 +1,24 @@
+{
+  "blocking_issues": [
+    "persisted_state_support_level is partial, not full_router_root",
+    "full state consistency failed"
+  ],
+  "ready_for_arxiv_technical_report": false,
+  "recommended_abstract_boundary": "Claim bounded persisted-state and external-OOD evidence only if support_level is full_router_root; otherwise report persistence as partial.",
+  "recommended_claim_level": "needs_more_validation",
+  "recommended_title": "JianMu: Nutrient-Guided Root-Colony Routing for Compiler-Verified Program Synthesis",
+  "required_non_claims": [
+    "no stable convergence claim",
+    "no solved OOD claim",
+    "no solved arithmetic claim",
+    "no general program synthesis claim",
+    "no same-size LLM advantage claim",
+    "no safe real promotion claim"
+  ],
+  "suggested_next_experiments": [
+    "capture trained BranchChain population objects",
+    "capture trained Root Colony lifecycle state",
+    "rerun cross-process external OOD with full_router_root state",
+    "same-size LLM / Transformer baseline"
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "blocking_issues": [
+    "persisted_state_support_level is partial, not full_router_root",
+    "full state consistency failed"
+  ],
+  "changes_mainline_judgment": false,
+  "cross_process_reload_passed": true,
+  "external_ood_false_accept_rate": 0.0,
+  "forbidden_field_in_state_count": 0,
+  "full_state_consistency_passed": false,
+  "hardcoded_rejection_gate_added": false,
+  "multi_seed_stable": true,
+  "must_reproduce": [
+    "full_router_root support level",
+    "independent external OOD",
+    "more seeds"
+  ],
+  "new_bottleneck": "trained BranchChain/root runtime objects are not yet captured in source records",
+  "next_minimal_action": "capture actual trained population and root colony objects before writing readiness true",
+  "not_proved": [
+    "full_router_root persisted trained state",
+    "stable convergence",
+    "solved OOD",
+    "same-size LLM advantage",
+    "safe real promotion"
+  ],
+  "paper_relevance": [
+    "state inventory table",
+    "summary-vs-full blocker",
+    "cross-process reload result"
+  ],
+  "persisted_state_support_level": "partial",
+  "proved": [
+    "state inventory completed",
+    "state serializer/reloader executed",
+    "cross-process reload eval executed"
+  ],
+  "ready_for_arxiv_technical_report": false,
+  "real_promotion_enabled": false,
+  "recommended_claim_level": "needs_more_validation",
+  "reloaded_current_supported_retention_rate": 1.0,
+  "reloaded_no_label_inference_passed": true,
+  "reloaded_overall_ood_false_accept_rate": 0.0,
+  "risk": {
+    "negative_transfer": false,
+    "ood_pollution": false,
+    "pseudo_improvement": true
+  },
+  "same_process_reload_passed": true,
+  "state_inventory_passed": true,
+  "state_loaded": true,
+  "state_saved": true
+}

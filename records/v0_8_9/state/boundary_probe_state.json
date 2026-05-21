@@ -1,0 +1,16 @@
+{
+  "evaluation_only": true,
+  "schema_version": "v0.8.9.boundary_probe_state",
+  "source_records_dir": "records\\v0_8_8",
+  "summary_files": [
+    "arxiv_readiness.json",
+    "external_ood_manifest.json",
+    "external_ood_metrics.json",
+    "mainline_conclusion.json",
+    "multiseed_boundary_eval.json",
+    "persisted_router_metrics.json",
+    "persisted_state_consistency.json",
+    "reloaded_freebeam_metrics.json",
+    "runtime_profile.json"
+  ]
+}

@@ -1,0 +1,134 @@
+{
+  "arithmetic_family_state": {
+    "layer": "arithmetic_family",
+    "status": "schema_available"
+  },
+  "branch_layers": [
+    {
+      "layer_name": "task_scope",
+      "options": [
+        "programming",
+        "non_programming",
+        "unsupported",
+        "reject_non_programming",
+        "reject_out_of_scope"
+      ]
+    },
+    {
+      "layer_name": "language_target",
+      "options": [
+        "C",
+        "unknown",
+        "explicit_C",
+        "implicit_C",
+        "math_expression_context",
+        "reject_unsupported_language"
+      ]
+    },
+    {
+      "layer_name": "semantic_domain",
+      "options": [
+        "arithmetic",
+        "comparison_future",
+        "unsupported"
+      ]
+    },
+    {
+      "layer_name": "support_gate",
+      "options": [
+        "supported",
+        "unsupported"
+      ]
+    },
+    {
+      "layer_name": "arithmetic_family",
+      "options": [
+        "literal_only",
+        "addition",
+        "subtraction",
+        "multiplication",
+        "exact_division",
+        "mixed_precedence",
+        "parentheses",
+        "unsupported"
+      ]
+    },
+    {
+      "layer_name": "structure_policy",
+      "options": [
+        "literal_value",
+        "binary_operation",
+        "reduce_chain",
+        "precedence_tree",
+        "parenthesized_tree",
+        "unsupported"
+      ]
+    },
+    {
+      "layer_name": "slot_binding_policy",
+      "options": [
+        "surface_number_order",
+        "chinese_number_order",
+        "signed_number_order",
+        "previous_targetir_delta",
+        "unsupported"
+      ]
+    },
+    {
+      "layer_name": "target_builder",
+      "options": [
+        "canonical_arithmetic_targetir",
+        "canonical_program_targetir",
+        "early_exit"
+      ]
+    }
+  ],
+  "branch_neuron_weights": {
+    "status": "schema_available_but_trained_population_missing"
+  },
+  "checksum": "6ddf1459f19fd3c8014fcd7dfccb856c7404b17c675cdf22363282bcbe83f0e0",
+  "language_target_state": {
+    "layer": "language_target",
+    "status": "schema_available"
+  },
+  "learned_boundary_adjustments": {
+    "reason": "trained runtime object not present in v0.8.8 source records",
+    "status": "unavailable"
+  },
+  "ranking_policy_state": {
+    "top_k": "available_from_eval_config"
+  },
+  "schema_version": "v0.8.9.full_router_state",
+  "scoring_biases": {
+    "reason": "trained runtime object not present in v0.8.8 source records",
+    "status": "unavailable"
+  },
+  "seed": 42,
+  "semantic_neuron_weights": {
+    "reason": "trained runtime object not present in v0.8.8 source records",
+    "status": "unavailable"
+  },
+  "slot_binding_policy_state": {
+    "layer": "slot_binding_policy",
+    "status": "schema_available"
+  },
+  "source_config": {
+    "source_records_dir": "records\\v0_8_8"
+  },
+  "structure_policy_state": {
+    "layer": "structure_policy",
+    "status": "schema_available"
+  },
+  "support_gate_state": {
+    "layer": "support_gate",
+    "status": "schema_available"
+  },
+  "target_builder_state": {
+    "layer": "target_builder",
+    "status": "schema_available"
+  },
+  "task_scope_state": {
+    "layer": "task_scope",
+    "status": "schema_available"
+  }
+}

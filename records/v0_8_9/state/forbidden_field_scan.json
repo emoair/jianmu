@@ -1,0 +1,21 @@
+{
+  "forbidden_field_in_state_count": 0,
+  "forbidden_field_names": [
+    "boundary_label",
+    "current_support_status",
+    "expected_action",
+    "expected_output",
+    "future_support_status",
+    "nutrient_policy",
+    "target_branch_path",
+    "target_ir",
+    "toxicity_policy"
+  ],
+  "forbidden_fields_in_state": [],
+  "scanned_files": [
+    "full_router_state.json",
+    "full_root_state.json",
+    "boundary_probe_state.json",
+    "state_inventory.json"
+  ]
+}

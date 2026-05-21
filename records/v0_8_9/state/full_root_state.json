@@ -1,0 +1,43 @@
+{
+  "checksum": "b11ed3b0006ad982b4e068b522c0ed1815ceacb94a469511212afe2f6ccc17ab",
+  "colonies": [],
+  "colony_memory": {
+    "reason": "trained root colony runtime object not present in v0.8.8 source records",
+    "status": "unavailable"
+  },
+  "future_domain_buffer": [],
+  "lifecycle_counters": {
+    "available_runtime_root_count": 0
+  },
+  "near_ood_candidate_buffer": [],
+  "necrosis_queue": [],
+  "nutrient_memory": {
+    "reason": "trained root colony runtime object not present in v0.8.8 source records",
+    "status": "unavailable"
+  },
+  "quarantine_buffer": [],
+  "replacement_queue": [],
+  "resource_budget_state": {
+    "reason": "trained root colony runtime object not present in v0.8.8 source records",
+    "status": "unavailable"
+  },
+  "root_status": {
+    "active": 0,
+    "necrotic": 0,
+    "nourished": 0,
+    "replacement": 0,
+    "stable": 0,
+    "starving": 0
+  },
+  "roots": [],
+  "schema_version": "v0.8.9.full_root_state",
+  "seed": 42,
+  "source_config": {
+    "source_records_dir": "records\\v0_8_8"
+  },
+  "stable_root_buffer": [],
+  "toxic_memory": {
+    "reason": "trained root colony runtime object not present in v0.8.8 source records",
+    "status": "unavailable"
+  }
+}

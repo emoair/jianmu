@@ -392,3 +392,12 @@ v0.8.8 explores Real Persisted Router-State & External OOD Eval（真实持久�
 不要声称 OOD 已解决。
 不要声称同体量 LLM 优势。
 不要声称 safe real promotion。
+
+## v0.8.9 Development Direction
+
+v0.8.9 explores Full Router/Root State Persistence & Reloaded Boundary Eval（完整路由/根状态持久化与重载边界评估）. After v0.8.8 showed strong summary-only reload, external OOD, and multi-seed results but was blocked by summary-only persisted state, this version inventories real router/root state, serializes full router/root state where available, runs same-process and cross-process reload evaluation, checks forbidden fields, and updates arXiv readiness.
+
+不要声称稳定收敛。
+不要声称 OOD 已解决。
+不要声称同体量 LLM 优势。
+不要声称 safe real promotion。

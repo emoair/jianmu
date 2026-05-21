@@ -1,0 +1,32 @@
+{
+  "boundary_probe_state_found": true,
+  "branch_neuron_state_found": true,
+  "branchchain_state_found": true,
+  "evaluation_summary_only_found": true,
+  "inventory_passed": true,
+  "missing_for_full_state": [
+    "trained_branch_population",
+    "trained_root_colonies",
+    "root_lifecycle_runtime_states",
+    "nutrient_toxic_runtime_memory"
+  ],
+  "nonserializable_component_count": 4,
+  "nutrient_memory_state_found": true,
+  "required_for_full_state": [
+    "trained_branch_population",
+    "trained_root_colonies",
+    "root_lifecycle_runtime_states",
+    "nutrient_toxic_runtime_memory"
+  ],
+  "root_colony_state_found": true,
+  "root_lifecycle_state_found": true,
+  "router_scoring_state_found": true,
+  "serializable_component_count": 7,
+  "toxic_memory_state_found": true,
+  "unavailable_state_components": [
+    "trained_branch_population",
+    "trained_root_colonies",
+    "root_lifecycle_runtime_states",
+    "nutrient_toxic_runtime_memory"
+  ]
+}
