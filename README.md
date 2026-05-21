@@ -367,3 +367,12 @@ v0.8.5 explores Boundary-Aware Dataset Curriculum（边界感知数据课程）.
 不要声称四则运算已攻破。
 不要声称 OOD 已解决。
 不要声称拒绝门已完全自然涌现。
+
+## v0.8.6 Development Direction
+
+v0.8.6 explores Boundary Curriculum Training Probe（边界课程训练探针）. After v0.8.5 rebuilt the boundary-aware dataset ecology, this version tests whether nutrient/toxic pressure labels can improve rejection behavior without hard-coded rejection gates. It also introduces shard-aware dataset loading（分片感知数据加载） and dataset artifact policy（数据工件策略） to prepare for larger 10M/30M/100M scale runs.
+
+不要声称稳定收敛。
+不要声称四则运算已攻破。
+不要声称 OOD 已解决。
+不要声称拒绝门已经完全自然涌现，除非 emergent_rejection_signal_confirmed 为 true 且 supported retention 安全。

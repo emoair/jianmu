@@ -1,0 +1,58 @@
+{
+  "eval": [
+    {
+      "actual_loaded_count": 4495,
+      "duplicate_sample_id_count": 0,
+      "loaded_count": 4495,
+      "missing_shard_count": 0,
+      "missing_shards": [],
+      "shard_count": 0,
+      "source_type": "single_file"
+    },
+    {
+      "actual_loaded_count": 4514,
+      "duplicate_sample_id_count": 0,
+      "loaded_count": 4514,
+      "missing_shard_count": 0,
+      "missing_shards": [],
+      "shard_count": 0,
+      "source_type": "single_file"
+    },
+    {
+      "actual_loaded_count": 1548,
+      "duplicate_sample_id_count": 0,
+      "loaded_count": 1548,
+      "missing_shard_count": 0,
+      "missing_shards": [],
+      "shard_count": 0,
+      "source_type": "single_file"
+    },
+    {
+      "actual_loaded_count": 777,
+      "duplicate_sample_id_count": 0,
+      "loaded_count": 777,
+      "missing_shard_count": 0,
+      "missing_shards": [],
+      "shard_count": 0,
+      "source_type": "single_file"
+    },
+    {
+      "actual_loaded_count": 409,
+      "duplicate_sample_id_count": 0,
+      "loaded_count": 409,
+      "missing_shard_count": 0,
+      "missing_shards": [],
+      "shard_count": 0,
+      "source_type": "single_file"
+    }
+  ],
+  "train": {
+    "actual_loaded_count": 88257,
+    "duplicate_sample_id_count": 0,
+    "loaded_count": 88257,
+    "missing_shard_count": 0,
+    "missing_shards": [],
+    "shard_count": 0,
+    "source_type": "single_file"
+  }
+}

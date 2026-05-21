@@ -1,0 +1,41 @@
+{
+  "artifact_policy_passed": true,
+  "blocking_issue_count": 0,
+  "files_recommended_for_sharding": [
+    {
+      "path": "datasets\\v0_8_5_boundary_aware\\large\\all.jsonl",
+      "size_mb": 82.25
+    },
+    {
+      "path": "datasets\\v0_8_5_boundary_aware\\large\\train.jsonl",
+      "size_mb": 72.388
+    }
+  ],
+  "historical_oversized_files": [
+    {
+      "path": "datasets\\v0_8_5_boundary_aware\\large\\all.jsonl",
+      "size_mb": 82.25
+    },
+    {
+      "path": "datasets\\v0_8_5_boundary_aware\\large\\train.jsonl",
+      "size_mb": 72.388
+    }
+  ],
+  "lfs_recommended": true,
+  "max_file_size_mb_for_git": 50,
+  "new_oversized_files": [],
+  "oversized_file_count": 2,
+  "oversized_files": [
+    {
+      "path": "datasets\\v0_8_5_boundary_aware\\large\\all.jsonl",
+      "size_mb": 82.25
+    },
+    {
+      "path": "datasets\\v0_8_5_boundary_aware\\large\\train.jsonl",
+      "size_mb": 72.388
+    }
+  ],
+  "prefer_shards_above_mb": 40,
+  "shard_target_size_mb": 25,
+  "should_shard": true
+}

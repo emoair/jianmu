@@ -1,0 +1,27 @@
+{
+  "emergent_rejection_signal_confirmed": true,
+  "emergent_rejection_signal_score": 5.0,
+  "future_domain_isolation_improvement": 1.0,
+  "hard_ood_rejection_improvement": 1.0,
+  "language_target_weight_shift": 0.2424,
+  "near_ood_quarantine_delta": 1.0,
+  "notes": "confirmed under probe criteria",
+  "over_rejection_detected": false,
+  "rejection_boundary_improved": true,
+  "rejection_layer_distribution_after": {
+    "arithmetic_family": 622,
+    "candidate_buffer": 409,
+    "review_queue": 103,
+    "support_gate": 622,
+    "task_scope": 622
+  },
+  "rejection_layer_distribution_before": {
+    "review_queue": 103
+  },
+  "support_gate_weight_shift": 0.45,
+  "supported_retention_delta": 0.0,
+  "supported_retention_preserved": true,
+  "task_scope_weight_shift": 0.4042,
+  "toxic_false_accept_reduction": 1.0,
+  "trap_rejection_improvement": 1.0
+}

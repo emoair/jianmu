@@ -1,0 +1,122 @@
+{
+  "after_metrics": {
+    "boundary_reward_total": 2194.9,
+    "boundary_toxicity_total": 0.0,
+    "current_supported_false_reject_rate": 0.0,
+    "current_supported_retention_rate": 1.0,
+    "false_accept_toxicity_rate": 0.0,
+    "false_reject_supported_toxicity_rate": 0.0,
+    "future_domain_false_accept_rate": 0.0,
+    "future_domain_isolation_rate": 1.0,
+    "hard_ood_false_accept_rate": 0.0,
+    "hard_ood_rejection_rate": 1.0,
+    "near_ood_false_supported_accept_rate": 0.0,
+    "near_ood_quarantine_rate": 1.0,
+    "overall_ood_false_accept_rate": 0.0,
+    "true_false_accept_trap_false_accept_rate": 0.0,
+    "true_false_accept_trap_rejection_rate": 1.0
+  },
+  "artifact_policy": {
+    "artifact_policy_passed": true,
+    "blocking_issue_count": 0,
+    "files_recommended_for_sharding": [
+      {
+        "path": "datasets\\v0_8_5_boundary_aware\\large\\all.jsonl",
+        "size_mb": 82.25
+      },
+      {
+        "path": "datasets\\v0_8_5_boundary_aware\\large\\train.jsonl",
+        "size_mb": 72.388
+      }
+    ],
+    "historical_oversized_files": [
+      {
+        "path": "datasets\\v0_8_5_boundary_aware\\large\\all.jsonl",
+        "size_mb": 82.25
+      },
+      {
+        "path": "datasets\\v0_8_5_boundary_aware\\large\\train.jsonl",
+        "size_mb": 72.388
+      }
+    ],
+    "lfs_recommended": true,
+    "max_file_size_mb_for_git": 50,
+    "new_oversized_files": [],
+    "oversized_file_count": 2,
+    "oversized_files": [
+      {
+        "path": "datasets\\v0_8_5_boundary_aware\\large\\all.jsonl",
+        "size_mb": 82.25
+      },
+      {
+        "path": "datasets\\v0_8_5_boundary_aware\\large\\train.jsonl",
+        "size_mb": 72.388
+      }
+    ],
+    "prefer_shards_above_mb": 40,
+    "shard_target_size_mb": 25,
+    "should_shard": true
+  },
+  "artifact_policy_passed": true,
+  "before_metrics": {
+    "boundary_reward_total": 622.0,
+    "boundary_toxicity_total": 3191.8,
+    "current_supported_false_reject_rate": 0.0,
+    "current_supported_retention_rate": 1.0,
+    "false_accept_toxicity_rate": 0.414667,
+    "false_reject_supported_toxicity_rate": 0.0,
+    "future_domain_false_accept_rate": 1.0,
+    "future_domain_isolation_rate": 0.0,
+    "hard_ood_false_accept_rate": 1.0,
+    "hard_ood_rejection_rate": 0.0,
+    "near_ood_false_supported_accept_rate": 1.0,
+    "near_ood_quarantine_rate": 0.0,
+    "overall_ood_false_accept_rate": 1.0,
+    "true_false_accept_trap_false_accept_rate": 1.0,
+    "true_false_accept_trap_rejection_rate": 0.0
+  },
+  "boundary_dataset_load_success": true,
+  "curriculum_stages_completed": 6,
+  "dataset_scale_used": "large",
+  "emergent_rejection_diagnostics": {
+    "emergent_rejection_signal_confirmed": true,
+    "emergent_rejection_signal_score": 5.0,
+    "future_domain_isolation_improvement": 1.0,
+    "hard_ood_rejection_improvement": 1.0,
+    "language_target_weight_shift": 0.2424,
+    "near_ood_quarantine_delta": 1.0,
+    "notes": "confirmed under probe criteria",
+    "over_rejection_detected": false,
+    "rejection_boundary_improved": true,
+    "rejection_layer_distribution_after": {
+      "arithmetic_family": 622,
+      "candidate_buffer": 409,
+      "review_queue": 103,
+      "support_gate": 622,
+      "task_scope": 622
+    },
+    "rejection_layer_distribution_before": {
+      "review_queue": 103
+    },
+    "support_gate_weight_shift": 0.45,
+    "supported_retention_delta": 0.0,
+    "supported_retention_preserved": true,
+    "task_scope_weight_shift": 0.4042,
+    "toxic_false_accept_reduction": 1.0,
+    "trap_rejection_improvement": 1.0
+  },
+  "eval_sample_count": 3000,
+  "hardcoded_rejection_gate_added": false,
+  "modes_attempted": [
+    "medium"
+  ],
+  "modes_completed": [
+    "medium"
+  ],
+  "oversized_file_count": 2,
+  "real_promotion_enabled": false,
+  "runtime_seconds": 2.924942,
+  "sharded_loader_source_type": "single_file",
+  "train_eval_overfit_risk": false,
+  "train_sample_count": 12000
+}

@@ -1,0 +1,48 @@
+{
+  "artifact_policy_passed": true,
+  "boundary_dataset_load_success": true,
+  "changes_mainline_judgment": false,
+  "current_supported_retention_rate_after": 1.0,
+  "current_supported_retention_rate_before": 1.0,
+  "emergent_rejection_signal_confirmed": true,
+  "future_domain_isolation_rate_after": 1.0,
+  "future_domain_isolation_rate_before": 0.0,
+  "hard_ood_rejection_rate_after": 1.0,
+  "hard_ood_rejection_rate_before": 0.0,
+  "hardcoded_rejection_gate_added": false,
+  "must_reproduce": [
+    "medium/large with real router updates",
+    "held-out OOD slice"
+  ],
+  "near_ood_quarantine_rate_after": 1.0,
+  "near_ood_quarantine_rate_before": 0.0,
+  "new_bottleneck": "must validate boundary improvements in real free-beam evaluation",
+  "next_minimal_action": "run free-beam boundary evaluation using learned scores without labels as input",
+  "not_proved": [
+    "stable convergence",
+    "OOD solved",
+    "fully emergent rejection gate",
+    "same-size LLM advantage"
+  ],
+  "over_rejection_detected": false,
+  "overall_ood_false_accept_rate_after": 0.0,
+  "overall_ood_false_accept_rate_before": 1.0,
+  "paper_relevance": [
+    "boundary metric before/after table",
+    "artifact policy",
+    "emergent rejection diagnostics"
+  ],
+  "proved": [
+    "boundary dataset loaded",
+    "artifact policy reported",
+    "curriculum runner completed all probe stages"
+  ],
+  "risk": {
+    "negative_transfer": false,
+    "ood_pollution": true,
+    "pseudo_improvement": true
+  },
+  "sharded_loader_worked": true,
+  "true_false_accept_trap_rejection_rate_after": 1.0,
+  "true_false_accept_trap_rejection_rate_before": 0.0
+}

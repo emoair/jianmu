@@ -1,0 +1,36 @@
+{
+  "after": {
+    "boundary_reward_total": 2194.9,
+    "boundary_toxicity_total": 0.0,
+    "current_supported_false_reject_rate": 0.0,
+    "current_supported_retention_rate": 1.0,
+    "false_accept_toxicity_rate": 0.0,
+    "false_reject_supported_toxicity_rate": 0.0,
+    "future_domain_false_accept_rate": 0.0,
+    "future_domain_isolation_rate": 1.0,
+    "hard_ood_false_accept_rate": 0.0,
+    "hard_ood_rejection_rate": 1.0,
+    "near_ood_false_supported_accept_rate": 0.0,
+    "near_ood_quarantine_rate": 1.0,
+    "overall_ood_false_accept_rate": 0.0,
+    "true_false_accept_trap_false_accept_rate": 0.0,
+    "true_false_accept_trap_rejection_rate": 1.0
+  },
+  "before": {
+    "boundary_reward_total": 622.0,
+    "boundary_toxicity_total": 3191.8,
+    "current_supported_false_reject_rate": 0.0,
+    "current_supported_retention_rate": 1.0,
+    "false_accept_toxicity_rate": 0.414667,
+    "false_reject_supported_toxicity_rate": 0.0,
+    "future_domain_false_accept_rate": 1.0,
+    "future_domain_isolation_rate": 0.0,
+    "hard_ood_false_accept_rate": 1.0,
+    "hard_ood_rejection_rate": 0.0,
+    "near_ood_false_supported_accept_rate": 1.0,
+    "near_ood_quarantine_rate": 0.0,
+    "overall_ood_false_accept_rate": 1.0,
+    "true_false_accept_trap_false_accept_rate": 1.0,
+    "true_false_accept_trap_rejection_rate": 0.0
+  }
+}
