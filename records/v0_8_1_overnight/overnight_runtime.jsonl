@@ -1,0 +1,4 @@
+{"mode": "large", "run_id": "large-77043a31da74", "runtime_seconds": 469.3039, "completed": true, "partial": false, "skip_reason": ""}
+{"mode": "xlarge", "run_id": "xlarge-be317843e2ea", "runtime_seconds": 901.4492, "completed": true, "partial": false, "skip_reason": ""}
+{"mode": "full", "run_id": "full-22fd9a9c6a89", "runtime_seconds": 0.0, "completed": false, "partial": false, "skip_reason": "full skipped by bounded runtime policy; no partial result emitted by script."}
+{"mode": "longrun", "run_id": "longrun-884e1f225c15", "runtime_seconds": 0.0, "completed": false, "partial": false, "skip_reason": "longrun skipped by bounded runtime policy; no partial result emitted by script."}

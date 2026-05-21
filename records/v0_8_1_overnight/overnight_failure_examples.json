@@ -1,0 +1,4 @@
+{
+  "failure_examples": [],
+  "note": "No additional failure examples were emitted by the overnight wrapper; see ood_guard_stress.jsonl for per-sample OOD records."
+}

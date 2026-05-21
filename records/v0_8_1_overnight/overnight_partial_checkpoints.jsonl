@@ -1,0 +1,3 @@
+{"mode": "xlarge", "checkpoint_type": "overnight_mode_summary", "completed": true, "partial": false, "skip_reason": "", "runtime_seconds": 901.4492, "run_id": "xlarge-be317843e2ea"}
+{"mode": "full", "checkpoint_type": "overnight_mode_summary", "completed": false, "partial": false, "skip_reason": "full skipped by bounded runtime policy; no partial result emitted by script.", "runtime_seconds": 0.0, "run_id": "full-22fd9a9c6a89"}
+{"mode": "longrun", "checkpoint_type": "overnight_mode_summary", "completed": false, "partial": false, "skip_reason": "longrun skipped by bounded runtime policy; no partial result emitted by script.", "runtime_seconds": 0.0, "run_id": "longrun-884e1f225c15"}
