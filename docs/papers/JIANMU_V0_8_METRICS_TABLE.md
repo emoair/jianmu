@@ -1,6 +1,6 @@
 # JianMu v0.8 Metrics Table（指标表）
 
-This table summarizes local repository records from v0.5.7 through v0.8.1.1. Missing or non-comparable metrics are marked as N/A. This table does not change historical records or infer unavailable measurements.
+This table summarizes local repository records from v0.5.7 through v0.8.7. Missing or non-comparable metrics are marked as N/A. This table does not change historical records or infer unavailable measurements.
 
 | Version | Branch | Dataset / Sample Count | Primary Metric（主指标） | Candidate Failure（候选失败） | OOD Metric（分布外指标） | Key Positive Result（关键正结果） | Key Negative Result（关键负结果） | Interpretation（解释） |
 |---|---|---:|---|---|---|---|---|---|
@@ -22,9 +22,12 @@ This table summarizes local repository records from v0.5.7 through v0.8.1.1. Mis
 | v0.8.1 | v0.8.1-ood-toxicity-longrun-scale | large completed; xlarge/full/longrun not completed in main report | global_correct_targetir_in_beam_rate 0.5017; stable_root_count 1239 | candidate_space_failure_rate 0.4983 | OOD false accept 0.335 to 0.235 after guard; arithmetic retention 1.0 | OOD taxonomy and guard candidate reduced false accept without hurting retention | most_common_false_accept_reason canonicalizer_made_it_look_supported | Next bottleneck is canonicalization-aware OOD guard |
 | v0.8.1.1 | v0.8.1.1-overnight-metric-reconciliation | requested xlarge 3000/1000/500; actual 2200/600/200 due to dataset_capacity | same-seed global beam 0.8167; alt-seed/light global beam 1.0 | same-seed 0.1833; alt-seed/light 0.0 | false accept 0.335 to 0.235 after guard; arithmetic retention 1.0 | reproduced_strong_signal true; metric_consistency_passed true; pytest green | full/longrun not completed; no real promotion; no LLM baseline | Confirmed strong xlarge scale signal within bounded controlled setting |
 
+| v0.8.7 | v0.8.7-boundary-freebeam-generalization | large dataset; heldout current 600 / hard OOD 600 / trap 600 / future 600 / near-OOD 409 / mixed 2809 | no_label_inference_passed true; forbidden_field_access_count 0; current_supported_retention_rate 1.0; overall_ood_false_accept_rate 0.0 | N/A | hard OOD rejection 1.0; trap rejection 1.0; future isolation 1.0; near-OOD quarantine 1.0 | no-label free-beam held-out boundary signal confirmed under probe criteria | not persisted router-state; not external OOD; not same-size LLM baseline | Strong bounded no-label free-beam evidence |
+
 ## Notes（说明）
 
 - v0.7.0-v0.7.2 values are summarized from task context and local record summaries where available; missing exact branch metrics are marked N/A.
 - v0.8.1.1 split diagnostics explain the requested/actual mismatch as dataset_capacity.
 - v0.8.1.1 real promotion remained disabled.
+- v0.8.7 real promotion remained disabled, and no-label inference guard reported zero forbidden field access.
 - No row claims stable convergence, general program synthesis, solved arithmetic, AGI, Transformer replacement, advantage over same-size LLM, safe real promotion, or optimal code generation.

@@ -37,6 +37,25 @@
 - Export PDF.
 - Decide GitHub / Zenodo / arXiv timing.
 
+## Before First arXiv Submission Candidate（第一版 arXiv 候选前）
+
+- Complete v0.8.8 Real Persisted Router-State & External OOD Eval（真实持久化路由状态与外部分布外评估）.
+- Add external held-out OOD slice（外部保留分布外切片）.
+- Add more seed runs.
+- Add same-size LLM / Transformer baseline plan（同体量 LLM / Transformer 基线计划）.
+- Add table separating:
+  - training probe（训练探针）.
+  - no-label free-beam probe（无标签自由束探针）.
+  - persisted-state eval（持久化状态评估）.
+  - external OOD eval（外部分布外评估）.
+- Add diagrams:
+  - BranchChain（分支链）.
+  - RootFork / Root Colony（根叉 / 根群）.
+  - Boundary-Aware Curriculum（边界感知数据课程）.
+  - No-Label Free-Beam Evaluation（无标签自由束评估）.
+- Export PDF.
+- Decide whether to submit as technical report or wait for v0.9 baseline.
+
 ## Export（导出）
 
 - Export report to PDF after metrics are re-verified.
@@ -60,3 +79,9 @@
 - Superiority over same-size LLM.
 - Safe real promotion.
 - Stable convergence.
+- OOD solved.
+- Fully emergent rejection gate as final proof.
+
+## v0.8.7 Path Verification TODO（路径核验）
+
+- Verify after merging records branch: records/v0_8_7/mainline_conclusion.md, records/v0_8_7/freebeam_boundary_report.md, records/v0_8_7/no_label_inference_guard.json, records/v0_8_7/boundary_generalization_metrics.json.

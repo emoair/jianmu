@@ -145,3 +145,36 @@ This summary is a writing aid for the v0.8 technical report draft. It does not r
 
 - Full/longrun and more seeds still need reproduction.
 - Guard safety needs larger OOD slices and a canonicalization-aware guard.
+
+## v0.8.7 Boundary Free-Beam Generalization Probe（边界自由束泛化探针）
+
+### 1. What it proved
+
+- No-label inference guard passed.
+- Held-out leakage check passed.
+- Boundary signal survived free-beam evaluation under probe criteria.
+- Current supported retention remained 1.0.
+- OOD false accept reached 0.0 under the tested slice.
+
+### 2. What it did not prove
+
+- Stable convergence.
+- OOD solved.
+- Full-scale generalization.
+- Same-size LLM advantage.
+- Safe real promotion.
+- Real persisted router-state behavior.
+
+### 3. New bottleneck
+
+- Persisted router/root state replay.
+- External OOD.
+- Baseline comparison.
+
+### 4. Paper relevance
+
+- Very high. This is a key v0.8 result because it moves the v0.8.6 training-probe signal into a bounded no-label free-beam held-out probe.
+
+### 5. Needs reproduction?
+
+- Yes, with persisted state, external OOD, more seeds, and larger scale.

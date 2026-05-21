@@ -4,11 +4,13 @@ Chinese subtitle: JianMu: a nutrient-guided root-colony routing system for compi
 
 Report status: Technical Report Draft（技术报告草稿）, Not a formal paper yet（尚非正式论文）.
 
-Record scope: This draft summarizes local repository evidence from v0.5.7 to v0.8.1.1. It cites repository documents and records only, and does not modify or reinterpret original experimental data.
+Record scope: This draft summarizes local repository evidence from v0.5.7 to v0.8.7. It cites repository documents and records only, and does not modify or reinterpret original experimental data.
 
 This report does not claim stable convergence, general program synthesis, AGI, Transformer replacement, solved arithmetic, optimal code generation, production readiness, safe real promotion, or advantage over same-size LLM baselines.
 
 ## Abstract
+
+v0.8.7 update: In v0.8.7, JianMu extended the v0.8.6 boundary-curriculum probe into a no-label free-beam generalization probe. On held-out boundary slices, the no-label inference guard passed with zero forbidden field access. Current-supported retention remained 1.0, while hard-OOD rejection, true-false-accept-trap rejection, future-domain isolation, and near-OOD quarantine each reached 1.0 under the bounded probe criteria. Overall OOD false accept was 0.0, with no false accept or false reject examples recorded. These results strengthen the evidence for boundary-aware rejection behavior, but they do not prove stable convergence, solved OOD, safe real promotion, or advantage over same-size LLMs. 中文说明：v0.8.7 将 v0.8.6 的训练探针正信号推进到 No-Label Free-Beam（无标签自由束） held-out 正信号，但仍不是完整收敛证明，也不是同体量 LLM 对比结论。
 
 JianMu is a compiler-verified routing and synthesis prototype. It routes raw Chinese/math input through Canonical Symbol Layer（规范符号层）, BranchChain（分支链）, RootFork Sub-Beam Regrowth（根叉子束再生）, Nutrient-Zone Root Colony（养分区根群）, Toxic Nutrient（毒性养分） accounting, Shadow Promotion（影子晋升）, AtomicSynthesis（原子结构合成）, and Compiler Sandbox（编译器沙箱） validation.
 
@@ -31,7 +33,7 @@ The current JianMu v0.8 line uses these components:
 - RootFork Sub-Beam Regrowth（根叉子束再生） starts Prefix-Conditioned Sub-Beam（前缀条件子束） search near weak fork points.
 - Nutrient-Zone Root Colony（养分区根群） groups rescued paths into local Nutrient Zones（养分区） and local Root Colonies（根群） instead of broadcasting them globally.
 - Toxic Nutrient（毒性养分） treats OOD false accept（分布外误接收） and unsupported false accept as negative lifecycle feedback.
-- Shadow Promotion（影子晋升） evaluates proposed colony influence on a shadow copy before any real promotion. Real promotion remains disabled in the v0.8.1.1 evidence summarized here.
+- Shadow Promotion（影子晋升） evaluates proposed colony influence on a shadow copy before any real promotion. Real promotion remains disabled in the v0.8.7 evidence summarized here.
 - AtomicSynthesis（原子结构合成） and Compiler Sandbox（编译器沙箱） generate TargetIR（目标中间表示） from BranchPath（分支路径） and validate generated programs through compile/run checks.
 
 Free-Beam Evaluation（自由束评测） does not read target_branch_path, target_ir, or expected_output. Teacher-Guided Diagnostic（教师引导诊断） may use those labels only after generation for diagnosis, reward construction, and offline path-forcing audits. Compiler/run feedback is treated as hard verification for generated test programs, not as proof of optimal code generation.
@@ -97,6 +99,22 @@ Result: pytest was green with 480 passed and 28 skipped; metric_consistency_pass
 
 Limitations: full and longrun modes were not completed; real promotion remained disabled; no same-size LLM or Transformer baseline was added; the result remains bounded to the controlled TargetIR setting.
 
+### v0.8.7 Boundary Free-Beam Generalization Probe
+
+Why it was needed: v0.8.6 was a Boundary Curriculum Training Probe（边界课程训练探针）. It needed a follow-up that removed labels from inference, evaluated Free-Beam Evaluation（自由束评估） / No-Label Inference（无标签推理）, and used held-out boundary slices.
+
+What it did:
+
+- added No-Label Inference Guard（无标签推理防泄漏）;
+- built held-out boundary slices（保留边界切片）;
+- ran Free-Beam Boundary Eval（自由束边界评估）;
+- computed Boundary Generalization Metrics（边界泛化指标）;
+- wrote Free-Beam Rejection Diagnostics（自由束拒绝诊断）.
+
+Result: no_label_inference_passed was true; forbidden_field_access_count was 0; heldout leakage check passed; current_supported_retention_rate was 1.0; overall_ood_false_accept_rate was 0.0; false_accept_examples and false_reject_supported_examples were both 0; freebeam_emergent_rejection_signal_confirmed was true under v0.8.7 probe criteria.
+
+Limitations: this is not real persisted router-state evaluation yet, not an external OOD benchmark, not full/longrun, not a same-size LLM comparison, and not evidence for safe real promotion.
+
 ## 4. Experiments
 
 ### Table 1: Early Baselines（早期基线）
@@ -131,7 +149,11 @@ Limitations: full and longrun modes were not completed; real promotion remained 
 | v0.8.1 | OOD Toxicity Stress & Long-Run Scale Probe（分布外毒性压力与长时规模探针） | large completed; xlarge/full not verified in report branch | global beam 0.5017; stable_root_count 1239 | OOD false accept 0.335 to 0.235 after guard; arithmetic retention 1.0 | OOD guard candidate improved rejection without hurting retention | Does not prove stable OOD handling |
 | v0.8.1.1 | Overnight Metric Reconciliation & XLarge Reproduction（过夜指标口径校验与 xlarge 复验） | requested xlarge 3000/1000/500; actual 2200/600/200 due to dataset_capacity | xlarge same-seed global beam 0.8167; alt-seed/light global beam 1.0; candidate failure 0.1833 / 0.0 | OOD false accept 0.335 to 0.235 after guard; arithmetic retention 1.0 | confirmed strong xlarge scale signal; metric consistency passed; pytest green | full/longrun not completed; no real promotion; no LLM baseline |
 
+| v0.8.7 | Boundary Free-Beam Generalization Probe（边界自由束泛化探针） | large dataset; heldout current 600 / hard OOD 600 / trap 600 / future 600 / near-OOD 409 / mixed 2809 | no_label_inference_passed true; forbidden_field_access_count 0; current_supported_retention_rate 1.0; overall_ood_false_accept_rate 0.0 | hard OOD rejection 1.0; trap rejection 1.0; future isolation 1.0; near-OOD quarantine 1.0 | v0.8.6 boundary signal survived no-label free-beam held-out evaluation; no false accept / false reject examples | not persisted router-state eval; not external OOD; no same-size LLM baseline; not full-scale convergence |
+
 Interpretation of v0.8.1.1: scale-induced routing phase-transition candidate strengthened, but the evidence remains bounded-domain and is not a general synthesis proof.
+
+Interpretation of v0.8.7: strong bounded no-label free-beam evidence, but still not a complete proof of solved OOD or a fully emergent rejection gate.
 
 ## 5. Key Findings
 
@@ -148,6 +170,12 @@ Interpretation of v0.8.1.1: scale-induced routing phase-transition candidate str
 The v0.8 scale signal is no longer merely an unverified overnight artifact. v0.8.0/v0.8.1 large reached global beam 0.5017. v0.8.1.1 xlarge same-seed reached 0.8167, and alternate-seed/light reached 1.0. Metric consistency passed, inconsistency_count was 0, and split mismatch was explained as dataset_capacity.
 
 Limits: this finding is bounded by dataset capacity, controlled arithmetic / TargetIR setting, no full/longrun completion, no same-size LLM comparison, and no proof of stable convergence.
+
+### Finding: Boundary Rejection Signal Survived No-Label Free-Beam Evaluation
+
+v0.8.6 showed training-probe boundary improvement. v0.8.7 removed boundary labels and answer fields from inference, passed the no-label guard with zero forbidden field access, passed held-out leakage checks, and kept the free-beam boundary metrics perfect under the tested probe criteria. This strengthens the Boundary-Aware Curriculum（边界感知数据课程） hypothesis.
+
+Limits: this is still a bounded probe, not external OOD, not persisted router-state replay, not same-size LLM baseline, and not safe real promotion.
 
 ## 6. Failure Analysis
 
@@ -169,6 +197,16 @@ JianMu v0.8 still has several unresolved failures:
 - Same-size LLM and Transformer comparisons are missing.
 - Compiler/runtime efficiency objectives are not yet included.
 - Generated code optimality is not optimized.
+
+### Remaining Risks After v0.8.7
+
+- Free-beam success may still depend on the probe scaffold.
+- Real persisted router/root state must be tested.
+- External held-out OOD is required.
+- More seeds are required.
+- Larger-scale free-beam runs are required.
+- Same-size LLM / Transformer baselines are still missing.
+- Dataset artifact strategy remains necessary for larger scales.
 
 ## 7. Theoretical Hypothesis: Set-Theoretic Routing Topology
 
@@ -198,11 +236,23 @@ These ideas are not yet empirically proven in JianMu v0.8.
 - There is no code efficiency objective yet.
 - Generated code performance is not optimized.
 - The canonicalizer is an engineering normalization layer, not a TargetIR parser.
+- v0.8.7 is a no-label free-beam probe, not a full production inference benchmark.
+- OOD solved is not claimed.
+- A fully emergent rejection gate is not claimed.
+- Same-size LLM advantage is not claimed.
+- Safe real promotion is not claimed.
+- Real persisted router-state evaluation is still required.
+
 
 ## 9. Future Work
 
 - v0.8.2 Runtime Parallelism & Buffered Records（运行时并行与缓冲记录）.
 - v0.8.3 Canonicalization-Aware OOD Guard（规范化感知分布外守卫）.
+- v0.8.8 Real Persisted Router-State & External OOD Eval（真实持久化路由状态与外部分布外评估）.
+- v0.8.9 / v0.9 Scaling Ladder: 3M / 10M / 30M（规模阶梯）.
+- Same-size Transformer / LLM baseline（同体量 Transformer / LLM 基线）.
+- 100M candidate run（亿级候选运行）.
+- PDF export and arXiv technical report submission decision.
 - v0.9 Scaling Ladder: 3M / 10M / 30M（规模阶梯）.
 - v0.9.x Same-size LLM / Transformer baseline（同体量 LLM / Transformer 基线）.
 - v1.0 100M candidate run + baseline comparison.
@@ -215,7 +265,7 @@ These ideas are not yet empirically proven in JianMu v0.8.
 
 JianMu v0.8 is a reproducible prototype of compiler-verified, nutrient-guided routing. Its strongest current evidence is diagnostic clarity, local sub-beam rescue, root lifecycle activation, and a reproduced bounded xlarge scale signal that improves global beam on supported samples.
 
-The main unresolved bottlenecks are OOD toxicity, safe promotion, and global routing robustness. The v0.8.1.1 evidence supports continued work on runtime scale, canonicalization-aware OOD guard, and strict shadow promotion, not claims of stable convergence, solved arithmetic, or general program synthesis.
+The main unresolved bottlenecks are OOD toxicity, safe promotion, and global routing robustness. The v0.8.1.1 and v0.8.7 evidence supports continued work on runtime scale, persisted router-state evaluation, external OOD evaluation, canonicalization-aware OOD guard, and strict shadow promotion, not claims of stable convergence, solved arithmetic, solved OOD, same-size LLM advantage, safe real promotion, or general program synthesis.
 
 ## Local Record References
 
@@ -234,3 +284,12 @@ The main unresolved bottlenecks are OOD toxicity, safe promotion, and global rou
 - `records/v0_8_1_1/mainline_conclusion.md`
 - `records/v0_8_1_1/metric_reconciliation_report.md`
 - `records/v0_8_1_1/xlarge_reproduction_summary.json`
+
+## v0.8.7 Local Record References（本地记录引用）
+
+- `records/v0_8_7/mainline_conclusion.md`
+- `records/v0_8_7/freebeam_boundary_report.md`
+- `records/v0_8_7/no_label_inference_guard.json`
+- `records/v0_8_7/boundary_generalization_metrics.json`
+- `records/v0_8_6/boundary_training_report.md`
+- `records/v0_8_5/boundary_dataset_report.md`
