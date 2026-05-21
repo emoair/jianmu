@@ -1,0 +1,32 @@
+[
+  {
+    "claim": "stable convergence",
+    "reason": "outside current bounded controlled evidence",
+    "status": "not_claimed"
+  },
+  {
+    "claim": "solved OOD",
+    "reason": "outside current bounded controlled evidence",
+    "status": "not_claimed"
+  },
+  {
+    "claim": "solved arithmetic",
+    "reason": "outside current bounded controlled evidence",
+    "status": "not_claimed"
+  },
+  {
+    "claim": "general program synthesis",
+    "reason": "outside current bounded controlled evidence",
+    "status": "not_claimed"
+  },
+  {
+    "claim": "same-size LLM advantage",
+    "reason": "outside current bounded controlled evidence",
+    "status": "not_claimed"
+  },
+  {
+    "claim": "safe real promotion",
+    "reason": "outside current bounded controlled evidence",
+    "status": "not_claimed"
+  }
+]

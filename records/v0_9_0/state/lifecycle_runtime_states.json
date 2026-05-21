@@ -1,0 +1,79 @@
+{
+  "accepted_rejected_distribution": {
+    "accepted_as_supported": 5598,
+    "false_accept": 1866,
+    "false_reject": 0,
+    "rejected": 5701
+  },
+  "necrosis_events": 0,
+  "nourishment_events": 18,
+  "rejection_layer_distribution": {
+    "after": {
+      "arithmetic_family": 622,
+      "candidate_buffer": 409,
+      "review_queue": 103,
+      "support_gate": 622,
+      "task_scope": 622
+    },
+    "before": {
+      "review_queue": 103
+    }
+  },
+  "replacement_events": 0,
+  "root_status_transitions": {
+    "necrotic": 0,
+    "nourished": 12,
+    "replacement": 0,
+    "stable": 6,
+    "starving": 0
+  },
+  "schema_version": "v0.9.0.lifecycle_runtime_state",
+  "stage_counters": {
+    "stage_0_supported_core": 622,
+    "stage_1_hard_reject": 1244,
+    "stage_2_trap_boundary": 1866,
+    "stage_3_future_domain_isolation": 2488,
+    "stage_4_near_ood_audit": 2897,
+    "stage_5_mixed_boundary_stress": 3000
+  },
+  "stage_deltas": [
+    {
+      "ood_false_accept_delta": 0.0,
+      "sample_count": 622,
+      "stage_name": "stage_0_supported_core",
+      "supported_retention_delta": 0.0
+    },
+    {
+      "ood_false_accept_delta": 0.0,
+      "sample_count": 1244,
+      "stage_name": "stage_1_hard_reject",
+      "supported_retention_delta": 0.0
+    },
+    {
+      "ood_false_accept_delta": -0.5,
+      "sample_count": 1866,
+      "stage_name": "stage_2_trap_boundary",
+      "supported_retention_delta": 0.0
+    },
+    {
+      "ood_false_accept_delta": -0.666667,
+      "sample_count": 2488,
+      "stage_name": "stage_3_future_domain_isolation",
+      "supported_retention_delta": 0.0
+    },
+    {
+      "ood_false_accept_delta": -1.0,
+      "sample_count": 2897,
+      "stage_name": "stage_4_near_ood_audit",
+      "supported_retention_delta": 0.0
+    },
+    {
+      "ood_false_accept_delta": -1.0,
+      "sample_count": 3000,
+      "stage_name": "stage_5_mixed_boundary_stress",
+      "supported_retention_delta": 0.0
+    }
+  ],
+  "starvation_events": 0,
+  "state_hash": "8b8c27cd5947ed6a2709d684bcd841dd9d510335923cd23ad06dd142f2770895"
+}

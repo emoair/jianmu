@@ -1,0 +1,17 @@
+[
+  {
+    "class": "future_domain_candidate",
+    "count": 193,
+    "source_version": "v0_8_4"
+  },
+  {
+    "class": "hard_ood",
+    "count": 55,
+    "source_version": "v0_8_4"
+  },
+  {
+    "class": "true_false_accept",
+    "count": 32,
+    "source_version": "v0_8_4"
+  }
+]

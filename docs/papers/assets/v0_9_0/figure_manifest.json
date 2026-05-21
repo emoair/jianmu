@@ -1,0 +1,78 @@
+{
+  "figures": [
+    {
+      "figure": "fig_scale_signal",
+      "format": "png",
+      "paper_assets_path": "docs\\papers\\assets\\v0_9_0\\fig_scale_signal.png",
+      "records_path": "records\\v0_9_0\\figures\\fig_scale_signal.png"
+    },
+    {
+      "figure": "fig_scale_signal",
+      "format": "pdf",
+      "paper_assets_path": "docs\\papers\\assets\\v0_9_0\\fig_scale_signal.pdf",
+      "records_path": "records\\v0_9_0\\figures\\fig_scale_signal.pdf"
+    },
+    {
+      "figure": "fig_boundary_metrics",
+      "format": "png",
+      "paper_assets_path": "docs\\papers\\assets\\v0_9_0\\fig_boundary_metrics.png",
+      "records_path": "records\\v0_9_0\\figures\\fig_boundary_metrics.png"
+    },
+    {
+      "figure": "fig_boundary_metrics",
+      "format": "pdf",
+      "paper_assets_path": "docs\\papers\\assets\\v0_9_0\\fig_boundary_metrics.pdf",
+      "records_path": "records\\v0_9_0\\figures\\fig_boundary_metrics.pdf"
+    },
+    {
+      "figure": "fig_ood_taxonomy",
+      "format": "png",
+      "paper_assets_path": "docs\\papers\\assets\\v0_9_0\\fig_ood_taxonomy.png",
+      "records_path": "records\\v0_9_0\\figures\\fig_ood_taxonomy.png"
+    },
+    {
+      "figure": "fig_ood_taxonomy",
+      "format": "pdf",
+      "paper_assets_path": "docs\\papers\\assets\\v0_9_0\\fig_ood_taxonomy.pdf",
+      "records_path": "records\\v0_9_0\\figures\\fig_ood_taxonomy.pdf"
+    },
+    {
+      "figure": "fig_persistence_progression",
+      "format": "png",
+      "paper_assets_path": "docs\\papers\\assets\\v0_9_0\\fig_persistence_progression.png",
+      "records_path": "records\\v0_9_0\\figures\\fig_persistence_progression.png"
+    },
+    {
+      "figure": "fig_persistence_progression",
+      "format": "pdf",
+      "paper_assets_path": "docs\\papers\\assets\\v0_9_0\\fig_persistence_progression.pdf",
+      "records_path": "records\\v0_9_0\\figures\\fig_persistence_progression.pdf"
+    },
+    {
+      "figure": "fig_external_ood_multiseed",
+      "format": "png",
+      "paper_assets_path": "docs\\papers\\assets\\v0_9_0\\fig_external_ood_multiseed.png",
+      "records_path": "records\\v0_9_0\\figures\\fig_external_ood_multiseed.png"
+    },
+    {
+      "figure": "fig_external_ood_multiseed",
+      "format": "pdf",
+      "paper_assets_path": "docs\\papers\\assets\\v0_9_0\\fig_external_ood_multiseed.pdf",
+      "records_path": "records\\v0_9_0\\figures\\fig_external_ood_multiseed.pdf"
+    },
+    {
+      "figure": "fig_pipeline_overview",
+      "format": "png",
+      "paper_assets_path": "docs\\papers\\assets\\v0_9_0\\fig_pipeline_overview.png",
+      "records_path": "records\\v0_9_0\\figures\\fig_pipeline_overview.png"
+    },
+    {
+      "figure": "fig_pipeline_overview",
+      "format": "pdf",
+      "paper_assets_path": "docs\\papers\\assets\\v0_9_0\\fig_pipeline_overview.pdf",
+      "records_path": "records\\v0_9_0\\figures\\fig_pipeline_overview.pdf"
+    }
+  ],
+  "matplotlib_available": true,
+  "paper_figures_generated": true
+}

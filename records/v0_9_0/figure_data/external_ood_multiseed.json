@@ -1,0 +1,92 @@
+[
+  {
+    "external_ood_false_accept": 0.0,
+    "future_isolation": 1.0,
+    "hard_ood_rejection": 1.0,
+    "near_ood_quarantine": 1.0,
+    "seed": 42,
+    "supported_retention": 1.0,
+    "trap_rejection": 1.0,
+    "version": "v0.8.8"
+  },
+  {
+    "external_ood_false_accept": 0.0,
+    "future_isolation": 1.0,
+    "hard_ood_rejection": 1.0,
+    "near_ood_quarantine": 1.0,
+    "seed": 43,
+    "supported_retention": 1.0,
+    "trap_rejection": 1.0,
+    "version": "v0.8.8"
+  },
+  {
+    "external_ood_false_accept": 0.0,
+    "future_isolation": 1.0,
+    "hard_ood_rejection": 1.0,
+    "near_ood_quarantine": 1.0,
+    "seed": 44,
+    "supported_retention": 1.0,
+    "trap_rejection": 1.0,
+    "version": "v0.8.8"
+  },
+  {
+    "external_ood_false_accept": 0.0,
+    "future_isolation": 1.0,
+    "hard_ood_rejection": 1.0,
+    "near_ood_quarantine": 1.0,
+    "seed": 42,
+    "supported_retention": 1.0,
+    "trap_rejection": 1.0,
+    "version": "v0.8.9"
+  },
+  {
+    "external_ood_false_accept": 0.0,
+    "future_isolation": 1.0,
+    "hard_ood_rejection": 1.0,
+    "near_ood_quarantine": 1.0,
+    "seed": 43,
+    "supported_retention": 1.0,
+    "trap_rejection": 1.0,
+    "version": "v0.8.9"
+  },
+  {
+    "external_ood_false_accept": 0.0,
+    "future_isolation": 1.0,
+    "hard_ood_rejection": 1.0,
+    "near_ood_quarantine": 1.0,
+    "seed": 44,
+    "supported_retention": 1.0,
+    "trap_rejection": 1.0,
+    "version": "v0.8.9"
+  },
+  {
+    "external_ood_false_accept": 0.0,
+    "future_isolation": 1.0,
+    "hard_ood_rejection": 1.0,
+    "near_ood_quarantine": 1.0,
+    "seed": 42,
+    "supported_retention": 1.0,
+    "trap_rejection": 1.0,
+    "version": "v0.9.0"
+  },
+  {
+    "external_ood_false_accept": 0.0,
+    "future_isolation": 1.0,
+    "hard_ood_rejection": 1.0,
+    "near_ood_quarantine": 1.0,
+    "seed": 43,
+    "supported_retention": 1.0,
+    "trap_rejection": 1.0,
+    "version": "v0.9.0"
+  },
+  {
+    "external_ood_false_accept": 0.0,
+    "future_isolation": 1.0,
+    "hard_ood_rejection": 1.0,
+    "near_ood_quarantine": 1.0,
+    "seed": 44,
+    "supported_retention": 1.0,
+    "trap_rejection": 1.0,
+    "version": "v0.9.0"
+  }
+]

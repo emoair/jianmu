@@ -1,0 +1,29 @@
+[
+  {
+    "blocking_issue_count": 1,
+    "cross_process_reload_passed": "missing",
+    "ready_for_arxiv": false,
+    "state_loaded": "missing",
+    "state_saved": "missing",
+    "support_level": "missing",
+    "version": "v0.8.8"
+  },
+  {
+    "blocking_issue_count": 2,
+    "cross_process_reload_passed": true,
+    "ready_for_arxiv": false,
+    "state_loaded": true,
+    "state_saved": true,
+    "support_level": "partial",
+    "version": "v0.8.9"
+  },
+  {
+    "blocking_issue_count": 0,
+    "cross_process_reload_passed": true,
+    "ready_for_arxiv": true,
+    "state_loaded": true,
+    "state_saved": true,
+    "support_level": "full_router_root",
+    "version": "v0.9.0"
+  }
+]

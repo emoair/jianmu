@@ -1,0 +1,4 @@
+version,support_level,state_saved,state_loaded,cross_process_reload_passed,ready_for_arxiv,blocking_issue_count
+v0.8.8,missing,missing,missing,missing,False,1
+v0.8.9,partial,True,True,True,False,2
+v0.9.0,full_router_root,True,True,True,True,0

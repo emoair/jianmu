@@ -1,0 +1,26 @@
+{
+  "files": [
+    "records\\v0_9_0\\figure_data\\scale_signal.csv",
+    "records\\v0_9_0\\figure_data\\scale_signal.json",
+    "records\\v0_9_0\\figure_data\\boundary_before_after.csv",
+    "records\\v0_9_0\\figure_data\\boundary_before_after.json",
+    "records\\v0_9_0\\figure_data\\ood_taxonomy.csv",
+    "records\\v0_9_0\\figure_data\\ood_taxonomy.json",
+    "records\\v0_9_0\\figure_data\\persistence_progression.csv",
+    "records\\v0_9_0\\figure_data\\persistence_progression.json",
+    "records\\v0_9_0\\figure_data\\external_ood_multiseed.csv",
+    "records\\v0_9_0\\figure_data\\external_ood_multiseed.json",
+    "records\\v0_9_0\\figure_data\\non_claims_table.csv",
+    "records\\v0_9_0\\figure_data\\non_claims_table.json"
+  ],
+  "paper_figure_data_pack_generated": true,
+  "source_records": "records",
+  "tables": [
+    "boundary_before_after",
+    "external_ood_multiseed",
+    "non_claims_table",
+    "ood_taxonomy",
+    "persistence_progression",
+    "scale_signal"
+  ]
+}

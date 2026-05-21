@@ -1,0 +1,80 @@
+{
+  "arxiv_readiness_v3": {
+    "blocking_issues": [],
+    "ready_for_arxiv_technical_report": true,
+    "recommended_abstract_boundary": "bounded no-label free-beam and persisted runtime-state evidence; not a stable convergence or solved OOD claim",
+    "recommended_claim_level": "technical_report_candidate",
+    "recommended_title": "JianMu v0.9 Technical Report: Runtime State Capture and Boundary-Aware Routing",
+    "required_non_claims": [
+      "stable convergence",
+      "solved OOD",
+      "solved arithmetic",
+      "general program synthesis",
+      "same-size LLM advantage",
+      "safe real promotion"
+    ],
+    "suggested_next_experiments": [
+      "external OOD expansion",
+      "same-size baseline",
+      "larger scale runtime ladder"
+    ]
+  },
+  "blocking_issues": [],
+  "cross_process_forbidden_field_access_count": 0,
+  "cross_process_no_label_inference_passed": true,
+  "cross_process_reload_passed": true,
+  "dataset_scale_used": "large",
+  "eval_sample_count": 3000,
+  "external_future_isolation_rate": 1.0,
+  "external_hard_ood_rejection_rate": 1.0,
+  "external_near_ood_quarantine_rate": 1.0,
+  "external_ood_false_accept_rate": 0.0,
+  "external_trap_rejection_rate": 1.0,
+  "figure_manifest_path": "records\\v0_9_0\\figures\\figure_manifest.json",
+  "forbidden_field_in_state_count": 0,
+  "generated_figures": [
+    "records\\v0_9_0\\figures\\fig_scale_signal.png",
+    "records\\v0_9_0\\figures\\fig_boundary_metrics.png",
+    "records\\v0_9_0\\figures\\fig_ood_taxonomy.png",
+    "records\\v0_9_0\\figures\\fig_persistence_progression.png",
+    "records\\v0_9_0\\figures\\fig_external_ood_multiseed.png",
+    "records\\v0_9_0\\figures\\fig_pipeline_overview.png"
+  ],
+  "hardcoded_rejection_gate_added": false,
+  "lifecycle_states_captured": true,
+  "missing_for_full_state": [],
+  "mode": "medium",
+  "modes_attempted": [
+    "quick",
+    "medium"
+  ],
+  "modes_completed": [
+    "quick",
+    "medium"
+  ],
+  "multi_seed_stable": true,
+  "nutrient_toxic_memory_captured": true,
+  "paper_figure_data_pack_generated": true,
+  "paper_figures_generated": true,
+  "persisted_state_support_level": "full_router_root",
+  "ready_for_arxiv_technical_report": true,
+  "real_promotion_enabled": false,
+  "recommended_claim_level": "technical_report_candidate",
+  "reloaded_current_supported_retention_rate": 1.0,
+  "reloaded_overall_ood_false_accept_rate": 0.0,
+  "runtime_capture_passed": true,
+  "runtime_full_state_consistency_passed": true,
+  "runtime_seconds": 11.577395,
+  "same_process_reload_passed": true,
+  "source_paths": {
+    "arxiv_readiness_v3": "records\\v0_9_0\\arxiv_readiness_v3.json",
+    "mainline_conclusion": "records\\v0_9_0\\mainline_conclusion.md",
+    "runtime_full_state_manifest": "records\\v0_9_0\\state\\runtime_full_state_manifest.json"
+  },
+  "state_loaded": true,
+  "state_saved": true,
+  "train_sample_count": 12000,
+  "trained_branch_population_captured": true,
+  "trained_root_colonies_captured": true,
+  "worker_count": 4
+}

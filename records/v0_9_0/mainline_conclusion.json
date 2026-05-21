@@ -1,0 +1,53 @@
+{
+  "blocking_issues": [],
+  "changes_mainline_judgment": true,
+  "cross_process_reload_passed": true,
+  "external_ood_false_accept_rate": 0.0,
+  "forbidden_field_in_state_count": 0,
+  "hardcoded_rejection_gate_added": false,
+  "lifecycle_states_captured": true,
+  "multi_seed_stable": true,
+  "must_reproduce": [
+    "larger scale state capture",
+    "external OOD expansion",
+    "same-size baseline"
+  ],
+  "new_bottleneck": "external scale and baseline comparison remain required",
+  "next_minimal_action": "update paper draft and generate LaTeX if readiness is true; otherwise resolve blockers",
+  "not_proved": [
+    "stable convergence",
+    "solved OOD",
+    "solved arithmetic",
+    "same-size LLM advantage",
+    "safe real promotion"
+  ],
+  "nutrient_toxic_memory_captured": true,
+  "paper_figure_data_pack_generated": true,
+  "paper_figures_generated": true,
+  "paper_relevance": [
+    "runtime full-state evidence",
+    "figure data pack",
+    "external OOD/multiseed table"
+  ],
+  "persisted_state_support_level": "full_router_root",
+  "proved": [
+    "runtime state capture executed",
+    "paper figure data pack generated",
+    "cross-process reload evaluated"
+  ],
+  "ready_for_arxiv_technical_report": true,
+  "real_promotion_enabled": false,
+  "recommended_claim_level": "technical_report_candidate",
+  "reloaded_current_supported_retention_rate": 1.0,
+  "reloaded_overall_ood_false_accept_rate": 0.0,
+  "risk": {
+    "negative_transfer": false,
+    "ood_pollution": false,
+    "pseudo_improvement": false
+  },
+  "runtime_capture_passed": true,
+  "runtime_full_state_consistency_passed": true,
+  "same_process_reload_passed": true,
+  "trained_branch_population_captured": true,
+  "trained_root_colonies_captured": true
+}

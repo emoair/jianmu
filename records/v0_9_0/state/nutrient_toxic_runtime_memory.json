@@ -1,0 +1,26 @@
+{
+  "false_accept_toxic_events": 0,
+  "false_reject_toxic_events": 0,
+  "future_domain_buffer_events": 622,
+  "memory_hash": "b055c7143073367b31897c9c2d6168b3993d1d0cd41966b822d478eb8e453626",
+  "near_ood_quarantine_events": 409,
+  "positive_nutrient_events": 2897,
+  "reward_totals": {
+    "current_supported": 622.0,
+    "future_domain_candidate": 124.4,
+    "hard_ood": 622.0,
+    "label_review_candidate": 0.0,
+    "near_ood_generalization_candidate": 204.5,
+    "true_false_accept_trap": 622.0
+  },
+  "schema_version": "v0.9.0.nutrient_toxic_runtime_memory",
+  "toxic_events": 0,
+  "toxicity_totals": {
+    "current_supported": 0.0,
+    "future_domain_candidate": 0.0,
+    "hard_ood": 0.0,
+    "label_review_candidate": 0.0,
+    "near_ood_generalization_candidate": 0.0,
+    "true_false_accept_trap": 0.0
+  }
+}

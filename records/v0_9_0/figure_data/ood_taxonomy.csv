@@ -1,0 +1,4 @@
+class,count,source_version
+future_domain_candidate,193,v0_8_4
+hard_ood,55,v0_8_4
+true_false_accept,32,v0_8_4

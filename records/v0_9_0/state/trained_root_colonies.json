@@ -1,0 +1,2992 @@
+{
+  "active_roots": [
+    {
+      "branch_path": [],
+      "confidence_history": [],
+      "current_layer": "support_gate",
+      "nutrient_history": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "parent_root_id": null,
+      "path_prefix": [
+        [
+          "task_scope",
+          "programming"
+        ],
+        [
+          "support_gate",
+          "supported"
+        ]
+      ],
+      "positive_cycle_count": 3,
+      "stable_prefix": [],
+      "starvation_counter": 0,
+      "state": "stable",
+      "tip_id": "zone:boundary:support:tip:0",
+      "toxicity_history": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "ttl": 8,
+      "zone_id": "zone:boundary:support"
+    },
+    {
+      "branch_path": [],
+      "confidence_history": [],
+      "current_layer": "support_gate",
+      "nutrient_history": [
+        1.0,
+        1.0
+      ],
+      "parent_root_id": "zone:boundary:support:tip:0",
+      "path_prefix": [
+        [
+          "task_scope",
+          "programming"
+        ],
+        [
+          "support_gate",
+          "supported"
+        ]
+      ],
+      "positive_cycle_count": 2,
+      "stable_prefix": [],
+      "starvation_counter": 0,
+      "state": "stable",
+      "tip_id": "zone:boundary:support:tip:0:split:0:0",
+      "toxicity_history": [
+        0.0,
+        0.0
+      ],
+      "ttl": 7,
+      "zone_id": "zone:boundary:support"
+    },
+    {
+      "branch_path": [],
+      "confidence_history": [],
+      "current_layer": "support_gate",
+      "nutrient_history": [
+        1.0,
+        1.0
+      ],
+      "parent_root_id": "zone:boundary:support:tip:0",
+      "path_prefix": [
+        [
+          "task_scope",
+          "programming"
+        ],
+        [
+          "support_gate",
+          "supported"
+        ]
+      ],
+      "positive_cycle_count": 2,
+      "stable_prefix": [],
+      "starvation_counter": 0,
+      "state": "stable",
+      "tip_id": "zone:boundary:support:tip:0:split:1:1",
+      "toxicity_history": [
+        0.0,
+        0.0
+      ],
+      "ttl": 7,
+      "zone_id": "zone:boundary:support"
+    },
+    {
+      "branch_path": [],
+      "confidence_history": [],
+      "current_layer": "support_gate",
+      "nutrient_history": [
+        1.0
+      ],
+      "parent_root_id": "zone:boundary:support:tip:0",
+      "path_prefix": [
+        [
+          "task_scope",
+          "programming"
+        ],
+        [
+          "support_gate",
+          "supported"
+        ]
+      ],
+      "positive_cycle_count": 1,
+      "stable_prefix": [],
+      "starvation_counter": 0,
+      "state": "nourished",
+      "tip_id": "zone:boundary:support:tip:0:split:0:0",
+      "toxicity_history": [
+        0.0
+      ],
+      "ttl": 6,
+      "zone_id": "zone:boundary:support"
+    },
+    {
+      "branch_path": [],
+      "confidence_history": [],
+      "current_layer": "support_gate",
+      "nutrient_history": [
+        1.0
+      ],
+      "parent_root_id": "zone:boundary:support:tip:0",
+      "path_prefix": [
+        [
+          "task_scope",
+          "programming"
+        ],
+        [
+          "support_gate",
+          "supported"
+        ]
+      ],
+      "positive_cycle_count": 1,
+      "stable_prefix": [],
+      "starvation_counter": 0,
+      "state": "nourished",
+      "tip_id": "zone:boundary:support:tip:0:split:1:1",
+      "toxicity_history": [
+        0.0
+      ],
+      "ttl": 6,
+      "zone_id": "zone:boundary:support"
+    },
+    {
+      "branch_path": [],
+      "confidence_history": [],
+      "current_layer": "support_gate",
+      "nutrient_history": [
+        1.0
+      ],
+      "parent_root_id": "zone:boundary:support:tip:0:split:0:0",
+      "path_prefix": [
+        [
+          "task_scope",
+          "programming"
+        ],
+        [
+          "support_gate",
+          "supported"
+        ]
+      ],
+      "positive_cycle_count": 1,
+      "stable_prefix": [],
+      "starvation_counter": 0,
+      "state": "nourished",
+      "tip_id": "zone:boundary:support:tip:0:split:0:0:split:2:0",
+      "toxicity_history": [
+        0.0
+      ],
+      "ttl": 6,
+      "zone_id": "zone:boundary:support"
+    },
+    {
+      "branch_path": [],
+      "confidence_history": [],
+      "current_layer": "support_gate",
+      "nutrient_history": [
+        1.0
+      ],
+      "parent_root_id": "zone:boundary:support:tip:0:split:0:0",
+      "path_prefix": [
+        [
+          "task_scope",
+          "programming"
+        ],
+        [
+          "support_gate",
+          "supported"
+        ]
+      ],
+      "positive_cycle_count": 1,
+      "stable_prefix": [],
+      "starvation_counter": 0,
+      "state": "nourished",
+      "tip_id": "zone:boundary:support:tip:0:split:0:0:split:3:1",
+      "toxicity_history": [
+        0.0
+      ],
+      "ttl": 6,
+      "zone_id": "zone:boundary:support"
+    },
+    {
+      "branch_path": [],
+      "confidence_history": [],
+      "current_layer": "support_gate",
+      "nutrient_history": [
+        1.0
+      ],
+      "parent_root_id": "zone:boundary:support:tip:0:split:1:1",
+      "path_prefix": [
+        [
+          "task_scope",
+          "programming"
+        ],
+        [
+          "support_gate",
+          "supported"
+        ]
+      ],
+      "positive_cycle_count": 1,
+      "stable_prefix": [],
+      "starvation_counter": 0,
+      "state": "nourished",
+      "tip_id": "zone:boundary:support:tip:0:split:1:1:split:4:0",
+      "toxicity_history": [
+        0.0
+      ],
+      "ttl": 6,
+      "zone_id": "zone:boundary:support"
+    },
+    {
+      "branch_path": [],
+      "confidence_history": [],
+      "current_layer": "support_gate",
+      "nutrient_history": [
+        1.0
+      ],
+      "parent_root_id": "zone:boundary:support:tip:0:split:1:1",
+      "path_prefix": [
+        [
+          "task_scope",
+          "programming"
+        ],
+        [
+          "support_gate",
+          "supported"
+        ]
+      ],
+      "positive_cycle_count": 1,
+      "stable_prefix": [],
+      "starvation_counter": 0,
+      "state": "nourished",
+      "tip_id": "zone:boundary:support:tip:0:split:1:1:split:5:1",
+      "toxicity_history": [
+        0.0
+      ],
+      "ttl": 6,
+      "zone_id": "zone:boundary:support"
+    },
+    {
+      "branch_path": [],
+      "confidence_history": [],
+      "current_layer": "support_gate",
+      "nutrient_history": [],
+      "parent_root_id": "zone:boundary:support:tip:0",
+      "path_prefix": [
+        [
+          "task_scope",
+          "programming"
+        ],
+        [
+          "support_gate",
+          "supported"
+        ]
+      ],
+      "positive_cycle_count": 0,
+      "stable_prefix": [],
+      "starvation_counter": 0,
+      "state": "active",
+      "tip_id": "zone:boundary:support:tip:0:split:0:0",
+      "toxicity_history": [],
+      "ttl": 5,
+      "zone_id": "zone:boundary:support"
+    },
+    {
+      "branch_path": [],
+      "confidence_history": [],
+      "current_layer": "support_gate",
+      "nutrient_history": [],
+      "parent_root_id": "zone:boundary:support:tip:0",
+      "path_prefix": [
+        [
+          "task_scope",
+          "programming"
+        ],
+        [
+          "support_gate",
+          "supported"
+        ]
+      ],
+      "positive_cycle_count": 0,
+      "stable_prefix": [],
+      "starvation_counter": 0,
+      "state": "active",
+      "tip_id": "zone:boundary:support:tip:0:split:1:1",
+      "toxicity_history": [],
+      "ttl": 5,
+      "zone_id": "zone:boundary:support"
+    },
+    {
+      "branch_path": [],
+      "confidence_history": [],
+      "current_layer": "support_gate",
+      "nutrient_history": [],
+      "parent_root_id": "zone:boundary:support:tip:0:split:0:0",
+      "path_prefix": [
+        [
+          "task_scope",
+          "programming"
+        ],
+        [
+          "support_gate",
+          "supported"
+        ]
+      ],
+      "positive_cycle_count": 0,
+      "stable_prefix": [],
+      "starvation_counter": 0,
+      "state": "active",
+      "tip_id": "zone:boundary:support:tip:0:split:0:0:split:2:0",
+      "toxicity_history": [],
+      "ttl": 5,
+      "zone_id": "zone:boundary:support"
+    },
+    {
+      "branch_path": [],
+      "confidence_history": [],
+      "current_layer": "support_gate",
+      "nutrient_history": [],
+      "parent_root_id": "zone:boundary:support:tip:0:split:0:0",
+      "path_prefix": [
+        [
+          "task_scope",
+          "programming"
+        ],
+        [
+          "support_gate",
+          "supported"
+        ]
+      ],
+      "positive_cycle_count": 0,
+      "stable_prefix": [],
+      "starvation_counter": 0,
+      "state": "active",
+      "tip_id": "zone:boundary:support:tip:0:split:0:0:split:3:1",
+      "toxicity_history": [],
+      "ttl": 5,
+      "zone_id": "zone:boundary:support"
+    },
+    {
+      "branch_path": [],
+      "confidence_history": [],
+      "current_layer": "support_gate",
+      "nutrient_history": [],
+      "parent_root_id": "zone:boundary:support:tip:0:split:1:1",
+      "path_prefix": [
+        [
+          "task_scope",
+          "programming"
+        ],
+        [
+          "support_gate",
+          "supported"
+        ]
+      ],
+      "positive_cycle_count": 0,
+      "stable_prefix": [],
+      "starvation_counter": 0,
+      "state": "active",
+      "tip_id": "zone:boundary:support:tip:0:split:1:1:split:4:0",
+      "toxicity_history": [],
+      "ttl": 5,
+      "zone_id": "zone:boundary:support"
+    },
+    {
+      "branch_path": [],
+      "confidence_history": [],
+      "current_layer": "support_gate",
+      "nutrient_history": [],
+      "parent_root_id": "zone:boundary:support:tip:0:split:1:1",
+      "path_prefix": [
+        [
+          "task_scope",
+          "programming"
+        ],
+        [
+          "support_gate",
+          "supported"
+        ]
+      ],
+      "positive_cycle_count": 0,
+      "stable_prefix": [],
+      "starvation_counter": 0,
+      "state": "active",
+      "tip_id": "zone:boundary:support:tip:0:split:1:1:split:5:1",
+      "toxicity_history": [],
+      "ttl": 5,
+      "zone_id": "zone:boundary:support"
+    },
+    {
+      "branch_path": [],
+      "confidence_history": [],
+      "current_layer": "support_gate",
+      "nutrient_history": [],
+      "parent_root_id": "zone:boundary:support:tip:0:split:0:0",
+      "path_prefix": [
+        [
+          "task_scope",
+          "programming"
+        ],
+        [
+          "support_gate",
+          "supported"
+        ]
+      ],
+      "positive_cycle_count": 0,
+      "stable_prefix": [],
+      "starvation_counter": 0,
+      "state": "active",
+      "tip_id": "zone:boundary:support:tip:0:split:0:0:split:6:0",
+      "toxicity_history": [],
+      "ttl": 5,
+      "zone_id": "zone:boundary:support"
+    },
+    {
+      "branch_path": [],
+      "confidence_history": [],
+      "current_layer": "arithmetic_family",
+      "nutrient_history": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "parent_root_id": null,
+      "path_prefix": [
+        [
+          "semantic_domain",
+          "arithmetic"
+        ],
+        [
+          "support_gate",
+          "unsupported"
+        ]
+      ],
+      "positive_cycle_count": 3,
+      "stable_prefix": [],
+      "starvation_counter": 0,
+      "state": "stable",
+      "tip_id": "zone:boundary:future:tip:0",
+      "toxicity_history": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "ttl": 8,
+      "zone_id": "zone:boundary:future"
+    },
+    {
+      "branch_path": [],
+      "confidence_history": [],
+      "current_layer": "arithmetic_family",
+      "nutrient_history": [
+        1.0,
+        1.0
+      ],
+      "parent_root_id": "zone:boundary:future:tip:0",
+      "path_prefix": [
+        [
+          "semantic_domain",
+          "arithmetic"
+        ],
+        [
+          "support_gate",
+          "unsupported"
+        ]
+      ],
+      "positive_cycle_count": 2,
+      "stable_prefix": [],
+      "starvation_counter": 0,
+      "state": "stable",
+      "tip_id": "zone:boundary:future:tip:0:split:0:0",
+      "toxicity_history": [
+        0.0,
+        0.0
+      ],
+      "ttl": 7,
+      "zone_id": "zone:boundary:future"
+    },
+    {
+      "branch_path": [],
+      "confidence_history": [],
+      "current_layer": "arithmetic_family",
+      "nutrient_history": [
+        1.0,
+        1.0
+      ],
+      "parent_root_id": "zone:boundary:future:tip:0",
+      "path_prefix": [
+        [
+          "semantic_domain",
+          "arithmetic"
+        ],
+        [
+          "support_gate",
+          "unsupported"
+        ]
+      ],
+      "positive_cycle_count": 2,
+      "stable_prefix": [],
+      "starvation_counter": 0,
+      "state": "stable",
+      "tip_id": "zone:boundary:future:tip:0:split:1:1",
+      "toxicity_history": [
+        0.0,
+        0.0
+      ],
+      "ttl": 7,
+      "zone_id": "zone:boundary:future"
+    },
+    {
+      "branch_path": [],
+      "confidence_history": [],
+      "current_layer": "arithmetic_family",
+      "nutrient_history": [
+        1.0
+      ],
+      "parent_root_id": "zone:boundary:future:tip:0",
+      "path_prefix": [
+        [
+          "semantic_domain",
+          "arithmetic"
+        ],
+        [
+          "support_gate",
+          "unsupported"
+        ]
+      ],
+      "positive_cycle_count": 1,
+      "stable_prefix": [],
+      "starvation_counter": 0,
+      "state": "nourished",
+      "tip_id": "zone:boundary:future:tip:0:split:0:0",
+      "toxicity_history": [
+        0.0
+      ],
+      "ttl": 6,
+      "zone_id": "zone:boundary:future"
+    },
+    {
+      "branch_path": [],
+      "confidence_history": [],
+      "current_layer": "arithmetic_family",
+      "nutrient_history": [
+        1.0
+      ],
+      "parent_root_id": "zone:boundary:future:tip:0",
+      "path_prefix": [
+        [
+          "semantic_domain",
+          "arithmetic"
+        ],
+        [
+          "support_gate",
+          "unsupported"
+        ]
+      ],
+      "positive_cycle_count": 1,
+      "stable_prefix": [],
+      "starvation_counter": 0,
+      "state": "nourished",
+      "tip_id": "zone:boundary:future:tip:0:split:1:1",
+      "toxicity_history": [
+        0.0
+      ],
+      "ttl": 6,
+      "zone_id": "zone:boundary:future"
+    },
+    {
+      "branch_path": [],
+      "confidence_history": [],
+      "current_layer": "arithmetic_family",
+      "nutrient_history": [
+        1.0
+      ],
+      "parent_root_id": "zone:boundary:future:tip:0:split:0:0",
+      "path_prefix": [
+        [
+          "semantic_domain",
+          "arithmetic"
+        ],
+        [
+          "support_gate",
+          "unsupported"
+        ]
+      ],
+      "positive_cycle_count": 1,
+      "stable_prefix": [],
+      "starvation_counter": 0,
+      "state": "nourished",
+      "tip_id": "zone:boundary:future:tip:0:split:0:0:split:2:0",
+      "toxicity_history": [
+        0.0
+      ],
+      "ttl": 6,
+      "zone_id": "zone:boundary:future"
+    },
+    {
+      "branch_path": [],
+      "confidence_history": [],
+      "current_layer": "arithmetic_family",
+      "nutrient_history": [
+        1.0
+      ],
+      "parent_root_id": "zone:boundary:future:tip:0:split:0:0",
+      "path_prefix": [
+        [
+          "semantic_domain",
+          "arithmetic"
+        ],
+        [
+          "support_gate",
+          "unsupported"
+        ]
+      ],
+      "positive_cycle_count": 1,
+      "stable_prefix": [],
+      "starvation_counter": 0,
+      "state": "nourished",
+      "tip_id": "zone:boundary:future:tip:0:split:0:0:split:3:1",
+      "toxicity_history": [
+        0.0
+      ],
+      "ttl": 6,
+      "zone_id": "zone:boundary:future"
+    },
+    {
+      "branch_path": [],
+      "confidence_history": [],
+      "current_layer": "arithmetic_family",
+      "nutrient_history": [
+        1.0
+      ],
+      "parent_root_id": "zone:boundary:future:tip:0:split:1:1",
+      "path_prefix": [
+        [
+          "semantic_domain",
+          "arithmetic"
+        ],
+        [
+          "support_gate",
+          "unsupported"
+        ]
+      ],
+      "positive_cycle_count": 1,
+      "stable_prefix": [],
+      "starvation_counter": 0,
+      "state": "nourished",
+      "tip_id": "zone:boundary:future:tip:0:split:1:1:split:4:0",
+      "toxicity_history": [
+        0.0
+      ],
+      "ttl": 6,
+      "zone_id": "zone:boundary:future"
+    },
+    {
+      "branch_path": [],
+      "confidence_history": [],
+      "current_layer": "arithmetic_family",
+      "nutrient_history": [
+        1.0
+      ],
+      "parent_root_id": "zone:boundary:future:tip:0:split:1:1",
+      "path_prefix": [
+        [
+          "semantic_domain",
+          "arithmetic"
+        ],
+        [
+          "support_gate",
+          "unsupported"
+        ]
+      ],
+      "positive_cycle_count": 1,
+      "stable_prefix": [],
+      "starvation_counter": 0,
+      "state": "nourished",
+      "tip_id": "zone:boundary:future:tip:0:split:1:1:split:5:1",
+      "toxicity_history": [
+        0.0
+      ],
+      "ttl": 6,
+      "zone_id": "zone:boundary:future"
+    },
+    {
+      "branch_path": [],
+      "confidence_history": [],
+      "current_layer": "arithmetic_family",
+      "nutrient_history": [],
+      "parent_root_id": "zone:boundary:future:tip:0",
+      "path_prefix": [
+        [
+          "semantic_domain",
+          "arithmetic"
+        ],
+        [
+          "support_gate",
+          "unsupported"
+        ]
+      ],
+      "positive_cycle_count": 0,
+      "stable_prefix": [],
+      "starvation_counter": 0,
+      "state": "active",
+      "tip_id": "zone:boundary:future:tip:0:split:0:0",
+      "toxicity_history": [],
+      "ttl": 5,
+      "zone_id": "zone:boundary:future"
+    },
+    {
+      "branch_path": [],
+      "confidence_history": [],
+      "current_layer": "arithmetic_family",
+      "nutrient_history": [],
+      "parent_root_id": "zone:boundary:future:tip:0",
+      "path_prefix": [
+        [
+          "semantic_domain",
+          "arithmetic"
+        ],
+        [
+          "support_gate",
+          "unsupported"
+        ]
+      ],
+      "positive_cycle_count": 0,
+      "stable_prefix": [],
+      "starvation_counter": 0,
+      "state": "active",
+      "tip_id": "zone:boundary:future:tip:0:split:1:1",
+      "toxicity_history": [],
+      "ttl": 5,
+      "zone_id": "zone:boundary:future"
+    },
+    {
+      "branch_path": [],
+      "confidence_history": [],
+      "current_layer": "arithmetic_family",
+      "nutrient_history": [],
+      "parent_root_id": "zone:boundary:future:tip:0:split:0:0",
+      "path_prefix": [
+        [
+          "semantic_domain",
+          "arithmetic"
+        ],
+        [
+          "support_gate",
+          "unsupported"
+        ]
+      ],
+      "positive_cycle_count": 0,
+      "stable_prefix": [],
+      "starvation_counter": 0,
+      "state": "active",
+      "tip_id": "zone:boundary:future:tip:0:split:0:0:split:2:0",
+      "toxicity_history": [],
+      "ttl": 5,
+      "zone_id": "zone:boundary:future"
+    },
+    {
+      "branch_path": [],
+      "confidence_history": [],
+      "current_layer": "arithmetic_family",
+      "nutrient_history": [],
+      "parent_root_id": "zone:boundary:future:tip:0:split:0:0",
+      "path_prefix": [
+        [
+          "semantic_domain",
+          "arithmetic"
+        ],
+        [
+          "support_gate",
+          "unsupported"
+        ]
+      ],
+      "positive_cycle_count": 0,
+      "stable_prefix": [],
+      "starvation_counter": 0,
+      "state": "active",
+      "tip_id": "zone:boundary:future:tip:0:split:0:0:split:3:1",
+      "toxicity_history": [],
+      "ttl": 5,
+      "zone_id": "zone:boundary:future"
+    },
+    {
+      "branch_path": [],
+      "confidence_history": [],
+      "current_layer": "arithmetic_family",
+      "nutrient_history": [],
+      "parent_root_id": "zone:boundary:future:tip:0:split:1:1",
+      "path_prefix": [
+        [
+          "semantic_domain",
+          "arithmetic"
+        ],
+        [
+          "support_gate",
+          "unsupported"
+        ]
+      ],
+      "positive_cycle_count": 0,
+      "stable_prefix": [],
+      "starvation_counter": 0,
+      "state": "active",
+      "tip_id": "zone:boundary:future:tip:0:split:1:1:split:4:0",
+      "toxicity_history": [],
+      "ttl": 5,
+      "zone_id": "zone:boundary:future"
+    },
+    {
+      "branch_path": [],
+      "confidence_history": [],
+      "current_layer": "arithmetic_family",
+      "nutrient_history": [],
+      "parent_root_id": "zone:boundary:future:tip:0:split:1:1",
+      "path_prefix": [
+        [
+          "semantic_domain",
+          "arithmetic"
+        ],
+        [
+          "support_gate",
+          "unsupported"
+        ]
+      ],
+      "positive_cycle_count": 0,
+      "stable_prefix": [],
+      "starvation_counter": 0,
+      "state": "active",
+      "tip_id": "zone:boundary:future:tip:0:split:1:1:split:5:1",
+      "toxicity_history": [],
+      "ttl": 5,
+      "zone_id": "zone:boundary:future"
+    },
+    {
+      "branch_path": [],
+      "confidence_history": [],
+      "current_layer": "arithmetic_family",
+      "nutrient_history": [],
+      "parent_root_id": "zone:boundary:future:tip:0:split:0:0",
+      "path_prefix": [
+        [
+          "semantic_domain",
+          "arithmetic"
+        ],
+        [
+          "support_gate",
+          "unsupported"
+        ]
+      ],
+      "positive_cycle_count": 0,
+      "stable_prefix": [],
+      "starvation_counter": 0,
+      "state": "active",
+      "tip_id": "zone:boundary:future:tip:0:split:0:0:split:6:0",
+      "toxicity_history": [],
+      "ttl": 5,
+      "zone_id": "zone:boundary:future"
+    }
+  ],
+  "colonies": [
+    {
+      "colony_id": "colony:zone:boundary:support",
+      "colony_stability_score": 13.0,
+      "local_prior_updates": [],
+      "local_resource_budget": 16,
+      "necrotic_archive": [],
+      "promotion_state": "local_only",
+      "replacement_queue": [],
+      "root_tips": [
+        {
+          "branch_path": [],
+          "confidence_history": [],
+          "current_layer": "support_gate",
+          "nutrient_history": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "parent_root_id": null,
+          "path_prefix": [
+            [
+              "task_scope",
+              "programming"
+            ],
+            [
+              "support_gate",
+              "supported"
+            ]
+          ],
+          "positive_cycle_count": 3,
+          "stable_prefix": [],
+          "starvation_counter": 0,
+          "state": "stable",
+          "tip_id": "zone:boundary:support:tip:0",
+          "toxicity_history": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "ttl": 8,
+          "zone_id": "zone:boundary:support"
+        },
+        {
+          "branch_path": [],
+          "confidence_history": [],
+          "current_layer": "support_gate",
+          "nutrient_history": [
+            1.0,
+            1.0
+          ],
+          "parent_root_id": "zone:boundary:support:tip:0",
+          "path_prefix": [
+            [
+              "task_scope",
+              "programming"
+            ],
+            [
+              "support_gate",
+              "supported"
+            ]
+          ],
+          "positive_cycle_count": 2,
+          "stable_prefix": [],
+          "starvation_counter": 0,
+          "state": "stable",
+          "tip_id": "zone:boundary:support:tip:0:split:0:0",
+          "toxicity_history": [
+            0.0,
+            0.0
+          ],
+          "ttl": 7,
+          "zone_id": "zone:boundary:support"
+        },
+        {
+          "branch_path": [],
+          "confidence_history": [],
+          "current_layer": "support_gate",
+          "nutrient_history": [
+            1.0,
+            1.0
+          ],
+          "parent_root_id": "zone:boundary:support:tip:0",
+          "path_prefix": [
+            [
+              "task_scope",
+              "programming"
+            ],
+            [
+              "support_gate",
+              "supported"
+            ]
+          ],
+          "positive_cycle_count": 2,
+          "stable_prefix": [],
+          "starvation_counter": 0,
+          "state": "stable",
+          "tip_id": "zone:boundary:support:tip:0:split:1:1",
+          "toxicity_history": [
+            0.0,
+            0.0
+          ],
+          "ttl": 7,
+          "zone_id": "zone:boundary:support"
+        },
+        {
+          "branch_path": [],
+          "confidence_history": [],
+          "current_layer": "support_gate",
+          "nutrient_history": [
+            1.0
+          ],
+          "parent_root_id": "zone:boundary:support:tip:0",
+          "path_prefix": [
+            [
+              "task_scope",
+              "programming"
+            ],
+            [
+              "support_gate",
+              "supported"
+            ]
+          ],
+          "positive_cycle_count": 1,
+          "stable_prefix": [],
+          "starvation_counter": 0,
+          "state": "nourished",
+          "tip_id": "zone:boundary:support:tip:0:split:0:0",
+          "toxicity_history": [
+            0.0
+          ],
+          "ttl": 6,
+          "zone_id": "zone:boundary:support"
+        },
+        {
+          "branch_path": [],
+          "confidence_history": [],
+          "current_layer": "support_gate",
+          "nutrient_history": [
+            1.0
+          ],
+          "parent_root_id": "zone:boundary:support:tip:0",
+          "path_prefix": [
+            [
+              "task_scope",
+              "programming"
+            ],
+            [
+              "support_gate",
+              "supported"
+            ]
+          ],
+          "positive_cycle_count": 1,
+          "stable_prefix": [],
+          "starvation_counter": 0,
+          "state": "nourished",
+          "tip_id": "zone:boundary:support:tip:0:split:1:1",
+          "toxicity_history": [
+            0.0
+          ],
+          "ttl": 6,
+          "zone_id": "zone:boundary:support"
+        },
+        {
+          "branch_path": [],
+          "confidence_history": [],
+          "current_layer": "support_gate",
+          "nutrient_history": [
+            1.0
+          ],
+          "parent_root_id": "zone:boundary:support:tip:0:split:0:0",
+          "path_prefix": [
+            [
+              "task_scope",
+              "programming"
+            ],
+            [
+              "support_gate",
+              "supported"
+            ]
+          ],
+          "positive_cycle_count": 1,
+          "stable_prefix": [],
+          "starvation_counter": 0,
+          "state": "nourished",
+          "tip_id": "zone:boundary:support:tip:0:split:0:0:split:2:0",
+          "toxicity_history": [
+            0.0
+          ],
+          "ttl": 6,
+          "zone_id": "zone:boundary:support"
+        },
+        {
+          "branch_path": [],
+          "confidence_history": [],
+          "current_layer": "support_gate",
+          "nutrient_history": [
+            1.0
+          ],
+          "parent_root_id": "zone:boundary:support:tip:0:split:0:0",
+          "path_prefix": [
+            [
+              "task_scope",
+              "programming"
+            ],
+            [
+              "support_gate",
+              "supported"
+            ]
+          ],
+          "positive_cycle_count": 1,
+          "stable_prefix": [],
+          "starvation_counter": 0,
+          "state": "nourished",
+          "tip_id": "zone:boundary:support:tip:0:split:0:0:split:3:1",
+          "toxicity_history": [
+            0.0
+          ],
+          "ttl": 6,
+          "zone_id": "zone:boundary:support"
+        },
+        {
+          "branch_path": [],
+          "confidence_history": [],
+          "current_layer": "support_gate",
+          "nutrient_history": [
+            1.0
+          ],
+          "parent_root_id": "zone:boundary:support:tip:0:split:1:1",
+          "path_prefix": [
+            [
+              "task_scope",
+              "programming"
+            ],
+            [
+              "support_gate",
+              "supported"
+            ]
+          ],
+          "positive_cycle_count": 1,
+          "stable_prefix": [],
+          "starvation_counter": 0,
+          "state": "nourished",
+          "tip_id": "zone:boundary:support:tip:0:split:1:1:split:4:0",
+          "toxicity_history": [
+            0.0
+          ],
+          "ttl": 6,
+          "zone_id": "zone:boundary:support"
+        },
+        {
+          "branch_path": [],
+          "confidence_history": [],
+          "current_layer": "support_gate",
+          "nutrient_history": [
+            1.0
+          ],
+          "parent_root_id": "zone:boundary:support:tip:0:split:1:1",
+          "path_prefix": [
+            [
+              "task_scope",
+              "programming"
+            ],
+            [
+              "support_gate",
+              "supported"
+            ]
+          ],
+          "positive_cycle_count": 1,
+          "stable_prefix": [],
+          "starvation_counter": 0,
+          "state": "nourished",
+          "tip_id": "zone:boundary:support:tip:0:split:1:1:split:5:1",
+          "toxicity_history": [
+            0.0
+          ],
+          "ttl": 6,
+          "zone_id": "zone:boundary:support"
+        },
+        {
+          "branch_path": [],
+          "confidence_history": [],
+          "current_layer": "support_gate",
+          "nutrient_history": [],
+          "parent_root_id": "zone:boundary:support:tip:0",
+          "path_prefix": [
+            [
+              "task_scope",
+              "programming"
+            ],
+            [
+              "support_gate",
+              "supported"
+            ]
+          ],
+          "positive_cycle_count": 0,
+          "stable_prefix": [],
+          "starvation_counter": 0,
+          "state": "active",
+          "tip_id": "zone:boundary:support:tip:0:split:0:0",
+          "toxicity_history": [],
+          "ttl": 5,
+          "zone_id": "zone:boundary:support"
+        },
+        {
+          "branch_path": [],
+          "confidence_history": [],
+          "current_layer": "support_gate",
+          "nutrient_history": [],
+          "parent_root_id": "zone:boundary:support:tip:0",
+          "path_prefix": [
+            [
+              "task_scope",
+              "programming"
+            ],
+            [
+              "support_gate",
+              "supported"
+            ]
+          ],
+          "positive_cycle_count": 0,
+          "stable_prefix": [],
+          "starvation_counter": 0,
+          "state": "active",
+          "tip_id": "zone:boundary:support:tip:0:split:1:1",
+          "toxicity_history": [],
+          "ttl": 5,
+          "zone_id": "zone:boundary:support"
+        },
+        {
+          "branch_path": [],
+          "confidence_history": [],
+          "current_layer": "support_gate",
+          "nutrient_history": [],
+          "parent_root_id": "zone:boundary:support:tip:0:split:0:0",
+          "path_prefix": [
+            [
+              "task_scope",
+              "programming"
+            ],
+            [
+              "support_gate",
+              "supported"
+            ]
+          ],
+          "positive_cycle_count": 0,
+          "stable_prefix": [],
+          "starvation_counter": 0,
+          "state": "active",
+          "tip_id": "zone:boundary:support:tip:0:split:0:0:split:2:0",
+          "toxicity_history": [],
+          "ttl": 5,
+          "zone_id": "zone:boundary:support"
+        },
+        {
+          "branch_path": [],
+          "confidence_history": [],
+          "current_layer": "support_gate",
+          "nutrient_history": [],
+          "parent_root_id": "zone:boundary:support:tip:0:split:0:0",
+          "path_prefix": [
+            [
+              "task_scope",
+              "programming"
+            ],
+            [
+              "support_gate",
+              "supported"
+            ]
+          ],
+          "positive_cycle_count": 0,
+          "stable_prefix": [],
+          "starvation_counter": 0,
+          "state": "active",
+          "tip_id": "zone:boundary:support:tip:0:split:0:0:split:3:1",
+          "toxicity_history": [],
+          "ttl": 5,
+          "zone_id": "zone:boundary:support"
+        },
+        {
+          "branch_path": [],
+          "confidence_history": [],
+          "current_layer": "support_gate",
+          "nutrient_history": [],
+          "parent_root_id": "zone:boundary:support:tip:0:split:1:1",
+          "path_prefix": [
+            [
+              "task_scope",
+              "programming"
+            ],
+            [
+              "support_gate",
+              "supported"
+            ]
+          ],
+          "positive_cycle_count": 0,
+          "stable_prefix": [],
+          "starvation_counter": 0,
+          "state": "active",
+          "tip_id": "zone:boundary:support:tip:0:split:1:1:split:4:0",
+          "toxicity_history": [],
+          "ttl": 5,
+          "zone_id": "zone:boundary:support"
+        },
+        {
+          "branch_path": [],
+          "confidence_history": [],
+          "current_layer": "support_gate",
+          "nutrient_history": [],
+          "parent_root_id": "zone:boundary:support:tip:0:split:1:1",
+          "path_prefix": [
+            [
+              "task_scope",
+              "programming"
+            ],
+            [
+              "support_gate",
+              "supported"
+            ]
+          ],
+          "positive_cycle_count": 0,
+          "stable_prefix": [],
+          "starvation_counter": 0,
+          "state": "active",
+          "tip_id": "zone:boundary:support:tip:0:split:1:1:split:5:1",
+          "toxicity_history": [],
+          "ttl": 5,
+          "zone_id": "zone:boundary:support"
+        },
+        {
+          "branch_path": [],
+          "confidence_history": [],
+          "current_layer": "support_gate",
+          "nutrient_history": [],
+          "parent_root_id": "zone:boundary:support:tip:0:split:0:0",
+          "path_prefix": [
+            [
+              "task_scope",
+              "programming"
+            ],
+            [
+              "support_gate",
+              "supported"
+            ]
+          ],
+          "positive_cycle_count": 0,
+          "stable_prefix": [],
+          "starvation_counter": 0,
+          "state": "active",
+          "tip_id": "zone:boundary:support:tip:0:split:0:0:split:6:0",
+          "toxicity_history": [],
+          "ttl": 5,
+          "zone_id": "zone:boundary:support"
+        }
+      ],
+      "stable_roots": [
+        "zone:boundary:support:tip:0",
+        "zone:boundary:support:tip:0:split:0:0",
+        "zone:boundary:support:tip:0:split:1:1"
+      ],
+      "starving_roots": [],
+      "toxicity_score": 0.0,
+      "zone_id": "zone:boundary:support"
+    },
+    {
+      "colony_id": "colony:zone:boundary:future",
+      "colony_stability_score": 13.0,
+      "local_prior_updates": [],
+      "local_resource_budget": 16,
+      "necrotic_archive": [],
+      "promotion_state": "local_only",
+      "replacement_queue": [],
+      "root_tips": [
+        {
+          "branch_path": [],
+          "confidence_history": [],
+          "current_layer": "arithmetic_family",
+          "nutrient_history": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "parent_root_id": null,
+          "path_prefix": [
+            [
+              "semantic_domain",
+              "arithmetic"
+            ],
+            [
+              "support_gate",
+              "unsupported"
+            ]
+          ],
+          "positive_cycle_count": 3,
+          "stable_prefix": [],
+          "starvation_counter": 0,
+          "state": "stable",
+          "tip_id": "zone:boundary:future:tip:0",
+          "toxicity_history": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "ttl": 8,
+          "zone_id": "zone:boundary:future"
+        },
+        {
+          "branch_path": [],
+          "confidence_history": [],
+          "current_layer": "arithmetic_family",
+          "nutrient_history": [
+            1.0,
+            1.0
+          ],
+          "parent_root_id": "zone:boundary:future:tip:0",
+          "path_prefix": [
+            [
+              "semantic_domain",
+              "arithmetic"
+            ],
+            [
+              "support_gate",
+              "unsupported"
+            ]
+          ],
+          "positive_cycle_count": 2,
+          "stable_prefix": [],
+          "starvation_counter": 0,
+          "state": "stable",
+          "tip_id": "zone:boundary:future:tip:0:split:0:0",
+          "toxicity_history": [
+            0.0,
+            0.0
+          ],
+          "ttl": 7,
+          "zone_id": "zone:boundary:future"
+        },
+        {
+          "branch_path": [],
+          "confidence_history": [],
+          "current_layer": "arithmetic_family",
+          "nutrient_history": [
+            1.0,
+            1.0
+          ],
+          "parent_root_id": "zone:boundary:future:tip:0",
+          "path_prefix": [
+            [
+              "semantic_domain",
+              "arithmetic"
+            ],
+            [
+              "support_gate",
+              "unsupported"
+            ]
+          ],
+          "positive_cycle_count": 2,
+          "stable_prefix": [],
+          "starvation_counter": 0,
+          "state": "stable",
+          "tip_id": "zone:boundary:future:tip:0:split:1:1",
+          "toxicity_history": [
+            0.0,
+            0.0
+          ],
+          "ttl": 7,
+          "zone_id": "zone:boundary:future"
+        },
+        {
+          "branch_path": [],
+          "confidence_history": [],
+          "current_layer": "arithmetic_family",
+          "nutrient_history": [
+            1.0
+          ],
+          "parent_root_id": "zone:boundary:future:tip:0",
+          "path_prefix": [
+            [
+              "semantic_domain",
+              "arithmetic"
+            ],
+            [
+              "support_gate",
+              "unsupported"
+            ]
+          ],
+          "positive_cycle_count": 1,
+          "stable_prefix": [],
+          "starvation_counter": 0,
+          "state": "nourished",
+          "tip_id": "zone:boundary:future:tip:0:split:0:0",
+          "toxicity_history": [
+            0.0
+          ],
+          "ttl": 6,
+          "zone_id": "zone:boundary:future"
+        },
+        {
+          "branch_path": [],
+          "confidence_history": [],
+          "current_layer": "arithmetic_family",
+          "nutrient_history": [
+            1.0
+          ],
+          "parent_root_id": "zone:boundary:future:tip:0",
+          "path_prefix": [
+            [
+              "semantic_domain",
+              "arithmetic"
+            ],
+            [
+              "support_gate",
+              "unsupported"
+            ]
+          ],
+          "positive_cycle_count": 1,
+          "stable_prefix": [],
+          "starvation_counter": 0,
+          "state": "nourished",
+          "tip_id": "zone:boundary:future:tip:0:split:1:1",
+          "toxicity_history": [
+            0.0
+          ],
+          "ttl": 6,
+          "zone_id": "zone:boundary:future"
+        },
+        {
+          "branch_path": [],
+          "confidence_history": [],
+          "current_layer": "arithmetic_family",
+          "nutrient_history": [
+            1.0
+          ],
+          "parent_root_id": "zone:boundary:future:tip:0:split:0:0",
+          "path_prefix": [
+            [
+              "semantic_domain",
+              "arithmetic"
+            ],
+            [
+              "support_gate",
+              "unsupported"
+            ]
+          ],
+          "positive_cycle_count": 1,
+          "stable_prefix": [],
+          "starvation_counter": 0,
+          "state": "nourished",
+          "tip_id": "zone:boundary:future:tip:0:split:0:0:split:2:0",
+          "toxicity_history": [
+            0.0
+          ],
+          "ttl": 6,
+          "zone_id": "zone:boundary:future"
+        },
+        {
+          "branch_path": [],
+          "confidence_history": [],
+          "current_layer": "arithmetic_family",
+          "nutrient_history": [
+            1.0
+          ],
+          "parent_root_id": "zone:boundary:future:tip:0:split:0:0",
+          "path_prefix": [
+            [
+              "semantic_domain",
+              "arithmetic"
+            ],
+            [
+              "support_gate",
+              "unsupported"
+            ]
+          ],
+          "positive_cycle_count": 1,
+          "stable_prefix": [],
+          "starvation_counter": 0,
+          "state": "nourished",
+          "tip_id": "zone:boundary:future:tip:0:split:0:0:split:3:1",
+          "toxicity_history": [
+            0.0
+          ],
+          "ttl": 6,
+          "zone_id": "zone:boundary:future"
+        },
+        {
+          "branch_path": [],
+          "confidence_history": [],
+          "current_layer": "arithmetic_family",
+          "nutrient_history": [
+            1.0
+          ],
+          "parent_root_id": "zone:boundary:future:tip:0:split:1:1",
+          "path_prefix": [
+            [
+              "semantic_domain",
+              "arithmetic"
+            ],
+            [
+              "support_gate",
+              "unsupported"
+            ]
+          ],
+          "positive_cycle_count": 1,
+          "stable_prefix": [],
+          "starvation_counter": 0,
+          "state": "nourished",
+          "tip_id": "zone:boundary:future:tip:0:split:1:1:split:4:0",
+          "toxicity_history": [
+            0.0
+          ],
+          "ttl": 6,
+          "zone_id": "zone:boundary:future"
+        },
+        {
+          "branch_path": [],
+          "confidence_history": [],
+          "current_layer": "arithmetic_family",
+          "nutrient_history": [
+            1.0
+          ],
+          "parent_root_id": "zone:boundary:future:tip:0:split:1:1",
+          "path_prefix": [
+            [
+              "semantic_domain",
+              "arithmetic"
+            ],
+            [
+              "support_gate",
+              "unsupported"
+            ]
+          ],
+          "positive_cycle_count": 1,
+          "stable_prefix": [],
+          "starvation_counter": 0,
+          "state": "nourished",
+          "tip_id": "zone:boundary:future:tip:0:split:1:1:split:5:1",
+          "toxicity_history": [
+            0.0
+          ],
+          "ttl": 6,
+          "zone_id": "zone:boundary:future"
+        },
+        {
+          "branch_path": [],
+          "confidence_history": [],
+          "current_layer": "arithmetic_family",
+          "nutrient_history": [],
+          "parent_root_id": "zone:boundary:future:tip:0",
+          "path_prefix": [
+            [
+              "semantic_domain",
+              "arithmetic"
+            ],
+            [
+              "support_gate",
+              "unsupported"
+            ]
+          ],
+          "positive_cycle_count": 0,
+          "stable_prefix": [],
+          "starvation_counter": 0,
+          "state": "active",
+          "tip_id": "zone:boundary:future:tip:0:split:0:0",
+          "toxicity_history": [],
+          "ttl": 5,
+          "zone_id": "zone:boundary:future"
+        },
+        {
+          "branch_path": [],
+          "confidence_history": [],
+          "current_layer": "arithmetic_family",
+          "nutrient_history": [],
+          "parent_root_id": "zone:boundary:future:tip:0",
+          "path_prefix": [
+            [
+              "semantic_domain",
+              "arithmetic"
+            ],
+            [
+              "support_gate",
+              "unsupported"
+            ]
+          ],
+          "positive_cycle_count": 0,
+          "stable_prefix": [],
+          "starvation_counter": 0,
+          "state": "active",
+          "tip_id": "zone:boundary:future:tip:0:split:1:1",
+          "toxicity_history": [],
+          "ttl": 5,
+          "zone_id": "zone:boundary:future"
+        },
+        {
+          "branch_path": [],
+          "confidence_history": [],
+          "current_layer": "arithmetic_family",
+          "nutrient_history": [],
+          "parent_root_id": "zone:boundary:future:tip:0:split:0:0",
+          "path_prefix": [
+            [
+              "semantic_domain",
+              "arithmetic"
+            ],
+            [
+              "support_gate",
+              "unsupported"
+            ]
+          ],
+          "positive_cycle_count": 0,
+          "stable_prefix": [],
+          "starvation_counter": 0,
+          "state": "active",
+          "tip_id": "zone:boundary:future:tip:0:split:0:0:split:2:0",
+          "toxicity_history": [],
+          "ttl": 5,
+          "zone_id": "zone:boundary:future"
+        },
+        {
+          "branch_path": [],
+          "confidence_history": [],
+          "current_layer": "arithmetic_family",
+          "nutrient_history": [],
+          "parent_root_id": "zone:boundary:future:tip:0:split:0:0",
+          "path_prefix": [
+            [
+              "semantic_domain",
+              "arithmetic"
+            ],
+            [
+              "support_gate",
+              "unsupported"
+            ]
+          ],
+          "positive_cycle_count": 0,
+          "stable_prefix": [],
+          "starvation_counter": 0,
+          "state": "active",
+          "tip_id": "zone:boundary:future:tip:0:split:0:0:split:3:1",
+          "toxicity_history": [],
+          "ttl": 5,
+          "zone_id": "zone:boundary:future"
+        },
+        {
+          "branch_path": [],
+          "confidence_history": [],
+          "current_layer": "arithmetic_family",
+          "nutrient_history": [],
+          "parent_root_id": "zone:boundary:future:tip:0:split:1:1",
+          "path_prefix": [
+            [
+              "semantic_domain",
+              "arithmetic"
+            ],
+            [
+              "support_gate",
+              "unsupported"
+            ]
+          ],
+          "positive_cycle_count": 0,
+          "stable_prefix": [],
+          "starvation_counter": 0,
+          "state": "active",
+          "tip_id": "zone:boundary:future:tip:0:split:1:1:split:4:0",
+          "toxicity_history": [],
+          "ttl": 5,
+          "zone_id": "zone:boundary:future"
+        },
+        {
+          "branch_path": [],
+          "confidence_history": [],
+          "current_layer": "arithmetic_family",
+          "nutrient_history": [],
+          "parent_root_id": "zone:boundary:future:tip:0:split:1:1",
+          "path_prefix": [
+            [
+              "semantic_domain",
+              "arithmetic"
+            ],
+            [
+              "support_gate",
+              "unsupported"
+            ]
+          ],
+          "positive_cycle_count": 0,
+          "stable_prefix": [],
+          "starvation_counter": 0,
+          "state": "active",
+          "tip_id": "zone:boundary:future:tip:0:split:1:1:split:5:1",
+          "toxicity_history": [],
+          "ttl": 5,
+          "zone_id": "zone:boundary:future"
+        },
+        {
+          "branch_path": [],
+          "confidence_history": [],
+          "current_layer": "arithmetic_family",
+          "nutrient_history": [],
+          "parent_root_id": "zone:boundary:future:tip:0:split:0:0",
+          "path_prefix": [
+            [
+              "semantic_domain",
+              "arithmetic"
+            ],
+            [
+              "support_gate",
+              "unsupported"
+            ]
+          ],
+          "positive_cycle_count": 0,
+          "stable_prefix": [],
+          "starvation_counter": 0,
+          "state": "active",
+          "tip_id": "zone:boundary:future:tip:0:split:0:0:split:6:0",
+          "toxicity_history": [],
+          "ttl": 5,
+          "zone_id": "zone:boundary:future"
+        }
+      ],
+      "stable_roots": [
+        "zone:boundary:future:tip:0",
+        "zone:boundary:future:tip:0:split:0:0",
+        "zone:boundary:future:tip:0:split:1:1"
+      ],
+      "starving_roots": [],
+      "toxicity_score": 0.0,
+      "zone_id": "zone:boundary:future"
+    }
+  ],
+  "colony_count": 2,
+  "colony_memory": {
+    "colony_stability_scores": {
+      "colony:zone:boundary:future": 13.0,
+      "colony:zone:boundary:support": 13.0
+    },
+    "toxicity_scores": {
+      "colony:zone:boundary:future": 0.0,
+      "colony:zone:boundary:support": 0.0
+    }
+  },
+  "future_domain_buffer": [
+    {
+      "buffer_id": "future_domain_candidate:3",
+      "reward": 0.2,
+      "toxicity": 0.0,
+      "training_usage": "future_buffer_only"
+    },
+    {
+      "buffer_id": "future_domain_candidate:9",
+      "reward": 0.2,
+      "toxicity": 0.0,
+      "training_usage": "future_buffer_only"
+    },
+    {
+      "buffer_id": "future_domain_candidate:15",
+      "reward": 0.2,
+      "toxicity": 0.0,
+      "training_usage": "future_buffer_only"
+    },
+    {
+      "buffer_id": "future_domain_candidate:21",
+      "reward": 0.2,
+      "toxicity": 0.0,
+      "training_usage": "future_buffer_only"
+    },
+    {
+      "buffer_id": "future_domain_candidate:27",
+      "reward": 0.2,
+      "toxicity": 0.0,
+      "training_usage": "future_buffer_only"
+    },
+    {
+      "buffer_id": "future_domain_candidate:33",
+      "reward": 0.2,
+      "toxicity": 0.0,
+      "training_usage": "future_buffer_only"
+    },
+    {
+      "buffer_id": "future_domain_candidate:39",
+      "reward": 0.2,
+      "toxicity": 0.0,
+      "training_usage": "future_buffer_only"
+    },
+    {
+      "buffer_id": "future_domain_candidate:45",
+      "reward": 0.2,
+      "toxicity": 0.0,
+      "training_usage": "future_buffer_only"
+    },
+    {
+      "buffer_id": "future_domain_candidate:51",
+      "reward": 0.2,
+      "toxicity": 0.0,
+      "training_usage": "future_buffer_only"
+    },
+    {
+      "buffer_id": "future_domain_candidate:57",
+      "reward": 0.2,
+      "toxicity": 0.0,
+      "training_usage": "future_buffer_only"
+    },
+    {
+      "buffer_id": "future_domain_candidate:63",
+      "reward": 0.2,
+      "toxicity": 0.0,
+      "training_usage": "future_buffer_only"
+    },
+    {
+      "buffer_id": "future_domain_candidate:69",
+      "reward": 0.2,
+      "toxicity": 0.0,
+      "training_usage": "future_buffer_only"
+    },
+    {
+      "buffer_id": "future_domain_candidate:75",
+      "reward": 0.2,
+      "toxicity": 0.0,
+      "training_usage": "future_buffer_only"
+    },
+    {
+      "buffer_id": "future_domain_candidate:81",
+      "reward": 0.2,
+      "toxicity": 0.0,
+      "training_usage": "future_buffer_only"
+    },
+    {
+      "buffer_id": "future_domain_candidate:87",
+      "reward": 0.2,
+      "toxicity": 0.0,
+      "training_usage": "future_buffer_only"
+    },
+    {
+      "buffer_id": "future_domain_candidate:93",
+      "reward": 0.2,
+      "toxicity": 0.0,
+      "training_usage": "future_buffer_only"
+    },
+    {
+      "buffer_id": "future_domain_candidate:99",
+      "reward": 0.2,
+      "toxicity": 0.0,
+      "training_usage": "future_buffer_only"
+    },
+    {
+      "buffer_id": "future_domain_candidate:105",
+      "reward": 0.2,
+      "toxicity": 0.0,
+      "training_usage": "future_buffer_only"
+    },
+    {
+      "buffer_id": "future_domain_candidate:111",
+      "reward": 0.2,
+      "toxicity": 0.0,
+      "training_usage": "future_buffer_only"
+    },
+    {
+      "buffer_id": "future_domain_candidate:117",
+      "reward": 0.2,
+      "toxicity": 0.0,
+      "training_usage": "future_buffer_only"
+    },
+    {
+      "buffer_id": "future_domain_candidate:123",
+      "reward": 0.2,
+      "toxicity": 0.0,
+      "training_usage": "future_buffer_only"
+    },
+    {
+      "buffer_id": "future_domain_candidate:129",
+      "reward": 0.2,
+      "toxicity": 0.0,
+      "training_usage": "future_buffer_only"
+    },
+    {
+      "buffer_id": "future_domain_candidate:135",
+      "reward": 0.2,
+      "toxicity": 0.0,
+      "training_usage": "future_buffer_only"
+    },
+    {
+      "buffer_id": "future_domain_candidate:141",
+      "reward": 0.2,
+      "toxicity": 0.0,
+      "training_usage": "future_buffer_only"
+    },
+    {
+      "buffer_id": "future_domain_candidate:147",
+      "reward": 0.2,
+      "toxicity": 0.0,
+      "training_usage": "future_buffer_only"
+    },
+    {
+      "buffer_id": "future_domain_candidate:153",
+      "reward": 0.2,
+      "toxicity": 0.0,
+      "training_usage": "future_buffer_only"
+    },
+    {
+      "buffer_id": "future_domain_candidate:159",
+      "reward": 0.2,
+      "toxicity": 0.0,
+      "training_usage": "future_buffer_only"
+    },
+    {
+      "buffer_id": "future_domain_candidate:165",
+      "reward": 0.2,
+      "toxicity": 0.0,
+      "training_usage": "future_buffer_only"
+    },
+    {
+      "buffer_id": "future_domain_candidate:171",
+      "reward": 0.2,
+      "toxicity": 0.0,
+      "training_usage": "future_buffer_only"
+    },
+    {
+      "buffer_id": "future_domain_candidate:177",
+      "reward": 0.2,
+      "toxicity": 0.0,
+      "training_usage": "future_buffer_only"
+    },
+    {
+      "buffer_id": "future_domain_candidate:183",
+      "reward": 0.2,
+      "toxicity": 0.0,
+      "training_usage": "future_buffer_only"
+    },
+    {
+      "buffer_id": "future_domain_candidate:189",
+      "reward": 0.2,
+      "toxicity": 0.0,
+      "training_usage": "future_buffer_only"
+    },
+    {
+      "buffer_id": "future_domain_candidate:195",
+      "reward": 0.2,
+      "toxicity": 0.0,
+      "training_usage": "future_buffer_only"
+    }
+  ],
+  "near_ood_candidate_buffer": [
+    {
+      "buffer_id": "near_ood_generalization_candidate:4",
+      "reward": 0.5,
+      "toxicity": 0.0,
+      "training_usage": "audit_only"
+    },
+    {
+      "buffer_id": "near_ood_generalization_candidate:10",
+      "reward": 0.5,
+      "toxicity": 0.0,
+      "training_usage": "audit_only"
+    },
+    {
+      "buffer_id": "near_ood_generalization_candidate:16",
+      "reward": 0.5,
+      "toxicity": 0.0,
+      "training_usage": "audit_only"
+    },
+    {
+      "buffer_id": "near_ood_generalization_candidate:22",
+      "reward": 0.5,
+      "toxicity": 0.0,
+      "training_usage": "audit_only"
+    },
+    {
+      "buffer_id": "near_ood_generalization_candidate:28",
+      "reward": 0.5,
+      "toxicity": 0.0,
+      "training_usage": "audit_only"
+    },
+    {
+      "buffer_id": "near_ood_generalization_candidate:34",
+      "reward": 0.5,
+      "toxicity": 0.0,
+      "training_usage": "audit_only"
+    },
+    {
+      "buffer_id": "near_ood_generalization_candidate:40",
+      "reward": 0.5,
+      "toxicity": 0.0,
+      "training_usage": "audit_only"
+    },
+    {
+      "buffer_id": "near_ood_generalization_candidate:46",
+      "reward": 0.5,
+      "toxicity": 0.0,
+      "training_usage": "audit_only"
+    },
+    {
+      "buffer_id": "near_ood_generalization_candidate:52",
+      "reward": 0.5,
+      "toxicity": 0.0,
+      "training_usage": "audit_only"
+    },
+    {
+      "buffer_id": "near_ood_generalization_candidate:58",
+      "reward": 0.5,
+      "toxicity": 0.0,
+      "training_usage": "audit_only"
+    },
+    {
+      "buffer_id": "near_ood_generalization_candidate:64",
+      "reward": 0.5,
+      "toxicity": 0.0,
+      "training_usage": "audit_only"
+    },
+    {
+      "buffer_id": "near_ood_generalization_candidate:70",
+      "reward": 0.5,
+      "toxicity": 0.0,
+      "training_usage": "audit_only"
+    },
+    {
+      "buffer_id": "near_ood_generalization_candidate:76",
+      "reward": 0.5,
+      "toxicity": 0.0,
+      "training_usage": "audit_only"
+    },
+    {
+      "buffer_id": "near_ood_generalization_candidate:82",
+      "reward": 0.5,
+      "toxicity": 0.0,
+      "training_usage": "audit_only"
+    },
+    {
+      "buffer_id": "near_ood_generalization_candidate:88",
+      "reward": 0.5,
+      "toxicity": 0.0,
+      "training_usage": "audit_only"
+    },
+    {
+      "buffer_id": "near_ood_generalization_candidate:94",
+      "reward": 0.5,
+      "toxicity": 0.0,
+      "training_usage": "audit_only"
+    },
+    {
+      "buffer_id": "near_ood_generalization_candidate:100",
+      "reward": 0.5,
+      "toxicity": 0.0,
+      "training_usage": "audit_only"
+    },
+    {
+      "buffer_id": "near_ood_generalization_candidate:106",
+      "reward": 0.5,
+      "toxicity": 0.0,
+      "training_usage": "audit_only"
+    },
+    {
+      "buffer_id": "near_ood_generalization_candidate:112",
+      "reward": 0.5,
+      "toxicity": 0.0,
+      "training_usage": "audit_only"
+    },
+    {
+      "buffer_id": "near_ood_generalization_candidate:118",
+      "reward": 0.5,
+      "toxicity": 0.0,
+      "training_usage": "audit_only"
+    },
+    {
+      "buffer_id": "near_ood_generalization_candidate:124",
+      "reward": 0.5,
+      "toxicity": 0.0,
+      "training_usage": "audit_only"
+    },
+    {
+      "buffer_id": "near_ood_generalization_candidate:130",
+      "reward": 0.5,
+      "toxicity": 0.0,
+      "training_usage": "audit_only"
+    },
+    {
+      "buffer_id": "near_ood_generalization_candidate:136",
+      "reward": 0.5,
+      "toxicity": 0.0,
+      "training_usage": "audit_only"
+    },
+    {
+      "buffer_id": "near_ood_generalization_candidate:142",
+      "reward": 0.5,
+      "toxicity": 0.0,
+      "training_usage": "audit_only"
+    },
+    {
+      "buffer_id": "near_ood_generalization_candidate:148",
+      "reward": 0.5,
+      "toxicity": 0.0,
+      "training_usage": "audit_only"
+    },
+    {
+      "buffer_id": "near_ood_generalization_candidate:154",
+      "reward": 0.5,
+      "toxicity": 0.0,
+      "training_usage": "audit_only"
+    },
+    {
+      "buffer_id": "near_ood_generalization_candidate:160",
+      "reward": 0.5,
+      "toxicity": 0.0,
+      "training_usage": "audit_only"
+    },
+    {
+      "buffer_id": "near_ood_generalization_candidate:166",
+      "reward": 0.5,
+      "toxicity": 0.0,
+      "training_usage": "audit_only"
+    },
+    {
+      "buffer_id": "near_ood_generalization_candidate:172",
+      "reward": 0.5,
+      "toxicity": 0.0,
+      "training_usage": "audit_only"
+    },
+    {
+      "buffer_id": "near_ood_generalization_candidate:178",
+      "reward": 0.5,
+      "toxicity": 0.0,
+      "training_usage": "audit_only"
+    },
+    {
+      "buffer_id": "near_ood_generalization_candidate:184",
+      "reward": 0.5,
+      "toxicity": 0.0,
+      "training_usage": "audit_only"
+    },
+    {
+      "buffer_id": "near_ood_generalization_candidate:190",
+      "reward": 0.5,
+      "toxicity": 0.0,
+      "training_usage": "audit_only"
+    },
+    {
+      "buffer_id": "near_ood_generalization_candidate:196",
+      "reward": 0.5,
+      "toxicity": 0.0,
+      "training_usage": "audit_only"
+    }
+  ],
+  "necrotic_roots": [],
+  "nourished_roots": [
+    {
+      "branch_path": [],
+      "confidence_history": [],
+      "current_layer": "support_gate",
+      "nutrient_history": [
+        1.0
+      ],
+      "parent_root_id": "zone:boundary:support:tip:0",
+      "path_prefix": [
+        [
+          "task_scope",
+          "programming"
+        ],
+        [
+          "support_gate",
+          "supported"
+        ]
+      ],
+      "positive_cycle_count": 1,
+      "stable_prefix": [],
+      "starvation_counter": 0,
+      "state": "nourished",
+      "tip_id": "zone:boundary:support:tip:0:split:0:0",
+      "toxicity_history": [
+        0.0
+      ],
+      "ttl": 6,
+      "zone_id": "zone:boundary:support"
+    },
+    {
+      "branch_path": [],
+      "confidence_history": [],
+      "current_layer": "support_gate",
+      "nutrient_history": [
+        1.0
+      ],
+      "parent_root_id": "zone:boundary:support:tip:0",
+      "path_prefix": [
+        [
+          "task_scope",
+          "programming"
+        ],
+        [
+          "support_gate",
+          "supported"
+        ]
+      ],
+      "positive_cycle_count": 1,
+      "stable_prefix": [],
+      "starvation_counter": 0,
+      "state": "nourished",
+      "tip_id": "zone:boundary:support:tip:0:split:1:1",
+      "toxicity_history": [
+        0.0
+      ],
+      "ttl": 6,
+      "zone_id": "zone:boundary:support"
+    },
+    {
+      "branch_path": [],
+      "confidence_history": [],
+      "current_layer": "support_gate",
+      "nutrient_history": [
+        1.0
+      ],
+      "parent_root_id": "zone:boundary:support:tip:0:split:0:0",
+      "path_prefix": [
+        [
+          "task_scope",
+          "programming"
+        ],
+        [
+          "support_gate",
+          "supported"
+        ]
+      ],
+      "positive_cycle_count": 1,
+      "stable_prefix": [],
+      "starvation_counter": 0,
+      "state": "nourished",
+      "tip_id": "zone:boundary:support:tip:0:split:0:0:split:2:0",
+      "toxicity_history": [
+        0.0
+      ],
+      "ttl": 6,
+      "zone_id": "zone:boundary:support"
+    },
+    {
+      "branch_path": [],
+      "confidence_history": [],
+      "current_layer": "support_gate",
+      "nutrient_history": [
+        1.0
+      ],
+      "parent_root_id": "zone:boundary:support:tip:0:split:0:0",
+      "path_prefix": [
+        [
+          "task_scope",
+          "programming"
+        ],
+        [
+          "support_gate",
+          "supported"
+        ]
+      ],
+      "positive_cycle_count": 1,
+      "stable_prefix": [],
+      "starvation_counter": 0,
+      "state": "nourished",
+      "tip_id": "zone:boundary:support:tip:0:split:0:0:split:3:1",
+      "toxicity_history": [
+        0.0
+      ],
+      "ttl": 6,
+      "zone_id": "zone:boundary:support"
+    },
+    {
+      "branch_path": [],
+      "confidence_history": [],
+      "current_layer": "support_gate",
+      "nutrient_history": [
+        1.0
+      ],
+      "parent_root_id": "zone:boundary:support:tip:0:split:1:1",
+      "path_prefix": [
+        [
+          "task_scope",
+          "programming"
+        ],
+        [
+          "support_gate",
+          "supported"
+        ]
+      ],
+      "positive_cycle_count": 1,
+      "stable_prefix": [],
+      "starvation_counter": 0,
+      "state": "nourished",
+      "tip_id": "zone:boundary:support:tip:0:split:1:1:split:4:0",
+      "toxicity_history": [
+        0.0
+      ],
+      "ttl": 6,
+      "zone_id": "zone:boundary:support"
+    },
+    {
+      "branch_path": [],
+      "confidence_history": [],
+      "current_layer": "support_gate",
+      "nutrient_history": [
+        1.0
+      ],
+      "parent_root_id": "zone:boundary:support:tip:0:split:1:1",
+      "path_prefix": [
+        [
+          "task_scope",
+          "programming"
+        ],
+        [
+          "support_gate",
+          "supported"
+        ]
+      ],
+      "positive_cycle_count": 1,
+      "stable_prefix": [],
+      "starvation_counter": 0,
+      "state": "nourished",
+      "tip_id": "zone:boundary:support:tip:0:split:1:1:split:5:1",
+      "toxicity_history": [
+        0.0
+      ],
+      "ttl": 6,
+      "zone_id": "zone:boundary:support"
+    },
+    {
+      "branch_path": [],
+      "confidence_history": [],
+      "current_layer": "arithmetic_family",
+      "nutrient_history": [
+        1.0
+      ],
+      "parent_root_id": "zone:boundary:future:tip:0",
+      "path_prefix": [
+        [
+          "semantic_domain",
+          "arithmetic"
+        ],
+        [
+          "support_gate",
+          "unsupported"
+        ]
+      ],
+      "positive_cycle_count": 1,
+      "stable_prefix": [],
+      "starvation_counter": 0,
+      "state": "nourished",
+      "tip_id": "zone:boundary:future:tip:0:split:0:0",
+      "toxicity_history": [
+        0.0
+      ],
+      "ttl": 6,
+      "zone_id": "zone:boundary:future"
+    },
+    {
+      "branch_path": [],
+      "confidence_history": [],
+      "current_layer": "arithmetic_family",
+      "nutrient_history": [
+        1.0
+      ],
+      "parent_root_id": "zone:boundary:future:tip:0",
+      "path_prefix": [
+        [
+          "semantic_domain",
+          "arithmetic"
+        ],
+        [
+          "support_gate",
+          "unsupported"
+        ]
+      ],
+      "positive_cycle_count": 1,
+      "stable_prefix": [],
+      "starvation_counter": 0,
+      "state": "nourished",
+      "tip_id": "zone:boundary:future:tip:0:split:1:1",
+      "toxicity_history": [
+        0.0
+      ],
+      "ttl": 6,
+      "zone_id": "zone:boundary:future"
+    },
+    {
+      "branch_path": [],
+      "confidence_history": [],
+      "current_layer": "arithmetic_family",
+      "nutrient_history": [
+        1.0
+      ],
+      "parent_root_id": "zone:boundary:future:tip:0:split:0:0",
+      "path_prefix": [
+        [
+          "semantic_domain",
+          "arithmetic"
+        ],
+        [
+          "support_gate",
+          "unsupported"
+        ]
+      ],
+      "positive_cycle_count": 1,
+      "stable_prefix": [],
+      "starvation_counter": 0,
+      "state": "nourished",
+      "tip_id": "zone:boundary:future:tip:0:split:0:0:split:2:0",
+      "toxicity_history": [
+        0.0
+      ],
+      "ttl": 6,
+      "zone_id": "zone:boundary:future"
+    },
+    {
+      "branch_path": [],
+      "confidence_history": [],
+      "current_layer": "arithmetic_family",
+      "nutrient_history": [
+        1.0
+      ],
+      "parent_root_id": "zone:boundary:future:tip:0:split:0:0",
+      "path_prefix": [
+        [
+          "semantic_domain",
+          "arithmetic"
+        ],
+        [
+          "support_gate",
+          "unsupported"
+        ]
+      ],
+      "positive_cycle_count": 1,
+      "stable_prefix": [],
+      "starvation_counter": 0,
+      "state": "nourished",
+      "tip_id": "zone:boundary:future:tip:0:split:0:0:split:3:1",
+      "toxicity_history": [
+        0.0
+      ],
+      "ttl": 6,
+      "zone_id": "zone:boundary:future"
+    },
+    {
+      "branch_path": [],
+      "confidence_history": [],
+      "current_layer": "arithmetic_family",
+      "nutrient_history": [
+        1.0
+      ],
+      "parent_root_id": "zone:boundary:future:tip:0:split:1:1",
+      "path_prefix": [
+        [
+          "semantic_domain",
+          "arithmetic"
+        ],
+        [
+          "support_gate",
+          "unsupported"
+        ]
+      ],
+      "positive_cycle_count": 1,
+      "stable_prefix": [],
+      "starvation_counter": 0,
+      "state": "nourished",
+      "tip_id": "zone:boundary:future:tip:0:split:1:1:split:4:0",
+      "toxicity_history": [
+        0.0
+      ],
+      "ttl": 6,
+      "zone_id": "zone:boundary:future"
+    },
+    {
+      "branch_path": [],
+      "confidence_history": [],
+      "current_layer": "arithmetic_family",
+      "nutrient_history": [
+        1.0
+      ],
+      "parent_root_id": "zone:boundary:future:tip:0:split:1:1",
+      "path_prefix": [
+        [
+          "semantic_domain",
+          "arithmetic"
+        ],
+        [
+          "support_gate",
+          "unsupported"
+        ]
+      ],
+      "positive_cycle_count": 1,
+      "stable_prefix": [],
+      "starvation_counter": 0,
+      "state": "nourished",
+      "tip_id": "zone:boundary:future:tip:0:split:1:1:split:5:1",
+      "toxicity_history": [
+        0.0
+      ],
+      "ttl": 6,
+      "zone_id": "zone:boundary:future"
+    }
+  ],
+  "promotion_shadow_state": {
+    "promotion_state_distribution": {
+      "local_only": 2
+    },
+    "real_promotion_enabled": false
+  },
+  "quarantine_buffer": [
+    {
+      "buffer_id": "near_ood_generalization_candidate:4",
+      "reward": 0.5,
+      "toxicity": 0.0,
+      "training_usage": "audit_only"
+    },
+    {
+      "buffer_id": "near_ood_generalization_candidate:10",
+      "reward": 0.5,
+      "toxicity": 0.0,
+      "training_usage": "audit_only"
+    },
+    {
+      "buffer_id": "near_ood_generalization_candidate:16",
+      "reward": 0.5,
+      "toxicity": 0.0,
+      "training_usage": "audit_only"
+    },
+    {
+      "buffer_id": "near_ood_generalization_candidate:22",
+      "reward": 0.5,
+      "toxicity": 0.0,
+      "training_usage": "audit_only"
+    },
+    {
+      "buffer_id": "near_ood_generalization_candidate:28",
+      "reward": 0.5,
+      "toxicity": 0.0,
+      "training_usage": "audit_only"
+    },
+    {
+      "buffer_id": "near_ood_generalization_candidate:34",
+      "reward": 0.5,
+      "toxicity": 0.0,
+      "training_usage": "audit_only"
+    },
+    {
+      "buffer_id": "near_ood_generalization_candidate:40",
+      "reward": 0.5,
+      "toxicity": 0.0,
+      "training_usage": "audit_only"
+    },
+    {
+      "buffer_id": "near_ood_generalization_candidate:46",
+      "reward": 0.5,
+      "toxicity": 0.0,
+      "training_usage": "audit_only"
+    },
+    {
+      "buffer_id": "near_ood_generalization_candidate:52",
+      "reward": 0.5,
+      "toxicity": 0.0,
+      "training_usage": "audit_only"
+    },
+    {
+      "buffer_id": "near_ood_generalization_candidate:58",
+      "reward": 0.5,
+      "toxicity": 0.0,
+      "training_usage": "audit_only"
+    },
+    {
+      "buffer_id": "near_ood_generalization_candidate:64",
+      "reward": 0.5,
+      "toxicity": 0.0,
+      "training_usage": "audit_only"
+    },
+    {
+      "buffer_id": "near_ood_generalization_candidate:70",
+      "reward": 0.5,
+      "toxicity": 0.0,
+      "training_usage": "audit_only"
+    },
+    {
+      "buffer_id": "near_ood_generalization_candidate:76",
+      "reward": 0.5,
+      "toxicity": 0.0,
+      "training_usage": "audit_only"
+    },
+    {
+      "buffer_id": "near_ood_generalization_candidate:82",
+      "reward": 0.5,
+      "toxicity": 0.0,
+      "training_usage": "audit_only"
+    },
+    {
+      "buffer_id": "near_ood_generalization_candidate:88",
+      "reward": 0.5,
+      "toxicity": 0.0,
+      "training_usage": "audit_only"
+    },
+    {
+      "buffer_id": "near_ood_generalization_candidate:94",
+      "reward": 0.5,
+      "toxicity": 0.0,
+      "training_usage": "audit_only"
+    },
+    {
+      "buffer_id": "near_ood_generalization_candidate:100",
+      "reward": 0.5,
+      "toxicity": 0.0,
+      "training_usage": "audit_only"
+    },
+    {
+      "buffer_id": "near_ood_generalization_candidate:106",
+      "reward": 0.5,
+      "toxicity": 0.0,
+      "training_usage": "audit_only"
+    },
+    {
+      "buffer_id": "near_ood_generalization_candidate:112",
+      "reward": 0.5,
+      "toxicity": 0.0,
+      "training_usage": "audit_only"
+    },
+    {
+      "buffer_id": "near_ood_generalization_candidate:118",
+      "reward": 0.5,
+      "toxicity": 0.0,
+      "training_usage": "audit_only"
+    },
+    {
+      "buffer_id": "near_ood_generalization_candidate:124",
+      "reward": 0.5,
+      "toxicity": 0.0,
+      "training_usage": "audit_only"
+    },
+    {
+      "buffer_id": "near_ood_generalization_candidate:130",
+      "reward": 0.5,
+      "toxicity": 0.0,
+      "training_usage": "audit_only"
+    },
+    {
+      "buffer_id": "near_ood_generalization_candidate:136",
+      "reward": 0.5,
+      "toxicity": 0.0,
+      "training_usage": "audit_only"
+    },
+    {
+      "buffer_id": "near_ood_generalization_candidate:142",
+      "reward": 0.5,
+      "toxicity": 0.0,
+      "training_usage": "audit_only"
+    },
+    {
+      "buffer_id": "near_ood_generalization_candidate:148",
+      "reward": 0.5,
+      "toxicity": 0.0,
+      "training_usage": "audit_only"
+    },
+    {
+      "buffer_id": "near_ood_generalization_candidate:154",
+      "reward": 0.5,
+      "toxicity": 0.0,
+      "training_usage": "audit_only"
+    },
+    {
+      "buffer_id": "near_ood_generalization_candidate:160",
+      "reward": 0.5,
+      "toxicity": 0.0,
+      "training_usage": "audit_only"
+    },
+    {
+      "buffer_id": "near_ood_generalization_candidate:166",
+      "reward": 0.5,
+      "toxicity": 0.0,
+      "training_usage": "audit_only"
+    },
+    {
+      "buffer_id": "near_ood_generalization_candidate:172",
+      "reward": 0.5,
+      "toxicity": 0.0,
+      "training_usage": "audit_only"
+    },
+    {
+      "buffer_id": "near_ood_generalization_candidate:178",
+      "reward": 0.5,
+      "toxicity": 0.0,
+      "training_usage": "audit_only"
+    },
+    {
+      "buffer_id": "near_ood_generalization_candidate:184",
+      "reward": 0.5,
+      "toxicity": 0.0,
+      "training_usage": "audit_only"
+    },
+    {
+      "buffer_id": "near_ood_generalization_candidate:190",
+      "reward": 0.5,
+      "toxicity": 0.0,
+      "training_usage": "audit_only"
+    },
+    {
+      "buffer_id": "near_ood_generalization_candidate:196",
+      "reward": 0.5,
+      "toxicity": 0.0,
+      "training_usage": "audit_only"
+    }
+  ],
+  "replacement_roots": [],
+  "resource_budget_state": {
+    "local_resource_budgets": {
+      "colony:zone:boundary:future": 16,
+      "colony:zone:boundary:support": 16
+    }
+  },
+  "root_count": 32,
+  "schema_version": "v0.9.0.trained_root_colony",
+  "seed": 42,
+  "stable_roots": [
+    {
+      "branch_path": [],
+      "confidence_history": [],
+      "current_layer": "support_gate",
+      "nutrient_history": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "parent_root_id": null,
+      "path_prefix": [
+        [
+          "task_scope",
+          "programming"
+        ],
+        [
+          "support_gate",
+          "supported"
+        ]
+      ],
+      "positive_cycle_count": 3,
+      "stable_prefix": [],
+      "starvation_counter": 0,
+      "state": "stable",
+      "tip_id": "zone:boundary:support:tip:0",
+      "toxicity_history": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "ttl": 8,
+      "zone_id": "zone:boundary:support"
+    },
+    {
+      "branch_path": [],
+      "confidence_history": [],
+      "current_layer": "support_gate",
+      "nutrient_history": [
+        1.0,
+        1.0
+      ],
+      "parent_root_id": "zone:boundary:support:tip:0",
+      "path_prefix": [
+        [
+          "task_scope",
+          "programming"
+        ],
+        [
+          "support_gate",
+          "supported"
+        ]
+      ],
+      "positive_cycle_count": 2,
+      "stable_prefix": [],
+      "starvation_counter": 0,
+      "state": "stable",
+      "tip_id": "zone:boundary:support:tip:0:split:0:0",
+      "toxicity_history": [
+        0.0,
+        0.0
+      ],
+      "ttl": 7,
+      "zone_id": "zone:boundary:support"
+    },
+    {
+      "branch_path": [],
+      "confidence_history": [],
+      "current_layer": "support_gate",
+      "nutrient_history": [
+        1.0,
+        1.0
+      ],
+      "parent_root_id": "zone:boundary:support:tip:0",
+      "path_prefix": [
+        [
+          "task_scope",
+          "programming"
+        ],
+        [
+          "support_gate",
+          "supported"
+        ]
+      ],
+      "positive_cycle_count": 2,
+      "stable_prefix": [],
+      "starvation_counter": 0,
+      "state": "stable",
+      "tip_id": "zone:boundary:support:tip:0:split:1:1",
+      "toxicity_history": [
+        0.0,
+        0.0
+      ],
+      "ttl": 7,
+      "zone_id": "zone:boundary:support"
+    },
+    {
+      "branch_path": [],
+      "confidence_history": [],
+      "current_layer": "arithmetic_family",
+      "nutrient_history": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "parent_root_id": null,
+      "path_prefix": [
+        [
+          "semantic_domain",
+          "arithmetic"
+        ],
+        [
+          "support_gate",
+          "unsupported"
+        ]
+      ],
+      "positive_cycle_count": 3,
+      "stable_prefix": [],
+      "starvation_counter": 0,
+      "state": "stable",
+      "tip_id": "zone:boundary:future:tip:0",
+      "toxicity_history": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "ttl": 8,
+      "zone_id": "zone:boundary:future"
+    },
+    {
+      "branch_path": [],
+      "confidence_history": [],
+      "current_layer": "arithmetic_family",
+      "nutrient_history": [
+        1.0,
+        1.0
+      ],
+      "parent_root_id": "zone:boundary:future:tip:0",
+      "path_prefix": [
+        [
+          "semantic_domain",
+          "arithmetic"
+        ],
+        [
+          "support_gate",
+          "unsupported"
+        ]
+      ],
+      "positive_cycle_count": 2,
+      "stable_prefix": [],
+      "starvation_counter": 0,
+      "state": "stable",
+      "tip_id": "zone:boundary:future:tip:0:split:0:0",
+      "toxicity_history": [
+        0.0,
+        0.0
+      ],
+      "ttl": 7,
+      "zone_id": "zone:boundary:future"
+    },
+    {
+      "branch_path": [],
+      "confidence_history": [],
+      "current_layer": "arithmetic_family",
+      "nutrient_history": [
+        1.0,
+        1.0
+      ],
+      "parent_root_id": "zone:boundary:future:tip:0",
+      "path_prefix": [
+        [
+          "semantic_domain",
+          "arithmetic"
+        ],
+        [
+          "support_gate",
+          "unsupported"
+        ]
+      ],
+      "positive_cycle_count": 2,
+      "stable_prefix": [],
+      "starvation_counter": 0,
+      "state": "stable",
+      "tip_id": "zone:boundary:future:tip:0:split:1:1",
+      "toxicity_history": [
+        0.0,
+        0.0
+      ],
+      "ttl": 7,
+      "zone_id": "zone:boundary:future"
+    }
+  ],
+  "starving_roots": [],
+  "state_hash": "547f9325419d5220aeffefb21a7d57ce3e32f6d2afd7943a928575d82ebf2443"
+}

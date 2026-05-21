@@ -1,0 +1,7 @@
+claim,status,reason
+stable convergence,not_claimed,outside current bounded controlled evidence
+solved OOD,not_claimed,outside current bounded controlled evidence
+solved arithmetic,not_claimed,outside current bounded controlled evidence
+general program synthesis,not_claimed,outside current bounded controlled evidence
+same-size LLM advantage,not_claimed,outside current bounded controlled evidence
+safe real promotion,not_claimed,outside current bounded controlled evidence

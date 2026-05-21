@@ -1,0 +1,3 @@
+version,mode,global_correct_targetir_in_beam_rate,candidate_space_failure_rate,notes
+v0.8.1.1,xlarge_same_seed,missing,missing,records/v0_8_1_1/xlarge_reproduction_summary.json
+v0.8.1.1,xlarge_alt_light,missing,missing,records/v0_8_1_1/xlarge_reproduction_summary.json

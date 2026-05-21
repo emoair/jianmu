@@ -1,0 +1,30 @@
+[
+  {
+    "after": 1.0,
+    "before": 1.0,
+    "metric": "current_supported_retention_rate",
+    "notes": "records/v0_8_6",
+    "version": "v0.8.6"
+  },
+  {
+    "after": 0.0,
+    "before": 1.0,
+    "metric": "overall_ood_false_accept_rate",
+    "notes": "records/v0_8_6",
+    "version": "v0.8.6"
+  },
+  {
+    "after": 1.0,
+    "before": 0.0,
+    "metric": "true_false_accept_trap_rejection_rate",
+    "notes": "records/v0_8_6",
+    "version": "v0.8.6"
+  },
+  {
+    "after": 1.0,
+    "before": 0.0,
+    "metric": "hard_ood_rejection_rate",
+    "notes": "records/v0_8_6",
+    "version": "v0.8.6"
+  }
+]

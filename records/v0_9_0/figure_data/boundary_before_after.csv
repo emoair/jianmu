@@ -1,0 +1,5 @@
+version,metric,before,after,notes
+v0.8.6,current_supported_retention_rate,1.0,1.0,records/v0_8_6
+v0.8.6,overall_ood_false_accept_rate,1.0,0.0,records/v0_8_6
+v0.8.6,true_false_accept_trap_rejection_rate,0.0,1.0,records/v0_8_6
+v0.8.6,hard_ood_rejection_rate,0.0,1.0,records/v0_8_6

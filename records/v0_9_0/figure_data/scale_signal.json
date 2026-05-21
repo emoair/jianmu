@@ -1,0 +1,16 @@
+[
+  {
+    "candidate_space_failure_rate": "missing",
+    "global_correct_targetir_in_beam_rate": "missing",
+    "mode": "xlarge_same_seed",
+    "notes": "records/v0_8_1_1/xlarge_reproduction_summary.json",
+    "version": "v0.8.1.1"
+  },
+  {
+    "candidate_space_failure_rate": "missing",
+    "global_correct_targetir_in_beam_rate": "missing",
+    "mode": "xlarge_alt_light",
+    "notes": "records/v0_8_1_1/xlarge_reproduction_summary.json",
+    "version": "v0.8.1.1"
+  }
+]

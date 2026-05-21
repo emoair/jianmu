@@ -401,3 +401,12 @@ v0.8.9 explores Full Router/Root State Persistence & Reloaded Boundary Eval（�
 不要声称 OOD 已解决。
 不要声称同体量 LLM 优势。
 不要声称 safe real promotion。
+
+## v0.9.0 Development Direction
+
+v0.9.0 explores Runtime Training-State Capture & Paper Figure Data Pack（运行时训练状态捕获与论文图表数据包）. After v0.8.9 showed that the remaining blocker was partial persisted state rather than boundary behavior, this version captures trained BranchChain population, Root Colony state, lifecycle state, and nutrient/toxic memory during training, then tests full-state reload under no-label free-beam and external OOD. It also generates paper-ready figure data and matplotlib figures from records.
+
+不要声称稳定收敛。
+不要声称 OOD 已解决。
+不要声称同体量 LLM 优势。
+不要声称 safe real promotion。

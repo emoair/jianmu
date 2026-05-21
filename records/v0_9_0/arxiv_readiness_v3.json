@@ -1,0 +1,20 @@
+{
+  "blocking_issues": [],
+  "ready_for_arxiv_technical_report": true,
+  "recommended_abstract_boundary": "bounded no-label free-beam and persisted runtime-state evidence; not a stable convergence or solved OOD claim",
+  "recommended_claim_level": "technical_report_candidate",
+  "recommended_title": "JianMu v0.9 Technical Report: Runtime State Capture and Boundary-Aware Routing",
+  "required_non_claims": [
+    "stable convergence",
+    "solved OOD",
+    "solved arithmetic",
+    "general program synthesis",
+    "same-size LLM advantage",
+    "safe real promotion"
+  ],
+  "suggested_next_experiments": [
+    "external OOD expansion",
+    "same-size baseline",
+    "larger scale runtime ladder"
+  ]
+}

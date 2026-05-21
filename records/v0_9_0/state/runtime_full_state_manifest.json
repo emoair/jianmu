@@ -1,0 +1,37 @@
+{
+  "arxiv_blocking_if_not_full": false,
+  "checksum": "df080978058c0f74e6eb1466e8d7ef321d2a01dce16161c54b6d804738c1f767",
+  "checksums": {
+    "forbidden_field_scan.json": "274a95a903ca34ff54a185e9b1eedca327d0bd90cae0f16609ae6c53c813b517",
+    "lifecycle_runtime_states.json": "bc596e3eabfb23a717e8c0608c98fbab0a865a8bfff0f04c56b271c97855a320",
+    "nutrient_toxic_runtime_memory.json": "fe13f28671804f95aac9cd9741c6af3343f00f62d877303be73601daa3c6283b",
+    "runtime_state_inventory.json": "fc5fe9efbbcee07c1d6b22c572ee697958af3d80b85179d18cb31c1bc6c523eb",
+    "trained_branch_population.json": "55ba5e2c08c55877df50a1d9c87165c35eacfdfbca9c4e35b1a35509440614c3",
+    "trained_root_colonies.json": "f6273243834948b20c8b0afd7214dbdb3e4ea51c17ead0b06213fb09c776599c"
+  },
+  "forbidden_field_in_state_count": 0,
+  "forbidden_fields_excluded": [
+    "boundary_label",
+    "expected_action",
+    "expected_output",
+    "nutrient_policy",
+    "target_branch_path",
+    "target_ir",
+    "toxicity_policy"
+  ],
+  "full_state_ready": true,
+  "missing_for_full_state": [],
+  "persisted_state_support_level": "full_router_root",
+  "seed": 42,
+  "source_branch": "v0.9.0-runtime-state-capture-figures",
+  "source_records_dir": "records\\v0_9_0",
+  "state_files": [
+    "forbidden_field_scan.json",
+    "lifecycle_runtime_states.json",
+    "nutrient_toxic_runtime_memory.json",
+    "runtime_state_inventory.json",
+    "trained_branch_population.json",
+    "trained_root_colonies.json"
+  ],
+  "state_version": "v0.9.0.runtime_full_state"
+}
