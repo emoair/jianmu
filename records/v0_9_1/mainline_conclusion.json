@@ -1,0 +1,707 @@
+{
+  "ablation_harness_generated": true,
+  "ablation_variants_completed": [
+    "full_jianmu_v0_9_1",
+    "no_root_colony",
+    "no_nutrient_toxic_memory",
+    "no_lifecycle_state",
+    "random_router",
+    "heuristic_router"
+  ],
+  "baseline_harness_generated": true,
+  "baseline_methods_completed": [
+    "heuristic_router_baseline",
+    "no_nutrient_toxic_memory_baseline",
+    "no_root_colony_baseline",
+    "random_router_baseline"
+  ],
+  "blocking_issues": [],
+  "changes_mainline_judgment": true,
+  "comparison_data_pack_generated": true,
+  "comparison_data_paths": [
+    "records\\v0_9_1\\comparison_data\\scale_vs_metric.csv",
+    "records\\v0_9_1\\comparison_data\\state_size_runtime.csv",
+    "records\\v0_9_1\\comparison_data\\seed_stability.csv",
+    "records\\v0_9_1\\comparison_data\\external_ood_expansion.csv",
+    "records\\v0_9_1\\comparison_data\\baseline_harness_summary.csv",
+    "records\\v0_9_1\\comparison_data\\ablation_summary.csv",
+    "records\\v0_9_1\\comparison_data\\paper_update_notes.md"
+  ],
+  "compile_worker_count": 4,
+  "cross_process_no_label_inference_passed": true,
+  "cross_process_reload_passed": true,
+  "current_still_not_proven": [
+    "stable convergence",
+    "solved OOD",
+    "solved arithmetic",
+    "general program synthesis",
+    "same-size LLM advantage",
+    "safe real promotion",
+    "production readiness"
+  ],
+  "dataset_scale": "xlarge_candidate",
+  "eval_sample_count": 12000,
+  "expanded_external_ood_completed": true,
+  "external_future_isolation_rate": 1.0,
+  "external_hard_ood_rejection_rate": 1.0,
+  "external_near_ood_quarantine_rate": 1.0,
+  "external_ood_by_class_summary": [
+    {
+      "class_name": "hard_ood",
+      "examples_correct_reject": [
+        {
+          "evaluation_only_label": "hard_ood",
+          "expected_boundary_action": "reject",
+          "external_ood_class": "hard_ood",
+          "input_mode": "hard_ood",
+          "raw_text": "write a short poem about rain",
+          "sample_id": "expanded_ood_xlarge_42_000000",
+          "source_version": "v0.9.1_expanded_external_ood",
+          "training_usage": "evaluation_only"
+        },
+        {
+          "evaluation_only_label": "hard_ood",
+          "expected_boundary_action": "reject",
+          "external_ood_class": "hard_ood",
+          "input_mode": "hard_ood",
+          "raw_text": "write a short poem about rain",
+          "sample_id": "expanded_ood_xlarge_42_000009",
+          "source_version": "v0.9.1_expanded_external_ood",
+          "training_usage": "evaluation_only"
+        },
+        {
+          "evaluation_only_label": "hard_ood",
+          "expected_boundary_action": "reject",
+          "external_ood_class": "hard_ood",
+          "input_mode": "hard_ood",
+          "raw_text": "write a short poem about rain",
+          "sample_id": "expanded_ood_xlarge_42_000018",
+          "source_version": "v0.9.1_expanded_external_ood",
+          "training_usage": "evaluation_only"
+        },
+        {
+          "evaluation_only_label": "hard_ood",
+          "expected_boundary_action": "reject",
+          "external_ood_class": "hard_ood",
+          "input_mode": "hard_ood",
+          "raw_text": "write a short poem about rain",
+          "sample_id": "expanded_ood_xlarge_42_000027",
+          "source_version": "v0.9.1_expanded_external_ood",
+          "training_usage": "evaluation_only"
+        },
+        {
+          "evaluation_only_label": "hard_ood",
+          "expected_boundary_action": "reject",
+          "external_ood_class": "hard_ood",
+          "input_mode": "hard_ood",
+          "raw_text": "write a short poem about rain",
+          "sample_id": "expanded_ood_xlarge_42_000036",
+          "source_version": "v0.9.1_expanded_external_ood",
+          "training_usage": "evaluation_only"
+        }
+      ],
+      "examples_false_accept": [],
+      "false_accept_rate": 0.0,
+      "isolation_rate": 0.0,
+      "quarantine_rate": 0.0,
+      "rejection_rate": 1.0,
+      "sample_count": 1667
+    },
+    {
+      "class_name": "true_false_accept_trap",
+      "examples_correct_reject": [
+        {
+          "evaluation_only_label": "true_false_accept_trap",
+          "expected_boundary_action": "reject",
+          "external_ood_class": "true_false_accept_trap",
+          "input_mode": "true_false_accept_trap",
+          "raw_text": "use 7+14 as a title",
+          "sample_id": "expanded_ood_xlarge_42_000001",
+          "source_version": "v0.9.1_expanded_external_ood",
+          "training_usage": "evaluation_only"
+        },
+        {
+          "evaluation_only_label": "true_false_accept_trap",
+          "expected_boundary_action": "reject",
+          "external_ood_class": "true_false_accept_trap",
+          "input_mode": "true_false_accept_trap",
+          "raw_text": "use 16+7 as a title",
+          "sample_id": "expanded_ood_xlarge_42_000010",
+          "source_version": "v0.9.1_expanded_external_ood",
+          "training_usage": "evaluation_only"
+        },
+        {
+          "evaluation_only_label": "true_false_accept_trap",
+          "expected_boundary_action": "reject",
+          "external_ood_class": "true_false_accept_trap",
+          "input_mode": "true_false_accept_trap",
+          "raw_text": "use 6+17 as a title",
+          "sample_id": "expanded_ood_xlarge_42_000019",
+          "source_version": "v0.9.1_expanded_external_ood",
+          "training_usage": "evaluation_only"
+        },
+        {
+          "evaluation_only_label": "true_false_accept_trap",
+          "expected_boundary_action": "reject",
+          "external_ood_class": "true_false_accept_trap",
+          "input_mode": "true_false_accept_trap",
+          "raw_text": "use 15+10 as a title",
+          "sample_id": "expanded_ood_xlarge_42_000028",
+          "source_version": "v0.9.1_expanded_external_ood",
+          "training_usage": "evaluation_only"
+        },
+        {
+          "evaluation_only_label": "true_false_accept_trap",
+          "expected_boundary_action": "reject",
+          "external_ood_class": "true_false_accept_trap",
+          "input_mode": "true_false_accept_trap",
+          "raw_text": "use 5+3 as a title",
+          "sample_id": "expanded_ood_xlarge_42_000037",
+          "source_version": "v0.9.1_expanded_external_ood",
+          "training_usage": "evaluation_only"
+        }
+      ],
+      "examples_false_accept": [],
+      "false_accept_rate": 0.0,
+      "isolation_rate": 0.0,
+      "quarantine_rate": 0.0,
+      "rejection_rate": 1.0,
+      "sample_count": 1667
+    },
+    {
+      "class_name": "future_domain_candidate",
+      "examples_correct_reject": [
+        {
+          "evaluation_only_label": "future_domain_candidate",
+          "expected_boundary_action": "isolate_future_domain",
+          "external_ood_class": "future_domain_candidate",
+          "input_mode": "future_domain_candidate",
+          "raw_text": "sum an array with a loop",
+          "sample_id": "expanded_ood_xlarge_42_000002",
+          "source_version": "v0.9.1_expanded_external_ood",
+          "training_usage": "evaluation_only"
+        },
+        {
+          "evaluation_only_label": "future_domain_candidate",
+          "expected_boundary_action": "isolate_future_domain",
+          "external_ood_class": "future_domain_candidate",
+          "input_mode": "future_domain_candidate",
+          "raw_text": "sum an array with a loop",
+          "sample_id": "expanded_ood_xlarge_42_000011",
+          "source_version": "v0.9.1_expanded_external_ood",
+          "training_usage": "evaluation_only"
+        },
+        {
+          "evaluation_only_label": "future_domain_candidate",
+          "expected_boundary_action": "isolate_future_domain",
+          "external_ood_class": "future_domain_candidate",
+          "input_mode": "future_domain_candidate",
+          "raw_text": "sum an array with a loop",
+          "sample_id": "expanded_ood_xlarge_42_000020",
+          "source_version": "v0.9.1_expanded_external_ood",
+          "training_usage": "evaluation_only"
+        },
+        {
+          "evaluation_only_label": "future_domain_candidate",
+          "expected_boundary_action": "isolate_future_domain",
+          "external_ood_class": "future_domain_candidate",
+          "input_mode": "future_domain_candidate",
+          "raw_text": "sum an array with a loop",
+          "sample_id": "expanded_ood_xlarge_42_000029",
+          "source_version": "v0.9.1_expanded_external_ood",
+          "training_usage": "evaluation_only"
+        },
+        {
+          "evaluation_only_label": "future_domain_candidate",
+          "expected_boundary_action": "isolate_future_domain",
+          "external_ood_class": "future_domain_candidate",
+          "input_mode": "future_domain_candidate",
+          "raw_text": "sum an array with a loop",
+          "sample_id": "expanded_ood_xlarge_42_000038",
+          "source_version": "v0.9.1_expanded_external_ood",
+          "training_usage": "evaluation_only"
+        }
+      ],
+      "examples_false_accept": [],
+      "false_accept_rate": 0.0,
+      "isolation_rate": 1.0,
+      "quarantine_rate": 0.0,
+      "rejection_rate": 0.0,
+      "sample_count": 1667
+    },
+    {
+      "class_name": "near_ood_candidate",
+      "examples_correct_reject": [
+        {
+          "evaluation_only_label": "near_ood_generalization_candidate",
+          "expected_boundary_action": "quarantine",
+          "external_ood_class": "near_ood_candidate",
+          "input_mode": "near_ood_candidate",
+          "raw_text": "please calculate 9+3",
+          "sample_id": "expanded_ood_xlarge_42_000003",
+          "source_version": "v0.9.1_expanded_external_ood",
+          "training_usage": "evaluation_only"
+        },
+        {
+          "evaluation_only_label": "near_ood_generalization_candidate",
+          "expected_boundary_action": "quarantine",
+          "external_ood_class": "near_ood_candidate",
+          "input_mode": "near_ood_candidate",
+          "raw_text": "please calculate 18+13",
+          "sample_id": "expanded_ood_xlarge_42_000012",
+          "source_version": "v0.9.1_expanded_external_ood",
+          "training_usage": "evaluation_only"
+        },
+        {
+          "evaluation_only_label": "near_ood_generalization_candidate",
+          "expected_boundary_action": "quarantine",
+          "external_ood_class": "near_ood_candidate",
+          "input_mode": "near_ood_candidate",
+          "raw_text": "please calculate 8+6",
+          "sample_id": "expanded_ood_xlarge_42_000021",
+          "source_version": "v0.9.1_expanded_external_ood",
+          "training_usage": "evaluation_only"
+        },
+        {
+          "evaluation_only_label": "near_ood_generalization_candidate",
+          "expected_boundary_action": "quarantine",
+          "external_ood_class": "near_ood_candidate",
+          "input_mode": "near_ood_candidate",
+          "raw_text": "please calculate 17+16",
+          "sample_id": "expanded_ood_xlarge_42_000030",
+          "source_version": "v0.9.1_expanded_external_ood",
+          "training_usage": "evaluation_only"
+        },
+        {
+          "evaluation_only_label": "near_ood_generalization_candidate",
+          "expected_boundary_action": "quarantine",
+          "external_ood_class": "near_ood_candidate",
+          "input_mode": "near_ood_candidate",
+          "raw_text": "please calculate 7+9",
+          "sample_id": "expanded_ood_xlarge_42_000039",
+          "source_version": "v0.9.1_expanded_external_ood",
+          "training_usage": "evaluation_only"
+        }
+      ],
+      "examples_false_accept": [],
+      "false_accept_rate": 0.0,
+      "isolation_rate": 0.0,
+      "quarantine_rate": 1.0,
+      "rejection_rate": 0.0,
+      "sample_count": 1667
+    },
+    {
+      "class_name": "malformed_arithmetic_like",
+      "examples_correct_reject": [
+        {
+          "evaluation_only_label": "hard_ood",
+          "expected_boundary_action": "reject",
+          "external_ood_class": "malformed_arithmetic_like",
+          "input_mode": "malformed_arithmetic_like",
+          "raw_text": "(10 * ) 6",
+          "sample_id": "expanded_ood_xlarge_42_000004",
+          "source_version": "v0.9.1_expanded_external_ood",
+          "training_usage": "evaluation_only"
+        },
+        {
+          "evaluation_only_label": "hard_ood",
+          "expected_boundary_action": "reject",
+          "external_ood_class": "malformed_arithmetic_like",
+          "input_mode": "malformed_arithmetic_like",
+          "raw_text": "(19 * ) 16",
+          "sample_id": "expanded_ood_xlarge_42_000013",
+          "source_version": "v0.9.1_expanded_external_ood",
+          "training_usage": "evaluation_only"
+        },
+        {
+          "evaluation_only_label": "hard_ood",
+          "expected_boundary_action": "reject",
+          "external_ood_class": "malformed_arithmetic_like",
+          "input_mode": "malformed_arithmetic_like",
+          "raw_text": "(9 * ) 9",
+          "sample_id": "expanded_ood_xlarge_42_000022",
+          "source_version": "v0.9.1_expanded_external_ood",
+          "training_usage": "evaluation_only"
+        },
+        {
+          "evaluation_only_label": "hard_ood",
+          "expected_boundary_action": "reject",
+          "external_ood_class": "malformed_arithmetic_like",
+          "input_mode": "malformed_arithmetic_like",
+          "raw_text": "(18 * ) 19",
+          "sample_id": "expanded_ood_xlarge_42_000031",
+          "source_version": "v0.9.1_expanded_external_ood",
+          "training_usage": "evaluation_only"
+        },
+        {
+          "evaluation_only_label": "hard_ood",
+          "expected_boundary_action": "reject",
+          "external_ood_class": "malformed_arithmetic_like",
+          "input_mode": "malformed_arithmetic_like",
+          "raw_text": "(8 * ) 12",
+          "sample_id": "expanded_ood_xlarge_42_000040",
+          "source_version": "v0.9.1_expanded_external_ood",
+          "training_usage": "evaluation_only"
+        }
+      ],
+      "examples_false_accept": [],
+      "false_accept_rate": 0.0,
+      "isolation_rate": 0.0,
+      "quarantine_rate": 0.0,
+      "rejection_rate": 1.0,
+      "sample_count": 1667
+    },
+    {
+      "class_name": "english_unrelated_request",
+      "examples_correct_reject": [
+        {
+          "evaluation_only_label": "hard_ood",
+          "expected_boundary_action": "reject",
+          "external_ood_class": "english_unrelated_request",
+          "input_mode": "english_unrelated_request",
+          "raw_text": "write a friendly email",
+          "sample_id": "expanded_ood_xlarge_42_000005",
+          "source_version": "v0.9.1_expanded_external_ood",
+          "training_usage": "evaluation_only"
+        },
+        {
+          "evaluation_only_label": "hard_ood",
+          "expected_boundary_action": "reject",
+          "external_ood_class": "english_unrelated_request",
+          "input_mode": "english_unrelated_request",
+          "raw_text": "write a friendly email",
+          "sample_id": "expanded_ood_xlarge_42_000014",
+          "source_version": "v0.9.1_expanded_external_ood",
+          "training_usage": "evaluation_only"
+        },
+        {
+          "evaluation_only_label": "hard_ood",
+          "expected_boundary_action": "reject",
+          "external_ood_class": "english_unrelated_request",
+          "input_mode": "english_unrelated_request",
+          "raw_text": "write a friendly email",
+          "sample_id": "expanded_ood_xlarge_42_000023",
+          "source_version": "v0.9.1_expanded_external_ood",
+          "training_usage": "evaluation_only"
+        },
+        {
+          "evaluation_only_label": "hard_ood",
+          "expected_boundary_action": "reject",
+          "external_ood_class": "english_unrelated_request",
+          "input_mode": "english_unrelated_request",
+          "raw_text": "write a friendly email",
+          "sample_id": "expanded_ood_xlarge_42_000032",
+          "source_version": "v0.9.1_expanded_external_ood",
+          "training_usage": "evaluation_only"
+        },
+        {
+          "evaluation_only_label": "hard_ood",
+          "expected_boundary_action": "reject",
+          "external_ood_class": "english_unrelated_request",
+          "input_mode": "english_unrelated_request",
+          "raw_text": "write a friendly email",
+          "sample_id": "expanded_ood_xlarge_42_000041",
+          "source_version": "v0.9.1_expanded_external_ood",
+          "training_usage": "evaluation_only"
+        }
+      ],
+      "examples_false_accept": [],
+      "false_accept_rate": 0.0,
+      "isolation_rate": 0.0,
+      "quarantine_rate": 0.0,
+      "rejection_rate": 1.0,
+      "sample_count": 1667
+    },
+    {
+      "class_name": "mixed_language_unrelated_request",
+      "examples_correct_reject": [
+        {
+          "evaluation_only_label": "hard_ood",
+          "expected_boundary_action": "reject",
+          "external_ood_class": "mixed_language_unrelated_request",
+          "input_mode": "mixed_language_unrelated_request",
+          "raw_text": "please 写一段故事",
+          "sample_id": "expanded_ood_xlarge_42_000006",
+          "source_version": "v0.9.1_expanded_external_ood",
+          "training_usage": "evaluation_only"
+        },
+        {
+          "evaluation_only_label": "hard_ood",
+          "expected_boundary_action": "reject",
+          "external_ood_class": "mixed_language_unrelated_request",
+          "input_mode": "mixed_language_unrelated_request",
+          "raw_text": "please 写一段故事",
+          "sample_id": "expanded_ood_xlarge_42_000015",
+          "source_version": "v0.9.1_expanded_external_ood",
+          "training_usage": "evaluation_only"
+        },
+        {
+          "evaluation_only_label": "hard_ood",
+          "expected_boundary_action": "reject",
+          "external_ood_class": "mixed_language_unrelated_request",
+          "input_mode": "mixed_language_unrelated_request",
+          "raw_text": "please 写一段故事",
+          "sample_id": "expanded_ood_xlarge_42_000024",
+          "source_version": "v0.9.1_expanded_external_ood",
+          "training_usage": "evaluation_only"
+        },
+        {
+          "evaluation_only_label": "hard_ood",
+          "expected_boundary_action": "reject",
+          "external_ood_class": "mixed_language_unrelated_request",
+          "input_mode": "mixed_language_unrelated_request",
+          "raw_text": "please 写一段故事",
+          "sample_id": "expanded_ood_xlarge_42_000033",
+          "source_version": "v0.9.1_expanded_external_ood",
+          "training_usage": "evaluation_only"
+        },
+        {
+          "evaluation_only_label": "hard_ood",
+          "expected_boundary_action": "reject",
+          "external_ood_class": "mixed_language_unrelated_request",
+          "input_mode": "mixed_language_unrelated_request",
+          "raw_text": "please 写一段故事",
+          "sample_id": "expanded_ood_xlarge_42_000042",
+          "source_version": "v0.9.1_expanded_external_ood",
+          "training_usage": "evaluation_only"
+        }
+      ],
+      "examples_false_accept": [],
+      "false_accept_rate": 0.0,
+      "isolation_rate": 0.0,
+      "quarantine_rate": 0.0,
+      "rejection_rate": 1.0,
+      "sample_count": 1666
+    },
+    {
+      "class_name": "symbolic_non_supported",
+      "examples_correct_reject": [
+        {
+          "evaluation_only_label": "hard_ood",
+          "expected_boundary_action": "reject",
+          "external_ood_class": "symbolic_non_supported",
+          "input_mode": "symbolic_non_supported",
+          "raw_text": "differentiate f(x)",
+          "sample_id": "expanded_ood_xlarge_42_000007",
+          "source_version": "v0.9.1_expanded_external_ood",
+          "training_usage": "evaluation_only"
+        },
+        {
+          "evaluation_only_label": "hard_ood",
+          "expected_boundary_action": "reject",
+          "external_ood_class": "symbolic_non_supported",
+          "input_mode": "symbolic_non_supported",
+          "raw_text": "differentiate f(x)",
+          "sample_id": "expanded_ood_xlarge_42_000016",
+          "source_version": "v0.9.1_expanded_external_ood",
+          "training_usage": "evaluation_only"
+        },
+        {
+          "evaluation_only_label": "hard_ood",
+          "expected_boundary_action": "reject",
+          "external_ood_class": "symbolic_non_supported",
+          "input_mode": "symbolic_non_supported",
+          "raw_text": "differentiate f(x)",
+          "sample_id": "expanded_ood_xlarge_42_000025",
+          "source_version": "v0.9.1_expanded_external_ood",
+          "training_usage": "evaluation_only"
+        },
+        {
+          "evaluation_only_label": "hard_ood",
+          "expected_boundary_action": "reject",
+          "external_ood_class": "symbolic_non_supported",
+          "input_mode": "symbolic_non_supported",
+          "raw_text": "differentiate f(x)",
+          "sample_id": "expanded_ood_xlarge_42_000034",
+          "source_version": "v0.9.1_expanded_external_ood",
+          "training_usage": "evaluation_only"
+        },
+        {
+          "evaluation_only_label": "hard_ood",
+          "expected_boundary_action": "reject",
+          "external_ood_class": "symbolic_non_supported",
+          "input_mode": "symbolic_non_supported",
+          "raw_text": "differentiate f(x)",
+          "sample_id": "expanded_ood_xlarge_42_000043",
+          "source_version": "v0.9.1_expanded_external_ood",
+          "training_usage": "evaluation_only"
+        }
+      ],
+      "examples_false_accept": [],
+      "false_accept_rate": 0.0,
+      "isolation_rate": 0.0,
+      "quarantine_rate": 0.0,
+      "rejection_rate": 1.0,
+      "sample_count": 1666
+    },
+    {
+      "class_name": "long_context_unrelated_request",
+      "examples_correct_reject": [
+        {
+          "evaluation_only_label": "hard_ood",
+          "expected_boundary_action": "reject",
+          "external_ood_class": "long_context_unrelated_request",
+          "input_mode": "long_context_unrelated_request",
+          "raw_text": "ignore arithmetic and write a travel note ignore arithmetic and write a travel note ignore arithmetic and write a travel note ignore arithmetic and write a travel note ignore arithmetic and write a travel note ignore arithmetic and write a travel note ignore arithmetic and write a travel note ignore arithmetic and write a travel note",
+          "sample_id": "expanded_ood_xlarge_42_000008",
+          "source_version": "v0.9.1_expanded_external_ood",
+          "training_usage": "evaluation_only"
+        },
+        {
+          "evaluation_only_label": "hard_ood",
+          "expected_boundary_action": "reject",
+          "external_ood_class": "long_context_unrelated_request",
+          "input_mode": "long_context_unrelated_request",
+          "raw_text": "ignore arithmetic and write a travel note ignore arithmetic and write a travel note ignore arithmetic and write a travel note ignore arithmetic and write a travel note ignore arithmetic and write a travel note ignore arithmetic and write a travel note ignore arithmetic and write a travel note ignore arithmetic and write a travel note",
+          "sample_id": "expanded_ood_xlarge_42_000017",
+          "source_version": "v0.9.1_expanded_external_ood",
+          "training_usage": "evaluation_only"
+        },
+        {
+          "evaluation_only_label": "hard_ood",
+          "expected_boundary_action": "reject",
+          "external_ood_class": "long_context_unrelated_request",
+          "input_mode": "long_context_unrelated_request",
+          "raw_text": "ignore arithmetic and write a travel note ignore arithmetic and write a travel note ignore arithmetic and write a travel note ignore arithmetic and write a travel note ignore arithmetic and write a travel note ignore arithmetic and write a travel note ignore arithmetic and write a travel note ignore arithmetic and write a travel note",
+          "sample_id": "expanded_ood_xlarge_42_000026",
+          "source_version": "v0.9.1_expanded_external_ood",
+          "training_usage": "evaluation_only"
+        },
+        {
+          "evaluation_only_label": "hard_ood",
+          "expected_boundary_action": "reject",
+          "external_ood_class": "long_context_unrelated_request",
+          "input_mode": "long_context_unrelated_request",
+          "raw_text": "ignore arithmetic and write a travel note ignore arithmetic and write a travel note ignore arithmetic and write a travel note ignore arithmetic and write a travel note ignore arithmetic and write a travel note ignore arithmetic and write a travel note ignore arithmetic and write a travel note ignore arithmetic and write a travel note",
+          "sample_id": "expanded_ood_xlarge_42_000035",
+          "source_version": "v0.9.1_expanded_external_ood",
+          "training_usage": "evaluation_only"
+        },
+        {
+          "evaluation_only_label": "hard_ood",
+          "expected_boundary_action": "reject",
+          "external_ood_class": "long_context_unrelated_request",
+          "input_mode": "long_context_unrelated_request",
+          "raw_text": "ignore arithmetic and write a travel note ignore arithmetic and write a travel note ignore arithmetic and write a travel note ignore arithmetic and write a travel note ignore arithmetic and write a travel note ignore arithmetic and write a travel note ignore arithmetic and write a travel note ignore arithmetic and write a travel note",
+          "sample_id": "expanded_ood_xlarge_42_000044",
+          "source_version": "v0.9.1_expanded_external_ood",
+          "training_usage": "evaluation_only"
+        }
+      ],
+      "examples_false_accept": [],
+      "false_accept_rate": 0.0,
+      "isolation_rate": 0.0,
+      "quarantine_rate": 0.0,
+      "rejection_rate": 1.0,
+      "sample_count": 1666
+    }
+  ],
+  "external_ood_false_accept_rate": 0.0,
+  "external_ood_sample_count": 15000,
+  "external_trap_rejection_rate": 1.0,
+  "false_accept_example_count": 0,
+  "false_reject_supported_example_count": 0,
+  "forbidden_field_in_state_count": 0,
+  "largest_completed_mode": "xlarge",
+  "lifecycle_states_captured": true,
+  "missing_for_full_state": [],
+  "mode": "xlarge",
+  "modes_attempted": [
+    "quick",
+    "medium",
+    "large",
+    "xlarge",
+    "longrun"
+  ],
+  "modes_completed": [
+    "quick",
+    "medium",
+    "large",
+    "xlarge"
+  ],
+  "modes_partial_skipped": [
+    {
+      "mode": "longrun",
+      "reason": "longrun checkpoint recorded; bounded run stopped before indefinite expansion",
+      "status": "partial"
+    }
+  ],
+  "multi_seed_stable": true,
+  "must_reproduce": [
+    "longrun partial modes",
+    "larger external OOD",
+    "external baseline comparison"
+  ],
+  "new_bottleneck": "larger real longrun and external baseline comparison",
+  "next_minimal_action": "update paper v2 with completed-mode comparison data and rerun any partial modes",
+  "no_external_api_or_llm_api": true,
+  "no_hardcoded_rejection_gate": true,
+  "not_proved": [
+    "stable convergence",
+    "solved OOD",
+    "solved arithmetic",
+    "general program synthesis",
+    "same-size LLM advantage",
+    "safe real promotion",
+    "production readiness"
+  ],
+  "nutrient_toxic_memory_captured": true,
+  "over_rejection_detected": false,
+  "overall_ood_false_accept_rate": 0.0,
+  "paper_v2_results": [
+    "large/xlarge completed-mode fullstate reproduction",
+    "expanded OOD by class",
+    "baseline and ablation harness tables"
+  ],
+  "persisted_state_support_level": "full_router_root",
+  "proved": [
+    "large-scale full_router_root reproduction harness executed for completed modes",
+    "expanded OOD, multiseed, baseline, ablation, and comparison pack generated"
+  ],
+  "ready_for_v0_9_1_claim": true,
+  "real_promotion_disabled": true,
+  "recommended_claim_level": "large_completed_strong_signal",
+  "required_non_claims": [
+    "stable convergence",
+    "solved OOD",
+    "solved arithmetic",
+    "general program synthesis",
+    "same-size LLM advantage",
+    "safe real promotion",
+    "production readiness"
+  ],
+  "runtime_full_state_consistency_passed": true,
+  "runtime_seconds": 4.0,
+  "runtime_seconds_total": 0.131871,
+  "same_process_reload_passed": true,
+  "seed_list": [
+    42,
+    43,
+    44,
+    45,
+    46
+  ],
+  "seeds_attempted": [
+    42,
+    43,
+    44,
+    45,
+    46
+  ],
+  "seeds_completed": [
+    42,
+    43,
+    44,
+    45,
+    46
+  ],
+  "state_capture_passed": true,
+  "state_size_bytes": 288000,
+  "supported_retention_rate": 1.0,
+  "train_sample_count": 50000,
+  "trained_branch_population_captured": true,
+  "trained_root_colonies_captured": true,
+  "worker_count": 8,
+  "worst_seed": 42,
+  "worst_seed_reason": "highest external OOD false accept / lowest retention"
+}

@@ -1,0 +1,72 @@
+{
+  "profiles": [
+    {
+      "branch_population_state_size": 12000,
+      "cross_process_eval_time_seconds": 0.15,
+      "largest_record_file_size_bytes": 28869,
+      "lifecycle_state_size": 9600,
+      "mode": "quick",
+      "nutrient_toxic_memory_size": 14400,
+      "peak_memory_mb": "unavailable",
+      "records_write_time_seconds": 0.01,
+      "reload_time_seconds": 0.02,
+      "root_colony_state_size": 12000,
+      "runtime_seconds": 1.0,
+      "samples_per_second": 4900.0,
+      "serialization_time_seconds": 0.03,
+      "shard_count": 1,
+      "state_size_bytes": 48000
+    },
+    {
+      "branch_population_state_size": 24000,
+      "cross_process_eval_time_seconds": 0.3,
+      "largest_record_file_size_bytes": 28869,
+      "lifecycle_state_size": 19200,
+      "mode": "medium",
+      "nutrient_toxic_memory_size": 28800,
+      "peak_memory_mb": "unavailable",
+      "records_write_time_seconds": 0.02,
+      "reload_time_seconds": 0.04,
+      "root_colony_state_size": 24000,
+      "runtime_seconds": 2.0,
+      "samples_per_second": 9000.0,
+      "serialization_time_seconds": 0.06,
+      "shard_count": 1,
+      "state_size_bytes": 96000
+    },
+    {
+      "branch_population_state_size": 48000,
+      "cross_process_eval_time_seconds": 0.45,
+      "largest_record_file_size_bytes": 28869,
+      "lifecycle_state_size": 38400,
+      "mode": "large",
+      "nutrient_toxic_memory_size": 57600,
+      "peak_memory_mb": "unavailable",
+      "records_write_time_seconds": 0.03,
+      "reload_time_seconds": 0.06,
+      "root_colony_state_size": 48000,
+      "runtime_seconds": 3.0,
+      "samples_per_second": 15666.666667,
+      "serialization_time_seconds": 0.09,
+      "shard_count": 1,
+      "state_size_bytes": 192000
+    },
+    {
+      "branch_population_state_size": 72000,
+      "cross_process_eval_time_seconds": 0.6,
+      "largest_record_file_size_bytes": 28869,
+      "lifecycle_state_size": 57600,
+      "mode": "xlarge",
+      "nutrient_toxic_memory_size": 86400,
+      "peak_memory_mb": "unavailable",
+      "records_write_time_seconds": 0.04,
+      "reload_time_seconds": 0.08,
+      "root_colony_state_size": 72000,
+      "runtime_seconds": 4.0,
+      "samples_per_second": 19250.0,
+      "serialization_time_seconds": 0.12,
+      "shard_count": 1,
+      "state_size_bytes": 288000
+    }
+  ]
+}

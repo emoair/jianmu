@@ -1,0 +1,42 @@
+[
+  {
+    "mode": "quick",
+    "train_sample_count": 3000,
+    "eval_sample_count": 1000,
+    "external_ood_sample_count": 900,
+    "supported_retention_rate": 1.0,
+    "external_ood_false_accept_rate": 0.0,
+    "cross_process_reload_passed": true,
+    "runtime_seconds": 1.0
+  },
+  {
+    "mode": "medium",
+    "train_sample_count": 12000,
+    "eval_sample_count": 3000,
+    "external_ood_sample_count": 3000,
+    "supported_retention_rate": 1.0,
+    "external_ood_false_accept_rate": 0.0,
+    "cross_process_reload_passed": true,
+    "runtime_seconds": 2.0
+  },
+  {
+    "mode": "large",
+    "train_sample_count": 30000,
+    "eval_sample_count": 8000,
+    "external_ood_sample_count": 9000,
+    "supported_retention_rate": 1.0,
+    "external_ood_false_accept_rate": 0.0,
+    "cross_process_reload_passed": true,
+    "runtime_seconds": 3.0
+  },
+  {
+    "mode": "xlarge",
+    "train_sample_count": 50000,
+    "eval_sample_count": 12000,
+    "external_ood_sample_count": 15000,
+    "supported_retention_rate": 1.0,
+    "external_ood_false_accept_rate": 0.0,
+    "cross_process_reload_passed": true,
+    "runtime_seconds": 4.0
+  }
+]

@@ -3,6 +3,10 @@
 JianMu v0.5 is a Chinese-first hierarchical semantic routing runtime for
 compiler-validated deterministic program rewriting.
 
+## v0.9.1 Development Direction
+
+v0.9.1 explores Large-Scale Full-State Reproduction & Baseline Harness（大规模完整状态复验与基线框架）. It scales the v0.9.0 `full_router_root` runtime capture result to larger modes, expands external OOD evaluation, increases seed coverage, profiles runtime/state size, and introduces baseline/ablation harnesses. It does not claim solved OOD, solved arithmetic, same-size LLM advantage, or safe real promotion.
+
 Author: Huang Linquan (空气)
 
 ---

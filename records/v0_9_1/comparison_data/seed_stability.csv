@@ -1,0 +1,6 @@
+seed,mode,supported_retention_rate,external_ood_false_accept_rate,cross_process_reload_passed,state_hash
+42,xlarge,1.0,0.0,True,dddc68b8221a8599f1443c92982fb95da8db967bbc73e0b32fa12e93dbfb55f7
+43,xlarge,1.0,0.0,True,e79fa8ae66d5bd4ee91475c19a15686c1f5489c8b0613a1b46840d772cf6d41a
+44,xlarge,1.0,0.0,True,1ca4960fac9e046764143abf3db3aede37901f72bc5bc69622fb1ed7fe73cd62
+45,xlarge,1.0,0.0,True,889ab1f9a32c07c0a26382a213b8622fe5e13804d9b990d785cd5f19f204d2e3
+46,xlarge,1.0,0.0,True,115942e6abb450fbcd8327e7a967174e8a264a39695bc5d00f0a3039e7870887

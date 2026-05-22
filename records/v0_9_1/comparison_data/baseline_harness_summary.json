@@ -1,0 +1,38 @@
+[
+  {
+    "method": "random_router_baseline",
+    "mode": "xlarge",
+    "seed": 42,
+    "supported_retention_rate": 0.5,
+    "external_ood_false_accept_rate": 0.5,
+    "runtime_seconds": 1.9e-05,
+    "limitations": "Baseline harness only; no same-size LLM/API baseline and no advantage claim."
+  },
+  {
+    "method": "heuristic_router_baseline",
+    "mode": "xlarge",
+    "seed": 42,
+    "supported_retention_rate": 0.92,
+    "external_ood_false_accept_rate": 0.18,
+    "runtime_seconds": 0.005632,
+    "limitations": "Baseline harness only; no same-size LLM/API baseline and no advantage claim."
+  },
+  {
+    "method": "no_root_colony_baseline",
+    "mode": "xlarge",
+    "seed": 42,
+    "supported_retention_rate": 0.98,
+    "external_ood_false_accept_rate": 0.12,
+    "runtime_seconds": 3e-06,
+    "limitations": "Baseline harness only; no same-size LLM/API baseline and no advantage claim."
+  },
+  {
+    "method": "no_nutrient_toxic_memory_baseline",
+    "mode": "xlarge",
+    "seed": 42,
+    "supported_retention_rate": 0.99,
+    "external_ood_false_accept_rate": 0.08,
+    "runtime_seconds": 2e-06,
+    "limitations": "Baseline harness only; no same-size LLM/API baseline and no advantage claim."
+  }
+]

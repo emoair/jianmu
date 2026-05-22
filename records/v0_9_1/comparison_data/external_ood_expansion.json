@@ -1,0 +1,74 @@
+[
+  {
+    "class_name": "hard_ood",
+    "sample_count": 1667,
+    "rejection_rate": 1.0,
+    "false_accept_rate": 0.0,
+    "quarantine_rate": 0.0,
+    "isolation_rate": 0.0
+  },
+  {
+    "class_name": "true_false_accept_trap",
+    "sample_count": 1667,
+    "rejection_rate": 1.0,
+    "false_accept_rate": 0.0,
+    "quarantine_rate": 0.0,
+    "isolation_rate": 0.0
+  },
+  {
+    "class_name": "future_domain_candidate",
+    "sample_count": 1667,
+    "rejection_rate": 0.0,
+    "false_accept_rate": 0.0,
+    "quarantine_rate": 0.0,
+    "isolation_rate": 1.0
+  },
+  {
+    "class_name": "near_ood_candidate",
+    "sample_count": 1667,
+    "rejection_rate": 0.0,
+    "false_accept_rate": 0.0,
+    "quarantine_rate": 1.0,
+    "isolation_rate": 0.0
+  },
+  {
+    "class_name": "malformed_arithmetic_like",
+    "sample_count": 1667,
+    "rejection_rate": 1.0,
+    "false_accept_rate": 0.0,
+    "quarantine_rate": 0.0,
+    "isolation_rate": 0.0
+  },
+  {
+    "class_name": "english_unrelated_request",
+    "sample_count": 1667,
+    "rejection_rate": 1.0,
+    "false_accept_rate": 0.0,
+    "quarantine_rate": 0.0,
+    "isolation_rate": 0.0
+  },
+  {
+    "class_name": "mixed_language_unrelated_request",
+    "sample_count": 1666,
+    "rejection_rate": 1.0,
+    "false_accept_rate": 0.0,
+    "quarantine_rate": 0.0,
+    "isolation_rate": 0.0
+  },
+  {
+    "class_name": "symbolic_non_supported",
+    "sample_count": 1666,
+    "rejection_rate": 1.0,
+    "false_accept_rate": 0.0,
+    "quarantine_rate": 0.0,
+    "isolation_rate": 0.0
+  },
+  {
+    "class_name": "long_context_unrelated_request",
+    "sample_count": 1666,
+    "rejection_rate": 1.0,
+    "false_accept_rate": 0.0,
+    "quarantine_rate": 0.0,
+    "isolation_rate": 0.0
+  }
+]

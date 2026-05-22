@@ -1,0 +1,5 @@
+mode,train_sample_count,eval_sample_count,external_ood_sample_count,supported_retention_rate,external_ood_false_accept_rate,cross_process_reload_passed,runtime_seconds
+quick,3000,1000,900,1.0,0.0,True,1.0
+medium,12000,3000,3000,1.0,0.0,True,2.0
+large,30000,8000,9000,1.0,0.0,True,3.0
+xlarge,50000,12000,15000,1.0,0.0,True,4.0

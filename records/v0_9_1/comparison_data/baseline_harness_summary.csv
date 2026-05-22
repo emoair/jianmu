@@ -1,0 +1,5 @@
+method,mode,seed,supported_retention_rate,external_ood_false_accept_rate,runtime_seconds,limitations
+random_router_baseline,xlarge,42,0.5,0.5,1.9e-05,Baseline harness only; no same-size LLM/API baseline and no advantage claim.
+heuristic_router_baseline,xlarge,42,0.92,0.18,0.005632,Baseline harness only; no same-size LLM/API baseline and no advantage claim.
+no_root_colony_baseline,xlarge,42,0.98,0.12,3e-06,Baseline harness only; no same-size LLM/API baseline and no advantage claim.
+no_nutrient_toxic_memory_baseline,xlarge,42,0.99,0.08,2e-06,Baseline harness only; no same-size LLM/API baseline and no advantage claim.

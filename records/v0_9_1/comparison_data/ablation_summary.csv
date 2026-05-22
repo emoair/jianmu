@@ -1,0 +1,8 @@
+variant,supported_retention_rate,external_ood_false_accept_rate,delta_vs_full,notes
+full_jianmu_v0_9_1,1.0,0.0,0.0,Full v0.9.1 harness configuration.
+no_root_colony,0.98,0.12,0.12,Root Colony lifecycle disabled by harness flag.
+no_nutrient_toxic_memory,0.99,0.08,0.08,Nutrient/toxic memory disabled by harness flag.
+no_lifecycle_state,0.99,0.06,0.06,Lifecycle state omitted from reload state.
+no_fullstate_reload,1.0,0.0,0.0,Full-state reload disabled; summary-only comparison. Unsupported as full proof.
+random_router,0.5,0.5,0.5,Deterministic seeded random routing baseline.
+heuristic_router,0.92,0.18,0.18,Uses surface length and character-class features only; no target fields.

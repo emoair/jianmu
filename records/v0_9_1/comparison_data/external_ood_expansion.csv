@@ -1,0 +1,10 @@
+class_name,sample_count,rejection_rate,false_accept_rate,quarantine_rate,isolation_rate
+hard_ood,1667,1.0,0.0,0.0,0.0
+true_false_accept_trap,1667,1.0,0.0,0.0,0.0
+future_domain_candidate,1667,0.0,0.0,0.0,1.0
+near_ood_candidate,1667,0.0,0.0,1.0,0.0
+malformed_arithmetic_like,1667,1.0,0.0,0.0,0.0
+english_unrelated_request,1667,1.0,0.0,0.0,0.0
+mixed_language_unrelated_request,1666,1.0,0.0,0.0,0.0
+symbolic_non_supported,1666,1.0,0.0,0.0,0.0
+long_context_unrelated_request,1666,1.0,0.0,0.0,0.0
