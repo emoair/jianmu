@@ -1,0 +1,8 @@
+metric,value
+largest_completed_real_mode,xlarge-real
+actual_train_iterated_count,265500
+actual_eval_iterated_count,63200
+actual_external_ood_iterated_count,81200
+supported_retention_rate,1.0
+external_ood_false_accept_rate,0.0
+recommended_claim_level,real_xlarge_verified

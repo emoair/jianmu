@@ -1,0 +1,32 @@
+{
+  "rows": [
+    {
+      "metric": "largest_completed_real_mode",
+      "value": "xlarge-real"
+    },
+    {
+      "metric": "actual_train_iterated_count",
+      "value": 265500
+    },
+    {
+      "metric": "actual_eval_iterated_count",
+      "value": 63200
+    },
+    {
+      "metric": "actual_external_ood_iterated_count",
+      "value": 81200
+    },
+    {
+      "metric": "supported_retention_rate",
+      "value": 1.0
+    },
+    {
+      "metric": "external_ood_false_accept_rate",
+      "value": 0.0
+    },
+    {
+      "metric": "recommended_claim_level",
+      "value": "real_xlarge_verified"
+    }
+  ]
+}

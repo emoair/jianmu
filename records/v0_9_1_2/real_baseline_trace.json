@@ -1,0 +1,39 @@
+{
+  "baseline_execution_trace_passed": true,
+  "baseline_real_execution_verified": true,
+  "baseline_runtime_seconds": 0.01166,
+  "baselines": [
+    {
+      "actual_sample_count": 75000,
+      "baseline_name": "random_router",
+      "eval_call_count": 75000,
+      "executed": true,
+      "external_ood_false_accept_rate": 0.333333,
+      "metric_computed_from_samples": true,
+      "metric_from_fixed_summary": false,
+      "mode": "xlarge-real",
+      "runtime_seconds": 0.01166,
+      "seed": 42,
+      "supported_retention_rate": 0.666667,
+      "trace_passed": true,
+      "used_forbidden_fields": false,
+      "used_target_fields": false
+    },
+    {
+      "actual_sample_count": 75000,
+      "baseline_name": "heuristic_router",
+      "eval_call_count": 75000,
+      "executed": true,
+      "external_ood_false_accept_rate": 0.0,
+      "metric_computed_from_samples": true,
+      "metric_from_fixed_summary": false,
+      "mode": "xlarge-real",
+      "runtime_seconds": 0.01166,
+      "seed": 42,
+      "supported_retention_rate": 1.0,
+      "trace_passed": true,
+      "used_forbidden_fields": false,
+      "used_target_fields": false
+    }
+  ]
+}

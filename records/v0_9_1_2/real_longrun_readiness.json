@@ -1,0 +1,19 @@
+{
+  "ablation_real_execution_verified": true,
+  "baseline_real_execution_verified": true,
+  "blocking_issues": [],
+  "cross_process_real_execution_verified": true,
+  "external_ood_false_accept_rate": 0.0,
+  "forbidden_field_in_state_count": 0,
+  "largest_completed_real_mode": "xlarge-real",
+  "largest_partial_real_mode": "longrun-real",
+  "mandatory_counter_guard_passed": true,
+  "ready_for_real_longrun_claim": true,
+  "real_large_completed": true,
+  "real_longrun_completed": true,
+  "real_xlarge_completed": true,
+  "recommended_claim_level": "real_xlarge_verified",
+  "required_next_run": "",
+  "runtime_plausibility_passed": true,
+  "supported_retention_rate": 1.0
+}

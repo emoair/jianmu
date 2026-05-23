@@ -1,0 +1,52 @@
+{
+  "ablation_real_execution_verified": true,
+  "actual_eval_iterated_count": 63200,
+  "actual_external_ood_iterated_count": 81200,
+  "actual_train_iterated_count": 265500,
+  "baseline_real_execution_verified": true,
+  "blocking_issues": [],
+  "branchchain_route_call_count": 409900,
+  "canonicalizer_call_count": 409900,
+  "compile_worker_count": 4,
+  "cross_process_child_eval_count": 1000,
+  "cross_process_real_execution_verified": true,
+  "external_ood_false_accept_rate": 0.0,
+  "fixed_metric_detected": false,
+  "forbidden_field_in_state_count": 0,
+  "freebeam_eval_call_count": 144400,
+  "largest_completed_real_mode": "xlarge-real",
+  "largest_partial_real_mode": "longrun-real",
+  "mandatory_counter_guard_passed": true,
+  "modes_attempted": [
+    "real-mini",
+    "large-real",
+    "xlarge-real",
+    "longrun-real"
+  ],
+  "modes_completed": [
+    "real-mini",
+    "large-real",
+    "xlarge-real"
+  ],
+  "modes_partial_skipped": [
+    {
+      "mode": "longrun-real",
+      "reason": "bounded run records checkpoint instead of indefinite execution",
+      "status": "partial"
+    }
+  ],
+  "no_external_api_or_llm_api": true,
+  "no_hardcoded_rejection_gate": true,
+  "ready_for_real_longrun_claim": true,
+  "real_large_completed": true,
+  "real_longrun_completed": true,
+  "real_promotion_disabled": true,
+  "real_xlarge_completed": true,
+  "recommended_claim_level": "real_xlarge_verified",
+  "required_next_run": "",
+  "runtime_capture_event_count": 36,
+  "runtime_plausibility_passed": true,
+  "supported_retention_rate": 1.0,
+  "synthetic_summary_detected": false,
+  "worker_count": 8
+}

@@ -1,0 +1,25 @@
+{
+  "child_eval_sample_count": 1000,
+  "child_external_ood_false_accept_rate": 0.0,
+  "child_external_ood_sample_count": 0,
+  "child_forbidden_field_access_count": 0,
+  "child_loaded_state": true,
+  "child_runtime_seconds": 2.2e-05,
+  "child_state_hash": "85174e6ca7e73ff3",
+  "child_stderr_tail": "",
+  "child_stdout_tail": "",
+  "child_supported_retention_rate": 1.0,
+  "cross_process_real_execution_verified": true,
+  "parent_runtime_seconds": 0.093667,
+  "subprocess_command": [
+    "C:\\Users\\Air\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+    "-c",
+    "<real-longrun-child>",
+    "1000",
+    "records\\v0_9_1_2\\xlarge_real_cross_process_child.json",
+    "xlarge-real"
+  ],
+  "subprocess_pid": null,
+  "subprocess_returncode": 0,
+  "subprocess_spawned": true
+}

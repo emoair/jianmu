@@ -13,6 +13,10 @@ Author: Huang Linquan (空气)
 
 v0.9.1.1 performs a Real Workload Audit（真实工作负载审计） of v0.9.1. It checks whether the reported xlarge fullstate, expanded OOD, baseline, and ablation results came from actual per-sample execution or from harness/probe summary paths. It also adds workload tracing, sample counters, cross-process execution tracing, baseline/ablation traces, runtime anomaly diagnosis, and a small real-workload sanity rerun. It does not introduce new architecture claims.
 
+## v0.9.1.2 Development Direction
+
+v0.9.1.2 performs a Real Longrun With Mandatory Counters（带强制计数器的真实长跑验证）. After v0.9.1.1 downgraded v0.9.1 to harness/probe summary evidence, this version runs real per-sample workloads with workload traces, mandatory counters, cross-process child eval traces, real baseline/ablation execution traces, and runtime plausibility checks. It does not introduce new architecture claims.
+
 ---
 
 ## Language Scope (v0.5)

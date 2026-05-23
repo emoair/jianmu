@@ -1,0 +1,1 @@
+{"sharded": true, "shards": [{"path": "workload_trace_000.jsonl", "size_bytes": 44999968}, {"path": "workload_trace_001.jsonl", "size_bytes": 44999925}, {"path": "workload_trace_002.jsonl", "size_bytes": 44999643}, {"path": "workload_trace_003.jsonl", "size_bytes": 23544481}]}

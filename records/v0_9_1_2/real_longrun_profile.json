@@ -1,0 +1,24 @@
+{
+  "ablation_runtime_seconds": 0.00471,
+  "anomaly_reason": "",
+  "baseline_runtime_seconds": 0.01166,
+  "checkpoint_count": 4,
+  "cross_process_eval_time_seconds": 0.093667,
+  "eval_samples_per_second": 14185.927955,
+  "external_ood_samples_per_second": 18226.223891,
+  "mode_runtime_seconds": {
+    "large-real": 0.315596,
+    "real-mini": 0.20359,
+    "xlarge-real": 3.910198
+  },
+  "peak_memory_mb": "unavailable",
+  "records_write_time_seconds": 2.760794,
+  "reload_time_seconds": 0.0,
+  "runtime_anomaly_detected": false,
+  "runtime_plausibility_passed": true,
+  "samples_per_second": 32412.151845,
+  "seed_runtime_seconds": {},
+  "serialization_time_seconds": 0.0,
+  "total_cpu_seconds": 1.4375,
+  "total_wall_clock_seconds": 4.455119
+}

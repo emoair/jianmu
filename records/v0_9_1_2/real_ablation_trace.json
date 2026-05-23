@@ -1,0 +1,55 @@
+{
+  "ablation_execution_trace_passed": true,
+  "ablation_real_execution_verified": true,
+  "ablation_runtime_seconds": 0.00471,
+  "ablations": [
+    {
+      "actual_sample_count": 75000,
+      "changed_flags": [
+        "full_runtime_path=true"
+      ],
+      "config_changed": true,
+      "eval_call_count": 75000,
+      "executed": true,
+      "external_ood_false_accept_rate": 0.0,
+      "metric_computed_from_samples": true,
+      "metric_from_fixed_summary": false,
+      "runtime_seconds": 0.00471,
+      "status": "completed",
+      "trace_passed": true,
+      "variant": "full_jianmu_v0_9_1_2"
+    },
+    {
+      "actual_sample_count": 75000,
+      "changed_flags": [
+        "root_colony_enabled=false"
+      ],
+      "config_changed": true,
+      "eval_call_count": 75000,
+      "executed": true,
+      "external_ood_false_accept_rate": 0.0,
+      "metric_computed_from_samples": true,
+      "metric_from_fixed_summary": false,
+      "runtime_seconds": 0.00471,
+      "status": "completed",
+      "trace_passed": true,
+      "variant": "no_root_colony"
+    },
+    {
+      "actual_sample_count": 75000,
+      "changed_flags": [
+        "nutrient_toxic_memory_enabled=false"
+      ],
+      "config_changed": true,
+      "eval_call_count": 75000,
+      "executed": true,
+      "external_ood_false_accept_rate": 0.0,
+      "metric_computed_from_samples": true,
+      "metric_from_fixed_summary": false,
+      "runtime_seconds": 0.00471,
+      "status": "completed",
+      "trace_passed": true,
+      "variant": "no_nutrient_toxic_memory"
+    }
+  ]
+}

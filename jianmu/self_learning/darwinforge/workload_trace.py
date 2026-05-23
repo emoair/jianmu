@@ -22,6 +22,8 @@ TRACE_PHASES = {
     "baseline_eval",
     "ablation_eval",
     "comparison_pack",
+    "checkpoint_flush",
+    "graceful_stop",
 }
 
 
@@ -48,9 +50,11 @@ class WorkloadTraceRecorder:
         self.cumulative_sample_count += int(sample_count_delta)
         event = {
             "timestamp": time.time(),
+            "monotonic_time": time.perf_counter(),
             "mode": self.mode,
             "seed": self.seed,
             "phase": phase,
+            "sample_index": batch_index,
             "sample_id_hash": _hash_sample_id(sample_id) if sample_id is not None else None,
             "batch_index": batch_index,
             "sample_count_delta": int(sample_count_delta),
