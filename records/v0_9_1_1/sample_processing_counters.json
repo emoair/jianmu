@@ -1,0 +1,26 @@
+{
+  "ablation_eval_call_count": 0,
+  "actual_eval_iterated_count": 0,
+  "actual_external_ood_iterated_count": 0,
+  "actual_train_iterated_count": 0,
+  "baseline_eval_call_count": 0,
+  "blocking_issue": true,
+  "branchchain_route_call_count": 0,
+  "canonicalizer_call_count": 0,
+  "compiler_eval_call_count": "unavailable",
+  "count_match_passed": false,
+  "cross_process_eval_call_count": 0,
+  "freebeam_eval_call_count": 0,
+  "mode": "xlarge",
+  "notes": [
+    "No per-sample iteration counters were present in v0.9.1 records; treated as summary-only evidence."
+  ],
+  "reported_eval_count": 12000,
+  "reported_external_ood_count": 15000,
+  "reported_train_count": 50000,
+  "root_colony_update_call_count": 0,
+  "runtime_capture_event_count": 0,
+  "seed": 42,
+  "suspicious_zero_loop_detected": true,
+  "synthetic_summary_detected": true
+}

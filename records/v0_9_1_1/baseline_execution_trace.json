@@ -1,0 +1,70 @@
+{
+  "baseline_execution_trace_passed": false,
+  "baseline_real_execution_verified": false,
+  "baselines": [
+    {
+      "actual_sample_count": 0,
+      "baseline_name": "random_router_baseline",
+      "eval_call_count": 0,
+      "executed": false,
+      "harness_only": true,
+      "metric_computed_from_samples": false,
+      "metric_from_fixed_summary": true,
+      "mode": "xlarge",
+      "notes": "v0.9.1 baseline row has metric summary but no per-sample trace.",
+      "runtime_seconds": 1.9e-05,
+      "seed": 42,
+      "trace_passed": false,
+      "used_forbidden_fields": false,
+      "used_target_fields": false
+    },
+    {
+      "actual_sample_count": 0,
+      "baseline_name": "heuristic_router_baseline",
+      "eval_call_count": 0,
+      "executed": false,
+      "harness_only": false,
+      "metric_computed_from_samples": false,
+      "metric_from_fixed_summary": true,
+      "mode": "xlarge",
+      "notes": "v0.9.1 baseline row has metric summary but no per-sample trace.",
+      "runtime_seconds": 0.005632,
+      "seed": 42,
+      "trace_passed": false,
+      "used_forbidden_fields": false,
+      "used_target_fields": false
+    },
+    {
+      "actual_sample_count": 0,
+      "baseline_name": "no_root_colony_baseline",
+      "eval_call_count": 0,
+      "executed": false,
+      "harness_only": false,
+      "metric_computed_from_samples": false,
+      "metric_from_fixed_summary": true,
+      "mode": "xlarge",
+      "notes": "v0.9.1 baseline row has metric summary but no per-sample trace.",
+      "runtime_seconds": 3e-06,
+      "seed": 42,
+      "trace_passed": false,
+      "used_forbidden_fields": false,
+      "used_target_fields": false
+    },
+    {
+      "actual_sample_count": 0,
+      "baseline_name": "no_nutrient_toxic_memory_baseline",
+      "eval_call_count": 0,
+      "executed": false,
+      "harness_only": false,
+      "metric_computed_from_samples": false,
+      "metric_from_fixed_summary": true,
+      "mode": "xlarge",
+      "notes": "v0.9.1 baseline row has metric summary but no per-sample trace.",
+      "runtime_seconds": 2e-06,
+      "seed": 42,
+      "trace_passed": false,
+      "used_forbidden_fields": false,
+      "used_target_fields": false
+    }
+  ]
+}

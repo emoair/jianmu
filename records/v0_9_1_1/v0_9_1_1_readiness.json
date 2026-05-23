@@ -1,0 +1,22 @@
+{
+  "ablation_real_execution_verified": false,
+  "baseline_real_execution_verified": false,
+  "blocking_issues": [
+    "v0.9.1 xlarge real per-sample execution is not verified",
+    "runtime anomaly is blocking",
+    "cross-process execution evidence is insufficient",
+    "baseline real execution is not verified",
+    "ablation real execution is not verified"
+  ],
+  "cross_process_real_execution_verified": false,
+  "harness_probe_completed": true,
+  "real_workload_audit_passed": false,
+  "real_workload_completed": false,
+  "real_xlarge_verified": false,
+  "recommended_claim_level": "needs_real_longrun",
+  "required_next_run": "v0.9.1.2 real longrun with mandatory counters",
+  "runtime_anomaly_blocking": true,
+  "v0_9_1_claim_level_after": "needs_real_longrun",
+  "v0_9_1_claim_level_before": "large_completed_strong_signal",
+  "v0_9_1_claim_reconciled": true
+}

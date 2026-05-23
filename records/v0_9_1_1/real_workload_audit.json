@@ -1,0 +1,29 @@
+{
+  "answers": {
+    "ablation_config_rerun": false,
+    "baseline_per_sample_execution": false,
+    "cross_process_subprocess_evidence": "insufficient_evidence",
+    "must_run_real_longrun_next": true,
+    "no_label_freebeam_actually_run_for_xlarge": "insufficient_evidence",
+    "per_mode_sample_processed_count_present": false,
+    "precomputed_fixed_metrics": true,
+    "recommended_downgrade": "needs_real_longrun",
+    "runtime_0_131871_cause": "v0.9.1 runner generated fixed metric summaries / harness probe records without real per-sample iteration counters",
+    "synthetic_count_assignment": true,
+    "xlarge_counts_from_real_dataset_iteration": false
+  },
+  "audit_existing_completed": true,
+  "fast_path_or_summary_path_detected": true,
+  "precomputed_or_fixed_metrics_detected": true,
+  "real_mini_run_completed": true,
+  "real_workload_audit_passed": false,
+  "source_records": "records\\v0_9_1",
+  "synthetic_count_assignment_detected": true,
+  "v0_9_1_reported_counts": {
+    "eval": 12000,
+    "external_ood": 15000,
+    "train": 50000
+  },
+  "v0_9_1_reported_largest_mode": "xlarge",
+  "v0_9_1_reported_runtime_seconds": 0.131871
+}

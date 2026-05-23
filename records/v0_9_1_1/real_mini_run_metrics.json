@@ -1,0 +1,7 @@
+{
+  "eval_sample_count": 200,
+  "external_ood_false_accept_rate": 0.0,
+  "external_ood_sample_count": 200,
+  "supported_retention_rate": 1.0,
+  "train_sample_count": 500
+}

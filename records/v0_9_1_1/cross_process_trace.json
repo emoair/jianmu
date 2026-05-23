@@ -1,0 +1,18 @@
+{
+  "child_eval_sample_count": 0,
+  "child_external_ood_false_accept_rate": 0.0,
+  "child_forbidden_field_access_count": 0,
+  "child_loaded_state": "insufficient_evidence",
+  "child_runtime_seconds": null,
+  "child_state_hash": null,
+  "child_stderr_tail": "",
+  "child_stdout_tail": "",
+  "child_supported_retention_rate": 1.0,
+  "cross_process_trace_passed": false,
+  "insufficient_evidence": true,
+  "notes": "v0.9.1 records contain boolean cross_process_reload_passed but no subprocess pid/command/child eval counter evidence.",
+  "subprocess_command": null,
+  "subprocess_pid": null,
+  "subprocess_returncode": null,
+  "subprocess_spawned": "insufficient_evidence"
+}

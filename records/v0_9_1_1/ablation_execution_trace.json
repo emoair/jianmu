@@ -1,0 +1,97 @@
+{
+  "ablation_execution_trace_passed": false,
+  "ablation_real_execution_verified": false,
+  "ablations": [
+    {
+      "actual_sample_count": 0,
+      "changed_flags": [],
+      "config_changed": false,
+      "eval_call_count": 0,
+      "executed": false,
+      "metric_computed_from_samples": false,
+      "metric_from_fixed_summary": true,
+      "notes": "v0.9.1 ablation row has no config-change execution trace.",
+      "trace_passed": false,
+      "unsupported_correctly_marked": false,
+      "variant": "full_jianmu_v0_9_1"
+    },
+    {
+      "actual_sample_count": 0,
+      "changed_flags": [],
+      "config_changed": false,
+      "eval_call_count": 0,
+      "executed": false,
+      "metric_computed_from_samples": false,
+      "metric_from_fixed_summary": true,
+      "notes": "v0.9.1 ablation row has no config-change execution trace.",
+      "trace_passed": false,
+      "unsupported_correctly_marked": false,
+      "variant": "no_root_colony"
+    },
+    {
+      "actual_sample_count": 0,
+      "changed_flags": [],
+      "config_changed": false,
+      "eval_call_count": 0,
+      "executed": false,
+      "metric_computed_from_samples": false,
+      "metric_from_fixed_summary": true,
+      "notes": "v0.9.1 ablation row has no config-change execution trace.",
+      "trace_passed": false,
+      "unsupported_correctly_marked": false,
+      "variant": "no_nutrient_toxic_memory"
+    },
+    {
+      "actual_sample_count": 0,
+      "changed_flags": [],
+      "config_changed": false,
+      "eval_call_count": 0,
+      "executed": false,
+      "metric_computed_from_samples": false,
+      "metric_from_fixed_summary": true,
+      "notes": "v0.9.1 ablation row has no config-change execution trace.",
+      "trace_passed": false,
+      "unsupported_correctly_marked": false,
+      "variant": "no_lifecycle_state"
+    },
+    {
+      "actual_sample_count": 0,
+      "changed_flags": [],
+      "config_changed": null,
+      "eval_call_count": 0,
+      "executed": false,
+      "metric_computed_from_samples": false,
+      "metric_from_fixed_summary": false,
+      "notes": "v0.9.1 ablation row has no config-change execution trace.",
+      "trace_passed": true,
+      "unsupported_correctly_marked": true,
+      "variant": "no_fullstate_reload"
+    },
+    {
+      "actual_sample_count": 0,
+      "changed_flags": [],
+      "config_changed": false,
+      "eval_call_count": 0,
+      "executed": false,
+      "metric_computed_from_samples": false,
+      "metric_from_fixed_summary": true,
+      "notes": "v0.9.1 ablation row has no config-change execution trace.",
+      "trace_passed": false,
+      "unsupported_correctly_marked": false,
+      "variant": "random_router"
+    },
+    {
+      "actual_sample_count": 0,
+      "changed_flags": [],
+      "config_changed": false,
+      "eval_call_count": 0,
+      "executed": false,
+      "metric_computed_from_samples": false,
+      "metric_from_fixed_summary": true,
+      "notes": "v0.9.1 ablation row has no config-change execution trace.",
+      "trace_passed": false,
+      "unsupported_correctly_marked": false,
+      "variant": "heuristic_router"
+    }
+  ]
+}

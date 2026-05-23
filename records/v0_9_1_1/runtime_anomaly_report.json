@@ -1,0 +1,18 @@
+{
+  "actual_total_iterated_count": 0,
+  "anomaly_severity": "blocking",
+  "harness_probe_completed": true,
+  "likely_cause": "v0.9.1 runner generated fixed metric summaries / harness probe records without real per-sample iteration counters",
+  "longrun_required": true,
+  "pytest_runtime_seconds": 37.92,
+  "real_workload_completed": false,
+  "recommended_next_action": "run v0.9.1.2 real longrun with mandatory per-sample counters and subprocess traces",
+  "records_total_runtime_seconds": 0.131871,
+  "reported_total_sample_count": 77000,
+  "runtime_anomaly_detected": true,
+  "runtime_includes_baseline_ablation": false,
+  "runtime_includes_cross_process_subprocess": false,
+  "runtime_includes_pytest": false,
+  "runtime_includes_real_sample_iteration": false,
+  "xlarge_runtime_plausible": false
+}

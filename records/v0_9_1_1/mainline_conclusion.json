@@ -1,0 +1,55 @@
+{
+  "ablation_real_execution_verified": false,
+  "anomaly_severity": "blocking",
+  "baseline_real_execution_verified": false,
+  "blocking_issues": [
+    "v0.9.1 xlarge real per-sample execution is not verified",
+    "runtime anomaly is blocking",
+    "cross-process execution evidence is insufficient",
+    "baseline real execution is not verified",
+    "ablation real execution is not verified"
+  ],
+  "changes_v0_9_1_conclusion": true,
+  "cross_process_real_execution_verified": false,
+  "harness_probe_completed": true,
+  "no_external_api_or_llm_api": true,
+  "no_hardcoded_rejection_gate": true,
+  "not_proved": [
+    "v0.9.1 real xlarge workload",
+    "real 8-hour longrun",
+    "stable convergence",
+    "solved OOD",
+    "same-size LLM advantage"
+  ],
+  "proved": [
+    "v0.9.1 records audit completed",
+    "real-mini tracing infrastructure executed per-sample counters"
+  ],
+  "real_mini_run_completed": true,
+  "real_mini_sample_counts": {
+    "eval_sample_count": 200,
+    "external_ood_false_accept_rate": 0.0,
+    "external_ood_sample_count": 200,
+    "supported_retention_rate": 1.0,
+    "train_sample_count": 500
+  },
+  "real_promotion_disabled": true,
+  "real_workload_audit_passed": false,
+  "real_workload_completed": false,
+  "real_xlarge_verified": false,
+  "recommended_claim_level": "needs_real_longrun",
+  "required_next_run": "v0.9.1.2 real longrun with mandatory counters",
+  "runtime_anomaly_detected": true,
+  "still_not_proven": [
+    "stable convergence",
+    "solved OOD",
+    "solved arithmetic",
+    "general program synthesis",
+    "same-size LLM advantage",
+    "safe real promotion",
+    "production readiness",
+    "real 8-hour longrun"
+  ],
+  "v0_9_1_runtime_anomaly_exists": true,
+  "v0_9_1_workload_type": "harness_probe_summary_path"
+}
