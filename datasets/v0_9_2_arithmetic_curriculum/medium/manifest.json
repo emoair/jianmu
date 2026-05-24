@@ -1,0 +1,37 @@
+{
+  "actual_total": 50000,
+  "audit_passed": true,
+  "category_count": {
+    "current_supported_arithmetic": 25000,
+    "future_domain_candidate": 5000,
+    "hard_ood": 3000,
+    "label_review_candidate": 1000,
+    "near_ood_arithmetic": 4000,
+    "true_false_accept_trap": 6000,
+    "unsupported_arithmetic_boundary": 6000
+  },
+  "curriculum_stage_count": 10,
+  "dataset_version": "v0.9.2",
+  "requested_total": 50000,
+  "scale": "medium",
+  "split_count": {
+    "eval": 7500,
+    "heldout": 2500,
+    "test": 5000,
+    "train": 35000
+  },
+  "stage_count": {
+    "exact_division": 2500,
+    "future_domain_candidate": 5000,
+    "hard_ood": 3000,
+    "label_review_candidate": 1000,
+    "near_ood_arithmetic": 4000,
+    "negative_numbers": 2500,
+    "parentheses": 5000,
+    "precedence": 5000,
+    "single_op": 5000,
+    "true_false_accept_trap": 6000,
+    "two_op_no_parentheses": 5000,
+    "unsupported_arithmetic_boundary": 6000
+  }
+}

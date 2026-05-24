@@ -1,0 +1,8 @@
+{
+  "scales": {
+    "large": 150000,
+    "medium": 50000,
+    "small": 10000
+  },
+  "total_samples_generated": 210000
+}

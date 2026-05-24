@@ -17,6 +17,10 @@ v0.9.1.1 performs a Real Workload Audit（真实工作负载审计） of v0.9.1.
 
 v0.9.1.2 performs a Real Longrun With Mandatory Counters（带强制计数器的真实长跑验证）. After v0.9.1.1 downgraded v0.9.1 to harness/probe summary evidence, this version runs real per-sample workloads with workload traces, mandatory counters, cross-process child eval traces, real baseline/ablation execution traces, and runtime plausibility checks. It does not introduce new architecture claims.
 
+## v0.9.2 Development Direction
+
+v0.9.2 builds an Arithmetic Curriculum Dataset（四则运算课程数据集） for future compiler-verified arithmetic synthesis probes. It separates current-supported integer arithmetic from unsupported arithmetic boundaries, true-false-accept traps, future-domain candidates, near-OOD arithmetic, hard OOD, and review samples. This dataset-only version does not train the model and does not claim solved arithmetic.
+
 ---
 
 ## Language Scope (v0.5)

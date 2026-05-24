@@ -1,0 +1,262 @@
+{
+  "audit_passed_by_scale": {
+    "large": true,
+    "medium": true,
+    "small": true
+  },
+  "can_enter_v0_9_3_arithmetic_training_probe": true,
+  "category_counts_by_scale": {
+    "large": {
+      "current_supported_arithmetic": 75000,
+      "future_domain_candidate": 15000,
+      "hard_ood": 9000,
+      "label_review_candidate": 3000,
+      "near_ood_arithmetic": 12000,
+      "true_false_accept_trap": 18000,
+      "unsupported_arithmetic_boundary": 18000
+    },
+    "medium": {
+      "current_supported_arithmetic": 25000,
+      "future_domain_candidate": 5000,
+      "hard_ood": 3000,
+      "label_review_candidate": 1000,
+      "near_ood_arithmetic": 4000,
+      "true_false_accept_trap": 6000,
+      "unsupported_arithmetic_boundary": 6000
+    },
+    "small": {
+      "current_supported_arithmetic": 5000,
+      "future_domain_candidate": 1000,
+      "hard_ood": 600,
+      "label_review_candidate": 200,
+      "near_ood_arithmetic": 800,
+      "true_false_accept_trap": 1200,
+      "unsupported_arithmetic_boundary": 1200
+    }
+  },
+  "curriculum_stages_generated": [
+    {
+      "expected_exit_condition": "audit counters stable; no real promotion",
+      "included_categories": [
+        "current_supported_arithmetic"
+      ],
+      "included_expression_stages": [
+        "single_op"
+      ],
+      "nutrient_pressure": "positive_on_correct_boundary_action",
+      "promotion_allowed": false,
+      "real_promotion_allowed": false,
+      "stage_name": "symbolic_single_op",
+      "target_ood_ratio": 0.2,
+      "target_supported_ratio": 0.8,
+      "toxicity_pressure": "toxic_on_false_supported_accept_or_false_reject"
+    },
+    {
+      "expected_exit_condition": "audit counters stable; no real promotion",
+      "included_categories": [
+        "current_supported_arithmetic"
+      ],
+      "included_expression_stages": [
+        "two_op_no_parentheses"
+      ],
+      "nutrient_pressure": "positive_on_correct_boundary_action",
+      "promotion_allowed": false,
+      "real_promotion_allowed": false,
+      "stage_name": "symbolic_two_op",
+      "target_ood_ratio": 0.2,
+      "target_supported_ratio": 0.8,
+      "toxicity_pressure": "toxic_on_false_supported_accept_or_false_reject"
+    },
+    {
+      "expected_exit_condition": "audit counters stable; no real promotion",
+      "included_categories": [
+        "current_supported_arithmetic"
+      ],
+      "included_expression_stages": [
+        "precedence"
+      ],
+      "nutrient_pressure": "positive_on_correct_boundary_action",
+      "promotion_allowed": false,
+      "real_promotion_allowed": false,
+      "stage_name": "precedence",
+      "target_ood_ratio": 0.2,
+      "target_supported_ratio": 0.8,
+      "toxicity_pressure": "toxic_on_false_supported_accept_or_false_reject"
+    },
+    {
+      "expected_exit_condition": "audit counters stable; no real promotion",
+      "included_categories": [
+        "current_supported_arithmetic"
+      ],
+      "included_expression_stages": [
+        "parentheses"
+      ],
+      "nutrient_pressure": "positive_on_correct_boundary_action",
+      "promotion_allowed": false,
+      "real_promotion_allowed": false,
+      "stage_name": "parentheses",
+      "target_ood_ratio": 0.2,
+      "target_supported_ratio": 0.8,
+      "toxicity_pressure": "toxic_on_false_supported_accept_or_false_reject"
+    },
+    {
+      "expected_exit_condition": "audit counters stable; no real promotion",
+      "included_categories": [
+        "current_supported_arithmetic"
+      ],
+      "included_expression_stages": [
+        "negative_numbers"
+      ],
+      "nutrient_pressure": "positive_on_correct_boundary_action",
+      "promotion_allowed": false,
+      "real_promotion_allowed": false,
+      "stage_name": "negative_numbers",
+      "target_ood_ratio": 0.2,
+      "target_supported_ratio": 0.8,
+      "toxicity_pressure": "toxic_on_false_supported_accept_or_false_reject"
+    },
+    {
+      "expected_exit_condition": "audit counters stable; no real promotion",
+      "included_categories": [
+        "current_supported_arithmetic"
+      ],
+      "included_expression_stages": [
+        "exact_division"
+      ],
+      "nutrient_pressure": "positive_on_correct_boundary_action",
+      "promotion_allowed": false,
+      "real_promotion_allowed": false,
+      "stage_name": "exact_division",
+      "target_ood_ratio": 0.2,
+      "target_supported_ratio": 0.8,
+      "toxicity_pressure": "toxic_on_false_supported_accept_or_false_reject"
+    },
+    {
+      "expected_exit_condition": "audit counters stable; no real promotion",
+      "included_categories": [
+        "unsupported_arithmetic_boundary",
+        "hard_ood"
+      ],
+      "included_expression_stages": [
+        "mixed_boundary"
+      ],
+      "nutrient_pressure": "positive_on_correct_boundary_action",
+      "promotion_allowed": false,
+      "real_promotion_allowed": false,
+      "stage_name": "boundary_rejection",
+      "target_ood_ratio": 0.8,
+      "target_supported_ratio": 0.2,
+      "toxicity_pressure": "toxic_on_false_supported_accept_or_false_reject"
+    },
+    {
+      "expected_exit_condition": "audit counters stable; no real promotion",
+      "included_categories": [
+        "true_false_accept_trap"
+      ],
+      "included_expression_stages": [
+        "mixed_boundary"
+      ],
+      "nutrient_pressure": "positive_on_correct_boundary_action",
+      "promotion_allowed": false,
+      "real_promotion_allowed": false,
+      "stage_name": "trap_rejection",
+      "target_ood_ratio": 0.8,
+      "target_supported_ratio": 0.2,
+      "toxicity_pressure": "toxic_on_false_supported_accept_or_false_reject"
+    },
+    {
+      "expected_exit_condition": "audit counters stable; no real promotion",
+      "included_categories": [
+        "future_domain_candidate",
+        "near_ood_arithmetic"
+      ],
+      "included_expression_stages": [
+        "mixed_boundary"
+      ],
+      "nutrient_pressure": "positive_on_correct_boundary_action",
+      "promotion_allowed": false,
+      "real_promotion_allowed": false,
+      "stage_name": "future_near_ood_quarantine",
+      "target_ood_ratio": 0.8,
+      "target_supported_ratio": 0.2,
+      "toxicity_pressure": "toxic_on_false_supported_accept_or_false_reject"
+    },
+    {
+      "expected_exit_condition": "audit counters stable; no real promotion",
+      "included_categories": [
+        "current_supported_arithmetic"
+      ],
+      "included_expression_stages": [
+        "mixed_boundary"
+      ],
+      "nutrient_pressure": "positive_on_correct_boundary_action",
+      "promotion_allowed": false,
+      "real_promotion_allowed": false,
+      "stage_name": "mixed_final",
+      "target_ood_ratio": 0.2,
+      "target_supported_ratio": 0.8,
+      "toxicity_pressure": "toxic_on_false_supported_accept_or_false_reject"
+    }
+  ],
+  "dataset_scales_completed": [
+    "small",
+    "medium",
+    "large"
+  ],
+  "division_boundary_checks": {
+    "division_by_zero_supported_count": 0,
+    "non_integer_division_supported_count": 0
+  },
+  "future_domain_count": 21000,
+  "hard_ood_count": 12600,
+  "leakage_counts": {
+    "large": {
+      "expression_group_leakage_count": 0,
+      "paraphrase_group_leakage_count": 0,
+      "train_eval_input_leakage_count": 0
+    },
+    "medium": {
+      "expression_group_leakage_count": 0,
+      "paraphrase_group_leakage_count": 0,
+      "train_eval_input_leakage_count": 0
+    },
+    "small": {
+      "expression_group_leakage_count": 0,
+      "paraphrase_group_leakage_count": 0,
+      "train_eval_input_leakage_count": 0
+    }
+  },
+  "must_recheck": [
+    "dataset semantics before v0.9.3 training",
+    "free-inference feature exclusion",
+    "heldout composition behavior"
+  ],
+  "near_ood_count": 16800,
+  "non_supported_has_targetir_count": 0,
+  "not_proved": [
+    "solved arithmetic",
+    "stable convergence",
+    "solved OOD",
+    "general program synthesis",
+    "same-size LLM advantage",
+    "safe real promotion",
+    "production readiness"
+  ],
+  "proved": [
+    "auditable arithmetic curriculum dataset generated"
+  ],
+  "still_not_proven": [
+    "solved arithmetic",
+    "stable convergence",
+    "solved OOD",
+    "general program synthesis",
+    "same-size LLM advantage",
+    "safe real promotion",
+    "production readiness"
+  ],
+  "supported_count": 105000,
+  "supported_missing_targetir_count": 0,
+  "total_samples_generated": 210000,
+  "trap_count": 25200,
+  "unsupported_count": 25200
+}
