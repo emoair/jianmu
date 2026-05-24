@@ -1,0 +1,92 @@
+{
+  "by_stage": {
+    "exact_division": {
+      "candidate_hit_rate": 0.947368,
+      "correct_output_in_beam_rate": 0.947368,
+      "examples_failed": [],
+      "examples_success": [
+        "ac92-00000996",
+        "ac92-00011695",
+        "ac92-00052598"
+      ],
+      "false_reject_rate": 0.052632,
+      "sample_count": 361,
+      "top1_correct_rate": 0.947368
+    },
+    "mixed_composition": {
+      "candidate_hit_rate": 0.0,
+      "correct_output_in_beam_rate": 0.0,
+      "examples_failed": [],
+      "examples_success": [],
+      "false_reject_rate": 0.0,
+      "sample_count": 0,
+      "top1_correct_rate": 0.0
+    },
+    "negative_numbers": {
+      "candidate_hit_rate": 0.948849,
+      "correct_output_in_beam_rate": 0.948849,
+      "examples_failed": [],
+      "examples_success": [
+        "ac92-00002080",
+        "ac92-00033785",
+        "ac92-00021985"
+      ],
+      "false_reject_rate": 0.051151,
+      "sample_count": 391,
+      "top1_correct_rate": 0.948849
+    },
+    "parentheses": {
+      "candidate_hit_rate": 0.949176,
+      "correct_output_in_beam_rate": 0.949176,
+      "examples_failed": [],
+      "examples_success": [
+        "ac92-00059275",
+        "ac92-00025764",
+        "ac92-00005770"
+      ],
+      "false_reject_rate": 0.050824,
+      "sample_count": 728,
+      "top1_correct_rate": 0.949176
+    },
+    "precedence": {
+      "candidate_hit_rate": 0.948886,
+      "correct_output_in_beam_rate": 0.948886,
+      "examples_failed": [],
+      "examples_success": [
+        "ac92-00048050",
+        "ac92-00031441",
+        "ac92-00054558"
+      ],
+      "false_reject_rate": 0.051114,
+      "sample_count": 763,
+      "top1_correct_rate": 0.948886
+    },
+    "single_op": {
+      "candidate_hit_rate": 0.949266,
+      "correct_output_in_beam_rate": 0.949266,
+      "examples_failed": [],
+      "examples_success": [
+        "ac92-00047700",
+        "ac92-00054001",
+        "ac92-00016509"
+      ],
+      "false_reject_rate": 0.050734,
+      "sample_count": 749,
+      "top1_correct_rate": 0.949266
+    },
+    "two_op_no_parentheses": {
+      "candidate_hit_rate": 0.949868,
+      "correct_output_in_beam_rate": 0.949868,
+      "examples_failed": [],
+      "examples_success": [
+        "ac92-00012021",
+        "ac92-00005038",
+        "ac92-00056429"
+      ],
+      "false_reject_rate": 0.050132,
+      "sample_count": 758,
+      "top1_correct_rate": 0.949868
+    }
+  },
+  "heldout_supported_success_rate": 0.949867
+}

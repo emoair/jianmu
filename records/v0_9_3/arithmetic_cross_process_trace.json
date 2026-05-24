@@ -1,0 +1,20 @@
+{
+  "child_eval_sample_count": 200,
+  "child_external_ood_false_accept_rate": 0.0,
+  "child_forbidden_field_access_count": 0,
+  "child_loaded_state": true,
+  "child_runtime_seconds": 0.181825,
+  "child_stderr_tail": "",
+  "child_stdout_tail": "",
+  "child_supported_retention_rate": 1.0,
+  "cross_process_reload_passed": true,
+  "subprocess_command": [
+    "C:\\Users\\Air\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+    "-c",
+    "<inline arithmetic reload child>",
+    "200",
+    "records\\v0_9_3\\arithmetic_cross_process_child.json"
+  ],
+  "subprocess_returncode": 0,
+  "subprocess_spawned": true
+}

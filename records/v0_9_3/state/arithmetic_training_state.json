@@ -1,0 +1,27 @@
+{
+  "boundary_seen": 32000,
+  "branch_updates": 240000,
+  "category_counts": {
+    "current_supported_arithmetic": 208000,
+    "true_false_accept_trap": 12800,
+    "unsupported_arithmetic_boundary": 19200
+  },
+  "learned_strength": 1.0,
+  "nutrient_reward_total": 208000.0,
+  "root_updates": 48000,
+  "schema_version": "arithmetic_training_state.v1",
+  "seed": 42,
+  "stage_counts": {
+    "exact_division": 20835,
+    "negative_numbers": 20861,
+    "parentheses": 41811,
+    "precedence": 41247,
+    "single_op": 41562,
+    "true_false_accept_trap": 12800,
+    "two_op_no_parentheses": 41684,
+    "unsupported_arithmetic_boundary": 19200
+  },
+  "state_hash": "6a1d807e48134cad",
+  "supported_seen": 208000,
+  "toxicity_total": 3200.0
+}

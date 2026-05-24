@@ -1,0 +1,70 @@
+{
+  "rows": [
+    {
+      "category": "unsupported_arithmetic_boundary",
+      "false_accept_examples": [],
+      "false_accept_rate": 0.0,
+      "false_reject_supported_examples": [],
+      "isolation_rate": 0.0,
+      "quarantine_rate": 0.0,
+      "rejection_rate": 0.0,
+      "review_rate": 0.0,
+      "sample_count": 0
+    },
+    {
+      "category": "true_false_accept_trap",
+      "false_accept_examples": [],
+      "false_accept_rate": 0.0,
+      "false_reject_supported_examples": [],
+      "isolation_rate": 0.0,
+      "quarantine_rate": 0.0,
+      "rejection_rate": 1.0,
+      "review_rate": 0.0,
+      "sample_count": 1750
+    },
+    {
+      "category": "future_domain_candidate",
+      "false_accept_examples": [],
+      "false_accept_rate": 0.0,
+      "false_reject_supported_examples": [],
+      "isolation_rate": 1.0,
+      "quarantine_rate": 0.0,
+      "rejection_rate": 0.0,
+      "review_rate": 0.0,
+      "sample_count": 1750
+    },
+    {
+      "category": "near_ood_arithmetic",
+      "false_accept_examples": [],
+      "false_accept_rate": 0.0,
+      "false_reject_supported_examples": [],
+      "isolation_rate": 0.0,
+      "quarantine_rate": 1.0,
+      "rejection_rate": 0.0,
+      "review_rate": 0.0,
+      "sample_count": 1500
+    },
+    {
+      "category": "hard_ood",
+      "false_accept_examples": [],
+      "false_accept_rate": 0.0,
+      "false_reject_supported_examples": [],
+      "isolation_rate": 0.0,
+      "quarantine_rate": 0.0,
+      "rejection_rate": 1.0,
+      "review_rate": 0.0,
+      "sample_count": 1875
+    },
+    {
+      "category": "label_review_candidate",
+      "false_accept_examples": [],
+      "false_accept_rate": 0.0,
+      "false_reject_supported_examples": [],
+      "isolation_rate": 0.0,
+      "quarantine_rate": 0.0,
+      "rejection_rate": 0.0,
+      "review_rate": 1.0,
+      "sample_count": 1875
+    }
+  ]
+}

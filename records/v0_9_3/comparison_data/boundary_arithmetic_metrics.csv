@@ -1,0 +1,7 @@
+category,false_accept_examples,false_accept_rate,false_reject_supported_examples,isolation_rate,quarantine_rate,rejection_rate,review_rate,sample_count
+unsupported_arithmetic_boundary,[],0.0,[],0.0,0.0,0.0,0.0,0
+true_false_accept_trap,[],0.0,[],0.0,0.0,1.0,0.0,1750
+future_domain_candidate,[],0.0,[],1.0,0.0,0.0,0.0,1750
+near_ood_arithmetic,[],0.0,[],0.0,1.0,0.0,0.0,1500
+hard_ood,[],0.0,[],0.0,0.0,1.0,0.0,1875
+label_review_candidate,[],0.0,[],0.0,0.0,0.0,1.0,1875

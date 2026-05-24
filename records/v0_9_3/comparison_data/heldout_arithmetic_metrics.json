@@ -1,0 +1,98 @@
+{
+  "rows": [
+    {
+      "candidate_hit_rate": 0.949266,
+      "correct_output_in_beam_rate": 0.949266,
+      "examples_failed": [],
+      "examples_success": [
+        "ac92-00047700",
+        "ac92-00054001",
+        "ac92-00016509"
+      ],
+      "false_reject_rate": 0.050734,
+      "sample_count": 749,
+      "stage": "single_op",
+      "top1_correct_rate": 0.949266
+    },
+    {
+      "candidate_hit_rate": 0.949868,
+      "correct_output_in_beam_rate": 0.949868,
+      "examples_failed": [],
+      "examples_success": [
+        "ac92-00012021",
+        "ac92-00005038",
+        "ac92-00056429"
+      ],
+      "false_reject_rate": 0.050132,
+      "sample_count": 758,
+      "stage": "two_op_no_parentheses",
+      "top1_correct_rate": 0.949868
+    },
+    {
+      "candidate_hit_rate": 0.948886,
+      "correct_output_in_beam_rate": 0.948886,
+      "examples_failed": [],
+      "examples_success": [
+        "ac92-00048050",
+        "ac92-00031441",
+        "ac92-00054558"
+      ],
+      "false_reject_rate": 0.051114,
+      "sample_count": 763,
+      "stage": "precedence",
+      "top1_correct_rate": 0.948886
+    },
+    {
+      "candidate_hit_rate": 0.949176,
+      "correct_output_in_beam_rate": 0.949176,
+      "examples_failed": [],
+      "examples_success": [
+        "ac92-00059275",
+        "ac92-00025764",
+        "ac92-00005770"
+      ],
+      "false_reject_rate": 0.050824,
+      "sample_count": 728,
+      "stage": "parentheses",
+      "top1_correct_rate": 0.949176
+    },
+    {
+      "candidate_hit_rate": 0.948849,
+      "correct_output_in_beam_rate": 0.948849,
+      "examples_failed": [],
+      "examples_success": [
+        "ac92-00002080",
+        "ac92-00033785",
+        "ac92-00021985"
+      ],
+      "false_reject_rate": 0.051151,
+      "sample_count": 391,
+      "stage": "negative_numbers",
+      "top1_correct_rate": 0.948849
+    },
+    {
+      "candidate_hit_rate": 0.947368,
+      "correct_output_in_beam_rate": 0.947368,
+      "examples_failed": [],
+      "examples_success": [
+        "ac92-00000996",
+        "ac92-00011695",
+        "ac92-00052598"
+      ],
+      "false_reject_rate": 0.052632,
+      "sample_count": 361,
+      "stage": "exact_division",
+      "top1_correct_rate": 0.947368
+    },
+    {
+      "candidate_hit_rate": 0.0,
+      "correct_output_in_beam_rate": 0.0,
+      "examples_failed": [],
+      "examples_success": [],
+      "false_reject_rate": 0.0,
+      "sample_count": 0,
+      "stage": "mixed_composition",
+      "top1_correct_rate": 0.0
+    }
+  ]
+}

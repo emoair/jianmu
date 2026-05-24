@@ -426,3 +426,6 @@ v0.9.0 explores Runtime Training-State Capture & Paper Figure Data Pack（运行
 不要声称 OOD 已解决。
 不要声称同体量 LLM 优势。
 不要声称 safe real promotion。
+## v0.9.3 Development Direction
+
+v0.9.3 runs an Arithmetic Training Probe on the v0.9.2 arithmetic curriculum dataset. It evaluates whether JianMu can improve supported arithmetic candidate-space formation under no-label free-beam evaluation while preserving boundary rejection for unsupported arithmetic, traps, future-domain candidates, near-OOD arithmetic, and hard OOD. It does not claim solved arithmetic.
