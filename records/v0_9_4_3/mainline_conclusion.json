@@ -1,0 +1,41 @@
+{
+  "blocking_issues": [],
+  "boundary_compiler_misroute_count": 0,
+  "compiler_backend_type": "real_c_compiler",
+  "compiler_verified_correct_rate": 1.0,
+  "fresh_ratio": 1.0,
+  "fresh_reproduction_not_patched_replay": true,
+  "original_overlap_count": 0,
+  "recommended_claim_level": "fresh_compiler_backed_arithmetic_signal_reproduced",
+  "required_next_run": "full compiler-backed longrun remains open",
+  "results_for_paper_v2": [
+    "fresh compiler-backed spot reproduction",
+    "fresh sample overlap accounting"
+  ],
+  "results_requiring_revalidation": [
+    "full compiler-backed longrun",
+    "larger fresh compiler-backed sample"
+  ],
+  "still_not_proven": [
+    "solved arithmetic",
+    "stable convergence",
+    "solved OOD",
+    "general program synthesis",
+    "same-size LLM advantage",
+    "safe real promotion",
+    "production readiness",
+    "full compiler-backed longrun"
+  ],
+  "token_spacing_patch_enabled": true,
+  "what_this_version_did_not_prove": [
+    "solved arithmetic",
+    "stable convergence",
+    "solved OOD",
+    "general program synthesis",
+    "same-size LLM advantage",
+    "safe real promotion",
+    "production readiness",
+    "full compiler-backed longrun"
+  ],
+  "what_this_version_proved": "It performed a fresh compiler-backed reproduction using new sample IDs and fresh MSVC compiler invocations."
+}

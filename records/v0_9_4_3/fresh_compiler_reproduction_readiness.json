@@ -1,0 +1,16 @@
+{
+  "backend_claim_safe": true,
+  "backend_type": "real_c_compiler",
+  "blocking_issues": [],
+  "boundary_compiler_misroute_count": 0,
+  "compiler_environment": "msvc_vcvars64",
+  "compiler_name": "cl",
+  "compiler_verified_correct_rate": 1.0,
+  "fresh_ratio": 1.0,
+  "fresh_reproduction_completed": true,
+  "real_compiler_available": true,
+  "real_compiler_invocation_count": 4100,
+  "recommended_claim_level": "fresh_compiler_backed_arithmetic_signal_reproduced",
+  "required_next_run": "full compiler-backed longrun remains open",
+  "token_spacing_patch_enabled": true
+}

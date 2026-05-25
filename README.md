@@ -445,3 +445,7 @@ v0.9.4 performs a Real Compiler Arithmetic Spot Audit. It checks whether the v0.
 ## v0.9.4.2 Development Direction
 
 v0.9.4.2 performs a Compiler Failure Taxonomy for the 45 failed samples in v0.9.4.1. It separates compiler/toolchain failures, C source generation issues, runtime errors, wrong outputs, unsafe-expression blocks, and trace errors. Original compiler-backed metrics are preserved; any patched rerun is reported separately. It does not claim solved arithmetic.
+
+## v0.9.4.3 Development Direction
+
+v0.9.4.3 performs a fresh compiler-backed reproduction of the v0.9.4.2 patched arithmetic result. It uses new samples and fresh MSVC compiler invocations to distinguish fresh reproduction from patched replay. It preserves the C token-spacing fix, tracks overlap with the original 600-sample audit, and does not claim solved arithmetic.
