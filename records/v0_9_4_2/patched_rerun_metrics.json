@@ -1,0 +1,10 @@
+{
+  "original_result_preserved": true,
+  "patched_compile_success_count": 600,
+  "patched_compiler_verified_correct_count": 600,
+  "patched_compiler_verified_correct_rate": 1.0,
+  "patched_delta_vs_original": 0.075,
+  "patched_remaining_failure_count": 0,
+  "patched_rerun_executed": true,
+  "patched_runtime_success_count": 600
+}

@@ -1,0 +1,42 @@
+{
+  "blocking_issues": [],
+  "candidate_error_dominant": false,
+  "dominant_failure_explanation": "MSVC C source syntax failure caused by adjacent sign tokens such as -- in generated arithmetic expressions.",
+  "engineering_issue_dominant": true,
+  "main_cause_of_45_failures": "compile_syntax_error",
+  "original_555_of_600_result_still_valid": true,
+  "patched_improved": true,
+  "patched_rerun_executed": true,
+  "recommended_claim_level": "compiler_backed_signal_strengthened_after_patch",
+  "required_next_run": "full compiler-backed longrun remains open",
+  "results_for_paper_v2": [
+    "original compiler-backed spot result remains preserved",
+    "failure taxonomy distribution",
+    "patched replay metrics if described separately"
+  ],
+  "results_requiring_revalidation": [
+    "remaining failure categories",
+    "full compiler-backed longrun"
+  ],
+  "still_not_proven": [
+    "solved arithmetic",
+    "stable convergence",
+    "solved OOD",
+    "general program synthesis",
+    "same-size LLM advantage",
+    "safe real promotion",
+    "production readiness",
+    "full compiler-backed longrun"
+  ],
+  "what_this_version_did_not_prove": [
+    "solved arithmetic",
+    "stable convergence",
+    "solved OOD",
+    "general program synthesis",
+    "same-size LLM advantage",
+    "safe real promotion",
+    "production readiness",
+    "full compiler-backed longrun"
+  ],
+  "what_this_version_proved": "It classified the original v0.9.4.1 compiler spot failures and preserved original metrics separately from patched replay."
+}

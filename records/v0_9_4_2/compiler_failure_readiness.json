@@ -1,0 +1,17 @@
+{
+  "blocking_issues": [],
+  "candidate_error_dominant": false,
+  "claim_level_after": "compiler_backed_signal_strengthened_after_patch",
+  "claim_level_before": "compiler_backed_arithmetic_spot_signal",
+  "classified_failure_count": 45,
+  "dominant_failure_category": "compile_syntax_error",
+  "engineering_issue_dominant": true,
+  "failure_taxonomy_completed": true,
+  "original_failure_count": 45,
+  "patched_compiler_verified_correct_rate": 1.0,
+  "patched_rerun_executed": true,
+  "recommended_claim_level": "compiler_backed_signal_strengthened_after_patch",
+  "remaining_failure_count": 0,
+  "required_next_run": "full compiler-backed longrun remains open",
+  "unknown_failure_count": 0
+}

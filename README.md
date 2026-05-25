@@ -441,3 +441,7 @@ v0.9.3.2 performs a Non-Periodic Arithmetic Rerun. After v0.9.3.1 found that the
 ## v0.9.4 Development Direction
 
 v0.9.4 performs a Real Compiler Arithmetic Spot Audit. It checks whether the v0.9.3.2 non-periodic arithmetic signal, previously verified under an internal evaluator, can be validated through real C compiler subprocesses where available. If no compiler is available, it reports the fallback backend honestly and does not claim compiler-backed verification.
+
+## v0.9.4.2 Development Direction
+
+v0.9.4.2 performs a Compiler Failure Taxonomy for the 45 failed samples in v0.9.4.1. It separates compiler/toolchain failures, C source generation issues, runtime errors, wrong outputs, unsafe-expression blocks, and trace errors. Original compiler-backed metrics are preserved; any patched rerun is reported separately. It does not claim solved arithmetic.
