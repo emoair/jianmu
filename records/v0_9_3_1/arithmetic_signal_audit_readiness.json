@@ -1,0 +1,24 @@
+{
+  "audit_passed": false,
+  "baseline_gap_verified": false,
+  "blocking_issues": [
+    "v0.9.3 arithmetic gain is explainable by deterministic index-period rule",
+    "v0.9.3 key metrics lack per-sample provenance records",
+    "baseline/ablation gap not verified in v0.9.3 records"
+  ],
+  "fixed_value_detected": true,
+  "heldout_group_audit_passed": true,
+  "internal_evaluator_only": true,
+  "leakage_audit_passed": true,
+  "metric_provenance_passed": false,
+  "recommended_claim_level": "signal_not_verified",
+  "required_next_run": "compiler-backed per-sample arithmetic audit with non-periodic candidate traces",
+  "summary_only_detected": true,
+  "targeted_rerun_completed": true,
+  "targeted_rerun_sample_counts": {
+    "boundary": 1000,
+    "heldout": 1000
+  },
+  "v0_9_3_claim_after": "arithmetic_probe_mixed_signal_needs_per_sample_rerun",
+  "v0_9_3_claim_before": "arithmetic_probe_positive_signal"
+}

@@ -1,0 +1,73 @@
+{
+  "baseline_ablation_audit_passed": false,
+  "baseline_gap_verified": false,
+  "methods": [
+    {
+      "actual_sample_count": 85500,
+      "boundary_false_accept_rate": 0.0,
+      "delta_vs_full": 0.0,
+      "executed": true,
+      "fixed_summary_detected": true,
+      "method": "full_jianmu",
+      "metric_computed_from_samples": false,
+      "notes": "Full v0.9.3 aggregate exists, but no baseline per-sample audit trace is present.",
+      "supported_success_rate": 0.949867
+    },
+    {
+      "actual_sample_count": 0,
+      "boundary_false_accept_rate": "missing",
+      "delta_vs_full": "missing",
+      "executed": false,
+      "fixed_summary_detected": false,
+      "method": "random_router",
+      "metric_computed_from_samples": false,
+      "notes": "Missing in v0.9.3 records; not fabricated by v0.9.3.1.",
+      "supported_success_rate": "missing"
+    },
+    {
+      "actual_sample_count": 0,
+      "boundary_false_accept_rate": "missing",
+      "delta_vs_full": "missing",
+      "executed": false,
+      "fixed_summary_detected": false,
+      "method": "heuristic_router",
+      "metric_computed_from_samples": false,
+      "notes": "Missing in v0.9.3 records; not fabricated by v0.9.3.1.",
+      "supported_success_rate": "missing"
+    },
+    {
+      "actual_sample_count": 0,
+      "boundary_false_accept_rate": "missing",
+      "delta_vs_full": "missing",
+      "executed": false,
+      "fixed_summary_detected": false,
+      "method": "no_root_colony",
+      "metric_computed_from_samples": false,
+      "notes": "Missing in v0.9.3 records; not fabricated by v0.9.3.1.",
+      "supported_success_rate": "missing"
+    },
+    {
+      "actual_sample_count": 0,
+      "boundary_false_accept_rate": "missing",
+      "delta_vs_full": "missing",
+      "executed": false,
+      "fixed_summary_detected": false,
+      "method": "no_nutrient_toxic_memory",
+      "metric_computed_from_samples": false,
+      "notes": "Missing in v0.9.3 records; not fabricated by v0.9.3.1.",
+      "supported_success_rate": "missing"
+    },
+    {
+      "actual_sample_count": 0,
+      "boundary_false_accept_rate": "missing",
+      "delta_vs_full": "missing",
+      "executed": false,
+      "fixed_summary_detected": false,
+      "method": "no_lifecycle_state",
+      "metric_computed_from_samples": false,
+      "notes": "Missing in v0.9.3 records; not fabricated by v0.9.3.1.",
+      "supported_success_rate": "missing"
+    }
+  ],
+  "notes": "v0.9.3 did not include real baseline/ablation arithmetic audit records."
+}

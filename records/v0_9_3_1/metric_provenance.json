@@ -1,0 +1,173 @@
+{
+  "fixed_period_rule_detected": true,
+  "fixed_value_detected": true,
+  "metric_provenance_passed": false,
+  "metrics": [
+    {
+      "computed_from_sample_records": false,
+      "fixed_value_detected": true,
+      "metric_name": "supported_candidate_hit_before",
+      "notes": "v0.9.3 record stores aggregate metric, not per-sample provenance. Metric can be explained by deterministic index-period candidate-hit rule.",
+      "per_stage_sample_count": 10000,
+      "source_field": "supported_candidate_hit_before",
+      "source_file": "records\\v0_9_3\\arithmetic_training_metrics.json",
+      "source_value": 0.8,
+      "summary_only_detected": true
+    },
+    {
+      "computed_from_sample_records": false,
+      "fixed_value_detected": true,
+      "metric_name": "supported_candidate_hit_after",
+      "notes": "v0.9.3 record stores aggregate metric, not per-sample provenance. Metric can be explained by deterministic index-period candidate-hit rule.",
+      "per_stage_sample_count": 10000,
+      "source_field": "supported_candidate_hit_after",
+      "source_file": "records\\v0_9_3\\arithmetic_training_metrics.json",
+      "source_value": 0.95,
+      "summary_only_detected": true
+    },
+    {
+      "computed_from_sample_records": false,
+      "fixed_value_detected": true,
+      "metric_name": "supported_correct_output_in_beam_before",
+      "notes": "v0.9.3 record stores aggregate metric, not per-sample provenance. Metric can be explained by deterministic index-period candidate-hit rule.",
+      "per_stage_sample_count": 10000,
+      "source_field": "supported_correct_output_in_beam_before",
+      "source_file": "records\\v0_9_3\\arithmetic_training_metrics.json",
+      "source_value": 0.8,
+      "summary_only_detected": true
+    },
+    {
+      "computed_from_sample_records": false,
+      "fixed_value_detected": true,
+      "metric_name": "supported_correct_output_in_beam_after",
+      "notes": "v0.9.3 record stores aggregate metric, not per-sample provenance. Metric can be explained by deterministic index-period candidate-hit rule.",
+      "per_stage_sample_count": 10000,
+      "source_field": "supported_correct_output_in_beam_after",
+      "source_file": "records\\v0_9_3\\arithmetic_training_metrics.json",
+      "source_value": 0.95,
+      "summary_only_detected": true
+    },
+    {
+      "computed_from_sample_records": false,
+      "fixed_value_detected": true,
+      "metric_name": "top1_supported_correct_before",
+      "notes": "v0.9.3 record stores aggregate metric, not per-sample provenance. Metric can be explained by deterministic index-period candidate-hit rule.",
+      "per_stage_sample_count": 10000,
+      "source_field": "top1_supported_correct_before",
+      "source_file": "records\\v0_9_3\\arithmetic_training_metrics.json",
+      "source_value": 0.4,
+      "summary_only_detected": true
+    },
+    {
+      "computed_from_sample_records": false,
+      "fixed_value_detected": true,
+      "metric_name": "top1_supported_correct_after",
+      "notes": "v0.9.3 record stores aggregate metric, not per-sample provenance. Metric can be explained by deterministic index-period candidate-hit rule.",
+      "per_stage_sample_count": 10000,
+      "source_field": "top1_supported_correct_after",
+      "source_file": "records\\v0_9_3\\arithmetic_training_metrics.json",
+      "source_value": 0.95,
+      "summary_only_detected": true
+    },
+    {
+      "computed_from_sample_records": false,
+      "fixed_value_detected": true,
+      "metric_name": "heldout_supported_success_rate",
+      "notes": "v0.9.3 record stores aggregate metric, not per-sample provenance. Metric can be explained by deterministic index-period candidate-hit rule.",
+      "per_stage_sample_count": 0,
+      "source_field": "heldout_supported_success_rate",
+      "source_file": "records\\v0_9_3\\arithmetic_training_metrics.json",
+      "source_value": 0.949867,
+      "summary_only_detected": true
+    },
+    {
+      "computed_from_sample_records": false,
+      "fixed_value_detected": true,
+      "metric_name": "precedence_success_rate",
+      "notes": "v0.9.3 record stores aggregate metric, not per-sample provenance. Metric can be explained by deterministic index-period candidate-hit rule.",
+      "per_stage_sample_count": 980,
+      "source_field": "precedence_success_rate",
+      "source_file": "records\\v0_9_3\\arithmetic_training_metrics.json",
+      "source_value": 0.948886,
+      "summary_only_detected": true
+    },
+    {
+      "computed_from_sample_records": false,
+      "fixed_value_detected": true,
+      "metric_name": "parentheses_success_rate",
+      "notes": "v0.9.3 record stores aggregate metric, not per-sample provenance. Metric can be explained by deterministic index-period candidate-hit rule.",
+      "per_stage_sample_count": 1016,
+      "source_field": "parentheses_success_rate",
+      "source_file": "records\\v0_9_3\\arithmetic_training_metrics.json",
+      "source_value": 0.949176,
+      "summary_only_detected": true
+    },
+    {
+      "computed_from_sample_records": false,
+      "fixed_value_detected": true,
+      "metric_name": "negative_numbers_success_rate",
+      "notes": "v0.9.3 record stores aggregate metric, not per-sample provenance. Metric can be explained by deterministic index-period candidate-hit rule.",
+      "per_stage_sample_count": 508,
+      "source_field": "negative_numbers_success_rate",
+      "source_file": "records\\v0_9_3\\arithmetic_training_metrics.json",
+      "source_value": 0.948849,
+      "summary_only_detected": true
+    },
+    {
+      "computed_from_sample_records": false,
+      "fixed_value_detected": true,
+      "metric_name": "exact_division_success_rate",
+      "notes": "v0.9.3 record stores aggregate metric, not per-sample provenance. Metric can be explained by deterministic index-period candidate-hit rule.",
+      "per_stage_sample_count": 521,
+      "source_field": "exact_division_success_rate",
+      "source_file": "records\\v0_9_3\\arithmetic_training_metrics.json",
+      "source_value": 0.947368,
+      "summary_only_detected": true
+    },
+    {
+      "computed_from_sample_records": false,
+      "fixed_value_detected": false,
+      "metric_name": "unsupported_false_accept_rate",
+      "notes": "v0.9.3 record stores aggregate metric, not per-sample provenance. Boundary metric is aggregate; v0.9.3 does not include per-sample false-accept trace.",
+      "per_stage_sample_count": 0,
+      "source_field": "unsupported_false_accept_rate",
+      "source_file": "records\\v0_9_3\\arithmetic_training_metrics.json",
+      "source_value": 0.0,
+      "summary_only_detected": true
+    },
+    {
+      "computed_from_sample_records": false,
+      "fixed_value_detected": false,
+      "metric_name": "trap_false_accept_rate",
+      "notes": "v0.9.3 record stores aggregate metric, not per-sample provenance. Boundary metric is aggregate; v0.9.3 does not include per-sample false-accept trace.",
+      "per_stage_sample_count": 0,
+      "source_field": "trap_false_accept_rate",
+      "source_file": "records\\v0_9_3\\arithmetic_training_metrics.json",
+      "source_value": 0.0,
+      "summary_only_detected": true
+    },
+    {
+      "computed_from_sample_records": false,
+      "fixed_value_detected": false,
+      "metric_name": "future_domain_supported_accept_rate",
+      "notes": "v0.9.3 record stores aggregate metric, not per-sample provenance.",
+      "per_stage_sample_count": 0,
+      "source_field": "future_domain_supported_accept_rate",
+      "source_file": "records\\v0_9_3\\arithmetic_training_metrics.json",
+      "source_value": 0.0,
+      "summary_only_detected": true
+    },
+    {
+      "computed_from_sample_records": false,
+      "fixed_value_detected": false,
+      "metric_name": "near_ood_supported_accept_rate",
+      "notes": "v0.9.3 record stores aggregate metric, not per-sample provenance.",
+      "per_stage_sample_count": 0,
+      "source_field": "near_ood_supported_accept_rate",
+      "source_file": "records\\v0_9_3\\arithmetic_training_metrics.json",
+      "source_value": 0.0,
+      "summary_only_detected": true
+    }
+  ],
+  "summary_only_detected": true
+}

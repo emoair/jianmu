@@ -1,0 +1,64 @@
+{
+  "audit_passed": false,
+  "baseline_ablation_supports_mainline": false,
+  "baseline_gap_verified": false,
+  "blocking_issues": [
+    "v0.9.3 arithmetic gain is explainable by deterministic index-period rule",
+    "v0.9.3 key metrics lack per-sample provenance records",
+    "baseline/ablation gap not verified in v0.9.3 records"
+  ],
+  "compiler_backend_type": "internal_evaluator",
+  "failure_analysis_summary": "Failures are deterministic index-period candidate misses, not expression-stage-specific evidence.",
+  "fixed_metric_or_summary_only_found": true,
+  "fixed_value_detected": true,
+  "heldout_group_audit_passed": true,
+  "heldout_group_separation_confirmed": true,
+  "internal_evaluator_only": true,
+  "leakage_audit_passed": true,
+  "leakage_found": false,
+  "maintain_v0_9_3_arithmetic_positive_signal": false,
+  "metric_provenance_passed": false,
+  "must_reproduce": [
+    "compiler-backed arithmetic audit",
+    "per-sample candidate trace without fixed period rule"
+  ],
+  "not_proved": [
+    "solved arithmetic",
+    "stable convergence",
+    "solved OOD",
+    "general program synthesis",
+    "same-size LLM advantage",
+    "safe real promotion",
+    "production readiness",
+    "real compiler-backed arithmetic"
+  ],
+  "paper_v2_results": [
+    "leakage audit",
+    "heldout group audit",
+    "internal evaluator boundary caveat"
+  ],
+  "proved": [
+    "v0.9.3 records can be audited for metric provenance and leakage",
+    "targeted rerun reproduced the same period-shaped signal"
+  ],
+  "recommended_claim_level": "signal_not_verified",
+  "required_next_run": "compiler-backed per-sample arithmetic audit with non-periodic candidate traces",
+  "still_not_proven": [
+    "solved arithmetic",
+    "stable convergence",
+    "solved OOD",
+    "general program synthesis",
+    "same-size LLM advantage",
+    "safe real promotion",
+    "production readiness",
+    "real compiler-backed arithmetic"
+  ],
+  "summary_only_detected": true,
+  "targeted_rerun_completed": true,
+  "targeted_rerun_sample_counts": {
+    "boundary": 1000,
+    "heldout": 1000
+  },
+  "v0_9_3_claim_after": "arithmetic_probe_mixed_signal_needs_per_sample_rerun",
+  "v0_9_3_claim_before": "arithmetic_probe_positive_signal"
+}

@@ -1,0 +1,41 @@
+{
+  "boundary_false_accept_count": 0,
+  "boundary_false_accept_rate": 0.0,
+  "boundary_sample_count": 1000,
+  "candidate_hit_after": 0.95,
+  "candidate_hit_before": 0.8,
+  "correct_output_in_beam_after": 0.95,
+  "correct_output_in_beam_before": 0.8,
+  "fixed_period_pattern_detected": true,
+  "heldout_sample_count": 1000,
+  "seed": 42,
+  "stage_metrics": {
+    "exact_division": {
+      "correct_output_in_beam_rate": 0.944,
+      "sample_count": 125
+    },
+    "negative_numbers": {
+      "correct_output_in_beam_rate": 0.952,
+      "sample_count": 125
+    },
+    "parentheses": {
+      "correct_output_in_beam_rate": 0.931034,
+      "sample_count": 174
+    },
+    "precedence": {
+      "correct_output_in_beam_rate": 0.971014,
+      "sample_count": 207
+    },
+    "single_op": {
+      "correct_output_in_beam_rate": 0.963158,
+      "sample_count": 190
+    },
+    "two_op_no_parentheses": {
+      "correct_output_in_beam_rate": 0.932961,
+      "sample_count": 179
+    }
+  },
+  "targeted_rerun_completed": true,
+  "top1_after": 0.95,
+  "top1_before": 0.4
+}

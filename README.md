@@ -1,3 +1,7 @@
+## v0.9.3.1 Development Direction
+
+v0.9.3.1 audits the v0.9.3 arithmetic positive signal. It checks metric provenance, forbidden-field leakage, heldout group separation, baseline/ablation evidence, and failure examples. It does not introduce new architecture claims and does not claim solved arithmetic.
+
 # JianMu MVP
 
 JianMu v0.5 is a Chinese-first hierarchical semantic routing runtime for
