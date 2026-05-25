@@ -1,0 +1,18 @@
+{
+  "shard_count": 2,
+  "shards": [
+    {
+      "path": "compiler_longrun_trace_000.jsonl",
+      "row_count": 51699,
+      "size_bytes": 45051550
+    },
+    {
+      "path": "compiler_longrun_trace_001.jsonl",
+      "row_count": 10727,
+      "size_bytes": 9455709
+    }
+  ],
+  "total_rows": 62426,
+  "trace_file": null,
+  "trace_sharded": true
+}

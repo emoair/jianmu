@@ -1,0 +1,14 @@
+{
+  "backend_claim_safe": true,
+  "backend_type": "real_c_compiler",
+  "blocking_issues": [],
+  "boundary_compiler_misroute_count": 0,
+  "compiler_environment": "msvc_vcvars64",
+  "compiler_name": "cl",
+  "compiler_verified_correct_rate": 1.0,
+  "fresh_longrun_ratio": 1.0,
+  "longrun_readiness_completed": true,
+  "real_compiler_invocation_count": 50226,
+  "recommended_claim_level": "compiler_backed_arithmetic_partial_longrun",
+  "required_next_run": "complete larger compiler-backed longrun; maintain conservative arithmetic and Turing-completeness wording"
+}

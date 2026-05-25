@@ -1,0 +1,63 @@
+{
+  "backend_claim_safe": true,
+  "backend_type": "real_c_compiler",
+  "blocking_issues": [],
+  "boundary_compiler_misroute_count": 0,
+  "boundary_sample_count": 12200,
+  "compile_failure_count": 0,
+  "compile_success_count": 50226,
+  "compiler_available": true,
+  "compiler_environment": "msvc_vcvars64",
+  "compiler_name": "cl",
+  "compiler_verified_correct_count": 50226,
+  "compiler_verified_correct_rate": 1.0,
+  "compiler_verified_failure_count": 0,
+  "division_by_zero_compiled_count": 0,
+  "expected_output_access_before_candidate_generation": false,
+  "failure_summary": {
+    "failure_category_distribution": {},
+    "failure_count": 0
+  },
+  "forbidden_field_access_count": 0,
+  "fresh_longrun_ratio": 1.0,
+  "longrun_readiness_completed": true,
+  "modes_attempted": [
+    "quick",
+    "small",
+    "medium",
+    "longrun"
+  ],
+  "modes_completed": [
+    "quick",
+    "small",
+    "medium"
+  ],
+  "modes_partial_skipped": [
+    {
+      "completed_supported": "38026",
+      "mode": "longrun",
+      "reason": "runtime_budget_exhausted",
+      "status": "partial"
+    }
+  ],
+  "non_integer_division_compiled_count": 0,
+  "overlap_with_v0_9_4_1_count": 0,
+  "overlap_with_v0_9_4_3_count": 0,
+  "p50_latency_ms": 269.0229,
+  "p95_latency_ms": 331.5733,
+  "p99_latency_ms": 369.1268,
+  "patch_applied_count": 15777,
+  "real_compiler_invocation_count": 50226,
+  "recommended_claim_level": "compiler_backed_arithmetic_partial_longrun",
+  "required_next_run": "complete larger compiler-backed longrun; maintain conservative arithmetic and Turing-completeness wording",
+  "runtime_failure_count": 0,
+  "runtime_success_count": 50226,
+  "samples_per_second": 17.333602,
+  "supported_sample_count": 50226,
+  "target_ir_access_before_candidate_generation": false,
+  "timeout_count": 0,
+  "token_spacing_patch_enabled": true,
+  "total_wall_clock_seconds": 3601.444183,
+  "unsafe_expression_count": 0,
+  "unsupported_compiled_count": 0
+}

@@ -449,3 +449,7 @@ v0.9.4.2 performs a Compiler Failure Taxonomy for the 45 failed samples in v0.9.
 ## v0.9.4.3 Development Direction
 
 v0.9.4.3 performs a fresh compiler-backed reproduction of the v0.9.4.2 patched arithmetic result. It uses new samples and fresh MSVC compiler invocations to distinguish fresh reproduction from patched replay. It preserves the C token-spacing fix, tracks overlap with the original 600-sample audit, and does not claim solved arithmetic.
+
+## v0.9.5 Development Direction
+
+v0.9.5 performs a Full Compiler-Backed Arithmetic Longrun Probe. After v0.9.4.3 reproduced the arithmetic signal on fresh MSVC-compiled samples, this version scales the audit to larger fresh samples with real cl.exe invocations, checkpointed traces, boundary guards, latency profiles, and failure taxonomy. It does not claim solved arithmetic or Turing completeness.

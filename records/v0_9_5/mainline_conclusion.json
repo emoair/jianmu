@@ -1,0 +1,60 @@
+{
+  "advanced_from_spot_to_longrun_signal": false,
+  "blocking_issues": [],
+  "boundary_compiler_misroute_count": 0,
+  "compiler_verified_correct_rate": 1.0,
+  "failure_summary": {
+    "failure_category_distribution": {},
+    "failure_count": 0
+  },
+  "fresh_longrun_ratio": 1.0,
+  "largest_completed_mode": "medium",
+  "latency_summary": {
+    "p50_latency_ms": 269.0229,
+    "p95_latency_ms": 331.5733,
+    "p99_latency_ms": 369.1268
+  },
+  "longrun_status": {
+    "completed_supported": "38026",
+    "mode": "longrun",
+    "reason": "runtime_budget_exhausted",
+    "status": "partial"
+  },
+  "overlap_counts": {
+    "v0_9_4_1": 0,
+    "v0_9_4_3": 0
+  },
+  "real_compiler_invocation_count": 50226,
+  "recommended_claim_level": "compiler_backed_arithmetic_partial_longrun",
+  "required_next_run": "complete larger compiler-backed longrun; maintain conservative arithmetic and Turing-completeness wording",
+  "results_for_paper_v2": [
+    "compiler-backed arithmetic longrun probe",
+    "boundary guard under compiler longrun"
+  ],
+  "results_requiring_revalidation": [
+    "longer compiler-backed longrun",
+    "broader arithmetic grammar"
+  ],
+  "still_not_proven": [
+    "solved arithmetic",
+    "stable convergence",
+    "solved OOD",
+    "general program synthesis",
+    "same-size LLM advantage",
+    "safe real promotion",
+    "production readiness",
+    "Turing completeness"
+  ],
+  "token_spacing_patch_enabled": true,
+  "what_this_version_did_not_prove": [
+    "solved arithmetic",
+    "stable convergence",
+    "solved OOD",
+    "general program synthesis",
+    "same-size LLM advantage",
+    "safe real promotion",
+    "production readiness",
+    "Turing completeness"
+  ],
+  "what_this_version_proved": "It scaled fresh compiler-backed arithmetic reproduction with real cl.exe invocations, per-sample trace, checkpoints, and boundary guards."
+}
