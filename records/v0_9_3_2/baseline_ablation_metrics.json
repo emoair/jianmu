@@ -1,0 +1,60 @@
+{
+  "baseline_gap_verified": true,
+  "methods": [
+    {
+      "actual_sample_count": 16000,
+      "boundary_false_accept_rate": 0.0,
+      "delta_vs_full": 0.0,
+      "executed": true,
+      "fixed_summary_detected": false,
+      "method": "full_jianmu_nonperiodic",
+      "metric_computed_from_samples": true,
+      "supported_candidate_hit_rate": 1.0,
+      "top1_correct_rate": 1.0
+    },
+    {
+      "actual_sample_count": 16000,
+      "boundary_false_accept_rate": 1.0,
+      "delta_vs_full": -1.0,
+      "executed": true,
+      "fixed_summary_detected": false,
+      "method": "random_router",
+      "metric_computed_from_samples": true,
+      "supported_candidate_hit_rate": 1.0,
+      "top1_correct_rate": 0.0
+    },
+    {
+      "actual_sample_count": 16000,
+      "boundary_false_accept_rate": 0.0,
+      "delta_vs_full": -0.912875,
+      "executed": true,
+      "fixed_summary_detected": false,
+      "method": "heuristic_router",
+      "metric_computed_from_samples": true,
+      "supported_candidate_hit_rate": 0.087125,
+      "top1_correct_rate": 0.087125
+    },
+    {
+      "actual_sample_count": 16000,
+      "boundary_false_accept_rate": 0.0,
+      "delta_vs_full": -0.579625,
+      "executed": true,
+      "fixed_summary_detected": false,
+      "method": "no_root_colony",
+      "metric_computed_from_samples": true,
+      "supported_candidate_hit_rate": 0.420375,
+      "top1_correct_rate": 0.420375
+    },
+    {
+      "actual_sample_count": 16000,
+      "boundary_false_accept_rate": 0.0,
+      "delta_vs_full": -0.33325,
+      "executed": true,
+      "fixed_summary_detected": false,
+      "method": "no_nutrient_toxic_memory",
+      "metric_computed_from_samples": true,
+      "supported_candidate_hit_rate": 0.66675,
+      "top1_correct_rate": 0.66675
+    }
+  ]
+}

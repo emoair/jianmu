@@ -1,0 +1,13 @@
+{
+  "fixed_value_detected": false,
+  "largest_shard_size_bytes": 45069837,
+  "periodic_rule_detected": false,
+  "sample_record_count": 136500,
+  "sharded": true,
+  "shards": [
+    "candidate_trace_000.jsonl",
+    "candidate_trace_001.jsonl"
+  ],
+  "summary_only_detected": false,
+  "trace_path": "candidate_trace_manifest.json"
+}

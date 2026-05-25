@@ -1,0 +1,6 @@
+{
+  "expected_output_access_before_candidate_generation": false,
+  "forbidden_field_access_count": 0,
+  "leakage_guard_passed": true,
+  "target_ir_access_before_candidate_generation": false
+}

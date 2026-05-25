@@ -1,0 +1,20 @@
+{
+  "baseline_gap_verified": true,
+  "blocking_issues": [],
+  "boundary_safety_preserved": true,
+  "fixed_value_detected": false,
+  "heldout_supported_success_rate": 1.0,
+  "internal_evaluator_only": true,
+  "leakage_guard_passed": true,
+  "metric_provenance_passed": true,
+  "nonperiodic_rerun_completed": true,
+  "per_sample_trace_completed": true,
+  "periodic_rule_detected": false,
+  "recommended_claim_level": "nonperiodic_arithmetic_positive_signal",
+  "required_next_run": "real compiler-backed arithmetic spot audit",
+  "summary_only_detected": false,
+  "supported_candidate_hit_after": 1.0,
+  "supported_candidate_hit_before": 0.087125,
+  "top1_after": 1.0,
+  "top1_before": 0.087125
+}

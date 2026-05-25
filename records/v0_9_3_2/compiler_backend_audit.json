@@ -1,0 +1,9 @@
+{
+  "backend_claim_safe": true,
+  "compiler_backend_type": "internal_evaluator",
+  "compiler_eval_call_count": 500,
+  "compiler_spot_sample_count": 500,
+  "internal_evaluator_call_count": 500,
+  "internal_evaluator_correct_rate": 1.0,
+  "real_compiler_invocation_count": 0
+}

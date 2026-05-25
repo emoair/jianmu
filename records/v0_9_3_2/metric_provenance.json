@@ -1,0 +1,5 @@
+{
+  "metric_provenance_passed": true,
+  "source": "candidate_trace.jsonl",
+  "summary_only_detected": false
+}

@@ -1,0 +1,91 @@
+{
+  "backend_claim_safe": true,
+  "baseline_gap_verified": true,
+  "blocking_issues": [],
+  "boundary_safety_preserved": true,
+  "candidate_trace_path": "records/v0_9_3_2/candidate_trace_manifest.json",
+  "candidate_trace_record_count": 136500,
+  "compiler_backend_type": "internal_evaluator",
+  "compiler_eval_call_count": 500,
+  "compiler_spot_sample_count": 500,
+  "correct_output_in_beam_after": 1.0,
+  "correct_output_in_beam_before": 0.087125,
+  "division_by_zero_false_accept_rate": 0.0,
+  "exact_division_success_rate": 1.0,
+  "expected_output_access_before_candidate_generation": false,
+  "fixed_v0_9_3_1_issue": true,
+  "fixed_value_detected": false,
+  "forbidden_field_access_count": 0,
+  "future_domain_supported_accept_rate": 0.0,
+  "heldout_supported_success_rate": 1.0,
+  "internal_evaluator_call_count": 500,
+  "internal_evaluator_correct_rate": 1.0,
+  "internal_evaluator_only": true,
+  "leakage_guard_passed": true,
+  "metric_provenance_passed": true,
+  "modes_attempted": [
+    "quick",
+    "small",
+    "medium"
+  ],
+  "modes_completed": [
+    "quick",
+    "small",
+    "medium"
+  ],
+  "modes_partial_skipped": [],
+  "must_reproduce": [
+    "real compiler-backed arithmetic spot audit",
+    "larger rerun if paper v2 needs stronger claim"
+  ],
+  "near_ood_supported_accept_rate": 0.0,
+  "negative_numbers_success_rate": 1.0,
+  "non_integer_division_false_accept_rate": 0.0,
+  "nonperiodic_rerun_completed": true,
+  "not_proved": [
+    "solved arithmetic",
+    "stable convergence",
+    "solved OOD",
+    "general program synthesis",
+    "same-size LLM advantage",
+    "safe real promotion",
+    "production readiness",
+    "real compiler-backed arithmetic"
+  ],
+  "paper_v2_results": [
+    "nonperiodic rerun metrics",
+    "candidate trace provenance",
+    "baseline/ablation summary"
+  ],
+  "parentheses_success_rate": 1.0,
+  "per_sample_trace_completed": true,
+  "periodic_rule_detected": false,
+  "precedence_success_rate": 1.0,
+  "proved": [
+    "non-periodic per-sample candidate trace completed",
+    "metrics aggregated from sample records"
+  ],
+  "ready_for_nonperiodic_claim": true,
+  "real_compiler_invocation_count": 0,
+  "recommended_claim_level": "nonperiodic_arithmetic_positive_signal",
+  "required_next_run": "real compiler-backed arithmetic spot audit",
+  "runtime_seconds": 7.74915,
+  "still_not_proven": [
+    "solved arithmetic",
+    "stable convergence",
+    "solved OOD",
+    "general program synthesis",
+    "same-size LLM advantage",
+    "safe real promotion",
+    "production readiness",
+    "real compiler-backed arithmetic"
+  ],
+  "summary_only_detected": false,
+  "supported_candidate_hit_after": 1.0,
+  "supported_candidate_hit_before": 0.087125,
+  "target_ir_access_before_candidate_generation": false,
+  "top1_after": 1.0,
+  "top1_before": 0.087125,
+  "trap_false_accept_rate": 0.0,
+  "unsupported_false_accept_rate": 0.0
+}
