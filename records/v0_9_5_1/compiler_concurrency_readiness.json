@@ -1,0 +1,48 @@
+{
+  "best_compile_worker_count": 16,
+  "best_latency_profile": {
+    "p50_latency_ms": 533.84865,
+    "p95_latency_ms": 630.2721,
+    "p99_latency_ms": 684.0464
+  },
+  "best_samples_per_second": 29.775972,
+  "blocking_issues": [],
+  "boundary_compiler_misroute_count_at_best": 0,
+  "compiler_verified_correct_rate_at_best": 1.0,
+  "max_stable_compile_worker_count": 128,
+  "process_spawn_error_count_at_best": 0,
+  "recommended_claim_level": "high_concurrency_stable",
+  "recommended_default_compile_worker_count": 16,
+  "required_next_run": "rerun best worker level with larger samples; keep conservative arithmetic and Turing-completeness wording",
+  "scaling_completed": true,
+  "stable_worker_levels": [
+    4,
+    8,
+    16,
+    32,
+    64,
+    128
+  ],
+  "tested_worker_levels": [
+    4,
+    8,
+    16,
+    32,
+    64,
+    128,
+    256,
+    512
+  ],
+  "timeout_count_at_best": 0,
+  "trace_write_error_count_at_best": 0,
+  "unstable_worker_levels": [
+    {
+      "compile_worker_count": 256,
+      "unstable_reason": "timeout_count;compile_failure_count;runtime_failure_count;correct_rate_below_threshold"
+    },
+    {
+      "compile_worker_count": 512,
+      "unstable_reason": "stopped_after_unstable_256"
+    }
+  ]
+}

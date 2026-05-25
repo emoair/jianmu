@@ -1,0 +1,12 @@
+{
+  "shard_count": 1,
+  "shards": [
+    {
+      "path": "compiler_concurrency_trace_000.jsonl",
+      "row_count": 14000,
+      "size_bytes": 8090520
+    }
+  ],
+  "total_rows": 14000,
+  "trace_sharded": true
+}

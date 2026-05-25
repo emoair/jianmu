@@ -1,0 +1,122 @@
+{
+  "best_compile_worker_count": 16,
+  "blocking_issues": [],
+  "boundary_guard_preserved": true,
+  "error_summary_by_level": {
+    "128": {
+      "process_spawn_error_count": 0,
+      "timeout_count": 0,
+      "trace_write_error_count": 0
+    },
+    "16": {
+      "process_spawn_error_count": 0,
+      "timeout_count": 0,
+      "trace_write_error_count": 0
+    },
+    "256": {
+      "process_spawn_error_count": 0,
+      "timeout_count": 219,
+      "trace_write_error_count": 0
+    },
+    "32": {
+      "process_spawn_error_count": 0,
+      "timeout_count": 0,
+      "trace_write_error_count": 0
+    },
+    "4": {
+      "process_spawn_error_count": 0,
+      "timeout_count": 0,
+      "trace_write_error_count": 0
+    },
+    "512": {
+      "process_spawn_error_count": 0,
+      "timeout_count": 0,
+      "trace_write_error_count": 0
+    },
+    "64": {
+      "process_spawn_error_count": 0,
+      "timeout_count": 0,
+      "trace_write_error_count": 0
+    },
+    "8": {
+      "process_spawn_error_count": 0,
+      "timeout_count": 0,
+      "trace_write_error_count": 0
+    }
+  },
+  "latency_summary_by_level": {
+    "128": {
+      "p50_latency_ms": 4297.44345,
+      "p95_latency_ms": 7165.2575,
+      "p99_latency_ms": 8902.7327
+    },
+    "16": {
+      "p50_latency_ms": 533.84865,
+      "p95_latency_ms": 630.2721,
+      "p99_latency_ms": 684.0464
+    },
+    "256": {
+      "p50_latency_ms": 8456.42635,
+      "p95_latency_ms": 22174.1049,
+      "p99_latency_ms": 22763.4463
+    },
+    "32": {
+      "p50_latency_ms": 1106.66115,
+      "p95_latency_ms": 1279.8463,
+      "p99_latency_ms": 1521.6372
+    },
+    "4": {
+      "p50_latency_ms": 234.7772,
+      "p95_latency_ms": 261.4726,
+      "p99_latency_ms": 282.7496
+    },
+    "512": {
+      "p50_latency_ms": null,
+      "p95_latency_ms": null,
+      "p99_latency_ms": null
+    },
+    "64": {
+      "p50_latency_ms": 2858.1942,
+      "p95_latency_ms": 8463.5091,
+      "p99_latency_ms": 12042.1378
+    },
+    "8": {
+      "p50_latency_ms": 297.9674,
+      "p95_latency_ms": 349.1509,
+      "p99_latency_ms": 410.6114
+    }
+  },
+  "max_stable_compile_worker_count": 128,
+  "recommended_claim_level": "high_concurrency_stable",
+  "required_next_run": "rerun best worker level with larger samples; keep conservative arithmetic and Turing-completeness wording",
+  "results_for_paper_v2": [
+    "compiler concurrency throughput profile",
+    "max stable cl.exe concurrency"
+  ],
+  "results_requiring_revalidation": [
+    "larger per-level samples at recommended worker count"
+  ],
+  "still_not_proven": [
+    "solved arithmetic",
+    "stable convergence",
+    "solved OOD",
+    "general program synthesis",
+    "same-size LLM advantage",
+    "safe real promotion",
+    "production readiness",
+    "Turing completeness"
+  ],
+  "throughput_increased": true,
+  "what_this_version_did_not_prove": [
+    "solved arithmetic",
+    "stable convergence",
+    "solved OOD",
+    "general program synthesis",
+    "same-size LLM advantage",
+    "safe real promotion",
+    "production readiness",
+    "Turing completeness"
+  ],
+  "what_this_version_proved": "It measured real cl.exe concurrency scaling across configured worker levels.",
+  "worker_512_stable": false
+}
