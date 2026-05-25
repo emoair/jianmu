@@ -1,0 +1,12 @@
+{
+  "cl_bv_test_passed": true,
+  "cl_version_text_tail": "鐢ㄤ簬 x64 鐨� Microsoft (R) C/C++ 浼樺寲缂栬瘧鍣� 19.50.35727 鐗�\n鐗堟潈鎵�鏈�(C) Microsoft Corporation銆備繚鐣欐墍鏈夋潈鍒┿��\n\n缂栬瘧鍣ㄦ壂鎻忛亶鏁�:\n C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.50.35717\\bin\\HostX64\\x64\\cl.exe:        鐗堟湰 19.50.35727.0\n C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.50.35717\\bin\\HostX64\\x64\\c1.dll:        鐗堟湰 19.50.35727.0\n C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.50.35717\\bin\\HostX64\\x64\\c1xx.dll:      鐗堟湰 19.50.35727.0\n C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.50.35717\\bin\\HostX64\\x64\\c2.dll:        鐗堟湰 19.50.35727.0\n C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.50.35717\\bin\\HostX64\\x64\\c1xx.dll:      鐗堟湰 19.50.35727.0\n C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.50.35717\\bin\\HostX64\\x64\\link.exe:      鐗堟湰 14.50.35727.0\n C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.50.35717\\bin\\HostX64\\x64\\mspdb140.dll:  鐗堟湰 14.50.35727.0\n C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.50.35717\\bin\\HostX64\\x64\\2052\\clui.dll: 鐗堟湰 19.50.35727.0\n\ncl: 鍛戒护琛� error D8003 :缂哄皯婧愭枃浠跺悕\n",
+  "detection_conclusion": "msvc_vcvars64_cl_available",
+  "os_name": "nt",
+  "path_cl_found": false,
+  "path_clang_found": false,
+  "path_gcc_found": false,
+  "vcvars64_found": true,
+  "vcvars64_path": "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Auxiliary\\Build\\vcvars64.bat",
+  "vswhere_found": true
+}

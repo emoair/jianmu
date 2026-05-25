@@ -76,6 +76,7 @@ def run_real_compiler_arithmetic_spot_audit(
     boundary_samples: int = 2000,
     seeds: Iterable[int] | None = None,
     timeout_seconds: int = 5,
+    prefer_msvc: bool = False,
 ) -> Dict[str, Any]:
     started = time.perf_counter()
     dataset = Path(dataset_dir)
@@ -83,7 +84,7 @@ def run_real_compiler_arithmetic_spot_audit(
     out.mkdir(parents=True, exist_ok=True)
     mode_list = [mode for mode in modes if mode]
     seed_list = list(seeds or [42])
-    backend = detect_arithmetic_backend(prefer_python_subprocess=True)
+    backend = detect_arithmetic_backend(prefer_python_subprocess=True, prefer_msvc=prefer_msvc)
     completed = []
     skipped = []
     all_trace: list[dict[str, Any]] = []
@@ -113,6 +114,7 @@ def run_real_compiler_arithmetic_spot_audit(
     readiness = assess_compiler_audit_readiness(metrics)
     metrics.update(readiness)
     _write_outputs(out, metrics)
+    _write_msvc_detection_report(out, backend.detection_report or {})
     return metrics
 
 
@@ -175,6 +177,7 @@ def _trace_supported(row: Dict[str, Any], backend: Any, timeout_seconds: int) ->
         "target_ir_used_phase": "none",
         "backend_type": result["backend_type"],
         "compiler_name": result["compiler_name"],
+        "compiler_environment": result.get("compiler_environment", ""),
         "compiler_command_hash": result["compiler_command_hash"],
         "compiler_invoked": result["compiler_invoked"],
         "compile_returncode": result["compile_returncode"],
@@ -204,6 +207,7 @@ def _trace_boundary(row: Dict[str, Any], backend_type: str) -> Dict[str, Any]:
         "target_ir_used_phase": "none",
         "backend_type": backend_type,
         "compiler_name": "",
+        "compiler_environment": "",
         "compiler_command_hash": None,
         "compiler_invoked": False,
         "compile_returncode": None,
@@ -253,6 +257,7 @@ def _summarize(
         "backend_type": backend_type,
         "compiler_available": backend_type == "real_c_compiler",
         "compiler_name": compiler_name,
+        "compiler_environment": next((row.get("compiler_environment", "") for row in trace_rows if row.get("compiler_environment")), ""),
         "real_compiler_invocation_count": sum(bool(row.get("compiler_invoked")) for row in real_compiler_rows),
         "python_subprocess_invocation_count": sum(row.get("backend_type") == "python_subprocess_executor" and bool(row.get("runtime_invoked")) for row in supported),
         "internal_evaluator_call_count": 0,
@@ -314,6 +319,36 @@ def _write_outputs(out: Path, metrics: Dict[str, Any]) -> None:
     _write_mainline(out, metrics)
 
 
+def _write_msvc_detection_report(out: Path, report: Dict[str, Any]) -> None:
+    if not report:
+        report = {
+            "os_name": "",
+            "path_cl_found": False,
+            "path_gcc_found": False,
+            "path_clang_found": False,
+            "vswhere_found": False,
+            "vcvars64_found": False,
+            "vcvars64_path": "",
+            "cl_bv_test_passed": False,
+            "cl_version_text_tail": "",
+            "detection_conclusion": "not_recorded",
+        }
+    _write_json(out / "msvc_detection_report.json", report)
+    (out / "msvc_detection_report.md").write_text("\n".join([
+        "# v0.9.4.1 MSVC Detection Report",
+        "",
+        f"- os_name: {report.get('os_name')}",
+        f"- path_cl_found: {report.get('path_cl_found')}",
+        f"- path_gcc_found: {report.get('path_gcc_found')}",
+        f"- path_clang_found: {report.get('path_clang_found')}",
+        f"- vswhere_found: {report.get('vswhere_found')}",
+        f"- vcvars64_found: {report.get('vcvars64_found')}",
+        f"- vcvars64_path: {report.get('vcvars64_path')}",
+        f"- cl_bv_test_passed: {report.get('cl_bv_test_passed')}",
+        f"- detection_conclusion: {report.get('detection_conclusion')}",
+    ]) + "\n", encoding="utf-8")
+
+
 def _write_mainline(out: Path, metrics: Dict[str, Any]) -> None:
     still_not = [
         "solved arithmetic",
@@ -336,7 +371,7 @@ def _write_mainline(out: Path, metrics: Dict[str, Any]) -> None:
     }
     _write_json(out / "mainline_conclusion.json", payload)
     (out / "mainline_conclusion.md").write_text("\n".join([
-        "# v0.9.4 Mainline Conclusion",
+        "# v0.9.4.1 Mainline Conclusion",
         "",
         f"- backend_type: {metrics['backend_type']}",
         f"- real_compiler_invocation_count: {metrics['real_compiler_invocation_count']}",

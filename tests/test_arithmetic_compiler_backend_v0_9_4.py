@@ -72,6 +72,17 @@ def test_compiler_backend_marks_unavailable_honestly(monkeypatch) -> None:
     import jianmu.self_learning.darwinforge.arithmetic_compiler_backend as backend_module
 
     monkeypatch.setattr(backend_module, "detect_supported_c_compiler", lambda: (None, ""))
+    monkeypatch.setattr(backend_module, "detect_msvc_and_path_compilers", lambda: {
+        "path_cl_found": False,
+        "path_gcc_found": False,
+        "path_clang_found": False,
+        "vswhere_found": False,
+        "vcvars64_found": False,
+        "vcvars64_path": "",
+        "cl_bv_test_passed": False,
+        "cl_version_text_tail": "",
+        "detection_conclusion": "no_c_compiler_detected",
+    })
     backend = backend_module.detect_arithmetic_backend(prefer_python_subprocess=False)
     assert backend.backend_type == "unavailable"
     assert not backend.compiler_available

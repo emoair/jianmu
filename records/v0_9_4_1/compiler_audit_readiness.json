@@ -1,0 +1,14 @@
+{
+  "audit_completed": true,
+  "backend_claim_safe": true,
+  "backend_type": "real_c_compiler",
+  "blocking_issues": [],
+  "boundary_compiler_misroute_count": 0,
+  "compiler_backed_spot_verified": true,
+  "compiler_verified_correct_rate": 0.925,
+  "forbidden_field_access_count": 0,
+  "real_compiler_available": true,
+  "real_compiler_invocation_count": 600,
+  "recommended_claim_level": "compiler_backed_arithmetic_spot_signal",
+  "required_next_run": "full compiler-backed longrun remains open"
+}

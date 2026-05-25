@@ -33,6 +33,7 @@ def main() -> int:
     parser.add_argument("--seed", type=int, default=None)
     parser.add_argument("--seeds", default=None)
     parser.add_argument("--timeout-seconds", type=int, default=5)
+    parser.add_argument("--prefer-msvc", default="false")
     args = parser.parse_args()
 
     seeds = _split_int_csv(args.seeds)
@@ -50,6 +51,7 @@ def main() -> int:
         boundary_samples=args.boundary_samples,
         seeds=seeds,
         timeout_seconds=args.timeout_seconds,
+        prefer_msvc=args.prefer_msvc.lower() in {"1", "true", "yes", "on"},
     )
     print(json.dumps({
         "backend_type": metrics.get("backend_type"),
