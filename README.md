@@ -437,3 +437,7 @@ v0.9.3 runs an Arithmetic Training Probe on the v0.9.2 arithmetic curriculum dat
 ## v0.9.3.2 Development Direction
 
 v0.9.3.2 performs a Non-Periodic Arithmetic Rerun. After v0.9.3.1 found that the v0.9.3 arithmetic gain could be explained by a deterministic index-period rule, this version reruns arithmetic evaluation with per-sample candidate traces, no periodic success rule, no fixed metric gain, baseline/ablation checks, and boundary safety checks. It does not claim solved arithmetic.
+
+## v0.9.4 Development Direction
+
+v0.9.4 performs a Real Compiler Arithmetic Spot Audit. It checks whether the v0.9.3.2 non-periodic arithmetic signal, previously verified under an internal evaluator, can be validated through real C compiler subprocesses where available. If no compiler is available, it reports the fallback backend honestly and does not claim compiler-backed verification.

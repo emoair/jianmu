@@ -1,0 +1,16 @@
+{
+  "audit_completed": true,
+  "backend_claim_safe": true,
+  "backend_type": "python_subprocess_executor",
+  "blocking_issues": [
+    "real_c_compiler_unavailable"
+  ],
+  "boundary_compiler_misroute_count": 0,
+  "compiler_backed_spot_verified": false,
+  "compiler_verified_correct_rate": null,
+  "forbidden_field_access_count": 0,
+  "real_compiler_available": false,
+  "real_compiler_invocation_count": 0,
+  "recommended_claim_level": "execution_backed_but_not_compiler",
+  "required_next_run": "install or enable gcc, clang, or cl and rerun compiler spot audit; full compiler-backed longrun remains open"
+}

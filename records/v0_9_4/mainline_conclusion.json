@@ -1,0 +1,86 @@
+{
+  "advanced_internal_evaluator_signal_to_real_compiler": false,
+  "audit_completed": true,
+  "backend_claim_safe": true,
+  "backend_type": "python_subprocess_executor",
+  "blocking_issues": [
+    "real_c_compiler_unavailable"
+  ],
+  "boundary_compiler_misroute_count": 0,
+  "boundary_sample_count": 2600,
+  "candidate_trace_manifest_available": true,
+  "compile_failure_count": 0,
+  "compile_success_count": 0,
+  "compiler_available": false,
+  "compiler_backed_spot_verified": false,
+  "compiler_name": "",
+  "compiler_spot_sample_count": 0,
+  "compiler_verified_correct_count": 0,
+  "compiler_verified_correct_rate": null,
+  "compiler_verified_failure_count": 0,
+  "division_by_zero_compiled_count": 0,
+  "expected_output_access_before_candidate_generation": false,
+  "forbidden_field_access_count": 0,
+  "internal_evaluator_call_count": 0,
+  "modes_attempted": [
+    "quick",
+    "small",
+    "medium"
+  ],
+  "modes_completed": [
+    "quick",
+    "small",
+    "medium"
+  ],
+  "modes_skipped": [],
+  "must_reproduce": [
+    "larger compiler-backed arithmetic audit",
+    "full compiler-backed longrun"
+  ],
+  "non_integer_division_compiled_count": 0,
+  "not_proved": [
+    "solved arithmetic",
+    "stable convergence",
+    "solved OOD",
+    "general program synthesis",
+    "same-size LLM advantage",
+    "safe real promotion",
+    "production readiness",
+    "full compiler-backed longrun"
+  ],
+  "p50_latency_ms": 160.1653,
+  "p95_latency_ms": 172.0859,
+  "p99_latency_ms": 202.6629,
+  "paper_v2_results": [
+    "backend type",
+    "compiler invocation count",
+    "compiler spot correctness",
+    "boundary compiler misroute count"
+  ],
+  "proved": [
+    "compiler/backend spot audit completed"
+  ],
+  "python_subprocess_invocation_count": 2600,
+  "real_compiler_available": false,
+  "real_compiler_invocation_count": 0,
+  "recommended_claim_level": "execution_backed_but_not_compiler",
+  "required_next_run": "install or enable gcc, clang, or cl and rerun compiler spot audit; full compiler-backed longrun remains open",
+  "runtime_failure_count": 0,
+  "runtime_seconds": 426.712798,
+  "runtime_success_count": 2600,
+  "still_not_proven": [
+    "solved arithmetic",
+    "stable convergence",
+    "solved OOD",
+    "general program synthesis",
+    "same-size LLM advantage",
+    "safe real promotion",
+    "production readiness",
+    "full compiler-backed longrun"
+  ],
+  "supported_sample_count": 2600,
+  "target_ir_access_before_candidate_generation": false,
+  "timeout_count": 0,
+  "trace_sample_count": 5200,
+  "unsupported_compiled_count": 0
+}
