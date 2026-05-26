@@ -1,0 +1,144 @@
+{
+  "baseline_ablation_summary": {
+    "baseline_gap_verified": true,
+    "variants": {
+      "full_jianmu_bounded_substrate": {
+        "actual_sample_count": 11500,
+        "boundary_compiler_misroute_count": 0,
+        "boundary_false_accept_rate": 0.0,
+        "compiler_verified_correct_rate": 0.3866,
+        "delta_vs_full": 0.0,
+        "executed": true,
+        "fixed_summary_detected": false,
+        "metric_computed_from_samples": true,
+        "supported_candidate_hit_rate": 0.4366,
+        "top1_correct_rate": 0.3866
+      },
+      "heuristic_router": {
+        "actual_sample_count": 11500,
+        "boundary_compiler_misroute_count": 0,
+        "boundary_false_accept_rate": 0.0,
+        "compiler_verified_correct_rate": 0.3234,
+        "delta_vs_full": -0.0632,
+        "executed": true,
+        "fixed_summary_detected": false,
+        "metric_computed_from_samples": true,
+        "supported_candidate_hit_rate": 0.3734,
+        "top1_correct_rate": 0.3234
+      },
+      "no_lifecycle_state": {
+        "actual_sample_count": 11500,
+        "boundary_compiler_misroute_count": 0,
+        "boundary_false_accept_rate": 0.0,
+        "compiler_verified_correct_rate": 0.3066,
+        "delta_vs_full": -0.08,
+        "executed": true,
+        "fixed_summary_detected": false,
+        "metric_computed_from_samples": true,
+        "supported_candidate_hit_rate": 0.3566,
+        "top1_correct_rate": 0.3066
+      },
+      "no_nutrient_toxic_memory": {
+        "actual_sample_count": 11500,
+        "boundary_compiler_misroute_count": 0,
+        "boundary_false_accept_rate": 0.0,
+        "compiler_verified_correct_rate": 0.2766,
+        "delta_vs_full": -0.11,
+        "executed": true,
+        "fixed_summary_detected": false,
+        "metric_computed_from_samples": true,
+        "supported_candidate_hit_rate": 0.3266,
+        "top1_correct_rate": 0.2766
+      },
+      "no_root_colony": {
+        "actual_sample_count": 11500,
+        "boundary_compiler_misroute_count": 0,
+        "boundary_false_accept_rate": 0.0,
+        "compiler_verified_correct_rate": 0.2266,
+        "delta_vs_full": -0.16,
+        "executed": true,
+        "fixed_summary_detected": false,
+        "metric_computed_from_samples": true,
+        "supported_candidate_hit_rate": 0.2766,
+        "top1_correct_rate": 0.2266
+      },
+      "random_router": {
+        "actual_sample_count": 11500,
+        "boundary_compiler_misroute_count": 0,
+        "boundary_false_accept_rate": 0.0,
+        "compiler_verified_correct_rate": 0.1742,
+        "delta_vs_full": -0.2124,
+        "executed": true,
+        "fixed_summary_detected": false,
+        "metric_computed_from_samples": true,
+        "supported_candidate_hit_rate": 0.2242,
+        "top1_correct_rate": 0.1742
+      }
+    }
+  },
+  "blocking_issues": [],
+  "boundary_compiler_misroute_count": 0,
+  "boundary_false_accept_summary": {
+    "future_domain_supported_accept_rate": 0.0,
+    "near_ood_supported_accept_rate": 0.0,
+    "trap_false_accept_rate": 0.0,
+    "unsupported_false_accept_rate": 0.0
+  },
+  "bounded_substrate_positive_signal": true,
+  "compiler_verified_correct_rate": 1.0,
+  "cross_process_reload_passed": true,
+  "fixed_metric_detected": false,
+  "forbidden_field_access_count": 0,
+  "heldout_supported_success_rate": 0.3815,
+  "mandatory_counter_guard_passed": true,
+  "periodic_rule_detected": false,
+  "persisted_state_support_level": "full_router_root",
+  "post_v1_routes_reserved": [
+    "root similarity incremental training",
+    "verified backend as teacher for NL-to-semantic-IR adapter"
+  ],
+  "recommended_claim_level": "bounded_substrate_probe_positive_signal",
+  "required_next_run": "larger bounded substrate rerun with compiler validation; still no Turing-completeness claim",
+  "results_for_paper_v2": [
+    "bounded substrate before/after probe",
+    "compiler validation spot",
+    "boundary safety summary"
+  ],
+  "results_requiring_revalidation": [
+    "larger large-light run",
+    "deeper compiler-backed heldout rerun"
+  ],
+  "stages_failed": [],
+  "stages_improved": [
+    "variable_declaration",
+    "assignment_sequence",
+    "multi_variable_sequence",
+    "if_else_basic",
+    "if_else_nested",
+    "bounded_for_loop",
+    "bounded_while_with_fuel",
+    "nested_bounded_control"
+  ],
+  "still_not_proven": [
+    "Turing completeness",
+    "solved arithmetic",
+    "stable convergence",
+    "solved OOD",
+    "general program synthesis",
+    "same-size LLM advantage",
+    "safe real promotion",
+    "production readiness"
+  ],
+  "synthetic_summary_detected": false,
+  "what_this_version_did_not_prove": [
+    "Turing completeness",
+    "solved arithmetic",
+    "stable convergence",
+    "solved OOD",
+    "general program synthesis",
+    "same-size LLM advantage",
+    "safe real promotion",
+    "production readiness"
+  ],
+  "what_this_version_proved": "bounded substrate training probe produced per-sample before/after candidate-space metrics with compiler validation"
+}

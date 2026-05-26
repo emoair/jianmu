@@ -461,3 +461,7 @@ v0.9.5.1 performs a Compiler Concurrency Scaling Probe. After v0.9.5 established
 ## v0.9.6 Development Direction
 
 v0.9.6 builds a Turing Substrate Curriculum Dataset（图灵完备底座课程数据集） after the compiler-backed arithmetic longrun line. It introduces audited curriculum data for variables, assignments, sequences, if/else, bounded loops, and boundary/future-domain program samples. It also runs a 16-worker MSVC compiler validation spot using the tuned concurrency from v0.9.5.1. This version does not claim Turing completeness.
+
+## v0.9.7 Development Direction
+
+v0.9.7 runs a Bounded Substrate Training Probe（有界程序底座训练探针） on the v0.9.6 turing-substrate curriculum dataset. It evaluates whether JianMu can improve candidate-space formation for variables, assignments, sequences, if/else, bounded loops, and nested bounded control under no-label free-beam evaluation and real MSVC compiler validation. It does not claim Turing completeness.
