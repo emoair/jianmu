@@ -1,0 +1,13 @@
+{
+  "trace_sharded": true,
+  "shard_count": 1,
+  "total_rows": 0,
+  "shards": [
+    {
+      "path": "independent_validation_trace_000.jsonl",
+      "row_count": 0,
+      "size_bytes": 0
+    }
+  ],
+  "partial_reason": "requested 2000 supported / 2000 boundary independent validation hung under Windows CreateProcess/process-spawn instability; stopped to avoid contaminating records; no independent compiler-backed success claimed"
+}

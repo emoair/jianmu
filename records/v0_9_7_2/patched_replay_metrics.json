@@ -1,0 +1,16 @@
+{
+  "original_failure_count": 74,
+  "original_result_preserved": true,
+  "patched_cleanup_failure_count": 0,
+  "patched_compile_success_count": 74,
+  "patched_compiler_verified_correct_count": 74,
+  "patched_compiler_verified_correct_rate": 1.0,
+  "patched_compiler_verified_failure_count": 0,
+  "patched_delta_vs_original": 74,
+  "patched_permission_error_count": 0,
+  "patched_remaining_failure_count": 0,
+  "patched_replay_sample_count": 74,
+  "patched_runtime_success_count": 74,
+  "this_is_failure_replay_not_independent_full_rerun": true,
+  "total_wall_clock_seconds": 64.514104
+}

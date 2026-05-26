@@ -1,0 +1,13 @@
+{
+  "candidate_error_dominant": false,
+  "classified_failure_count": 74,
+  "dominant_failure_category": "permission_cleanup_temp_dir",
+  "engineering_issue_dominant": true,
+  "failure_category_distribution": {
+    "permission_cleanup_temp_dir": 74
+  },
+  "notes": "v0.9.7.1 failures occurred after long latency with compiler_invoked=false, consistent with temp-dir cleanup/process-handle PermissionError being caught by the outer validator",
+  "original_failure_count": 74,
+  "taxonomy_completed": true,
+  "unknown_failure_count": 0
+}

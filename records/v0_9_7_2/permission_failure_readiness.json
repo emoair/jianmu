@@ -1,0 +1,25 @@
+{
+  "taxonomy_completed": true,
+  "original_failure_count": 74,
+  "classified_failure_count": 74,
+  "unknown_failure_count": 0,
+  "dominant_failure_category": "permission_cleanup_temp_dir",
+  "engineering_issue_dominant": true,
+  "candidate_error_dominant": false,
+  "patched_replay_executed": true,
+  "patched_permission_error_count": 0,
+  "patched_compiler_verified_correct_rate": 1,
+  "independent_validation_executed": false,
+  "independent_permission_error_count": 0,
+  "independent_compiler_verified_correct_rate": 0,
+  "boundary_compiler_misroute_count": 0,
+  "temp_manager_fix_applied": true,
+  "original_result_preserved": true,
+  "claim_level_before": "needs_failure_taxonomy",
+  "claim_level_after": "compiler_permission_failures_explained_but_partial_fix",
+  "recommended_claim_level": "compiler_permission_failures_explained_but_partial_fix",
+  "blocking_issues": [
+    "independent validation did not complete under Windows process-spawn instability"
+  ],
+  "required_next_run": "rerun independent validation from a clean MSVC-enabled shell after confirming no stale python/cl/link processes; still no Turing-completeness claim"
+}

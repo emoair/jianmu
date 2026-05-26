@@ -468,3 +468,7 @@ v0.9.7 runs a Bounded Substrate Training Probe（有界程序底座训练探针�
 ## v0.9.7.1 Development Direction
 
 v0.9.7.1 audits the v0.9.7 bounded substrate positive signal and attempts a full-level rerun on the large v0.9.6 substrate dataset. It also runs a bounded-substrate compiler worker scaling check for 8/16/32/64 MSVC cl.exe workers. The version keeps Turing-completeness and solved-program-synthesis claims out of scope.
+
+## v0.9.7.2 Development Direction
+
+v0.9.7.2 performs a compiler PermissionError failure taxonomy for the v0.9.7.1 bounded substrate full-level rerun. It diagnoses MSVC/Windows temporary-file and process-lifecycle failures, preserves the original v0.9.7.1 metrics, reports patched replay separately, and runs an independent compiler validation rerun after any temp/process management fix. It does not claim Turing completeness or solved program synthesis.

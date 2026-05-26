@@ -1,0 +1,11 @@
+{
+  "temp_manager_fix_applied": true,
+  "unique_per_sample_dirs": true,
+  "compiler_tmp_root": "system_temp/jianmu_v0_9_7_2_compiler_tmp",
+  "records_tree_used_for_compiler_tmp": false,
+  "subprocess_uses_list_args": true,
+  "shell_true_used": false,
+  "cleanup_retry_enabled": true,
+  "cleanup_failure_separate_from_compiler_verification": true,
+  "trace_writer_mode": "single file write after worker completion"
+}
