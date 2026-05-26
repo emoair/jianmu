@@ -1,0 +1,10 @@
+{
+  "child_boundary_false_accept_rate": 0.0,
+  "child_eval_sample_count": 32,
+  "child_forbidden_field_access_count": 0,
+  "child_loaded_state": true,
+  "child_state_hash": "453da5d800f449aae205d64b49f46fa97a6952c56c135f004875937a91ce7f90",
+  "child_supported_retention_rate": 1.0,
+  "cross_process_reload_passed": true,
+  "subprocess_spawned": false
+}

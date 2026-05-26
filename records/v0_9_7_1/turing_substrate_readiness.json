@@ -1,0 +1,23 @@
+{
+  "audit_passed_by_scale": {
+    "large": true
+  },
+  "backend_type": "real_c_compiler",
+  "blocking_issues": [],
+  "boundary_compiler_misroute_count": 0,
+  "compile_worker_count": 16,
+  "compiler_name": "cl",
+  "compiler_validation_completed": true,
+  "compiler_verified_correct_rate": 1.0,
+  "dataset_generation_completed": true,
+  "expected_output_access_before_candidate_generation": false,
+  "forbidden_field_access_count": 0,
+  "ready_for_v0_9_7_training_probe": true,
+  "real_compiler_invocation_count": 226,
+  "recommended_claim_level": "turing_substrate_dataset_ready_with_compiler_validation",
+  "required_next_run": "v0.9.7 bounded substrate training probe; do not claim Turing completeness",
+  "scales_completed": [
+    "large"
+  ],
+  "target_ir_access_before_candidate_generation": false
+}

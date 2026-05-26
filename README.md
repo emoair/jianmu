@@ -465,3 +465,6 @@ v0.9.6 builds a Turing Substrate Curriculum Dataset（图灵完备底座课程�
 ## v0.9.7 Development Direction
 
 v0.9.7 runs a Bounded Substrate Training Probe（有界程序底座训练探针） on the v0.9.6 turing-substrate curriculum dataset. It evaluates whether JianMu can improve candidate-space formation for variables, assignments, sequences, if/else, bounded loops, and nested bounded control under no-label free-beam evaluation and real MSVC compiler validation. It does not claim Turing completeness.
+## v0.9.7.1 Development Direction
+
+v0.9.7.1 audits the v0.9.7 bounded substrate positive signal and attempts a full-level rerun on the large v0.9.6 substrate dataset. It also runs a bounded-substrate compiler worker scaling check for 8/16/32/64 MSVC cl.exe workers. The version keeps Turing-completeness and solved-program-synthesis claims out of scope.

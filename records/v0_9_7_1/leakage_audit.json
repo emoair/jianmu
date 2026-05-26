@@ -1,0 +1,31 @@
+{
+  "boundary_label_access_in_free_eval": false,
+  "dataset_audits": [
+    {
+      "audit_passed": true,
+      "blocking_issue_count": 0,
+      "scale": "small"
+    },
+    {
+      "audit_passed": true,
+      "blocking_issue_count": 0,
+      "scale": "medium"
+    },
+    {
+      "audit_passed": true,
+      "blocking_issue_count": 0,
+      "scale": "large"
+    }
+  ],
+  "expected_action_access_in_free_eval": false,
+  "expected_output_access_before_candidate_generation": false,
+  "forbidden_field_access_count": 0,
+  "heldout_train_control_flow_group_leakage_count": 0,
+  "heldout_train_input_leakage_count": 0,
+  "heldout_train_program_group_leakage_count": 0,
+  "heldout_train_target_group_leakage_count": 0,
+  "leakage_audit_passed": true,
+  "nutrient_policy_access_in_free_eval": false,
+  "target_ir_access_before_candidate_generation": false,
+  "toxicity_policy_access_in_free_eval": false
+}

@@ -1,0 +1,78 @@
+{
+  "actual_boundary_iterated_count": 20000,
+  "actual_eval_iterated_count": 9000,
+  "actual_heldout_iterated_count": 3000,
+  "actual_train_iterated_count": 42000,
+  "array_false_accept_rate": 0.0,
+  "backend_type": null,
+  "baseline_gap_verified": true,
+  "blocking_issues": [
+    "compiler_validation_not_real_16_worker"
+  ],
+  "boundary_compiler_misroute_count": 0,
+  "boundary_count": 20000,
+  "branchchain_route_call_count": 42000,
+  "candidate_generation_call_count": 21000,
+  "canonicalizer_call_count": 0,
+  "compile_worker_count": 16,
+  "compiler_name": null,
+  "compiler_validation_sample_count": 0,
+  "compiler_verified_correct_rate": 0.0,
+  "correct_output_in_beam_after": 0.377556,
+  "correct_output_in_beam_before": 0.224,
+  "cross_process_child_eval_count": 32,
+  "cross_process_reload_passed": true,
+  "dataset_scales_used": [
+    "large"
+  ],
+  "eval_count": 9000,
+  "expected_output_access_before_candidate_generation": false,
+  "fixed_metric_detected": false,
+  "forbidden_field_access_count": 0,
+  "forbidden_field_in_state_count": 0,
+  "freebeam_eval_call_count": 21000,
+  "function_false_accept_rate": 0.0,
+  "future_domain_supported_accept_rate": 0.0,
+  "heldout_count": 3000,
+  "heldout_supported_success_rate": 0.383,
+  "mandatory_counter_guard_passed": true,
+  "missing_for_full_state": [],
+  "modes_attempted": [
+    "full-probe"
+  ],
+  "modes_completed": [
+    "full-probe"
+  ],
+  "modes_partial_or_skipped": {},
+  "near_ood_supported_accept_rate": 0.0,
+  "periodic_rule_detected": false,
+  "persisted_state_support_level": "full_router_root",
+  "pointer_false_accept_rate": 0.0,
+  "ready_for_bounded_substrate_probe_claim": false,
+  "real_compiler_invocation_count": 0,
+  "recommended_claim_level": "bounded_substrate_probe_mixed_signal",
+  "recursion_false_accept_rate": 0.0,
+  "required_next_run": "larger bounded substrate rerun with compiler validation; still no Turing-completeness claim",
+  "root_colony_update_call_count": 42000,
+  "seeds_attempted": [
+    56,
+    57,
+    58
+  ],
+  "seeds_completed": [
+    56,
+    57,
+    58
+  ],
+  "supported_candidate_hit_after": 0.402333,
+  "supported_candidate_hit_before": 0.239778,
+  "synthetic_summary_detected": false,
+  "target_ir_access_before_candidate_generation": false,
+  "top1_supported_correct_after": 0.377556,
+  "top1_supported_correct_before": 0.044444,
+  "total_runtime_seconds": 6.067876,
+  "train_count": 42000,
+  "trap_false_accept_rate": 0.0,
+  "unbounded_loop_false_accept_rate": 0.0,
+  "unsupported_false_accept_rate": 0.0
+}

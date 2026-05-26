@@ -1,0 +1,18 @@
+{
+  "actual_boundary_iterated_count": 20000,
+  "actual_eval_iterated_count": 9000,
+  "actual_heldout_iterated_count": 3000,
+  "actual_train_iterated_count": 42000,
+  "branchchain_route_call_count": 42000,
+  "candidate_generation_call_count": 21000,
+  "canonicalizer_call_count": 0,
+  "compiler_validation_sample_count": 0,
+  "cross_process_child_eval_count": 32,
+  "fixed_metric_detected": false,
+  "freebeam_eval_call_count": 21000,
+  "mandatory_counter_guard_passed": true,
+  "periodic_rule_detected": false,
+  "real_compiler_invocation_count": 0,
+  "root_colony_update_call_count": 42000,
+  "synthetic_summary_detected": false
+}

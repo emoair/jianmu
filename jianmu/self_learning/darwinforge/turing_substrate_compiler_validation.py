@@ -100,6 +100,7 @@ def _validate_scale(scale: str, supported: List[Dict[str, Any]], boundary: List[
     runtime_success = sum(1 for row in trace if row.get("runtime_success"))
     verified = sum(1 for row in trace if row.get("compiler_verified_correct"))
     invocations = sum(1 for row in trace if row.get("compiler_invoked"))
+    supported_attempts = len(supported)
     elapsed = round(time.perf_counter() - started, 6)
     latency = _latency(latencies)
     metrics = {
@@ -108,12 +109,12 @@ def _validate_scale(scale: str, supported: List[Dict[str, Any]], boundary: List[
         "boundary_sample_count": len(boundary),
         "real_compiler_invocation_count": invocations if backend.backend_type == "real_c_compiler" else 0,
         "compile_success_count": compile_success,
-        "compile_failure_count": invocations - compile_success,
+        "compile_failure_count": supported_attempts - compile_success,
         "runtime_success_count": runtime_success,
-        "runtime_failure_count": invocations - runtime_success,
+        "runtime_failure_count": supported_attempts - runtime_success,
         "compiler_verified_correct_count": verified,
-        "compiler_verified_failure_count": invocations - verified,
-        "compiler_verified_correct_rate": round(verified / invocations, 6) if invocations else 0.0,
+        "compiler_verified_failure_count": supported_attempts - verified,
+        "compiler_verified_correct_rate": round(verified / supported_attempts, 6) if supported_attempts else 0.0,
         "boundary_compiler_misroute_count": sum(1 for row in trace if row.get("boundary_compiler_misroute")),
         "timeout_count": sum(1 for row in trace if row.get("timeout")),
         "samples_per_second": round(invocations / elapsed, 6) if elapsed > 0 else 0.0,
@@ -254,6 +255,7 @@ def _cond_to_c(cond: Dict[str, Any]) -> str:
 def _aggregate_metrics(metrics_by_scale: Dict[str, Dict[str, Any]], backend: CompilerBackend, compile_worker_count: int) -> Dict[str, Any]:
     invocations = sum(row["real_compiler_invocation_count"] for row in metrics_by_scale.values())
     verified = sum(row["compiler_verified_correct_count"] for row in metrics_by_scale.values())
+    supported_attempts = sum(row.get("supported_sample_count", 0) for row in metrics_by_scale.values())
     latencies: List[float] = []
     weighted_sps = 0.0
     for row in metrics_by_scale.values():
@@ -271,8 +273,8 @@ def _aggregate_metrics(metrics_by_scale: Dict[str, Dict[str, Any]], backend: Com
         "runtime_success_count": sum(row["runtime_success_count"] for row in metrics_by_scale.values()),
         "runtime_failure_count": sum(row["runtime_failure_count"] for row in metrics_by_scale.values()),
         "compiler_verified_correct_count": verified,
-        "compiler_verified_failure_count": invocations - verified,
-        "compiler_verified_correct_rate": round(verified / invocations, 6) if invocations else 0.0,
+        "compiler_verified_failure_count": supported_attempts - verified,
+        "compiler_verified_correct_rate": round(verified / supported_attempts, 6) if supported_attempts else 0.0,
         "boundary_compiler_misroute_count": sum(row["boundary_compiler_misroute_count"] for row in metrics_by_scale.values()),
         "timeout_count": sum(row["timeout_count"] for row in metrics_by_scale.values()),
         "token_spacing_patch_enabled": True,

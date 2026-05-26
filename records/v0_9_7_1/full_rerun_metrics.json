@@ -1,0 +1,55 @@
+{
+  "array_false_accept_rate": 0.0,
+  "baseline_gap_verified": true,
+  "boundary_compiler_misroute_count": 0,
+  "boundary_count": 20000,
+  "correct_output_in_beam_after": 0.377556,
+  "correct_output_in_beam_before": 0.224,
+  "cross_process_reload_passed": true,
+  "dataset_scale_used": "large",
+  "eval_count": 9000,
+  "expected_output_access_before_candidate_generation": false,
+  "fixed_metric_detected": false,
+  "forbidden_field_access_count": 0,
+  "function_false_accept_rate": 0.0,
+  "future_domain_supported_accept_rate": 0.0,
+  "hard_ood_false_accept_rate": 0.0,
+  "heldout_count": 3000,
+  "heldout_supported_success_rate": 0.383,
+  "mandatory_counter_guard_passed": true,
+  "modes_attempted": [
+    "full-probe"
+  ],
+  "modes_completed": [
+    "full-probe"
+  ],
+  "modes_partial": {
+    "full-probe_train_cap": "large dataset contains fewer supported rows than the requested upper cap"
+  },
+  "near_ood_supported_accept_rate": 0.0,
+  "periodic_rule_detected": false,
+  "persisted_state_support_level": "full_router_root",
+  "pointer_false_accept_rate": 0.0,
+  "recursion_false_accept_rate": 0.0,
+  "seeds_attempted": [
+    56,
+    57,
+    58
+  ],
+  "seeds_completed": [
+    56,
+    57,
+    58
+  ],
+  "supported_candidate_hit_after": 0.402333,
+  "supported_candidate_hit_before": 0.239778,
+  "synthetic_summary_detected": false,
+  "target_ir_access_before_candidate_generation": false,
+  "test_count": 0,
+  "top1_supported_correct_after": 0.377556,
+  "top1_supported_correct_before": 0.044444,
+  "train_count": 42000,
+  "trap_false_accept_rate": 0.0,
+  "unbounded_loop_false_accept_rate": 0.0,
+  "unsupported_false_accept_rate": 0.0
+}

@@ -1,0 +1,19 @@
+{
+  "baseline_gap_verified": true,
+  "compiler_validation_real_cl": true,
+  "expected_output_access_before_candidate_generation": false,
+  "failure_examples_count": 50,
+  "fixed_metric_detected": false,
+  "forbidden_field_access_count": 0,
+  "heldout_train_control_flow_group_leakage_count": 0,
+  "heldout_train_input_leakage_count": 0,
+  "heldout_train_program_group_leakage_count": 0,
+  "heldout_train_target_group_leakage_count": 0,
+  "leakage_audit_passed": true,
+  "metric_provenance_passed": true,
+  "periodic_rule_detected": false,
+  "signal_audit_completed": true,
+  "signal_audit_passed": true,
+  "summary_only_detected": false,
+  "target_ir_access_before_candidate_generation": false
+}

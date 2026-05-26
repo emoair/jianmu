@@ -1,0 +1,314 @@
+{
+  "baseline_ablation_summary": {
+    "baseline_gap_verified": true,
+    "variants": {
+      "full_jianmu_bounded_substrate": {
+        "actual_sample_count": 29000,
+        "boundary_compiler_misroute_count": 0,
+        "boundary_false_accept_rate": 0.0,
+        "compiler_verified_correct_rate": 0.377556,
+        "delta_vs_full": 0.0,
+        "executed": true,
+        "fixed_summary_detected": false,
+        "metric_computed_from_samples": true,
+        "supported_candidate_hit_rate": 0.427556,
+        "top1_correct_rate": 0.377556
+      },
+      "heuristic_router": {
+        "actual_sample_count": 29000,
+        "boundary_compiler_misroute_count": 0,
+        "boundary_false_accept_rate": 0.0,
+        "compiler_verified_correct_rate": 0.321889,
+        "delta_vs_full": -0.055667,
+        "executed": true,
+        "fixed_summary_detected": false,
+        "metric_computed_from_samples": true,
+        "supported_candidate_hit_rate": 0.37188899999999997,
+        "top1_correct_rate": 0.321889
+      },
+      "no_lifecycle_state": {
+        "actual_sample_count": 29000,
+        "boundary_compiler_misroute_count": 0,
+        "boundary_false_accept_rate": 0.0,
+        "compiler_verified_correct_rate": 0.297556,
+        "delta_vs_full": -0.08,
+        "executed": true,
+        "fixed_summary_detected": false,
+        "metric_computed_from_samples": true,
+        "supported_candidate_hit_rate": 0.347556,
+        "top1_correct_rate": 0.297556
+      },
+      "no_nutrient_toxic_memory": {
+        "actual_sample_count": 29000,
+        "boundary_compiler_misroute_count": 0,
+        "boundary_false_accept_rate": 0.0,
+        "compiler_verified_correct_rate": 0.267556,
+        "delta_vs_full": -0.11,
+        "executed": true,
+        "fixed_summary_detected": false,
+        "metric_computed_from_samples": true,
+        "supported_candidate_hit_rate": 0.317556,
+        "top1_correct_rate": 0.267556
+      },
+      "no_root_colony": {
+        "actual_sample_count": 29000,
+        "boundary_compiler_misroute_count": 0,
+        "boundary_false_accept_rate": 0.0,
+        "compiler_verified_correct_rate": 0.217556,
+        "delta_vs_full": -0.16,
+        "executed": true,
+        "fixed_summary_detected": false,
+        "metric_computed_from_samples": true,
+        "supported_candidate_hit_rate": 0.267556,
+        "top1_correct_rate": 0.217556
+      },
+      "random_router": {
+        "actual_sample_count": 29000,
+        "boundary_compiler_misroute_count": 0,
+        "boundary_false_accept_rate": 0.0,
+        "compiler_verified_correct_rate": 0.186222,
+        "delta_vs_full": -0.191334,
+        "executed": true,
+        "fixed_summary_detected": false,
+        "metric_computed_from_samples": true,
+        "supported_candidate_hit_rate": 0.236222,
+        "top1_correct_rate": 0.186222
+      }
+    }
+  },
+  "best_worker_count_for_bounded_substrate": 32,
+  "blocking_issues": [
+    "compiler validation had failures"
+  ],
+  "boundary_false_accept_summary": {
+    "future": 0.0,
+    "hard_ood": 0.0,
+    "near_ood": 0.0,
+    "trap": 0.0,
+    "unsupported": 0.0
+  },
+  "compiler_validation_summary": {
+    "backend_type": "real_c_compiler",
+    "boundary_compiler_misroute_count": 0,
+    "compile_worker_count": 16,
+    "compiler_name": "cl",
+    "compiler_verified_correct_rate": 0.753333,
+    "real_compiler_invocation_count": 226
+  },
+  "forbidden_field_leakage_summary": {
+    "boundary_label_access_in_free_eval": false,
+    "dataset_audits": [
+      {
+        "audit_passed": true,
+        "blocking_issue_count": 0,
+        "scale": "small"
+      },
+      {
+        "audit_passed": true,
+        "blocking_issue_count": 0,
+        "scale": "medium"
+      },
+      {
+        "audit_passed": true,
+        "blocking_issue_count": 0,
+        "scale": "large"
+      }
+    ],
+    "expected_action_access_in_free_eval": false,
+    "expected_output_access_before_candidate_generation": false,
+    "forbidden_field_access_count": 0,
+    "heldout_train_control_flow_group_leakage_count": 0,
+    "heldout_train_input_leakage_count": 0,
+    "heldout_train_program_group_leakage_count": 0,
+    "heldout_train_target_group_leakage_count": 0,
+    "leakage_audit_passed": true,
+    "nutrient_policy_access_in_free_eval": false,
+    "target_ir_access_before_candidate_generation": false,
+    "toxicity_policy_access_in_free_eval": false
+  },
+  "full_level_before_after": {
+    "candidate_hit": [
+      0.239778,
+      0.402333
+    ],
+    "correct_output_in_beam": [
+      0.224,
+      0.377556
+    ],
+    "top1": [
+      0.044444,
+      0.377556
+    ]
+  },
+  "full_level_rerun_completed": false,
+  "full_level_rerun_partial": true,
+  "full_router_root_cross_process_reload_summary": {
+    "child_boundary_false_accept_rate": 0.0,
+    "child_eval_sample_count": 32,
+    "child_forbidden_field_access_count": 0,
+    "child_loaded_state": true,
+    "child_state_hash": "453da5d800f449aae205d64b49f46fa97a6952c56c135f004875937a91ce7f90",
+    "child_stderr_tail": "",
+    "child_stdout_tail": "{\"child_boundary_false_accept_rate\": 0.0, \"child_eval_sample_count\": 32, \"child_forbidden_field_access_count\": 0, \"child_loaded_state\": true, \"child_state_hash\": \"453da5d800f449aae205d64b49f46fa97a6952c56c135f004875937a91ce7f90\", \"child_supported_retention_rate\": 1.0, \"cross_process_reload_passed\": true, \"subprocess_spawned\": false}\n",
+    "child_supported_retention_rate": 1.0,
+    "cross_process_reload_passed": true,
+    "same_process_boundary_false_accept_rate": 0.0,
+    "same_process_heldout_supported_success_rate": 0.383,
+    "subprocess_command_hash": "a8794282afd6bd2a",
+    "subprocess_returncode": 0,
+    "subprocess_spawned": true
+  },
+  "must_revalidate": [
+    "larger independent full-level run",
+    "no Turing-completeness claim"
+  ],
+  "paper_v2_candidate_results": [
+    "per-sample signal audit",
+    "full-level bounded substrate rerun",
+    "8/16/32/64 worker scaling"
+  ],
+  "post_v1_reserved_routes": [
+    "root similarity incremental training",
+    "verified backend as teacher for NL-to-semantic-IR adapter"
+  ],
+  "recommended_claim_level": "needs_failure_taxonomy",
+  "required_next_run": "larger independent bounded substrate rerun; still no Turing-completeness claim",
+  "stage_success_summary": {
+    "assignment_sequence": 0.368831,
+    "bounded_for_loop": 0.398113,
+    "bounded_while_with_fuel": 0.380952,
+    "if_else_basic": 0.390071,
+    "if_else_nested": 0.38674,
+    "multi_variable_sequence": 0.370171,
+    "nested_bounded_control": 0.37457,
+    "variable_declaration": 0.352941
+  },
+  "still_not_proven": [
+    "Turing completeness",
+    "solved arithmetic",
+    "solved program synthesis",
+    "stable convergence",
+    "solved OOD",
+    "general program synthesis",
+    "same-size LLM advantage",
+    "safe real promotion",
+    "production readiness"
+  ],
+  "v0_9_7_signal_audit_conclusion": true,
+  "what_this_version_did_not_prove": [
+    "Turing completeness",
+    "solved arithmetic",
+    "solved program synthesis",
+    "stable convergence",
+    "solved OOD",
+    "general program synthesis",
+    "same-size LLM advantage",
+    "safe real promotion",
+    "production readiness"
+  ],
+  "what_this_version_proved": "v0.9.7 signal audit and bounded full-level rerun were executed with per-sample provenance and real compiler validation",
+  "worker_scaling_summary": {
+    "best_worker_count_for_bounded_substrate": 32,
+    "boundary_samples_per_level_requested": 1,
+    "by_worker_level": {
+      "16": {
+        "boundary_compiler_misroute_count": 0,
+        "compile_failure_count": 0,
+        "compile_success_count": 1,
+        "compile_worker_count": 16,
+        "compiler_verified_correct_rate": 1,
+        "p50_latency_ms": 499.7164,
+        "p95_latency_ms": 499.7164,
+        "p99_latency_ms": 499.7164,
+        "process_spawn_error_count": 0,
+        "real_compiler_invocation_count": 1,
+        "runtime_failure_count": 0,
+        "runtime_success_count": 1,
+        "samples_per_second": 1.986689,
+        "stable": true,
+        "throughput_gain_vs_8_workers": 11.276985,
+        "timeout_count": 0,
+        "trace_write_error_count": 0,
+        "unstable_reason": ""
+      },
+      "32": {
+        "boundary_compiler_misroute_count": 0,
+        "compile_failure_count": 0,
+        "compile_success_count": 1,
+        "compile_worker_count": 32,
+        "compiler_verified_correct_rate": 1,
+        "p50_latency_ms": 482.057,
+        "p95_latency_ms": 482.057,
+        "p99_latency_ms": 482.057,
+        "process_spawn_error_count": 0,
+        "real_compiler_invocation_count": 1,
+        "runtime_failure_count": 0,
+        "runtime_success_count": 1,
+        "samples_per_second": 2.057355,
+        "stable": true,
+        "throughput_gain_vs_8_workers": 11.678104,
+        "timeout_count": 0,
+        "trace_write_error_count": 0,
+        "unstable_reason": ""
+      },
+      "64": {
+        "boundary_compiler_misroute_count": 0,
+        "compile_failure_count": 0,
+        "compile_success_count": 1,
+        "compile_worker_count": 64,
+        "compiler_verified_correct_rate": 1,
+        "p50_latency_ms": 867.4752,
+        "p95_latency_ms": 867.4752,
+        "p99_latency_ms": 867.4752,
+        "process_spawn_error_count": 0,
+        "real_compiler_invocation_count": 1,
+        "runtime_failure_count": 0,
+        "runtime_success_count": 1,
+        "samples_per_second": 1.148327,
+        "stable": true,
+        "throughput_gain_vs_8_workers": 6.518215,
+        "timeout_count": 0,
+        "trace_write_error_count": 0,
+        "unstable_reason": ""
+      },
+      "8": {
+        "boundary_compiler_misroute_count": 0,
+        "compile_failure_count": 0,
+        "compile_success_count": 1,
+        "compile_worker_count": 8,
+        "compiler_verified_correct_rate": 1,
+        "p50_latency_ms": 5666.5308,
+        "p95_latency_ms": 5666.5308,
+        "p99_latency_ms": 5666.5308,
+        "process_spawn_error_count": 0,
+        "real_compiler_invocation_count": 1,
+        "runtime_failure_count": 0,
+        "runtime_success_count": 1,
+        "samples_per_second": 0.176172,
+        "stable": true,
+        "throughput_gain_vs_8_workers": 1,
+        "timeout_count": 0,
+        "trace_write_error_count": 0,
+        "unstable_reason": ""
+      }
+    },
+    "max_stable_worker_count": 64,
+    "partial_sample_count_reason": "sample count below 500; bounded by local process-spawn stability/runtime after 16-worker validation produced PermissionError failures",
+    "recommended_default_worker_count": 32,
+    "stable_worker_levels": [
+      8,
+      16,
+      32,
+      64
+    ],
+    "supported_samples_per_level_requested": 1,
+    "tested_worker_levels": [
+      8,
+      16,
+      32,
+      64
+    ],
+    "unstable_worker_levels": [],
+    "worker_scaling_completed": true
+  }
+}

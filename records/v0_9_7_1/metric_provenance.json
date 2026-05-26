@@ -1,0 +1,172 @@
+{
+  "entries": [
+    {
+      "computed_from_sample_records": true,
+      "fixed_value_detected": false,
+      "metric_name": "supported_candidate_hit_before",
+      "notes": "recomputed from per-sample freebeam trace",
+      "per_stage_sample_count": {
+        "assignment_sequence": 625,
+        "bounded_for_loop": 615,
+        "bounded_while_with_fuel": 570,
+        "if_else_basic": 638,
+        "if_else_nested": 597,
+        "multi_variable_sequence": 637,
+        "nested_bounded_control": 678,
+        "variable_declaration": 640
+      },
+      "periodic_rule_detected": false,
+      "recomputed_from_trace": 0.2394,
+      "reported_value": 0.2394,
+      "source_field": "supported_candidate_hit_before",
+      "source_file": "freebeam_before_trace.jsonl",
+      "summary_only_detected": false
+    },
+    {
+      "computed_from_sample_records": true,
+      "fixed_value_detected": false,
+      "metric_name": "supported_candidate_hit_after",
+      "notes": "recomputed from per-sample freebeam trace",
+      "per_stage_sample_count": {
+        "assignment_sequence": 625,
+        "bounded_for_loop": 615,
+        "bounded_while_with_fuel": 570,
+        "if_else_basic": 638,
+        "if_else_nested": 597,
+        "multi_variable_sequence": 637,
+        "nested_bounded_control": 678,
+        "variable_declaration": 640
+      },
+      "periodic_rule_detected": false,
+      "recomputed_from_trace": 0.4068,
+      "reported_value": 0.4068,
+      "source_field": "supported_candidate_hit_after",
+      "source_file": "freebeam_after_trace.jsonl",
+      "summary_only_detected": false
+    },
+    {
+      "computed_from_sample_records": true,
+      "fixed_value_detected": false,
+      "metric_name": "correct_output_in_beam_before",
+      "notes": "recomputed from per-sample freebeam trace",
+      "per_stage_sample_count": {
+        "assignment_sequence": 625,
+        "bounded_for_loop": 615,
+        "bounded_while_with_fuel": 570,
+        "if_else_basic": 638,
+        "if_else_nested": 597,
+        "multi_variable_sequence": 637,
+        "nested_bounded_control": 678,
+        "variable_declaration": 640
+      },
+      "periodic_rule_detected": false,
+      "recomputed_from_trace": 0.2274,
+      "reported_value": 0.2274,
+      "source_field": "correct_output_in_beam_before",
+      "source_file": "freebeam_before_trace.jsonl",
+      "summary_only_detected": false
+    },
+    {
+      "computed_from_sample_records": true,
+      "fixed_value_detected": false,
+      "metric_name": "correct_output_in_beam_after",
+      "notes": "recomputed from per-sample freebeam trace",
+      "per_stage_sample_count": {
+        "assignment_sequence": 625,
+        "bounded_for_loop": 615,
+        "bounded_while_with_fuel": 570,
+        "if_else_basic": 638,
+        "if_else_nested": 597,
+        "multi_variable_sequence": 637,
+        "nested_bounded_control": 678,
+        "variable_declaration": 640
+      },
+      "periodic_rule_detected": false,
+      "recomputed_from_trace": 0.3866,
+      "reported_value": 0.3866,
+      "source_field": "correct_output_in_beam_after",
+      "source_file": "freebeam_after_trace.jsonl",
+      "summary_only_detected": false
+    },
+    {
+      "computed_from_sample_records": true,
+      "fixed_value_detected": false,
+      "metric_name": "top1_supported_correct_before",
+      "notes": "recomputed from per-sample freebeam trace",
+      "per_stage_sample_count": {
+        "assignment_sequence": 625,
+        "bounded_for_loop": 615,
+        "bounded_while_with_fuel": 570,
+        "if_else_basic": 638,
+        "if_else_nested": 597,
+        "multi_variable_sequence": 637,
+        "nested_bounded_control": 678,
+        "variable_declaration": 640
+      },
+      "periodic_rule_detected": false,
+      "recomputed_from_trace": 0.0422,
+      "reported_value": 0.0422,
+      "source_field": "top1_supported_correct_before",
+      "source_file": "freebeam_before_trace.jsonl",
+      "summary_only_detected": false
+    },
+    {
+      "computed_from_sample_records": true,
+      "fixed_value_detected": false,
+      "metric_name": "top1_supported_correct_after",
+      "notes": "recomputed from per-sample freebeam trace",
+      "per_stage_sample_count": {
+        "assignment_sequence": 625,
+        "bounded_for_loop": 615,
+        "bounded_while_with_fuel": 570,
+        "if_else_basic": 638,
+        "if_else_nested": 597,
+        "multi_variable_sequence": 637,
+        "nested_bounded_control": 678,
+        "variable_declaration": 640
+      },
+      "periodic_rule_detected": false,
+      "recomputed_from_trace": 0.3866,
+      "reported_value": 0.3866,
+      "source_field": "top1_supported_correct_after",
+      "source_file": "freebeam_after_trace.jsonl",
+      "summary_only_detected": false
+    },
+    {
+      "computed_from_sample_records": true,
+      "fixed_value_detected": false,
+      "metric_name": "heldout_supported_success_rate",
+      "notes": "trace-backed metric",
+      "per_stage_sample_count": {
+        "assignment_sequence": 259,
+        "bounded_for_loop": 239,
+        "bounded_while_with_fuel": 243,
+        "if_else_basic": 280,
+        "if_else_nested": 237,
+        "multi_variable_sequence": 233,
+        "nested_bounded_control": 261,
+        "variable_declaration": 248
+      },
+      "periodic_rule_detected": false,
+      "source_field": "top1_correct",
+      "source_file": "heldout_freebeam_trace.jsonl",
+      "summary_only_detected": false
+    },
+    {
+      "computed_from_sample_records": true,
+      "fixed_value_detected": false,
+      "metric_name": "compiler_verified_correct_rate",
+      "notes": "trace-backed metric",
+      "per_stage_sample_count": {},
+      "periodic_rule_detected": false,
+      "source_field": "compiler_verified_correct",
+      "source_file": "compiler_validation_trace_manifest.json",
+      "summary_only_detected": false
+    }
+  ],
+  "fixed_value_detected": false,
+  "metric_provenance_passed": true,
+  "mismatched_metrics": [],
+  "periodic_rule_detected": false,
+  "summary_only_detected": false
+}

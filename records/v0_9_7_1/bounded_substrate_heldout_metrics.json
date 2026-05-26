@@ -1,0 +1,261 @@
+{
+  "by_stage": {
+    "assignment_sequence": {
+      "candidate_hit_rate": 0.400545,
+      "compiler_verified_correct_rate": 0.386921,
+      "correct_output_in_beam_rate": 0.386921,
+      "examples_failed": [
+        "0dad231a1b3c16a2",
+        "52c2c96827d60536",
+        "e84df9358e2f3875",
+        "386f44bed831b85a",
+        "58800d70c977e1f4",
+        "6ae591423d28349b",
+        "dc22a594b542376a",
+        "f1103290c05f18dd",
+        "460c4181dde5f3d6",
+        "9910274b1abf4137"
+      ],
+      "examples_success": [
+        "9eba546556f08cda",
+        "d470410a0cd24dd6",
+        "92de50868aa6961b",
+        "596a48878ebfc140",
+        "fe788eb4a265fd1a",
+        "01c6fa5cbd4be8e4",
+        "f9db59bca87717be",
+        "8a680ce8e67635e0",
+        "fb15b87dd2a3b8c8",
+        "277368a508cb6bb8"
+      ],
+      "false_reject_rate": 0.599455,
+      "sample_count": 367,
+      "top1_correct_rate": 0.386921
+    },
+    "bounded_for_loop": {
+      "candidate_hit_rate": 0.410811,
+      "compiler_verified_correct_rate": 0.394595,
+      "correct_output_in_beam_rate": 0.394595,
+      "examples_failed": [
+        "57e9a6c65b9b74d1",
+        "bd6b0174ddab4349",
+        "6ead377cc92ad31c",
+        "4b381fd20c99f5b1",
+        "aa48116c7443b1a3",
+        "6f13c9c79f3a362c",
+        "989c08fe88c6ec60",
+        "8d74fa639246f15f",
+        "cbda1746b89dbb45",
+        "659586e1b4be42f8"
+      ],
+      "examples_success": [
+        "1c3433c27c6ec2ec",
+        "81b8afb33a7809e9",
+        "82f3f62dde8dfdd8",
+        "d3e0df44ba8aef81",
+        "b6909f3b6e1acbfb",
+        "8f6c74de0d675592",
+        "c59c154e83a31b45",
+        "f4adc330173e5329",
+        "04f2125faf430916",
+        "c9be969acfd61366"
+      ],
+      "false_reject_rate": 0.589189,
+      "sample_count": 370,
+      "top1_correct_rate": 0.394595
+    },
+    "bounded_while_with_fuel": {
+      "candidate_hit_rate": 0.389034,
+      "compiler_verified_correct_rate": 0.365535,
+      "correct_output_in_beam_rate": 0.365535,
+      "examples_failed": [
+        "c6f359672dee987e",
+        "29c353e76fed7ca6",
+        "a529244db826a20c",
+        "a762ddc47d7672fd",
+        "d5ab5d1fe9121f53",
+        "81137486177bcb40",
+        "e69947c9a0d62c6a",
+        "dc3a47714d9fcc76",
+        "d46dfa154a00a369",
+        "b66682cd2f65d4cd"
+      ],
+      "examples_success": [
+        "827a34ca6cbc975d",
+        "ac7b2f1fef18a6a4",
+        "a3c5f8073eda7dbd",
+        "08b25dd509b415a4",
+        "43492465ced8563a",
+        "3555c19716ebb0e3",
+        "4bd3f9e0a92d60f0",
+        "5b0f8ea12d36bf74",
+        "a049e062af7f24e6",
+        "06fb1ea0d2c525ec"
+      ],
+      "false_reject_rate": 0.610966,
+      "sample_count": 383,
+      "top1_correct_rate": 0.365535
+    },
+    "if_else_basic": {
+      "candidate_hit_rate": 0.373333,
+      "compiler_verified_correct_rate": 0.354667,
+      "correct_output_in_beam_rate": 0.354667,
+      "examples_failed": [
+        "1527c14f6622eb45",
+        "46bf1ee2d37fcca5",
+        "a50468f229d71146",
+        "a2f3674bfb8cbb5e",
+        "3051b3d09e19c88d",
+        "728104ffdac6fa46",
+        "cdf0b54d7c558233",
+        "37e1a3141246c1ec",
+        "97fa564b6a450277",
+        "345423356f3c19de"
+      ],
+      "examples_success": [
+        "65adc7c581a900c5",
+        "45e5a9d38a6aa055",
+        "c2e2e50a81f00465",
+        "600829910848bc7b",
+        "47740b0b1b2a73a3",
+        "60eb09813205ea12",
+        "572fd3fd8378cc09",
+        "81888060f068db92",
+        "49da3b5547ba1d3d",
+        "8dc568f888b76961"
+      ],
+      "false_reject_rate": 0.626667,
+      "sample_count": 375,
+      "top1_correct_rate": 0.354667
+    },
+    "if_else_nested": {
+      "candidate_hit_rate": 0.417127,
+      "compiler_verified_correct_rate": 0.403315,
+      "correct_output_in_beam_rate": 0.403315,
+      "examples_failed": [
+        "fe328d533cc3b0f3",
+        "e6f83ada3e5e0306",
+        "96e7a015e154ddca",
+        "47f5c0372dfd0ede",
+        "339c8cb829d859c9",
+        "e40997809e40f32b",
+        "0bc40456dddf2ffd",
+        "4c73e18ea6a2016b",
+        "5effc6cbec29d8d8",
+        "a43b6393e2dd97a0"
+      ],
+      "examples_success": [
+        "7f19d3b5a9e2cf98",
+        "28206656c2aa871b",
+        "204fdf0e02001084",
+        "9e776965ee1d8562",
+        "72a933013bb21c7e",
+        "73a47bc2b6188327",
+        "474a216729edf537",
+        "98918f313111244b",
+        "7ad27d3ce622ba8b",
+        "343304f71e006c91"
+      ],
+      "false_reject_rate": 0.582873,
+      "sample_count": 362,
+      "top1_correct_rate": 0.403315
+    },
+    "multi_variable_sequence": {
+      "candidate_hit_rate": 0.420655,
+      "compiler_verified_correct_rate": 0.395466,
+      "correct_output_in_beam_rate": 0.395466,
+      "examples_failed": [
+        "6a4c6d35e77c9348",
+        "42edd11f85ccad99",
+        "228b2539d9a7dc23",
+        "5bc8e77615a2c149",
+        "d91fe86bed3221b3",
+        "c091f4bacdf84abd",
+        "05121060f0bcdd74",
+        "1af421d6d5399b48",
+        "0eedb6e3f6e8d4dc",
+        "ff23b6963a894625"
+      ],
+      "examples_success": [
+        "c3e4c5839e49bb32",
+        "035c20eed13beddd",
+        "fb3bce4cc2d086b5",
+        "375ff005b7e194c6",
+        "cb5edd351ea690a4",
+        "3b661e7393d28602",
+        "87fdc5b1a1a27f85",
+        "ce74a2c12553e5cc",
+        "dde7cbd02c89c22d",
+        "f3b445680c9f0aaf"
+      ],
+      "false_reject_rate": 0.579345,
+      "sample_count": 397,
+      "top1_correct_rate": 0.395466
+    },
+    "nested_bounded_control": {
+      "candidate_hit_rate": 0.412073,
+      "compiler_verified_correct_rate": 0.396325,
+      "correct_output_in_beam_rate": 0.396325,
+      "examples_failed": [
+        "e0306a72e2f537b9",
+        "ce2a05a7667b22a7",
+        "ceb3603263ef4f93",
+        "74b8b5a5c6eee260",
+        "f7df0ab041778b76",
+        "128bc87e94c4e9c0",
+        "430fede002991e5d",
+        "58e26dd84b114e4a",
+        "4c987ba395bd25ec",
+        "34bd1f28e625bc8a"
+      ],
+      "examples_success": [
+        "e99f4e71c82f82de",
+        "40985cd5332b4160",
+        "a2d7bf965e181240",
+        "e1b162985a1aca12",
+        "7e099761c62bda0e",
+        "48f9cf1365a1bd82",
+        "5a0b7e562ed9d6dc",
+        "e5d9940ad5ba43c0",
+        "afb938fb1399b0d5",
+        "3b7185da5b7a0144"
+      ],
+      "false_reject_rate": 0.587927,
+      "sample_count": 381,
+      "top1_correct_rate": 0.396325
+    },
+    "variable_declaration": {
+      "candidate_hit_rate": 0.408219,
+      "compiler_verified_correct_rate": 0.375342,
+      "correct_output_in_beam_rate": 0.375342,
+      "examples_failed": [
+        "72d72d9b44db9481",
+        "bab64a02d4b7f73b",
+        "8d7863cd5f3a3495",
+        "2c56159ca0f6b9a9",
+        "0d1f5c043dc5b82f",
+        "d76af19b95e0fc05",
+        "11eb41401d9dc6f4",
+        "80d9ead3ecd20a2b",
+        "5a04a2c453350f9d",
+        "b5cd0c593b21700f"
+      ],
+      "examples_success": [
+        "9508807898ca2d7a",
+        "a813c87a03a7cb03",
+        "35d1d3dc26bb4861",
+        "a4a8406c362bd5dd",
+        "036464a156a5357f",
+        "dc81ef00469d5746",
+        "88a15cc8544f2ebb",
+        "de38b7ef1513fd0b",
+        "5c262aae7b4d2464",
+        "7e7dc2205cb6d3d9"
+      ],
+      "false_reject_rate": 0.591781,
+      "sample_count": 365,
+      "top1_correct_rate": 0.375342
+    }
+  },
+  "heldout_supported_success_rate": 0.383
+}
