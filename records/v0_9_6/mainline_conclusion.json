@@ -1,0 +1,194 @@
+{
+  "audit_passed_by_scale": {
+    "large": true,
+    "medium": true,
+    "small": true
+  },
+  "blocking_issues": [],
+  "can_enter_v0_9_7_training_probe": true,
+  "category_counts_by_scale": {
+    "large": {
+      "current_supported_turing_substrate": 60000,
+      "future_domain_candidate": 12000,
+      "hard_ood": 7200,
+      "label_review_candidate": 2400,
+      "near_ood_program": 9600,
+      "true_false_accept_trap": 14400,
+      "unsupported_program_boundary": 14400
+    },
+    "medium": {
+      "current_supported_turing_substrate": 25000,
+      "future_domain_candidate": 5000,
+      "hard_ood": 3000,
+      "label_review_candidate": 1000,
+      "near_ood_program": 4000,
+      "true_false_accept_trap": 6000,
+      "unsupported_program_boundary": 6000
+    },
+    "small": {
+      "current_supported_turing_substrate": 5000,
+      "future_domain_candidate": 1000,
+      "hard_ood": 600,
+      "label_review_candidate": 200,
+      "near_ood_program": 800,
+      "true_false_accept_trap": 1200,
+      "unsupported_program_boundary": 1200
+    }
+  },
+  "compile_worker_count_reason": "v0.9.5.1 identified 16 as the best local throughput point",
+  "compiler_validation_result": {
+    "backend_claim_safe": true,
+    "backend_type": "real_c_compiler",
+    "boundary_compiler_misroute_count": 0,
+    "by_scale": {
+      "large": {
+        "boundary_compiler_misroute_count": 0,
+        "boundary_sample_count": 5000,
+        "compile_failure_count": 0,
+        "compile_success_count": 5000,
+        "compiler_verified_correct_count": 5000,
+        "compiler_verified_correct_rate": 1.0,
+        "compiler_verified_failure_count": 0,
+        "p50_latency_ms": 489.5142,
+        "p95_latency_ms": 566.8168,
+        "p99_latency_ms": 620.4523,
+        "real_compiler_invocation_count": 5000,
+        "runtime_failure_count": 0,
+        "runtime_success_count": 5000,
+        "samples_per_second": 32.220087,
+        "scale": "large",
+        "supported_sample_count": 5000,
+        "timeout_count": 0,
+        "total_wall_clock_seconds": 155.182697
+      },
+      "medium": {
+        "boundary_compiler_misroute_count": 0,
+        "boundary_sample_count": 2000,
+        "compile_failure_count": 0,
+        "compile_success_count": 2000,
+        "compiler_verified_correct_count": 2000,
+        "compiler_verified_correct_rate": 1.0,
+        "compiler_verified_failure_count": 0,
+        "p50_latency_ms": 484.6818,
+        "p95_latency_ms": 548.0198,
+        "p99_latency_ms": 577.6202,
+        "real_compiler_invocation_count": 2000,
+        "runtime_failure_count": 0,
+        "runtime_success_count": 2000,
+        "samples_per_second": 32.680253,
+        "scale": "medium",
+        "supported_sample_count": 2000,
+        "timeout_count": 0,
+        "total_wall_clock_seconds": 61.199036
+      },
+      "small": {
+        "boundary_compiler_misroute_count": 0,
+        "boundary_sample_count": 500,
+        "compile_failure_count": 0,
+        "compile_success_count": 500,
+        "compiler_verified_correct_count": 500,
+        "compiler_verified_correct_rate": 1.0,
+        "compiler_verified_failure_count": 0,
+        "p50_latency_ms": 480.91275,
+        "p95_latency_ms": 613.8265,
+        "p99_latency_ms": 7716.591,
+        "real_compiler_invocation_count": 500,
+        "runtime_failure_count": 0,
+        "runtime_success_count": 500,
+        "samples_per_second": 22.139354,
+        "scale": "small",
+        "supported_sample_count": 500,
+        "timeout_count": 0,
+        "total_wall_clock_seconds": 22.584218
+      }
+    },
+    "compile_failure_count": 0,
+    "compile_success_count": 7500,
+    "compile_worker_count": 16,
+    "compiler_environment": "msvc_vcvars64",
+    "compiler_name": "cl",
+    "compiler_verified_correct_count": 7500,
+    "compiler_verified_correct_rate": 1.0,
+    "compiler_verified_failure_count": 0,
+    "expected_output_access_before_candidate_generation": false,
+    "forbidden_field_access_count": 0,
+    "p50_latency_ms": 489.5142,
+    "p95_latency_ms": 613.8265,
+    "p99_latency_ms": 7716.591,
+    "real_compiler_invocation_count": 7500,
+    "runtime_failure_count": 0,
+    "runtime_success_count": 7500,
+    "samples_per_second": 29.013231,
+    "scales_attempted": [
+      "small",
+      "medium",
+      "large"
+    ],
+    "scales_completed": [
+      "small",
+      "medium",
+      "large"
+    ],
+    "target_ir_access_before_candidate_generation": false,
+    "timeout_count": 0,
+    "token_spacing_patch_enabled": true
+  },
+  "dataset_scales_completed": [
+    "small",
+    "medium",
+    "large"
+  ],
+  "leakage_summary": {
+    "large": {
+      "control_flow_group_leakage_count": 0,
+      "program_group_leakage_count": 0,
+      "train_eval_input_leakage_count": 0
+    },
+    "medium": {
+      "control_flow_group_leakage_count": 0,
+      "program_group_leakage_count": 0,
+      "train_eval_input_leakage_count": 0
+    },
+    "small": {
+      "control_flow_group_leakage_count": 0,
+      "program_group_leakage_count": 0,
+      "train_eval_input_leakage_count": 0
+    }
+  },
+  "post_v1_routes_reserved": [
+    "root similarity incremental training",
+    "verified backend as teacher for NL-to-semantic-IR adapter"
+  ],
+  "recommended_claim_level": "turing_substrate_dataset_ready_with_compiler_validation",
+  "results_for_paper_v2": [
+    "turing substrate dataset audit",
+    "16-worker compiler validation spot"
+  ],
+  "results_requiring_revalidation": [
+    "training probe behavior",
+    "larger compiler validation if v0.9.7 uses this dataset"
+  ],
+  "still_not_proven": [
+    "Turing completeness",
+    "solved arithmetic",
+    "stable convergence",
+    "solved OOD",
+    "general program synthesis",
+    "same-size LLM advantage",
+    "safe real promotion",
+    "production readiness"
+  ],
+  "total_samples_generated": 180000,
+  "what_this_version_did_not_prove": [
+    "Turing completeness",
+    "solved arithmetic",
+    "stable convergence",
+    "solved OOD",
+    "general program synthesis",
+    "same-size LLM advantage",
+    "safe real promotion",
+    "production readiness"
+  ],
+  "what_this_version_proved": "audited curriculum data for variables, assignments, sequences, if/else, and bounded loops was generated",
+  "why_substrate_not_complete": "The dataset covers bounded preconditions for Turing-complete structures, not unbounded memory/control or trained capability."
+}

@@ -1,0 +1,26 @@
+{
+  "dataset_version": "v0.9.6",
+  "scale": "small",
+  "shards": [
+    {
+      "path": "eval\\eval_000.jsonl",
+      "size_bytes": 2302300,
+      "split": "eval"
+    },
+    {
+      "path": "heldout\\heldout_000.jsonl",
+      "size_bytes": 752775,
+      "split": "heldout"
+    },
+    {
+      "path": "test\\test_000.jsonl",
+      "size_bytes": 1509625,
+      "split": "test"
+    },
+    {
+      "path": "train\\train_000.jsonl",
+      "size_bytes": 14717544,
+      "split": "train"
+    }
+  ]
+}

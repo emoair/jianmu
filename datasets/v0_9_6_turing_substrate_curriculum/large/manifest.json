@@ -1,0 +1,39 @@
+{
+  "actual_total": 120000,
+  "audit_passed": true,
+  "category_count": {
+    "current_supported_turing_substrate": 60000,
+    "future_domain_candidate": 12000,
+    "hard_ood": 7200,
+    "label_review_candidate": 2400,
+    "near_ood_program": 9600,
+    "true_false_accept_trap": 14400,
+    "unsupported_program_boundary": 14400
+  },
+  "curriculum_stage_count": 11,
+  "dataset_version": "v0.9.6",
+  "requested_total": 120000,
+  "scale": "large",
+  "split_count": {
+    "eval": 18000,
+    "heldout": 6000,
+    "test": 12000,
+    "train": 84000
+  },
+  "stage_count": {
+    "assignment_sequence": 7500,
+    "bounded_for_loop": 7500,
+    "bounded_while_with_fuel": 7500,
+    "future_domain_candidate": 12000,
+    "hard_ood": 7200,
+    "if_else_basic": 7500,
+    "if_else_nested": 7500,
+    "label_review_candidate": 2400,
+    "multi_variable_sequence": 7500,
+    "near_ood_program": 9600,
+    "nested_bounded_control": 7500,
+    "true_false_accept_trap": 14400,
+    "unsupported_program_boundary": 14400,
+    "variable_declaration": 7500
+  }
+}

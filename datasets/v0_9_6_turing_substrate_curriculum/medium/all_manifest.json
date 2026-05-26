@@ -1,0 +1,41 @@
+{
+  "dataset_version": "v0.9.6",
+  "scale": "medium",
+  "shards": [
+    {
+      "path": "eval\\eval_000.jsonl",
+      "size_bytes": 11519000,
+      "split": "eval"
+    },
+    {
+      "path": "heldout\\heldout_000.jsonl",
+      "size_bytes": 3766375,
+      "split": "heldout"
+    },
+    {
+      "path": "test\\test_000.jsonl",
+      "size_bytes": 7553125,
+      "split": "test"
+    },
+    {
+      "path": "train\\train_000.jsonl",
+      "size_bytes": 20995635,
+      "split": "train"
+    },
+    {
+      "path": "train\\train_001.jsonl",
+      "size_bytes": 21089495,
+      "split": "train"
+    },
+    {
+      "path": "train\\train_002.jsonl",
+      "size_bytes": 21034384,
+      "split": "train"
+    },
+    {
+      "path": "train\\train_003.jsonl",
+      "size_bytes": 10476915,
+      "split": "train"
+    }
+  ]
+}

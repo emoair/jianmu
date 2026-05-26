@@ -1,0 +1,76 @@
+{
+  "dataset_version": "v0.9.6",
+  "scale": "large",
+  "shards": [
+    {
+      "path": "eval\\eval_000.jsonl",
+      "size_bytes": 15359233,
+      "split": "eval"
+    },
+    {
+      "path": "eval\\eval_001.jsonl",
+      "size_bytes": 12288367,
+      "split": "eval"
+    },
+    {
+      "path": "heldout\\heldout_000.jsonl",
+      "size_bytes": 9045300,
+      "split": "heldout"
+    },
+    {
+      "path": "test\\test_000.jsonl",
+      "size_bytes": 15116505,
+      "split": "test"
+    },
+    {
+      "path": "test\\test_001.jsonl",
+      "size_bytes": 3022995,
+      "split": "test"
+    },
+    {
+      "path": "train\\train_000.jsonl",
+      "size_bytes": 21016575,
+      "split": "train"
+    },
+    {
+      "path": "train\\train_001.jsonl",
+      "size_bytes": 21021839,
+      "split": "train"
+    },
+    {
+      "path": "train\\train_002.jsonl",
+      "size_bytes": 20991957,
+      "split": "train"
+    },
+    {
+      "path": "train\\train_003.jsonl",
+      "size_bytes": 20971759,
+      "split": "train"
+    },
+    {
+      "path": "train\\train_004.jsonl",
+      "size_bytes": 21023831,
+      "split": "train"
+    },
+    {
+      "path": "train\\train_005.jsonl",
+      "size_bytes": 21053950,
+      "split": "train"
+    },
+    {
+      "path": "train\\train_006.jsonl",
+      "size_bytes": 21092641,
+      "split": "train"
+    },
+    {
+      "path": "train\\train_007.jsonl",
+      "size_bytes": 21057620,
+      "split": "train"
+    },
+    {
+      "path": "train\\train_008.jsonl",
+      "size_bytes": 8401604,
+      "split": "train"
+    }
+  ]
+}

@@ -457,3 +457,7 @@ v0.9.5 performs a Full Compiler-Backed Arithmetic Longrun Probe. After v0.9.4.3 
 ## v0.9.5.1 Development Direction
 
 v0.9.5.1 performs a Compiler Concurrency Scaling Probe. After v0.9.5 established a bounded real MSVC compiler-backed arithmetic longrun, this version measures how cl.exe concurrency affects throughput, latency, timeout rate, process-spawn stability, trace integrity, and boundary safety. It does not claim solved arithmetic or Turing completeness.
+
+## v0.9.6 Development Direction
+
+v0.9.6 builds a Turing Substrate Curriculum Dataset（图灵完备底座课程数据集） after the compiler-backed arithmetic longrun line. It introduces audited curriculum data for variables, assignments, sequences, if/else, bounded loops, and boundary/future-domain program samples. It also runs a 16-worker MSVC compiler validation spot using the tuned concurrency from v0.9.5.1. This version does not claim Turing completeness.

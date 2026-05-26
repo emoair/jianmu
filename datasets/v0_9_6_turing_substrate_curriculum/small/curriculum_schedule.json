@@ -1,0 +1,204 @@
+{
+  "dataset_version": "v0.9.6",
+  "stages": [
+    {
+      "expected_exit_condition": "auditable sample coverage only; no model-training claim",
+      "included_categories": [
+        "current_supported_turing_substrate"
+      ],
+      "included_features": [
+        "has_variable_decl"
+      ],
+      "nutrient_pressure": "reward compiler-verified bounded state updates",
+      "promotion_allowed": false,
+      "real_promotion_allowed": false,
+      "stage_name": "variable_declaration",
+      "target_ood_ratio": 0.25,
+      "target_supported_ratio": 0.75,
+      "toxicity_pressure": "penalize unsafe, unbounded, or future-domain false accepts"
+    },
+    {
+      "expected_exit_condition": "auditable sample coverage only; no model-training claim",
+      "included_categories": [
+        "current_supported_turing_substrate"
+      ],
+      "included_features": [
+        "has_variable_decl",
+        "has_assignment",
+        "has_sequence"
+      ],
+      "nutrient_pressure": "reward compiler-verified bounded state updates",
+      "promotion_allowed": false,
+      "real_promotion_allowed": false,
+      "stage_name": "assignment_sequence",
+      "target_ood_ratio": 0.25,
+      "target_supported_ratio": 0.75,
+      "toxicity_pressure": "penalize unsafe, unbounded, or future-domain false accepts"
+    },
+    {
+      "expected_exit_condition": "auditable sample coverage only; no model-training claim",
+      "included_categories": [
+        "current_supported_turing_substrate"
+      ],
+      "included_features": [
+        "has_variable_decl",
+        "has_assignment",
+        "has_sequence"
+      ],
+      "nutrient_pressure": "reward compiler-verified bounded state updates",
+      "promotion_allowed": false,
+      "real_promotion_allowed": false,
+      "stage_name": "multi_variable_sequence",
+      "target_ood_ratio": 0.25,
+      "target_supported_ratio": 0.75,
+      "toxicity_pressure": "penalize unsafe, unbounded, or future-domain false accepts"
+    },
+    {
+      "expected_exit_condition": "auditable sample coverage only; no model-training claim",
+      "included_categories": [
+        "current_supported_turing_substrate"
+      ],
+      "included_features": [
+        "has_if_else"
+      ],
+      "nutrient_pressure": "reward compiler-verified bounded state updates",
+      "promotion_allowed": false,
+      "real_promotion_allowed": false,
+      "stage_name": "if_else_basic",
+      "target_ood_ratio": 0.25,
+      "target_supported_ratio": 0.75,
+      "toxicity_pressure": "penalize unsafe, unbounded, or future-domain false accepts"
+    },
+    {
+      "expected_exit_condition": "auditable sample coverage only; no model-training claim",
+      "included_categories": [
+        "current_supported_turing_substrate"
+      ],
+      "included_features": [
+        "has_if_else",
+        "has_nested_control"
+      ],
+      "nutrient_pressure": "reward compiler-verified bounded state updates",
+      "promotion_allowed": false,
+      "real_promotion_allowed": false,
+      "stage_name": "if_else_nested",
+      "target_ood_ratio": 0.25,
+      "target_supported_ratio": 0.75,
+      "toxicity_pressure": "penalize unsafe, unbounded, or future-domain false accepts"
+    },
+    {
+      "expected_exit_condition": "auditable sample coverage only; no model-training claim",
+      "included_categories": [
+        "current_supported_turing_substrate"
+      ],
+      "included_features": [
+        "has_for_loop"
+      ],
+      "nutrient_pressure": "reward compiler-verified bounded state updates",
+      "promotion_allowed": false,
+      "real_promotion_allowed": false,
+      "stage_name": "bounded_for_loop",
+      "target_ood_ratio": 0.25,
+      "target_supported_ratio": 0.75,
+      "toxicity_pressure": "penalize unsafe, unbounded, or future-domain false accepts"
+    },
+    {
+      "expected_exit_condition": "auditable sample coverage only; no model-training claim",
+      "included_categories": [
+        "current_supported_turing_substrate"
+      ],
+      "included_features": [
+        "has_while_loop"
+      ],
+      "nutrient_pressure": "reward compiler-verified bounded state updates",
+      "promotion_allowed": false,
+      "real_promotion_allowed": false,
+      "stage_name": "bounded_while_with_fuel",
+      "target_ood_ratio": 0.25,
+      "target_supported_ratio": 0.75,
+      "toxicity_pressure": "penalize unsafe, unbounded, or future-domain false accepts"
+    },
+    {
+      "expected_exit_condition": "auditable sample coverage only; no model-training claim",
+      "included_categories": [
+        "current_supported_turing_substrate"
+      ],
+      "included_features": [
+        "has_nested_control",
+        "has_for_loop",
+        "has_if_else"
+      ],
+      "nutrient_pressure": "reward compiler-verified bounded state updates",
+      "promotion_allowed": false,
+      "real_promotion_allowed": false,
+      "stage_name": "nested_bounded_control",
+      "target_ood_ratio": 0.25,
+      "target_supported_ratio": 0.75,
+      "toxicity_pressure": "penalize unsafe, unbounded, or future-domain false accepts"
+    },
+    {
+      "expected_exit_condition": "auditable sample coverage only; no model-training claim",
+      "included_categories": [
+        "current_supported_turing_substrate",
+        "unsupported_program_boundary",
+        "true_false_accept_trap",
+        "future_domain_candidate",
+        "near_ood_program",
+        "hard_ood"
+      ],
+      "included_features": [
+        "unsupported_boundaries"
+      ],
+      "nutrient_pressure": "reward compiler-verified bounded state updates",
+      "promotion_allowed": false,
+      "real_promotion_allowed": false,
+      "stage_name": "boundary_rejection",
+      "target_ood_ratio": 0.65,
+      "target_supported_ratio": 0.35,
+      "toxicity_pressure": "penalize unsafe, unbounded, or future-domain false accepts"
+    },
+    {
+      "expected_exit_condition": "auditable sample coverage only; no model-training claim",
+      "included_categories": [
+        "current_supported_turing_substrate",
+        "unsupported_program_boundary",
+        "true_false_accept_trap",
+        "future_domain_candidate",
+        "near_ood_program",
+        "hard_ood"
+      ],
+      "included_features": [
+        "future_domain",
+        "near_ood"
+      ],
+      "nutrient_pressure": "reward compiler-verified bounded state updates",
+      "promotion_allowed": false,
+      "real_promotion_allowed": false,
+      "stage_name": "future_near_ood_quarantine",
+      "target_ood_ratio": 0.65,
+      "target_supported_ratio": 0.35,
+      "toxicity_pressure": "penalize unsafe, unbounded, or future-domain false accepts"
+    },
+    {
+      "expected_exit_condition": "auditable sample coverage only; no model-training claim",
+      "included_categories": [
+        "current_supported_turing_substrate",
+        "unsupported_program_boundary",
+        "true_false_accept_trap",
+        "future_domain_candidate",
+        "near_ood_program",
+        "hard_ood"
+      ],
+      "included_features": [
+        "mixed_supported_and_boundary"
+      ],
+      "nutrient_pressure": "reward compiler-verified bounded state updates",
+      "promotion_allowed": false,
+      "real_promotion_allowed": false,
+      "stage_name": "mixed_final",
+      "target_ood_ratio": 0.65,
+      "target_supported_ratio": 0.35,
+      "toxicity_pressure": "penalize unsafe, unbounded, or future-domain false accepts"
+    }
+  ]
+}
