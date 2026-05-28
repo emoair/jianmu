@@ -1,0 +1,21 @@
+{
+  "force_text": true,
+  "metrics_affected_by_progress": false,
+  "progress_backend": "periodic_text",
+  "progress_enabled": true,
+  "progress_errors": [],
+  "progress_events_by_phase": {
+    "allocation-audit": 1,
+    "compiler-validation": 1,
+    "dataset-activation": 1,
+    "reallocation-probe": 1,
+    "resampling-probe": 1
+  },
+  "progress_events_emitted": 5,
+  "progress_first_event_time": 0.011364,
+  "progress_interval_seconds": 2.0,
+  "progress_last_event_time": 932.926263,
+  "progress_min_samples": 250,
+  "progress_overhead_estimated": "low",
+  "tty_detected": false
+}

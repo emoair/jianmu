@@ -500,3 +500,7 @@ v0.9.11 runs a Hundred-Million State Budget Probe after v0.9.10 reproduced targe
 ## v0.9.12 Development Direction
 
 v0.9.12 runs a Billion-State Budget Upper Frontier Probe after v0.9.11 showed smooth positive scaling up to a 100M lazy-indexed state budget. It evaluates 300M, 600M, and 1B JianMu internal state budgets with memory guards, materialization-level reporting, access audits, boundary/future safety checks, and real MSVC compiler validation. The 1B budget is not a neural-network parameter count and is not assumed to be fully materialized. This version does not claim Turing completeness, solved program synthesis, or emergence proven.
+
+## v0.9.12.1 Development Direction
+
+v0.9.12.1 audits why the v0.9.12 1B lazy-indexed state budget has low active touch ratio. It separates tree-layer allocation imbalance from dataset/curriculum activation effects, future-domain quarantine coldness, and sampling imbalance. The version runs dataset-balanced resampling probes and access-aware reallocation diagnostics without changing JianMu's core architecture or promoting a new default profile. It does not claim Turing completeness or solved program synthesis.

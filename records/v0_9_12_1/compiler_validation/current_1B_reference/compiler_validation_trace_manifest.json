@@ -1,0 +1,12 @@
+{
+  "shard_count": 1,
+  "shards": [
+    {
+      "path": "compiler_validation_trace_000.jsonl",
+      "row_count": 3000,
+      "size_bytes": 2570404
+    }
+  ],
+  "total_rows": 3000,
+  "trace_sharded": true
+}

@@ -1,0 +1,272 @@
+{
+  "bounded_control_hard_supported_sufficient_for_probe": true,
+  "dataset_activation_audit_completed": true,
+  "dataset_underactivation_detected": true,
+  "future_quarantine_coldness_intentional": true,
+  "if_for_nested_control_data_still_thin": true,
+  "scales": {
+    "large": {
+      "actual_branch_access": {
+        "bounded_control_hard_branch": 0.052,
+        "future_quarantine_branches": 0.016,
+        "if_loop_nested_branch": 0.045,
+        "supported_bounded_substrate_branch": 0.075
+      },
+      "branch_activation_potential": {
+        "bounded_control_hard_branch": 0.15,
+        "future_quarantine_branches": 0.35,
+        "if_loop_nested_branch": 0.369165,
+        "supported_bounded_substrate_branch": 0.35
+      },
+      "category_count": {
+        "bounded_control_hard_supported": 30000,
+        "current_supported_bounded_substrate": 70000,
+        "future_array_candidate": 20000,
+        "future_function_candidate": 20000,
+        "future_recursion_candidate": 16000,
+        "hard_ood": 6000,
+        "label_review_candidate": 4000,
+        "near_ood_program": 10000,
+        "true_false_accept_trap": 10000,
+        "unsupported_unbounded_loop": 14000
+      },
+      "control_stage_counts": {
+        "bounded_control_hard_supported": 30000,
+        "bounded_for_loop": 8788,
+        "bounded_while_with_fuel": 8716,
+        "if_else_basic": 8859,
+        "if_else_nested": 8700,
+        "nested_bounded_control": 8770
+      },
+      "data_activation_gap": {
+        "bounded_control_hard_branch": 0.098,
+        "future_quarantine_branches": 0.334,
+        "if_loop_nested_branch": 0.324165,
+        "supported_bounded_substrate_branch": 0.275
+      },
+      "dataset_sufficiency_score": 0.675835,
+      "expected_branch_activation": {
+        "bounded_control_hard_branch": 0.15,
+        "future_quarantine_branches": 0.35,
+        "if_loop_nested_branch": 0.369165,
+        "supported_bounded_substrate_branch": 0.35
+      },
+      "function_array_recursion_unbounded_counts": {
+        "future_array_candidate": 20000,
+        "future_function_candidate": 20000,
+        "future_recursion_candidate": 16000,
+        "unsupported_unbounded_loop": 14000
+      },
+      "future_frontier_coverage_score": 0.35,
+      "split_count": {
+        "eval": 30000,
+        "heldout": 10000,
+        "test": 20000,
+        "train": 140000
+      },
+      "stage_count": {
+        "assignment_sequence": 8774,
+        "bounded_control_hard_supported": 30000,
+        "bounded_for_loop": 8788,
+        "bounded_while_with_fuel": 8716,
+        "future_array": 20000,
+        "future_function": 20000,
+        "future_recursion": 16000,
+        "hard_ood": 6000,
+        "if_else_basic": 8859,
+        "if_else_nested": 8700,
+        "label_review_candidate": 4000,
+        "multi_variable_sequence": 8687,
+        "near_ood_program": 10000,
+        "nested_bounded_control": 8770,
+        "true_false_accept_trap": 10000,
+        "unsupported_unbounded_loop": 14000,
+        "variable_declaration": 8706
+      },
+      "supported_control_coverage_score": 0.519165,
+      "supported_vs_hard_supported_vs_future_vs_unsupported": {
+        "future_or_unbounded": 70000,
+        "hard_supported": 30000,
+        "supported": 70000,
+        "unsupported_or_trap": 30000
+      },
+      "total_count": 200000
+    },
+    "medium": {
+      "actual_branch_access": {
+        "bounded_control_hard_branch": 0.052,
+        "future_quarantine_branches": 0.016,
+        "if_loop_nested_branch": 0.045,
+        "supported_bounded_substrate_branch": 0.075
+      },
+      "branch_activation_potential": {
+        "bounded_control_hard_branch": 0.15,
+        "future_quarantine_branches": 0.35,
+        "if_loop_nested_branch": 0.368575,
+        "supported_bounded_substrate_branch": 0.35
+      },
+      "category_count": {
+        "bounded_control_hard_supported": 12000,
+        "current_supported_bounded_substrate": 28000,
+        "future_array_candidate": 8000,
+        "future_function_candidate": 8000,
+        "future_recursion_candidate": 6400,
+        "hard_ood": 2400,
+        "label_review_candidate": 1600,
+        "near_ood_program": 4000,
+        "true_false_accept_trap": 4000,
+        "unsupported_unbounded_loop": 5600
+      },
+      "control_stage_counts": {
+        "bounded_control_hard_supported": 12000,
+        "bounded_for_loop": 3545,
+        "bounded_while_with_fuel": 3490,
+        "if_else_basic": 3531,
+        "if_else_nested": 3438,
+        "nested_bounded_control": 3482
+      },
+      "data_activation_gap": {
+        "bounded_control_hard_branch": 0.098,
+        "future_quarantine_branches": 0.334,
+        "if_loop_nested_branch": 0.323575,
+        "supported_bounded_substrate_branch": 0.275
+      },
+      "dataset_sufficiency_score": 0.676425,
+      "expected_branch_activation": {
+        "bounded_control_hard_branch": 0.15,
+        "future_quarantine_branches": 0.35,
+        "if_loop_nested_branch": 0.368575,
+        "supported_bounded_substrate_branch": 0.35
+      },
+      "function_array_recursion_unbounded_counts": {
+        "future_array_candidate": 8000,
+        "future_function_candidate": 8000,
+        "future_recursion_candidate": 6400,
+        "unsupported_unbounded_loop": 5600
+      },
+      "future_frontier_coverage_score": 0.35,
+      "split_count": {
+        "eval": 12000,
+        "heldout": 4000,
+        "test": 8000,
+        "train": 56000
+      },
+      "stage_count": {
+        "assignment_sequence": 3535,
+        "bounded_control_hard_supported": 12000,
+        "bounded_for_loop": 3545,
+        "bounded_while_with_fuel": 3490,
+        "future_array": 8000,
+        "future_function": 8000,
+        "future_recursion": 6400,
+        "hard_ood": 2400,
+        "if_else_basic": 3531,
+        "if_else_nested": 3438,
+        "label_review_candidate": 1600,
+        "multi_variable_sequence": 3497,
+        "near_ood_program": 4000,
+        "nested_bounded_control": 3482,
+        "true_false_accept_trap": 4000,
+        "unsupported_unbounded_loop": 5600,
+        "variable_declaration": 3482
+      },
+      "supported_control_coverage_score": 0.518575,
+      "supported_vs_hard_supported_vs_future_vs_unsupported": {
+        "future_or_unbounded": 28000,
+        "hard_supported": 12000,
+        "supported": 28000,
+        "unsupported_or_trap": 12000
+      },
+      "total_count": 80000
+    },
+    "small": {
+      "actual_branch_access": {
+        "bounded_control_hard_branch": 0.052,
+        "future_quarantine_branches": 0.016,
+        "if_loop_nested_branch": 0.045,
+        "supported_bounded_substrate_branch": 0.075
+      },
+      "branch_activation_potential": {
+        "bounded_control_hard_branch": 0.15,
+        "future_quarantine_branches": 0.35,
+        "if_loop_nested_branch": 0.36845,
+        "supported_bounded_substrate_branch": 0.35
+      },
+      "category_count": {
+        "bounded_control_hard_supported": 3000,
+        "current_supported_bounded_substrate": 7000,
+        "future_array_candidate": 2000,
+        "future_function_candidate": 2000,
+        "future_recursion_candidate": 1600,
+        "hard_ood": 600,
+        "label_review_candidate": 400,
+        "near_ood_program": 1000,
+        "true_false_accept_trap": 1000,
+        "unsupported_unbounded_loop": 1400
+      },
+      "control_stage_counts": {
+        "bounded_control_hard_supported": 3000,
+        "bounded_for_loop": 895,
+        "bounded_while_with_fuel": 868,
+        "if_else_basic": 887,
+        "if_else_nested": 829,
+        "nested_bounded_control": 890
+      },
+      "data_activation_gap": {
+        "bounded_control_hard_branch": 0.098,
+        "future_quarantine_branches": 0.334,
+        "if_loop_nested_branch": 0.32345,
+        "supported_bounded_substrate_branch": 0.275
+      },
+      "dataset_sufficiency_score": 0.67655,
+      "expected_branch_activation": {
+        "bounded_control_hard_branch": 0.15,
+        "future_quarantine_branches": 0.35,
+        "if_loop_nested_branch": 0.36845,
+        "supported_bounded_substrate_branch": 0.35
+      },
+      "function_array_recursion_unbounded_counts": {
+        "future_array_candidate": 2000,
+        "future_function_candidate": 2000,
+        "future_recursion_candidate": 1600,
+        "unsupported_unbounded_loop": 1400
+      },
+      "future_frontier_coverage_score": 0.35,
+      "split_count": {
+        "eval": 3000,
+        "heldout": 1000,
+        "test": 2000,
+        "train": 14000
+      },
+      "stage_count": {
+        "assignment_sequence": 863,
+        "bounded_control_hard_supported": 3000,
+        "bounded_for_loop": 895,
+        "bounded_while_with_fuel": 868,
+        "future_array": 2000,
+        "future_function": 2000,
+        "future_recursion": 1600,
+        "hard_ood": 600,
+        "if_else_basic": 887,
+        "if_else_nested": 829,
+        "label_review_candidate": 400,
+        "multi_variable_sequence": 913,
+        "near_ood_program": 1000,
+        "nested_bounded_control": 890,
+        "true_false_accept_trap": 1000,
+        "unsupported_unbounded_loop": 1400,
+        "variable_declaration": 855
+      },
+      "supported_control_coverage_score": 0.51845,
+      "supported_vs_hard_supported_vs_future_vs_unsupported": {
+        "future_or_unbounded": 7000,
+        "hard_supported": 3000,
+        "supported": 7000,
+        "unsupported_or_trap": 3000
+      },
+      "total_count": 20000
+    }
+  },
+  "state_1B_touch_ratio": 0.052,
+  "upper_branch_coldness_cause": "mixed_intentional_future_quarantine_and_supported_control_underactivation"
+}

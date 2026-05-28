@@ -1,0 +1,11 @@
+{"failure_type": "insufficient_data_activation", "layer_name": "bounded_control_hard_branch", "safe_program_preview": "diagnostic layer summary only", "touch_ratio": 0.052}
+{"failure_type": "insufficient_data_activation", "layer_name": "if_else_branch", "safe_program_preview": "diagnostic layer summary only", "touch_ratio": 0.043}
+{"failure_type": "insufficient_data_activation", "layer_name": "loop_branch", "safe_program_preview": "diagnostic layer summary only", "touch_ratio": 0.045}
+{"failure_type": "insufficient_data_activation", "layer_name": "nested_control_branch", "safe_program_preview": "diagnostic layer summary only", "touch_ratio": 0.047}
+{"failure_type": "overallocated", "layer_name": "candidate_fragment_leaf", "safe_program_preview": "diagnostic layer summary only", "touch_ratio": 0.082}
+{"failure_type": "insufficient_data_activation", "layer_name": "control_template_leaf", "safe_program_preview": "diagnostic layer summary only", "touch_ratio": 0.049}
+{"failure_type": "intentionally_cold", "layer_name": "future_function_quarantine_branch", "safe_program_preview": "diagnostic layer summary only", "touch_ratio": 0.018}
+{"failure_type": "intentionally_cold", "layer_name": "future_array_quarantine_branch", "safe_program_preview": "diagnostic layer summary only", "touch_ratio": 0.017}
+{"failure_type": "intentionally_cold", "layer_name": "future_recursion_quarantine_branch", "safe_program_preview": "diagnostic layer summary only", "touch_ratio": 0.015}
+{"failure_type": "intentionally_cold", "layer_name": "unbounded_loop_quarantine_branch", "safe_program_preview": "diagnostic layer summary only", "touch_ratio": 0.014}
+{"failure_type": "intentionally_cold", "layer_name": "hard_ood_rejection_branch", "safe_program_preview": "diagnostic layer summary only", "touch_ratio": 0.021}

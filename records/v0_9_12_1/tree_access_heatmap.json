@@ -1,0 +1,2833 @@
+{
+  "accidental_cold_supported_branches": [
+    "bounded_control_hard_branch",
+    "if_else_branch",
+    "loop_branch",
+    "nested_control_branch",
+    "control_template_leaf"
+  ],
+  "cold_upper_branches": [
+    "bounded_control_hard_branch",
+    "if_else_branch",
+    "loop_branch",
+    "nested_control_branch",
+    "future_function_quarantine_branch",
+    "future_array_quarantine_branch",
+    "future_recursion_quarantine_branch",
+    "unbounded_loop_quarantine_branch",
+    "hard_ood_rejection_branch"
+  ],
+  "hot_leaf_branches": [
+    "candidate_fragment_leaf"
+  ],
+  "intentionally_cold_future_branches": [
+    "future_function_quarantine_branch",
+    "future_array_quarantine_branch",
+    "future_recursion_quarantine_branch",
+    "unbounded_loop_quarantine_branch",
+    "hard_ood_rejection_branch"
+  ],
+  "layer_x_category": {
+    "bounded_control_hard_branch": {
+      "bounded_control_hard_supported": {
+        "cold_state_ratio": 0.994051,
+        "hot_state_ratio": 0.005949,
+        "lookup_count": 105878,
+        "touch_ratio": 0.052
+      },
+      "current_supported_bounded_substrate": {
+        "cold_state_ratio": 0.999108,
+        "hot_state_ratio": 0.000892,
+        "lookup_count": 15881,
+        "touch_ratio": 0.0078
+      },
+      "future_array_candidate": {
+        "cold_state_ratio": 0.999108,
+        "hot_state_ratio": 0.000892,
+        "lookup_count": 15881,
+        "touch_ratio": 0.0078
+      },
+      "future_function_candidate": {
+        "cold_state_ratio": 0.999108,
+        "hot_state_ratio": 0.000892,
+        "lookup_count": 15881,
+        "touch_ratio": 0.0078
+      },
+      "future_recursion_candidate": {
+        "cold_state_ratio": 0.999108,
+        "hot_state_ratio": 0.000892,
+        "lookup_count": 15881,
+        "touch_ratio": 0.0078
+      },
+      "hard_ood": {
+        "cold_state_ratio": 0.999108,
+        "hot_state_ratio": 0.000892,
+        "lookup_count": 15881,
+        "touch_ratio": 0.0078
+      },
+      "near_ood_program": {
+        "cold_state_ratio": 0.999108,
+        "hot_state_ratio": 0.000892,
+        "lookup_count": 15881,
+        "touch_ratio": 0.0078
+      },
+      "true_false_accept_trap": {
+        "cold_state_ratio": 0.999108,
+        "hot_state_ratio": 0.000892,
+        "lookup_count": 15881,
+        "touch_ratio": 0.0078
+      },
+      "unsupported_unbounded_loop": {
+        "cold_state_ratio": 0.999108,
+        "hot_state_ratio": 0.000892,
+        "lookup_count": 15881,
+        "touch_ratio": 0.0078
+      }
+    },
+    "candidate_fragment_leaf": {
+      "bounded_control_hard_supported": {
+        "cold_state_ratio": 0.985207,
+        "hot_state_ratio": 0.014793,
+        "lookup_count": 435592,
+        "touch_ratio": 0.082
+      },
+      "current_supported_bounded_substrate": {
+        "cold_state_ratio": 0.985207,
+        "hot_state_ratio": 0.014793,
+        "lookup_count": 435592,
+        "touch_ratio": 0.082
+      },
+      "future_array_candidate": {
+        "cold_state_ratio": 0.997781,
+        "hot_state_ratio": 0.002219,
+        "lookup_count": 65338,
+        "touch_ratio": 0.0123
+      },
+      "future_function_candidate": {
+        "cold_state_ratio": 0.997781,
+        "hot_state_ratio": 0.002219,
+        "lookup_count": 65338,
+        "touch_ratio": 0.0123
+      },
+      "future_recursion_candidate": {
+        "cold_state_ratio": 0.997781,
+        "hot_state_ratio": 0.002219,
+        "lookup_count": 65338,
+        "touch_ratio": 0.0123
+      },
+      "hard_ood": {
+        "cold_state_ratio": 0.997781,
+        "hot_state_ratio": 0.002219,
+        "lookup_count": 65338,
+        "touch_ratio": 0.0123
+      },
+      "near_ood_program": {
+        "cold_state_ratio": 0.997781,
+        "hot_state_ratio": 0.002219,
+        "lookup_count": 65338,
+        "touch_ratio": 0.0123
+      },
+      "true_false_accept_trap": {
+        "cold_state_ratio": 0.997781,
+        "hot_state_ratio": 0.002219,
+        "lookup_count": 65338,
+        "touch_ratio": 0.0123
+      },
+      "unsupported_unbounded_loop": {
+        "cold_state_ratio": 0.997781,
+        "hot_state_ratio": 0.002219,
+        "lookup_count": 65338,
+        "touch_ratio": 0.0123
+      }
+    },
+    "control_template_leaf": {
+      "bounded_control_hard_supported": {
+        "cold_state_ratio": 0.994718,
+        "hot_state_ratio": 0.005282,
+        "lookup_count": 184759,
+        "touch_ratio": 0.049
+      },
+      "current_supported_bounded_substrate": {
+        "cold_state_ratio": 0.999208,
+        "hot_state_ratio": 0.000792,
+        "lookup_count": 27713,
+        "touch_ratio": 0.00735
+      },
+      "future_array_candidate": {
+        "cold_state_ratio": 0.999208,
+        "hot_state_ratio": 0.000792,
+        "lookup_count": 27713,
+        "touch_ratio": 0.00735
+      },
+      "future_function_candidate": {
+        "cold_state_ratio": 0.999208,
+        "hot_state_ratio": 0.000792,
+        "lookup_count": 27713,
+        "touch_ratio": 0.00735
+      },
+      "future_recursion_candidate": {
+        "cold_state_ratio": 0.999208,
+        "hot_state_ratio": 0.000792,
+        "lookup_count": 27713,
+        "touch_ratio": 0.00735
+      },
+      "hard_ood": {
+        "cold_state_ratio": 0.999208,
+        "hot_state_ratio": 0.000792,
+        "lookup_count": 27713,
+        "touch_ratio": 0.00735
+      },
+      "near_ood_program": {
+        "cold_state_ratio": 0.999208,
+        "hot_state_ratio": 0.000792,
+        "lookup_count": 27713,
+        "touch_ratio": 0.00735
+      },
+      "true_false_accept_trap": {
+        "cold_state_ratio": 0.999208,
+        "hot_state_ratio": 0.000792,
+        "lookup_count": 27713,
+        "touch_ratio": 0.00735
+      },
+      "unsupported_unbounded_loop": {
+        "cold_state_ratio": 0.999208,
+        "hot_state_ratio": 0.000792,
+        "lookup_count": 27713,
+        "touch_ratio": 0.00735
+      }
+    },
+    "failure_pattern_memory": {
+      "bounded_control_hard_supported": {
+        "cold_state_ratio": 0.99889,
+        "hot_state_ratio": 0.00111,
+        "lookup_count": 15972,
+        "touch_ratio": 0.0087
+      },
+      "current_supported_bounded_substrate": {
+        "cold_state_ratio": 0.99889,
+        "hot_state_ratio": 0.00111,
+        "lookup_count": 15972,
+        "touch_ratio": 0.0087
+      },
+      "future_array_candidate": {
+        "cold_state_ratio": 0.99889,
+        "hot_state_ratio": 0.00111,
+        "lookup_count": 15972,
+        "touch_ratio": 0.0087
+      },
+      "future_function_candidate": {
+        "cold_state_ratio": 0.99889,
+        "hot_state_ratio": 0.00111,
+        "lookup_count": 15972,
+        "touch_ratio": 0.0087
+      },
+      "future_recursion_candidate": {
+        "cold_state_ratio": 0.99889,
+        "hot_state_ratio": 0.00111,
+        "lookup_count": 15972,
+        "touch_ratio": 0.0087
+      },
+      "hard_ood": {
+        "cold_state_ratio": 0.99889,
+        "hot_state_ratio": 0.00111,
+        "lookup_count": 15972,
+        "touch_ratio": 0.0087
+      },
+      "near_ood_program": {
+        "cold_state_ratio": 0.99889,
+        "hot_state_ratio": 0.00111,
+        "lookup_count": 15972,
+        "touch_ratio": 0.0087
+      },
+      "true_false_accept_trap": {
+        "cold_state_ratio": 0.99889,
+        "hot_state_ratio": 0.00111,
+        "lookup_count": 15972,
+        "touch_ratio": 0.0087
+      },
+      "unsupported_unbounded_loop": {
+        "cold_state_ratio": 0.99889,
+        "hot_state_ratio": 0.00111,
+        "lookup_count": 15972,
+        "touch_ratio": 0.0087
+      }
+    },
+    "future_array_quarantine_branch": {
+      "bounded_control_hard_supported": {
+        "cold_state_ratio": 0.999905,
+        "hot_state_ratio": 9.5e-05,
+        "lookup_count": 5757,
+        "touch_ratio": 0.00255
+      },
+      "current_supported_bounded_substrate": {
+        "cold_state_ratio": 0.999905,
+        "hot_state_ratio": 9.5e-05,
+        "lookup_count": 5757,
+        "touch_ratio": 0.00255
+      },
+      "future_array_candidate": {
+        "cold_state_ratio": 0.999364,
+        "hot_state_ratio": 0.000636,
+        "lookup_count": 38383,
+        "touch_ratio": 0.017
+      },
+      "future_function_candidate": {
+        "cold_state_ratio": 0.999905,
+        "hot_state_ratio": 9.5e-05,
+        "lookup_count": 5757,
+        "touch_ratio": 0.00255
+      },
+      "future_recursion_candidate": {
+        "cold_state_ratio": 0.999905,
+        "hot_state_ratio": 9.5e-05,
+        "lookup_count": 5757,
+        "touch_ratio": 0.00255
+      },
+      "hard_ood": {
+        "cold_state_ratio": 0.999905,
+        "hot_state_ratio": 9.5e-05,
+        "lookup_count": 5757,
+        "touch_ratio": 0.00255
+      },
+      "near_ood_program": {
+        "cold_state_ratio": 0.999905,
+        "hot_state_ratio": 9.5e-05,
+        "lookup_count": 5757,
+        "touch_ratio": 0.00255
+      },
+      "true_false_accept_trap": {
+        "cold_state_ratio": 0.999905,
+        "hot_state_ratio": 9.5e-05,
+        "lookup_count": 5757,
+        "touch_ratio": 0.00255
+      },
+      "unsupported_unbounded_loop": {
+        "cold_state_ratio": 0.999905,
+        "hot_state_ratio": 9.5e-05,
+        "lookup_count": 5757,
+        "touch_ratio": 0.00255
+      }
+    },
+    "future_function_quarantine_branch": {
+      "bounded_control_hard_supported": {
+        "cold_state_ratio": 0.999893,
+        "hot_state_ratio": 0.000107,
+        "lookup_count": 5763,
+        "touch_ratio": 0.0027
+      },
+      "current_supported_bounded_substrate": {
+        "cold_state_ratio": 0.999893,
+        "hot_state_ratio": 0.000107,
+        "lookup_count": 5763,
+        "touch_ratio": 0.0027
+      },
+      "future_array_candidate": {
+        "cold_state_ratio": 0.999893,
+        "hot_state_ratio": 0.000107,
+        "lookup_count": 5763,
+        "touch_ratio": 0.0027
+      },
+      "future_function_candidate": {
+        "cold_state_ratio": 0.999287,
+        "hot_state_ratio": 0.000713,
+        "lookup_count": 38421,
+        "touch_ratio": 0.018
+      },
+      "future_recursion_candidate": {
+        "cold_state_ratio": 0.999893,
+        "hot_state_ratio": 0.000107,
+        "lookup_count": 5763,
+        "touch_ratio": 0.0027
+      },
+      "hard_ood": {
+        "cold_state_ratio": 0.999893,
+        "hot_state_ratio": 0.000107,
+        "lookup_count": 5763,
+        "touch_ratio": 0.0027
+      },
+      "near_ood_program": {
+        "cold_state_ratio": 0.999893,
+        "hot_state_ratio": 0.000107,
+        "lookup_count": 5763,
+        "touch_ratio": 0.0027
+      },
+      "true_false_accept_trap": {
+        "cold_state_ratio": 0.999893,
+        "hot_state_ratio": 0.000107,
+        "lookup_count": 5763,
+        "touch_ratio": 0.0027
+      },
+      "unsupported_unbounded_loop": {
+        "cold_state_ratio": 0.999893,
+        "hot_state_ratio": 0.000107,
+        "lookup_count": 5763,
+        "touch_ratio": 0.0027
+      }
+    },
+    "future_recursion_quarantine_branch": {
+      "bounded_control_hard_supported": {
+        "cold_state_ratio": 0.999926,
+        "hot_state_ratio": 7.4e-05,
+        "lookup_count": 4788,
+        "touch_ratio": 0.00225
+      },
+      "current_supported_bounded_substrate": {
+        "cold_state_ratio": 0.999926,
+        "hot_state_ratio": 7.4e-05,
+        "lookup_count": 4788,
+        "touch_ratio": 0.00225
+      },
+      "future_array_candidate": {
+        "cold_state_ratio": 0.999926,
+        "hot_state_ratio": 7.4e-05,
+        "lookup_count": 4788,
+        "touch_ratio": 0.00225
+      },
+      "future_function_candidate": {
+        "cold_state_ratio": 0.999926,
+        "hot_state_ratio": 7.4e-05,
+        "lookup_count": 4788,
+        "touch_ratio": 0.00225
+      },
+      "future_recursion_candidate": {
+        "cold_state_ratio": 0.999505,
+        "hot_state_ratio": 0.000495,
+        "lookup_count": 31923,
+        "touch_ratio": 0.015
+      },
+      "hard_ood": {
+        "cold_state_ratio": 0.999926,
+        "hot_state_ratio": 7.4e-05,
+        "lookup_count": 4788,
+        "touch_ratio": 0.00225
+      },
+      "near_ood_program": {
+        "cold_state_ratio": 0.999926,
+        "hot_state_ratio": 7.4e-05,
+        "lookup_count": 4788,
+        "touch_ratio": 0.00225
+      },
+      "true_false_accept_trap": {
+        "cold_state_ratio": 0.999926,
+        "hot_state_ratio": 7.4e-05,
+        "lookup_count": 4788,
+        "touch_ratio": 0.00225
+      },
+      "unsupported_unbounded_loop": {
+        "cold_state_ratio": 0.999926,
+        "hot_state_ratio": 7.4e-05,
+        "lookup_count": 4788,
+        "touch_ratio": 0.00225
+      }
+    },
+    "hard_ood_rejection_branch": {
+      "bounded_control_hard_supported": {
+        "cold_state_ratio": 0.999854,
+        "hot_state_ratio": 0.000146,
+        "lookup_count": 2890,
+        "touch_ratio": 0.00315
+      },
+      "current_supported_bounded_substrate": {
+        "cold_state_ratio": 0.999854,
+        "hot_state_ratio": 0.000146,
+        "lookup_count": 2890,
+        "touch_ratio": 0.00315
+      },
+      "future_array_candidate": {
+        "cold_state_ratio": 0.999854,
+        "hot_state_ratio": 0.000146,
+        "lookup_count": 2890,
+        "touch_ratio": 0.00315
+      },
+      "future_function_candidate": {
+        "cold_state_ratio": 0.999854,
+        "hot_state_ratio": 0.000146,
+        "lookup_count": 2890,
+        "touch_ratio": 0.00315
+      },
+      "future_recursion_candidate": {
+        "cold_state_ratio": 0.999854,
+        "hot_state_ratio": 0.000146,
+        "lookup_count": 2890,
+        "touch_ratio": 0.00315
+      },
+      "hard_ood": {
+        "cold_state_ratio": 0.99903,
+        "hot_state_ratio": 0.00097,
+        "lookup_count": 19267,
+        "touch_ratio": 0.021
+      },
+      "near_ood_program": {
+        "cold_state_ratio": 0.999854,
+        "hot_state_ratio": 0.000146,
+        "lookup_count": 2890,
+        "touch_ratio": 0.00315
+      },
+      "true_false_accept_trap": {
+        "cold_state_ratio": 0.99903,
+        "hot_state_ratio": 0.00097,
+        "lookup_count": 19267,
+        "touch_ratio": 0.021
+      },
+      "unsupported_unbounded_loop": {
+        "cold_state_ratio": 0.999854,
+        "hot_state_ratio": 0.000146,
+        "lookup_count": 2890,
+        "touch_ratio": 0.00315
+      }
+    },
+    "if_else_branch": {
+      "bounded_control_hard_supported": {
+        "cold_state_ratio": 0.99939,
+        "hot_state_ratio": 0.00061,
+        "lookup_count": 11809,
+        "touch_ratio": 0.00645
+      },
+      "current_supported_bounded_substrate": {
+        "cold_state_ratio": 0.995932,
+        "hot_state_ratio": 0.004068,
+        "lookup_count": 78729,
+        "touch_ratio": 0.043
+      },
+      "future_array_candidate": {
+        "cold_state_ratio": 0.99939,
+        "hot_state_ratio": 0.00061,
+        "lookup_count": 11809,
+        "touch_ratio": 0.00645
+      },
+      "future_function_candidate": {
+        "cold_state_ratio": 0.99939,
+        "hot_state_ratio": 0.00061,
+        "lookup_count": 11809,
+        "touch_ratio": 0.00645
+      },
+      "future_recursion_candidate": {
+        "cold_state_ratio": 0.99939,
+        "hot_state_ratio": 0.00061,
+        "lookup_count": 11809,
+        "touch_ratio": 0.00645
+      },
+      "hard_ood": {
+        "cold_state_ratio": 0.99939,
+        "hot_state_ratio": 0.00061,
+        "lookup_count": 11809,
+        "touch_ratio": 0.00645
+      },
+      "near_ood_program": {
+        "cold_state_ratio": 0.99939,
+        "hot_state_ratio": 0.00061,
+        "lookup_count": 11809,
+        "touch_ratio": 0.00645
+      },
+      "true_false_accept_trap": {
+        "cold_state_ratio": 0.99939,
+        "hot_state_ratio": 0.00061,
+        "lookup_count": 11809,
+        "touch_ratio": 0.00645
+      },
+      "unsupported_unbounded_loop": {
+        "cold_state_ratio": 0.99939,
+        "hot_state_ratio": 0.00061,
+        "lookup_count": 11809,
+        "touch_ratio": 0.00645
+      }
+    },
+    "loop_branch": {
+      "bounded_control_hard_supported": {
+        "cold_state_ratio": 0.999332,
+        "hot_state_ratio": 0.000668,
+        "lookup_count": 11832,
+        "touch_ratio": 0.00675
+      },
+      "current_supported_bounded_substrate": {
+        "cold_state_ratio": 0.995545,
+        "hot_state_ratio": 0.004455,
+        "lookup_count": 78880,
+        "touch_ratio": 0.045
+      },
+      "future_array_candidate": {
+        "cold_state_ratio": 0.999332,
+        "hot_state_ratio": 0.000668,
+        "lookup_count": 11832,
+        "touch_ratio": 0.00675
+      },
+      "future_function_candidate": {
+        "cold_state_ratio": 0.999332,
+        "hot_state_ratio": 0.000668,
+        "lookup_count": 11832,
+        "touch_ratio": 0.00675
+      },
+      "future_recursion_candidate": {
+        "cold_state_ratio": 0.999332,
+        "hot_state_ratio": 0.000668,
+        "lookup_count": 11832,
+        "touch_ratio": 0.00675
+      },
+      "hard_ood": {
+        "cold_state_ratio": 0.999332,
+        "hot_state_ratio": 0.000668,
+        "lookup_count": 11832,
+        "touch_ratio": 0.00675
+      },
+      "near_ood_program": {
+        "cold_state_ratio": 0.999332,
+        "hot_state_ratio": 0.000668,
+        "lookup_count": 11832,
+        "touch_ratio": 0.00675
+      },
+      "true_false_accept_trap": {
+        "cold_state_ratio": 0.999332,
+        "hot_state_ratio": 0.000668,
+        "lookup_count": 11832,
+        "touch_ratio": 0.00675
+      },
+      "unsupported_unbounded_loop": {
+        "cold_state_ratio": 0.999332,
+        "hot_state_ratio": 0.000668,
+        "lookup_count": 11832,
+        "touch_ratio": 0.00675
+      }
+    },
+    "major_branch_language_family": {
+      "bounded_control_hard_supported": {
+        "cold_state_ratio": 0.996007,
+        "hot_state_ratio": 0.003993,
+        "lookup_count": 10473,
+        "touch_ratio": 0.0165
+      },
+      "current_supported_bounded_substrate": {
+        "cold_state_ratio": 0.97338,
+        "hot_state_ratio": 0.02662,
+        "lookup_count": 69822,
+        "touch_ratio": 0.11
+      },
+      "future_array_candidate": {
+        "cold_state_ratio": 0.996007,
+        "hot_state_ratio": 0.003993,
+        "lookup_count": 10473,
+        "touch_ratio": 0.0165
+      },
+      "future_function_candidate": {
+        "cold_state_ratio": 0.996007,
+        "hot_state_ratio": 0.003993,
+        "lookup_count": 10473,
+        "touch_ratio": 0.0165
+      },
+      "future_recursion_candidate": {
+        "cold_state_ratio": 0.996007,
+        "hot_state_ratio": 0.003993,
+        "lookup_count": 10473,
+        "touch_ratio": 0.0165
+      },
+      "hard_ood": {
+        "cold_state_ratio": 0.996007,
+        "hot_state_ratio": 0.003993,
+        "lookup_count": 10473,
+        "touch_ratio": 0.0165
+      },
+      "near_ood_program": {
+        "cold_state_ratio": 0.996007,
+        "hot_state_ratio": 0.003993,
+        "lookup_count": 10473,
+        "touch_ratio": 0.0165
+      },
+      "true_false_accept_trap": {
+        "cold_state_ratio": 0.996007,
+        "hot_state_ratio": 0.003993,
+        "lookup_count": 10473,
+        "touch_ratio": 0.0165
+      },
+      "unsupported_unbounded_loop": {
+        "cold_state_ratio": 0.996007,
+        "hot_state_ratio": 0.003993,
+        "lookup_count": 10473,
+        "touch_ratio": 0.0165
+      }
+    },
+    "nested_control_branch": {
+      "bounded_control_hard_supported": {
+        "cold_state_ratio": 0.999271,
+        "hot_state_ratio": 0.000729,
+        "lookup_count": 9878,
+        "touch_ratio": 0.00705
+      },
+      "current_supported_bounded_substrate": {
+        "cold_state_ratio": 0.99514,
+        "hot_state_ratio": 0.00486,
+        "lookup_count": 65859,
+        "touch_ratio": 0.047
+      },
+      "future_array_candidate": {
+        "cold_state_ratio": 0.999271,
+        "hot_state_ratio": 0.000729,
+        "lookup_count": 9878,
+        "touch_ratio": 0.00705
+      },
+      "future_function_candidate": {
+        "cold_state_ratio": 0.999271,
+        "hot_state_ratio": 0.000729,
+        "lookup_count": 9878,
+        "touch_ratio": 0.00705
+      },
+      "future_recursion_candidate": {
+        "cold_state_ratio": 0.999271,
+        "hot_state_ratio": 0.000729,
+        "lookup_count": 9878,
+        "touch_ratio": 0.00705
+      },
+      "hard_ood": {
+        "cold_state_ratio": 0.999271,
+        "hot_state_ratio": 0.000729,
+        "lookup_count": 9878,
+        "touch_ratio": 0.00705
+      },
+      "near_ood_program": {
+        "cold_state_ratio": 0.999271,
+        "hot_state_ratio": 0.000729,
+        "lookup_count": 9878,
+        "touch_ratio": 0.00705
+      },
+      "true_false_accept_trap": {
+        "cold_state_ratio": 0.999271,
+        "hot_state_ratio": 0.000729,
+        "lookup_count": 9878,
+        "touch_ratio": 0.00705
+      },
+      "unsupported_unbounded_loop": {
+        "cold_state_ratio": 0.999271,
+        "hot_state_ratio": 0.000729,
+        "lookup_count": 9878,
+        "touch_ratio": 0.00705
+      }
+    },
+    "nutrient_toxic_memory": {
+      "bounded_control_hard_supported": {
+        "cold_state_ratio": 0.998563,
+        "hot_state_ratio": 0.001437,
+        "lookup_count": 20116,
+        "touch_ratio": 0.0099
+      },
+      "current_supported_bounded_substrate": {
+        "cold_state_ratio": 0.998563,
+        "hot_state_ratio": 0.001437,
+        "lookup_count": 20116,
+        "touch_ratio": 0.0099
+      },
+      "future_array_candidate": {
+        "cold_state_ratio": 0.998563,
+        "hot_state_ratio": 0.001437,
+        "lookup_count": 20116,
+        "touch_ratio": 0.0099
+      },
+      "future_function_candidate": {
+        "cold_state_ratio": 0.998563,
+        "hot_state_ratio": 0.001437,
+        "lookup_count": 20116,
+        "touch_ratio": 0.0099
+      },
+      "future_recursion_candidate": {
+        "cold_state_ratio": 0.998563,
+        "hot_state_ratio": 0.001437,
+        "lookup_count": 20116,
+        "touch_ratio": 0.0099
+      },
+      "hard_ood": {
+        "cold_state_ratio": 0.998563,
+        "hot_state_ratio": 0.001437,
+        "lookup_count": 20116,
+        "touch_ratio": 0.0099
+      },
+      "near_ood_program": {
+        "cold_state_ratio": 0.998563,
+        "hot_state_ratio": 0.001437,
+        "lookup_count": 20116,
+        "touch_ratio": 0.0099
+      },
+      "true_false_accept_trap": {
+        "cold_state_ratio": 0.998563,
+        "hot_state_ratio": 0.001437,
+        "lookup_count": 20116,
+        "touch_ratio": 0.0099
+      },
+      "unsupported_unbounded_loop": {
+        "cold_state_ratio": 0.998563,
+        "hot_state_ratio": 0.001437,
+        "lookup_count": 20116,
+        "touch_ratio": 0.0099
+      }
+    },
+    "routing_scoring_profile": {
+      "bounded_control_hard_supported": {
+        "cold_state_ratio": 0.997444,
+        "hot_state_ratio": 0.002556,
+        "lookup_count": 10265,
+        "touch_ratio": 0.0132
+      },
+      "current_supported_bounded_substrate": {
+        "cold_state_ratio": 0.997444,
+        "hot_state_ratio": 0.002556,
+        "lookup_count": 10265,
+        "touch_ratio": 0.0132
+      },
+      "future_array_candidate": {
+        "cold_state_ratio": 0.997444,
+        "hot_state_ratio": 0.002556,
+        "lookup_count": 10265,
+        "touch_ratio": 0.0132
+      },
+      "future_function_candidate": {
+        "cold_state_ratio": 0.997444,
+        "hot_state_ratio": 0.002556,
+        "lookup_count": 10265,
+        "touch_ratio": 0.0132
+      },
+      "future_recursion_candidate": {
+        "cold_state_ratio": 0.997444,
+        "hot_state_ratio": 0.002556,
+        "lookup_count": 10265,
+        "touch_ratio": 0.0132
+      },
+      "hard_ood": {
+        "cold_state_ratio": 0.997444,
+        "hot_state_ratio": 0.002556,
+        "lookup_count": 10265,
+        "touch_ratio": 0.0132
+      },
+      "near_ood_program": {
+        "cold_state_ratio": 0.997444,
+        "hot_state_ratio": 0.002556,
+        "lookup_count": 10265,
+        "touch_ratio": 0.0132
+      },
+      "true_false_accept_trap": {
+        "cold_state_ratio": 0.997444,
+        "hot_state_ratio": 0.002556,
+        "lookup_count": 10265,
+        "touch_ratio": 0.0132
+      },
+      "unsupported_unbounded_loop": {
+        "cold_state_ratio": 0.997444,
+        "hot_state_ratio": 0.002556,
+        "lookup_count": 10265,
+        "touch_ratio": 0.0132
+      }
+    },
+    "supported_bounded_substrate_branch": {
+      "bounded_control_hard_supported": {
+        "cold_state_ratio": 0.998144,
+        "hot_state_ratio": 0.001856,
+        "lookup_count": 16228,
+        "touch_ratio": 0.01125
+      },
+      "current_supported_bounded_substrate": {
+        "cold_state_ratio": 0.987625,
+        "hot_state_ratio": 0.012375,
+        "lookup_count": 108193,
+        "touch_ratio": 0.075
+      },
+      "future_array_candidate": {
+        "cold_state_ratio": 0.998144,
+        "hot_state_ratio": 0.001856,
+        "lookup_count": 16228,
+        "touch_ratio": 0.01125
+      },
+      "future_function_candidate": {
+        "cold_state_ratio": 0.998144,
+        "hot_state_ratio": 0.001856,
+        "lookup_count": 16228,
+        "touch_ratio": 0.01125
+      },
+      "future_recursion_candidate": {
+        "cold_state_ratio": 0.998144,
+        "hot_state_ratio": 0.001856,
+        "lookup_count": 16228,
+        "touch_ratio": 0.01125
+      },
+      "hard_ood": {
+        "cold_state_ratio": 0.998144,
+        "hot_state_ratio": 0.001856,
+        "lookup_count": 16228,
+        "touch_ratio": 0.01125
+      },
+      "near_ood_program": {
+        "cold_state_ratio": 0.998144,
+        "hot_state_ratio": 0.001856,
+        "lookup_count": 16228,
+        "touch_ratio": 0.01125
+      },
+      "true_false_accept_trap": {
+        "cold_state_ratio": 0.998144,
+        "hot_state_ratio": 0.001856,
+        "lookup_count": 16228,
+        "touch_ratio": 0.01125
+      },
+      "unsupported_unbounded_loop": {
+        "cold_state_ratio": 0.998144,
+        "hot_state_ratio": 0.001856,
+        "lookup_count": 16228,
+        "touch_ratio": 0.01125
+      }
+    },
+    "trunk_global_routing": {
+      "bounded_control_hard_supported": {
+        "cold_state_ratio": 0.892,
+        "hot_state_ratio": 0.108,
+        "lookup_count": 78000,
+        "touch_ratio": 0.24
+      },
+      "current_supported_bounded_substrate": {
+        "cold_state_ratio": 0.892,
+        "hot_state_ratio": 0.108,
+        "lookup_count": 78000,
+        "touch_ratio": 0.24
+      },
+      "future_array_candidate": {
+        "cold_state_ratio": 0.892,
+        "hot_state_ratio": 0.108,
+        "lookup_count": 78000,
+        "touch_ratio": 0.24
+      },
+      "future_function_candidate": {
+        "cold_state_ratio": 0.892,
+        "hot_state_ratio": 0.108,
+        "lookup_count": 78000,
+        "touch_ratio": 0.24
+      },
+      "future_recursion_candidate": {
+        "cold_state_ratio": 0.892,
+        "hot_state_ratio": 0.108,
+        "lookup_count": 78000,
+        "touch_ratio": 0.24
+      },
+      "hard_ood": {
+        "cold_state_ratio": 0.892,
+        "hot_state_ratio": 0.108,
+        "lookup_count": 78000,
+        "touch_ratio": 0.24
+      },
+      "near_ood_program": {
+        "cold_state_ratio": 0.892,
+        "hot_state_ratio": 0.108,
+        "lookup_count": 78000,
+        "touch_ratio": 0.24
+      },
+      "true_false_accept_trap": {
+        "cold_state_ratio": 0.892,
+        "hot_state_ratio": 0.108,
+        "lookup_count": 78000,
+        "touch_ratio": 0.24
+      },
+      "unsupported_unbounded_loop": {
+        "cold_state_ratio": 0.892,
+        "hot_state_ratio": 0.108,
+        "lookup_count": 78000,
+        "touch_ratio": 0.24
+      }
+    },
+    "unbounded_loop_quarantine_branch": {
+      "bounded_control_hard_supported": {
+        "cold_state_ratio": 0.999935,
+        "hot_state_ratio": 6.5e-05,
+        "lookup_count": 3826,
+        "touch_ratio": 0.0021
+      },
+      "current_supported_bounded_substrate": {
+        "cold_state_ratio": 0.999935,
+        "hot_state_ratio": 6.5e-05,
+        "lookup_count": 3826,
+        "touch_ratio": 0.0021
+      },
+      "future_array_candidate": {
+        "cold_state_ratio": 0.999935,
+        "hot_state_ratio": 6.5e-05,
+        "lookup_count": 3826,
+        "touch_ratio": 0.0021
+      },
+      "future_function_candidate": {
+        "cold_state_ratio": 0.999935,
+        "hot_state_ratio": 6.5e-05,
+        "lookup_count": 3826,
+        "touch_ratio": 0.0021
+      },
+      "future_recursion_candidate": {
+        "cold_state_ratio": 0.999935,
+        "hot_state_ratio": 6.5e-05,
+        "lookup_count": 3826,
+        "touch_ratio": 0.0021
+      },
+      "hard_ood": {
+        "cold_state_ratio": 0.999935,
+        "hot_state_ratio": 6.5e-05,
+        "lookup_count": 3826,
+        "touch_ratio": 0.0021
+      },
+      "near_ood_program": {
+        "cold_state_ratio": 0.999935,
+        "hot_state_ratio": 6.5e-05,
+        "lookup_count": 3826,
+        "touch_ratio": 0.0021
+      },
+      "true_false_accept_trap": {
+        "cold_state_ratio": 0.999935,
+        "hot_state_ratio": 6.5e-05,
+        "lookup_count": 3826,
+        "touch_ratio": 0.0021
+      },
+      "unsupported_unbounded_loop": {
+        "cold_state_ratio": 0.999569,
+        "hot_state_ratio": 0.000431,
+        "lookup_count": 25513,
+        "touch_ratio": 0.014
+      }
+    }
+  },
+  "layer_x_profile": {
+    "bounded_control_hard_branch": {
+      "state_1B": {
+        "cold_state_ratio": 0.994051,
+        "hot_state_ratio": 0.005949,
+        "lookup_count": 105878,
+        "touch_ratio": 0.052
+      }
+    },
+    "candidate_fragment_leaf": {
+      "state_1B": {
+        "cold_state_ratio": 0.985207,
+        "hot_state_ratio": 0.014793,
+        "lookup_count": 435592,
+        "touch_ratio": 0.082
+      }
+    },
+    "control_template_leaf": {
+      "state_1B": {
+        "cold_state_ratio": 0.994718,
+        "hot_state_ratio": 0.005282,
+        "lookup_count": 184759,
+        "touch_ratio": 0.049
+      }
+    },
+    "failure_pattern_memory": {
+      "state_1B": {
+        "cold_state_ratio": 0.992599,
+        "hot_state_ratio": 0.007401,
+        "lookup_count": 106482,
+        "touch_ratio": 0.058
+      }
+    },
+    "future_array_quarantine_branch": {
+      "state_1B": {
+        "cold_state_ratio": 0.999364,
+        "hot_state_ratio": 0.000636,
+        "lookup_count": 38383,
+        "touch_ratio": 0.017
+      }
+    },
+    "future_function_quarantine_branch": {
+      "state_1B": {
+        "cold_state_ratio": 0.999287,
+        "hot_state_ratio": 0.000713,
+        "lookup_count": 38421,
+        "touch_ratio": 0.018
+      }
+    },
+    "future_recursion_quarantine_branch": {
+      "state_1B": {
+        "cold_state_ratio": 0.999505,
+        "hot_state_ratio": 0.000495,
+        "lookup_count": 31923,
+        "touch_ratio": 0.015
+      }
+    },
+    "hard_ood_rejection_branch": {
+      "state_1B": {
+        "cold_state_ratio": 0.99903,
+        "hot_state_ratio": 0.00097,
+        "lookup_count": 19267,
+        "touch_ratio": 0.021
+      }
+    },
+    "if_else_branch": {
+      "state_1B": {
+        "cold_state_ratio": 0.995932,
+        "hot_state_ratio": 0.004068,
+        "lookup_count": 78729,
+        "touch_ratio": 0.043
+      }
+    },
+    "loop_branch": {
+      "state_1B": {
+        "cold_state_ratio": 0.995545,
+        "hot_state_ratio": 0.004455,
+        "lookup_count": 78880,
+        "touch_ratio": 0.045
+      }
+    },
+    "major_branch_language_family": {
+      "state_1B": {
+        "cold_state_ratio": 0.97338,
+        "hot_state_ratio": 0.02662,
+        "lookup_count": 69822,
+        "touch_ratio": 0.11
+      }
+    },
+    "nested_control_branch": {
+      "state_1B": {
+        "cold_state_ratio": 0.99514,
+        "hot_state_ratio": 0.00486,
+        "lookup_count": 65859,
+        "touch_ratio": 0.047
+      }
+    },
+    "nutrient_toxic_memory": {
+      "state_1B": {
+        "cold_state_ratio": 0.990417,
+        "hot_state_ratio": 0.009583,
+        "lookup_count": 134109,
+        "touch_ratio": 0.066
+      }
+    },
+    "routing_scoring_profile": {
+      "state_1B": {
+        "cold_state_ratio": 0.982963,
+        "hot_state_ratio": 0.017037,
+        "lookup_count": 68438,
+        "touch_ratio": 0.088
+      }
+    },
+    "supported_bounded_substrate_branch": {
+      "state_1B": {
+        "cold_state_ratio": 0.987625,
+        "hot_state_ratio": 0.012375,
+        "lookup_count": 108193,
+        "touch_ratio": 0.075
+      }
+    },
+    "trunk_global_routing": {
+      "state_1B": {
+        "cold_state_ratio": 0.892,
+        "hot_state_ratio": 0.108,
+        "lookup_count": 78000,
+        "touch_ratio": 0.24
+      }
+    },
+    "unbounded_loop_quarantine_branch": {
+      "state_1B": {
+        "cold_state_ratio": 0.999569,
+        "hot_state_ratio": 0.000431,
+        "lookup_count": 25513,
+        "touch_ratio": 0.014
+      }
+    }
+  },
+  "layer_x_split": {
+    "bounded_control_hard_branch": {
+      "eval": {
+        "cold_state_ratio": 0.999108,
+        "hot_state_ratio": 0.000892,
+        "lookup_count": 15881,
+        "touch_ratio": 0.0078
+      },
+      "heldout": {
+        "cold_state_ratio": 0.999703,
+        "hot_state_ratio": 0.000297,
+        "lookup_count": 5293,
+        "touch_ratio": 0.0026
+      },
+      "test": {
+        "cold_state_ratio": 0.999405,
+        "hot_state_ratio": 0.000595,
+        "lookup_count": 10587,
+        "touch_ratio": 0.0052
+      },
+      "train": {
+        "cold_state_ratio": 0.995836,
+        "hot_state_ratio": 0.004164,
+        "lookup_count": 74114,
+        "touch_ratio": 0.0364
+      }
+    },
+    "candidate_fragment_leaf": {
+      "eval": {
+        "cold_state_ratio": 0.997781,
+        "hot_state_ratio": 0.002219,
+        "lookup_count": 65338,
+        "touch_ratio": 0.0123
+      },
+      "heldout": {
+        "cold_state_ratio": 0.99926,
+        "hot_state_ratio": 0.00074,
+        "lookup_count": 21779,
+        "touch_ratio": 0.0041
+      },
+      "test": {
+        "cold_state_ratio": 0.998521,
+        "hot_state_ratio": 0.001479,
+        "lookup_count": 43559,
+        "touch_ratio": 0.0082
+      },
+      "train": {
+        "cold_state_ratio": 0.989645,
+        "hot_state_ratio": 0.010355,
+        "lookup_count": 304914,
+        "touch_ratio": 0.0574
+      }
+    },
+    "control_template_leaf": {
+      "eval": {
+        "cold_state_ratio": 0.999208,
+        "hot_state_ratio": 0.000792,
+        "lookup_count": 27713,
+        "touch_ratio": 0.00735
+      },
+      "heldout": {
+        "cold_state_ratio": 0.999736,
+        "hot_state_ratio": 0.000264,
+        "lookup_count": 9237,
+        "touch_ratio": 0.00245
+      },
+      "test": {
+        "cold_state_ratio": 0.999472,
+        "hot_state_ratio": 0.000528,
+        "lookup_count": 18475,
+        "touch_ratio": 0.0049
+      },
+      "train": {
+        "cold_state_ratio": 0.996303,
+        "hot_state_ratio": 0.003697,
+        "lookup_count": 129331,
+        "touch_ratio": 0.0343
+      }
+    },
+    "failure_pattern_memory": {
+      "eval": {
+        "cold_state_ratio": 0.99889,
+        "hot_state_ratio": 0.00111,
+        "lookup_count": 15972,
+        "touch_ratio": 0.0087
+      },
+      "heldout": {
+        "cold_state_ratio": 0.99963,
+        "hot_state_ratio": 0.00037,
+        "lookup_count": 5324,
+        "touch_ratio": 0.0029
+      },
+      "test": {
+        "cold_state_ratio": 0.99926,
+        "hot_state_ratio": 0.00074,
+        "lookup_count": 10648,
+        "touch_ratio": 0.0058
+      },
+      "train": {
+        "cold_state_ratio": 0.994819,
+        "hot_state_ratio": 0.005181,
+        "lookup_count": 74537,
+        "touch_ratio": 0.0406
+      }
+    },
+    "future_array_quarantine_branch": {
+      "eval": {
+        "cold_state_ratio": 0.999905,
+        "hot_state_ratio": 9.5e-05,
+        "lookup_count": 5757,
+        "touch_ratio": 0.00255
+      },
+      "heldout": {
+        "cold_state_ratio": 0.999968,
+        "hot_state_ratio": 3.2e-05,
+        "lookup_count": 1919,
+        "touch_ratio": 0.00085
+      },
+      "test": {
+        "cold_state_ratio": 0.999936,
+        "hot_state_ratio": 6.4e-05,
+        "lookup_count": 3838,
+        "touch_ratio": 0.0017
+      },
+      "train": {
+        "cold_state_ratio": 0.999555,
+        "hot_state_ratio": 0.000445,
+        "lookup_count": 26868,
+        "touch_ratio": 0.0119
+      }
+    },
+    "future_function_quarantine_branch": {
+      "eval": {
+        "cold_state_ratio": 0.999893,
+        "hot_state_ratio": 0.000107,
+        "lookup_count": 5763,
+        "touch_ratio": 0.0027
+      },
+      "heldout": {
+        "cold_state_ratio": 0.999964,
+        "hot_state_ratio": 3.6e-05,
+        "lookup_count": 1921,
+        "touch_ratio": 0.0009
+      },
+      "test": {
+        "cold_state_ratio": 0.999929,
+        "hot_state_ratio": 7.1e-05,
+        "lookup_count": 3842,
+        "touch_ratio": 0.0018
+      },
+      "train": {
+        "cold_state_ratio": 0.999501,
+        "hot_state_ratio": 0.000499,
+        "lookup_count": 26894,
+        "touch_ratio": 0.0126
+      }
+    },
+    "future_recursion_quarantine_branch": {
+      "eval": {
+        "cold_state_ratio": 0.999926,
+        "hot_state_ratio": 7.4e-05,
+        "lookup_count": 4788,
+        "touch_ratio": 0.00225
+      },
+      "heldout": {
+        "cold_state_ratio": 0.999975,
+        "hot_state_ratio": 2.5e-05,
+        "lookup_count": 1596,
+        "touch_ratio": 0.00075
+      },
+      "test": {
+        "cold_state_ratio": 0.99995,
+        "hot_state_ratio": 5e-05,
+        "lookup_count": 3192,
+        "touch_ratio": 0.0015
+      },
+      "train": {
+        "cold_state_ratio": 0.999653,
+        "hot_state_ratio": 0.000346,
+        "lookup_count": 22346,
+        "touch_ratio": 0.0105
+      }
+    },
+    "hard_ood_rejection_branch": {
+      "eval": {
+        "cold_state_ratio": 0.999854,
+        "hot_state_ratio": 0.000146,
+        "lookup_count": 2890,
+        "touch_ratio": 0.00315
+      },
+      "heldout": {
+        "cold_state_ratio": 0.999951,
+        "hot_state_ratio": 4.9e-05,
+        "lookup_count": 963,
+        "touch_ratio": 0.00105
+      },
+      "test": {
+        "cold_state_ratio": 0.999903,
+        "hot_state_ratio": 9.7e-05,
+        "lookup_count": 1926,
+        "touch_ratio": 0.0021
+      },
+      "train": {
+        "cold_state_ratio": 0.999321,
+        "hot_state_ratio": 0.000679,
+        "lookup_count": 13486,
+        "touch_ratio": 0.0147
+      }
+    },
+    "if_else_branch": {
+      "eval": {
+        "cold_state_ratio": 0.99939,
+        "hot_state_ratio": 0.00061,
+        "lookup_count": 11809,
+        "touch_ratio": 0.00645
+      },
+      "heldout": {
+        "cold_state_ratio": 0.999797,
+        "hot_state_ratio": 0.000203,
+        "lookup_count": 3936,
+        "touch_ratio": 0.00215
+      },
+      "test": {
+        "cold_state_ratio": 0.999593,
+        "hot_state_ratio": 0.000407,
+        "lookup_count": 7872,
+        "touch_ratio": 0.0043
+      },
+      "train": {
+        "cold_state_ratio": 0.997152,
+        "hot_state_ratio": 0.002848,
+        "lookup_count": 55110,
+        "touch_ratio": 0.0301
+      }
+    },
+    "loop_branch": {
+      "eval": {
+        "cold_state_ratio": 0.999332,
+        "hot_state_ratio": 0.000668,
+        "lookup_count": 11832,
+        "touch_ratio": 0.00675
+      },
+      "heldout": {
+        "cold_state_ratio": 0.999777,
+        "hot_state_ratio": 0.000223,
+        "lookup_count": 3944,
+        "touch_ratio": 0.00225
+      },
+      "test": {
+        "cold_state_ratio": 0.999555,
+        "hot_state_ratio": 0.000445,
+        "lookup_count": 7888,
+        "touch_ratio": 0.0045
+      },
+      "train": {
+        "cold_state_ratio": 0.996881,
+        "hot_state_ratio": 0.003118,
+        "lookup_count": 55216,
+        "touch_ratio": 0.0315
+      }
+    },
+    "major_branch_language_family": {
+      "eval": {
+        "cold_state_ratio": 0.996007,
+        "hot_state_ratio": 0.003993,
+        "lookup_count": 10473,
+        "touch_ratio": 0.0165
+      },
+      "heldout": {
+        "cold_state_ratio": 0.998669,
+        "hot_state_ratio": 0.001331,
+        "lookup_count": 3491,
+        "touch_ratio": 0.0055
+      },
+      "test": {
+        "cold_state_ratio": 0.997338,
+        "hot_state_ratio": 0.002662,
+        "lookup_count": 6982,
+        "touch_ratio": 0.011
+      },
+      "train": {
+        "cold_state_ratio": 0.981366,
+        "hot_state_ratio": 0.018634,
+        "lookup_count": 48875,
+        "touch_ratio": 0.077
+      }
+    },
+    "nested_control_branch": {
+      "eval": {
+        "cold_state_ratio": 0.999271,
+        "hot_state_ratio": 0.000729,
+        "lookup_count": 9878,
+        "touch_ratio": 0.00705
+      },
+      "heldout": {
+        "cold_state_ratio": 0.999757,
+        "hot_state_ratio": 0.000243,
+        "lookup_count": 3292,
+        "touch_ratio": 0.00235
+      },
+      "test": {
+        "cold_state_ratio": 0.999514,
+        "hot_state_ratio": 0.000486,
+        "lookup_count": 6585,
+        "touch_ratio": 0.0047
+      },
+      "train": {
+        "cold_state_ratio": 0.996598,
+        "hot_state_ratio": 0.003402,
+        "lookup_count": 46101,
+        "touch_ratio": 0.0329
+      }
+    },
+    "nutrient_toxic_memory": {
+      "eval": {
+        "cold_state_ratio": 0.998563,
+        "hot_state_ratio": 0.001437,
+        "lookup_count": 20116,
+        "touch_ratio": 0.0099
+      },
+      "heldout": {
+        "cold_state_ratio": 0.999521,
+        "hot_state_ratio": 0.000479,
+        "lookup_count": 6705,
+        "touch_ratio": 0.0033
+      },
+      "test": {
+        "cold_state_ratio": 0.999042,
+        "hot_state_ratio": 0.000958,
+        "lookup_count": 13410,
+        "touch_ratio": 0.0066
+      },
+      "train": {
+        "cold_state_ratio": 0.993292,
+        "hot_state_ratio": 0.006708,
+        "lookup_count": 93876,
+        "touch_ratio": 0.0462
+      }
+    },
+    "routing_scoring_profile": {
+      "eval": {
+        "cold_state_ratio": 0.997444,
+        "hot_state_ratio": 0.002556,
+        "lookup_count": 10265,
+        "touch_ratio": 0.0132
+      },
+      "heldout": {
+        "cold_state_ratio": 0.999148,
+        "hot_state_ratio": 0.000852,
+        "lookup_count": 3421,
+        "touch_ratio": 0.0044
+      },
+      "test": {
+        "cold_state_ratio": 0.998296,
+        "hot_state_ratio": 0.001704,
+        "lookup_count": 6843,
+        "touch_ratio": 0.0088
+      },
+      "train": {
+        "cold_state_ratio": 0.988074,
+        "hot_state_ratio": 0.011926,
+        "lookup_count": 47906,
+        "touch_ratio": 0.0616
+      }
+    },
+    "supported_bounded_substrate_branch": {
+      "eval": {
+        "cold_state_ratio": 0.998144,
+        "hot_state_ratio": 0.001856,
+        "lookup_count": 16228,
+        "touch_ratio": 0.01125
+      },
+      "heldout": {
+        "cold_state_ratio": 0.999381,
+        "hot_state_ratio": 0.000619,
+        "lookup_count": 5409,
+        "touch_ratio": 0.00375
+      },
+      "test": {
+        "cold_state_ratio": 0.998762,
+        "hot_state_ratio": 0.001238,
+        "lookup_count": 10819,
+        "touch_ratio": 0.0075
+      },
+      "train": {
+        "cold_state_ratio": 0.991337,
+        "hot_state_ratio": 0.008663,
+        "lookup_count": 75735,
+        "touch_ratio": 0.0525
+      }
+    },
+    "trunk_global_routing": {
+      "eval": {
+        "cold_state_ratio": 0.9838,
+        "hot_state_ratio": 0.0162,
+        "lookup_count": 11700,
+        "touch_ratio": 0.036
+      },
+      "heldout": {
+        "cold_state_ratio": 0.9946,
+        "hot_state_ratio": 0.0054,
+        "lookup_count": 3900,
+        "touch_ratio": 0.012
+      },
+      "test": {
+        "cold_state_ratio": 0.9892,
+        "hot_state_ratio": 0.0108,
+        "lookup_count": 7800,
+        "touch_ratio": 0.024
+      },
+      "train": {
+        "cold_state_ratio": 0.9244,
+        "hot_state_ratio": 0.0756,
+        "lookup_count": 54600,
+        "touch_ratio": 0.168
+      }
+    },
+    "unbounded_loop_quarantine_branch": {
+      "eval": {
+        "cold_state_ratio": 0.999935,
+        "hot_state_ratio": 6.5e-05,
+        "lookup_count": 3826,
+        "touch_ratio": 0.0021
+      },
+      "heldout": {
+        "cold_state_ratio": 0.999978,
+        "hot_state_ratio": 2.2e-05,
+        "lookup_count": 1275,
+        "touch_ratio": 0.0007
+      },
+      "test": {
+        "cold_state_ratio": 0.999957,
+        "hot_state_ratio": 4.3e-05,
+        "lookup_count": 2551,
+        "touch_ratio": 0.0014
+      },
+      "train": {
+        "cold_state_ratio": 0.999698,
+        "hot_state_ratio": 0.000302,
+        "lookup_count": 17859,
+        "touch_ratio": 0.0098
+      }
+    }
+  },
+  "layer_x_stage": {
+    "bounded_control_hard_branch": {
+      "assignment_sequence": {
+        "cold_state_ratio": 0.999108,
+        "hot_state_ratio": 0.000892,
+        "lookup_count": 15881,
+        "touch_ratio": 0.0078
+      },
+      "bounded_control_hard_supported": {
+        "cold_state_ratio": 0.994051,
+        "hot_state_ratio": 0.005949,
+        "lookup_count": 105878,
+        "touch_ratio": 0.052
+      },
+      "bounded_for_loop": {
+        "cold_state_ratio": 0.999108,
+        "hot_state_ratio": 0.000892,
+        "lookup_count": 15881,
+        "touch_ratio": 0.0078
+      },
+      "bounded_while_with_fuel": {
+        "cold_state_ratio": 0.999108,
+        "hot_state_ratio": 0.000892,
+        "lookup_count": 15881,
+        "touch_ratio": 0.0078
+      },
+      "future_array": {
+        "cold_state_ratio": 0.999108,
+        "hot_state_ratio": 0.000892,
+        "lookup_count": 15881,
+        "touch_ratio": 0.0078
+      },
+      "future_function": {
+        "cold_state_ratio": 0.999108,
+        "hot_state_ratio": 0.000892,
+        "lookup_count": 15881,
+        "touch_ratio": 0.0078
+      },
+      "future_recursion": {
+        "cold_state_ratio": 0.999108,
+        "hot_state_ratio": 0.000892,
+        "lookup_count": 15881,
+        "touch_ratio": 0.0078
+      },
+      "if_else_basic": {
+        "cold_state_ratio": 0.999108,
+        "hot_state_ratio": 0.000892,
+        "lookup_count": 15881,
+        "touch_ratio": 0.0078
+      },
+      "if_else_nested": {
+        "cold_state_ratio": 0.999108,
+        "hot_state_ratio": 0.000892,
+        "lookup_count": 15881,
+        "touch_ratio": 0.0078
+      },
+      "nested_bounded_control": {
+        "cold_state_ratio": 0.999108,
+        "hot_state_ratio": 0.000892,
+        "lookup_count": 15881,
+        "touch_ratio": 0.0078
+      },
+      "unsupported_unbounded_loop": {
+        "cold_state_ratio": 0.999108,
+        "hot_state_ratio": 0.000892,
+        "lookup_count": 15881,
+        "touch_ratio": 0.0078
+      },
+      "variable_declaration": {
+        "cold_state_ratio": 0.999108,
+        "hot_state_ratio": 0.000892,
+        "lookup_count": 15881,
+        "touch_ratio": 0.0078
+      }
+    },
+    "candidate_fragment_leaf": {
+      "assignment_sequence": {
+        "cold_state_ratio": 0.985207,
+        "hot_state_ratio": 0.014793,
+        "lookup_count": 435592,
+        "touch_ratio": 0.082
+      },
+      "bounded_control_hard_supported": {
+        "cold_state_ratio": 0.985207,
+        "hot_state_ratio": 0.014793,
+        "lookup_count": 435592,
+        "touch_ratio": 0.082
+      },
+      "bounded_for_loop": {
+        "cold_state_ratio": 0.985207,
+        "hot_state_ratio": 0.014793,
+        "lookup_count": 435592,
+        "touch_ratio": 0.082
+      },
+      "bounded_while_with_fuel": {
+        "cold_state_ratio": 0.985207,
+        "hot_state_ratio": 0.014793,
+        "lookup_count": 435592,
+        "touch_ratio": 0.082
+      },
+      "future_array": {
+        "cold_state_ratio": 0.985207,
+        "hot_state_ratio": 0.014793,
+        "lookup_count": 435592,
+        "touch_ratio": 0.082
+      },
+      "future_function": {
+        "cold_state_ratio": 0.985207,
+        "hot_state_ratio": 0.014793,
+        "lookup_count": 435592,
+        "touch_ratio": 0.082
+      },
+      "future_recursion": {
+        "cold_state_ratio": 0.985207,
+        "hot_state_ratio": 0.014793,
+        "lookup_count": 435592,
+        "touch_ratio": 0.082
+      },
+      "if_else_basic": {
+        "cold_state_ratio": 0.985207,
+        "hot_state_ratio": 0.014793,
+        "lookup_count": 435592,
+        "touch_ratio": 0.082
+      },
+      "if_else_nested": {
+        "cold_state_ratio": 0.985207,
+        "hot_state_ratio": 0.014793,
+        "lookup_count": 435592,
+        "touch_ratio": 0.082
+      },
+      "nested_bounded_control": {
+        "cold_state_ratio": 0.985207,
+        "hot_state_ratio": 0.014793,
+        "lookup_count": 435592,
+        "touch_ratio": 0.082
+      },
+      "unsupported_unbounded_loop": {
+        "cold_state_ratio": 0.985207,
+        "hot_state_ratio": 0.014793,
+        "lookup_count": 435592,
+        "touch_ratio": 0.082
+      },
+      "variable_declaration": {
+        "cold_state_ratio": 0.985207,
+        "hot_state_ratio": 0.014793,
+        "lookup_count": 435592,
+        "touch_ratio": 0.082
+      }
+    },
+    "control_template_leaf": {
+      "assignment_sequence": {
+        "cold_state_ratio": 0.999208,
+        "hot_state_ratio": 0.000792,
+        "lookup_count": 27713,
+        "touch_ratio": 0.00735
+      },
+      "bounded_control_hard_supported": {
+        "cold_state_ratio": 0.999208,
+        "hot_state_ratio": 0.000792,
+        "lookup_count": 27713,
+        "touch_ratio": 0.00735
+      },
+      "bounded_for_loop": {
+        "cold_state_ratio": 0.994718,
+        "hot_state_ratio": 0.005282,
+        "lookup_count": 184759,
+        "touch_ratio": 0.049
+      },
+      "bounded_while_with_fuel": {
+        "cold_state_ratio": 0.999208,
+        "hot_state_ratio": 0.000792,
+        "lookup_count": 27713,
+        "touch_ratio": 0.00735
+      },
+      "future_array": {
+        "cold_state_ratio": 0.999208,
+        "hot_state_ratio": 0.000792,
+        "lookup_count": 27713,
+        "touch_ratio": 0.00735
+      },
+      "future_function": {
+        "cold_state_ratio": 0.999208,
+        "hot_state_ratio": 0.000792,
+        "lookup_count": 27713,
+        "touch_ratio": 0.00735
+      },
+      "future_recursion": {
+        "cold_state_ratio": 0.999208,
+        "hot_state_ratio": 0.000792,
+        "lookup_count": 27713,
+        "touch_ratio": 0.00735
+      },
+      "if_else_basic": {
+        "cold_state_ratio": 0.994718,
+        "hot_state_ratio": 0.005282,
+        "lookup_count": 184759,
+        "touch_ratio": 0.049
+      },
+      "if_else_nested": {
+        "cold_state_ratio": 0.999208,
+        "hot_state_ratio": 0.000792,
+        "lookup_count": 27713,
+        "touch_ratio": 0.00735
+      },
+      "nested_bounded_control": {
+        "cold_state_ratio": 0.994718,
+        "hot_state_ratio": 0.005282,
+        "lookup_count": 184759,
+        "touch_ratio": 0.049
+      },
+      "unsupported_unbounded_loop": {
+        "cold_state_ratio": 0.999208,
+        "hot_state_ratio": 0.000792,
+        "lookup_count": 27713,
+        "touch_ratio": 0.00735
+      },
+      "variable_declaration": {
+        "cold_state_ratio": 0.999208,
+        "hot_state_ratio": 0.000792,
+        "lookup_count": 27713,
+        "touch_ratio": 0.00735
+      }
+    },
+    "failure_pattern_memory": {
+      "assignment_sequence": {
+        "cold_state_ratio": 0.992599,
+        "hot_state_ratio": 0.007401,
+        "lookup_count": 106482,
+        "touch_ratio": 0.058
+      },
+      "bounded_control_hard_supported": {
+        "cold_state_ratio": 0.992599,
+        "hot_state_ratio": 0.007401,
+        "lookup_count": 106482,
+        "touch_ratio": 0.058
+      },
+      "bounded_for_loop": {
+        "cold_state_ratio": 0.992599,
+        "hot_state_ratio": 0.007401,
+        "lookup_count": 106482,
+        "touch_ratio": 0.058
+      },
+      "bounded_while_with_fuel": {
+        "cold_state_ratio": 0.992599,
+        "hot_state_ratio": 0.007401,
+        "lookup_count": 106482,
+        "touch_ratio": 0.058
+      },
+      "future_array": {
+        "cold_state_ratio": 0.992599,
+        "hot_state_ratio": 0.007401,
+        "lookup_count": 106482,
+        "touch_ratio": 0.058
+      },
+      "future_function": {
+        "cold_state_ratio": 0.992599,
+        "hot_state_ratio": 0.007401,
+        "lookup_count": 106482,
+        "touch_ratio": 0.058
+      },
+      "future_recursion": {
+        "cold_state_ratio": 0.992599,
+        "hot_state_ratio": 0.007401,
+        "lookup_count": 106482,
+        "touch_ratio": 0.058
+      },
+      "if_else_basic": {
+        "cold_state_ratio": 0.992599,
+        "hot_state_ratio": 0.007401,
+        "lookup_count": 106482,
+        "touch_ratio": 0.058
+      },
+      "if_else_nested": {
+        "cold_state_ratio": 0.992599,
+        "hot_state_ratio": 0.007401,
+        "lookup_count": 106482,
+        "touch_ratio": 0.058
+      },
+      "nested_bounded_control": {
+        "cold_state_ratio": 0.992599,
+        "hot_state_ratio": 0.007401,
+        "lookup_count": 106482,
+        "touch_ratio": 0.058
+      },
+      "unsupported_unbounded_loop": {
+        "cold_state_ratio": 0.992599,
+        "hot_state_ratio": 0.007401,
+        "lookup_count": 106482,
+        "touch_ratio": 0.058
+      },
+      "variable_declaration": {
+        "cold_state_ratio": 0.992599,
+        "hot_state_ratio": 0.007401,
+        "lookup_count": 106482,
+        "touch_ratio": 0.058
+      }
+    },
+    "future_array_quarantine_branch": {
+      "assignment_sequence": {
+        "cold_state_ratio": 0.999905,
+        "hot_state_ratio": 9.5e-05,
+        "lookup_count": 5757,
+        "touch_ratio": 0.00255
+      },
+      "bounded_control_hard_supported": {
+        "cold_state_ratio": 0.999905,
+        "hot_state_ratio": 9.5e-05,
+        "lookup_count": 5757,
+        "touch_ratio": 0.00255
+      },
+      "bounded_for_loop": {
+        "cold_state_ratio": 0.999905,
+        "hot_state_ratio": 9.5e-05,
+        "lookup_count": 5757,
+        "touch_ratio": 0.00255
+      },
+      "bounded_while_with_fuel": {
+        "cold_state_ratio": 0.999905,
+        "hot_state_ratio": 9.5e-05,
+        "lookup_count": 5757,
+        "touch_ratio": 0.00255
+      },
+      "future_array": {
+        "cold_state_ratio": 0.999364,
+        "hot_state_ratio": 0.000636,
+        "lookup_count": 38383,
+        "touch_ratio": 0.017
+      },
+      "future_function": {
+        "cold_state_ratio": 0.999905,
+        "hot_state_ratio": 9.5e-05,
+        "lookup_count": 5757,
+        "touch_ratio": 0.00255
+      },
+      "future_recursion": {
+        "cold_state_ratio": 0.999905,
+        "hot_state_ratio": 9.5e-05,
+        "lookup_count": 5757,
+        "touch_ratio": 0.00255
+      },
+      "if_else_basic": {
+        "cold_state_ratio": 0.999905,
+        "hot_state_ratio": 9.5e-05,
+        "lookup_count": 5757,
+        "touch_ratio": 0.00255
+      },
+      "if_else_nested": {
+        "cold_state_ratio": 0.999905,
+        "hot_state_ratio": 9.5e-05,
+        "lookup_count": 5757,
+        "touch_ratio": 0.00255
+      },
+      "nested_bounded_control": {
+        "cold_state_ratio": 0.999905,
+        "hot_state_ratio": 9.5e-05,
+        "lookup_count": 5757,
+        "touch_ratio": 0.00255
+      },
+      "unsupported_unbounded_loop": {
+        "cold_state_ratio": 0.999905,
+        "hot_state_ratio": 9.5e-05,
+        "lookup_count": 5757,
+        "touch_ratio": 0.00255
+      },
+      "variable_declaration": {
+        "cold_state_ratio": 0.999905,
+        "hot_state_ratio": 9.5e-05,
+        "lookup_count": 5757,
+        "touch_ratio": 0.00255
+      }
+    },
+    "future_function_quarantine_branch": {
+      "assignment_sequence": {
+        "cold_state_ratio": 0.999893,
+        "hot_state_ratio": 0.000107,
+        "lookup_count": 5763,
+        "touch_ratio": 0.0027
+      },
+      "bounded_control_hard_supported": {
+        "cold_state_ratio": 0.999893,
+        "hot_state_ratio": 0.000107,
+        "lookup_count": 5763,
+        "touch_ratio": 0.0027
+      },
+      "bounded_for_loop": {
+        "cold_state_ratio": 0.999893,
+        "hot_state_ratio": 0.000107,
+        "lookup_count": 5763,
+        "touch_ratio": 0.0027
+      },
+      "bounded_while_with_fuel": {
+        "cold_state_ratio": 0.999893,
+        "hot_state_ratio": 0.000107,
+        "lookup_count": 5763,
+        "touch_ratio": 0.0027
+      },
+      "future_array": {
+        "cold_state_ratio": 0.999893,
+        "hot_state_ratio": 0.000107,
+        "lookup_count": 5763,
+        "touch_ratio": 0.0027
+      },
+      "future_function": {
+        "cold_state_ratio": 0.999287,
+        "hot_state_ratio": 0.000713,
+        "lookup_count": 38421,
+        "touch_ratio": 0.018
+      },
+      "future_recursion": {
+        "cold_state_ratio": 0.999893,
+        "hot_state_ratio": 0.000107,
+        "lookup_count": 5763,
+        "touch_ratio": 0.0027
+      },
+      "if_else_basic": {
+        "cold_state_ratio": 0.999893,
+        "hot_state_ratio": 0.000107,
+        "lookup_count": 5763,
+        "touch_ratio": 0.0027
+      },
+      "if_else_nested": {
+        "cold_state_ratio": 0.999893,
+        "hot_state_ratio": 0.000107,
+        "lookup_count": 5763,
+        "touch_ratio": 0.0027
+      },
+      "nested_bounded_control": {
+        "cold_state_ratio": 0.999893,
+        "hot_state_ratio": 0.000107,
+        "lookup_count": 5763,
+        "touch_ratio": 0.0027
+      },
+      "unsupported_unbounded_loop": {
+        "cold_state_ratio": 0.999893,
+        "hot_state_ratio": 0.000107,
+        "lookup_count": 5763,
+        "touch_ratio": 0.0027
+      },
+      "variable_declaration": {
+        "cold_state_ratio": 0.999893,
+        "hot_state_ratio": 0.000107,
+        "lookup_count": 5763,
+        "touch_ratio": 0.0027
+      }
+    },
+    "future_recursion_quarantine_branch": {
+      "assignment_sequence": {
+        "cold_state_ratio": 0.999926,
+        "hot_state_ratio": 7.4e-05,
+        "lookup_count": 4788,
+        "touch_ratio": 0.00225
+      },
+      "bounded_control_hard_supported": {
+        "cold_state_ratio": 0.999926,
+        "hot_state_ratio": 7.4e-05,
+        "lookup_count": 4788,
+        "touch_ratio": 0.00225
+      },
+      "bounded_for_loop": {
+        "cold_state_ratio": 0.999926,
+        "hot_state_ratio": 7.4e-05,
+        "lookup_count": 4788,
+        "touch_ratio": 0.00225
+      },
+      "bounded_while_with_fuel": {
+        "cold_state_ratio": 0.999926,
+        "hot_state_ratio": 7.4e-05,
+        "lookup_count": 4788,
+        "touch_ratio": 0.00225
+      },
+      "future_array": {
+        "cold_state_ratio": 0.999926,
+        "hot_state_ratio": 7.4e-05,
+        "lookup_count": 4788,
+        "touch_ratio": 0.00225
+      },
+      "future_function": {
+        "cold_state_ratio": 0.999926,
+        "hot_state_ratio": 7.4e-05,
+        "lookup_count": 4788,
+        "touch_ratio": 0.00225
+      },
+      "future_recursion": {
+        "cold_state_ratio": 0.999505,
+        "hot_state_ratio": 0.000495,
+        "lookup_count": 31923,
+        "touch_ratio": 0.015
+      },
+      "if_else_basic": {
+        "cold_state_ratio": 0.999926,
+        "hot_state_ratio": 7.4e-05,
+        "lookup_count": 4788,
+        "touch_ratio": 0.00225
+      },
+      "if_else_nested": {
+        "cold_state_ratio": 0.999926,
+        "hot_state_ratio": 7.4e-05,
+        "lookup_count": 4788,
+        "touch_ratio": 0.00225
+      },
+      "nested_bounded_control": {
+        "cold_state_ratio": 0.999926,
+        "hot_state_ratio": 7.4e-05,
+        "lookup_count": 4788,
+        "touch_ratio": 0.00225
+      },
+      "unsupported_unbounded_loop": {
+        "cold_state_ratio": 0.999926,
+        "hot_state_ratio": 7.4e-05,
+        "lookup_count": 4788,
+        "touch_ratio": 0.00225
+      },
+      "variable_declaration": {
+        "cold_state_ratio": 0.999926,
+        "hot_state_ratio": 7.4e-05,
+        "lookup_count": 4788,
+        "touch_ratio": 0.00225
+      }
+    },
+    "hard_ood_rejection_branch": {
+      "assignment_sequence": {
+        "cold_state_ratio": 0.999854,
+        "hot_state_ratio": 0.000146,
+        "lookup_count": 2890,
+        "touch_ratio": 0.00315
+      },
+      "bounded_control_hard_supported": {
+        "cold_state_ratio": 0.999854,
+        "hot_state_ratio": 0.000146,
+        "lookup_count": 2890,
+        "touch_ratio": 0.00315
+      },
+      "bounded_for_loop": {
+        "cold_state_ratio": 0.999854,
+        "hot_state_ratio": 0.000146,
+        "lookup_count": 2890,
+        "touch_ratio": 0.00315
+      },
+      "bounded_while_with_fuel": {
+        "cold_state_ratio": 0.999854,
+        "hot_state_ratio": 0.000146,
+        "lookup_count": 2890,
+        "touch_ratio": 0.00315
+      },
+      "future_array": {
+        "cold_state_ratio": 0.999854,
+        "hot_state_ratio": 0.000146,
+        "lookup_count": 2890,
+        "touch_ratio": 0.00315
+      },
+      "future_function": {
+        "cold_state_ratio": 0.999854,
+        "hot_state_ratio": 0.000146,
+        "lookup_count": 2890,
+        "touch_ratio": 0.00315
+      },
+      "future_recursion": {
+        "cold_state_ratio": 0.999854,
+        "hot_state_ratio": 0.000146,
+        "lookup_count": 2890,
+        "touch_ratio": 0.00315
+      },
+      "if_else_basic": {
+        "cold_state_ratio": 0.999854,
+        "hot_state_ratio": 0.000146,
+        "lookup_count": 2890,
+        "touch_ratio": 0.00315
+      },
+      "if_else_nested": {
+        "cold_state_ratio": 0.999854,
+        "hot_state_ratio": 0.000146,
+        "lookup_count": 2890,
+        "touch_ratio": 0.00315
+      },
+      "nested_bounded_control": {
+        "cold_state_ratio": 0.999854,
+        "hot_state_ratio": 0.000146,
+        "lookup_count": 2890,
+        "touch_ratio": 0.00315
+      },
+      "unsupported_unbounded_loop": {
+        "cold_state_ratio": 0.999854,
+        "hot_state_ratio": 0.000146,
+        "lookup_count": 2890,
+        "touch_ratio": 0.00315
+      },
+      "variable_declaration": {
+        "cold_state_ratio": 0.999854,
+        "hot_state_ratio": 0.000146,
+        "lookup_count": 2890,
+        "touch_ratio": 0.00315
+      }
+    },
+    "if_else_branch": {
+      "assignment_sequence": {
+        "cold_state_ratio": 0.99939,
+        "hot_state_ratio": 0.00061,
+        "lookup_count": 11809,
+        "touch_ratio": 0.00645
+      },
+      "bounded_control_hard_supported": {
+        "cold_state_ratio": 0.99939,
+        "hot_state_ratio": 0.00061,
+        "lookup_count": 11809,
+        "touch_ratio": 0.00645
+      },
+      "bounded_for_loop": {
+        "cold_state_ratio": 0.99939,
+        "hot_state_ratio": 0.00061,
+        "lookup_count": 11809,
+        "touch_ratio": 0.00645
+      },
+      "bounded_while_with_fuel": {
+        "cold_state_ratio": 0.99939,
+        "hot_state_ratio": 0.00061,
+        "lookup_count": 11809,
+        "touch_ratio": 0.00645
+      },
+      "future_array": {
+        "cold_state_ratio": 0.99939,
+        "hot_state_ratio": 0.00061,
+        "lookup_count": 11809,
+        "touch_ratio": 0.00645
+      },
+      "future_function": {
+        "cold_state_ratio": 0.99939,
+        "hot_state_ratio": 0.00061,
+        "lookup_count": 11809,
+        "touch_ratio": 0.00645
+      },
+      "future_recursion": {
+        "cold_state_ratio": 0.99939,
+        "hot_state_ratio": 0.00061,
+        "lookup_count": 11809,
+        "touch_ratio": 0.00645
+      },
+      "if_else_basic": {
+        "cold_state_ratio": 0.995932,
+        "hot_state_ratio": 0.004068,
+        "lookup_count": 78729,
+        "touch_ratio": 0.043
+      },
+      "if_else_nested": {
+        "cold_state_ratio": 0.995932,
+        "hot_state_ratio": 0.004068,
+        "lookup_count": 78729,
+        "touch_ratio": 0.043
+      },
+      "nested_bounded_control": {
+        "cold_state_ratio": 0.99939,
+        "hot_state_ratio": 0.00061,
+        "lookup_count": 11809,
+        "touch_ratio": 0.00645
+      },
+      "unsupported_unbounded_loop": {
+        "cold_state_ratio": 0.99939,
+        "hot_state_ratio": 0.00061,
+        "lookup_count": 11809,
+        "touch_ratio": 0.00645
+      },
+      "variable_declaration": {
+        "cold_state_ratio": 0.99939,
+        "hot_state_ratio": 0.00061,
+        "lookup_count": 11809,
+        "touch_ratio": 0.00645
+      }
+    },
+    "loop_branch": {
+      "assignment_sequence": {
+        "cold_state_ratio": 0.999332,
+        "hot_state_ratio": 0.000668,
+        "lookup_count": 11832,
+        "touch_ratio": 0.00675
+      },
+      "bounded_control_hard_supported": {
+        "cold_state_ratio": 0.999332,
+        "hot_state_ratio": 0.000668,
+        "lookup_count": 11832,
+        "touch_ratio": 0.00675
+      },
+      "bounded_for_loop": {
+        "cold_state_ratio": 0.995545,
+        "hot_state_ratio": 0.004455,
+        "lookup_count": 78880,
+        "touch_ratio": 0.045
+      },
+      "bounded_while_with_fuel": {
+        "cold_state_ratio": 0.995545,
+        "hot_state_ratio": 0.004455,
+        "lookup_count": 78880,
+        "touch_ratio": 0.045
+      },
+      "future_array": {
+        "cold_state_ratio": 0.999332,
+        "hot_state_ratio": 0.000668,
+        "lookup_count": 11832,
+        "touch_ratio": 0.00675
+      },
+      "future_function": {
+        "cold_state_ratio": 0.999332,
+        "hot_state_ratio": 0.000668,
+        "lookup_count": 11832,
+        "touch_ratio": 0.00675
+      },
+      "future_recursion": {
+        "cold_state_ratio": 0.999332,
+        "hot_state_ratio": 0.000668,
+        "lookup_count": 11832,
+        "touch_ratio": 0.00675
+      },
+      "if_else_basic": {
+        "cold_state_ratio": 0.999332,
+        "hot_state_ratio": 0.000668,
+        "lookup_count": 11832,
+        "touch_ratio": 0.00675
+      },
+      "if_else_nested": {
+        "cold_state_ratio": 0.999332,
+        "hot_state_ratio": 0.000668,
+        "lookup_count": 11832,
+        "touch_ratio": 0.00675
+      },
+      "nested_bounded_control": {
+        "cold_state_ratio": 0.999332,
+        "hot_state_ratio": 0.000668,
+        "lookup_count": 11832,
+        "touch_ratio": 0.00675
+      },
+      "unsupported_unbounded_loop": {
+        "cold_state_ratio": 0.999332,
+        "hot_state_ratio": 0.000668,
+        "lookup_count": 11832,
+        "touch_ratio": 0.00675
+      },
+      "variable_declaration": {
+        "cold_state_ratio": 0.999332,
+        "hot_state_ratio": 0.000668,
+        "lookup_count": 11832,
+        "touch_ratio": 0.00675
+      }
+    },
+    "major_branch_language_family": {
+      "assignment_sequence": {
+        "cold_state_ratio": 0.97338,
+        "hot_state_ratio": 0.02662,
+        "lookup_count": 69822,
+        "touch_ratio": 0.11
+      },
+      "bounded_control_hard_supported": {
+        "cold_state_ratio": 0.97338,
+        "hot_state_ratio": 0.02662,
+        "lookup_count": 69822,
+        "touch_ratio": 0.11
+      },
+      "bounded_for_loop": {
+        "cold_state_ratio": 0.97338,
+        "hot_state_ratio": 0.02662,
+        "lookup_count": 69822,
+        "touch_ratio": 0.11
+      },
+      "bounded_while_with_fuel": {
+        "cold_state_ratio": 0.97338,
+        "hot_state_ratio": 0.02662,
+        "lookup_count": 69822,
+        "touch_ratio": 0.11
+      },
+      "future_array": {
+        "cold_state_ratio": 0.97338,
+        "hot_state_ratio": 0.02662,
+        "lookup_count": 69822,
+        "touch_ratio": 0.11
+      },
+      "future_function": {
+        "cold_state_ratio": 0.97338,
+        "hot_state_ratio": 0.02662,
+        "lookup_count": 69822,
+        "touch_ratio": 0.11
+      },
+      "future_recursion": {
+        "cold_state_ratio": 0.97338,
+        "hot_state_ratio": 0.02662,
+        "lookup_count": 69822,
+        "touch_ratio": 0.11
+      },
+      "if_else_basic": {
+        "cold_state_ratio": 0.97338,
+        "hot_state_ratio": 0.02662,
+        "lookup_count": 69822,
+        "touch_ratio": 0.11
+      },
+      "if_else_nested": {
+        "cold_state_ratio": 0.97338,
+        "hot_state_ratio": 0.02662,
+        "lookup_count": 69822,
+        "touch_ratio": 0.11
+      },
+      "nested_bounded_control": {
+        "cold_state_ratio": 0.97338,
+        "hot_state_ratio": 0.02662,
+        "lookup_count": 69822,
+        "touch_ratio": 0.11
+      },
+      "unsupported_unbounded_loop": {
+        "cold_state_ratio": 0.97338,
+        "hot_state_ratio": 0.02662,
+        "lookup_count": 69822,
+        "touch_ratio": 0.11
+      },
+      "variable_declaration": {
+        "cold_state_ratio": 0.97338,
+        "hot_state_ratio": 0.02662,
+        "lookup_count": 69822,
+        "touch_ratio": 0.11
+      }
+    },
+    "nested_control_branch": {
+      "assignment_sequence": {
+        "cold_state_ratio": 0.999271,
+        "hot_state_ratio": 0.000729,
+        "lookup_count": 9878,
+        "touch_ratio": 0.00705
+      },
+      "bounded_control_hard_supported": {
+        "cold_state_ratio": 0.999271,
+        "hot_state_ratio": 0.000729,
+        "lookup_count": 9878,
+        "touch_ratio": 0.00705
+      },
+      "bounded_for_loop": {
+        "cold_state_ratio": 0.999271,
+        "hot_state_ratio": 0.000729,
+        "lookup_count": 9878,
+        "touch_ratio": 0.00705
+      },
+      "bounded_while_with_fuel": {
+        "cold_state_ratio": 0.999271,
+        "hot_state_ratio": 0.000729,
+        "lookup_count": 9878,
+        "touch_ratio": 0.00705
+      },
+      "future_array": {
+        "cold_state_ratio": 0.999271,
+        "hot_state_ratio": 0.000729,
+        "lookup_count": 9878,
+        "touch_ratio": 0.00705
+      },
+      "future_function": {
+        "cold_state_ratio": 0.999271,
+        "hot_state_ratio": 0.000729,
+        "lookup_count": 9878,
+        "touch_ratio": 0.00705
+      },
+      "future_recursion": {
+        "cold_state_ratio": 0.999271,
+        "hot_state_ratio": 0.000729,
+        "lookup_count": 9878,
+        "touch_ratio": 0.00705
+      },
+      "if_else_basic": {
+        "cold_state_ratio": 0.999271,
+        "hot_state_ratio": 0.000729,
+        "lookup_count": 9878,
+        "touch_ratio": 0.00705
+      },
+      "if_else_nested": {
+        "cold_state_ratio": 0.999271,
+        "hot_state_ratio": 0.000729,
+        "lookup_count": 9878,
+        "touch_ratio": 0.00705
+      },
+      "nested_bounded_control": {
+        "cold_state_ratio": 0.99514,
+        "hot_state_ratio": 0.00486,
+        "lookup_count": 65859,
+        "touch_ratio": 0.047
+      },
+      "unsupported_unbounded_loop": {
+        "cold_state_ratio": 0.999271,
+        "hot_state_ratio": 0.000729,
+        "lookup_count": 9878,
+        "touch_ratio": 0.00705
+      },
+      "variable_declaration": {
+        "cold_state_ratio": 0.999271,
+        "hot_state_ratio": 0.000729,
+        "lookup_count": 9878,
+        "touch_ratio": 0.00705
+      }
+    },
+    "nutrient_toxic_memory": {
+      "assignment_sequence": {
+        "cold_state_ratio": 0.990417,
+        "hot_state_ratio": 0.009583,
+        "lookup_count": 134109,
+        "touch_ratio": 0.066
+      },
+      "bounded_control_hard_supported": {
+        "cold_state_ratio": 0.990417,
+        "hot_state_ratio": 0.009583,
+        "lookup_count": 134109,
+        "touch_ratio": 0.066
+      },
+      "bounded_for_loop": {
+        "cold_state_ratio": 0.990417,
+        "hot_state_ratio": 0.009583,
+        "lookup_count": 134109,
+        "touch_ratio": 0.066
+      },
+      "bounded_while_with_fuel": {
+        "cold_state_ratio": 0.990417,
+        "hot_state_ratio": 0.009583,
+        "lookup_count": 134109,
+        "touch_ratio": 0.066
+      },
+      "future_array": {
+        "cold_state_ratio": 0.990417,
+        "hot_state_ratio": 0.009583,
+        "lookup_count": 134109,
+        "touch_ratio": 0.066
+      },
+      "future_function": {
+        "cold_state_ratio": 0.990417,
+        "hot_state_ratio": 0.009583,
+        "lookup_count": 134109,
+        "touch_ratio": 0.066
+      },
+      "future_recursion": {
+        "cold_state_ratio": 0.990417,
+        "hot_state_ratio": 0.009583,
+        "lookup_count": 134109,
+        "touch_ratio": 0.066
+      },
+      "if_else_basic": {
+        "cold_state_ratio": 0.990417,
+        "hot_state_ratio": 0.009583,
+        "lookup_count": 134109,
+        "touch_ratio": 0.066
+      },
+      "if_else_nested": {
+        "cold_state_ratio": 0.990417,
+        "hot_state_ratio": 0.009583,
+        "lookup_count": 134109,
+        "touch_ratio": 0.066
+      },
+      "nested_bounded_control": {
+        "cold_state_ratio": 0.990417,
+        "hot_state_ratio": 0.009583,
+        "lookup_count": 134109,
+        "touch_ratio": 0.066
+      },
+      "unsupported_unbounded_loop": {
+        "cold_state_ratio": 0.990417,
+        "hot_state_ratio": 0.009583,
+        "lookup_count": 134109,
+        "touch_ratio": 0.066
+      },
+      "variable_declaration": {
+        "cold_state_ratio": 0.990417,
+        "hot_state_ratio": 0.009583,
+        "lookup_count": 134109,
+        "touch_ratio": 0.066
+      }
+    },
+    "routing_scoring_profile": {
+      "assignment_sequence": {
+        "cold_state_ratio": 0.982963,
+        "hot_state_ratio": 0.017037,
+        "lookup_count": 68438,
+        "touch_ratio": 0.088
+      },
+      "bounded_control_hard_supported": {
+        "cold_state_ratio": 0.982963,
+        "hot_state_ratio": 0.017037,
+        "lookup_count": 68438,
+        "touch_ratio": 0.088
+      },
+      "bounded_for_loop": {
+        "cold_state_ratio": 0.982963,
+        "hot_state_ratio": 0.017037,
+        "lookup_count": 68438,
+        "touch_ratio": 0.088
+      },
+      "bounded_while_with_fuel": {
+        "cold_state_ratio": 0.982963,
+        "hot_state_ratio": 0.017037,
+        "lookup_count": 68438,
+        "touch_ratio": 0.088
+      },
+      "future_array": {
+        "cold_state_ratio": 0.982963,
+        "hot_state_ratio": 0.017037,
+        "lookup_count": 68438,
+        "touch_ratio": 0.088
+      },
+      "future_function": {
+        "cold_state_ratio": 0.982963,
+        "hot_state_ratio": 0.017037,
+        "lookup_count": 68438,
+        "touch_ratio": 0.088
+      },
+      "future_recursion": {
+        "cold_state_ratio": 0.982963,
+        "hot_state_ratio": 0.017037,
+        "lookup_count": 68438,
+        "touch_ratio": 0.088
+      },
+      "if_else_basic": {
+        "cold_state_ratio": 0.982963,
+        "hot_state_ratio": 0.017037,
+        "lookup_count": 68438,
+        "touch_ratio": 0.088
+      },
+      "if_else_nested": {
+        "cold_state_ratio": 0.982963,
+        "hot_state_ratio": 0.017037,
+        "lookup_count": 68438,
+        "touch_ratio": 0.088
+      },
+      "nested_bounded_control": {
+        "cold_state_ratio": 0.982963,
+        "hot_state_ratio": 0.017037,
+        "lookup_count": 68438,
+        "touch_ratio": 0.088
+      },
+      "unsupported_unbounded_loop": {
+        "cold_state_ratio": 0.982963,
+        "hot_state_ratio": 0.017037,
+        "lookup_count": 68438,
+        "touch_ratio": 0.088
+      },
+      "variable_declaration": {
+        "cold_state_ratio": 0.982963,
+        "hot_state_ratio": 0.017037,
+        "lookup_count": 68438,
+        "touch_ratio": 0.088
+      }
+    },
+    "supported_bounded_substrate_branch": {
+      "assignment_sequence": {
+        "cold_state_ratio": 0.987625,
+        "hot_state_ratio": 0.012375,
+        "lookup_count": 108193,
+        "touch_ratio": 0.075
+      },
+      "bounded_control_hard_supported": {
+        "cold_state_ratio": 0.998144,
+        "hot_state_ratio": 0.001856,
+        "lookup_count": 16228,
+        "touch_ratio": 0.01125
+      },
+      "bounded_for_loop": {
+        "cold_state_ratio": 0.998144,
+        "hot_state_ratio": 0.001856,
+        "lookup_count": 16228,
+        "touch_ratio": 0.01125
+      },
+      "bounded_while_with_fuel": {
+        "cold_state_ratio": 0.998144,
+        "hot_state_ratio": 0.001856,
+        "lookup_count": 16228,
+        "touch_ratio": 0.01125
+      },
+      "future_array": {
+        "cold_state_ratio": 0.998144,
+        "hot_state_ratio": 0.001856,
+        "lookup_count": 16228,
+        "touch_ratio": 0.01125
+      },
+      "future_function": {
+        "cold_state_ratio": 0.998144,
+        "hot_state_ratio": 0.001856,
+        "lookup_count": 16228,
+        "touch_ratio": 0.01125
+      },
+      "future_recursion": {
+        "cold_state_ratio": 0.998144,
+        "hot_state_ratio": 0.001856,
+        "lookup_count": 16228,
+        "touch_ratio": 0.01125
+      },
+      "if_else_basic": {
+        "cold_state_ratio": 0.998144,
+        "hot_state_ratio": 0.001856,
+        "lookup_count": 16228,
+        "touch_ratio": 0.01125
+      },
+      "if_else_nested": {
+        "cold_state_ratio": 0.998144,
+        "hot_state_ratio": 0.001856,
+        "lookup_count": 16228,
+        "touch_ratio": 0.01125
+      },
+      "nested_bounded_control": {
+        "cold_state_ratio": 0.998144,
+        "hot_state_ratio": 0.001856,
+        "lookup_count": 16228,
+        "touch_ratio": 0.01125
+      },
+      "unsupported_unbounded_loop": {
+        "cold_state_ratio": 0.998144,
+        "hot_state_ratio": 0.001856,
+        "lookup_count": 16228,
+        "touch_ratio": 0.01125
+      },
+      "variable_declaration": {
+        "cold_state_ratio": 0.987625,
+        "hot_state_ratio": 0.012375,
+        "lookup_count": 108193,
+        "touch_ratio": 0.075
+      }
+    },
+    "trunk_global_routing": {
+      "assignment_sequence": {
+        "cold_state_ratio": 0.892,
+        "hot_state_ratio": 0.108,
+        "lookup_count": 78000,
+        "touch_ratio": 0.24
+      },
+      "bounded_control_hard_supported": {
+        "cold_state_ratio": 0.892,
+        "hot_state_ratio": 0.108,
+        "lookup_count": 78000,
+        "touch_ratio": 0.24
+      },
+      "bounded_for_loop": {
+        "cold_state_ratio": 0.892,
+        "hot_state_ratio": 0.108,
+        "lookup_count": 78000,
+        "touch_ratio": 0.24
+      },
+      "bounded_while_with_fuel": {
+        "cold_state_ratio": 0.892,
+        "hot_state_ratio": 0.108,
+        "lookup_count": 78000,
+        "touch_ratio": 0.24
+      },
+      "future_array": {
+        "cold_state_ratio": 0.892,
+        "hot_state_ratio": 0.108,
+        "lookup_count": 78000,
+        "touch_ratio": 0.24
+      },
+      "future_function": {
+        "cold_state_ratio": 0.892,
+        "hot_state_ratio": 0.108,
+        "lookup_count": 78000,
+        "touch_ratio": 0.24
+      },
+      "future_recursion": {
+        "cold_state_ratio": 0.892,
+        "hot_state_ratio": 0.108,
+        "lookup_count": 78000,
+        "touch_ratio": 0.24
+      },
+      "if_else_basic": {
+        "cold_state_ratio": 0.892,
+        "hot_state_ratio": 0.108,
+        "lookup_count": 78000,
+        "touch_ratio": 0.24
+      },
+      "if_else_nested": {
+        "cold_state_ratio": 0.892,
+        "hot_state_ratio": 0.108,
+        "lookup_count": 78000,
+        "touch_ratio": 0.24
+      },
+      "nested_bounded_control": {
+        "cold_state_ratio": 0.892,
+        "hot_state_ratio": 0.108,
+        "lookup_count": 78000,
+        "touch_ratio": 0.24
+      },
+      "unsupported_unbounded_loop": {
+        "cold_state_ratio": 0.892,
+        "hot_state_ratio": 0.108,
+        "lookup_count": 78000,
+        "touch_ratio": 0.24
+      },
+      "variable_declaration": {
+        "cold_state_ratio": 0.892,
+        "hot_state_ratio": 0.108,
+        "lookup_count": 78000,
+        "touch_ratio": 0.24
+      }
+    },
+    "unbounded_loop_quarantine_branch": {
+      "assignment_sequence": {
+        "cold_state_ratio": 0.999935,
+        "hot_state_ratio": 6.5e-05,
+        "lookup_count": 3826,
+        "touch_ratio": 0.0021
+      },
+      "bounded_control_hard_supported": {
+        "cold_state_ratio": 0.999935,
+        "hot_state_ratio": 6.5e-05,
+        "lookup_count": 3826,
+        "touch_ratio": 0.0021
+      },
+      "bounded_for_loop": {
+        "cold_state_ratio": 0.999935,
+        "hot_state_ratio": 6.5e-05,
+        "lookup_count": 3826,
+        "touch_ratio": 0.0021
+      },
+      "bounded_while_with_fuel": {
+        "cold_state_ratio": 0.999935,
+        "hot_state_ratio": 6.5e-05,
+        "lookup_count": 3826,
+        "touch_ratio": 0.0021
+      },
+      "future_array": {
+        "cold_state_ratio": 0.999935,
+        "hot_state_ratio": 6.5e-05,
+        "lookup_count": 3826,
+        "touch_ratio": 0.0021
+      },
+      "future_function": {
+        "cold_state_ratio": 0.999935,
+        "hot_state_ratio": 6.5e-05,
+        "lookup_count": 3826,
+        "touch_ratio": 0.0021
+      },
+      "future_recursion": {
+        "cold_state_ratio": 0.999935,
+        "hot_state_ratio": 6.5e-05,
+        "lookup_count": 3826,
+        "touch_ratio": 0.0021
+      },
+      "if_else_basic": {
+        "cold_state_ratio": 0.999935,
+        "hot_state_ratio": 6.5e-05,
+        "lookup_count": 3826,
+        "touch_ratio": 0.0021
+      },
+      "if_else_nested": {
+        "cold_state_ratio": 0.999935,
+        "hot_state_ratio": 6.5e-05,
+        "lookup_count": 3826,
+        "touch_ratio": 0.0021
+      },
+      "nested_bounded_control": {
+        "cold_state_ratio": 0.999935,
+        "hot_state_ratio": 6.5e-05,
+        "lookup_count": 3826,
+        "touch_ratio": 0.0021
+      },
+      "unsupported_unbounded_loop": {
+        "cold_state_ratio": 0.999569,
+        "hot_state_ratio": 0.000431,
+        "lookup_count": 25513,
+        "touch_ratio": 0.014
+      },
+      "variable_declaration": {
+        "cold_state_ratio": 0.999935,
+        "hot_state_ratio": 6.5e-05,
+        "lookup_count": 3826,
+        "touch_ratio": 0.0021
+      }
+    }
+  },
+  "overactive_trunk": true,
+  "profiles": [
+    "state_1B"
+  ],
+  "tree_access_heatmap_completed": true,
+  "underactive_bounded_control_hard": true,
+  "underactive_control_templates": true
+}

@@ -1,0 +1,65 @@
+{
+  "best_sampling_profile": "branch_activation_balanced",
+  "dataset_activation_bottleneck_likely": true,
+  "dataset_resampling_improves_top1": true,
+  "dataset_resampling_improves_touch": true,
+  "dataset_resampling_probe_completed": true,
+  "profiles": [
+    {
+      "boundary_false_accept_rate": 0.0,
+      "candidate_miss_rate": 0.1386,
+      "correct_output_in_beam_rate": 0.8454,
+      "dataset_resampling_is_training_claim": false,
+      "future_domain_supported_accept_rate": 0.0,
+      "future_quarantine_branch_touch_ratio": 0.016,
+      "if_loop_nested_branch_touch_ratio": 0.06136,
+      "notes": "v0.9.12 sampling reference",
+      "sampling_profile": "original_sampling_reference",
+      "supported_branch_touch_ratio": 0.07384,
+      "top1_correct_rate": 0.78768,
+      "tree_touch_ratio": 0.052
+    },
+    {
+      "boundary_false_accept_rate": 0.0,
+      "candidate_miss_rate": 0.1326,
+      "correct_output_in_beam_rate": 0.8514,
+      "dataset_resampling_is_training_claim": false,
+      "future_domain_supported_accept_rate": 0.0,
+      "future_quarantine_branch_touch_ratio": 0.016,
+      "if_loop_nested_branch_touch_ratio": 0.07198,
+      "notes": "more if/for/nested and hard-supported exposure",
+      "sampling_profile": "supported_control_balanced",
+      "supported_branch_touch_ratio": 0.08662,
+      "top1_correct_rate": 0.79568,
+      "tree_touch_ratio": 0.061
+    },
+    {
+      "boundary_false_accept_rate": 0.0,
+      "candidate_miss_rate": 0.1376,
+      "correct_output_in_beam_rate": 0.8464,
+      "dataset_resampling_is_training_claim": false,
+      "future_domain_supported_accept_rate": 0.0,
+      "future_quarantine_branch_touch_ratio": 0.039,
+      "if_loop_nested_branch_touch_ratio": 0.06372,
+      "notes": "more quarantine exposure without supported acceptance",
+      "sampling_profile": "frontier_balanced",
+      "supported_branch_touch_ratio": 0.07668,
+      "top1_correct_rate": 0.78918,
+      "tree_touch_ratio": 0.054
+    },
+    {
+      "boundary_false_accept_rate": 0.0,
+      "candidate_miss_rate": 0.1296,
+      "correct_output_in_beam_rate": 0.8544,
+      "dataset_resampling_is_training_claim": false,
+      "future_domain_supported_accept_rate": 0.0,
+      "future_quarantine_branch_touch_ratio": 0.031,
+      "if_loop_nested_branch_touch_ratio": 0.07788,
+      "notes": "minimum exposure for every major branch",
+      "sampling_profile": "branch_activation_balanced",
+      "supported_branch_touch_ratio": 0.09372,
+      "top1_correct_rate": 0.79818,
+      "tree_touch_ratio": 0.066
+    }
+  ]
+}

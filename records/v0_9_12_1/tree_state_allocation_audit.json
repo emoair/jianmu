@@ -1,0 +1,449 @@
+{
+  "accidental_cold_supported_branches": [
+    "bounded_control_hard_branch",
+    "if_else_branch",
+    "loop_branch",
+    "nested_control_branch",
+    "control_template_leaf"
+  ],
+  "intentionally_cold_future_branches": [
+    "future_function_quarantine_branch",
+    "future_array_quarantine_branch",
+    "future_recursion_quarantine_branch",
+    "unbounded_loop_quarantine_branch",
+    "hard_ood_rejection_branch"
+  ],
+  "layers": [
+    {
+      "allocated_ratio": 0.040323,
+      "allocated_units": 50000000,
+      "allocation_status": "underallocated",
+      "category_associations": [
+        "all"
+      ],
+      "cold_state_ratio": 0.892,
+      "cold_state_units": 44600000,
+      "hot_state_ratio": 0.108,
+      "hot_state_units": 5400000,
+      "layer_name": "trunk_global_routing",
+      "lookup_count": 78000,
+      "lookup_ratio": 0.05,
+      "marginal_candidate_miss_reduction": 0.006202,
+      "marginal_top1_gain": 0.003403,
+      "overallocated_score": 0.0,
+      "stage_associations": [
+        "all"
+      ],
+      "touch_ratio": 0.24,
+      "underallocated_score": 19.9677,
+      "unique_touched_units": 12000000
+    },
+    {
+      "allocated_ratio": 0.040323,
+      "allocated_units": 50000000,
+      "allocation_status": "underallocated",
+      "category_associations": [
+        "current_supported_bounded_substrate",
+        "future_domain"
+      ],
+      "cold_state_ratio": 0.97338,
+      "cold_state_units": 48669000,
+      "hot_state_ratio": 0.02662,
+      "hot_state_units": 1331000,
+      "layer_name": "major_branch_language_family",
+      "lookup_count": 69822,
+      "lookup_ratio": 0.044758,
+      "marginal_candidate_miss_reduction": 0.002843,
+      "marginal_top1_gain": 0.00156,
+      "overallocated_score": 0.0,
+      "stage_associations": [
+        "all"
+      ],
+      "touch_ratio": 0.11,
+      "underallocated_score": 6.9677,
+      "unique_touched_units": 5500000
+    },
+    {
+      "allocated_ratio": 0.064516,
+      "allocated_units": 80000000,
+      "allocation_status": "balanced",
+      "category_associations": [
+        "current_supported_bounded_substrate"
+      ],
+      "cold_state_ratio": 0.987625,
+      "cold_state_units": 79010000,
+      "hot_state_ratio": 0.012375,
+      "hot_state_units": 990000,
+      "layer_name": "supported_bounded_substrate_branch",
+      "lookup_count": 108193,
+      "lookup_ratio": 0.069354,
+      "marginal_candidate_miss_reduction": 0.001938,
+      "marginal_top1_gain": 0.001063,
+      "overallocated_score": 0.0,
+      "stage_associations": [
+        "variable_declaration",
+        "assignment_sequence"
+      ],
+      "touch_ratio": 0.075,
+      "underallocated_score": 1.0484,
+      "unique_touched_units": 6000000
+    },
+    {
+      "allocated_ratio": 0.064516,
+      "allocated_units": 80000000,
+      "allocation_status": "insufficient_data_activation",
+      "category_associations": [
+        "bounded_control_hard_supported"
+      ],
+      "cold_state_ratio": 0.994051,
+      "cold_state_units": 79524096,
+      "hot_state_ratio": 0.005949,
+      "hot_state_units": 475904,
+      "layer_name": "bounded_control_hard_branch",
+      "lookup_count": 105878,
+      "lookup_ratio": 0.067871,
+      "marginal_candidate_miss_reduction": 0.001344,
+      "marginal_top1_gain": 0.000737,
+      "overallocated_score": 1.2516,
+      "stage_associations": [
+        "bounded_control_hard_supported"
+      ],
+      "touch_ratio": 0.052,
+      "underallocated_score": 0.0,
+      "unique_touched_units": 4160000
+    },
+    {
+      "allocated_ratio": 0.048387,
+      "allocated_units": 60000000,
+      "allocation_status": "insufficient_data_activation",
+      "category_associations": [
+        "current_supported_bounded_substrate"
+      ],
+      "cold_state_ratio": 0.995932,
+      "cold_state_units": 59755932,
+      "hot_state_ratio": 0.004068,
+      "hot_state_units": 244068,
+      "layer_name": "if_else_branch",
+      "lookup_count": 78729,
+      "lookup_ratio": 0.050467,
+      "marginal_candidate_miss_reduction": 0.001111,
+      "marginal_top1_gain": 0.00061,
+      "overallocated_score": 0.5387,
+      "stage_associations": [
+        "if_else_basic",
+        "if_else_nested"
+      ],
+      "touch_ratio": 0.043,
+      "underallocated_score": 0.0,
+      "unique_touched_units": 2580000
+    },
+    {
+      "allocated_ratio": 0.048387,
+      "allocated_units": 60000000,
+      "allocation_status": "insufficient_data_activation",
+      "category_associations": [
+        "current_supported_bounded_substrate"
+      ],
+      "cold_state_ratio": 0.995545,
+      "cold_state_units": 59732700,
+      "hot_state_ratio": 0.004455,
+      "hot_state_units": 267300,
+      "layer_name": "loop_branch",
+      "lookup_count": 78880,
+      "lookup_ratio": 0.050564,
+      "marginal_candidate_miss_reduction": 0.001163,
+      "marginal_top1_gain": 0.000638,
+      "overallocated_score": 0.3387,
+      "stage_associations": [
+        "bounded_for_loop",
+        "bounded_while_with_fuel"
+      ],
+      "touch_ratio": 0.045,
+      "underallocated_score": 0.0,
+      "unique_touched_units": 2700000
+    },
+    {
+      "allocated_ratio": 0.040323,
+      "allocated_units": 50000000,
+      "allocation_status": "insufficient_data_activation",
+      "category_associations": [
+        "current_supported_bounded_substrate"
+      ],
+      "cold_state_ratio": 0.99514,
+      "cold_state_units": 49757010,
+      "hot_state_ratio": 0.00486,
+      "hot_state_units": 242990,
+      "layer_name": "nested_control_branch",
+      "lookup_count": 65859,
+      "lookup_ratio": 0.042217,
+      "marginal_candidate_miss_reduction": 0.001215,
+      "marginal_top1_gain": 0.000666,
+      "overallocated_score": 0.0,
+      "stage_associations": [
+        "nested_bounded_control"
+      ],
+      "touch_ratio": 0.047,
+      "underallocated_score": 0.6677,
+      "unique_touched_units": 2350000
+    },
+    {
+      "allocated_ratio": 0.258065,
+      "allocated_units": 320000000,
+      "allocation_status": "overallocated",
+      "category_associations": [
+        "current_supported_bounded_substrate",
+        "bounded_control_hard_supported"
+      ],
+      "cold_state_ratio": 0.985207,
+      "cold_state_units": 315266304,
+      "hot_state_ratio": 0.014793,
+      "hot_state_units": 4733696,
+      "layer_name": "candidate_fragment_leaf",
+      "lookup_count": 435592,
+      "lookup_ratio": 0.279226,
+      "marginal_candidate_miss_reduction": 0.002119,
+      "marginal_top1_gain": 0.001163,
+      "overallocated_score": 17.6065,
+      "stage_associations": [
+        "all_supported"
+      ],
+      "touch_ratio": 0.082,
+      "underallocated_score": 0.0,
+      "unique_touched_units": 26240000
+    },
+    {
+      "allocated_ratio": 0.112903,
+      "allocated_units": 140000000,
+      "allocation_status": "insufficient_data_activation",
+      "category_associations": [
+        "bounded_control_hard_supported"
+      ],
+      "cold_state_ratio": 0.994718,
+      "cold_state_units": 139260492,
+      "hot_state_ratio": 0.005282,
+      "hot_state_units": 739508,
+      "layer_name": "control_template_leaf",
+      "lookup_count": 184759,
+      "lookup_ratio": 0.118435,
+      "marginal_candidate_miss_reduction": 0.001266,
+      "marginal_top1_gain": 0.000695,
+      "overallocated_score": 6.3903,
+      "stage_associations": [
+        "if_else_basic",
+        "bounded_for_loop",
+        "nested_bounded_control"
+      ],
+      "touch_ratio": 0.049,
+      "underallocated_score": 0.0,
+      "unique_touched_units": 6860000
+    },
+    {
+      "allocated_ratio": 0.064516,
+      "allocated_units": 80000000,
+      "allocation_status": "balanced",
+      "category_associations": [
+        "candidate_miss"
+      ],
+      "cold_state_ratio": 0.992599,
+      "cold_state_units": 79407936,
+      "hot_state_ratio": 0.007401,
+      "hot_state_units": 592064,
+      "layer_name": "failure_pattern_memory",
+      "lookup_count": 106482,
+      "lookup_ratio": 0.068258,
+      "marginal_candidate_miss_reduction": 0.001499,
+      "marginal_top1_gain": 0.000822,
+      "overallocated_score": 0.6516,
+      "stage_associations": [
+        "all_supported"
+      ],
+      "touch_ratio": 0.058,
+      "underallocated_score": 0.0,
+      "unique_touched_units": 4640000
+    },
+    {
+      "allocated_ratio": 0.080645,
+      "allocated_units": 100000000,
+      "allocation_status": "balanced",
+      "category_associations": [
+        "supported",
+        "boundary"
+      ],
+      "cold_state_ratio": 0.990417,
+      "cold_state_units": 99041680,
+      "hot_state_ratio": 0.009583,
+      "hot_state_units": 958320,
+      "layer_name": "nutrient_toxic_memory",
+      "lookup_count": 134109,
+      "lookup_ratio": 0.085967,
+      "marginal_candidate_miss_reduction": 0.001706,
+      "marginal_top1_gain": 0.000936,
+      "overallocated_score": 1.4645,
+      "stage_associations": [
+        "all_supported",
+        "boundary"
+      ],
+      "touch_ratio": 0.066,
+      "underallocated_score": 0.0,
+      "unique_touched_units": 6600000
+    },
+    {
+      "allocated_ratio": 0.040323,
+      "allocated_units": 50000000,
+      "allocation_status": "underallocated",
+      "category_associations": [
+        "routing"
+      ],
+      "cold_state_ratio": 0.982963,
+      "cold_state_units": 49148160,
+      "hot_state_ratio": 0.017037,
+      "hot_state_units": 851840,
+      "layer_name": "routing_scoring_profile",
+      "lookup_count": 68438,
+      "lookup_ratio": 0.043871,
+      "marginal_candidate_miss_reduction": 0.002274,
+      "marginal_top1_gain": 0.001248,
+      "overallocated_score": 0.0,
+      "stage_associations": [
+        "all"
+      ],
+      "touch_ratio": 0.088,
+      "underallocated_score": 4.7677,
+      "unique_touched_units": 4400000
+    },
+    {
+      "allocated_ratio": 0.024194,
+      "allocated_units": 30000000,
+      "allocation_status": "intentionally_cold",
+      "category_associations": [
+        "future_function_candidate"
+      ],
+      "cold_state_ratio": 0.999287,
+      "cold_state_units": 29978616,
+      "hot_state_ratio": 0.000713,
+      "hot_state_units": 21384,
+      "layer_name": "future_function_quarantine_branch",
+      "lookup_count": 38421,
+      "lookup_ratio": 0.024629,
+      "marginal_candidate_miss_reduction": 0.000465,
+      "marginal_top1_gain": 0.000255,
+      "overallocated_score": 0.6194,
+      "stage_associations": [
+        "future_function"
+      ],
+      "touch_ratio": 0.018,
+      "underallocated_score": 0.0,
+      "unique_touched_units": 540000
+    },
+    {
+      "allocated_ratio": 0.024194,
+      "allocated_units": 30000000,
+      "allocation_status": "intentionally_cold",
+      "category_associations": [
+        "future_array_candidate"
+      ],
+      "cold_state_ratio": 0.999364,
+      "cold_state_units": 29980926,
+      "hot_state_ratio": 0.000636,
+      "hot_state_units": 19074,
+      "layer_name": "future_array_quarantine_branch",
+      "lookup_count": 38383,
+      "lookup_ratio": 0.024604,
+      "marginal_candidate_miss_reduction": 0.000439,
+      "marginal_top1_gain": 0.000241,
+      "overallocated_score": 0.7194,
+      "stage_associations": [
+        "future_array"
+      ],
+      "touch_ratio": 0.017,
+      "underallocated_score": 0.0,
+      "unique_touched_units": 510000
+    },
+    {
+      "allocated_ratio": 0.020161,
+      "allocated_units": 25000000,
+      "allocation_status": "intentionally_cold",
+      "category_associations": [
+        "future_recursion_candidate"
+      ],
+      "cold_state_ratio": 0.999505,
+      "cold_state_units": 24987625,
+      "hot_state_ratio": 0.000495,
+      "hot_state_units": 12375,
+      "layer_name": "future_recursion_quarantine_branch",
+      "lookup_count": 31923,
+      "lookup_ratio": 0.020463,
+      "marginal_candidate_miss_reduction": 0.000388,
+      "marginal_top1_gain": 0.000213,
+      "overallocated_score": 0.5161,
+      "stage_associations": [
+        "future_recursion"
+      ],
+      "touch_ratio": 0.015,
+      "underallocated_score": 0.0,
+      "unique_touched_units": 375000
+    },
+    {
+      "allocated_ratio": 0.016129,
+      "allocated_units": 20000000,
+      "allocation_status": "intentionally_cold",
+      "category_associations": [
+        "unsupported_unbounded_loop"
+      ],
+      "cold_state_ratio": 0.999569,
+      "cold_state_units": 19991376,
+      "hot_state_ratio": 0.000431,
+      "hot_state_units": 8624,
+      "layer_name": "unbounded_loop_quarantine_branch",
+      "lookup_count": 25513,
+      "lookup_ratio": 0.016354,
+      "marginal_candidate_miss_reduction": 0.000362,
+      "marginal_top1_gain": 0.000198,
+      "overallocated_score": 0.2129,
+      "stage_associations": [
+        "unsupported_unbounded_loop"
+      ],
+      "touch_ratio": 0.014,
+      "underallocated_score": 0.0,
+      "unique_touched_units": 280000
+    },
+    {
+      "allocated_ratio": 0.012097,
+      "allocated_units": 15000000,
+      "allocation_status": "intentionally_cold",
+      "category_associations": [
+        "hard_ood",
+        "true_false_accept_trap"
+      ],
+      "cold_state_ratio": 0.99903,
+      "cold_state_units": 14985447,
+      "hot_state_ratio": 0.00097,
+      "hot_state_units": 14553,
+      "layer_name": "hard_ood_rejection_branch",
+      "lookup_count": 19267,
+      "lookup_ratio": 0.012351,
+      "marginal_candidate_miss_reduction": 0.000543,
+      "marginal_top1_gain": 0.000298,
+      "overallocated_score": 0.0,
+      "stage_associations": [
+        "hard_ood"
+      ],
+      "touch_ratio": 0.021,
+      "underallocated_score": 0.8903,
+      "unique_touched_units": 315000
+    }
+  ],
+  "materialization_level": "lazy_indexed",
+  "overall_touch_ratio": 0.052,
+  "overallocated_layers": [
+    "candidate_fragment_leaf"
+  ],
+  "source_profile": "state_1B",
+  "target_state_units": 1000000000,
+  "tree_allocation_audit_completed": true,
+  "underallocated_layers": [
+    "trunk_global_routing",
+    "major_branch_language_family",
+    "routing_scoring_profile"
+  ]
+}

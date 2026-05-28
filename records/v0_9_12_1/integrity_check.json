@@ -1,0 +1,12 @@
+{
+  "dataset_resampling_is_training_claim": false,
+  "expected_output_access_before_candidate_generation": false,
+  "fixed_metric_detected": false,
+  "forbidden_field_access_count": 0,
+  "mandatory_counter_guard_passed": true,
+  "periodic_rule_detected": false,
+  "reallocation_profile_is_architecture_change": false,
+  "summary_only_detected": false,
+  "synthetic_summary_detected": false,
+  "target_ir_access_before_candidate_generation": false
+}

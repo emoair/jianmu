@@ -1,0 +1,19 @@
+{
+  "shards": [
+    {
+      "path": "compiler_validation_trace_current_1B_reference.jsonl",
+      "profile_name": "current_1B_reference",
+      "row_count": 3000
+    },
+    {
+      "path": "compiler_validation_trace_hot_rebalanced_1B.jsonl",
+      "profile_name": "hot_rebalanced_1B",
+      "row_count": 3000
+    }
+  ],
+  "trace_sharded": true,
+  "validated_profiles": [
+    "current_1B_reference",
+    "hot_rebalanced_1B"
+  ]
+}

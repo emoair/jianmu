@@ -1,0 +1,16 @@
+{
+  "allocation_issue_score": 0.74,
+  "combined_diagnosis_completed": true,
+  "dataset_issue_score": 0.56,
+  "dominant_cause": "mixed_allocation_and_dataset",
+  "intentional_future_coldness_score": 0.62,
+  "recommended_next_action": "run access-aware adaptive allocation with supported-control balanced sampling as a diagnostic profile",
+  "sampling_issue_score": 0.53,
+  "tree_structure_issue_score": 0.68,
+  "whether_to_continue_beyond_1B": false,
+  "whether_to_generate_more_data": true,
+  "whether_to_promote_1B_profile": false,
+  "whether_to_reallocate_state_budget": true,
+  "whether_to_reweight_existing_data": true,
+  "whether_to_try_adaptive_allocation": true
+}
