@@ -1,0 +1,20 @@
+{
+  "candidate_error_dominant": false,
+  "classified_failure_count": 396,
+  "dominant_failure_category": "cl_or_link_toolchain_error",
+  "engineering_issue_dominant": true,
+  "environment_issue_suspected": true,
+  "failure_category_distribution": {
+    "cl_or_link_toolchain_error": 384,
+    "environment_interference_suspected": 7,
+    "permission_compile_spawn": 3,
+    "permission_run_exe": 2
+  },
+  "freeze_prune_error_dominant": false,
+  "original_failure_count": 396,
+  "original_success_count": 1104,
+  "original_validation_sample_count": 1500,
+  "taxonomy_completed": true,
+  "unknown_failure_count": 0,
+  "unknown_failure_explanation": ""
+}

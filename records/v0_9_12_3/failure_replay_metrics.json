@@ -1,0 +1,21 @@
+{
+  "cleanup_failure_count": 0,
+  "failure_replay_completed": true,
+  "original_failure_count": 396,
+  "permission_error_count": 0,
+  "real_compiler_invocation_count": 396,
+  "replay_remaining_failure_count": 0,
+  "replay_success_count": 396,
+  "runs": [
+    {
+      "attempted_count": 396,
+      "permission_error_count": 0,
+      "remaining_failure_count": 0,
+      "replay_run_label": "replay_16",
+      "success_count": 396,
+      "timeout_count": 0,
+      "worker_count": 16
+    }
+  ],
+  "timeout_count": 0
+}

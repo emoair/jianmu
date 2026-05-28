@@ -1,0 +1,11 @@
+{
+  "shards": [
+    {
+      "path": "clean_rerun_trace_primary_16.jsonl",
+      "row_count": 6000,
+      "run_label": "primary_16",
+      "size_bytes": 5135799
+    }
+  ],
+  "trace_sharded": true
+}

@@ -42,6 +42,7 @@ def run_clean_msvc_preflight(output_records: str | Path, working_directory: str 
         "path_cl_found": report.get("path_cl_found", False),
         "path_link_found": _which_exists("link"),
         **stale,
+        **_security_process_summary(stale.get("stale_process_summary", [])),
         "one_drive_path_detected": "OneDrive" in str(wd),
         "compiler_tmp_dir_writable": tmp_ok,
         "preflight_passed": not blockers,
@@ -73,7 +74,7 @@ def _stale_process_summary() -> Dict[str, Any]:
         if len(parts) < 2:
             continue
         name, pid = parts[0].lower(), parts[1]
-        if name in {"cl.exe", "link.exe", "python.exe"} and pid != current:
+        if name in {"cl.exe", "link.exe", "python.exe", "360tray.exe", "360sd.exe", "360safe.exe", "msmpeng.exe", "securityhealthservice.exe"} and pid != current:
             summary["stale_process_summary"].append({"process_name": name, "pid": pid})
             if name == "cl.exe":
                 summary["stale_cl_process_count"] += 1
@@ -82,6 +83,17 @@ def _stale_process_summary() -> Dict[str, Any]:
             elif name == "python.exe":
                 summary["stale_python_process_count"] += 1
     return summary
+
+
+def _security_process_summary(processes: List[Dict[str, Any]]) -> Dict[str, Any]:
+    names = {str(row.get("process_name", "")).lower() for row in processes}
+    known_360 = any(name.startswith("360") for name in names)
+    defender = any(name in {"msmpeng.exe", "securityhealthservice.exe"} for name in names)
+    return {
+        "antivirus_process_suspected": known_360 or defender,
+        "defender_or_security_lock_suspected": defender,
+        "known_360_process_detected": known_360,
+    }
 
 
 def _check_tmp_writable() -> bool:

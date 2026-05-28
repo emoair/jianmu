@@ -508,3 +508,7 @@ v0.9.12.1 audits why the v0.9.12 1B lazy-indexed state budget has low active tou
 ## v0.9.12.2 Development Direction
 
 v0.9.12.2 tests access-aware adaptive allocation and balanced sampling after v0.9.12.1 diagnosed a mixed allocation-and-dataset bottleneck. It evaluates a combined hot-rebalanced 1B + branch-activation-balanced profile and a layerwise sparse 1B freeze-prune diagnostic profile. Layerwise 1B means lazy-indexed logical budget per tree layer with active-access guards, not fully materialized parameters. This version does not promote a default profile and does not claim Turing completeness or solved program synthesis.
+
+## v0.9.12.3 Development Direction
+
+v0.9.12.3 diagnoses the non-clean MSVC compiler validation observed in v0.9.12.2 for the layerwise sparse 1B freeze-prune profile. It classifies compiler failures, replays failed samples, and performs a clean MSVC rerun with reduced-worker fallback if needed. This version preserves original v0.9.12.2 records and does not promote any profile or claim Turing completeness.
