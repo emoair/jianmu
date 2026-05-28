@@ -1,0 +1,44 @@
+{
+  "actual_total": 20000,
+  "category_count": {
+    "bounded_control_hard_supported": 3000,
+    "current_supported_bounded_substrate": 7000,
+    "future_array_candidate": 2000,
+    "future_function_candidate": 2000,
+    "future_recursion_candidate": 1600,
+    "hard_ood": 600,
+    "label_review_candidate": 400,
+    "near_ood_program": 1000,
+    "true_false_accept_trap": 1000,
+    "unsupported_unbounded_loop": 1400
+  },
+  "dataset_version": "v0.9.9",
+  "scale": "small",
+  "seed": 68,
+  "shard_size": 10000,
+  "split_count": {
+    "eval": 3000,
+    "heldout": 1000,
+    "test": 2000,
+    "train": 14000
+  },
+  "stage_count": {
+    "assignment_sequence": 863,
+    "bounded_control_hard_supported": 3000,
+    "bounded_for_loop": 895,
+    "bounded_while_with_fuel": 868,
+    "future_array": 2000,
+    "future_function": 2000,
+    "future_recursion": 1600,
+    "hard_ood": 600,
+    "if_else_basic": 887,
+    "if_else_nested": 829,
+    "label_review_candidate": 400,
+    "multi_variable_sequence": 913,
+    "near_ood_program": 1000,
+    "nested_bounded_control": 890,
+    "true_false_accept_trap": 1000,
+    "unsupported_unbounded_loop": 1400,
+    "variable_declaration": 855
+  }
+}

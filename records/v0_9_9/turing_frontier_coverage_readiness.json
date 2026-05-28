@@ -1,0 +1,30 @@
+{
+  "best_beam_size": 64,
+  "best_candidate_budget": 512,
+  "best_control_template_budget": "xlarge",
+  "best_memory_budget": "8x",
+  "best_root_expansion_budget": "8x",
+  "blocking_issues": [],
+  "boundary_compiler_misroute_count": 0,
+  "boundary_false_accept_rate_at_best": 0.0,
+  "budget_sweep_completed": true,
+  "candidate_miss_rate_after_best_budget": 0.2324,
+  "candidate_miss_rate_before": 0.6024,
+  "candidate_space_probe_completed": true,
+  "compiler_validation_completed": true,
+  "compiler_verified_correct_rate": 1.0,
+  "dataset_audit_passed": true,
+  "dataset_generation_completed": true,
+  "forbidden_field_access_count": 0,
+  "future_domain_supported_accept_rate_at_best": 0.0,
+  "generation_capacity_bottleneck_confirmed": true,
+  "recommended_claim_level": "turing_frontier_dataset_ready_candidate_coverage_bottleneck_confirmed",
+  "required_next_run": "targeted candidate-space expansion probe; diagnostic sweep is not a training gain",
+  "scales_completed": [
+    "small",
+    "medium",
+    "large"
+  ],
+  "top1_after_best_budget": 0.6698,
+  "top1_before": 0.3776
+}

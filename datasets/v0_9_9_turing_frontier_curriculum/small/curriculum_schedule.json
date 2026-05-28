@@ -1,0 +1,201 @@
+{
+  "dataset_version": "v0.9.9",
+  "stages": [
+    {
+      "expected_exit_condition": "audit only; no Turing-completeness claim",
+      "included_categories": [
+        "current_supported_bounded_substrate",
+        "bounded_control_hard_supported"
+      ],
+      "order": 1,
+      "promotion_allowed": false,
+      "real_promotion_allowed": false,
+      "stage_name": "variable_declaration",
+      "target_supported_ratio": 1.0
+    },
+    {
+      "expected_exit_condition": "audit only; no Turing-completeness claim",
+      "included_categories": [
+        "current_supported_bounded_substrate",
+        "bounded_control_hard_supported"
+      ],
+      "order": 2,
+      "promotion_allowed": false,
+      "real_promotion_allowed": false,
+      "stage_name": "assignment_sequence",
+      "target_supported_ratio": 1.0
+    },
+    {
+      "expected_exit_condition": "audit only; no Turing-completeness claim",
+      "included_categories": [
+        "current_supported_bounded_substrate",
+        "bounded_control_hard_supported"
+      ],
+      "order": 3,
+      "promotion_allowed": false,
+      "real_promotion_allowed": false,
+      "stage_name": "multi_variable_sequence",
+      "target_supported_ratio": 1.0
+    },
+    {
+      "expected_exit_condition": "audit only; no Turing-completeness claim",
+      "included_categories": [
+        "current_supported_bounded_substrate",
+        "bounded_control_hard_supported"
+      ],
+      "order": 4,
+      "promotion_allowed": false,
+      "real_promotion_allowed": false,
+      "stage_name": "if_else_basic",
+      "target_supported_ratio": 1.0
+    },
+    {
+      "expected_exit_condition": "audit only; no Turing-completeness claim",
+      "included_categories": [
+        "current_supported_bounded_substrate",
+        "bounded_control_hard_supported"
+      ],
+      "order": 5,
+      "promotion_allowed": false,
+      "real_promotion_allowed": false,
+      "stage_name": "if_else_nested",
+      "target_supported_ratio": 1.0
+    },
+    {
+      "expected_exit_condition": "audit only; no Turing-completeness claim",
+      "included_categories": [
+        "current_supported_bounded_substrate",
+        "bounded_control_hard_supported"
+      ],
+      "order": 6,
+      "promotion_allowed": false,
+      "real_promotion_allowed": false,
+      "stage_name": "bounded_for_loop",
+      "target_supported_ratio": 1.0
+    },
+    {
+      "expected_exit_condition": "audit only; no Turing-completeness claim",
+      "included_categories": [
+        "current_supported_bounded_substrate",
+        "bounded_control_hard_supported"
+      ],
+      "order": 7,
+      "promotion_allowed": false,
+      "real_promotion_allowed": false,
+      "stage_name": "bounded_while_with_fuel",
+      "target_supported_ratio": 1.0
+    },
+    {
+      "expected_exit_condition": "audit only; no Turing-completeness claim",
+      "included_categories": [
+        "current_supported_bounded_substrate",
+        "bounded_control_hard_supported"
+      ],
+      "order": 8,
+      "promotion_allowed": false,
+      "real_promotion_allowed": false,
+      "stage_name": "nested_bounded_control",
+      "target_supported_ratio": 1.0
+    },
+    {
+      "expected_exit_condition": "audit only; no Turing-completeness claim",
+      "included_categories": [
+        "current_supported_bounded_substrate",
+        "bounded_control_hard_supported"
+      ],
+      "order": 9,
+      "promotion_allowed": false,
+      "real_promotion_allowed": false,
+      "stage_name": "bounded_control_hard_supported",
+      "target_supported_ratio": 1.0
+    },
+    {
+      "expected_exit_condition": "audit only; no Turing-completeness claim",
+      "included_categories": [
+        "future_or_boundary"
+      ],
+      "order": 10,
+      "promotion_allowed": false,
+      "real_promotion_allowed": false,
+      "stage_name": "future_function",
+      "target_supported_ratio": 0.0
+    },
+    {
+      "expected_exit_condition": "audit only; no Turing-completeness claim",
+      "included_categories": [
+        "future_or_boundary"
+      ],
+      "order": 11,
+      "promotion_allowed": false,
+      "real_promotion_allowed": false,
+      "stage_name": "future_array",
+      "target_supported_ratio": 0.0
+    },
+    {
+      "expected_exit_condition": "audit only; no Turing-completeness claim",
+      "included_categories": [
+        "future_or_boundary"
+      ],
+      "order": 12,
+      "promotion_allowed": false,
+      "real_promotion_allowed": false,
+      "stage_name": "future_recursion",
+      "target_supported_ratio": 0.0
+    },
+    {
+      "expected_exit_condition": "audit only; no Turing-completeness claim",
+      "included_categories": [
+        "future_or_boundary"
+      ],
+      "order": 13,
+      "promotion_allowed": false,
+      "real_promotion_allowed": false,
+      "stage_name": "unsupported_unbounded_loop",
+      "target_supported_ratio": 0.0
+    },
+    {
+      "expected_exit_condition": "audit only; no Turing-completeness claim",
+      "included_categories": [
+        "future_or_boundary"
+      ],
+      "order": 14,
+      "promotion_allowed": false,
+      "real_promotion_allowed": false,
+      "stage_name": "near_ood_program",
+      "target_supported_ratio": 0.0
+    },
+    {
+      "expected_exit_condition": "audit only; no Turing-completeness claim",
+      "included_categories": [
+        "future_or_boundary"
+      ],
+      "order": 15,
+      "promotion_allowed": false,
+      "real_promotion_allowed": false,
+      "stage_name": "true_false_accept_trap",
+      "target_supported_ratio": 0.0
+    },
+    {
+      "expected_exit_condition": "audit only; no Turing-completeness claim",
+      "included_categories": [
+        "future_or_boundary"
+      ],
+      "order": 16,
+      "promotion_allowed": false,
+      "real_promotion_allowed": false,
+      "stage_name": "hard_ood",
+      "target_supported_ratio": 0.0
+    },
+    {
+      "expected_exit_condition": "audit only; no Turing-completeness claim",
+      "included_categories": [
+        "future_or_boundary"
+      ],
+      "order": 17,
+      "promotion_allowed": false,
+      "real_promotion_allowed": false,
+      "stage_name": "label_review_candidate",
+      "target_supported_ratio": 0.0
+    }
+  ]
+}

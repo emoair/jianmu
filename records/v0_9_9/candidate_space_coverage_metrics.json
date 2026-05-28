@@ -1,0 +1,77 @@
+{
+  "boundary_false_accept_rate": 0.0,
+  "by_stage": {
+    "bounded_control_hard_supported": {
+      "sample_count": 2075,
+      "stage_candidate_miss_rate": 0.619759,
+      "stage_correct_output_in_beam_rate": 0.380241,
+      "stage_top1_correct_rate": 0.364819
+    },
+    "bounded_for_loop": {
+      "sample_count": 563,
+      "stage_candidate_miss_rate": 0.619893,
+      "stage_correct_output_in_beam_rate": 0.380107,
+      "stage_top1_correct_rate": 0.364121
+    },
+    "bounded_while_with_fuel": {
+      "sample_count": 581,
+      "stage_candidate_miss_rate": 0.549053,
+      "stage_correct_output_in_beam_rate": 0.450947,
+      "stage_top1_correct_rate": 0.432014
+    },
+    "if_else_basic": {
+      "sample_count": 565,
+      "stage_candidate_miss_rate": 0.619469,
+      "stage_correct_output_in_beam_rate": 0.380531,
+      "stage_top1_correct_rate": 0.364602
+    },
+    "if_else_nested": {
+      "sample_count": 574,
+      "stage_candidate_miss_rate": 0.618467,
+      "stage_correct_output_in_beam_rate": 0.381533,
+      "stage_top1_correct_rate": 0.365854
+    },
+    "nested_bounded_control": {
+      "sample_count": 642,
+      "stage_candidate_miss_rate": 0.549844,
+      "stage_correct_output_in_beam_rate": 0.450156,
+      "stage_top1_correct_rate": 0.431464
+    }
+  },
+  "candidate_budget_used": 32,
+  "candidate_hit_rate": 0.3976,
+  "candidate_miss_rate": 0.6024,
+  "candidate_space_probe_completed": true,
+  "correct_output_in_beam_rate": 0.3976,
+  "future_domain_supported_accept_rate": 0.0,
+  "memory_budget_used": "baseline",
+  "near_ood_supported_accept_rate": 0.0,
+  "root_expansion_budget_used": "1x",
+  "sample_count": 5000,
+  "stage_candidate_miss_rate": {
+    "bounded_control_hard_supported": 0.619759,
+    "bounded_for_loop": 0.619893,
+    "bounded_while_with_fuel": 0.549053,
+    "if_else_basic": 0.619469,
+    "if_else_nested": 0.618467,
+    "nested_bounded_control": 0.549844
+  },
+  "stage_correct_output_in_beam_rate": {
+    "bounded_control_hard_supported": 0.380241,
+    "bounded_for_loop": 0.380107,
+    "bounded_while_with_fuel": 0.450947,
+    "if_else_basic": 0.380531,
+    "if_else_nested": 0.381533,
+    "nested_bounded_control": 0.450156
+  },
+  "stage_top1_correct_rate": {
+    "bounded_control_hard_supported": 0.364819,
+    "bounded_for_loop": 0.364121,
+    "bounded_while_with_fuel": 0.432014,
+    "if_else_basic": 0.364602,
+    "if_else_nested": 0.365854,
+    "nested_bounded_control": 0.431464
+  },
+  "template_budget_used": "small",
+  "top1_correct_rate": 0.3812
+}

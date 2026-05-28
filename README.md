@@ -484,3 +484,7 @@ v0.9.8 performs a larger bounded-substrate training rerun after v0.9.7.3 restore
 ## v0.9.8.1 Development Direction
 
 v0.9.8.1 repairs the bounded substrate terminal progress reporting and diagnoses the v0.9.8 performance plateau. It separates candidate-miss, in-beam ranking, stage-specific, beam-size, and ablation-related bottlenecks while preserving the original v0.9.8 records. This version does not claim improved model capability, Turing completeness, or solved program synthesis.
+
+## v0.9.9 Development Direction
+
+v0.9.9 builds a Turing-frontier curriculum dataset and runs a candidate-space coverage scale probe after v0.9.8.1 identified candidate miss as the dominant bounded-substrate plateau cause. The dataset covers supported bounded-control programs and future-domain structures such as functions, arrays, recursion, and unbounded loops, while keeping unsupported structures out of train_current. The budget probe tests beam size, candidate budget, control-template budget, root expansion budget, and memory budget without changing JianMu's core architecture. This version does not claim Turing completeness or solved program synthesis.
