@@ -1,0 +1,14 @@
+{
+  "array_marked_current_supported_count": 0,
+  "blocking_count": 0,
+  "function_marked_current_supported_count": 0,
+  "future_domain_has_expected_output_count": 0,
+  "future_domain_has_target_ir_count": 0,
+  "io_system_call_marked_current_supported_count": 0,
+  "recursion_marked_current_supported_count": 0,
+  "review_in_train_count": 0,
+  "support_status_safety_passed": true,
+  "unbounded_loop_marked_current_supported_count": 0,
+  "unsupported_has_expected_output_count": 0,
+  "unsupported_has_target_ir_count": 0
+}

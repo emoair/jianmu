@@ -1,0 +1,12 @@
+{
+  "duplicate_candidate_program_count": 49817,
+  "duplicate_input_count": 49894,
+  "duplicate_rate": 0.99788,
+  "leakage_count": 198659,
+  "natural_language_group_leakage_count": 198311,
+  "near_duplicate_nl_count": 198311,
+  "program_group_leakage_count": 160,
+  "template_family_overuse_count": 0,
+  "train_eval_input_leakage_count": 94,
+  "train_test_input_leakage_count": 94
+}

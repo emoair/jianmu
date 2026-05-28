@@ -1,0 +1,11 @@
+{
+  "backend_type": "real_c_compiler",
+  "compiler_name": "cl",
+  "conversion_attempt_count": 20000,
+  "conversion_failure_count": 833,
+  "conversion_success_count": 19167,
+  "conversion_success_rate": 0.95835,
+  "expected_output_source": "compiler_or_evaluator_not_raw_hint",
+  "raw_expected_output_hint_trusted": false,
+  "target_ir_json_ast": true
+}

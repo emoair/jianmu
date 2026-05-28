@@ -1,0 +1,10 @@
+{
+  "shards": [
+    {
+      "path": "compiler_audit_trace_000.jsonl",
+      "row_count": 10000,
+      "size_bytes": 3706720
+    }
+  ],
+  "total_rows": 10000
+}

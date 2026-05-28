@@ -1,0 +1,20 @@
+{
+  "candidate_program_missing_count": 0,
+  "category_invalid_count": 0,
+  "duplicate_id_count": 0,
+  "expected_action_inconsistent_count": 0,
+  "feature_flag_incoherent_count": 0,
+  "id_unique": true,
+  "invalid_examples": [],
+  "jsonl_parse_error_count": 0,
+  "missing_required_files": [],
+  "natural_language_variants_missing_count": 0,
+  "raw_input_directory": "..\\jianmu-data-factory\\v0_9_15_raw_llm_draft",
+  "raw_total_samples": 50000,
+  "required_files_read": true,
+  "schema_audit_passed": true,
+  "schema_invalid_count": 0,
+  "schema_valid_count": 50000,
+  "shard_count": 10,
+  "support_status_invalid_count": 0
+}
