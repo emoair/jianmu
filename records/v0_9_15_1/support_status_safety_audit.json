@@ -1,0 +1,13 @@
+{
+  "array_marked_current_supported_count": 0,
+  "completed": false,
+  "function_marked_current_supported_count": 0,
+  "io_marked_current_supported_count": 0,
+  "missing_raw_files": [
+    "..\\jianmu-data-factory\\v0_9_15_raw_multiagent_draft"
+  ],
+  "recursion_marked_current_supported_count": 0,
+  "support_status_safety_passed": false,
+  "system_call_marked_current_supported_count": 0,
+  "unbounded_loop_marked_current_supported_count": 0
+}

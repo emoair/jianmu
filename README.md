@@ -2,6 +2,10 @@
 
 v0.9.3.1 audits the v0.9.3 arithmetic positive signal. It checks metric provenance, forbidden-field leakage, heldout group separation, baseline/ablation evidence, and failure examples. It does not introduce new architecture claims and does not claim solved arithmetic.
 
+## v0.9.15.1 Development Direction
+
+v0.9.15.1 re-audits a multi-agent raw LLM draft dataset after v0.9.15 showed severe template collapse and duplication. It treats the raw dataset as untrusted input, measures multi-agent collapse, duplicate and leakage rates, support-status safety, conversion success, and real MSVC compiler verification. The version does not promote raw data directly into training and does not claim Turing completeness.
+
 # JianMu MVP
 
 JianMu v0.5 is a Chinese-first hierarchical semantic routing runtime for

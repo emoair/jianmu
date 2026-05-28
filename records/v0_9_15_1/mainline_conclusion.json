@@ -1,0 +1,44 @@
+{
+  "acceptance_rate": 0.0,
+  "accepted_count": 0,
+  "agent_count": 0,
+  "agent_cross_duplicate_rate": 0.0,
+  "blocking_issues": [
+    "missing_raw_files"
+  ],
+  "collapse_audit_completed": false,
+  "collapse_score": 0.0,
+  "compiler_audit_completed": false,
+  "conversion_audit_completed": false,
+  "dedup_leakage_audit_completed": false,
+  "diversity_score": 0.0,
+  "duplicate_rate": 0.0,
+  "final_dataset_quality_score": 0.0,
+  "generator_still_collapsed": false,
+  "improvement_vs_v0_9_15": {
+    "acceptance_rate_delta": -0.0015,
+    "duplicate_rate_delta": null,
+    "leakage_delta": null,
+    "quality_score_delta": -0.660328
+  },
+  "leakage_count": 0,
+  "missing_raw_files": [
+    "..\\jianmu-data-factory\\v0_9_15_raw_multiagent_draft"
+  ],
+  "multiagent_collapse_detected": false,
+  "near_duplicate_rate": 0.0,
+  "quarantine_count": 0,
+  "raw_input_directory": "..\\jianmu-data-factory\\v0_9_15_raw_multiagent_draft",
+  "raw_total_samples": 0,
+  "ready_for_codex_grammar_generation": false,
+  "ready_for_larger_active_generation_loop": false,
+  "real_promotion_enabled": false,
+  "recommended_claim_level": "failed",
+  "recommended_next_action": "provide required multiagent raw dataset and rerun audit",
+  "rejected_count": 0,
+  "required_next_run": "rerun after raw_manifest/raw_generation_report/shards/stats/warnings are present",
+  "schema_audit_passed": false,
+  "support_safety_audit_passed": false,
+  "template_family_concentration_top1": 0.0,
+  "turing_completeness_claimed": false
+}

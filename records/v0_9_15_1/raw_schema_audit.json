@@ -1,0 +1,10 @@
+{
+  "json_parse_error_count": 0,
+  "missing_raw_files": [
+    "..\\jianmu-data-factory\\v0_9_15_raw_multiagent_draft"
+  ],
+  "raw_input_directory": "..\\jianmu-data-factory\\v0_9_15_raw_multiagent_draft",
+  "raw_total_samples": 0,
+  "schema_audit_passed": false,
+  "schema_valid_count": 0
+}

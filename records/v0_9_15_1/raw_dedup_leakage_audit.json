@@ -1,0 +1,9 @@
+{
+  "completed": false,
+  "duplicate_candidate_program_count": 0,
+  "duplicate_input_count": 0,
+  "leakage_count_total": 0,
+  "missing_raw_files": [
+    "..\\jianmu-data-factory\\v0_9_15_raw_multiagent_draft"
+  ]
+}

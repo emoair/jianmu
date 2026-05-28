@@ -1,0 +1,9 @@
+{
+  "completed": false,
+  "final_dataset_quality_score": 0.0,
+  "missing_raw_files": [
+    "..\\jianmu-data-factory\\v0_9_15_raw_multiagent_draft"
+  ],
+  "quality_score_delta": -0.660328,
+  "v0_9_15_quality_score": 0.660328
+}

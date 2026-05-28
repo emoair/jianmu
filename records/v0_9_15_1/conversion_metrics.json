@@ -1,0 +1,12 @@
+{
+  "completed": false,
+  "conversion_attempt_count": 0,
+  "conversion_failure_count": 0,
+  "conversion_success_count": 0,
+  "conversion_success_rate": 0.0,
+  "missing_raw_files": [
+    "..\\jianmu-data-factory\\v0_9_15_raw_multiagent_draft"
+  ],
+  "raw_expected_output_hint_trusted": false,
+  "raw_target_ir_hint_trusted": false
+}

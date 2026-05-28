@@ -1,0 +1,11 @@
+{
+  "acceptance_rate": 0.0,
+  "accepted_count": 0,
+  "completed": false,
+  "missing_raw_files": [
+    "..\\jianmu-data-factory\\v0_9_15_raw_multiagent_draft"
+  ],
+  "quarantine_count": 0,
+  "raw_total_samples": 0,
+  "rejected_count": 0
+}
