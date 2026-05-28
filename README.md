@@ -504,3 +504,7 @@ v0.9.12 runs a Billion-State Budget Upper Frontier Probe after v0.9.11 showed sm
 ## v0.9.12.1 Development Direction
 
 v0.9.12.1 audits why the v0.9.12 1B lazy-indexed state budget has low active touch ratio. It separates tree-layer allocation imbalance from dataset/curriculum activation effects, future-domain quarantine coldness, and sampling imbalance. The version runs dataset-balanced resampling probes and access-aware reallocation diagnostics without changing JianMu's core architecture or promoting a new default profile. It does not claim Turing completeness or solved program synthesis.
+
+## v0.9.12.2 Development Direction
+
+v0.9.12.2 tests access-aware adaptive allocation and balanced sampling after v0.9.12.1 diagnosed a mixed allocation-and-dataset bottleneck. It evaluates a combined hot-rebalanced 1B + branch-activation-balanced profile and a layerwise sparse 1B freeze-prune diagnostic profile. Layerwise 1B means lazy-indexed logical budget per tree layer with active-access guards, not fully materialized parameters. This version does not promote a default profile and does not claim Turing completeness or solved program synthesis.

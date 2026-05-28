@@ -1,0 +1,32 @@
+{
+  "branch_activation_balanced_reference": {
+    "boundary_false_accept_rate": 0.0,
+    "future_domain_supported_accept_rate": 0.0,
+    "near_ood_supported_accept_rate": 0.0,
+    "trap_false_accept_rate": 0.0
+  },
+  "combined_hot_rebalanced_balanced_sampling_1B": {
+    "boundary_false_accept_rate": 0.0,
+    "future_domain_supported_accept_rate": 0.0,
+    "near_ood_supported_accept_rate": 0.0,
+    "trap_false_accept_rate": 0.0
+  },
+  "current_1B_reference": {
+    "boundary_false_accept_rate": 0.0,
+    "future_domain_supported_accept_rate": 0.0,
+    "near_ood_supported_accept_rate": 0.0,
+    "trap_false_accept_rate": 0.0
+  },
+  "hot_rebalanced_1B_reference": {
+    "boundary_false_accept_rate": 0.0,
+    "future_domain_supported_accept_rate": 0.0,
+    "near_ood_supported_accept_rate": 0.0,
+    "trap_false_accept_rate": 0.0
+  },
+  "layerwise_sparse_1B_freeze_prune": {
+    "boundary_false_accept_rate": 0.0,
+    "future_domain_supported_accept_rate": 0.0,
+    "near_ood_supported_accept_rate": 0.0,
+    "trap_false_accept_rate": 0.0
+  }
+}

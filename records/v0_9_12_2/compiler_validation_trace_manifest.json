@@ -1,0 +1,25 @@
+{
+  "shards": [
+    {
+      "path": "compiler_validation_trace_current_1B_reference.jsonl",
+      "profile_name": "current_1B_reference",
+      "row_count": 3000
+    },
+    {
+      "path": "compiler_validation_trace_combined_hot_rebalanced_balanced_sampling_1B.jsonl",
+      "profile_name": "combined_hot_rebalanced_balanced_sampling_1B",
+      "row_count": 3000
+    },
+    {
+      "path": "compiler_validation_trace_layerwise_sparse_1B_freeze_prune.jsonl",
+      "profile_name": "layerwise_sparse_1B_freeze_prune",
+      "row_count": 3000
+    }
+  ],
+  "trace_sharded": true,
+  "validated_profiles": [
+    "current_1B_reference",
+    "combined_hot_rebalanced_balanced_sampling_1B",
+    "layerwise_sparse_1B_freeze_prune"
+  ]
+}

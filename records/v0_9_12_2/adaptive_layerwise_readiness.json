@@ -1,0 +1,45 @@
+{
+  "adaptive_layerwise_probe_completed": true,
+  "best_allocation_profile": "layerwise_sparse_1B_freeze_prune",
+  "best_profile_name": "layerwise_sparse_1B_freeze_prune",
+  "best_sampling_profile": "branch_activation_balanced",
+  "blocking_issues": [
+    "layerwise_compiler_validation_not_clean"
+  ],
+  "boundary_compiler_misroute_count_best": 0,
+  "boundary_false_accept_rate_best": 0.0,
+  "candidate_miss_best": 0.1048,
+  "candidate_miss_current_1B": 0.1386,
+  "combined_profile_improves_over_components": true,
+  "compiler_validation_completed": true,
+  "compiler_verified_correct_rate_best": 0.736,
+  "cross_process_reload_passed": true,
+  "freeze_prune_effective": true,
+  "freeze_prune_enabled_for_best": true,
+  "future_domain_compiled_count": 0,
+  "future_domain_supported_accept_rate_best": 0.0,
+  "layerwise_enabled_for_best": true,
+  "layerwise_profile_improves_over_combined": true,
+  "profiles_attempted": [
+    "current_1B_reference",
+    "hot_rebalanced_1B_reference",
+    "branch_activation_balanced_reference",
+    "combined_hot_rebalanced_balanced_sampling_1B",
+    "layerwise_sparse_1B_freeze_prune"
+  ],
+  "profiles_completed": [
+    "current_1B_reference",
+    "hot_rebalanced_1B_reference",
+    "branch_activation_balanced_reference",
+    "combined_hot_rebalanced_balanced_sampling_1B",
+    "layerwise_sparse_1B_freeze_prune"
+  ],
+  "profiles_skipped": {},
+  "ready_for_profile_promotion_probe": false,
+  "recommended_claim_level": "layerwise_freeze_prune_mixed",
+  "required_next_run": "profile promotion probe with no real promotion and fresh heldout/compiler validation",
+  "top1_best": 0.8274,
+  "top1_current_1B": 0.78768,
+  "touch_ratio_best": 0.156,
+  "touch_ratio_current_1B": 0.052
+}

@@ -1,0 +1,293 @@
+{
+  "memory_guard_passed": true,
+  "profiles": [
+    {
+      "active_access_limit": 120000000,
+      "can_fully_materialize": false,
+      "can_lazy_index": true,
+      "estimated_memory_bytes": 2000000000,
+      "estimated_runtime_seconds": 45.0,
+      "memory_guard_blocking_issues": [],
+      "memory_guard_passed": true,
+      "memory_guard_warnings": [
+        "not_fully_materialized"
+      ],
+      "profile_name": "current_1B_reference",
+      "recommended_materialization_level": "lazy_indexed",
+      "target_state_units": 1000000000
+    },
+    {
+      "active_access_limit": 120000000,
+      "can_fully_materialize": false,
+      "can_lazy_index": true,
+      "estimated_memory_bytes": 2000000000,
+      "estimated_runtime_seconds": 45.0,
+      "memory_guard_blocking_issues": [],
+      "memory_guard_passed": true,
+      "memory_guard_warnings": [
+        "not_fully_materialized"
+      ],
+      "profile_name": "hot_rebalanced_1B_reference",
+      "recommended_materialization_level": "lazy_indexed",
+      "target_state_units": 1000000000
+    },
+    {
+      "active_access_limit": 120000000,
+      "can_fully_materialize": false,
+      "can_lazy_index": true,
+      "estimated_memory_bytes": 2000000000,
+      "estimated_runtime_seconds": 45.0,
+      "memory_guard_blocking_issues": [],
+      "memory_guard_passed": true,
+      "memory_guard_warnings": [
+        "not_fully_materialized"
+      ],
+      "profile_name": "branch_activation_balanced_reference",
+      "recommended_materialization_level": "lazy_indexed",
+      "target_state_units": 1000000000
+    },
+    {
+      "active_access_limit": 120000000,
+      "can_fully_materialize": false,
+      "can_lazy_index": true,
+      "estimated_memory_bytes": 2000000000,
+      "estimated_runtime_seconds": 45.0,
+      "memory_guard_blocking_issues": [],
+      "memory_guard_passed": true,
+      "memory_guard_warnings": [
+        "not_fully_materialized"
+      ],
+      "profile_name": "combined_hot_rebalanced_balanced_sampling_1B",
+      "recommended_materialization_level": "lazy_indexed",
+      "target_state_units": 1000000000
+    },
+    {
+      "layers": [
+        {
+          "active_access_limit": 120000000,
+          "can_fully_materialize": false,
+          "can_lazy_index": true,
+          "estimated_memory_bytes": 2000000000,
+          "estimated_runtime_seconds": 36.0,
+          "layer_name": "trunk_global_routing",
+          "max_lookup_count_per_layer": 2400000,
+          "max_memory_bytes_per_layer": 384000000,
+          "max_runtime_seconds_per_layer": 120.0,
+          "memory_guard_blocking_issues": [],
+          "memory_guard_passed": true,
+          "memory_guard_warnings": [
+            "layer_logical_budget_lazy_indexed"
+          ],
+          "recommended_materialization_level": "lazy_indexed",
+          "target_state_units": 1000000000
+        },
+        {
+          "active_access_limit": 120000000,
+          "can_fully_materialize": false,
+          "can_lazy_index": true,
+          "estimated_memory_bytes": 2000000000,
+          "estimated_runtime_seconds": 36.0,
+          "layer_name": "major_branch_language_family",
+          "max_lookup_count_per_layer": 2400000,
+          "max_memory_bytes_per_layer": 384000000,
+          "max_runtime_seconds_per_layer": 120.0,
+          "memory_guard_blocking_issues": [],
+          "memory_guard_passed": true,
+          "memory_guard_warnings": [
+            "layer_logical_budget_lazy_indexed"
+          ],
+          "recommended_materialization_level": "lazy_indexed",
+          "target_state_units": 1000000000
+        },
+        {
+          "active_access_limit": 120000000,
+          "can_fully_materialize": false,
+          "can_lazy_index": true,
+          "estimated_memory_bytes": 2000000000,
+          "estimated_runtime_seconds": 36.0,
+          "layer_name": "supported_bounded_substrate_branch",
+          "max_lookup_count_per_layer": 2400000,
+          "max_memory_bytes_per_layer": 384000000,
+          "max_runtime_seconds_per_layer": 120.0,
+          "memory_guard_blocking_issues": [],
+          "memory_guard_passed": true,
+          "memory_guard_warnings": [
+            "layer_logical_budget_lazy_indexed"
+          ],
+          "recommended_materialization_level": "lazy_indexed",
+          "target_state_units": 1000000000
+        },
+        {
+          "active_access_limit": 120000000,
+          "can_fully_materialize": false,
+          "can_lazy_index": true,
+          "estimated_memory_bytes": 2000000000,
+          "estimated_runtime_seconds": 36.0,
+          "layer_name": "bounded_control_hard_branch",
+          "max_lookup_count_per_layer": 2400000,
+          "max_memory_bytes_per_layer": 384000000,
+          "max_runtime_seconds_per_layer": 120.0,
+          "memory_guard_blocking_issues": [],
+          "memory_guard_passed": true,
+          "memory_guard_warnings": [
+            "layer_logical_budget_lazy_indexed"
+          ],
+          "recommended_materialization_level": "lazy_indexed",
+          "target_state_units": 1000000000
+        },
+        {
+          "active_access_limit": 120000000,
+          "can_fully_materialize": false,
+          "can_lazy_index": true,
+          "estimated_memory_bytes": 2000000000,
+          "estimated_runtime_seconds": 36.0,
+          "layer_name": "if_else_branch",
+          "max_lookup_count_per_layer": 2400000,
+          "max_memory_bytes_per_layer": 384000000,
+          "max_runtime_seconds_per_layer": 120.0,
+          "memory_guard_blocking_issues": [],
+          "memory_guard_passed": true,
+          "memory_guard_warnings": [
+            "layer_logical_budget_lazy_indexed"
+          ],
+          "recommended_materialization_level": "lazy_indexed",
+          "target_state_units": 1000000000
+        },
+        {
+          "active_access_limit": 120000000,
+          "can_fully_materialize": false,
+          "can_lazy_index": true,
+          "estimated_memory_bytes": 2000000000,
+          "estimated_runtime_seconds": 36.0,
+          "layer_name": "loop_branch",
+          "max_lookup_count_per_layer": 2400000,
+          "max_memory_bytes_per_layer": 384000000,
+          "max_runtime_seconds_per_layer": 120.0,
+          "memory_guard_blocking_issues": [],
+          "memory_guard_passed": true,
+          "memory_guard_warnings": [
+            "layer_logical_budget_lazy_indexed"
+          ],
+          "recommended_materialization_level": "lazy_indexed",
+          "target_state_units": 1000000000
+        },
+        {
+          "active_access_limit": 120000000,
+          "can_fully_materialize": false,
+          "can_lazy_index": true,
+          "estimated_memory_bytes": 2000000000,
+          "estimated_runtime_seconds": 36.0,
+          "layer_name": "nested_control_branch",
+          "max_lookup_count_per_layer": 2400000,
+          "max_memory_bytes_per_layer": 384000000,
+          "max_runtime_seconds_per_layer": 120.0,
+          "memory_guard_blocking_issues": [],
+          "memory_guard_passed": true,
+          "memory_guard_warnings": [
+            "layer_logical_budget_lazy_indexed"
+          ],
+          "recommended_materialization_level": "lazy_indexed",
+          "target_state_units": 1000000000
+        },
+        {
+          "active_access_limit": 120000000,
+          "can_fully_materialize": false,
+          "can_lazy_index": true,
+          "estimated_memory_bytes": 2000000000,
+          "estimated_runtime_seconds": 36.0,
+          "layer_name": "candidate_fragment_leaf",
+          "max_lookup_count_per_layer": 2400000,
+          "max_memory_bytes_per_layer": 384000000,
+          "max_runtime_seconds_per_layer": 120.0,
+          "memory_guard_blocking_issues": [],
+          "memory_guard_passed": true,
+          "memory_guard_warnings": [
+            "layer_logical_budget_lazy_indexed"
+          ],
+          "recommended_materialization_level": "lazy_indexed",
+          "target_state_units": 1000000000
+        },
+        {
+          "active_access_limit": 120000000,
+          "can_fully_materialize": false,
+          "can_lazy_index": true,
+          "estimated_memory_bytes": 2000000000,
+          "estimated_runtime_seconds": 36.0,
+          "layer_name": "control_template_leaf",
+          "max_lookup_count_per_layer": 2400000,
+          "max_memory_bytes_per_layer": 384000000,
+          "max_runtime_seconds_per_layer": 120.0,
+          "memory_guard_blocking_issues": [],
+          "memory_guard_passed": true,
+          "memory_guard_warnings": [
+            "layer_logical_budget_lazy_indexed"
+          ],
+          "recommended_materialization_level": "lazy_indexed",
+          "target_state_units": 1000000000
+        },
+        {
+          "active_access_limit": 120000000,
+          "can_fully_materialize": false,
+          "can_lazy_index": true,
+          "estimated_memory_bytes": 2000000000,
+          "estimated_runtime_seconds": 36.0,
+          "layer_name": "failure_pattern_memory",
+          "max_lookup_count_per_layer": 2400000,
+          "max_memory_bytes_per_layer": 384000000,
+          "max_runtime_seconds_per_layer": 120.0,
+          "memory_guard_blocking_issues": [],
+          "memory_guard_passed": true,
+          "memory_guard_warnings": [
+            "layer_logical_budget_lazy_indexed"
+          ],
+          "recommended_materialization_level": "lazy_indexed",
+          "target_state_units": 1000000000
+        },
+        {
+          "active_access_limit": 120000000,
+          "can_fully_materialize": false,
+          "can_lazy_index": true,
+          "estimated_memory_bytes": 2000000000,
+          "estimated_runtime_seconds": 36.0,
+          "layer_name": "nutrient_toxic_memory",
+          "max_lookup_count_per_layer": 2400000,
+          "max_memory_bytes_per_layer": 384000000,
+          "max_runtime_seconds_per_layer": 120.0,
+          "memory_guard_blocking_issues": [],
+          "memory_guard_passed": true,
+          "memory_guard_warnings": [
+            "layer_logical_budget_lazy_indexed"
+          ],
+          "recommended_materialization_level": "lazy_indexed",
+          "target_state_units": 1000000000
+        },
+        {
+          "active_access_limit": 120000000,
+          "can_fully_materialize": false,
+          "can_lazy_index": true,
+          "estimated_memory_bytes": 2000000000,
+          "estimated_runtime_seconds": 36.0,
+          "layer_name": "routing_scoring_profile",
+          "max_lookup_count_per_layer": 2400000,
+          "max_memory_bytes_per_layer": 384000000,
+          "max_runtime_seconds_per_layer": 120.0,
+          "memory_guard_blocking_issues": [],
+          "memory_guard_passed": true,
+          "memory_guard_warnings": [
+            "layer_logical_budget_lazy_indexed"
+          ],
+          "recommended_materialization_level": "lazy_indexed",
+          "target_state_units": 1000000000
+        }
+      ],
+      "materialization_level": "lazy_indexed",
+      "memory_guard_blocking_issues": [],
+      "memory_guard_warnings": [
+        "layerwise_logical_budget_not_fully_materialized"
+      ],
+      "profile_memory_guard_passed": true,
+      "profile_name": "layerwise_sparse_1B_freeze_prune",
+      "target_state_units_total_logical": 12000000000
+    }
+  ]
+}

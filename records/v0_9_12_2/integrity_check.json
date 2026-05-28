@@ -1,0 +1,13 @@
+{
+  "expected_output_access_before_candidate_generation": false,
+  "fixed_metric_detected": false,
+  "forbidden_field_access_count": 0,
+  "freeze_prune_is_architecture_change": false,
+  "mandatory_counter_guard_passed": true,
+  "periodic_rule_detected": false,
+  "profile_is_architecture_change": false,
+  "sampling_profile_is_training_claim": false,
+  "summary_only_detected": false,
+  "synthetic_summary_detected": false,
+  "target_ir_access_before_candidate_generation": false
+}

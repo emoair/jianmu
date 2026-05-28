@@ -1,0 +1,105 @@
+{
+  "profiles": [
+    {
+      "category_distribution": {
+        "bounded_control_hard_supported": 0.15,
+        "current_supported_bounded_substrate": 0.35,
+        "future_or_boundary": 0.28,
+        "hard_ood_or_review": 0.22
+      },
+      "future_domains_remain_out_of_train_current": true,
+      "future_exposure_distribution": {
+        "future_function_array_recursion_unbounded": 0.28
+      },
+      "if_for_nested_exposure": 0.108,
+      "sampling_profile": "original_sampling_reference",
+      "split_distribution": {
+        "eval": 0.15,
+        "heldout": 0.05,
+        "test": 0.1,
+        "train": 0.7
+      },
+      "stage_distribution": {
+        "bounded_control_hard_supported": 0.15,
+        "if_for_nested_exposure": 0.108
+      },
+      "supported_control_exposure": 0.15
+    },
+    {
+      "category_distribution": {
+        "bounded_control_hard_supported": 0.22,
+        "current_supported_bounded_substrate": 0.33,
+        "future_or_boundary": 0.31,
+        "hard_ood_or_review": 0.14
+      },
+      "future_domains_remain_out_of_train_current": true,
+      "future_exposure_distribution": {
+        "future_function_array_recursion_unbounded": 0.31
+      },
+      "if_for_nested_exposure": 0.1584,
+      "sampling_profile": "branch_activation_balanced",
+      "split_distribution": {
+        "eval": 0.15,
+        "heldout": 0.05,
+        "test": 0.1,
+        "train": 0.7
+      },
+      "stage_distribution": {
+        "bounded_control_hard_supported": 0.22,
+        "if_for_nested_exposure": 0.1584
+      },
+      "supported_control_exposure": 0.22
+    },
+    {
+      "category_distribution": {
+        "bounded_control_hard_supported": 0.24,
+        "current_supported_bounded_substrate": 0.38,
+        "future_or_boundary": 0.24,
+        "hard_ood_or_review": 0.14
+      },
+      "future_domains_remain_out_of_train_current": true,
+      "future_exposure_distribution": {
+        "future_function_array_recursion_unbounded": 0.24
+      },
+      "if_for_nested_exposure": 0.1728,
+      "sampling_profile": "supported_control_balanced",
+      "split_distribution": {
+        "eval": 0.15,
+        "heldout": 0.05,
+        "test": 0.1,
+        "train": 0.7
+      },
+      "stage_distribution": {
+        "bounded_control_hard_supported": 0.24,
+        "if_for_nested_exposure": 0.1728
+      },
+      "supported_control_exposure": 0.24
+    },
+    {
+      "category_distribution": {
+        "bounded_control_hard_supported": 0.27,
+        "current_supported_bounded_substrate": 0.36,
+        "future_or_boundary": 0.3,
+        "hard_ood_or_review": 0.07
+      },
+      "future_domains_remain_out_of_train_current": true,
+      "future_exposure_distribution": {
+        "future_function_array_recursion_unbounded": 0.3
+      },
+      "if_for_nested_exposure": 0.1944,
+      "sampling_profile": "combined_branch_activation_plus_supported_control",
+      "split_distribution": {
+        "eval": 0.15,
+        "heldout": 0.05,
+        "test": 0.1,
+        "train": 0.7
+      },
+      "stage_distribution": {
+        "bounded_control_hard_supported": 0.27,
+        "if_for_nested_exposure": 0.1944
+      },
+      "supported_control_exposure": 0.27
+    }
+  ],
+  "sampling_profiles_completed": true
+}

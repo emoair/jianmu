@@ -1,0 +1,23 @@
+{
+  "allocation_profile": "layerwise_sparse_1B_freeze_prune",
+  "best_profile_name": "layerwise_sparse_1B_freeze_prune",
+  "comparison_summary": {
+    "combined_profile_improves_over_each_component": true,
+    "layerwise_profile_improves_over_combined": true
+  },
+  "forbidden_field_in_state_count": 0,
+  "freeze_prune_enabled": true,
+  "frozen_state_summary": {
+    "frozen_state_units": 318368000,
+    "transfer_hit_rate": 0.7475
+  },
+  "layerwise_enabled": true,
+  "materialization_level": "lazy_indexed",
+  "missing_for_full_state": [],
+  "persisted_state_support_level": "full_router_root",
+  "profile_promotion_completed": false,
+  "pruned_state_summary": {
+    "pruned_state_units": 11681632000
+  },
+  "sampling_profile": "branch_activation_balanced"
+}
