@@ -1,0 +1,25 @@
+{
+  "force_text": true,
+  "metrics_affected_by_progress": false,
+  "progress_backend": "periodic_text",
+  "progress_enabled": true,
+  "progress_errors": [],
+  "progress_events_by_phase": {
+    "boundary": 6,
+    "checkpoint": 3,
+    "compiler-validation": 3,
+    "cross-process": 3,
+    "eval": 6,
+    "finalization": 3,
+    "heldout": 6,
+    "train": 21
+  },
+  "progress_events_emitted": 51,
+  "progress_first_event_time": 1.3e-05,
+  "progress_interval_seconds": 2.0,
+  "progress_last_event_time": 0.054343,
+  "progress_metrics_safe": true,
+  "progress_min_samples": 100,
+  "progress_overhead_estimated": "low",
+  "tty_detected": false
+}

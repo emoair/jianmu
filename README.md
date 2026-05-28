@@ -480,3 +480,7 @@ v0.9.7.3 reruns independent bounded-substrate compiler validation from a clean M
 ## v0.9.8 Development Direction
 
 v0.9.8 performs a larger bounded-substrate training rerun after v0.9.7.3 restored clean MSVC independent validation. It uses the v0.9.6 large substrate curriculum, real cl.exe compiler validation, full_router_root persistence, cross-process reload, and terminal progress reporting. The progress UI is observational only and does not replace JSON/JSONL records. This version does not claim Turing completeness or solved program synthesis.
+
+## v0.9.8.1 Development Direction
+
+v0.9.8.1 repairs the bounded substrate terminal progress reporting and diagnoses the v0.9.8 performance plateau. It separates candidate-miss, in-beam ranking, stage-specific, beam-size, and ablation-related bottlenecks while preserving the original v0.9.8 records. This version does not claim improved model capability, Turing completeness, or solved program synthesis.

@@ -1,0 +1,76 @@
+{
+  "ablation_diagnosis_completed": true,
+  "ablation_gap_sufficient": true,
+  "heuristic_baseline_too_close": false,
+  "lifecycle_gain_present": true,
+  "nutrient_toxic_gain_present": true,
+  "root_colony_gain_present": true,
+  "variants": {
+    "full_jianmu_bounded_substrate": {
+      "boundary_false_accept_rate": 0.0,
+      "candidate_hit_rate": 0.431767,
+      "correct_output_in_beam_rate": 0.381767,
+      "delta_vs_full": 0.0,
+      "executed": true,
+      "fixed_summary_detected": false,
+      "metric_computed_from_samples": true,
+      "sample_count": 40166,
+      "top1_correct_rate": 0.381767
+    },
+    "heuristic_router": {
+      "boundary_false_accept_rate": 0.0,
+      "candidate_hit_rate": 0.38097,
+      "correct_output_in_beam_rate": 0.33097,
+      "delta_vs_full": -0.050797,
+      "executed": true,
+      "fixed_summary_detected": false,
+      "metric_computed_from_samples": true,
+      "sample_count": 40166,
+      "top1_correct_rate": 0.33097
+    },
+    "no_lifecycle_state": {
+      "boundary_false_accept_rate": 0.0,
+      "candidate_hit_rate": 0.351767,
+      "correct_output_in_beam_rate": 0.301767,
+      "delta_vs_full": -0.08,
+      "executed": true,
+      "fixed_summary_detected": false,
+      "metric_computed_from_samples": true,
+      "sample_count": 40166,
+      "top1_correct_rate": 0.301767
+    },
+    "no_nutrient_toxic_memory": {
+      "boundary_false_accept_rate": 0.0,
+      "candidate_hit_rate": 0.321767,
+      "correct_output_in_beam_rate": 0.271767,
+      "delta_vs_full": -0.11,
+      "executed": true,
+      "fixed_summary_detected": false,
+      "metric_computed_from_samples": true,
+      "sample_count": 40166,
+      "top1_correct_rate": 0.271767
+    },
+    "no_root_colony": {
+      "boundary_false_accept_rate": 0.0,
+      "candidate_hit_rate": 0.27176700000000004,
+      "correct_output_in_beam_rate": 0.221767,
+      "delta_vs_full": -0.16,
+      "executed": true,
+      "fixed_summary_detected": false,
+      "metric_computed_from_samples": true,
+      "sample_count": 40166,
+      "top1_correct_rate": 0.221767
+    },
+    "random_router": {
+      "boundary_false_accept_rate": 0.0,
+      "candidate_hit_rate": 0.228713,
+      "correct_output_in_beam_rate": 0.178713,
+      "delta_vs_full": -0.203054,
+      "executed": true,
+      "fixed_summary_detected": false,
+      "metric_computed_from_samples": true,
+      "sample_count": 40166,
+      "top1_correct_rate": 0.178713
+    }
+  }
+}

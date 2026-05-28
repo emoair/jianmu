@@ -1,0 +1,80 @@
+{
+  "ablation_diagnosis": {
+    "lifecycle_gain_present": true,
+    "nutrient_toxic_gain_present": true,
+    "root_colony_gain_present": true
+  },
+  "beam_sweep_conclusion": {
+    "beam_bottleneck_likely": false,
+    "generation_bottleneck_likely": true,
+    "ranking_bottleneck_likely": false
+  },
+  "blocking_issues": [],
+  "candidate_miss_rate": 0.595097,
+  "dominant_plateau_cause": "candidate_miss_generation_bottleneck",
+  "in_beam_wrong_top1_rate": 0.0,
+  "integrity_check_passed": true,
+  "must_revalidate": [
+    "diagnostic sweep conclusions on a fresh run"
+  ],
+  "paper_v2_candidate_results": [
+    "progress safety",
+    "plateau diagnosis",
+    "beam sweep diagnostic"
+  ],
+  "post_v1_reserved_routes": [
+    "root similarity incremental training",
+    "verified backend as teacher for NL-to-semantic-IR adapter"
+  ],
+  "progress_affects_metrics": false,
+  "progress_events_emitted": 51,
+  "progress_previous_issue": "v0.9.8 emitted only phase-boundary progress events, so long phases had little visible progress",
+  "progress_repaired": true,
+  "recommended_claim_level": "progress_repaired_plateau_diagnosed",
+  "recommended_next_action": "diagnose candidate generation/search-space coverage for bounded control stages",
+  "required_next_run": "targeted bounded-substrate candidate-space diagnosis; do not claim stronger model capability from diagnostics",
+  "stage_plateau": {
+    "stages_flat": [
+      "variable_declaration",
+      "multi_variable_sequence",
+      "bounded_while_with_fuel"
+    ],
+    "stages_improved": [
+      "nested_bounded_control"
+    ],
+    "stages_regressed": [
+      "assignment_sequence",
+      "if_else_basic",
+      "if_else_nested",
+      "bounded_for_loop"
+    ],
+    "weakest_stages": [
+      "bounded_for_loop",
+      "if_else_nested",
+      "if_else_basic"
+    ]
+  },
+  "still_not_proven": [
+    "Turing completeness",
+    "solved arithmetic",
+    "solved program synthesis",
+    "stable convergence",
+    "solved OOD",
+    "general program synthesis",
+    "same-size LLM advantage",
+    "safe real promotion",
+    "production readiness"
+  ],
+  "what_this_version_did_not_prove": [
+    "Turing completeness",
+    "solved arithmetic",
+    "solved program synthesis",
+    "stable convergence",
+    "solved OOD",
+    "general program synthesis",
+    "same-size LLM advantage",
+    "safe real promotion",
+    "production readiness"
+  ],
+  "what_this_version_proved": "progress reporting was repaired as an observation tool and v0.9.8 plateau causes were diagnosed from existing records"
+}

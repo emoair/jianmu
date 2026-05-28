@@ -1,0 +1,59 @@
+{
+  "beam_bottleneck_likely": false,
+  "beam_sizes_tested": [
+    4,
+    8,
+    16,
+    32
+  ],
+  "beam_sweep_completed": true,
+  "diagnostic_only_not_training_gain": true,
+  "generation_bottleneck_likely": true,
+  "per_beam": [
+    {
+      "beam_size": 4,
+      "boundary_compiler_misroute_count": 0,
+      "boundary_false_accept_rate": 0.0,
+      "candidate_hit_rate": 0.408,
+      "correct_output_in_beam_rate": 0.39,
+      "eval_runtime_seconds": 0.058927,
+      "sample_count": 2000,
+      "samples_per_second": 67881.058839,
+      "top1_correct_rate": 0.39
+    },
+    {
+      "beam_size": 8,
+      "boundary_compiler_misroute_count": 0,
+      "boundary_false_accept_rate": 0.0,
+      "candidate_hit_rate": 0.408,
+      "correct_output_in_beam_rate": 0.39,
+      "eval_runtime_seconds": 0.055868,
+      "sample_count": 2000,
+      "samples_per_second": 71597.208467,
+      "top1_correct_rate": 0.39
+    },
+    {
+      "beam_size": 16,
+      "boundary_compiler_misroute_count": 0,
+      "boundary_false_accept_rate": 0.0,
+      "candidate_hit_rate": 0.408,
+      "correct_output_in_beam_rate": 0.39,
+      "eval_runtime_seconds": 0.05699,
+      "sample_count": 2000,
+      "samples_per_second": 70187.875382,
+      "top1_correct_rate": 0.39
+    },
+    {
+      "beam_size": 32,
+      "boundary_compiler_misroute_count": 0,
+      "boundary_false_accept_rate": 0.0,
+      "candidate_hit_rate": 0.408,
+      "correct_output_in_beam_rate": 0.39,
+      "eval_runtime_seconds": 0.055811,
+      "sample_count": 2000,
+      "samples_per_second": 71669.945565,
+      "top1_correct_rate": 0.39
+    }
+  ],
+  "ranking_bottleneck_likely": false
+}

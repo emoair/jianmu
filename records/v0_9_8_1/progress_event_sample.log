@@ -1,0 +1,51 @@
+[progress] mode=progress-sanity phase=train stage=diagnostic processed=0 total=2000 percent=0.0 elapsed_seconds=0.0 eta_seconds=0.0 samples_per_second=0.0
+[progress] mode=progress-sanity phase=train stage=diagnostic processed=100 total=2000 percent=5.0 elapsed_seconds=0.0 eta_seconds=0.01 samples_per_second=165617.7544
+[progress] mode=progress-sanity phase=train stage=diagnostic processed=200 total=2000 percent=10.0 elapsed_seconds=0.0 eta_seconds=0.01 samples_per_second=169952.4138
+[progress] mode=progress-sanity phase=train stage=diagnostic processed=300 total=2000 percent=15.0 elapsed_seconds=0.0 eta_seconds=0.01 samples_per_second=170735.8724
+[progress] mode=progress-sanity phase=train stage=diagnostic processed=400 total=2000 percent=20.0 elapsed_seconds=0.0 eta_seconds=0.01 samples_per_second=172704.1147
+[progress] mode=progress-sanity phase=train stage=diagnostic processed=500 total=2000 percent=25.0 elapsed_seconds=0.0 eta_seconds=0.01 samples_per_second=174064.4046
+[progress] mode=progress-sanity phase=train stage=diagnostic processed=600 total=2000 percent=30.0 elapsed_seconds=0.0 eta_seconds=0.01 samples_per_second=175423.2072
+[progress] mode=progress-sanity phase=train stage=diagnostic processed=700 total=2000 percent=35.0 elapsed_seconds=0.0 eta_seconds=0.01 samples_per_second=176278.017
+[progress] mode=progress-sanity phase=train stage=diagnostic processed=800 total=2000 percent=40.0 elapsed_seconds=0.0 eta_seconds=0.01 samples_per_second=176347.4034
+[progress] mode=progress-sanity phase=train stage=diagnostic processed=900 total=2000 percent=45.0 elapsed_seconds=0.01 eta_seconds=0.01 samples_per_second=176032.2338
+[progress] mode=progress-sanity phase=train stage=diagnostic processed=1000 total=2000 percent=50.0 elapsed_seconds=0.01 eta_seconds=0.01 samples_per_second=175706.7814
+[progress] mode=progress-sanity phase=train stage=diagnostic processed=1100 total=2000 percent=55.0 elapsed_seconds=0.01 eta_seconds=0.01 samples_per_second=175516.9775
+[progress] mode=progress-sanity phase=train stage=diagnostic processed=1200 total=2000 percent=60.0 elapsed_seconds=0.01 eta_seconds=0.0 samples_per_second=169293.06
+[progress] mode=progress-sanity phase=train stage=diagnostic processed=1300 total=2000 percent=65.0 elapsed_seconds=0.01 eta_seconds=0.0 samples_per_second=169160.7023
+[progress] mode=progress-sanity phase=train stage=diagnostic processed=1400 total=2000 percent=70.0 elapsed_seconds=0.01 eta_seconds=0.0 samples_per_second=169898.7889
+[progress] mode=progress-sanity phase=train stage=diagnostic processed=1500 total=2000 percent=75.0 elapsed_seconds=0.01 eta_seconds=0.0 samples_per_second=170681.4746
+[progress] mode=progress-sanity phase=train stage=diagnostic processed=1600 total=2000 percent=80.0 elapsed_seconds=0.01 eta_seconds=0.0 samples_per_second=171386.9486
+[progress] mode=progress-sanity phase=train stage=diagnostic processed=1700 total=2000 percent=85.0 elapsed_seconds=0.01 eta_seconds=0.0 samples_per_second=171779.6374
+[progress] mode=progress-sanity phase=train stage=diagnostic processed=1800 total=2000 percent=90.0 elapsed_seconds=0.01 eta_seconds=0.0 samples_per_second=171908.2776
+[progress] mode=progress-sanity phase=train stage=diagnostic processed=1900 total=2000 percent=95.0 elapsed_seconds=0.01 eta_seconds=0.0 samples_per_second=172429.4405
+[progress] mode=progress-sanity phase=train stage=diagnostic processed=2000 total=2000 percent=100.0 elapsed_seconds=0.01 eta_seconds=0.0 samples_per_second=172674.293
+[progress] mode=progress-sanity phase=eval stage=diagnostic processed=0 total=500 percent=0.0 elapsed_seconds=0.01 eta_seconds=0.0 samples_per_second=0.0 candidate_hit_after_so_far=0.24 top1_after_so_far=0.04
+[progress] mode=progress-sanity phase=eval stage=diagnostic processed=100 total=500 percent=20.0 elapsed_seconds=0.01 eta_seconds=0.05 samples_per_second=7469.3198 candidate_hit_after_so_far=0.272 top1_after_so_far=0.108
+[progress] mode=progress-sanity phase=eval stage=diagnostic processed=200 total=500 percent=40.0 elapsed_seconds=0.01 eta_seconds=0.02 samples_per_second=13781.413 candidate_hit_after_so_far=0.304 top1_after_so_far=0.176
+[progress] mode=progress-sanity phase=eval stage=diagnostic processed=300 total=500 percent=60.0 elapsed_seconds=0.02 eta_seconds=0.01 samples_per_second=19205.4082 candidate_hit_after_so_far=0.336 top1_after_so_far=0.244
+[progress] mode=progress-sanity phase=eval stage=diagnostic processed=400 total=500 percent=80.0 elapsed_seconds=0.02 eta_seconds=0.0 samples_per_second=23932.3194 candidate_hit_after_so_far=0.368 top1_after_so_far=0.312
+[progress] mode=progress-sanity phase=eval stage=diagnostic processed=500 total=500 percent=100.0 elapsed_seconds=0.02 eta_seconds=0.0 samples_per_second=28108.0473 candidate_hit_after_so_far=0.4 top1_after_so_far=0.38
+[progress] mode=progress-sanity phase=heldout stage=diagnostic processed=0 total=500 percent=0.0 elapsed_seconds=0.02 eta_seconds=0.0 samples_per_second=0.0 candidate_hit_after_so_far=0.24 top1_after_so_far=0.04
+[progress] mode=progress-sanity phase=heldout stage=diagnostic processed=100 total=500 percent=20.0 elapsed_seconds=0.02 eta_seconds=0.08 samples_per_second=5145.5946 candidate_hit_after_so_far=0.272 top1_after_so_far=0.108
+[progress] mode=progress-sanity phase=heldout stage=diagnostic processed=200 total=500 percent=40.0 elapsed_seconds=0.02 eta_seconds=0.03 samples_per_second=9729.472 candidate_hit_after_so_far=0.304 top1_after_so_far=0.176
+[progress] mode=progress-sanity phase=heldout stage=diagnostic processed=300 total=500 percent=60.0 elapsed_seconds=0.02 eta_seconds=0.01 samples_per_second=13851.3747 candidate_hit_after_so_far=0.336 top1_after_so_far=0.244
+[progress] mode=progress-sanity phase=heldout stage=diagnostic processed=400 total=500 percent=80.0 elapsed_seconds=0.02 eta_seconds=0.01 samples_per_second=17489.7029 candidate_hit_after_so_far=0.368 top1_after_so_far=0.312
+[progress] mode=progress-sanity phase=heldout stage=diagnostic processed=500 total=500 percent=100.0 elapsed_seconds=0.02 eta_seconds=0.0 samples_per_second=20862.3668 candidate_hit_after_so_far=0.4 top1_after_so_far=0.38
+[progress] mode=progress-sanity phase=boundary stage=diagnostic processed=0 total=500 percent=0.0 elapsed_seconds=0.02 eta_seconds=0.0 samples_per_second=0.0 boundary_false_accept_rate_so_far=0.0
+[progress] mode=progress-sanity phase=boundary stage=diagnostic processed=100 total=500 percent=20.0 elapsed_seconds=0.03 eta_seconds=0.1 samples_per_second=3907.8528 boundary_false_accept_rate_so_far=0.0
+[progress] mode=progress-sanity phase=boundary stage=diagnostic processed=200 total=500 percent=40.0 elapsed_seconds=0.03 eta_seconds=0.04 samples_per_second=7495.2967 boundary_false_accept_rate_so_far=0.0
+[progress] mode=progress-sanity phase=boundary stage=diagnostic processed=300 total=500 percent=60.0 elapsed_seconds=0.03 eta_seconds=0.02 samples_per_second=10799.5248 boundary_false_accept_rate_so_far=0.0
+[progress] mode=progress-sanity phase=boundary stage=diagnostic processed=400 total=500 percent=80.0 elapsed_seconds=0.03 eta_seconds=0.01 samples_per_second=13840.4952 boundary_false_accept_rate_so_far=0.0
+[progress] mode=progress-sanity phase=boundary stage=diagnostic processed=500 total=500 percent=100.0 elapsed_seconds=0.03 eta_seconds=0.0 samples_per_second=16672.8912 boundary_false_accept_rate_so_far=0.0
+[progress] mode=progress-sanity phase=compiler-validation stage=diagnostic processed=0 total=200 percent=0.0 elapsed_seconds=0.03 eta_seconds=0.0 samples_per_second=0.0 compiler_verified_correct_rate_so_far=0.0 real_compiler_invocation_count_so_far=0
+[progress] mode=progress-sanity phase=compiler-validation stage=diagnostic processed=100 total=200 percent=50.0 elapsed_seconds=0.03 eta_seconds=0.03 samples_per_second=3007.4193 compiler_verified_correct_rate_so_far=1.0 real_compiler_invocation_count_so_far=100
+[progress] mode=progress-sanity phase=compiler-validation stage=diagnostic processed=200 total=200 percent=100.0 elapsed_seconds=0.04 eta_seconds=0.0 samples_per_second=5558.8754 compiler_verified_correct_rate_so_far=1.0 real_compiler_invocation_count_so_far=200
+[progress] mode=progress-sanity phase=cross-process stage=diagnostic processed=0 total=200 percent=0.0 elapsed_seconds=0.04 eta_seconds=0.0 samples_per_second=0.0
+[progress] mode=progress-sanity phase=cross-process stage=diagnostic processed=100 total=200 percent=50.0 elapsed_seconds=0.04 eta_seconds=0.04 samples_per_second=2532.6073
+[progress] mode=progress-sanity phase=cross-process stage=diagnostic processed=200 total=200 percent=100.0 elapsed_seconds=0.04 eta_seconds=0.0 samples_per_second=4739.8307
+[progress] mode=progress-sanity phase=checkpoint stage=diagnostic processed=0 total=200 percent=0.0 elapsed_seconds=0.04 eta_seconds=0.0 samples_per_second=0.0
+[progress] mode=progress-sanity phase=checkpoint stage=diagnostic processed=100 total=200 percent=50.0 elapsed_seconds=0.05 eta_seconds=0.05 samples_per_second=2195.7416
+[progress] mode=progress-sanity phase=checkpoint stage=diagnostic processed=200 total=200 percent=100.0 elapsed_seconds=0.05 eta_seconds=0.0 samples_per_second=4143.3345
+[progress] mode=progress-sanity phase=finalization stage=diagnostic processed=0 total=200 percent=0.0 elapsed_seconds=0.05 eta_seconds=0.0 samples_per_second=0.0
+[progress] mode=progress-sanity phase=finalization stage=diagnostic processed=100 total=200 percent=50.0 elapsed_seconds=0.05 eta_seconds=0.05 samples_per_second=1941.2538
+[progress] mode=progress-sanity phase=finalization stage=diagnostic processed=200 total=200 percent=100.0 elapsed_seconds=0.05 eta_seconds=0.0 samples_per_second=3680.293

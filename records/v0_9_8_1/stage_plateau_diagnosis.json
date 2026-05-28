@@ -1,0 +1,123 @@
+{
+  "by_stage": {
+    "assignment_sequence": {
+      "boundary_status": "false_accept_zero",
+      "candidate_hit_delta": -0.00969,
+      "compiler_validation_status": "clean",
+      "correct_output_in_beam_delta": -0.015581,
+      "failure_type_shift": "candidate_miss remains dominant",
+      "heldout_delta": null,
+      "stage": "assignment_sequence",
+      "top1_delta": -0.015581,
+      "v0_9_7_top1_after": 0.408,
+      "v0_9_8_top1_after": 0.392419
+    },
+    "bounded_for_loop": {
+      "boundary_status": "false_accept_zero",
+      "candidate_hit_delta": -0.008945,
+      "compiler_validation_status": "clean",
+      "correct_output_in_beam_delta": -0.018408,
+      "failure_type_shift": "candidate_miss remains dominant",
+      "heldout_delta": null,
+      "stage": "bounded_for_loop",
+      "top1_delta": -0.018408,
+      "v0_9_7_top1_after": 0.38374,
+      "v0_9_8_top1_after": 0.365332
+    },
+    "bounded_while_with_fuel": {
+      "boundary_status": "false_accept_zero",
+      "candidate_hit_delta": -0.013633,
+      "compiler_validation_status": "clean",
+      "correct_output_in_beam_delta": -0.00786,
+      "failure_type_shift": "candidate_miss remains dominant",
+      "heldout_delta": null,
+      "stage": "bounded_while_with_fuel",
+      "top1_delta": -0.00786,
+      "v0_9_7_top1_after": 0.389474,
+      "v0_9_8_top1_after": 0.381614
+    },
+    "if_else_basic": {
+      "boundary_status": "false_accept_zero",
+      "candidate_hit_delta": -0.012895,
+      "compiler_validation_status": "clean",
+      "correct_output_in_beam_delta": -0.015944,
+      "failure_type_shift": "candidate_miss remains dominant",
+      "heldout_delta": null,
+      "stage": "if_else_basic",
+      "top1_delta": -0.015944,
+      "v0_9_7_top1_after": 0.39185,
+      "v0_9_8_top1_after": 0.375906
+    },
+    "if_else_nested": {
+      "boundary_status": "false_accept_zero",
+      "candidate_hit_delta": -0.030658,
+      "compiler_validation_status": "clean",
+      "correct_output_in_beam_delta": -0.024468,
+      "failure_type_shift": "candidate_miss remains dominant",
+      "heldout_delta": null,
+      "stage": "if_else_nested",
+      "top1_delta": -0.024468,
+      "v0_9_7_top1_after": 0.396985,
+      "v0_9_8_top1_after": 0.372517
+    },
+    "multi_variable_sequence": {
+      "boundary_status": "false_accept_zero",
+      "candidate_hit_delta": 0.018963,
+      "compiler_validation_status": "clean",
+      "correct_output_in_beam_delta": 0.008579,
+      "failure_type_shift": "candidate_miss remains dominant",
+      "heldout_delta": null,
+      "stage": "multi_variable_sequence",
+      "top1_delta": 0.008579,
+      "v0_9_7_top1_after": 0.373626,
+      "v0_9_8_top1_after": 0.382205
+    },
+    "nested_bounded_control": {
+      "boundary_status": "false_accept_zero",
+      "candidate_hit_delta": 0.030387,
+      "compiler_validation_status": "clean",
+      "correct_output_in_beam_delta": 0.023017,
+      "failure_type_shift": "candidate_miss remains dominant",
+      "heldout_delta": null,
+      "stage": "nested_bounded_control",
+      "top1_delta": 0.023017,
+      "v0_9_7_top1_after": 0.364307,
+      "v0_9_8_top1_after": 0.387324
+    },
+    "variable_declaration": {
+      "boundary_status": "false_accept_zero",
+      "candidate_hit_delta": 0.015203,
+      "compiler_validation_status": "clean",
+      "correct_output_in_beam_delta": 0.009185,
+      "failure_type_shift": "candidate_miss remains dominant",
+      "heldout_delta": null,
+      "stage": "variable_declaration",
+      "top1_delta": 0.009185,
+      "v0_9_7_top1_after": 0.3875,
+      "v0_9_8_top1_after": 0.396685
+    }
+  },
+  "control_flow_is_major_bottleneck": true,
+  "recommended_next_action": "focus on candidate generation/search-space expansion before ranking changes",
+  "stage_plateau_diagnosis_completed": true,
+  "stages_flat": [
+    "variable_declaration",
+    "multi_variable_sequence",
+    "bounded_while_with_fuel"
+  ],
+  "stages_improved": [
+    "nested_bounded_control"
+  ],
+  "stages_regressed": [
+    "assignment_sequence",
+    "if_else_basic",
+    "if_else_nested",
+    "bounded_for_loop"
+  ],
+  "variable_assignment_near_current_ceiling": true,
+  "weakest_stages": [
+    "bounded_for_loop",
+    "if_else_nested",
+    "if_else_basic"
+  ]
+}

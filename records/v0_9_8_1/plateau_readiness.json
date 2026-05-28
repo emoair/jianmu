@@ -1,0 +1,23 @@
+{
+  "ablation_diagnosis_completed": true,
+  "beam_bottleneck_likely": false,
+  "beam_sweep_completed": true,
+  "blocking_issues": [],
+  "candidate_error_taxonomy_completed": true,
+  "candidate_miss_rate": 0.595097,
+  "dominant_plateau_cause": "candidate_miss_generation_bottleneck",
+  "generation_bottleneck_likely": true,
+  "in_beam_wrong_top1_rate": 0.0,
+  "lifecycle_gain_present": true,
+  "nutrient_toxic_gain_present": true,
+  "plateau_diagnosis_completed": true,
+  "progress_events_emitted": 51,
+  "progress_metrics_safe": true,
+  "progress_repair_completed": true,
+  "ranking_bottleneck_likely": false,
+  "recommended_claim_level": "progress_repaired_plateau_diagnosed",
+  "recommended_next_action": "diagnose candidate generation/search-space coverage for bounded control stages",
+  "required_next_run": "targeted bounded-substrate candidate-space diagnosis; do not claim stronger model capability from diagnostics",
+  "root_colony_gain_present": true,
+  "stage_plateau_diagnosis_completed": true
+}
