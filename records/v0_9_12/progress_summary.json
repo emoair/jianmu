@@ -1,0 +1,19 @@
+{
+  "force_text": true,
+  "metrics_affected_by_progress": false,
+  "progress_backend": "periodic_text",
+  "progress_enabled": true,
+  "progress_errors": [],
+  "progress_events_by_phase": {
+    "compiler-validation": 1,
+    "cross-process": 1,
+    "eval": 5
+  },
+  "progress_events_emitted": 7,
+  "progress_first_event_time": 7.528059,
+  "progress_interval_seconds": 2.0,
+  "progress_last_event_time": 226.514887,
+  "progress_min_samples": 500,
+  "progress_overhead_estimated": "low",
+  "tty_detected": false
+}

@@ -1,0 +1,21 @@
+{
+  "active_state_usage_sufficient": true,
+  "boundary_degradation_detected": false,
+  "capacity_threshold_signal_detected": false,
+  "diminishing_returns_detected": true,
+  "emergence_proven": false,
+  "gain_1B_vs_600M": 0.008,
+  "gain_300M_vs_100M": 0.012,
+  "gain_600M_vs_300M": 0.008,
+  "gains": [
+    0.012,
+    0.008,
+    0.008
+  ],
+  "one_b_cost_benefit_reasonable": true,
+  "over_budget_no_gain_detected": false,
+  "possible_capacity_threshold_signal": false,
+  "saturation_detected": true,
+  "sharp_transition_detected": false,
+  "smooth_scaling_detected": true
+}

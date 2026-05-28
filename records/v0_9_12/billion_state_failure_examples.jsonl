@@ -1,0 +1,4 @@
+{"candidate_miss_rate": 0.1666, "failure_type": "candidate_miss_remaining", "profile_name": "state_100M_reference", "touch_ratio": 0.11}
+{"candidate_miss_rate": 0.1546, "failure_type": "candidate_miss_remaining", "profile_name": "state_300M", "touch_ratio": 0.081}
+{"candidate_miss_rate": 0.1466, "failure_type": "candidate_miss_remaining", "profile_name": "state_600M", "touch_ratio": 0.064}
+{"candidate_miss_rate": 0.1386, "failure_type": "candidate_miss_remaining", "profile_name": "state_1B", "touch_ratio": 0.052}

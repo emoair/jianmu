@@ -1,0 +1,81 @@
+{
+  "memory_guard_passed": true,
+  "profiles": [
+    {
+      "can_compressed_index": true,
+      "can_fully_materialize": false,
+      "can_lazy_index": true,
+      "estimated_compressed_index_memory_bytes": 800000000,
+      "estimated_disk_bytes": 55000000,
+      "estimated_fully_materialized_memory_bytes": 2400000000,
+      "estimated_memory_bytes": 200000000,
+      "estimated_runtime_seconds": 100.0,
+      "memory_guard_blocking_issues": [],
+      "memory_guard_passed": true,
+      "memory_guard_warnings": [
+        "not_fully_materialized"
+      ],
+      "profile_name": "state_100M_reference",
+      "recommended_materialization_level": "lazy_indexed",
+      "skip_reason": "",
+      "target_state_units": 100000000
+    },
+    {
+      "can_compressed_index": false,
+      "can_fully_materialize": false,
+      "can_lazy_index": true,
+      "estimated_compressed_index_memory_bytes": 2400000000,
+      "estimated_disk_bytes": 165000000,
+      "estimated_fully_materialized_memory_bytes": 7200000000,
+      "estimated_memory_bytes": 600000000,
+      "estimated_runtime_seconds": 300.0,
+      "memory_guard_blocking_issues": [],
+      "memory_guard_passed": true,
+      "memory_guard_warnings": [
+        "not_fully_materialized"
+      ],
+      "profile_name": "state_300M",
+      "recommended_materialization_level": "lazy_indexed",
+      "skip_reason": "",
+      "target_state_units": 300000000
+    },
+    {
+      "can_compressed_index": false,
+      "can_fully_materialize": false,
+      "can_lazy_index": true,
+      "estimated_compressed_index_memory_bytes": 4800000000,
+      "estimated_disk_bytes": 330000000,
+      "estimated_fully_materialized_memory_bytes": 14400000000,
+      "estimated_memory_bytes": 1200000000,
+      "estimated_runtime_seconds": 600.0,
+      "memory_guard_blocking_issues": [],
+      "memory_guard_passed": true,
+      "memory_guard_warnings": [
+        "not_fully_materialized"
+      ],
+      "profile_name": "state_600M",
+      "recommended_materialization_level": "lazy_indexed",
+      "skip_reason": "",
+      "target_state_units": 600000000
+    },
+    {
+      "can_compressed_index": false,
+      "can_fully_materialize": false,
+      "can_lazy_index": true,
+      "estimated_compressed_index_memory_bytes": 8000000000,
+      "estimated_disk_bytes": 550000000,
+      "estimated_fully_materialized_memory_bytes": 24000000000,
+      "estimated_memory_bytes": 2000000000,
+      "estimated_runtime_seconds": 1000.0,
+      "memory_guard_blocking_issues": [],
+      "memory_guard_passed": true,
+      "memory_guard_warnings": [
+        "not_fully_materialized"
+      ],
+      "profile_name": "state_1B",
+      "recommended_materialization_level": "lazy_indexed",
+      "skip_reason": "",
+      "target_state_units": 1000000000
+    }
+  ]
+}

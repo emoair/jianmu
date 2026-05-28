@@ -1,0 +1,26 @@
+{
+  "state_100M_reference": {
+    "boundary_false_accept_rate": 0.0,
+    "future_domain_supported_accept_rate": 0.0,
+    "near_ood_supported_accept_rate": 0.0,
+    "trap_false_accept_rate": 0.0
+  },
+  "state_1B": {
+    "boundary_false_accept_rate": 0.0,
+    "future_domain_supported_accept_rate": 0.0,
+    "near_ood_supported_accept_rate": 0.0,
+    "trap_false_accept_rate": 0.0
+  },
+  "state_300M": {
+    "boundary_false_accept_rate": 0.0,
+    "future_domain_supported_accept_rate": 0.0,
+    "near_ood_supported_accept_rate": 0.0,
+    "trap_false_accept_rate": 0.0
+  },
+  "state_600M": {
+    "boundary_false_accept_rate": 0.0,
+    "future_domain_supported_accept_rate": 0.0,
+    "near_ood_supported_accept_rate": 0.0,
+    "trap_false_accept_rate": 0.0
+  }
+}

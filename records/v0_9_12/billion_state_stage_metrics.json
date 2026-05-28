@@ -1,0 +1,46 @@
+{
+  "state_100M_reference": {
+    "assignment_sequence": 0.76864,
+    "bounded_control_hard_supported": 0.74264,
+    "bounded_for_loop": 0.74264,
+    "bounded_while_with_fuel": 0.76864,
+    "if_else_basic": 0.74264,
+    "if_else_nested": 0.74264,
+    "multi_variable_sequence": 0.76864,
+    "nested_bounded_control": 0.76864,
+    "variable_declaration": 0.76864
+  },
+  "state_1B": {
+    "assignment_sequence": 0.78768,
+    "bounded_control_hard_supported": 0.76168,
+    "bounded_for_loop": 0.76168,
+    "bounded_while_with_fuel": 0.78768,
+    "if_else_basic": 0.76168,
+    "if_else_nested": 0.76168,
+    "multi_variable_sequence": 0.78768,
+    "nested_bounded_control": 0.78768,
+    "variable_declaration": 0.78768
+  },
+  "state_300M": {
+    "assignment_sequence": 0.7768,
+    "bounded_control_hard_supported": 0.7508,
+    "bounded_for_loop": 0.7508,
+    "bounded_while_with_fuel": 0.7768,
+    "if_else_basic": 0.7508,
+    "if_else_nested": 0.7508,
+    "multi_variable_sequence": 0.7768,
+    "nested_bounded_control": 0.7768,
+    "variable_declaration": 0.7768
+  },
+  "state_600M": {
+    "assignment_sequence": 0.78224,
+    "bounded_control_hard_supported": 0.75624,
+    "bounded_for_loop": 0.75624,
+    "bounded_while_with_fuel": 0.78224,
+    "if_else_basic": 0.75624,
+    "if_else_nested": 0.75624,
+    "multi_variable_sequence": 0.78224,
+    "nested_bounded_control": 0.78224,
+    "variable_declaration": 0.78224
+  }
+}
