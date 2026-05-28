@@ -1,0 +1,14 @@
+{
+  "boundary_degradation_detected": false,
+  "capacity_threshold_signal_detected": true,
+  "diminishing_returns_detected": true,
+  "emergence_proven": false,
+  "gains": [
+    0.038,
+    0.02,
+    0.014
+  ],
+  "over_budget_no_gain_detected": false,
+  "sharp_transition_detected": false,
+  "smooth_scaling_detected": true
+}

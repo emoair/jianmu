@@ -1,0 +1,57 @@
+{
+  "memory_guard_passed": true,
+  "profiles": [
+    {
+      "can_fully_materialize": true,
+      "estimated_disk_bytes": 937500,
+      "estimated_fully_materialized_memory_bytes": 30000000,
+      "estimated_memory_bytes": 30000000,
+      "estimated_runtime_seconds": 1.0,
+      "memory_guard_blocking_issues": [],
+      "memory_guard_passed": true,
+      "memory_guard_warnings": [],
+      "profile_name": "baseline_targeted",
+      "recommended_materialization_level": "fully_materialized",
+      "target_state_units": 1250000
+    },
+    {
+      "can_fully_materialize": true,
+      "estimated_disk_bytes": 7500000,
+      "estimated_fully_materialized_memory_bytes": 240000000,
+      "estimated_memory_bytes": 240000000,
+      "estimated_runtime_seconds": 8.0,
+      "memory_guard_blocking_issues": [],
+      "memory_guard_passed": true,
+      "memory_guard_warnings": [],
+      "profile_name": "state_10M",
+      "recommended_materialization_level": "fully_materialized",
+      "target_state_units": 10000000
+    },
+    {
+      "can_fully_materialize": false,
+      "estimated_disk_bytes": 22500000,
+      "estimated_fully_materialized_memory_bytes": 720000000,
+      "estimated_memory_bytes": 240000000,
+      "estimated_runtime_seconds": 24.0,
+      "memory_guard_blocking_issues": [],
+      "memory_guard_passed": true,
+      "memory_guard_warnings": [],
+      "profile_name": "state_30M",
+      "recommended_materialization_level": "compressed_indexed",
+      "target_state_units": 30000000
+    },
+    {
+      "can_fully_materialize": false,
+      "estimated_disk_bytes": 75000000,
+      "estimated_fully_materialized_memory_bytes": 2400000000,
+      "estimated_memory_bytes": 200000000,
+      "estimated_runtime_seconds": 80.0,
+      "memory_guard_blocking_issues": [],
+      "memory_guard_passed": true,
+      "memory_guard_warnings": [],
+      "profile_name": "state_100M",
+      "recommended_materialization_level": "lazy_indexed",
+      "target_state_units": 100000000
+    }
+  ]
+}

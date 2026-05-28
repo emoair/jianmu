@@ -492,3 +492,7 @@ v0.9.9 builds a Turing-frontier curriculum dataset and runs a candidate-space co
 ## v0.9.10 Development Direction
 
 v0.9.10 performs a targeted candidate-space expansion rerun using the best diagnostic budget profile identified in v0.9.9: beam=64, candidate_budget=512, control_template_budget=xlarge, root_expansion=8x, and memory_budget=8x. The profile is treated as a controlled budget configuration rather than an architecture change. This version evaluates whether candidate-miss reduction reproduces on fresh samples while preserving boundary/future-domain safety and real MSVC compiler validation. It does not claim Turing completeness or solved program synthesis.
+
+## v0.9.11 Development Direction
+
+v0.9.11 runs a Hundred-Million State Budget Probe after v0.9.10 reproduced targeted candidate-space expansion. It treats “state budget” as auditable JianMu internal state capacity--candidate fragments, control-flow templates, root/sub-root expansion slots, failure-pattern memory, nutrient-toxic memory, and routing/scoring profiles--not as neural network parameters. The version tests baseline, 10M, 30M, and 100M budget profiles with memory guards, compiler validation, boundary/future safety checks, and honest materialization-level reporting. It does not claim Turing completeness, solved program synthesis, or emergence proven.

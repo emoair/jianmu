@@ -1,0 +1,39 @@
+{
+  "best_actual_state_units_allocated": 100000000,
+  "best_materialization_level": "lazy_indexed",
+  "best_profile_name": "state_100M",
+  "best_target_state_units": 100000000,
+  "blocking_issues": [],
+  "boundary_compiler_misroute_count_best": 0,
+  "boundary_false_accept_rate_best": 0.0,
+  "candidate_miss_rate_baseline": 0.2386,
+  "candidate_miss_rate_best": 0.1666,
+  "capacity_threshold_signal_detected": true,
+  "compiler_validation_completed": true,
+  "compiler_verified_correct_rate_best": 1.0,
+  "cross_process_reload_passed": true,
+  "diminishing_returns_detected": true,
+  "future_domain_supported_accept_rate_best": 0.0,
+  "heldout_supported_success_rate_best": 0.76864,
+  "memory_guard_passed": true,
+  "profiles_attempted": [
+    "baseline_targeted",
+    "state_10M",
+    "state_30M",
+    "state_100M"
+  ],
+  "profiles_completed": [
+    "baseline_targeted",
+    "state_10M",
+    "state_30M",
+    "state_100M"
+  ],
+  "profiles_skipped": {},
+  "ready_for_v0_9_12_training_or_profile_promotion": true,
+  "recommended_claim_level": "hundred_million_state_budget_probe_positive",
+  "required_next_run": "v0.9.12 training/profile-promotion probe with honest materialization constraints",
+  "sharp_transition_detected": false,
+  "state_budget_probe_completed": true,
+  "top1_baseline": 0.7096,
+  "top1_best": 0.76864
+}

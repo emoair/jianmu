@@ -1,0 +1,26 @@
+{
+  "baseline_targeted": {
+    "boundary_false_accept_rate": 0.0,
+    "future_domain_supported_accept_rate": 0.0,
+    "near_ood_supported_accept_rate": 0.0,
+    "trap_false_accept_rate": 0.0
+  },
+  "state_100M": {
+    "boundary_false_accept_rate": 0.0,
+    "future_domain_supported_accept_rate": 0.0,
+    "near_ood_supported_accept_rate": 0.0,
+    "trap_false_accept_rate": 0.0
+  },
+  "state_10M": {
+    "boundary_false_accept_rate": 0.0,
+    "future_domain_supported_accept_rate": 0.0,
+    "near_ood_supported_accept_rate": 0.0,
+    "trap_false_accept_rate": 0.0
+  },
+  "state_30M": {
+    "boundary_false_accept_rate": 0.0,
+    "future_domain_supported_accept_rate": 0.0,
+    "near_ood_supported_accept_rate": 0.0,
+    "trap_false_accept_rate": 0.0
+  }
+}

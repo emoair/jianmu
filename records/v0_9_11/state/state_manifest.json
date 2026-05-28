@@ -1,0 +1,13 @@
+{
+  "actual_state_units_allocated": 100000000,
+  "best_profile_name": "state_100M",
+  "candidate_space_profile_captured": true,
+  "forbidden_field_in_state_count": 0,
+  "materialization_level": "lazy_indexed",
+  "memory_budget_captured": true,
+  "missing_for_full_state": [],
+  "persisted_state_support_level": "full_router_root",
+  "root_expansion_budget_captured": true,
+  "state_budget_profile_captured": true,
+  "target_state_units": 100000000
+}

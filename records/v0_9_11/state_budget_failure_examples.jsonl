@@ -1,0 +1,4 @@
+{"candidate_miss_rate": 0.2386, "failure_type": "candidate_miss_remaining", "materialization_level": "fully_materialized", "profile_name": "baseline_targeted"}
+{"candidate_miss_rate": 0.2006, "failure_type": "candidate_miss_remaining", "materialization_level": "fully_materialized", "profile_name": "state_10M"}
+{"candidate_miss_rate": 0.1806, "failure_type": "candidate_miss_remaining", "materialization_level": "compressed_indexed", "profile_name": "state_30M"}
+{"candidate_miss_rate": 0.1666, "failure_type": "candidate_miss_remaining", "materialization_level": "lazy_indexed", "profile_name": "state_100M"}

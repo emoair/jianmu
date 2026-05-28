@@ -1,0 +1,46 @@
+{
+  "baseline_targeted": {
+    "assignment_sequence": 0.7096,
+    "bounded_control_hard_supported": 0.6776,
+    "bounded_for_loop": 0.6776,
+    "bounded_while_with_fuel": 0.7096,
+    "if_else_basic": 0.6776,
+    "if_else_nested": 0.6776,
+    "multi_variable_sequence": 0.7096,
+    "nested_bounded_control": 0.7096,
+    "variable_declaration": 0.7096
+  },
+  "state_100M": {
+    "assignment_sequence": 0.76864,
+    "bounded_control_hard_supported": 0.73664,
+    "bounded_for_loop": 0.73664,
+    "bounded_while_with_fuel": 0.76864,
+    "if_else_basic": 0.73664,
+    "if_else_nested": 0.73664,
+    "multi_variable_sequence": 0.76864,
+    "nested_bounded_control": 0.76864,
+    "variable_declaration": 0.76864
+  },
+  "state_10M": {
+    "assignment_sequence": 0.74076,
+    "bounded_control_hard_supported": 0.70876,
+    "bounded_for_loop": 0.70876,
+    "bounded_while_with_fuel": 0.74076,
+    "if_else_basic": 0.70876,
+    "if_else_nested": 0.70876,
+    "multi_variable_sequence": 0.74076,
+    "nested_bounded_control": 0.74076,
+    "variable_declaration": 0.74076
+  },
+  "state_30M": {
+    "assignment_sequence": 0.75716,
+    "bounded_control_hard_supported": 0.72516,
+    "bounded_for_loop": 0.72516,
+    "bounded_while_with_fuel": 0.75716,
+    "if_else_basic": 0.72516,
+    "if_else_nested": 0.72516,
+    "multi_variable_sequence": 0.75716,
+    "nested_bounded_control": 0.75716,
+    "variable_declaration": 0.75716
+  }
+}
