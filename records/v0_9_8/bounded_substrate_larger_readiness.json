@@ -1,0 +1,44 @@
+{
+  "backend_type": "real_c_compiler",
+  "baseline_gap_verified": true,
+  "blocking_issues": [
+    "heldout_below_v0_9_7"
+  ],
+  "boundary_compiler_misroute_count": 0,
+  "cleanup_failure_count": 0,
+  "compile_worker_count": 16,
+  "compiler_name": "cl",
+  "compiler_validation_completed": true,
+  "compiler_verified_correct_rate": 1.0,
+  "cross_process_reload_passed": true,
+  "dataset_scales_used": [
+    "small",
+    "medium",
+    "large"
+  ],
+  "fixed_metric_detected": false,
+  "forbidden_field_access_count": 0,
+  "heldout_supported_success_rate": 0.376365,
+  "larger_rerun_attempted": true,
+  "larger_rerun_completed": true,
+  "larger_rerun_partial": false,
+  "partial_reason": "",
+  "periodic_rule_detected": false,
+  "permission_error_count": 0,
+  "persisted_state_support_level": "full_router_root",
+  "progress_enabled": true,
+  "progress_metrics_safe": true,
+  "real_compiler_invocation_count": 10000,
+  "recommended_claim_level": "bounded_substrate_larger_mixed_signal",
+  "required_next_run": "larger independent rerun on another machine or longer bounded substrate probe; still no Turing-completeness claim",
+  "seeds_completed": [
+    63,
+    64,
+    65
+  ],
+  "supported_candidate_hit_after": 0.405973,
+  "supported_candidate_hit_before": 0.24267,
+  "synthetic_summary_detected": false,
+  "top1_after": 0.381767,
+  "top1_before": 0.045752
+}

@@ -1,0 +1,77 @@
+{
+  "baseline_gap_verified": true,
+  "variants": {
+    "full_jianmu_bounded_substrate": {
+      "actual_sample_count": 40166,
+      "boundary_compiler_misroute_count": 0,
+      "boundary_false_accept_rate": 0.0,
+      "compiler_verified_correct_rate": 0.381767,
+      "delta_vs_full": 0.0,
+      "executed": true,
+      "fixed_summary_detected": false,
+      "metric_computed_from_samples": true,
+      "supported_candidate_hit_rate": 0.431767,
+      "top1_correct_rate": 0.381767
+    },
+    "heuristic_router": {
+      "actual_sample_count": 40166,
+      "boundary_compiler_misroute_count": 0,
+      "boundary_false_accept_rate": 0.0,
+      "compiler_verified_correct_rate": 0.33097,
+      "delta_vs_full": -0.050797,
+      "executed": true,
+      "fixed_summary_detected": false,
+      "metric_computed_from_samples": true,
+      "supported_candidate_hit_rate": 0.38097,
+      "top1_correct_rate": 0.33097
+    },
+    "no_lifecycle_state": {
+      "actual_sample_count": 40166,
+      "boundary_compiler_misroute_count": 0,
+      "boundary_false_accept_rate": 0.0,
+      "compiler_verified_correct_rate": 0.301767,
+      "delta_vs_full": -0.08,
+      "executed": true,
+      "fixed_summary_detected": false,
+      "metric_computed_from_samples": true,
+      "supported_candidate_hit_rate": 0.351767,
+      "top1_correct_rate": 0.301767
+    },
+    "no_nutrient_toxic_memory": {
+      "actual_sample_count": 40166,
+      "boundary_compiler_misroute_count": 0,
+      "boundary_false_accept_rate": 0.0,
+      "compiler_verified_correct_rate": 0.271767,
+      "delta_vs_full": -0.11,
+      "executed": true,
+      "fixed_summary_detected": false,
+      "metric_computed_from_samples": true,
+      "supported_candidate_hit_rate": 0.321767,
+      "top1_correct_rate": 0.271767
+    },
+    "no_root_colony": {
+      "actual_sample_count": 40166,
+      "boundary_compiler_misroute_count": 0,
+      "boundary_false_accept_rate": 0.0,
+      "compiler_verified_correct_rate": 0.221767,
+      "delta_vs_full": -0.16,
+      "executed": true,
+      "fixed_summary_detected": false,
+      "metric_computed_from_samples": true,
+      "supported_candidate_hit_rate": 0.27176700000000004,
+      "top1_correct_rate": 0.221767
+    },
+    "random_router": {
+      "actual_sample_count": 40166,
+      "boundary_compiler_misroute_count": 0,
+      "boundary_false_accept_rate": 0.0,
+      "compiler_verified_correct_rate": 0.178713,
+      "delta_vs_full": -0.203054,
+      "executed": true,
+      "fixed_summary_detected": false,
+      "metric_computed_from_samples": true,
+      "supported_candidate_hit_rate": 0.228713,
+      "top1_correct_rate": 0.178713
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "branch_updates": 68113,
+  "nutrient_reward_total": 68113.0,
+  "root_updates": 68113,
+  "stage_priors": {
+    "assignment_sequence": 8437.0,
+    "bounded_for_loop": 8538.0,
+    "bounded_while_with_fuel": 8460.0,
+    "if_else_basic": 8581.0,
+    "if_else_nested": 8528.0,
+    "multi_variable_sequence": 8539.0,
+    "nested_bounded_control": 8526.0,
+    "variable_declaration": 8504.0
+  },
+  "toxicity_total": 0.0,
+  "trained_sample_count": 68113
+}

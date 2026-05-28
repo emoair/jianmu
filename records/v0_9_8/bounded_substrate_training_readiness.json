@@ -1,0 +1,8 @@
+{
+  "blocking_issues": [
+    "compiler_validation_not_real_16_worker"
+  ],
+  "ready_for_bounded_substrate_probe_claim": false,
+  "recommended_claim_level": "bounded_substrate_probe_mixed_signal",
+  "required_next_run": "larger bounded substrate rerun with compiler validation; still no Turing-completeness claim"
+}

@@ -1,0 +1,16 @@
+{
+  "child_boundary_false_accept_rate": 0.0,
+  "child_eval_sample_count": 32,
+  "child_forbidden_field_access_count": 0,
+  "child_loaded_state": true,
+  "child_state_hash": "d8bd48c0cfd98bb59cf7ef227484a3ddad81056a677c78c1c14143276cb57800",
+  "child_stderr_tail": "",
+  "child_stdout_tail": "{\"child_boundary_false_accept_rate\": 0.0, \"child_eval_sample_count\": 32, \"child_forbidden_field_access_count\": 0, \"child_loaded_state\": true, \"child_state_hash\": \"d8bd48c0cfd98bb59cf7ef227484a3ddad81056a677c78c1c14143276cb57800\", \"child_supported_retention_rate\": 1.0, \"cross_process_reload_passed\": true, \"subprocess_spawned\": false}\n",
+  "child_supported_retention_rate": 1.0,
+  "cross_process_reload_passed": true,
+  "same_process_boundary_false_accept_rate": 0.0,
+  "same_process_heldout_supported_success_rate": 0.376365,
+  "subprocess_command_hash": "9bbadeab2e70477f",
+  "subprocess_returncode": 0,
+  "subprocess_spawned": true
+}

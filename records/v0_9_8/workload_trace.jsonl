@@ -1,0 +1,3 @@
+{"mode": "quick", "phase": "dataset_iteration", "real_execution": true, "sample_count_delta": 3500, "synthetic_or_summary_path": false, "timestamp": 1779935111.4046414}
+{"mode": "medium-rerun", "phase": "dataset_iteration", "real_execution": true, "sample_count_delta": 30000, "synthetic_or_summary_path": false, "timestamp": 1779935113.4969306}
+{"mode": "large-rerun", "phase": "dataset_iteration", "real_execution": true, "sample_count_delta": 80000, "synthetic_or_summary_path": false, "timestamp": 1779935119.2768462}

@@ -476,3 +476,7 @@ v0.9.7.2 performs a compiler PermissionError failure taxonomy for the v0.9.7.1 b
 ## v0.9.7.3 Development Direction
 
 v0.9.7.3 reruns independent bounded-substrate compiler validation from a clean MSVC-enabled environment after v0.9.7.2 explained the previous PermissionError failures as cleanup-stage engineering issues. It preserves the original v0.9.7.1 metrics and patched v0.9.7.2 replay results, and reports the clean independent validation separately. It does not claim Turing completeness or solved program synthesis.
+
+## v0.9.8 Development Direction
+
+v0.9.8 performs a larger bounded-substrate training rerun after v0.9.7.3 restored clean MSVC independent validation. It uses the v0.9.6 large substrate curriculum, real cl.exe compiler validation, full_router_root persistence, cross-process reload, and terminal progress reporting. The progress UI is observational only and does not replace JSON/JSONL records. This version does not claim Turing completeness or solved program synthesis.

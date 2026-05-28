@@ -1,0 +1,9 @@
+{
+  "metrics_affected_by_progress": false,
+  "progress_backend": "periodic_text",
+  "progress_enabled": true,
+  "progress_errors": [],
+  "progress_events_emitted": 4,
+  "progress_interval_seconds": 2.0,
+  "tty_detected": false
+}

@@ -1,0 +1,11 @@
+{
+  "bounded_substrate_training_state_captured": true,
+  "forbidden_field_in_state_count": 0,
+  "lifecycle_states_captured": true,
+  "missing_for_full_state": [],
+  "nutrient_toxic_memory_captured": true,
+  "persisted_state_support_level": "full_router_root",
+  "state_hash": "d8bd48c0cfd98bb59cf7ef227484a3ddad81056a677c78c1c14143276cb57800",
+  "trained_branch_population_captured": true,
+  "trained_root_colonies_captured": true
+}

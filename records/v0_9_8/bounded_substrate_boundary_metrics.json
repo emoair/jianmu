@@ -1,0 +1,89 @@
+{
+  "array_false_accept_rate": 0.0,
+  "boundary_text_audited": true,
+  "by_category": {
+    "future_domain_candidate": {
+      "boundary_compiler_misroute_count": 0,
+      "category": "future_domain_candidate",
+      "false_accept_examples": [],
+      "false_accept_rate": 0.0,
+      "false_reject_supported_examples": [],
+      "isolation_rate": 1.0,
+      "quarantine_rate": 0.0,
+      "rejection_rate": 0.0,
+      "review_rate": 0.0,
+      "sample_count": 5211
+    },
+    "hard_ood": {
+      "boundary_compiler_misroute_count": 0,
+      "category": "hard_ood",
+      "false_accept_examples": [],
+      "false_accept_rate": 0.0,
+      "false_reject_supported_examples": [],
+      "isolation_rate": 0.0,
+      "quarantine_rate": 0.0,
+      "rejection_rate": 1.0,
+      "review_rate": 0.0,
+      "sample_count": 3036
+    },
+    "label_review_candidate": {
+      "boundary_compiler_misroute_count": 0,
+      "category": "label_review_candidate",
+      "false_accept_examples": [],
+      "false_accept_rate": 0.0,
+      "false_reject_supported_examples": [],
+      "isolation_rate": 0.0,
+      "quarantine_rate": 0.0,
+      "rejection_rate": 0.0,
+      "review_rate": 1.0,
+      "sample_count": 1045
+    },
+    "near_ood_program": {
+      "boundary_compiler_misroute_count": 0,
+      "category": "near_ood_program",
+      "false_accept_examples": [],
+      "false_accept_rate": 0.0,
+      "false_reject_supported_examples": [],
+      "isolation_rate": 0.0,
+      "quarantine_rate": 1.0,
+      "rejection_rate": 0.0,
+      "review_rate": 0.0,
+      "sample_count": 4136
+    },
+    "true_false_accept_trap": {
+      "boundary_compiler_misroute_count": 0,
+      "category": "true_false_accept_trap",
+      "false_accept_examples": [],
+      "false_accept_rate": 0.0,
+      "false_reject_supported_examples": [],
+      "isolation_rate": 0.0,
+      "quarantine_rate": 0.0,
+      "rejection_rate": 1.0,
+      "review_rate": 0.0,
+      "sample_count": 6041
+    },
+    "unsupported_program_boundary": {
+      "boundary_compiler_misroute_count": 0,
+      "category": "unsupported_program_boundary",
+      "false_accept_examples": [],
+      "false_accept_rate": 0.0,
+      "false_reject_supported_examples": [],
+      "isolation_rate": 0.0,
+      "quarantine_rate": 0.0,
+      "rejection_rate": 1.0,
+      "review_rate": 0.0,
+      "sample_count": 6031
+    }
+  },
+  "file_io_false_accept_rate": 0.0,
+  "function_false_accept_rate": 0.0,
+  "future_domain_supported_accept_rate": 0.0,
+  "near_ood_supported_accept_rate": 0.0,
+  "pointer_false_accept_rate": 0.0,
+  "recursion_false_accept_rate": 0.0,
+  "scanf_user_input_false_accept_rate": 0.0,
+  "system_call_false_accept_rate": 0.0,
+  "trap_false_accept_rate": 0.0,
+  "unbounded_loop_false_accept_rate": 0.0,
+  "unsupported_false_accept_rate": 0.0
+}

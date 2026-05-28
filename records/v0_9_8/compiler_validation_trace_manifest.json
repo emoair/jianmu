@@ -1,0 +1,13 @@
+{
+  "shard_count": 1,
+  "shards": [
+    {
+      "path": "compiler_validation_trace_000.jsonl",
+      "row_count": 20000,
+      "size_bytes": 21435270
+    }
+  ],
+  "source_manifest_path": "records\\v0_9_8\\independent_validation_trace_manifest.json",
+  "total_rows": 20000,
+  "trace_sharded": true
+}
