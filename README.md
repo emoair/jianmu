@@ -10,6 +10,10 @@ v0.9.15.1 re-audits a multi-agent raw LLM draft dataset after v0.9.15 showed sev
 
 v0.9.15.2 replaces unreliable raw LLM free generation with a Codex/grammar-driven Chinese data factory. Current-supported training inputs are restricted to Chinese, while English and mixed-language samples are treated as boundary, hard-OOD, future multilingual, or review cases. The version generates deterministic Chinese bounded-control data, audits language-domain safety, verifies supported samples with real MSVC compiler checks, and compares the result against the failed raw LLM generation path. It does not claim Turing completeness or solved program synthesis.
 
+## v0.9.16 Development Direction
+
+v0.9.16 reruns training with the audited v0.9.14 Turing-frontier dataset v2 and the v0.9.15.2 Codex/grammar Chinese dataset. Only Chinese current-supported bounded-control samples enter train_current; function, array, recursion, unbounded execution, English, and mixed-language samples remain boundary/future/review data. The version compares dataset_v2_only, chinese_factory_only, and mixed data profiles under the layerwise sparse 1B freeze-prune profile, with compiler validation and historical regression checks. It does not claim Turing completeness or function/array/recursion support.
+
 # JianMu MVP
 
 JianMu v0.5 is a Chinese-first hierarchical semantic routing runtime for

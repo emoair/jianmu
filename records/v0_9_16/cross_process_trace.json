@@ -1,0 +1,7 @@
+{
+  "best_data_mix_profile": "dataset_v2_plus_chinese_factory_stage_balanced",
+  "best_profile_name": "layerwise_sparse_1B_freeze_prune",
+  "child_forbidden_field_access_count": 0,
+  "child_metrics_comparable": true,
+  "cross_process_reload_passed": true
+}

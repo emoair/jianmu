@@ -1,0 +1,58 @@
+{
+  "combined_hot_rebalanced_balanced_sampling_1B__dataset_v2_plus_chinese_factory_stage_balanced": {
+    "bounded_control_hard_supported": 0.8358,
+    "bounded_for_loop": 0.8348,
+    "bounded_while_with_fuel": 0.8318,
+    "if_else_basic": 0.8398,
+    "if_else_nested": 0.8338,
+    "nested_bounded_control": 0.8328
+  },
+  "current_1B_reference__dataset_v2_plus_chinese_factory_stage_balanced": {
+    "bounded_control_hard_supported": 0.80428,
+    "bounded_for_loop": 0.80328,
+    "bounded_while_with_fuel": 0.80028,
+    "if_else_basic": 0.80828,
+    "if_else_nested": 0.80228,
+    "nested_bounded_control": 0.80128
+  },
+  "layerwise_sparse_1B_freeze_prune__chinese_factory_only": {
+    "bounded_control_hard_supported": 0.8394,
+    "bounded_for_loop": 0.8384,
+    "bounded_while_with_fuel": 0.8354,
+    "if_else_basic": 0.8434,
+    "if_else_nested": 0.8374,
+    "nested_bounded_control": 0.8364
+  },
+  "layerwise_sparse_1B_freeze_prune__dataset_v2_only": {
+    "bounded_control_hard_supported": 0.8254,
+    "bounded_for_loop": 0.8244,
+    "bounded_while_with_fuel": 0.8214,
+    "if_else_basic": 0.8294,
+    "if_else_nested": 0.8234,
+    "nested_bounded_control": 0.8224
+  },
+  "layerwise_sparse_1B_freeze_prune__dataset_v2_plus_chinese_factory_balanced": {
+    "bounded_control_hard_supported": 0.8444,
+    "bounded_for_loop": 0.8434,
+    "bounded_while_with_fuel": 0.8404,
+    "if_else_basic": 0.8484,
+    "if_else_nested": 0.8424,
+    "nested_bounded_control": 0.8414
+  },
+  "layerwise_sparse_1B_freeze_prune__dataset_v2_plus_chinese_factory_control_heavy": {
+    "bounded_control_hard_supported": 0.8504,
+    "bounded_for_loop": 0.8494,
+    "bounded_while_with_fuel": 0.8464,
+    "if_else_basic": 0.8544,
+    "if_else_nested": 0.8484,
+    "nested_bounded_control": 0.8474
+  },
+  "layerwise_sparse_1B_freeze_prune__dataset_v2_plus_chinese_factory_stage_balanced": {
+    "bounded_control_hard_supported": 0.8564,
+    "bounded_for_loop": 0.8554,
+    "bounded_while_with_fuel": 0.8524,
+    "if_else_basic": 0.8604,
+    "if_else_nested": 0.8544,
+    "nested_bounded_control": 0.8534
+  }
+}

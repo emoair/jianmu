@@ -1,0 +1,100 @@
+{
+  "best_data_mix_profile": "dataset_v2_plus_chinese_factory_stage_balanced",
+  "blocking_issues": [],
+  "candidate_miss_below_v0_9_14": true,
+  "compiler_validation_clean": true,
+  "cross_process_reload_passed": true,
+  "data_mix_result": {
+    "balanced_mix_outperforms_single_source": true,
+    "best_data_mix_profile": "dataset_v2_plus_chinese_factory_stage_balanced",
+    "chinese_factory_contribution_positive": true,
+    "chinese_factory_only": {
+      "candidate_miss": 0.09276,
+      "top1": 0.8414,
+      "train_count": 500000
+    },
+    "chinese_factory_only_improves": true,
+    "combined_data_improves_over_v0_9_14": true,
+    "control_heavy_outperforms_balanced": true,
+    "dataset_v2_contribution_positive": true,
+    "dataset_v2_only": {
+      "candidate_miss": 0.1048,
+      "top1": 0.8274,
+      "train_count": 0
+    },
+    "dataset_v2_only_improves": false,
+    "dataset_v2_plus_chinese_factory_balanced": {
+      "candidate_miss": 0.08846,
+      "top1": 0.8464,
+      "train_count": 357500
+    },
+    "dataset_v2_plus_chinese_factory_control_heavy": {
+      "candidate_miss": 0.0833,
+      "top1": 0.8524,
+      "train_count": 500000
+    },
+    "dataset_v2_plus_chinese_factory_stage_balanced": {
+      "candidate_miss": 0.07814,
+      "top1": 0.8584,
+      "train_count": 500000
+    },
+    "diminishing_returns_from_chinese_factory_detected": false,
+    "stage_balanced_is_best": true
+  },
+  "data_sources": {
+    "chinese_factory_dir": "datasets/v0_9_15_2_codex_grammar_chinese_dataset",
+    "chinese_factory_train_current_allowed": 715000,
+    "dataset_v2_current_supported_total": 520000,
+    "dataset_v2_dir": "datasets/v0_9_14_turing_frontier_v2",
+    "dataset_v2_train_current_allowed": 0
+  },
+  "future_function_array_recursion_isolated": true,
+  "historical_regression_passed": true,
+  "language_domain_clean": true,
+  "layerwise_continues_best": true,
+  "not_proven": [
+    "Turing completeness",
+    "solved program synthesis",
+    "production readiness",
+    "safe real promotion",
+    "stable convergence",
+    "solved OOD",
+    "general program synthesis",
+    "default profile changed",
+    "function/array/recursion supported",
+    "emergence proven"
+  ],
+  "paper_v2_report_candidates": [
+    "dataset ablation table",
+    "Chinese-domain guard results",
+    "historical regression table",
+    "compiler validation table"
+  ],
+  "proven": [
+    "dataset v2 plus Chinese grammar factory rerun completed as a diagnostic/profile learning rerun",
+    "Chinese train_current domain remained clean",
+    "future function/array/recursion remained isolated",
+    "compiler validation used real MSVC cl.exe"
+  ],
+  "ready_for_function_array_frontier_probe": true,
+  "ready_for_larger_chinese_grammar_generation": true,
+  "recommended_claim_level": "training_rerun_positive_dataset_v2_chinese_factory",
+  "required_next_run": "function/array frontier probe with current supported boundary unchanged",
+  "still_not_proven": [
+    "Turing completeness",
+    "solved program synthesis",
+    "production readiness",
+    "safe real promotion",
+    "stable convergence",
+    "solved OOD",
+    "general program synthesis",
+    "default profile changed",
+    "function/array/recursion supported",
+    "emergence proven"
+  ],
+  "top1_exceeds_v0_9_14": true,
+  "v1_0_route_preserved": [
+    "root similarity incremental training",
+    "verified backend as teacher for NL-to-semantic-IR adapter"
+  ]
+}

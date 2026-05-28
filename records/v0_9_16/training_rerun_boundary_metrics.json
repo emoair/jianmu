@@ -1,0 +1,86 @@
+{
+  "combined_hot_rebalanced_balanced_sampling_1B__dataset_v2_plus_chinese_factory_stage_balanced": {
+    "english_supported_accept_rate": 0.0,
+    "future_array_supported_accept_rate": 0.0,
+    "future_function_supported_accept_rate": 0.0,
+    "future_recursion_supported_accept_rate": 0.0,
+    "hard_ood_false_accept_rate": 0.0,
+    "mixed_language_supported_accept_rate": 0.0,
+    "near_ood_supported_accept_rate": 0.0,
+    "trap_false_accept_rate": 0.0,
+    "unbounded_loop_false_accept_rate": 0.0,
+    "unsupported_unbounded_recursion_false_accept_rate": 0.0
+  },
+  "current_1B_reference__dataset_v2_plus_chinese_factory_stage_balanced": {
+    "english_supported_accept_rate": 0.0,
+    "future_array_supported_accept_rate": 0.0,
+    "future_function_supported_accept_rate": 0.0,
+    "future_recursion_supported_accept_rate": 0.0,
+    "hard_ood_false_accept_rate": 0.0,
+    "mixed_language_supported_accept_rate": 0.0,
+    "near_ood_supported_accept_rate": 0.0,
+    "trap_false_accept_rate": 0.0,
+    "unbounded_loop_false_accept_rate": 0.0,
+    "unsupported_unbounded_recursion_false_accept_rate": 0.0
+  },
+  "layerwise_sparse_1B_freeze_prune__chinese_factory_only": {
+    "english_supported_accept_rate": 0.0,
+    "future_array_supported_accept_rate": 0.0,
+    "future_function_supported_accept_rate": 0.0,
+    "future_recursion_supported_accept_rate": 0.0,
+    "hard_ood_false_accept_rate": 0.0,
+    "mixed_language_supported_accept_rate": 0.0,
+    "near_ood_supported_accept_rate": 0.0,
+    "trap_false_accept_rate": 0.0,
+    "unbounded_loop_false_accept_rate": 0.0,
+    "unsupported_unbounded_recursion_false_accept_rate": 0.0
+  },
+  "layerwise_sparse_1B_freeze_prune__dataset_v2_only": {
+    "english_supported_accept_rate": 0.0,
+    "future_array_supported_accept_rate": 0.0,
+    "future_function_supported_accept_rate": 0.0,
+    "future_recursion_supported_accept_rate": 0.0,
+    "hard_ood_false_accept_rate": 0.0,
+    "mixed_language_supported_accept_rate": 0.0,
+    "near_ood_supported_accept_rate": 0.0,
+    "trap_false_accept_rate": 0.0,
+    "unbounded_loop_false_accept_rate": 0.0,
+    "unsupported_unbounded_recursion_false_accept_rate": 0.0
+  },
+  "layerwise_sparse_1B_freeze_prune__dataset_v2_plus_chinese_factory_balanced": {
+    "english_supported_accept_rate": 0.0,
+    "future_array_supported_accept_rate": 0.0,
+    "future_function_supported_accept_rate": 0.0,
+    "future_recursion_supported_accept_rate": 0.0,
+    "hard_ood_false_accept_rate": 0.0,
+    "mixed_language_supported_accept_rate": 0.0,
+    "near_ood_supported_accept_rate": 0.0,
+    "trap_false_accept_rate": 0.0,
+    "unbounded_loop_false_accept_rate": 0.0,
+    "unsupported_unbounded_recursion_false_accept_rate": 0.0
+  },
+  "layerwise_sparse_1B_freeze_prune__dataset_v2_plus_chinese_factory_control_heavy": {
+    "english_supported_accept_rate": 0.0,
+    "future_array_supported_accept_rate": 0.0,
+    "future_function_supported_accept_rate": 0.0,
+    "future_recursion_supported_accept_rate": 0.0,
+    "hard_ood_false_accept_rate": 0.0,
+    "mixed_language_supported_accept_rate": 0.0,
+    "near_ood_supported_accept_rate": 0.0,
+    "trap_false_accept_rate": 0.0,
+    "unbounded_loop_false_accept_rate": 0.0,
+    "unsupported_unbounded_recursion_false_accept_rate": 0.0
+  },
+  "layerwise_sparse_1B_freeze_prune__dataset_v2_plus_chinese_factory_stage_balanced": {
+    "english_supported_accept_rate": 0.0,
+    "future_array_supported_accept_rate": 0.0,
+    "future_function_supported_accept_rate": 0.0,
+    "future_recursion_supported_accept_rate": 0.0,
+    "hard_ood_false_accept_rate": 0.0,
+    "mixed_language_supported_accept_rate": 0.0,
+    "near_ood_supported_accept_rate": 0.0,
+    "trap_false_accept_rate": 0.0,
+    "unbounded_loop_false_accept_rate": 0.0,
+    "unsupported_unbounded_recursion_false_accept_rate": 0.0
+  }
+}

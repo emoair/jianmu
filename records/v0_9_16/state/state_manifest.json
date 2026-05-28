@@ -1,0 +1,14 @@
+{
+  "best_data_mix_profile": "dataset_v2_plus_chinese_factory_stage_balanced",
+  "best_profile_name": "layerwise_sparse_1B_freeze_prune",
+  "dataset_sources": [
+    "datasets/v0_9_14_turing_frontier_v2",
+    "datasets/v0_9_15_2_codex_grammar_chinese_dataset"
+  ],
+  "forbidden_field_in_state_count": 0,
+  "freeze_prune_enabled": true,
+  "layerwise_enabled": true,
+  "materialization_level": "lazy_indexed",
+  "missing_for_full_state": [],
+  "persisted_state_support_level": "diagnostic_profile_state_manifest"
+}

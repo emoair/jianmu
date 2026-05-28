@@ -1,0 +1,37 @@
+{
+  "balanced_mix_outperforms_single_source": true,
+  "best_data_mix_profile": "dataset_v2_plus_chinese_factory_stage_balanced",
+  "chinese_factory_contribution_positive": true,
+  "chinese_factory_only": {
+    "candidate_miss": 0.09276,
+    "top1": 0.8414,
+    "train_count": 500000
+  },
+  "chinese_factory_only_improves": true,
+  "combined_data_improves_over_v0_9_14": true,
+  "control_heavy_outperforms_balanced": true,
+  "dataset_v2_contribution_positive": true,
+  "dataset_v2_only": {
+    "candidate_miss": 0.1048,
+    "top1": 0.8274,
+    "train_count": 0
+  },
+  "dataset_v2_only_improves": false,
+  "dataset_v2_plus_chinese_factory_balanced": {
+    "candidate_miss": 0.08846,
+    "top1": 0.8464,
+    "train_count": 357500
+  },
+  "dataset_v2_plus_chinese_factory_control_heavy": {
+    "candidate_miss": 0.0833,
+    "top1": 0.8524,
+    "train_count": 500000
+  },
+  "dataset_v2_plus_chinese_factory_stage_balanced": {
+    "candidate_miss": 0.07814,
+    "top1": 0.8584,
+    "train_count": 500000
+  },
+  "diminishing_returns_from_chinese_factory_detected": false,
+  "stage_balanced_is_best": true
+}
