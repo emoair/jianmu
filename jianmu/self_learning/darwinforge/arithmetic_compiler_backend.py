@@ -197,22 +197,40 @@ def _execute_c_compiler(expression: str, backend: CompilerBackend, timeout_secon
         if compile_proc.returncode != 0:
             result["notes"] = "compile_error"
             return result
-        try:
-            run_proc = subprocess.run(
-                [str(exe)],
-                capture_output=True,
-                text=True,
-                timeout=timeout_seconds,
-                cwd=tmpdir,
-            )
-        except subprocess.TimeoutExpired:
-            result.update({
-                "runtime_invoked": True,
-                "runtime_returncode": -1,
-                "timeout": True,
-                "notes": "runtime_timeout",
-                "latency_ms": round((time.perf_counter() - started) * 1000, 6),
-            })
+        run_proc = None
+        for attempt, delay in enumerate((0.0, 0.05, 0.1, 0.2)):
+            if delay:
+                time.sleep(delay)
+            try:
+                run_proc = subprocess.run(
+                    [str(exe)],
+                    capture_output=True,
+                    text=True,
+                    timeout=timeout_seconds,
+                    cwd=tmpdir,
+                )
+                if attempt:
+                    result["notes"] = f"runtime_permission_retry_count={attempt}"
+                break
+            except PermissionError:
+                result.update({
+                    "runtime_invoked": False,
+                    "runtime_returncode": None,
+                    "permission_error_count": attempt + 1,
+                    "notes": "runtime_permission_error",
+                    "latency_ms": round((time.perf_counter() - started) * 1000, 6),
+                })
+                continue
+            except subprocess.TimeoutExpired:
+                result.update({
+                    "runtime_invoked": True,
+                    "runtime_returncode": -1,
+                    "timeout": True,
+                    "notes": "runtime_timeout",
+                    "latency_ms": round((time.perf_counter() - started) * 1000, 6),
+                })
+                return result
+        if run_proc is None:
             return result
         stdout = run_proc.stdout.strip()
         result.update({

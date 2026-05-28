@@ -1,0 +1,13 @@
+{
+  "shard_count": 1,
+  "shards": [
+    {
+      "path": "independent_validation_trace_primary_16.jsonl",
+      "row_count": 10000,
+      "run_label": "primary_16",
+      "size_bytes": 10718127
+    }
+  ],
+  "total_rows": 10000,
+  "trace_sharded": true
+}

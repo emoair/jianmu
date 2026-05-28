@@ -1,0 +1,109 @@
+{
+  "blocking_issues": [],
+  "boundary_compiler_misroute_summary": 0,
+  "clean_msvc_preflight": {
+    "cl_bv_test_passed": true,
+    "cl_version_tail": "鐢ㄤ簬 x64 鐨� Microsoft (R) C/C++ 浼樺寲缂栬瘧鍣� 19.50.35727 鐗�\n鐗堟潈鎵�鏈�(C) Microsoft Corporation銆備繚鐣欐墍鏈夋潈鍒┿��\n\n缂栬瘧鍣ㄦ壂鎻忛亶鏁�:\n C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.50.35717\\bin\\HostX64\\x64\\cl.exe:        鐗堟湰 19.50.35727.0\n C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.50.35717\\bin\\HostX64\\x64\\c1.dll:        鐗堟湰 19.50.35727.0\n C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.50.35717\\bin\\HostX64\\x64\\c1xx.dll:      鐗堟湰 19.50.35727.0\n C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.50.35717\\bin\\HostX64\\x64\\c2.dll:        鐗堟湰 19.50.35727.0\n C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.50.35717\\bin\\HostX64\\x64\\c1xx.dll:      鐗堟湰 19.50.35727.0\n C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.50.35717\\bin\\HostX64\\x64\\link.exe:      鐗堟湰 14.50.35727.0\n C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.50.35717\\bin\\HostX64\\x64\\mspdb140.dll:  鐗堟湰 14.50.35727.0\n C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.50.35717\\bin\\HostX64\\x64\\2052\\clui.dll: 鐗堟湰 19.50.35727.0\n\ncl: 鍛戒护琛� error D8003 :缂哄皯婧愭枃浠跺悕\n",
+    "compiler_tmp_dir_writable": true,
+    "current_process_id": 2460,
+    "one_drive_path_detected": true,
+    "os_name": "nt",
+    "path_cl_found": false,
+    "path_link_found": false,
+    "preflight_blocking_issues": [],
+    "preflight_passed": true,
+    "preflight_warnings": [
+      "working directory is under OneDrive; compiler tmp uses system temp"
+    ],
+    "python_executable": "C:\\Users\\Air\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+    "stale_cl_process_count": 0,
+    "stale_link_process_count": 0,
+    "stale_process_summary": [],
+    "stale_python_process_count": 0,
+    "vcvars64_found": true,
+    "vcvars64_path": "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Auxiliary\\Build\\vcvars64.bat",
+    "vswhere_found": true,
+    "working_directory": "C:\\Users\\Air\\OneDrive\\文档\\jianmu-mvp"
+  },
+  "cleanup_failure_recorded_separately": true,
+  "compiler_validation_confidence_restored": true,
+  "fallback_validation": {
+    "completed": false,
+    "executed": false,
+    "run_label": "fallback_8"
+  },
+  "must_revalidate": [
+    "larger full-level validation still not Turing-completeness evidence"
+  ],
+  "paper_v2_candidate_results": [
+    "clean MSVC preflight",
+    "independent compiler validation rerun"
+  ],
+  "permission_error_zero": true,
+  "post_v1_reserved_routes": [
+    "root similarity incremental training",
+    "verified backend as teacher for NL-to-semantic-IR adapter"
+  ],
+  "primary_independent_validation": {
+    "array_compiled_count": 0,
+    "backend_claim_safe": true,
+    "backend_type": "real_c_compiler",
+    "boundary_compiler_misroute_count": 0,
+    "boundary_sample_count": 5000,
+    "cleanup_failure_count": 0,
+    "compile_failure_count": 0,
+    "compile_success_count": 5000,
+    "compile_worker_count": 16,
+    "compiler_environment": "msvc_vcvars64",
+    "compiler_name": "cl",
+    "compiler_verified_correct_count": 5000,
+    "compiler_verified_correct_rate": 1.0,
+    "compiler_verified_failure_count": 0,
+    "completed": true,
+    "executed": true,
+    "function_compiled_count": 0,
+    "p50_latency_ms": 558.4883,
+    "p95_latency_ms": 651.5882,
+    "p99_latency_ms": 698.6323,
+    "partial": false,
+    "partial_reason": "",
+    "permission_error_count": 0,
+    "pointer_compiled_count": 0,
+    "process_spawn_error_count": 0,
+    "real_compiler_invocation_count": 5000,
+    "recursion_compiled_count": 0,
+    "run_label": "primary_16",
+    "runtime_failure_count": 0,
+    "runtime_success_count": 5000,
+    "samples_per_second": 27.237575,
+    "supported_sample_count": 5000,
+    "timeout_count": 0,
+    "trace_write_error_count": 0,
+    "unbounded_loop_compiled_count": 0
+  },
+  "recommended_claim_level": "independent_compiler_validation_restored",
+  "required_next_run": "full-level bounded substrate compiler validation can continue; still no Turing-completeness claim",
+  "still_not_proven": [
+    "Turing completeness",
+    "solved arithmetic",
+    "solved program synthesis",
+    "stable convergence",
+    "solved OOD",
+    "general program synthesis",
+    "same-size LLM advantage",
+    "safe real promotion",
+    "production readiness"
+  ],
+  "what_this_version_did_not_prove": [
+    "Turing completeness",
+    "solved arithmetic",
+    "solved program synthesis",
+    "stable convergence",
+    "solved OOD",
+    "general program synthesis",
+    "same-size LLM advantage",
+    "safe real promotion",
+    "production readiness"
+  ],
+  "what_this_version_proved": "clean MSVC preflight and independent bounded-substrate compiler validation rerun were executed separately from original and patched records"
+}

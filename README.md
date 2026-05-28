@@ -472,3 +472,7 @@ v0.9.7.1 audits the v0.9.7 bounded substrate positive signal and attempts a full
 ## v0.9.7.2 Development Direction
 
 v0.9.7.2 performs a compiler PermissionError failure taxonomy for the v0.9.7.1 bounded substrate full-level rerun. It diagnoses MSVC/Windows temporary-file and process-lifecycle failures, preserves the original v0.9.7.1 metrics, reports patched replay separately, and runs an independent compiler validation rerun after any temp/process management fix. It does not claim Turing completeness or solved program synthesis.
+
+## v0.9.7.3 Development Direction
+
+v0.9.7.3 reruns independent bounded-substrate compiler validation from a clean MSVC-enabled environment after v0.9.7.2 explained the previous PermissionError failures as cleanup-stage engineering issues. It preserves the original v0.9.7.1 metrics and patched v0.9.7.2 replay results, and reports the clean independent validation separately. It does not claim Turing completeness or solved program synthesis.

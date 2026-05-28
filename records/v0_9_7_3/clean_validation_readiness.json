@@ -1,0 +1,18 @@
+{
+  "backend_claim_safe": true,
+  "blocking_issues": [],
+  "boundary_compiler_misroute_count": 0,
+  "fallback_compiler_verified_correct_rate": 0.0,
+  "fallback_completed": false,
+  "fallback_executed": false,
+  "fallback_permission_error_count": 0,
+  "original_v0_9_7_1_result_preserved": true,
+  "patched_v0_9_7_2_result_preserved": true,
+  "preflight_passed": true,
+  "primary_compiler_verified_correct_rate": 1.0,
+  "primary_independent_validation_completed": true,
+  "primary_independent_validation_executed": true,
+  "primary_permission_error_count": 0,
+  "recommended_claim_level": "independent_compiler_validation_restored",
+  "required_next_run": "full-level bounded substrate compiler validation can continue; still no Turing-completeness claim"
+}

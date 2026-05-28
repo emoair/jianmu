@@ -44,6 +44,9 @@ def validate_sample_with_temp_manager(
     started = time.perf_counter()
     result: Dict[str, Any] = {
         "sample_id_hash": sample_hash,
+        "split": row.get("split"),
+        "stage": row.get("stage"),
+        "category": row.get("category"),
         "worker_id": worker_id,
         "temp_dir_hash": _hash(str(temp_dir)),
         "c_path_hash": _hash(str(c_path)),
@@ -167,7 +170,7 @@ def validate_sample_with_temp_manager(
             result["notes"] = "verification completed; cleanup PermissionError recorded separately"
 
 
-def cleanup_temp_dir(path: str | Path, retries: tuple[float, ...] = (0.05, 0.1, 0.2)) -> Dict[str, Any]:
+def cleanup_temp_dir(path: str | Path, retries: tuple[float, ...] = (0.05, 0.1, 0.2, 0.5)) -> Dict[str, Any]:
     temp = Path(path)
     attempted = 0
     for delay in (0.0, *retries):
