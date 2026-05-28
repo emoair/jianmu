@@ -1,0 +1,66 @@
+{
+  "actual_total": 250000,
+  "category_count": {
+    "adversarial_instruction_trap_zh": 5000,
+    "bounded_control_hard_supported_zh": 62500,
+    "current_supported_bounded_substrate_zh": 75000,
+    "english_unrelated_request": 5000,
+    "future_bounded_recursion_candidate_zh": 12500,
+    "hard_ood_chinese_unrelated": 5000,
+    "label_review_candidate": 2500,
+    "mixed_language_boundary": 5000,
+    "near_supported_fixed_array_zh": 20000,
+    "near_supported_pure_function_zh": 20000,
+    "scope_lifetime_edge_cases_zh": 7500,
+    "trap_unsafe_io_system_zh": 7500,
+    "unsupported_unbounded_loop_zh": 12500,
+    "unsupported_unbounded_recursion_zh": 10000
+  },
+  "completed": true,
+  "input_language_count": {
+    "en": 5000,
+    "mixed": 5000,
+    "zh": 240000
+  },
+  "partial_reason": null,
+  "scale": "medium",
+  "shard_size": 10000,
+  "split_files": {
+    "eval": [
+      "eval_00000.jsonl",
+      "eval_00001.jsonl",
+      "eval_00002.jsonl",
+      "eval_00003.jsonl"
+    ],
+    "heldout": [
+      "heldout_00000.jsonl",
+      "heldout_00001.jsonl"
+    ],
+    "test": [
+      "test_00000.jsonl",
+      "test_00001.jsonl",
+      "test_00002.jsonl"
+    ],
+    "train": [
+      "train_00000.jsonl",
+      "train_00001.jsonl",
+      "train_00002.jsonl",
+      "train_00003.jsonl",
+      "train_00004.jsonl",
+      "train_00005.jsonl",
+      "train_00006.jsonl",
+      "train_00007.jsonl",
+      "train_00008.jsonl",
+      "train_00009.jsonl",
+      "train_00010.jsonl",
+      "train_00011.jsonl",
+      "train_00012.jsonl",
+      "train_00013.jsonl",
+      "train_00014.jsonl",
+      "train_00015.jsonl",
+      "train_00016.jsonl",
+      "train_00017.jsonl"
+    ]
+  },
+  "target_total": 250000
+}

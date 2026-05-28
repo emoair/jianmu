@@ -1,0 +1,10 @@
+{
+  "shards": [
+    {
+      "path": "chinese_dataset_compiler_trace_000.jsonl",
+      "row_count": 10000,
+      "size_bytes": 3699514
+    }
+  ],
+  "total_rows": 10000
+}

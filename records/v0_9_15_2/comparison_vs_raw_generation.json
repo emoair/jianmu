@@ -1,0 +1,27 @@
+{
+  "codex_grammar_outperforms_raw_llm_generation": true,
+  "llm_should_only_generate_chinese_nl_variants_later": true,
+  "raw_llm_free_generation_should_be_discontinued": true,
+  "v0_9_15_1": {
+    "reason": "missing_raw_files",
+    "recommended_claim_level": "failed"
+  },
+  "v0_9_15_2_codex_grammar": {
+    "accepted_equivalent_count": 1300000,
+    "audit_passed": true,
+    "compiler_verified_correct_rate": 1.0,
+    "current_supported_non_chinese_count": 0,
+    "dataset_quality_score": 1.0,
+    "duplicate_rate": 0.0,
+    "leakage_count": 0,
+    "total_samples": 1300000
+  },
+  "v0_9_15_raw": {
+    "acceptance_rate": 0.0015,
+    "accepted_count": 75,
+    "dataset_quality_score": 0.660328,
+    "duplicate_rate": 0.99788,
+    "leakage_count": 198659,
+    "raw_total_samples": 50000
+  }
+}

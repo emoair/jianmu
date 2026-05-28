@@ -1,0 +1,46 @@
+{
+  "actual_total": 50000,
+  "category_count": {
+    "adversarial_instruction_trap_zh": 1000,
+    "bounded_control_hard_supported_zh": 12500,
+    "current_supported_bounded_substrate_zh": 15000,
+    "english_unrelated_request": 1000,
+    "future_bounded_recursion_candidate_zh": 2500,
+    "hard_ood_chinese_unrelated": 1000,
+    "label_review_candidate": 500,
+    "mixed_language_boundary": 1000,
+    "near_supported_fixed_array_zh": 4000,
+    "near_supported_pure_function_zh": 4000,
+    "scope_lifetime_edge_cases_zh": 1500,
+    "trap_unsafe_io_system_zh": 1500,
+    "unsupported_unbounded_loop_zh": 2500,
+    "unsupported_unbounded_recursion_zh": 2000
+  },
+  "completed": true,
+  "input_language_count": {
+    "en": 1000,
+    "mixed": 1000,
+    "zh": 48000
+  },
+  "partial_reason": null,
+  "scale": "pilot",
+  "shard_size": 10000,
+  "split_files": {
+    "eval": [
+      "eval_00000.jsonl"
+    ],
+    "heldout": [
+      "heldout_00000.jsonl"
+    ],
+    "test": [
+      "test_00000.jsonl"
+    ],
+    "train": [
+      "train_00000.jsonl",
+      "train_00001.jsonl",
+      "train_00002.jsonl",
+      "train_00003.jsonl"
+    ]
+  },
+  "target_total": 50000
+}

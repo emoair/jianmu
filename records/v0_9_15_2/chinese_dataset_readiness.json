@@ -1,0 +1,43 @@
+{
+  "audit_passed_by_scale": {
+    "large": true,
+    "medium": true,
+    "pilot": true
+  },
+  "blocking_issues": [],
+  "boundary_compiler_misroute_count": 0,
+  "codex_grammar_outperforms_raw_llm_generation": true,
+  "compiler_audit_completed": true,
+  "compiler_verified_correct_rate": 1.0,
+  "current_supported_non_chinese_count": 0,
+  "dataset_generation_completed": true,
+  "dataset_quality_score": 1.0,
+  "duplicate_rate": 0.0,
+  "english_compiled_count": 0,
+  "english_current_supported_count": 0,
+  "future_domain_compiled_count": 0,
+  "language_domain_audit_passed": true,
+  "leakage_count": 0,
+  "mixed_current_supported_count": 0,
+  "mixed_language_compiled_count": 0,
+  "ready_for_larger_chinese_grammar_generation": true,
+  "ready_for_llm_chinese_variant_generation_only": true,
+  "ready_for_training_rerun_with_dataset_v2_plus_chinese_factory": true,
+  "recommended_claim_level": "codex_grammar_chinese_dataset_ready",
+  "required_next_run": "training rerun with dataset v2 plus Chinese grammar factory, real promotion still disabled",
+  "scales_attempted": [
+    "large",
+    "medium",
+    "pilot"
+  ],
+  "scales_completed": [
+    "large",
+    "medium",
+    "pilot"
+  ],
+  "total_samples_by_scale": {
+    "large": 1000000,
+    "medium": 250000,
+    "pilot": 50000
+  }
+}
