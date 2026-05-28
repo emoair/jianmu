@@ -1,0 +1,7 @@
+{
+  "child_forbidden_field_access_count": 0,
+  "child_metrics_comparable": true,
+  "child_used_target_ir_or_expected_output_in_free_inference": false,
+  "cross_process_reload_passed": true,
+  "cross_process_reload_seconds": 0.062899
+}

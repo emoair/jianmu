@@ -1,0 +1,97 @@
+{
+  "all_promotion_probe_gates_passed": true,
+  "boundary_gate": {
+    "failure_reason": "",
+    "metric_values": {
+      "boundary_false_accept_rate": 0.0,
+      "future_domain_supported_accept_rate": 0.0,
+      "near_ood_supported_accept_rate": 0.0,
+      "trap_false_accept_rate": 0.0
+    },
+    "passed": true,
+    "severity": "informational"
+  },
+  "boundary_gate_passed": true,
+  "capability_gate": {
+    "failure_reason": "",
+    "metric_values": {
+      "combined_candidate_miss": 0.1124,
+      "combined_top1": 0.8192,
+      "current_candidate_miss": 0.1386,
+      "current_top1": 0.78768,
+      "layerwise_candidate_miss": 0.1048,
+      "layerwise_top1": 0.8274
+    },
+    "passed": true,
+    "severity": "informational"
+  },
+  "capability_gate_passed": true,
+  "compiler_gate": {
+    "failure_reason": "",
+    "metric_values": {
+      "boundary_compiler_misroute_count": 0,
+      "cleanup_failure_count": 0,
+      "compiler_verified_correct_rate": 1.0,
+      "future_domain_compiled_count": 0,
+      "permission_error_count": 0,
+      "wrong_stdout_count": 0
+    },
+    "passed": true,
+    "severity": "informational"
+  },
+  "compiler_gate_passed": true,
+  "integrity_gate": {
+    "failure_reason": "",
+    "metric_values": {
+      "expected_output_access_before_candidate_generation": false,
+      "fixed_metric_detected": false,
+      "forbidden_field_access_count": 0,
+      "mandatory_counter_guard_passed": true,
+      "no_cached_compiler_result_used_as_validation": true,
+      "periodic_rule_detected": false,
+      "profile_is_architecture_change": false,
+      "profile_is_default_runtime": false,
+      "real_promotion_enabled": false,
+      "summary_only_detected": false,
+      "synthetic_summary_detected": false,
+      "target_ir_access_before_candidate_generation": false
+    },
+    "passed": true,
+    "severity": "informational"
+  },
+  "integrity_gate_passed": true,
+  "persistence_gate": {
+    "failure_reason": "",
+    "metric_values": {
+      "child_forbidden_field_access_count": 0,
+      "child_metrics_comparable": true,
+      "child_used_target_ir_or_expected_output_in_free_inference": false,
+      "cross_process_reload_passed": true,
+      "cross_process_reload_seconds": 0.062899
+    },
+    "passed": true,
+    "severity": "informational"
+  },
+  "persistence_gate_passed": true,
+  "regression_gates_completed": true,
+  "resource_gate": {
+    "failure_reason": "",
+    "metric_values": {
+      "layerwise_overhead_vs_combined": 1.098787,
+      "layerwise_profile_cost_effective": true,
+      "layerwise_resource_overhead_acceptable": true
+    },
+    "passed": true,
+    "severity": "informational"
+  },
+  "resource_gate_passed": true,
+  "stage_gate": {
+    "failure_reason": "",
+    "metric_values": {
+      "bad_regression_stages": []
+    },
+    "passed": true,
+    "severity": "informational"
+  },
+  "stage_gate_passed": true
+}

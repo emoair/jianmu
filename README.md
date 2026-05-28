@@ -512,3 +512,7 @@ v0.9.12.2 tests access-aware adaptive allocation and balanced sampling after v0.
 ## v0.9.12.3 Development Direction
 
 v0.9.12.3 diagnoses the non-clean MSVC compiler validation observed in v0.9.12.2 for the layerwise sparse 1B freeze-prune profile. It classifies compiler failures, replays failed samples, and performs a clean MSVC rerun with reduced-worker fallback if needed. This version preserves original v0.9.12.2 records and does not promote any profile or claim Turing completeness.
+
+## v0.9.13 Development Direction
+
+v0.9.13 runs a layerwise profile promotion probe after v0.9.12.3 restored clean compiler validation for the layerwise sparse 1B freeze-prune profile. The version treats the profile as a candidate default only in shadow mode, compares it against current_1B and combined profiles, and checks capability, boundary/future safety, compiler validation, persistence, resource overhead, and integrity gates. Real promotion remains disabled, and no default profile is changed.

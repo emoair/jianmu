@@ -1,0 +1,63 @@
+{
+  "layerwise_gain_per_resource_cost": 0.007463,
+  "layerwise_overhead_vs_combined": 1.098787,
+  "layerwise_profile_cost_effective": true,
+  "layerwise_resource_overhead_acceptable": true,
+  "profiles": {
+    "combined_hot_rebalanced_balanced_sampling_1B": {
+      "active_state_units": 120000000,
+      "cold_state_ratio": 0.97168,
+      "compiler_validation_runtime_seconds": 154.506863,
+      "cross_process_reload_seconds": 0.0,
+      "disk_bytes_written": 9600000,
+      "estimated_memory_bytes": 320000000,
+      "freeze_prune_overhead_seconds": 0.0,
+      "frozen_state_units": 0,
+      "hot_state_ratio": 0.02832,
+      "peak_memory_bytes": 320000000,
+      "pruned_state_units": 0,
+      "resource_status": "acceptable",
+      "runtime_seconds": 17.31,
+      "samples_per_second": 2310.803004,
+      "state_units_target": 120000000,
+      "touch_ratio": 0.118
+    },
+    "current_1B_reference": {
+      "active_state_units": 120000000,
+      "cold_state_ratio": 0.98752,
+      "compiler_validation_runtime_seconds": 132.473869,
+      "cross_process_reload_seconds": 0.0,
+      "disk_bytes_written": 9600000,
+      "estimated_memory_bytes": 320000000,
+      "freeze_prune_overhead_seconds": 0.0,
+      "frozen_state_units": 0,
+      "hot_state_ratio": 0.01248,
+      "peak_memory_bytes": 320000000,
+      "pruned_state_units": 0,
+      "resource_status": "acceptable",
+      "runtime_seconds": 14.34,
+      "samples_per_second": 2789.400279,
+      "state_units_target": 120000000,
+      "touch_ratio": 0.052
+    },
+    "layerwise_sparse_1B_freeze_prune": {
+      "active_state_units": 1440000000,
+      "cold_state_ratio": 0.96256,
+      "compiler_validation_runtime_seconds": 141.857625,
+      "cross_process_reload_seconds": 0.062899,
+      "disk_bytes_written": 138240000,
+      "estimated_memory_bytes": 4608000000,
+      "freeze_prune_overhead_seconds": 1.33,
+      "frozen_state_units": 318368000,
+      "hot_state_ratio": 0.03744,
+      "peak_memory_bytes": 4608000000,
+      "pruned_state_units": 11681632000,
+      "resource_status": "acceptable",
+      "runtime_seconds": 19.02,
+      "samples_per_second": 2103.049422,
+      "state_units_target": 1440000000,
+      "touch_ratio": 0.156
+    }
+  },
+  "resource_audit_completed": true
+}
