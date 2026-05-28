@@ -1,0 +1,29 @@
+{
+  "actual_total": 1000000,
+  "category_count": {
+    "adversarial_natural_language_trap": 20000,
+    "bounded_control_hard_supported": 200000,
+    "current_supported_bounded_substrate": 200000,
+    "future_array_loop_combination": 80000,
+    "future_bounded_recursion_candidate": 60000,
+    "future_function_call_graph": 80000,
+    "hard_ood": 10000,
+    "label_review_candidate": 10000,
+    "near_supported_fixed_array": 100000,
+    "near_supported_pure_function": 100000,
+    "scope_lifetime_edge_cases": 30000,
+    "trap_unsafe_io_system": 30000,
+    "unsupported_unbounded_loop": 40000,
+    "unsupported_unbounded_recursion": 40000
+  },
+  "completed": true,
+  "dataset_version": "v0.9.14_turing_frontier_v2",
+  "scale": "large",
+  "splits": {
+    "eval": 157334,
+    "heldout": 61333,
+    "test": 109333,
+    "train": 672000
+  },
+  "target_total": 1000000
+}

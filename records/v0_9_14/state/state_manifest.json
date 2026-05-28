@@ -1,0 +1,21 @@
+{
+  "candidate_profile_name": "layerwise_sparse_1B_freeze_prune",
+  "forbidden_field_in_state_count": 0,
+  "freeze_prune_summary": {
+    "frozen_state_units": 318368000,
+    "pruned_state_units": 11681632000,
+    "transfer_hit_rate": 0.7475
+  },
+  "layerwise_access_summary": {
+    "active_state_units": 1440000000,
+    "cold_state_ratio": 0.96256,
+    "hot_state_ratio": 0.03744,
+    "touch_ratio": 0.156
+  },
+  "materialization_level": "lazy_indexed",
+  "missing_for_full_state": [],
+  "persisted_state_support_level": "full_router_root",
+  "profile_is_default_runtime": false,
+  "profile_is_promotion_probe": true,
+  "profile_source": "v0.9.12.2 best profile; compiler restored by v0.9.12.3"
+}

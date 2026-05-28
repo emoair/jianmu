@@ -1,0 +1,15 @@
+{
+  "array_compiled_count": 0,
+  "backend_claim_safe": true,
+  "boundary_compiler_misroute_count": 0,
+  "cleanup_failure_count": 0,
+  "compiler_verified_correct_rate": 1.0,
+  "function_compiled_count": 0,
+  "future_domain_compiled_count": 0,
+  "permission_error_count": 0,
+  "real_compiler_invocation_count": 3000,
+  "recursion_compiled_count": 0,
+  "trap_compiled_count": 0,
+  "unbounded_loop_compiled_count": 0,
+  "unsupported_compiled_count": 0
+}

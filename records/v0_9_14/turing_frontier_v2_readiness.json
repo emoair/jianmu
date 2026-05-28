@@ -1,0 +1,13 @@
+{
+  "dataset_v2_audit_passed": true,
+  "dataset_v2_compiler_spot_clean": true,
+  "dataset_v2_generation_completed": true,
+  "dataset_v2_ready_for_active_generation_loop": true,
+  "dataset_v2_ready_for_function_array_frontier_probe": true,
+  "dataset_v2_scales_completed": [
+    "large",
+    "medium",
+    "pilot"
+  ],
+  "dataset_v2_total_samples": 1300000
+}

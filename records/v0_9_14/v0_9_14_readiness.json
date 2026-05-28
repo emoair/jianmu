@@ -1,0 +1,51 @@
+{
+  "actual_default_profile_unchanged": true,
+  "all_v0_9_14_gates_passed": true,
+  "blocking_issues": [],
+  "boundary_gate_passed": true,
+  "combined_candidate_miss": 0.1124,
+  "combined_top1": 0.8192,
+  "compiler_gate_passed": true,
+  "current_1B_candidate_miss": 0.1386,
+  "current_1B_top1": 0.78768,
+  "dataset_v2_audit_passed": true,
+  "dataset_v2_compiler_spot_clean": true,
+  "dataset_v2_generation_completed": true,
+  "dataset_v2_ready_for_active_generation_loop": true,
+  "dataset_v2_ready_for_function_array_frontier_probe": true,
+  "dataset_v2_scales_completed": [
+    "large",
+    "medium",
+    "pilot"
+  ],
+  "dataset_v2_total_samples": 1300000,
+  "default_profile_dryrun_completed": true,
+  "dry_run_default_profile_name": "layerwise_sparse_1B_freeze_prune",
+  "fallback_rollback_gate_passed": true,
+  "fresh_ratio": 1.0,
+  "historical_regression_gate_passed": true,
+  "integrity_gate_passed": true,
+  "layerwise_candidate_miss": 0.1048,
+  "layerwise_top1": 0.8274,
+  "persistence_gate_passed": true,
+  "production_config_modified": false,
+  "profile_is_default_runtime": false,
+  "profiles_attempted": [
+    "actual_current_default_reference",
+    "current_1B_reference",
+    "combined_hot_rebalanced_balanced_sampling_1B",
+    "layerwise_sparse_1B_freeze_prune_dryrun_default"
+  ],
+  "profiles_completed": [
+    "actual_current_default_reference",
+    "current_1B_reference",
+    "combined_hot_rebalanced_balanced_sampling_1B",
+    "layerwise_sparse_1B_freeze_prune_dryrun_default"
+  ],
+  "ready_for_active_data_generation_loop": true,
+  "ready_for_real_profile_promotion_later": false,
+  "real_promotion_enabled": false,
+  "recommended_claim_level": "default_dryrun_passed_dataset_v2_ready",
+  "required_next_run": "active data generation loop and default-profile dry-run follow-up with real promotion still disabled",
+  "resource_gate_passed": true
+}

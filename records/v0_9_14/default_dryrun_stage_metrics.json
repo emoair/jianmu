@@ -1,0 +1,98 @@
+{
+  "actual_current_default_reference": {
+    "stage_candidate_miss_rates": {
+      "assignment_sequence": 0.1386,
+      "bounded_control_hard_supported": 0.1386,
+      "bounded_for_loop": 0.1506,
+      "bounded_while_with_fuel": 0.1386,
+      "if_else_basic": 0.1506,
+      "if_else_nested": 0.1506,
+      "multi_variable_sequence": 0.1386,
+      "nested_bounded_control": 0.1386,
+      "variable_declaration": 0.1386
+    },
+    "stage_top1_rates": {
+      "assignment_sequence": 0.78768,
+      "bounded_control_hard_supported": 0.78768,
+      "bounded_for_loop": 0.76968,
+      "bounded_while_with_fuel": 0.78768,
+      "if_else_basic": 0.76968,
+      "if_else_nested": 0.76968,
+      "multi_variable_sequence": 0.78768,
+      "nested_bounded_control": 0.78768,
+      "variable_declaration": 0.78768
+    }
+  },
+  "combined_hot_rebalanced_balanced_sampling_1B": {
+    "stage_candidate_miss_rates": {
+      "assignment_sequence": 0.1124,
+      "bounded_control_hard_supported": 0.1124,
+      "bounded_for_loop": 0.1244,
+      "bounded_while_with_fuel": 0.1124,
+      "if_else_basic": 0.1244,
+      "if_else_nested": 0.1244,
+      "multi_variable_sequence": 0.1124,
+      "nested_bounded_control": 0.1124,
+      "variable_declaration": 0.1124
+    },
+    "stage_top1_rates": {
+      "assignment_sequence": 0.8192,
+      "bounded_control_hard_supported": 0.8192,
+      "bounded_for_loop": 0.8012,
+      "bounded_while_with_fuel": 0.8192,
+      "if_else_basic": 0.8012,
+      "if_else_nested": 0.8012,
+      "multi_variable_sequence": 0.8192,
+      "nested_bounded_control": 0.8192,
+      "variable_declaration": 0.8192
+    }
+  },
+  "current_1B_reference": {
+    "stage_candidate_miss_rates": {
+      "assignment_sequence": 0.1386,
+      "bounded_control_hard_supported": 0.1386,
+      "bounded_for_loop": 0.1506,
+      "bounded_while_with_fuel": 0.1386,
+      "if_else_basic": 0.1506,
+      "if_else_nested": 0.1506,
+      "multi_variable_sequence": 0.1386,
+      "nested_bounded_control": 0.1386,
+      "variable_declaration": 0.1386
+    },
+    "stage_top1_rates": {
+      "assignment_sequence": 0.78768,
+      "bounded_control_hard_supported": 0.78768,
+      "bounded_for_loop": 0.76968,
+      "bounded_while_with_fuel": 0.78768,
+      "if_else_basic": 0.76968,
+      "if_else_nested": 0.76968,
+      "multi_variable_sequence": 0.78768,
+      "nested_bounded_control": 0.78768,
+      "variable_declaration": 0.78768
+    }
+  },
+  "layerwise_sparse_1B_freeze_prune_dryrun_default": {
+    "stage_candidate_miss_rates": {
+      "assignment_sequence": 0.1048,
+      "bounded_control_hard_supported": 0.1048,
+      "bounded_for_loop": 0.1168,
+      "bounded_while_with_fuel": 0.1048,
+      "if_else_basic": 0.1168,
+      "if_else_nested": 0.1168,
+      "multi_variable_sequence": 0.1048,
+      "nested_bounded_control": 0.1048,
+      "variable_declaration": 0.1048
+    },
+    "stage_top1_rates": {
+      "assignment_sequence": 0.8274,
+      "bounded_control_hard_supported": 0.8274,
+      "bounded_for_loop": 0.8094,
+      "bounded_while_with_fuel": 0.8274,
+      "if_else_basic": 0.8094,
+      "if_else_nested": 0.8094,
+      "multi_variable_sequence": 0.8274,
+      "nested_bounded_control": 0.8274,
+      "variable_declaration": 0.8274
+    }
+  }
+}

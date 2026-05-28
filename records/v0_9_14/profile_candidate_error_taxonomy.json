@@ -1,0 +1,20 @@
+{
+  "combined_hot_rebalanced_balanced_sampling_1B": {
+    "candidate_in_beam_but_wrong_top1_count": 0,
+    "candidate_miss_count": 2248,
+    "dominant_failure_type": "candidate_miss",
+    "wrong_stdout_count": 0
+  },
+  "current_1B_reference": {
+    "candidate_in_beam_but_wrong_top1_count": 0,
+    "candidate_miss_count": 2772,
+    "dominant_failure_type": "candidate_miss",
+    "wrong_stdout_count": 0
+  },
+  "layerwise_sparse_1B_freeze_prune": {
+    "candidate_in_beam_but_wrong_top1_count": 0,
+    "candidate_miss_count": 2096,
+    "dominant_failure_type": "candidate_miss",
+    "wrong_stdout_count": 0
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "actual_default_profile_name": "actual_current_default_reference",
+  "actual_default_profile_unchanged": true,
+  "default_config_path_touched": "shadow_only",
+  "dry_run_default_profile_name": "layerwise_sparse_1B_freeze_prune",
+  "dry_run_mode_enabled": true,
+  "fallback_profile_name": "combined_hot_rebalanced_balanced_sampling_1B",
+  "freeze_prune_enabled": true,
+  "layerwise_enabled": true,
+  "materialization_level": "lazy_indexed",
+  "production_config_modified": false,
+  "profile_is_default_runtime": false,
+  "profile_source": "v0.9.13 layerwise profile promotion probe passed",
+  "real_promotion_enabled": false,
+  "rollback_profile_name": "actual_current_default_reference"
+}

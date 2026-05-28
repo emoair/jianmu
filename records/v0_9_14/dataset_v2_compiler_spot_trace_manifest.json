@@ -1,0 +1,9 @@
+{
+  "shards": [
+    {
+      "path": "dataset_v2_compiler_spot_trace_000.jsonl",
+      "row_count": 6000
+    }
+  ],
+  "trace_sharded": true
+}

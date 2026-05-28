@@ -1,0 +1,11 @@
+{
+  "actual_default_profile_unchanged": true,
+  "fallback_metrics_recorded": true,
+  "fallback_rollback_gate_passed": true,
+  "fallback_to_combined_succeeds": true,
+  "fallback_to_current_1B_succeeds": true,
+  "layerwise_dry_run_default_load_succeeds": true,
+  "rollback_does_not_corrupt_state": true,
+  "rollback_does_not_modify_production_config": true,
+  "rollback_restores_actual_default_reference": true
+}

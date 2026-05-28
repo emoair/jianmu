@@ -1,0 +1,51 @@
+{
+  "category_count": {
+    "adversarial_natural_language_trap": 1000,
+    "bounded_control_hard_supported": 10000,
+    "current_supported_bounded_substrate": 10000,
+    "future_array_loop_combination": 4000,
+    "future_bounded_recursion_candidate": 3000,
+    "future_function_call_graph": 4000,
+    "hard_ood": 500,
+    "label_review_candidate": 500,
+    "near_supported_fixed_array": 5000,
+    "near_supported_pure_function": 5000,
+    "scope_lifetime_edge_cases": 1500,
+    "trap_unsafe_io_system": 1500,
+    "unsupported_unbounded_loop": 2000,
+    "unsupported_unbounded_recursion": 2000
+  },
+  "feature_count": {
+    "has_array": 9000,
+    "has_array_loop": 4000,
+    "has_assignment": 21500,
+    "has_bounded_recursion": 3000,
+    "has_for_loop": 26000,
+    "has_function": 14000,
+    "has_function_call": 14000,
+    "has_if_else": 21500,
+    "has_io": 1500,
+    "has_multiple_functions": 4000,
+    "has_nested_control": 10000,
+    "has_recursion": 5000,
+    "has_scope_shadowing": 1500,
+    "has_sequence": 50000,
+    "has_system_call": 1500,
+    "has_unbounded_loop": 2000,
+    "has_variable_decl": 50000,
+    "has_while_loop": 12000
+  },
+  "split_count": {
+    "eval": 7867,
+    "heldout": 3066,
+    "test": 5467,
+    "train": 33600
+  },
+  "support_status_count": {
+    "current_supported": 20000,
+    "future_domain": 21000,
+    "review": 2000,
+    "trap": 2500,
+    "unsupported": 4500
+  }
+}

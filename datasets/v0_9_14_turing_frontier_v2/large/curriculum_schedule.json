@@ -1,0 +1,23 @@
+{
+  "current_supported_categories": [
+    "current_supported_bounded_substrate",
+    "bounded_control_hard_supported"
+  ],
+  "scale": "large",
+  "stages": [
+    "adversarial_nl",
+    "array_loop_frontier",
+    "bounded_control_hard_supported",
+    "bounded_control_supported",
+    "bounded_recursion_frontier",
+    "fixed_array_frontier",
+    "function_call_graph_frontier",
+    "hard_ood",
+    "label_review",
+    "pure_function_frontier",
+    "scope_lifetime_edge",
+    "unbounded_loop",
+    "unbounded_recursion",
+    "unsafe_io_system"
+  ]
+}

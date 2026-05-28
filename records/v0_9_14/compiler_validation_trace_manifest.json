@@ -1,0 +1,26 @@
+{
+  "shards": [
+    {
+      "path": "compiler_validation_trace_current_1B_reference_primary_16.jsonl",
+      "profile_name": "current_1B_reference",
+      "row_count": 6000,
+      "run_label": "primary_16",
+      "size_bytes": 5137123
+    },
+    {
+      "path": "compiler_validation_trace_combined_hot_rebalanced_balanced_sampling_1B_primary_16.jsonl",
+      "profile_name": "combined_hot_rebalanced_balanced_sampling_1B",
+      "row_count": 6000,
+      "run_label": "primary_16",
+      "size_bytes": 5136687
+    },
+    {
+      "path": "compiler_validation_trace_layerwise_sparse_1B_freeze_prune_primary_16.jsonl",
+      "profile_name": "layerwise_sparse_1B_freeze_prune",
+      "row_count": 6000,
+      "run_label": "primary_16",
+      "size_bytes": 5136953
+    }
+  ],
+  "trace_sharded": true
+}

@@ -516,3 +516,7 @@ v0.9.12.3 diagnoses the non-clean MSVC compiler validation observed in v0.9.12.2
 ## v0.9.13 Development Direction
 
 v0.9.13 runs a layerwise profile promotion probe after v0.9.12.3 restored clean compiler validation for the layerwise sparse 1B freeze-prune profile. The version treats the profile as a candidate default only in shadow mode, compares it against current_1B and combined profiles, and checks capability, boundary/future safety, compiler validation, persistence, resource overhead, and integrity gates. Real promotion remains disabled, and no default profile is changed.
+
+## v0.9.14 Development Direction
+
+v0.9.14 combines a layerwise default-profile dry-run with Turing-frontier dataset v2 audit. The layerwise sparse 1B freeze-prune profile is loaded through a shadow default path, but real promotion remains disabled and the actual default profile is not changed. The version also builds and audits a more complete Turing-frontier dataset v2 covering supported bounded control, near-supported function/array/recursion frontiers, unsupported unbounded execution, traps, review cases, and natural-language variants. It does not claim Turing completeness, solved program synthesis, or production readiness.

@@ -1,0 +1,90 @@
+{
+  "best_mainline_supported_bounded_control_version": "v0.9.14",
+  "comparability_notes": [
+    "Arithmetic compiler 1.0 results are not directly comparable to bounded-control top1.",
+    "v0.9.9 sweep is diagnostic, not mainline ability.",
+    "v0.9.13 is a shadow promotion probe; v0.9.14 is a default dry-run.",
+    "Supported bounded-control and future function/array/recursion scopes remain separate."
+  ],
+  "historical_accuracy_regression_completed": true,
+  "historical_regression_gate_passed": true,
+  "rows": [
+    {
+      "boundary_false_accept_rate": 0.0,
+      "candidate_miss_rate": null,
+      "claim_level": "bounded_substrate_probe_positive_signal",
+      "comparable_to_current_scope": false,
+      "compiler_verified_correct_rate": 1.0,
+      "correct_output_in_beam_rate": null,
+      "evaluation_scope": "bounded substrate probe",
+      "forbidden_field_access_count": 0,
+      "future_domain_supported_accept_rate": 0.0,
+      "heldout_supported_success_rate": 0.3815,
+      "notes": "probe baseline",
+      "top1_correct_rate": 0.3866,
+      "version": "v0.9.7"
+    },
+    {
+      "boundary_false_accept_rate": 0.0,
+      "candidate_miss_rate": null,
+      "claim_level": "bounded_substrate_larger_mixed_signal",
+      "comparable_to_current_scope": false,
+      "compiler_verified_correct_rate": 1.0,
+      "correct_output_in_beam_rate": null,
+      "evaluation_scope": "larger bounded rerun",
+      "forbidden_field_access_count": 0,
+      "future_domain_supported_accept_rate": 0.0,
+      "heldout_supported_success_rate": 0.376365,
+      "notes": "plateau",
+      "top1_correct_rate": 0.381767,
+      "version": "v0.9.8"
+    },
+    {
+      "boundary_false_accept_rate": 0.0,
+      "candidate_miss_rate": 0.2386,
+      "claim_level": "targeted_candidate_space_expansion_reproduced",
+      "comparable_to_current_scope": true,
+      "compiler_verified_correct_rate": 1.0,
+      "correct_output_in_beam_rate": null,
+      "evaluation_scope": "targeted candidate-space",
+      "forbidden_field_access_count": 0,
+      "future_domain_supported_accept_rate": 0.0,
+      "heldout_supported_success_rate": 0.7096,
+      "notes": "fresh targeted profile",
+      "top1_correct_rate": 0.7096,
+      "version": "v0.9.10"
+    },
+    {
+      "boundary_false_accept_rate": 0.0,
+      "candidate_miss_rate": 0.1048,
+      "claim_level": "layerwise_profile_promotion_probe_passed",
+      "comparable_to_current_scope": true,
+      "compiler_verified_correct_rate": 1.0,
+      "correct_output_in_beam_rate": null,
+      "evaluation_scope": "shadow promotion probe",
+      "forbidden_field_access_count": 0,
+      "future_domain_supported_accept_rate": 0.0,
+      "heldout_supported_success_rate": 0.8274,
+      "notes": "shadow only",
+      "top1_correct_rate": 0.8274,
+      "version": "v0.9.13"
+    },
+    {
+      "boundary_false_accept_rate": 0.0,
+      "candidate_miss_rate": 0.1048,
+      "claim_level": "default dry-run",
+      "comparable_to_current_scope": true,
+      "compiler_verified_correct_rate": 1.0,
+      "correct_output_in_beam_rate": null,
+      "evaluation_scope": "default-profile dry-run",
+      "forbidden_field_access_count": 0,
+      "future_domain_supported_accept_rate": 0.0,
+      "heldout_supported_success_rate": 0.8274,
+      "notes": "dry-run only",
+      "top1_correct_rate": 0.8274,
+      "version": "v0.9.14"
+    }
+  ],
+  "v0_9_14_regressed_vs_v0_9_10": false,
+  "v0_9_14_regressed_vs_v0_9_13": false
+}
