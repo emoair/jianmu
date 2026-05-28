@@ -1,0 +1,9 @@
+{
+  "beam_bottleneck_detected": false,
+  "candidate_miss_count": 3579,
+  "dominant_failure_type": "candidate_miss",
+  "generation_capacity_bottleneck_remaining": true,
+  "in_beam_wrong_top1_count": 0,
+  "ranking_bottleneck_detected": false,
+  "top1_compiler_wrong_count": 0
+}

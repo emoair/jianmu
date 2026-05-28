@@ -1,0 +1,9 @@
+{
+  "candidate_space_profile_captured": true,
+  "forbidden_field_in_state_count": 0,
+  "memory_budget_captured": "8x",
+  "missing_for_full_state": [],
+  "persisted_state_support_level": "full_router_root",
+  "profile_config_captured": true,
+  "root_expansion_budget_captured": "8x"
+}

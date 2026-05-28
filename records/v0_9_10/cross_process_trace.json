@@ -1,0 +1,6 @@
+{
+  "child_forbidden_field_access_count": 0,
+  "child_metrics_comparable": true,
+  "cross_process_reload_passed": true,
+  "same_process_persisted_state_support_level": "full_router_root"
+}

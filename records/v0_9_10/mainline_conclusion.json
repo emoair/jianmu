@@ -1,0 +1,77 @@
+{
+  "blocking_issues": [],
+  "boundary_future_safety_preserved": true,
+  "bounded_control_stage_metrics": {
+    "assignment_sequence": 0.746988,
+    "bounded_control_hard_supported": 0.690989,
+    "bounded_for_loop": 0.668966,
+    "bounded_while_with_fuel": 0.746596,
+    "if_else_basic": 0.668707,
+    "if_else_nested": 0.668453,
+    "multi_variable_sequence": 0.747754,
+    "nested_bounded_control": 0.746738,
+    "variable_declaration": 0.747385
+  },
+  "candidate_miss_reduced": true,
+  "compiler_validation_clean": true,
+  "cross_process_reload_passed": true,
+  "fresh_rerun_completed": true,
+  "integrity": {
+    "expected_output_access_before_candidate_generation": false,
+    "fixed_metric_detected": false,
+    "forbidden_field_access_count": 0,
+    "mandatory_counter_guard_passed": true,
+    "periodic_rule_detected": false,
+    "profile_is_architecture_change": false,
+    "summary_only_detected": false,
+    "synthetic_summary_detected": false,
+    "target_ir_access_before_candidate_generation": false
+  },
+  "paper_v2_candidate_results": [
+    "fresh targeted candidate-space rerun",
+    "boundary/future safety ledger",
+    "real MSVC validation"
+  ],
+  "post_v1_reserved_routes": [
+    "root similarity incremental training",
+    "verified backend as teacher for NL-to-semantic-IR adapter"
+  ],
+  "profile_is_architecture_change": false,
+  "recommended_claim_level": "targeted_candidate_space_expansion_reproduced",
+  "required_next_run": "state-budget scale probe with the targeted candidate-space profile",
+  "state": {
+    "candidate_space_profile_captured": true,
+    "forbidden_field_in_state_count": 0,
+    "memory_budget_captured": "8x",
+    "missing_for_full_state": [],
+    "persisted_state_support_level": "full_router_root",
+    "profile_config_captured": true,
+    "root_expansion_budget_captured": "8x"
+  },
+  "still_not_proven": [
+    "Turing completeness",
+    "solved arithmetic",
+    "solved program synthesis",
+    "stable convergence",
+    "solved OOD",
+    "general program synthesis",
+    "same-size LLM advantage",
+    "safe real promotion",
+    "production readiness"
+  ],
+  "supports_state_budget_scale_probe": true,
+  "targeted_profile_source": "v0.9.9 diagnostic best budget",
+  "top1_improved": true,
+  "what_this_version_did_not_prove": [
+    "Turing completeness",
+    "solved arithmetic",
+    "solved program synthesis",
+    "stable convergence",
+    "solved OOD",
+    "general program synthesis",
+    "same-size LLM advantage",
+    "safe real promotion",
+    "production readiness"
+  ],
+  "what_this_version_proved": "The v0.9.9 diagnostic best candidate-space profile reproduced lower candidate miss on fresh samples while preserving boundary/future compiler safety."
+}

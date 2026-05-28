@@ -1,0 +1,13 @@
+{
+  "beam_size": 64,
+  "candidate_budget": 512,
+  "control_template_budget": "xlarge",
+  "memory_budget": "8x",
+  "profile_intended_use": "fresh rerun validation",
+  "profile_is_architecture_change": false,
+  "profile_is_diagnostic_budget_profile": true,
+  "profile_name": "v0_9_10_targeted_expanded_candidate_space",
+  "profile_not_claimed_as_default_architecture": true,
+  "profile_source": "v0.9.9 diagnostic best budget",
+  "root_expansion_budget": "8x"
+}

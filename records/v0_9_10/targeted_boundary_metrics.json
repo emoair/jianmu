@@ -1,0 +1,49 @@
+{
+  "by_category": {
+    "future_array_candidate": {
+      "false_accept_rate": 0.0,
+      "sample_count": 3026
+    },
+    "future_function_candidate": {
+      "false_accept_rate": 0.0,
+      "sample_count": 2940
+    },
+    "future_recursion_candidate": {
+      "false_accept_rate": 0.0,
+      "sample_count": 2447
+    },
+    "hard_ood": {
+      "false_accept_rate": 0.0,
+      "sample_count": 891
+    },
+    "label_review_candidate": {
+      "false_accept_rate": 0.0,
+      "sample_count": 551
+    },
+    "near_ood_program": {
+      "false_accept_rate": 0.0,
+      "sample_count": 1478
+    },
+    "true_false_accept_trap": {
+      "false_accept_rate": 0.0,
+      "sample_count": 1510
+    },
+    "unsupported_unbounded_loop": {
+      "false_accept_rate": 0.0,
+      "sample_count": 2157
+    }
+  },
+  "file_io_false_accept_rate": 0.0,
+  "future_array_supported_accept_rate": 0.0,
+  "future_function_supported_accept_rate": 0.0,
+  "future_recursion_supported_accept_rate": 0.0,
+  "hard_ood_false_accept_rate": 0.0,
+  "label_review_auto_accept_rate": 0.0,
+  "near_ood_supported_accept_rate": 0.0,
+  "sample_count": 15000,
+  "scanf_user_input_false_accept_rate": 0.0,
+  "system_call_false_accept_rate": 0.0,
+  "trap_false_accept_rate": 0.0,
+  "unbounded_loop_false_accept_rate": 0.0,
+  "unsupported_false_accept_rate": 0.0
+}

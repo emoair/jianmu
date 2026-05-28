@@ -487,4 +487,8 @@ v0.9.8.1 repairs the bounded substrate terminal progress reporting and diagnoses
 
 ## v0.9.9 Development Direction
 
-v0.9.9 builds a Turing-frontier curriculum dataset and runs a candidate-space coverage scale probe after v0.9.8.1 identified candidate miss as the dominant bounded-substrate plateau cause. The dataset covers supported bounded-control programs and future-domain structures such as functions, arrays, recursion, and unbounded loops, while keeping unsupported structures out of train_current. The budget probe tests beam size, candidate budget, control-template budget, root expansion budget, and memory budget without changing JianMu's core architecture. This version does not claim Turing completeness or solved program synthesis.
+v0.9.9 builds a Turing-frontier curriculum dataset and runs a candidate-space coverage scale probe after v0.9.8.1 identified candidate miss as the dominant bounded-substrate plateau cause. The dataset covers supported bounded-control programs and future-domain structures such as functions, arrays, recursion, and unbounded loops, while keeping unsupported structures out of train_current. The budget probe tests beam size, candidate budget, control-template budget, root expansion budget, and memory budget without changing JianMu’s core architecture. This version does not claim Turing completeness or solved program synthesis.
+
+## v0.9.10 Development Direction
+
+v0.9.10 performs a targeted candidate-space expansion rerun using the best diagnostic budget profile identified in v0.9.9: beam=64, candidate_budget=512, control_template_budget=xlarge, root_expansion=8x, and memory_budget=8x. The profile is treated as a controlled budget configuration rather than an architecture change. This version evaluates whether candidate-miss reduction reproduces on fresh samples while preserving boundary/future-domain safety and real MSVC compiler validation. It does not claim Turing completeness or solved program synthesis.

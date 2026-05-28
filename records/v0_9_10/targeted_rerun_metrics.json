@@ -1,0 +1,102 @@
+{
+  "beam_bottleneck_detected": false,
+  "boundary_false_accept_rate": 0.0,
+  "candidate_miss_count": 3579,
+  "candidate_miss_delta": -0.3638,
+  "candidate_miss_rate_baseline_reference": 0.6024,
+  "candidate_miss_rate_targeted": 0.2386,
+  "candidate_miss_reduction": 0.3638,
+  "correct_output_in_beam_baseline_reference": 0.3776,
+  "correct_output_in_beam_delta": 0.3838,
+  "correct_output_in_beam_targeted": 0.7614,
+  "dominant_failure_type": "candidate_miss",
+  "file_io_false_accept_rate": 0.0,
+  "fresh_ratio": 1.0,
+  "future_array_supported_accept_rate": 0.0,
+  "future_domain_supported_accept_rate": 0.0,
+  "future_function_supported_accept_rate": 0.0,
+  "future_recursion_supported_accept_rate": 0.0,
+  "generation_capacity_bottleneck_remaining": true,
+  "hard_ood_false_accept_rate": 0.0,
+  "heldout_supported_success_rate": 0.7096,
+  "in_beam_wrong_top1_count": 0,
+  "label_review_auto_accept_rate": 0.0,
+  "modes_attempted": [
+    "quick",
+    "medium",
+    "large"
+  ],
+  "modes_completed": [
+    "quick",
+    "medium",
+    "large"
+  ],
+  "modes_partial": {},
+  "near_ood_supported_accept_rate": 0.0,
+  "overlap_with_v0_9_9_probe_count": 0,
+  "ranking_bottleneck_detected": false,
+  "reference_source": "v0.9.8/v0.9.8.1 plateau and v0.9.9 sweep-before metrics; not v0.9.9 best result",
+  "sample_counts_by_category": {
+    "bounded_control_hard_supported": 4550,
+    "current_supported_bounded_substrate": 10450,
+    "future_array_candidate": 3026,
+    "future_function_candidate": 2940,
+    "future_recursion_candidate": 2447,
+    "hard_ood": 891,
+    "label_review_candidate": 551,
+    "near_ood_program": 1478,
+    "true_false_accept_trap": 1510,
+    "unsupported_unbounded_loop": 2157
+  },
+  "scanf_user_input_false_accept_rate": 0.0,
+  "seeds_attempted": [
+    70,
+    71,
+    72
+  ],
+  "seeds_completed": [
+    70,
+    71,
+    72
+  ],
+  "stage_candidate_miss_rate": {
+    "assignment_sequence": 0.204819,
+    "bounded_control_hard_supported": 0.264835,
+    "bounded_for_loop": 0.264368,
+    "bounded_while_with_fuel": 0.204992,
+    "if_else_basic": 0.264728,
+    "if_else_nested": 0.264931,
+    "multi_variable_sequence": 0.204341,
+    "nested_bounded_control": 0.204912,
+    "variable_declaration": 0.204344
+  },
+  "stage_correct_output_in_beam_rate": {
+    "assignment_sequence": 0.795181,
+    "bounded_control_hard_supported": 0.735165,
+    "bounded_for_loop": 0.735632,
+    "bounded_while_with_fuel": 0.795008,
+    "if_else_basic": 0.735272,
+    "if_else_nested": 0.735069,
+    "multi_variable_sequence": 0.795659,
+    "nested_bounded_control": 0.795088,
+    "variable_declaration": 0.795656
+  },
+  "stage_top1_rate": {
+    "assignment_sequence": 0.746988,
+    "bounded_control_hard_supported": 0.690989,
+    "bounded_for_loop": 0.668966,
+    "bounded_while_with_fuel": 0.746596,
+    "if_else_basic": 0.668707,
+    "if_else_nested": 0.668453,
+    "multi_variable_sequence": 0.747754,
+    "nested_bounded_control": 0.746738,
+    "variable_declaration": 0.747385
+  },
+  "system_call_false_accept_rate": 0.0,
+  "top1_baseline_reference": 0.3776,
+  "top1_delta": 0.332,
+  "top1_targeted": 0.7096,
+  "trap_false_accept_rate": 0.0,
+  "unbounded_loop_false_accept_rate": 0.0,
+  "unsupported_false_accept_rate": 0.0
+}
