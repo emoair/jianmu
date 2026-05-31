@@ -1,0 +1,28 @@
+{
+  "best_completed_level": "gate_5k",
+  "blocking_issues": [
+    "extended_50k_partial"
+  ],
+  "boundary_compiler_misroute_count_best_level": 0,
+  "compiler_verified_correct_rate_best_level": 1.0,
+  "english_mixed_boundary_clean": true,
+  "extended_50k_clean": false,
+  "extended_50k_completed": false,
+  "extended_50k_partial": true,
+  "failure_taxonomy_completed": true,
+  "gate_5k_clean": true,
+  "gate_5k_completed": true,
+  "integrity_gate_passed": true,
+  "invocation_accounting_passed": true,
+  "ironjudge_resumable_scaleup_completed": true,
+  "main_20k_clean": true,
+  "main_20k_completed": false,
+  "new_invocations_completed": 24952,
+  "recommended_claim_level": "ironjudge_20k_clean_frontier_evidence_strengthened",
+  "recursion_pointer_io_boundary_clean": true,
+  "required_next_run": "continue IronJudge resume to main_20k and extended_50k",
+  "resume_from_v0_9_18": true,
+  "total_accounted_invocations": 27800,
+  "v0_9_18_claim_upgrade_supported": true,
+  "wrong_stdout_count_best_level": 0
+}

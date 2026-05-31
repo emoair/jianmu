@@ -539,3 +539,6 @@ v0.9.14 combines a layerwise default-profile dry-run with Turing-frontier datase
 ## v0.9.18 Development Direction
 
 v0.9.18 introduces ForgeFrontier for experimental function/array frontier probing and IronJudge for larger real-MSVC compiler validation. IronJudge scales validation from 5k to 20k and optionally 50k real compiler invocations. ForgeFrontier evaluates pure functions without recursion, fixed-size arrays without pointers, function+bounded-control, array+bounded-loop, and limited function-array combinations while keeping recursion, pointers, IO, English, and mixed-language boundaries isolated. This version does not claim Turing completeness or production support.
+## v0.9.18.1 Development Direction
+
+v0.9.18.1 turns IronJudge into a resumable, checkpointed compiler-validation pipeline after v0.9.18 produced positive function/array frontier signals but only partial 5K/20K/50K validation. The version resumes real MSVC cl.exe validation, tracks invocation accounting, prevents cached results from being counted as new validation, and attempts to complete 5K, 20K, and optionally 50K compiler checks. It does not introduce new capabilities or claim production function/array support.

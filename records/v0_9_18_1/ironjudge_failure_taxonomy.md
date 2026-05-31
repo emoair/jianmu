@@ -1,0 +1,32 @@
+{
+  "failure_count": 0,
+  "unknown_failure_count": 0,
+  "failure_category_distribution": {
+    "permission_write_c_source": 0,
+    "permission_compile_spawn": 0,
+    "permission_compile_output_obj": 0,
+    "permission_compile_output_exe": 0,
+    "permission_run_exe": 0,
+    "permission_read_stdout": 0,
+    "permission_cleanup_temp_dir": 0,
+    "process_spawn_error": 0,
+    "cl_or_link_toolchain_error": 0,
+    "compile_syntax_error": 0,
+    "compile_type_error": 0,
+    "runtime_error": 0,
+    "runtime_timeout": 0,
+    "wrong_stdout": 0,
+    "candidate_mapping_error": 0,
+    "target_ir_error": 0,
+    "frontier_ir_lowering_error": 0,
+    "boundary_compiler_misroute": 0,
+    "unsupported_feature_misroute": 0,
+    "trace_or_recording_error": 0,
+    "environment_interference_suspected": 0,
+    "unknown": 0
+  },
+  "engineering_issue_dominant": false,
+  "candidate_error_dominant": false,
+  "frontier_lowering_error_dominant": false,
+  "boundary_error_dominant": false
+}

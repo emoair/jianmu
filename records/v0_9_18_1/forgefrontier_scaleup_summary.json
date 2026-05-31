@@ -1,0 +1,33 @@
+{
+  "compiler_evidence_supports_stronger_claim": true,
+  "v0_9_18_1_ironjudge_scaleup_result": {
+    "extended_50k": {
+      "completed": false,
+      "completed_invocations": 27800,
+      "partial": true
+    },
+    "gate_5k": {
+      "completed": true,
+      "completed_invocations": 5000,
+      "partial": false
+    },
+    "main_20k": {
+      "completed": false,
+      "completed_invocations": 16440,
+      "partial": true
+    }
+  },
+  "v0_9_18_array_frontier_top1_miss": {
+    "candidate_miss": 0.326,
+    "top1": 0.604
+  },
+  "v0_9_18_bounded_control_preserved": true,
+  "v0_9_18_function_frontier_top1_miss": {
+    "candidate_miss": 0.318,
+    "top1": 0.612
+  },
+  "v0_9_18_redqueen_hydra_frontier_top1_miss": {
+    "candidate_miss": 0.231,
+    "top1": 0.691
+  }
+}

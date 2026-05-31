@@ -1,0 +1,12 @@
+{
+  "accounting_passed": true,
+  "accounting_warnings": [],
+  "cached_result_used_as_new_count": 0,
+  "duplicate_invocation_count": 0,
+  "duplicate_sample_hash_count": 0,
+  "new_invocation_count": 24952,
+  "previous_invalid_trace_count": 0,
+  "previous_v0_9_18_invocation_count": 2848,
+  "previous_valid_trace_count": 2848,
+  "total_accounted_invocation_count": 27800
+}
