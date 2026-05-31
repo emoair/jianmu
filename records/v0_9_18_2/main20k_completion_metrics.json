@@ -1,0 +1,9 @@
+{
+  "completed": true,
+  "main20k_completion_rerun_executed": false,
+  "main_20k_effective_invocations": 27800,
+  "new_invocation_count_v0_9_18_2": 0,
+  "partial": false,
+  "reason": "main_20k completed clean under cumulative accounting semantics",
+  "target_main_invocations": 20000
+}

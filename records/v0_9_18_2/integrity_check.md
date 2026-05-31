@@ -1,0 +1,15 @@
+- original_v0_9_18_records_preserved: True
+- original_v0_9_18_1_records_preserved: True
+- no_cached_compiler_result_used_as_new_validation: True
+- duplicate_invocation_count: 0
+- duplicate_sample_hash_count: 0
+- real_promotion_enabled: False
+- profile_is_default_runtime: False
+- actual_default_profile_unchanged: True
+- production_config_modified: False
+- forbidden_field_access_count: 0
+- fixed_metric_detected: False
+- summary_only_detected: False
+- periodic_rule_detected: False
+- no_external_api_calls: True
+- no_expression_oracle_import: True

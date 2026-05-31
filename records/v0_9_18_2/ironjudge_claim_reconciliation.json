@@ -1,0 +1,11 @@
+{
+  "blocking_issues": [],
+  "claim_conflict_detected": true,
+  "claim_conflict_resolved": true,
+  "final_claim_consistent_with_fields": true,
+  "original_claim_level": "ironjudge_20k_clean_frontier_evidence_strengthened",
+  "recommended_claim_level": "ironjudge_20k_clean_frontier_evidence_reconciled",
+  "required_next_run": "optional extended_50k continuation",
+  "v0_9_18_1_claim_was_overstated": false,
+  "v0_9_18_claim_upgrade_supported": true
+}

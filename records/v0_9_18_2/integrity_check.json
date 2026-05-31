@@ -1,0 +1,17 @@
+{
+  "actual_default_profile_unchanged": true,
+  "duplicate_invocation_count": 0,
+  "duplicate_sample_hash_count": 0,
+  "fixed_metric_detected": false,
+  "forbidden_field_access_count": 0,
+  "no_cached_compiler_result_used_as_new_validation": true,
+  "no_expression_oracle_import": true,
+  "no_external_api_calls": true,
+  "original_v0_9_18_1_records_preserved": true,
+  "original_v0_9_18_records_preserved": true,
+  "periodic_rule_detected": false,
+  "production_config_modified": false,
+  "profile_is_default_runtime": false,
+  "real_promotion_enabled": false,
+  "summary_only_detected": false
+}

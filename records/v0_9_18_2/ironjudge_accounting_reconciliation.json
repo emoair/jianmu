@@ -1,0 +1,51 @@
+{
+  "accounting_passed": true,
+  "claim_conflict_detected": true,
+  "claim_conflict_resolved": true,
+  "extended_50k_clean_reconciled": false,
+  "extended_50k_completed_reconciled": false,
+  "extended_50k_effective_invocations": 27800,
+  "extended_50k_includes_main_20k": true,
+  "extended_50k_observed_clean": true,
+  "extended_50k_partial": true,
+  "gate_5k_clean_reconciled": true,
+  "gate_5k_completed_reconciled": true,
+  "gate_5k_effective_invocations": 5000,
+  "gate_5k_includes_previous_v0_9_18": true,
+  "level_accounting_mode_detected": "cumulative",
+  "level_accounting_mode_selected": "cumulative",
+  "level_chain": [
+    {
+      "completed_invocations": 5000,
+      "level_name": "gate_5k",
+      "previous_invocations_used": 2848,
+      "target_total_invocations": 5000
+    },
+    {
+      "completed_invocations": 16440,
+      "level_name": "main_20k",
+      "previous_invocations_used": 5000,
+      "target_total_invocations": 20000
+    },
+    {
+      "completed_invocations": 27800,
+      "level_name": "extended_50k",
+      "previous_invocations_used": 16440,
+      "target_total_invocations": 50000
+    }
+  ],
+  "main_20k_clean_reconciled": true,
+  "main_20k_completed_reconciled": true,
+  "main_20k_effective_invocations": 27800,
+  "main_20k_includes_gate_5k": true,
+  "original_claim_level": "ironjudge_20k_clean_frontier_evidence_strengthened",
+  "previous_v0_9_18_invocation_count": 2848,
+  "reconciled_claim_level": "ironjudge_20k_clean_frontier_evidence_reconciled",
+  "reconciliation_notes": [
+    "v0.9.18.1 level counters form a cumulative chain: v0.9.18 previous -> gate -> main -> extended.",
+    "main_20k readiness is therefore judged on cumulative clean observed invocations, not the stale per-row completed flag.",
+    "extended_50k remains partial because 27,800 < 50,000."
+  ],
+  "total_accounted_invocation_count": 27800,
+  "v0_9_18_1_new_invocation_count": 24952
+}

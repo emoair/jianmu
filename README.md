@@ -542,3 +542,7 @@ v0.9.18 introduces ForgeFrontier for experimental function/array frontier probin
 ## v0.9.18.1 Development Direction
 
 v0.9.18.1 turns IronJudge into a resumable, checkpointed compiler-validation pipeline after v0.9.18 produced positive function/array frontier signals but only partial 5K/20K/50K validation. The version resumes real MSVC cl.exe validation, tracks invocation accounting, prevents cached results from being counted as new validation, and attempts to complete 5K, 20K, and optionally 50K compiler checks. It does not introduce new capabilities or claim production function/array support.
+
+## v0.9.18.2 Development Direction
+
+v0.9.18.2 reconciles IronJudge accounting after v0.9.18.1 produced 27,800 accounted real-MSVC compiler invocations but reported inconsistent level completion fields. The version clarifies cumulative vs independent level semantics, fixes claim/readiness consistency, and resumes main_20k validation if needed. It does not add new capabilities or claim production function/array support.
