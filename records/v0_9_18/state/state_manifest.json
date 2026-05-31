@@ -1,0 +1,7 @@
+{
+  "best_experiment_group": "forgefrontier_redqueen_hydra_combined",
+  "experimental_frontier": true,
+  "forbidden_field_in_state_count": 0,
+  "profile_is_default_runtime": false,
+  "profile_source": "v0.9.17 redqueen_plus_hydrabudget"
+}

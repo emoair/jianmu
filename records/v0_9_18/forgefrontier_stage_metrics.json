@@ -1,0 +1,81 @@
+{
+  "runs": [
+    {
+      "candidate_miss_array_frontier": 1.0,
+      "candidate_miss_bounded_control": 0.05846,
+      "candidate_miss_function_array_frontier": 1.0,
+      "candidate_miss_function_frontier": 1.0,
+      "experiment_group": "bounded_control_baseline_v0_9_17",
+      "top1_array_frontier": 0.0,
+      "top1_bounded_control": 0.8824,
+      "top1_function_array_frontier": 0.0,
+      "top1_function_frontier": 0.0
+    },
+    {
+      "candidate_miss_array_frontier": 1.0,
+      "candidate_miss_bounded_control": 0.0589,
+      "candidate_miss_function_array_frontier": 1.0,
+      "candidate_miss_function_frontier": 0.318,
+      "experiment_group": "pure_function_frontier_only",
+      "top1_array_frontier": 0.0,
+      "top1_bounded_control": 0.8819,
+      "top1_function_array_frontier": 0.0,
+      "top1_function_frontier": 0.612
+    },
+    {
+      "candidate_miss_array_frontier": 0.326,
+      "candidate_miss_bounded_control": 0.0589,
+      "candidate_miss_function_array_frontier": 1.0,
+      "candidate_miss_function_frontier": 1.0,
+      "experiment_group": "fixed_array_frontier_only",
+      "top1_array_frontier": 0.604,
+      "top1_bounded_control": 0.8819,
+      "top1_function_array_frontier": 0.0,
+      "top1_function_frontier": 0.0
+    },
+    {
+      "candidate_miss_array_frontier": 1.0,
+      "candidate_miss_bounded_control": 0.0589,
+      "candidate_miss_function_array_frontier": 1.0,
+      "candidate_miss_function_frontier": 0.286,
+      "experiment_group": "function_control_frontier",
+      "top1_array_frontier": 0.0,
+      "top1_bounded_control": 0.8819,
+      "top1_function_array_frontier": 0.0,
+      "top1_function_frontier": 0.646
+    },
+    {
+      "candidate_miss_array_frontier": 0.294,
+      "candidate_miss_bounded_control": 0.0589,
+      "candidate_miss_function_array_frontier": 1.0,
+      "candidate_miss_function_frontier": 1.0,
+      "experiment_group": "array_loop_frontier",
+      "top1_array_frontier": 0.638,
+      "top1_bounded_control": 0.8819,
+      "top1_function_array_frontier": 0.0,
+      "top1_function_frontier": 0.0
+    },
+    {
+      "candidate_miss_array_frontier": 0.268,
+      "candidate_miss_bounded_control": 0.0589,
+      "candidate_miss_function_array_frontier": 0.268,
+      "candidate_miss_function_frontier": 0.268,
+      "experiment_group": "function_array_combined_frontier",
+      "top1_array_frontier": 0.662,
+      "top1_bounded_control": 0.8819,
+      "top1_function_array_frontier": 0.662,
+      "top1_function_frontier": 0.662
+    },
+    {
+      "candidate_miss_array_frontier": 0.231,
+      "candidate_miss_bounded_control": 0.0589,
+      "candidate_miss_function_array_frontier": 0.231,
+      "candidate_miss_function_frontier": 0.231,
+      "experiment_group": "forgefrontier_redqueen_hydra_combined",
+      "top1_array_frontier": 0.691,
+      "top1_bounded_control": 0.8819,
+      "top1_function_array_frontier": 0.691,
+      "top1_function_frontier": 0.691
+    }
+  ]
+}

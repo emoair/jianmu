@@ -1,0 +1,72 @@
+{
+  "array_loop_frontier": {
+    "boundary_false_accept_rate": 0.0,
+    "english_supported_accept_rate": 0.0,
+    "future_array_supported_accept_rate": 0.0,
+    "future_function_supported_accept_rate": 0.0,
+    "io_false_accept_rate": 0.0,
+    "mixed_language_supported_accept_rate": 0.0,
+    "pointer_false_accept_rate": 0.0,
+    "recursion_false_accept_rate": 0.0
+  },
+  "bounded_control_baseline_v0_9_17": {
+    "boundary_false_accept_rate": 0.0,
+    "english_supported_accept_rate": 0.0,
+    "future_array_supported_accept_rate": 0.0,
+    "future_function_supported_accept_rate": 0.0,
+    "io_false_accept_rate": 0.0,
+    "mixed_language_supported_accept_rate": 0.0,
+    "pointer_false_accept_rate": 0.0,
+    "recursion_false_accept_rate": 0.0
+  },
+  "fixed_array_frontier_only": {
+    "boundary_false_accept_rate": 0.0,
+    "english_supported_accept_rate": 0.0,
+    "future_array_supported_accept_rate": 0.0,
+    "future_function_supported_accept_rate": 0.0,
+    "io_false_accept_rate": 0.0,
+    "mixed_language_supported_accept_rate": 0.0,
+    "pointer_false_accept_rate": 0.0,
+    "recursion_false_accept_rate": 0.0
+  },
+  "forgefrontier_redqueen_hydra_combined": {
+    "boundary_false_accept_rate": 0.0,
+    "english_supported_accept_rate": 0.0,
+    "future_array_supported_accept_rate": 0.0,
+    "future_function_supported_accept_rate": 0.0,
+    "io_false_accept_rate": 0.0,
+    "mixed_language_supported_accept_rate": 0.0,
+    "pointer_false_accept_rate": 0.0,
+    "recursion_false_accept_rate": 0.0
+  },
+  "function_array_combined_frontier": {
+    "boundary_false_accept_rate": 0.0,
+    "english_supported_accept_rate": 0.0,
+    "future_array_supported_accept_rate": 0.0,
+    "future_function_supported_accept_rate": 0.0,
+    "io_false_accept_rate": 0.0,
+    "mixed_language_supported_accept_rate": 0.0,
+    "pointer_false_accept_rate": 0.0,
+    "recursion_false_accept_rate": 0.0
+  },
+  "function_control_frontier": {
+    "boundary_false_accept_rate": 0.0,
+    "english_supported_accept_rate": 0.0,
+    "future_array_supported_accept_rate": 0.0,
+    "future_function_supported_accept_rate": 0.0,
+    "io_false_accept_rate": 0.0,
+    "mixed_language_supported_accept_rate": 0.0,
+    "pointer_false_accept_rate": 0.0,
+    "recursion_false_accept_rate": 0.0
+  },
+  "pure_function_frontier_only": {
+    "boundary_false_accept_rate": 0.0,
+    "english_supported_accept_rate": 0.0,
+    "future_array_supported_accept_rate": 0.0,
+    "future_function_supported_accept_rate": 0.0,
+    "io_false_accept_rate": 0.0,
+    "mixed_language_supported_accept_rate": 0.0,
+    "pointer_false_accept_rate": 0.0,
+    "recursion_false_accept_rate": 0.0
+  }
+}

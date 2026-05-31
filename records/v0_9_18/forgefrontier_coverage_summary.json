@@ -1,0 +1,20 @@
+{
+  "coverage_ready": true,
+  "scales": {
+    "large": {
+      "audit_passed": true,
+      "experimental_supported_count": 400000,
+      "total_count": 500000
+    },
+    "medium": {
+      "audit_passed": true,
+      "experimental_supported_count": 200000,
+      "total_count": 250000
+    },
+    "pilot": {
+      "audit_passed": true,
+      "experimental_supported_count": 40000,
+      "total_count": 50000
+    }
+  }
+}

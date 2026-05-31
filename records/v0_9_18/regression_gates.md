@@ -1,0 +1,7 @@
+- bounded_control_preservation_gate: True
+- function_frontier_gate: True
+- array_frontier_gate: True
+- boundary_gate: True
+- ironjudge_gate: False
+- integrity_gate: True
+- all_regression_gates_passed: False

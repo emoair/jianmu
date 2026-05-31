@@ -1,0 +1,10 @@
+{
+  "shards": [
+    {
+      "path": "ironjudge_trace_000.jsonl",
+      "row_count": 2848,
+      "size_bytes": 1163605
+    }
+  ],
+  "total_rows": 2848
+}

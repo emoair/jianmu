@@ -1,0 +1,87 @@
+{
+  "category_count": {
+    "english_mixed_function_array_boundary": 7500,
+    "frontier_array_with_bounded_loop_zh": 37500,
+    "frontier_fixed_array_no_pointer_zh": 50000,
+    "frontier_function_array_limited_combo_zh": 25000,
+    "frontier_function_with_bounded_control_zh": 37500,
+    "frontier_negative_io_system_boundary_zh": 12500,
+    "frontier_negative_pointer_boundary_zh": 12500,
+    "frontier_negative_recursion_boundary_zh": 12500,
+    "frontier_pure_function_no_recursion_zh": 50000,
+    "label_review_frontier_candidate": 5000
+  },
+  "feature_by_support_status": {
+    "experimental_supported_array": {
+      "has_array": 87500,
+      "has_array_loop": 37500,
+      "has_assignment": 87500,
+      "has_for_loop": 37500,
+      "has_sequence": 87500,
+      "has_variable_decl": 87500
+    },
+    "experimental_supported_function": {
+      "has_assignment": 87500,
+      "has_function": 87500,
+      "has_function_call": 87500,
+      "has_if_else": 37500,
+      "has_nested_control": 37500,
+      "has_sequence": 87500,
+      "has_variable_decl": 87500
+    },
+    "experimental_supported_function_array": {
+      "has_array": 25000,
+      "has_assignment": 25000,
+      "has_function": 25000,
+      "has_function_call": 25000,
+      "has_multiple_functions": 25000,
+      "has_sequence": 25000,
+      "has_variable_decl": 25000
+    },
+    "future_domain": {
+      "has_assignment": 12500,
+      "has_function": 12500,
+      "has_function_call": 12500,
+      "has_recursion": 12500,
+      "has_sequence": 12500,
+      "has_variable_decl": 12500
+    },
+    "hard_ood": {
+      "has_array": 7500,
+      "has_assignment": 7500,
+      "has_function": 7500,
+      "has_function_call": 7500,
+      "has_multiple_functions": 7500,
+      "has_sequence": 7500,
+      "has_variable_decl": 7500
+    },
+    "review": {
+      "has_assignment": 5000,
+      "has_sequence": 5000,
+      "has_variable_decl": 5000
+    },
+    "trap": {
+      "has_assignment": 12500,
+      "has_io": 12500,
+      "has_sequence": 12500,
+      "has_system_call": 12500,
+      "has_variable_decl": 12500
+    },
+    "unsupported": {
+      "has_assignment": 12500,
+      "has_pointer": 12500,
+      "has_sequence": 12500,
+      "has_variable_decl": 12500
+    }
+  },
+  "support_status_count": {
+    "experimental_supported_array": 87500,
+    "experimental_supported_function": 87500,
+    "experimental_supported_function_array": 25000,
+    "future_domain": 12500,
+    "hard_ood": 7500,
+    "review": 5000,
+    "trap": 12500,
+    "unsupported": 12500
+  }
+}

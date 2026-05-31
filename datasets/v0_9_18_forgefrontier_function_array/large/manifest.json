@@ -1,0 +1,103 @@
+{
+  "actual_total": 500000,
+  "category_count": {
+    "english_mixed_function_array_boundary": 15000,
+    "frontier_array_with_bounded_loop_zh": 75000,
+    "frontier_fixed_array_no_pointer_zh": 100000,
+    "frontier_function_array_limited_combo_zh": 50000,
+    "frontier_function_with_bounded_control_zh": 75000,
+    "frontier_negative_io_system_boundary_zh": 25000,
+    "frontier_negative_pointer_boundary_zh": 25000,
+    "frontier_negative_recursion_boundary_zh": 25000,
+    "frontier_pure_function_no_recursion_zh": 100000,
+    "label_review_frontier_candidate": 10000
+  },
+  "completed": false,
+  "partial": true,
+  "partial_reason": "generated_500000_of_1000000_to_avoid_runtime_or_memory_overrun",
+  "scale": "large",
+  "split_files": {
+    "eval": [
+      "eval_00000.jsonl",
+      "eval_00001.jsonl",
+      "eval_00002.jsonl",
+      "eval_00003.jsonl",
+      "eval_00004.jsonl",
+      "eval_00005.jsonl",
+      "eval_00006.jsonl",
+      "eval_00007.jsonl"
+    ],
+    "heldout": [
+      "heldout_00000.jsonl",
+      "heldout_00001.jsonl",
+      "heldout_00002.jsonl"
+    ],
+    "test": [
+      "test_00000.jsonl",
+      "test_00001.jsonl",
+      "test_00002.jsonl",
+      "test_00003.jsonl",
+      "test_00004.jsonl"
+    ],
+    "train": [
+      "train_00000.jsonl",
+      "train_00001.jsonl",
+      "train_00002.jsonl",
+      "train_00003.jsonl",
+      "train_00004.jsonl",
+      "train_00005.jsonl",
+      "train_00006.jsonl",
+      "train_00007.jsonl",
+      "train_00008.jsonl",
+      "train_00009.jsonl",
+      "train_00010.jsonl",
+      "train_00011.jsonl",
+      "train_00012.jsonl",
+      "train_00013.jsonl",
+      "train_00014.jsonl",
+      "train_00015.jsonl",
+      "train_00016.jsonl",
+      "train_00017.jsonl",
+      "train_00018.jsonl",
+      "train_00019.jsonl",
+      "train_00020.jsonl",
+      "train_00021.jsonl",
+      "train_00022.jsonl",
+      "train_00023.jsonl",
+      "train_00024.jsonl",
+      "train_00025.jsonl",
+      "train_00026.jsonl",
+      "train_00027.jsonl",
+      "train_00028.jsonl",
+      "train_00029.jsonl",
+      "train_00030.jsonl",
+      "train_00031.jsonl",
+      "train_00032.jsonl",
+      "train_00033.jsonl",
+      "train_00034.jsonl"
+    ]
+  },
+  "stage_count": {
+    "array_with_bounded_loop": 75000,
+    "english_mixed_function_array_boundary": 15000,
+    "fixed_array_no_pointer": 100000,
+    "function_array_limited_combo": 50000,
+    "function_with_bounded_control": 75000,
+    "label_review_candidate": 10000,
+    "negative_io_system_boundary": 25000,
+    "negative_pointer_boundary": 25000,
+    "negative_recursion_boundary": 25000,
+    "pure_function_no_recursion": 100000
+  },
+  "support_status_count": {
+    "experimental_supported_array": 175000,
+    "experimental_supported_function": 175000,
+    "experimental_supported_function_array": 50000,
+    "future_domain": 25000,
+    "hard_ood": 15000,
+    "review": 10000,
+    "trap": 25000,
+    "unsupported": 25000
+  },
+  "target_total": 1000000
+}

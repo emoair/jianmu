@@ -1,0 +1,9 @@
+{
+  "all_regression_gates_passed": false,
+  "array_frontier_gate": true,
+  "boundary_gate": true,
+  "bounded_control_preservation_gate": true,
+  "function_frontier_gate": true,
+  "integrity_gate": true,
+  "ironjudge_gate": false
+}

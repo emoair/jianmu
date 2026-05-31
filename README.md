@@ -536,3 +536,6 @@ v0.9.13 runs a layerwise profile promotion probe after v0.9.12.3 restored clean 
 ## v0.9.14 Development Direction
 
 v0.9.14 combines a layerwise default-profile dry-run with Turing-frontier dataset v2 audit. The layerwise sparse 1B freeze-prune profile is loaded through a shadow default path, but real promotion remains disabled and the actual default profile is not changed. The version also builds and audits a more complete Turing-frontier dataset v2 covering supported bounded control, near-supported function/array/recursion frontiers, unsupported unbounded execution, traps, review cases, and natural-language variants. It does not claim Turing completeness, solved program synthesis, or production readiness.
+## v0.9.18 Development Direction
+
+v0.9.18 introduces ForgeFrontier for experimental function/array frontier probing and IronJudge for larger real-MSVC compiler validation. IronJudge scales validation from 5k to 20k and optionally 50k real compiler invocations. ForgeFrontier evaluates pure functions without recursion, fixed-size arrays without pointers, function+bounded-control, array+bounded-loop, and limited function-array combinations while keeping recursion, pointers, IO, English, and mixed-language boundaries isolated. This version does not claim Turing completeness or production support.

@@ -1,0 +1,14 @@
+- real_promotion_enabled: False
+- profile_is_default_runtime: False
+- actual_default_profile_unchanged: True
+- production_config_modified: False
+- forbidden_field_access_count: 0
+- expected_output_access_before_candidate_generation: False
+- target_ir_access_before_candidate_generation: False
+- fixed_metric_detected: False
+- summary_only_detected: False
+- periodic_rule_detected: False
+- synthetic_summary_detected: False
+- mandatory_counter_guard_passed: True
+- no_cached_compiler_result_used_as_validation: True
+- forgefrontier_data_audit_passed: True

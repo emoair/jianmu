@@ -1,0 +1,10 @@
+{
+  "shards": [
+    {
+      "path": "forgefrontier_compiler_trace_000.jsonl",
+      "row_count": 1000,
+      "size_bytes": 331005
+    }
+  ],
+  "total_rows": 1000
+}
