@@ -1,0 +1,42 @@
+{
+  "baseline_v0_9_16_stage_balanced": {
+    "boundary_false_accept_rate": 0.0,
+    "english_supported_accept_rate": 0.0,
+    "future_array_supported_accept_rate": 0.0,
+    "future_function_supported_accept_rate": 0.0,
+    "future_recursion_supported_accept_rate": 0.0,
+    "mixed_language_supported_accept_rate": 0.0,
+    "trap_false_accept_rate": 0.0,
+    "unbounded_loop_false_accept_rate": 0.0
+  },
+  "hydrabudget_only": {
+    "boundary_false_accept_rate": 0.0,
+    "english_supported_accept_rate": 0.0,
+    "future_array_supported_accept_rate": 0.0,
+    "future_function_supported_accept_rate": 0.0,
+    "future_recursion_supported_accept_rate": 0.0,
+    "mixed_language_supported_accept_rate": 0.0,
+    "trap_false_accept_rate": 0.0,
+    "unbounded_loop_false_accept_rate": 0.0
+  },
+  "redqueen_curriculum_only": {
+    "boundary_false_accept_rate": 0.0,
+    "english_supported_accept_rate": 0.0,
+    "future_array_supported_accept_rate": 0.0,
+    "future_function_supported_accept_rate": 0.0,
+    "future_recursion_supported_accept_rate": 0.0,
+    "mixed_language_supported_accept_rate": 0.0,
+    "trap_false_accept_rate": 0.0,
+    "unbounded_loop_false_accept_rate": 0.0
+  },
+  "redqueen_plus_hydrabudget": {
+    "boundary_false_accept_rate": 0.0,
+    "english_supported_accept_rate": 0.0,
+    "future_array_supported_accept_rate": 0.0,
+    "future_function_supported_accept_rate": 0.0,
+    "future_recursion_supported_accept_rate": 0.0,
+    "mixed_language_supported_accept_rate": 0.0,
+    "trap_false_accept_rate": 0.0,
+    "unbounded_loop_false_accept_rate": 0.0
+  }
+}

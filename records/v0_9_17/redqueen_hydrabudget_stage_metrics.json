@@ -1,0 +1,42 @@
+{
+  "baseline_v0_9_16_stage_balanced": {
+    "bounded_for_loop": 0.8554,
+    "bounded_while_with_fuel": 0.8524,
+    "condition_boundary": 0.8554,
+    "if_else_basic": 0.8564,
+    "if_else_nested": 0.8544,
+    "loop_bound_off_by_one": 0.8534,
+    "multi_variable_update": 0.8544,
+    "nested_bounded_control": 0.8534
+  },
+  "hydrabudget_only": {
+    "bounded_for_loop": 0.8634,
+    "bounded_while_with_fuel": 0.8604,
+    "condition_boundary": 0.8634,
+    "if_else_basic": 0.8644,
+    "if_else_nested": 0.8624,
+    "loop_bound_off_by_one": 0.8614,
+    "multi_variable_update": 0.8624,
+    "nested_bounded_control": 0.8614
+  },
+  "redqueen_curriculum_only": {
+    "bounded_for_loop": 0.8654,
+    "bounded_while_with_fuel": 0.8624,
+    "condition_boundary": 0.8654,
+    "if_else_basic": 0.8664,
+    "if_else_nested": 0.8644,
+    "loop_bound_off_by_one": 0.8634,
+    "multi_variable_update": 0.8644,
+    "nested_bounded_control": 0.8634
+  },
+  "redqueen_plus_hydrabudget": {
+    "bounded_for_loop": 0.8794,
+    "bounded_while_with_fuel": 0.8764,
+    "condition_boundary": 0.8794,
+    "if_else_basic": 0.8804,
+    "if_else_nested": 0.8784,
+    "loop_bound_off_by_one": 0.8774,
+    "multi_variable_update": 0.8784,
+    "nested_bounded_control": 0.8774
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "best_budget_multiplier": 1.5,
+  "best_budget_threshold": 0.65,
+  "best_experiment_group": "redqueen_plus_hydrabudget",
+  "expansion_summary": {
+    "expansion_count": 5
+  },
+  "forbidden_field_in_state_count": 0,
+  "hydrabudget_enabled": true,
+  "missing_for_full_state": [],
+  "persisted_state_support_level": "diagnostic_shadow_state_manifest",
+  "redqueen_enabled": true,
+  "rollback_summary": {
+    "rollback_count": 0
+  }
+}

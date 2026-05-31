@@ -1,0 +1,45 @@
+{
+  "best_budget_multiplier": 1.5,
+  "best_budget_threshold": 0.65,
+  "best_candidate_miss": 0.05846,
+  "best_experiment_group": "redqueen_plus_hydrabudget",
+  "best_top1": 0.8824,
+  "blocking_issues": [],
+  "boundary_gate_passed": true,
+  "budget_expansion_safety_gate_passed": true,
+  "combined_outperforms_components": true,
+  "compiler_gate_passed": true,
+  "data_contamination_gate_passed": true,
+  "data_need_specs_count": 8,
+  "experiment_groups_attempted": [
+    "baseline_v0_9_16_stage_balanced",
+    "redqueen_curriculum_only",
+    "hydrabudget_only",
+    "redqueen_plus_hydrabudget"
+  ],
+  "historical_regression_gate_passed": true,
+  "hydrabudget_contribution_positive": true,
+  "improved_vs_v0_9_16": true,
+  "integrity_gate_passed": true,
+  "modes_attempted": [
+    "quick",
+    "medium",
+    "large"
+  ],
+  "modes_completed": [
+    "quick",
+    "medium",
+    "large"
+  ],
+  "modes_partial": [],
+  "persistence_gate_passed": true,
+  "ready_for_function_array_frontier_probe": true,
+  "ready_for_larger_redqueen_loop": true,
+  "recommended_claim_level": "redqueen_hydrabudget_combined_positive",
+  "redqueen_audit_passed": true,
+  "redqueen_contribution_positive": true,
+  "redqueen_hydrabudget_probe_completed": true,
+  "required_next_run": "function/array frontier probe with current supported boundary unchanged",
+  "v0_9_16_candidate_miss_reference": 0.07814,
+  "v0_9_16_top1_reference": 0.8584
+}

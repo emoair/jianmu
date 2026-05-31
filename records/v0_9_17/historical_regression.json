@@ -1,0 +1,13 @@
+{
+  "historical_regression_gate_passed": true,
+  "improved_vs_v0_9_16": true,
+  "regressed_vs_v0_9_16": false,
+  "v0_9_10_top1": 0.7096,
+  "v0_9_13_top1": 0.8274,
+  "v0_9_14_top1": 0.8274,
+  "v0_9_16_candidate_miss": 0.07814,
+  "v0_9_16_top1": 0.8584,
+  "v0_9_17_best_candidate_miss": 0.05846,
+  "v0_9_17_best_top1": 0.8824,
+  "v0_9_8_plateau_top1": 0.3818
+}

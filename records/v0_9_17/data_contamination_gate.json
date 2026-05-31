@@ -1,0 +1,16 @@
+{
+  "array_supported_count": 0,
+  "data_contamination_gate_passed": true,
+  "english_current_supported_count": 0,
+  "function_supported_count": 0,
+  "future_domain_in_train_count": 0,
+  "input_contains_expected_output_count": 0,
+  "io_supported_count": 0,
+  "leakage_count": 0,
+  "mixed_current_supported_count": 0,
+  "recursion_supported_count": 0,
+  "system_call_supported_count": 0,
+  "target_ir_contains_c_source_count": 0,
+  "train_current_non_chinese_count": 0,
+  "unbounded_loop_supported_count": 0
+}

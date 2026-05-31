@@ -1,0 +1,215 @@
+{
+  "boundary_near_miss_patterns": [
+    "off-by-one loop bound boundary"
+  ],
+  "candidate_miss_by_stage": {
+    "bounded_for_loop": 0.11,
+    "bounded_while_with_fuel": 0.098,
+    "condition_boundary": 0.086,
+    "if_else_basic": 0.102,
+    "if_else_nested": 0.106,
+    "loop_bound_off_by_one": 0.082,
+    "multi_variable_update": 0.09,
+    "nested_bounded_control": 0.094
+  },
+  "candidate_miss_dominant_patterns": [
+    "missing bounded loop variant",
+    "nested branch shape not generated"
+  ],
+  "condition_operator_confusion_patterns": [
+    "< vs <=",
+    "> vs >="
+  ],
+  "data_need_specs": [
+    {
+      "compiler_required": true,
+      "desired_count": 6250,
+      "difficulty": 2,
+      "failure_type": "candidate_miss",
+      "forbidden_features": [
+        "function",
+        "array",
+        "recursion",
+        "unbounded_loop",
+        "io",
+        "system_call"
+      ],
+      "pattern": "fixed loop count with accumulator update",
+      "required_language": "zh",
+      "spec_id": "rq_spec_00_bounded_for_loop",
+      "support_status": "current_supported",
+      "target_stage": "bounded_for_loop"
+    },
+    {
+      "compiler_required": true,
+      "desired_count": 6250,
+      "difficulty": 3,
+      "failure_type": "wrong_top1",
+      "forbidden_features": [
+        "function",
+        "array",
+        "recursion",
+        "unbounded_loop",
+        "io",
+        "system_call"
+      ],
+      "pattern": "nested conditional branch with close thresholds",
+      "required_language": "zh",
+      "spec_id": "rq_spec_01_if_else_nested",
+      "support_status": "current_supported",
+      "target_stage": "if_else_nested"
+    },
+    {
+      "compiler_required": true,
+      "desired_count": 6250,
+      "difficulty": 4,
+      "failure_type": "candidate_miss",
+      "forbidden_features": [
+        "function",
+        "array",
+        "recursion",
+        "unbounded_loop",
+        "io",
+        "system_call"
+      ],
+      "pattern": "single conditional boundary",
+      "required_language": "zh",
+      "spec_id": "rq_spec_02_if_else_basic",
+      "support_status": "current_supported",
+      "target_stage": "if_else_basic"
+    },
+    {
+      "compiler_required": true,
+      "desired_count": 6250,
+      "difficulty": 5,
+      "failure_type": "candidate_miss",
+      "forbidden_features": [
+        "function",
+        "array",
+        "recursion",
+        "unbounded_loop",
+        "io",
+        "system_call"
+      ],
+      "pattern": "while loop with explicit fuel",
+      "required_language": "zh",
+      "spec_id": "rq_spec_03_bounded_while_with_fuel",
+      "support_status": "current_supported",
+      "target_stage": "bounded_while_with_fuel"
+    },
+    {
+      "compiler_required": true,
+      "desired_count": 6250,
+      "difficulty": 2,
+      "failure_type": "wrong_top1",
+      "forbidden_features": [
+        "function",
+        "array",
+        "recursion",
+        "unbounded_loop",
+        "io",
+        "system_call"
+      ],
+      "pattern": "loop plus nested if",
+      "required_language": "zh",
+      "spec_id": "rq_spec_04_nested_bounded_control",
+      "support_status": "current_supported",
+      "target_stage": "nested_bounded_control"
+    },
+    {
+      "compiler_required": true,
+      "desired_count": 6250,
+      "difficulty": 3,
+      "failure_type": "candidate_miss",
+      "forbidden_features": [
+        "function",
+        "array",
+        "recursion",
+        "unbounded_loop",
+        "io",
+        "system_call"
+      ],
+      "pattern": "two-variable sequential update",
+      "required_language": "zh",
+      "spec_id": "rq_spec_05_multi_variable_update",
+      "support_status": "current_supported",
+      "target_stage": "multi_variable_update"
+    },
+    {
+      "compiler_required": true,
+      "desired_count": 6250,
+      "difficulty": 4,
+      "failure_type": "candidate_miss",
+      "forbidden_features": [
+        "function",
+        "array",
+        "recursion",
+        "unbounded_loop",
+        "io",
+        "system_call"
+      ],
+      "pattern": "comparison at equality edge",
+      "required_language": "zh",
+      "spec_id": "rq_spec_06_condition_boundary",
+      "support_status": "current_supported",
+      "target_stage": "condition_boundary"
+    },
+    {
+      "compiler_required": true,
+      "desired_count": 6250,
+      "difficulty": 5,
+      "failure_type": "wrong_top1",
+      "forbidden_features": [
+        "function",
+        "array",
+        "recursion",
+        "unbounded_loop",
+        "io",
+        "system_call"
+      ],
+      "pattern": "inclusive/exclusive loop bound",
+      "required_language": "zh",
+      "spec_id": "rq_spec_07_loop_bound_off_by_one",
+      "support_status": "current_supported",
+      "target_stage": "loop_bound_off_by_one"
+    }
+  ],
+  "failure_type_distribution": {
+    "boundary_near_miss": 0.1,
+    "candidate_miss": 0.72,
+    "wrong_top1": 0.18
+  },
+  "in_beam_wrong_top1_patterns": [
+    "near-equal branch update ordering"
+  ],
+  "loop_bound_off_by_one_patterns": [
+    "inclusive/exclusive fixed bound confusion"
+  ],
+  "multi_variable_update_patterns": [
+    "simultaneous-looking sequential updates"
+  ],
+  "nested_control_patterns": [
+    "if inside loop with final branch update"
+  ],
+  "source_records": "records/v0_9_16",
+  "top1_by_stage": {
+    "bounded_for_loop": 0.8,
+    "bounded_while_with_fuel": 0.818,
+    "condition_boundary": 0.836,
+    "if_else_basic": 0.812,
+    "if_else_nested": 0.806,
+    "loop_bound_off_by_one": 0.842,
+    "multi_variable_update": 0.83,
+    "nested_bounded_control": 0.824
+  },
+  "weakest_stages": [
+    "bounded_for_loop",
+    "if_else_nested",
+    "if_else_basic",
+    "bounded_while_with_fuel",
+    "nested_bounded_control",
+    "multi_variable_update",
+    "condition_boundary",
+    "loop_bound_off_by_one"
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "bad_route_amplification_count": 0,
+  "boundary_risk_increase_count": 0,
+  "expansion_count": 5,
+  "expansion_policy_safe": true,
+  "expansion_without_gain_count": 0,
+  "future_risk_increase_count": 0,
+  "overexpanded_layer_count": 0,
+  "resource_guard_failure_count": 0,
+  "rollback_count": 0
+}
