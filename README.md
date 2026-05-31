@@ -546,3 +546,7 @@ v0.9.18.1 turns IronJudge into a resumable, checkpointed compiler-validation pip
 ## v0.9.18.2 Development Direction
 
 v0.9.18.2 reconciles IronJudge accounting after v0.9.18.1 produced 27,800 accounted real-MSVC compiler invocations but reported inconsistent level completion fields. The version clarifies cumulative vs independent level semantics, fixes claim/readiness consistency, and resumes main_20k validation if needed. It does not add new capabilities or claim production function/array support.
+
+## v0.9.19 Development Direction
+
+v0.9.19 performs a RedQueen Autopsy and Causal Forge analysis after v0.9.17 showed that RedQueen Curriculum and HydraBudget improved bounded-control performance. This version does not add new capabilities. Instead, it attributes RedQueen gains by data-need spec and adversarial pattern, checks template-overfit and pseudo-diversity risks, evaluates contrastive pair coverage, and introduces Regression Sentinel checks to monitor capability balance without using a traditional replay-buffer framing. It prepares a RedQueen v2 bandit-style causal curriculum scheduler.

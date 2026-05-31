@@ -1,0 +1,17 @@
+{
+  "natural_language_group_duplicate_rate": 0.0,
+  "near_duplicate_nl_rate": 0.0,
+  "near_duplicate_program_rate": 0.0,
+  "pseudo_diversity_score": 0.99512,
+  "same_program_many_texts_count": 0,
+  "same_text_many_programs_count": 0,
+  "semantic_hash_concentration_top1": 0.0,
+  "semantic_hash_concentration_top10": 0.0,
+  "severe_template_collapse_detected": false,
+  "structural_hash_duplicate_rate": 0.0,
+  "template_family_concentration_top1": 0.000488,
+  "template_family_concentration_top10": 0.00488,
+  "template_family_concentration_top5": 0.00244,
+  "template_overfit_risk_score": 0.00061,
+  "warnings": []
+}

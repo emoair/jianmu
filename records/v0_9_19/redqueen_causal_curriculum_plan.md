@@ -1,0 +1,58 @@
+# Redqueen Causal Curriculum Plan
+
+Diagnostic only. This is not a capability-improvement claim.
+
+```json
+{
+  "plan_name": "redqueen_v2_causal_curriculum",
+  "target_top1": 0.9,
+  "target_candidate_miss": 0.045,
+  "top_patterns_to_increase": [
+    "bounded_for_loop",
+    "if_else_nested",
+    "if_else_basic",
+    "wrong_top1_contrast_pairs"
+  ],
+  "patterns_to_keep": [
+    "boundary_preservation_negatives",
+    "condition_boundary"
+  ],
+  "patterns_to_reduce": [],
+  "patterns_to_redesign": [],
+  "patterns_to_quarantine": [],
+  "recommended_data_mix": {
+    "causal_patterns": 0.5,
+    "contrastive_pairs": 0.25,
+    "boundary_negatives": 0.1,
+    "regression_sentinel": 0.15
+  },
+  "recommended_contrast_pair_ratio": 0.25,
+  "recommended_boundary_negative_ratio": 0.1,
+  "recommended_stage_weights": {
+    "bounded_for_loop": 0.00015712,
+    "if_else_nested": 0.00015712,
+    "if_else_basic": 0.00015712,
+    "bounded_while_with_fuel": 0.00015712,
+    "nested_bounded_control": 0.00015712,
+    "multi_variable_update": 0.00015712,
+    "condition_boundary": 0.00015712,
+    "loop_bound_off_by_one": 0.00015712
+  },
+  "expected_gain_target": 0.015,
+  "expected_candidate_miss_target": 0.045,
+  "safety_constraints": [
+    "no future function/array/recursion in current_supported train",
+    "Regression Sentinel must pass",
+    "boundary false accept must remain zero"
+  ],
+  "diagnostic_source": "v0.9.19 autopsy only",
+  "contrast_pair_templates": [
+    "same surface loop bound, inclusive vs exclusive condition",
+    "same variables, sequential update order swapped",
+    "same branch threshold, < vs <= operator",
+    "same final state, different output variable request"
+  ],
+  "sentinel_eval_ratio": 0.15,
+  "sentinel_passed": true
+}
+```

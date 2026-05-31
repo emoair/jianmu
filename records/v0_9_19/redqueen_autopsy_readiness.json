@@ -1,0 +1,33 @@
+{
+  "bandit_diagnostic_simulation_completed": true,
+  "bandit_scheduler_design_completed": true,
+  "blocking_issues": [],
+  "capability_balance_score": 0.94,
+  "causal_curriculum_plan_completed": true,
+  "contrast_pairs_are_underused": true,
+  "contrastive_pair_audit_completed": true,
+  "high_risk_patterns": [
+    "boundary_preservation_negatives"
+  ],
+  "low_roi_patterns": [],
+  "pattern_roi_completed": true,
+  "pseudo_diversity_score": 0.99512,
+  "ready_for_causal_curriculum_generation": true,
+  "ready_for_redqueen_v2_bandit_scheduler": true,
+  "recommended_claim_level": "redqueen_autopsy_complete_ready_for_v2_bandit",
+  "recommended_scheduler": "epsilon_greedy_scheduler",
+  "redqueen_autopsy_completed": true,
+  "regression_sentinel_completed": true,
+  "regression_sentinel_passed": true,
+  "required_next_run": "implement RedQueen v2 causal curriculum with bandit scheduler in diagnostic mode",
+  "severe_template_collapse_detected": false,
+  "spec_attribution_completed": true,
+  "template_overfit_audit_completed": true,
+  "template_overfit_risk_score": 0.00061,
+  "top_positive_patterns": [
+    "bounded_for_loop",
+    "if_else_nested",
+    "if_else_basic",
+    "bounded_while_with_fuel"
+  ]
+}

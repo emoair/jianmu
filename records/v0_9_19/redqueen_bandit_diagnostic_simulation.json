@@ -1,0 +1,49 @@
+{
+  "diagnostic_only": true,
+  "not_a_real_capability_result": true,
+  "recommended_scheduler": "epsilon_greedy_scheduler",
+  "schedulers": {
+    "epsilon_greedy_scheduler": {
+      "projected_boundary_risk": 0.0,
+      "projected_candidate_miss_reduction": 0.013,
+      "projected_resource_cost": 0.88,
+      "projected_top1_gain": 0.014
+    },
+    "fixed_rule_scheduler": {
+      "projected_boundary_risk": 0.0,
+      "projected_candidate_miss_reduction": 0.007,
+      "projected_resource_cost": 1.0,
+      "projected_top1_gain": 0.008
+    },
+    "roi_weighted_scheduler": {
+      "projected_boundary_risk": 0.0,
+      "projected_candidate_miss_reduction": 0.012,
+      "projected_resource_cost": 0.82,
+      "projected_top1_gain": 0.013
+    },
+    "safety_first_scheduler": {
+      "projected_boundary_risk": 0.0,
+      "projected_candidate_miss_reduction": 0.01,
+      "projected_resource_cost": 0.86,
+      "projected_top1_gain": 0.011
+    },
+    "ucb_like_scheduler": {
+      "projected_boundary_risk": 0.0,
+      "projected_candidate_miss_reduction": 0.011,
+      "projected_resource_cost": 0.9,
+      "projected_top1_gain": 0.012
+    }
+  },
+  "simulation_confidence": "medium",
+  "simulation_limitations": [
+    "uses v0.9.17 attribution estimates",
+    "not a training result",
+    "does not establish new capability"
+  ],
+  "top_positive_patterns_used": [
+    "bounded_for_loop",
+    "if_else_nested",
+    "if_else_basic",
+    "bounded_while_with_fuel"
+  ]
+}
