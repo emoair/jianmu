@@ -1,0 +1,17 @@
+{
+  "coverage_score": 1.0,
+  "features": [
+    "WHILE_UNBOUNDED",
+    "RECURSIVE_FUNCTION",
+    "CALL",
+    "RETURN",
+    "REGISTER",
+    "COUNTER_INC",
+    "COUNTER_DECJZ",
+    "PROGRAM_COUNTER",
+    "HALT",
+    "TAPE_READ",
+    "TAPE_WRITE",
+    "STATE_GROW"
+  ]
+}

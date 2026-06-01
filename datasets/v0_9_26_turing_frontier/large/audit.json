@@ -1,0 +1,41 @@
+{
+  "audit_passed": true,
+  "duplicate_semantic_hash_count": 0,
+  "expected_output_on_nonterminating_count": 0,
+  "expected_output_on_unknown_halting_count": 0,
+  "halting_class_counts": {
+    "nonterminating_observed": 20000,
+    "review": 10000,
+    "terminating_known": 40000,
+    "timeout_unknown": 20000,
+    "unsupported": 10000
+  },
+  "pointer_io_system_current_supported_count": 0,
+  "recursion_in_current_supported_count": 0,
+  "shard_counts": 6,
+  "split_counts": {
+    "eval": 15000,
+    "heldout": 5000,
+    "test": 10000,
+    "train": 70000
+  },
+  "state_growth_in_current_supported_count": 0,
+  "support_status_counts": {
+    "experimental_counter_machine": 10000,
+    "experimental_recursion": 10000,
+    "experimental_state_growth": 10000,
+    "experimental_unbounded_while": 10000,
+    "nonterminating_observed": 20000,
+    "review": 10000,
+    "timeout_unknown": 20000,
+    "unsupported": 10000
+  },
+  "token_contains_c_source_count": 0,
+  "token_contains_expected_output_count": 0,
+  "token_contains_raw_target_ir_json_count": 0,
+  "total_samples": 100000,
+  "train_eval_leakage_count": 0,
+  "unbounded_in_current_supported_count": 0,
+  "unsupported_has_expected_output_count": 0,
+  "unsupported_has_targetir_count": 0
+}

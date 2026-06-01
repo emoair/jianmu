@@ -1,0 +1,131 @@
+{
+  "formal_proof_completed": false,
+  "limitations": [
+    "watchdog-limited validation cannot decide the general halting problem"
+  ],
+  "mapping": "WHILE-language over nonnegative integer variables",
+  "mapping_success_rate": 1.0,
+  "witness_count": 10,
+  "witnesses": [
+    {
+      "constructs": [
+        "WHILE_UNBOUNDED",
+        "REGISTER",
+        "COUNTER_INC",
+        "COUNTER_DECJZ"
+      ],
+      "halting_class": "terminating_known",
+      "name": "while_decrement_to_zero",
+      "steps": 4,
+      "verified": true
+    },
+    {
+      "constructs": [
+        "WHILE_UNBOUNDED",
+        "REGISTER",
+        "COUNTER_INC",
+        "COUNTER_DECJZ"
+      ],
+      "halting_class": "terminating_known",
+      "name": "while_addition",
+      "steps": 5,
+      "verified": true
+    },
+    {
+      "constructs": [
+        "WHILE_UNBOUNDED",
+        "REGISTER",
+        "COUNTER_INC",
+        "COUNTER_DECJZ"
+      ],
+      "halting_class": "terminating_known",
+      "name": "while_multiplication_by_repeated_add",
+      "steps": 6,
+      "verified": true
+    },
+    {
+      "constructs": [
+        "WHILE_UNBOUNDED",
+        "REGISTER",
+        "COUNTER_INC",
+        "COUNTER_DECJZ"
+      ],
+      "halting_class": "terminating_known",
+      "name": "nested_while",
+      "steps": 7,
+      "verified": true
+    },
+    {
+      "constructs": [
+        "WHILE_UNBOUNDED",
+        "REGISTER",
+        "COUNTER_INC",
+        "COUNTER_DECJZ"
+      ],
+      "halting_class": "nonterminating_observed",
+      "name": "nonterminating_while_true",
+      "steps": null,
+      "verified": true
+    },
+    {
+      "constructs": [
+        "WHILE_UNBOUNDED",
+        "REGISTER",
+        "COUNTER_INC",
+        "COUNTER_DECJZ"
+      ],
+      "halting_class": "timeout_unknown",
+      "name": "timeout_unknown_growth",
+      "steps": null,
+      "verified": true
+    },
+    {
+      "constructs": [
+        "WHILE_UNBOUNDED",
+        "REGISTER",
+        "COUNTER_INC",
+        "COUNTER_DECJZ"
+      ],
+      "halting_class": "terminating_known",
+      "name": "state_update_chain",
+      "steps": 10,
+      "verified": true
+    },
+    {
+      "constructs": [
+        "WHILE_UNBOUNDED",
+        "REGISTER",
+        "COUNTER_INC",
+        "COUNTER_DECJZ"
+      ],
+      "halting_class": "terminating_known",
+      "name": "conditional_exit",
+      "steps": 11,
+      "verified": true
+    },
+    {
+      "constructs": [
+        "WHILE_UNBOUNDED",
+        "REGISTER",
+        "COUNTER_INC",
+        "COUNTER_DECJZ"
+      ],
+      "halting_class": "terminating_known",
+      "name": "loop_variant_decrease",
+      "steps": 12,
+      "verified": true
+    },
+    {
+      "constructs": [
+        "WHILE_UNBOUNDED",
+        "REGISTER",
+        "COUNTER_INC",
+        "COUNTER_DECJZ"
+      ],
+      "halting_class": "timeout_unknown",
+      "name": "loop_variant_missing",
+      "steps": null,
+      "verified": true
+    }
+  ]
+}

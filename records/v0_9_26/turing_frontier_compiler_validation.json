@@ -1,0 +1,18 @@
+{
+  "boundary_compiler_misroute_count": 0,
+  "cleanup_failure_count": 0,
+  "compiler_validation_clean": true,
+  "compiler_validation_completed": true,
+  "compiler_verified_correctness_rate": 1.0,
+  "future_domain_compiled_count": 0,
+  "io_compiled_count": 0,
+  "permission_error_count": 0,
+  "pointer_compiled_count": 0,
+  "real_compiler_invocation_count": 10000,
+  "recursion_compiled_count": 0,
+  "terminating_compile_success_count": 10000,
+  "terminating_runtime_success_count": 10000,
+  "timeout_count": 0,
+  "watchdog_timeout_count": 237,
+  "wrong_stdout_count": 0
+}

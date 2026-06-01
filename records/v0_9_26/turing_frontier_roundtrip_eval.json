@@ -1,0 +1,16 @@
+{
+  "cleanup_failure_count": 0,
+  "compiler_verified_correctness_rate": 1.0,
+  "current_bounded_regression_rate": 0.0,
+  "experimental_recursion_success_rate": 0.861,
+  "experimental_state_growth_success_rate": 0.872,
+  "experimental_unbounded_success_rate": 0.884,
+  "nontermination_classification_correctness_rate": 0.981,
+  "terminating_known_correctness_rate": 0.987,
+  "timeout_unknown_classification_correctness_rate": 0.974,
+  "token_to_ir_success_rate": 0.992,
+  "watchdog_evaluator_clean": true,
+  "watchdog_timeout_count": 237,
+  "wrong_halting_class_count": 0,
+  "wrong_stdout_count": 0
+}

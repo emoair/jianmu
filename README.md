@@ -582,3 +582,7 @@ v0.9.24 performs a V1.0 freeze-candidate audit after the RedQueen Symbiote freez
 ## v0.9.25 Development Direction
 
 v0.9.25 performs a longhaul Symbiote stability test and a machine-assisted human-review fixpack for the v1.0 freeze candidate bundle. It checks rolling-window stability, plateau behavior, comfort-zone collapse risk, heldout generalization, compiler validation, large-file hygiene, and release-candidate wording. This version does not add new capabilities, does not enable real promotion, and does not release v1.0.
+
+## v0.9.26 Development Direction
+
+v0.9.26 opens the Turing-substrate frontier by adding experimental unbounded while, recursion, and state-growth evidence, together with counter-machine and WHILE-language constructive mappings. Runtime validation remains watchdog-limited, and finite tests are not claimed as a formal proof of Turing completeness. This version also enforces a wall-clock longhaul rule: endurance runs below 6 hours must be marked partial.

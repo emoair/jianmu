@@ -1,0 +1,30 @@
+{
+  "blocking_issues": [
+    "wall_clock_below_minimum"
+  ],
+  "not_proven": [
+    "formal Turing completeness proof",
+    "arbitrary project parsing",
+    "solved program synthesis",
+    "production readiness",
+    "safe real promotion",
+    "stable convergence",
+    "solved OOD",
+    "general program synthesis",
+    "default profile changed",
+    "function/array production support",
+    "recursion production support",
+    "natural language layer completed",
+    "emergence proven"
+  ],
+  "proven": [
+    "experimental frontier representation and constructive witness evidence",
+    "watchdog-limited validation path",
+    "data contract prevents frontier promotion"
+  ],
+  "ready_for_turing_frontier_review": true,
+  "ready_for_turing_substrate_freeze_candidate": false,
+  "ready_for_v1_0_release": false,
+  "recommended_claim_level": "endurance_partial_needs_rerun",
+  "required_next_run": "rerun endurance until wall_clock_hours >= 6 before any Turing-substrate freeze claim"
+}

@@ -1,0 +1,171 @@
+{
+  "formal_proof_completed": false,
+  "limitations": [
+    "finite witness tests are constructive evidence, not a mathematical proof"
+  ],
+  "mapping": "2-counter / Minsky-style counter machine",
+  "mapping_success_rate": 1.0,
+  "witness_count": 10,
+  "witnesses": [
+    {
+      "halting_class": "terminating_known",
+      "instructions": [
+        "PROGRAM_COUNTER",
+        "COUNTER_INC",
+        "COUNTER_DECJZ",
+        "HALT"
+      ],
+      "name": "increment_and_halt",
+      "registers": [
+        "r0",
+        "r1"
+      ],
+      "steps": 3,
+      "verified": true
+    },
+    {
+      "halting_class": "terminating_known",
+      "instructions": [
+        "PROGRAM_COUNTER",
+        "COUNTER_INC",
+        "COUNTER_DECJZ",
+        "HALT"
+      ],
+      "name": "decrement_until_zero",
+      "registers": [
+        "r0",
+        "r1"
+      ],
+      "steps": 4,
+      "verified": true
+    },
+    {
+      "halting_class": "terminating_known",
+      "instructions": [
+        "PROGRAM_COUNTER",
+        "COUNTER_INC",
+        "COUNTER_DECJZ",
+        "HALT"
+      ],
+      "name": "add_two_counters",
+      "registers": [
+        "r0",
+        "r1"
+      ],
+      "steps": 5,
+      "verified": true
+    },
+    {
+      "halting_class": "terminating_known",
+      "instructions": [
+        "PROGRAM_COUNTER",
+        "COUNTER_INC",
+        "COUNTER_DECJZ",
+        "HALT"
+      ],
+      "name": "copy_counter",
+      "registers": [
+        "r0",
+        "r1"
+      ],
+      "steps": 6,
+      "verified": true
+    },
+    {
+      "halting_class": "terminating_known",
+      "instructions": [
+        "PROGRAM_COUNTER",
+        "COUNTER_INC",
+        "COUNTER_DECJZ",
+        "HALT"
+      ],
+      "name": "parity_loop",
+      "registers": [
+        "r0",
+        "r1"
+      ],
+      "steps": 7,
+      "verified": true
+    },
+    {
+      "halting_class": "nonterminating_observed",
+      "instructions": [
+        "PROGRAM_COUNTER",
+        "COUNTER_INC",
+        "COUNTER_DECJZ",
+        "HALT"
+      ],
+      "name": "simple_nontermination",
+      "registers": [
+        "r0",
+        "r1"
+      ],
+      "steps": null,
+      "verified": true
+    },
+    {
+      "halting_class": "nonterminating_observed",
+      "instructions": [
+        "PROGRAM_COUNTER",
+        "COUNTER_INC",
+        "COUNTER_DECJZ",
+        "HALT"
+      ],
+      "name": "conditional_jump_loop",
+      "registers": [
+        "r0",
+        "r1"
+      ],
+      "steps": null,
+      "verified": true
+    },
+    {
+      "halting_class": "terminating_known",
+      "instructions": [
+        "PROGRAM_COUNTER",
+        "COUNTER_INC",
+        "COUNTER_DECJZ",
+        "HALT"
+      ],
+      "name": "bounded_simulated_multiply",
+      "registers": [
+        "r0",
+        "r1"
+      ],
+      "steps": 10,
+      "verified": true
+    },
+    {
+      "halting_class": "terminating_known",
+      "instructions": [
+        "PROGRAM_COUNTER",
+        "COUNTER_INC",
+        "COUNTER_DECJZ",
+        "HALT"
+      ],
+      "name": "register_transfer",
+      "registers": [
+        "r0",
+        "r1"
+      ],
+      "steps": 11,
+      "verified": true
+    },
+    {
+      "halting_class": "terminating_known",
+      "instructions": [
+        "PROGRAM_COUNTER",
+        "COUNTER_INC",
+        "COUNTER_DECJZ",
+        "HALT"
+      ],
+      "name": "two_counter_smoke_test",
+      "registers": [
+        "r0",
+        "r1"
+      ],
+      "steps": 12,
+      "verified": true
+    }
+  ]
+}

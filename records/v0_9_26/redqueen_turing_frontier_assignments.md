@@ -1,0 +1,14 @@
+# RedQueen Turing Frontier Assignments
+
+- unbounded_while_terminating_assignment
+- unbounded_while_nonterminating_assignment
+- timeout_unknown_assignment
+- loop_variant_decrease_assignment
+- loop_variant_missing_assignment
+- recursion_base_case_assignment
+- recursion_missing_base_case_assignment
+- mutual_recursion_review_assignment
+- counter_machine_inc_assignment
+- counter_machine_decjz_assignment
+- state_growth_register_assignment
+- bounded_regression_guard_assignment

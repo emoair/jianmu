@@ -1,0 +1,10 @@
+{
+  "shards": [
+    {
+      "path": "redqueen_v2_compiler_trace_000.jsonl",
+      "row_count": 20000,
+      "size_bytes": 8226934
+    }
+  ],
+  "total_rows": 20000
+}

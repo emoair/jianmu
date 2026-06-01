@@ -1,0 +1,222 @@
+{
+  "assignment_count": 12,
+  "assignments": [
+    {
+      "assignment": "unbounded_while_terminating_assignment",
+      "difficulty_level": "frontier",
+      "expected_action": "train_experimental_frontier",
+      "forbidden_features": [
+        "pointer",
+        "io",
+        "system_call",
+        "production_promotion"
+      ],
+      "required_features": [
+        "WHILE_UNBOUNDED"
+      ],
+      "safety_contract": "experimental frontier only; not current_supported production",
+      "support_status_target": "experimental_unbounded_while",
+      "target_failure": "unbounded_while_terminating",
+      "target_sample_count": 1000
+    },
+    {
+      "assignment": "unbounded_while_nonterminating_assignment",
+      "difficulty_level": "frontier",
+      "expected_action": "train_experimental_frontier",
+      "forbidden_features": [
+        "pointer",
+        "io",
+        "system_call",
+        "production_promotion"
+      ],
+      "required_features": [
+        "WHILE_UNBOUNDED"
+      ],
+      "safety_contract": "experimental frontier only; not current_supported production",
+      "support_status_target": "experimental_unbounded_while",
+      "target_failure": "unbounded_while_nonterminating",
+      "target_sample_count": 1000
+    },
+    {
+      "assignment": "timeout_unknown_assignment",
+      "difficulty_level": "frontier",
+      "expected_action": "isolate_timeout_unknown",
+      "forbidden_features": [
+        "pointer",
+        "io",
+        "system_call",
+        "production_promotion"
+      ],
+      "required_features": [
+        "REGISTER"
+      ],
+      "safety_contract": "experimental frontier only; not current_supported production",
+      "support_status_target": "experimental_state_growth",
+      "target_failure": "timeout_unknown",
+      "target_sample_count": 1000
+    },
+    {
+      "assignment": "loop_variant_decrease_assignment",
+      "difficulty_level": "frontier",
+      "expected_action": "train_experimental_frontier",
+      "forbidden_features": [
+        "pointer",
+        "io",
+        "system_call",
+        "production_promotion"
+      ],
+      "required_features": [
+        "WHILE_UNBOUNDED"
+      ],
+      "safety_contract": "experimental frontier only; not current_supported production",
+      "support_status_target": "experimental_unbounded_while",
+      "target_failure": "loop_variant_decrease",
+      "target_sample_count": 1000
+    },
+    {
+      "assignment": "loop_variant_missing_assignment",
+      "difficulty_level": "frontier",
+      "expected_action": "isolate_timeout_unknown",
+      "forbidden_features": [
+        "pointer",
+        "io",
+        "system_call",
+        "production_promotion"
+      ],
+      "required_features": [
+        "WHILE_UNBOUNDED"
+      ],
+      "safety_contract": "experimental frontier only; not current_supported production",
+      "support_status_target": "experimental_unbounded_while",
+      "target_failure": "loop_variant_missing",
+      "target_sample_count": 1000
+    },
+    {
+      "assignment": "recursion_base_case_assignment",
+      "difficulty_level": "frontier",
+      "expected_action": "train_experimental_frontier",
+      "forbidden_features": [
+        "pointer",
+        "io",
+        "system_call",
+        "production_promotion"
+      ],
+      "required_features": [
+        "RECURSIVE_FUNCTION"
+      ],
+      "safety_contract": "experimental frontier only; not current_supported production",
+      "support_status_target": "experimental_recursion",
+      "target_failure": "recursion_base_case",
+      "target_sample_count": 1000
+    },
+    {
+      "assignment": "recursion_missing_base_case_assignment",
+      "difficulty_level": "frontier",
+      "expected_action": "isolate_timeout_unknown",
+      "forbidden_features": [
+        "pointer",
+        "io",
+        "system_call",
+        "production_promotion"
+      ],
+      "required_features": [
+        "RECURSIVE_FUNCTION"
+      ],
+      "safety_contract": "experimental frontier only; not current_supported production",
+      "support_status_target": "experimental_recursion",
+      "target_failure": "recursion_missing_base_case",
+      "target_sample_count": 1000
+    },
+    {
+      "assignment": "mutual_recursion_review_assignment",
+      "difficulty_level": "frontier",
+      "expected_action": "train_experimental_frontier",
+      "forbidden_features": [
+        "pointer",
+        "io",
+        "system_call",
+        "production_promotion"
+      ],
+      "required_features": [
+        "RECURSIVE_FUNCTION"
+      ],
+      "safety_contract": "experimental frontier only; not current_supported production",
+      "support_status_target": "experimental_recursion",
+      "target_failure": "mutual_recursion_review",
+      "target_sample_count": 1000
+    },
+    {
+      "assignment": "counter_machine_inc_assignment",
+      "difficulty_level": "frontier",
+      "expected_action": "train_experimental_frontier",
+      "forbidden_features": [
+        "pointer",
+        "io",
+        "system_call",
+        "production_promotion"
+      ],
+      "required_features": [
+        "REGISTER"
+      ],
+      "safety_contract": "experimental frontier only; not current_supported production",
+      "support_status_target": "experimental_state_growth",
+      "target_failure": "counter_machine_inc",
+      "target_sample_count": 1000
+    },
+    {
+      "assignment": "counter_machine_decjz_assignment",
+      "difficulty_level": "frontier",
+      "expected_action": "train_experimental_frontier",
+      "forbidden_features": [
+        "pointer",
+        "io",
+        "system_call",
+        "production_promotion"
+      ],
+      "required_features": [
+        "REGISTER"
+      ],
+      "safety_contract": "experimental frontier only; not current_supported production",
+      "support_status_target": "experimental_state_growth",
+      "target_failure": "counter_machine_decjz",
+      "target_sample_count": 1000
+    },
+    {
+      "assignment": "state_growth_register_assignment",
+      "difficulty_level": "frontier",
+      "expected_action": "train_experimental_frontier",
+      "forbidden_features": [
+        "pointer",
+        "io",
+        "system_call",
+        "production_promotion"
+      ],
+      "required_features": [
+        "REGISTER"
+      ],
+      "safety_contract": "experimental frontier only; not current_supported production",
+      "support_status_target": "experimental_state_growth",
+      "target_failure": "state_growth_register",
+      "target_sample_count": 1000
+    },
+    {
+      "assignment": "bounded_regression_guard_assignment",
+      "difficulty_level": "frontier",
+      "expected_action": "train_experimental_frontier",
+      "forbidden_features": [
+        "pointer",
+        "io",
+        "system_call",
+        "production_promotion"
+      ],
+      "required_features": [
+        "REGISTER"
+      ],
+      "safety_contract": "experimental frontier only; not current_supported production",
+      "support_status_target": "experimental_state_growth",
+      "target_failure": "bounded_regression_guard",
+      "target_sample_count": 1000
+    }
+  ],
+  "redqueen_turing_frontier_completed": true
+}

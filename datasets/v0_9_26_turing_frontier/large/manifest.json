@@ -1,0 +1,40 @@
+{
+  "dataset_version": "v0.9.26_turing_frontier",
+  "max_shard_size": 41973375,
+  "partial": true,
+  "partial_reason": "minimum_100k_generated_for_time_budget",
+  "requested_target_samples": 100000,
+  "shards": [
+    {
+      "path": "large\\train_000.jsonl",
+      "size_bytes": 41973113
+    },
+    {
+      "path": "large\\train_001.jsonl",
+      "size_bytes": 41973375
+    },
+    {
+      "path": "large\\train_002.jsonl",
+      "size_bytes": 12419292
+    },
+    {
+      "path": "large\\eval_000.jsonl",
+      "size_bytes": 20635760
+    },
+    {
+      "path": "large\\test_000.jsonl",
+      "size_bytes": 13757176
+    },
+    {
+      "path": "large\\heldout_000.jsonl",
+      "size_bytes": 6893592
+    }
+  ],
+  "split_counts": {
+    "eval": 15000,
+    "heldout": 5000,
+    "test": 10000,
+    "train": 70000
+  },
+  "total_samples": 100000
+}
