@@ -1,0 +1,18 @@
+{
+  "architecture_charter_exists": true,
+  "boundary_as_data_contract_documented": true,
+  "boundary_checks_are_offline_eval": true,
+  "charter_guard_passed": true,
+  "compiler_only_validation": true,
+  "default_profile_unchanged": true,
+  "hydrabudget_only_shadow_budget": true,
+  "limitations": [],
+  "no_candidate_generation_boundary_hardcode_added": true,
+  "no_routing_boundary_hardcode_added": true,
+  "no_runtime_keyword_rejection_gate_added": true,
+  "real_promotion_disabled": true,
+  "redqueen_only_adjusts_curriculum": true,
+  "regression_dashboard_not_replay_buffer": true,
+  "symbiote_only_shadow_cotraining": true,
+  "trunk_not_used_as_sole_truth_verifier": true
+}

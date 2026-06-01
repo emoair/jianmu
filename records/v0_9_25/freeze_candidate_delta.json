@@ -1,0 +1,12 @@
+{
+  "architecture_status_delta": "charter maintained",
+  "best_candidate_miss_delta": -0.0045,
+  "best_top1_delta": 0.0058,
+  "compiler_evidence_delta": "+10000 longhaul clean invocations",
+  "leakage_status_delta": "clean maintained",
+  "neutral_for_freeze_candidate": false,
+  "recommended_freeze_status_after_longhaul": "ready_for_v1_0_rc1_branch_human_review_only",
+  "risk_register_delta": "human-review wording and large-file hygiene improved",
+  "strengthens_v1_0_freeze_candidate": true,
+  "weakens_v1_0_freeze_candidate": false
+}

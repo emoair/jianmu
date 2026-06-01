@@ -1,0 +1,12 @@
+# Longhaul Plateau Analysis
+
+- plateau_detected: False
+- plateau_start_window: None
+- top1_slope: 0.00035
+- candidate_miss_slope: -0.00025
+- marginal_gain_curve: [0.0008, 0.0006, 0.0003, -0.0016, 0.0008, 0.0006, 0.0003, -0.0005, 0.0008, 0.0006, 0.0003, 0.0023, 0.0008, 0.0006, 0.0003, -0.0039, 0.0008, 0.0006, 0.0003, -0.0022, 0.0008, 0.0006, 0.0003, -0.0003, 0.0008, 0.0006, 0.0003]
+- marginal_gain_last_3_windows: [0.0008, 0.0006, 0.0003]
+- marginal_gain_last_5_windows: [0.0003, -0.0003, 0.0008, 0.0006, 0.0003]
+- candidate_miss_floor_estimate: 0.0235
+- recommended_stop_reason: continue; stretch target reached without collapse
+- recommended_next_experiment_if_plateau: increase heldout project-module diversity and review RedQueen difficulty schedule

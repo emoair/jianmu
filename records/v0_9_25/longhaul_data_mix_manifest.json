@@ -1,0 +1,33 @@
+{
+  "data_mix_passed": true,
+  "mixes": {
+    "base": {
+      "codecartographer_standardtoken_ratio": 0.3,
+      "contrastive_full_ratio": 0.15,
+      "deterministic_grammar_ast_ratio": 0.1,
+      "mirrortoken_semantic_ratio": 0.2,
+      "redqueen_targeted_ratio": 0.2,
+      "trunk_solved_program_ratio": 0.07,
+      "unsupported_review_boundary_ratio": 0.05
+    },
+    "codecartographer_heavy": {
+      "codecartographer_standardtoken_ratio": 0.45,
+      "contrastive_full_ratio": 0.1,
+      "deterministic_grammar_ast_ratio": 0.05,
+      "mirrortoken_semantic_ratio": 0.15,
+      "redqueen_targeted_ratio": 0.2,
+      "trunk_solved_program_ratio": 0.08,
+      "unsupported_review_boundary_ratio": 0.05
+    },
+    "contrastive_reinforced": {
+      "codecartographer_standardtoken_ratio": 0.25,
+      "contrastive_full_ratio": 0.3,
+      "deterministic_grammar_ast_ratio": 0.05,
+      "mirrortoken_semantic_ratio": 0.1,
+      "redqueen_targeted_ratio": 0.25,
+      "trunk_solved_program_ratio": 0.06,
+      "unsupported_review_boundary_ratio": 0.05
+    }
+  },
+  "trunk_solved_program_ratio_max": 0.08
+}

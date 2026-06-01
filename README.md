@@ -578,3 +578,7 @@ v0.9.23 introduces a RedQueen Symbiote freeze-thaw co-training probe. It treats 
 ## v0.9.24 Development Direction
 
 v0.9.24 performs a V1.0 freeze-candidate audit after the RedQueen Symbiote freeze-thaw co-training result. It does not add new capabilities. Instead, it aggregates evidence from v0.9.17 through v0.9.23, checks claim discipline, data-contract cleanliness, compiler-validation evidence, Architecture Charter compliance, module roles, and remaining risks. The output is a human-review-ready V1.0 freeze-candidate bundle, not a V1.0 release.
+
+## v0.9.25 Development Direction
+
+v0.9.25 performs a longhaul Symbiote stability test and a machine-assisted human-review fixpack for the v1.0 freeze candidate bundle. It checks rolling-window stability, plateau behavior, comfort-zone collapse risk, heldout generalization, compiler validation, large-file hygiene, and release-candidate wording. This version does not add new capabilities, does not enable real promotion, and does not release v1.0.

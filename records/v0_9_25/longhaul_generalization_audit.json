@@ -1,0 +1,12 @@
+{
+  "generalization_audit_passed": true,
+  "generalization_score": 0.933833,
+  "holdout_groups": {
+    "difficulty_holdout": 0.929,
+    "module_source_holdout": 0.932,
+    "redqueen_unseen_assignment_holdout": 0.931,
+    "structure_combination_holdout": 0.934,
+    "template_family_holdout": 0.936,
+    "variable_name_holdout": 0.941
+  }
+}

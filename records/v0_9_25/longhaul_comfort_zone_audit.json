@@ -1,0 +1,13 @@
+{
+  "comfort_zone_audit_passed": true,
+  "comfort_zone_collapse_detected": false,
+  "compiler_pass_but_structure_mismatch_count": 0,
+  "difficulty_distribution_entropy": 0.91,
+  "heldout_generalization_drop": 0.004,
+  "mirror_trunk_friendliness_score": 0.29,
+  "semantic_hash_concentration": 0.104,
+  "structural_truth_mismatch_count": 0,
+  "template_family_concentration": 0.118,
+  "trunk_easy_token_bias_score": 0.081,
+  "trunk_solved_program_ratio": 0.07
+}

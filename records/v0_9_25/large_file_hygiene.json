@@ -1,0 +1,83 @@
+{
+  "current_version_files_over_45mb": [],
+  "current_version_files_over_50mb": [],
+  "dataset_shard_count": 820,
+  "files_over_45mb": [
+    {
+      "path": "datasets\\v0_8_5_boundary_aware\\large\\all.jsonl",
+      "size_bytes": 86245280
+    },
+    {
+      "path": "datasets\\v0_8_5_boundary_aware\\large\\train.jsonl",
+      "size_bytes": 75903908
+    },
+    {
+      "path": "datasets\\v0_9_20_1_redqueen_v2_contrastive_full\\pilot\\train.jsonl",
+      "size_bytes": 54241443
+    }
+  ],
+  "files_over_50mb": [
+    {
+      "path": "datasets\\v0_8_5_boundary_aware\\large\\all.jsonl",
+      "size_bytes": 86245280
+    },
+    {
+      "path": "datasets\\v0_8_5_boundary_aware\\large\\train.jsonl",
+      "size_bytes": 75903908
+    },
+    {
+      "path": "datasets\\v0_9_20_1_redqueen_v2_contrastive_full\\pilot\\train.jsonl",
+      "size_bytes": 54241443
+    }
+  ],
+  "git_lfs_recommendations": [
+    "datasets\\v0_8_5_boundary_aware\\large\\all.jsonl",
+    "datasets\\v0_8_5_boundary_aware\\large\\train.jsonl",
+    "datasets\\v0_9_20_1_redqueen_v2_contrastive_full\\pilot\\train.jsonl"
+  ],
+  "large_file_hygiene_passed": true,
+  "largest_files": [
+    {
+      "path": "datasets\\v0_8_5_boundary_aware\\large\\all.jsonl",
+      "size_bytes": 86245280
+    },
+    {
+      "path": "datasets\\v0_8_5_boundary_aware\\large\\train.jsonl",
+      "size_bytes": 75903908
+    },
+    {
+      "path": "datasets\\v0_9_20_1_redqueen_v2_contrastive_full\\pilot\\train.jsonl",
+      "size_bytes": 54241443
+    },
+    {
+      "path": "datasets\\v0_9_21_mirrorforge_code_to_token\\medium\\train_000.jsonl",
+      "size_bytes": 45789881
+    },
+    {
+      "path": "datasets\\v0_9_21_1_mirrorforge_abstraction_variants\\minimal_mirror_token\\train_001.jsonl",
+      "size_bytes": 45789562
+    },
+    {
+      "path": "datasets\\v0_9_21_1_mirrorforge_abstraction_variants\\minimal_mirror_token\\train_000.jsonl",
+      "size_bytes": 45789417
+    },
+    {
+      "path": "datasets\\v0_9_21_1_mirrorforge_abstraction_variants\\compressed_mirror_token\\train_001.jsonl",
+      "size_bytes": 45789362
+    },
+    {
+      "path": "datasets\\v0_9_21_mirrorforge_code_to_token\\pilot\\train_000.jsonl",
+      "size_bytes": 45789261
+    },
+    {
+      "path": "datasets\\v0_9_21_1_mirrorforge_abstraction_variants\\compressed_mirror_token\\train_000.jsonl",
+      "size_bytes": 45789050
+    },
+    {
+      "path": "datasets\\v0_9_21_1_mirrorforge_abstraction_variants\\lossless_mirror_token\\train_000.jsonl",
+      "size_bytes": 45788711
+    }
+  ],
+  "recommended_shard_splits": [],
+  "split_fix_applied": false
+}

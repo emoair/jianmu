@@ -1,0 +1,7 @@
+{
+  "human_review_completed": false,
+  "ready_for_v1_0_release": false,
+  "release_blockers": [
+    "human_review_required"
+  ]
+}

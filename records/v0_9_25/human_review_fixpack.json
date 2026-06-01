@@ -1,0 +1,15 @@
+{
+  "files": [
+    "README_first_screen_review.md",
+    "claim_wording_fixpack.md",
+    "human_review_checklist_v2.md",
+    "not_proven_notice_fixpack.md",
+    "rc1_preparation_summary.md",
+    "release_candidate_notes_draft.md",
+    "risk_register_fixpack.md",
+    "technical_report_abstract_draft.md"
+  ],
+  "human_review_completed": false,
+  "human_review_fixpack_completed": true,
+  "ready_for_v1_0_release": false
+}

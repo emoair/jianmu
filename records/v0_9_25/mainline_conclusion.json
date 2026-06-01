@@ -1,0 +1,27 @@
+{
+  "blocking_issues": [],
+  "not_proven": [
+    "arbitrary project parsing",
+    "Turing completeness",
+    "solved program synthesis",
+    "production readiness",
+    "safe real promotion",
+    "stable convergence",
+    "solved OOD",
+    "general program synthesis",
+    "default profile changed",
+    "function/array production support",
+    "recursion support",
+    "natural language layer completed",
+    "emergence proven"
+  ],
+  "proven": [
+    "longhaul Symbiote diagnostic run completed cleanly",
+    "machine-assisted human-review fixpack generated",
+    "compiler validation remained clean within recorded scope"
+  ],
+  "ready_for_v1_0_rc1_branch": true,
+  "ready_for_v1_0_release": false,
+  "recommended_claim_level": "longhaul_strengthens_freeze_candidate_ready_for_rc1_human_review",
+  "required_next_run": "manual human review before any rc1 branch, tag, or v1.0 release decision"
+}
