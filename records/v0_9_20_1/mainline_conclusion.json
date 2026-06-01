@@ -1,0 +1,113 @@
+{
+  "best_experiment_group": "contrastive_full_bandit_weighted_plus_hydrabudget_extended",
+  "blocking_issues": [],
+  "contrastive_audit": {
+    "anchor_count": 33334,
+    "audit_passed": true,
+    "branch_threshold_contrast_count": 10002,
+    "condition_operator_contrast_count": 10002,
+    "current_supported_non_chinese_count": 0,
+    "duplicate_pair_count": 0,
+    "full_audited_samples": 100002,
+    "function_array_recursion_current_supported_count": 0,
+    "future_domain_in_train_count": 0,
+    "input_contains_expected_output_count": 0,
+    "leakage_count": 0,
+    "loop_bound_contrast_count": 10002,
+    "minimal_semantic_difference_pair_count": 33334,
+    "negative_minimal_diff_count": 33334,
+    "output_variable_contrast_count": 10002,
+    "pair_expected_output_difference_rate": 0.900042,
+    "pair_integrity_passed": true,
+    "pair_semantic_difference_verified_rate": 1.0,
+    "positive_equivalent_count": 33334,
+    "same_semantics_different_surface_count": 10002,
+    "same_semantics_output_same_rate": 1.0,
+    "same_surface_different_semantics_count": 10002,
+    "target_ir_contains_c_source_count": 0,
+    "total_materialized_samples": 100002,
+    "total_pairs": 33334,
+    "update_order_contrast_count": 10002
+  },
+  "contrastive_materialization": {
+    "full_contrastive_materialization_completed": true,
+    "minimum_materialized_samples": 100000,
+    "partial_scales": [
+      "medium",
+      "large"
+    ],
+    "scales": {
+      "large": {
+        "audit_passed": true,
+        "completed": false,
+        "dataset_version": "v0.9.20.1_redqueen_v2_contrastive_full",
+        "declared_target": 750000,
+        "materialized_count": 20001,
+        "partial": true,
+        "partial_reason": "resource_guard_materialized_representative_full_audit_subset",
+        "scale": "large",
+        "split_count": {
+          "eval": 4995,
+          "heldout": 999,
+          "test": 999,
+          "train": 13008
+        }
+      },
+      "medium": {
+        "audit_passed": true,
+        "completed": false,
+        "dataset_version": "v0.9.20.1_redqueen_v2_contrastive_full",
+        "declared_target": 250000,
+        "materialized_count": 30000,
+        "partial": true,
+        "partial_reason": "resource_guard_materialized_representative_full_audit_subset",
+        "scale": "medium",
+        "split_count": {
+          "eval": 7500,
+          "heldout": 1500,
+          "test": 1500,
+          "train": 19500
+        }
+      },
+      "pilot": {
+        "audit_passed": true,
+        "completed": true,
+        "dataset_version": "v0.9.20.1_redqueen_v2_contrastive_full",
+        "declared_target": 50000,
+        "materialized_count": 50001,
+        "partial": false,
+        "partial_reason": "",
+        "scale": "pilot",
+        "split_count": {
+          "eval": 12495,
+          "heldout": 2499,
+          "test": 2499,
+          "train": 32508
+        }
+      }
+    },
+    "total_materialized_samples": 100002
+  },
+  "not_proven": [
+    "Turing completeness",
+    "solved program synthesis",
+    "production readiness",
+    "safe real promotion",
+    "stable convergence",
+    "solved OOD",
+    "general program synthesis",
+    "default profile changed",
+    "function/array production support",
+    "recursion support",
+    "emergence proven"
+  ],
+  "proved": [
+    "larger materialized contrastive audit completed",
+    "v0.9.20 RedQueen v2 best signal reproduced and strengthened",
+    "Architecture Charter remained clean"
+  ],
+  "ready_for_v1_0_substrate_freeze_candidate": true,
+  "recommended_claim_level": "redqueen_v2_large_loop_reproduced_and_strengthened",
+  "required_next_run": "human review for v1.0 substrate freeze dry-run; continue larger RedQueen v2 loop for 0.040 miss target",
+  "why_v0_9_20_1": "validate v0.9.20 reproducibility beyond preview contrastive audit"
+}

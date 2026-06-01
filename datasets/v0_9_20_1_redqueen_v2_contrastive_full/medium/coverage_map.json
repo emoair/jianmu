@@ -1,0 +1,20 @@
+{
+  "contrast_type_count": {
+    "boundary_preservation_negative": 3000,
+    "branch_threshold_contrast": 3000,
+    "condition_operator_contrast": 3000,
+    "loop_bound_contrast": 3000,
+    "multi_variable_update_contrast": 3000,
+    "nested_control_contrast": 3000,
+    "output_variable_contrast": 3000,
+    "same_semantics_different_surface": 3000,
+    "same_surface_different_semantics": 3000,
+    "update_order_contrast": 3000
+  },
+  "coverage_score": 1.0,
+  "pair_role_count": {
+    "anchor": 10000,
+    "negative_minimal_diff": 10000,
+    "positive_equivalent": 10000
+  }
+}

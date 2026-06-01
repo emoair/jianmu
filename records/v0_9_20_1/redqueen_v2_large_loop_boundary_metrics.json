@@ -1,0 +1,38 @@
+{
+  "contrastive_full_bandit_weighted": {
+    "boundary_false_accept_rate": 0.0,
+    "english_supported_accept_rate": 0.0,
+    "future_domain_false_accept_rate": 0.0,
+    "mixed_language_supported_accept_rate": 0.0
+  },
+  "contrastive_full_bandit_weighted_plus_hydrabudget": {
+    "boundary_false_accept_rate": 0.0,
+    "english_supported_accept_rate": 0.0,
+    "future_domain_false_accept_rate": 0.0,
+    "mixed_language_supported_accept_rate": 0.0
+  },
+  "contrastive_full_bandit_weighted_plus_hydrabudget_extended": {
+    "boundary_false_accept_rate": 0.0,
+    "english_supported_accept_rate": 0.0,
+    "future_domain_false_accept_rate": 0.0,
+    "mixed_language_supported_accept_rate": 0.0
+  },
+  "contrastive_full_static": {
+    "boundary_false_accept_rate": 0.0,
+    "english_supported_accept_rate": 0.0,
+    "future_domain_false_accept_rate": 0.0,
+    "mixed_language_supported_accept_rate": 0.0
+  },
+  "redqueen_v2_bandit_plus_contrastive_reproduction": {
+    "boundary_false_accept_rate": 0.0,
+    "english_supported_accept_rate": 0.0,
+    "future_domain_false_accept_rate": 0.0,
+    "mixed_language_supported_accept_rate": 0.0
+  },
+  "v0_9_20_best_reference": {
+    "boundary_false_accept_rate": 0.0,
+    "english_supported_accept_rate": 0.0,
+    "future_domain_false_accept_rate": 0.0,
+    "mixed_language_supported_accept_rate": 0.0
+  }
+}

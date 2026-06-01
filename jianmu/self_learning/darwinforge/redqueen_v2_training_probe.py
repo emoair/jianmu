@@ -17,7 +17,7 @@ from jianmu.self_learning.darwinforge.regression_dashboard import build_regressi
 STILL_NOT_PROVEN = ["Turing completeness", "solved program synthesis", "production readiness", "safe real promotion", "stable convergence", "solved OOD", "general program synthesis", "default profile changed", "function/array production support", "recursion support", "emergence proven"]
 
 
-def run_redqueen_v2_probe(source_records_v19: str | Path, output_records: str | Path, output_contrastive_dataset: str | Path, compiler_spot: int = 5000, boundary_spot: int = 5000, compile_worker_count: int = 16) -> Dict[str, Any]:
+def run_redqueen_v2_probe(source_records_v19: str | Path, output_records: str | Path, output_contrastive_dataset: str | Path, compiler_spot: int = 32, boundary_spot: int = 32, compile_worker_count: int = 16) -> Dict[str, Any]:
     out = Path(output_records)
     out.mkdir(parents=True, exist_ok=True)
     pattern_roi = _read_json(Path(source_records_v19) / "redqueen_pattern_roi.json")

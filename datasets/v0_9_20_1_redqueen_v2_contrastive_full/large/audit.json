@@ -1,0 +1,15 @@
+{
+  "audit_passed": true,
+  "current_supported_non_chinese_count": 0,
+  "function_array_recursion_current_supported_count": 0,
+  "future_domain_in_train_count": 0,
+  "input_contains_expected_output_count": 0,
+  "split_count": {
+    "eval": 4995,
+    "heldout": 999,
+    "test": 999,
+    "train": 13008
+  },
+  "target_ir_contains_c_source_count": 0,
+  "total_count": 20001
+}

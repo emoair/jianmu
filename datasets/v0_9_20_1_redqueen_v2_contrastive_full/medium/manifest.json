@@ -1,0 +1,15 @@
+{
+  "completed": false,
+  "dataset_version": "v0.9.20.1_redqueen_v2_contrastive_full",
+  "declared_target": 250000,
+  "materialized_count": 30000,
+  "partial": true,
+  "partial_reason": "resource_guard_materialized_representative_full_audit_subset",
+  "scale": "medium",
+  "split_count": {
+    "eval": 7500,
+    "heldout": 1500,
+    "test": 1500,
+    "train": 19500
+  }
+}

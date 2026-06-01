@@ -554,3 +554,7 @@ v0.9.19 performs a RedQueen Autopsy and Causal Forge analysis after v0.9.17 show
 ## v0.9.20 Development Direction
 
 v0.9.20 upgrades RedQueen into a v2 causal bandit curriculum scheduler and introduces Contrastive Forge for minimal semantic-difference training pairs. It also adds an Architecture Charter stating that JianMu capability boundaries are data-contract-defined rather than runtime-hardcoded. Regression Dashboard and Capability Balance Report are offline evaluations, not replay buffers or training-time gates. This version does not claim Turing completeness or production function/array support.
+
+## v0.9.20.1 Development Direction
+
+v0.9.20.1 scales RedQueen v2 with a larger six-hour loop and expands Contrastive Forge from preview audit to larger materialized contrastive auditing. It checks whether the v0.9.20 top1 >= 0.90 result can be reproduced or improved, while preserving the Architecture Charter: capability boundaries remain data-contract-defined rather than runtime-hardcoded. This version does not add new production capabilities or change the default profile.

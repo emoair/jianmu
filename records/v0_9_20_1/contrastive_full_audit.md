@@ -1,0 +1,28 @@
+# Contrastive Full Audit
+
+- total_materialized_samples: 100002
+- total_pairs: 33334
+- full_audited_samples: 100002
+- pair_integrity_passed: True
+- anchor_count: 33334
+- positive_equivalent_count: 33334
+- negative_minimal_diff_count: 33334
+- minimal_semantic_difference_pair_count: 33334
+- same_semantics_different_surface_count: 10002
+- same_surface_different_semantics_count: 10002
+- loop_bound_contrast_count: 10002
+- condition_operator_contrast_count: 10002
+- update_order_contrast_count: 10002
+- output_variable_contrast_count: 10002
+- branch_threshold_contrast_count: 10002
+- pair_expected_output_difference_rate: 0.900042
+- same_semantics_output_same_rate: 1.0
+- pair_semantic_difference_verified_rate: 1.0
+- duplicate_pair_count: 0
+- leakage_count: 0
+- current_supported_non_chinese_count: 0
+- future_domain_in_train_count: 0
+- function_array_recursion_current_supported_count: 0
+- target_ir_contains_c_source_count: 0
+- input_contains_expected_output_count: 0
+- audit_passed: True

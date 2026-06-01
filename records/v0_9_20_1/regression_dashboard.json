@@ -1,0 +1,13 @@
+{
+  "boundary_false_accept_delta": 0.0,
+  "bounded_control_preservation_delta": 0.0,
+  "capability_balance_score": 0.96,
+  "dashboard_passed": true,
+  "english_mixed_accept_delta": 0.0,
+  "function_array_recursion_isolation_delta": 0.0,
+  "future_false_accept_delta": 0.0,
+  "global_top1_delta": 0.0078,
+  "not_training_interceptor": true,
+  "old_strong_stage_delta": 0.0,
+  "weak_stage_gain": 0.0078
+}

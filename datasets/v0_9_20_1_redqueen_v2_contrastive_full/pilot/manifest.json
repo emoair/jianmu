@@ -1,0 +1,15 @@
+{
+  "completed": true,
+  "dataset_version": "v0.9.20.1_redqueen_v2_contrastive_full",
+  "declared_target": 50000,
+  "materialized_count": 50001,
+  "partial": false,
+  "partial_reason": "",
+  "scale": "pilot",
+  "split_count": {
+    "eval": 12495,
+    "heldout": 2499,
+    "test": 2499,
+    "train": 32508
+  }
+}

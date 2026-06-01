@@ -93,7 +93,14 @@ def _validate_supported(row: Dict[str, Any], backend: Any) -> Dict[str, Any]:
     if backend.backend_type != "real_c_compiler":
         base["notes"] = "real_compiler_unavailable"
         return base
-    result = execute_with_backend(row["expression"], backend, timeout_seconds=5)
+    try:
+        result = execute_with_backend(row["expression"], backend, timeout_seconds=5)
+    except PermissionError as exc:
+        base.update({"permission_error_count": 1, "notes": f"permission_error:{type(exc).__name__}"})
+        return base
+    except OSError as exc:
+        base.update({"process_spawn_error_count": 1, "notes": f"os_error:{type(exc).__name__}"})
+        return base
     stdout = str(result.get("stdout_value_if_safe") or "").strip()
     base.update(result)
     base["compiler_verified_correct"] = bool(result.get("runtime_success") and stdout == row["expected_output"])
