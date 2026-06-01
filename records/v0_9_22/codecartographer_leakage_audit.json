@@ -1,0 +1,9 @@
+{
+  "leakage_audit_passed": true,
+  "target_ir_contains_c_source_count": 0,
+  "token_contains_c_source_count": 0,
+  "token_contains_expected_output_count": 0,
+  "token_contains_raw_target_ir_json_count": 0,
+  "unsupported_has_expected_output_count": 0,
+  "unsupported_has_targetir_count": 0
+}

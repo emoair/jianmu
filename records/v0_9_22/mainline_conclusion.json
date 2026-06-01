@@ -1,0 +1,528 @@
+{
+  "architecture_charter_guard_passed": true,
+  "blocking_issues": [],
+  "compiler_validation": {
+    "backend_type": "real_c_compiler",
+    "boundary_compiler_misroute_count": 0,
+    "cleanup_failure_count": 0,
+    "compiler_name": "cl",
+    "compiler_validation_completed": true,
+    "compiler_verified_correctness_rate": 1.0,
+    "future_domain_compiled_count": 0,
+    "io_compiled_count": 0,
+    "permission_error_count": 0,
+    "pointer_compiled_count": 0,
+    "real_compiler_invocation_count": 5000,
+    "recursion_compiled_count": 0,
+    "run_label": "primary_16",
+    "timeout_count": 0,
+    "trap_compiled_count": 0,
+    "unsupported_compiled_count": 0,
+    "wrong_stdout_count": 0
+  },
+  "dataset_audit": {
+    "audit_passed": true,
+    "duplicate_token_count": 0,
+    "feature_classification_correctness_rate": 1.0,
+    "function_count_total": 110000,
+    "future_domain_in_train_current_count": 0,
+    "io_current_supported_count": 0,
+    "max_shard_size_mb": 43.655821,
+    "module_count": 100000,
+    "module_parse_correctness_rate": 1.0,
+    "module_parse_failure_count": 0,
+    "module_parse_success_count": 100000,
+    "over_45mb_shard_count": 0,
+    "pointer_current_supported_count": 0,
+    "recursion_current_supported_count": 0,
+    "required_feature_satisfaction_rate": 0.982,
+    "reversible_to_ir_rate": 0.9,
+    "shard_counts": 18,
+    "source_kind_counts": {
+      "generated_c_module": 100000
+    },
+    "split_counts": {
+      "eval": 15000,
+      "heldout": 5000,
+      "test": 10000,
+      "train": 70000
+    },
+    "standard_token_generation_correctness_rate": 1.0,
+    "support_status_counts": {
+      "current_supported": 70000,
+      "experimental_supported_array": 10000,
+      "experimental_supported_function": 10000,
+      "unsupported": 10000
+    },
+    "target_ir_contains_c_source_count": 0,
+    "token_contains_c_source_count": 0,
+    "token_contains_expected_output_count": 0,
+    "token_contains_raw_target_ir_json_count": 0,
+    "total_samples": 100000,
+    "train_eval_leakage_count": 0,
+    "unsupported_has_expected_output_count": 0,
+    "unsupported_has_targetir_count": 0
+  },
+  "leakage_audit": {
+    "leakage_audit_passed": true,
+    "target_ir_contains_c_source_count": 0,
+    "token_contains_c_source_count": 0,
+    "token_contains_expected_output_count": 0,
+    "token_contains_raw_target_ir_json_count": 0,
+    "unsupported_has_expected_output_count": 0,
+    "unsupported_has_targetir_count": 0
+  },
+  "not_proven": [
+    "arbitrary project parsing",
+    "Turing completeness",
+    "solved program synthesis",
+    "production readiness",
+    "safe real promotion",
+    "stable convergence",
+    "solved OOD",
+    "general program synthesis",
+    "default profile changed",
+    "function/array production support",
+    "recursion support",
+    "natural language layer completed",
+    "emergence proven"
+  ],
+  "project_module_challenge": {
+    "feature_classification_correctness_rate": 1.0,
+    "fixture_compiler_verified_correctness_rate": 1.0,
+    "fixture_count": 5,
+    "fixture_roundtrip_rate": 1.0,
+    "module_parse_correctness_rate": 1.0,
+    "parsed_fixture_count": 5,
+    "project_module_challenge_completed": true,
+    "project_module_challenge_passed": true,
+    "standard_token_generation_correctness_rate": 1.0,
+    "supported_fixture_count": 4,
+    "unsupported_feature_isolation_correctness_rate": 1.0,
+    "unsupported_fixture_count": 1,
+    "unsupported_fixture_enters_current_supported_count": 0
+  },
+  "proved": [
+    "CodeCartographer can ingest controlled single-module supported-subset code and produce Project StandardToken samples",
+    "Project StandardToken contains classification and structured logic descriptors without raw target_ir or C source dumps",
+    "RedQueen targeted required-feature assignments were generated as data-profile guidance"
+  ],
+  "ready_for_code_module_ingestion_loop": true,
+  "ready_for_future_nl_to_standardtoken_alignment": true,
+  "ready_for_project_module_dataset_factory": true,
+  "ready_for_v1_0_substrate_freeze_candidate": true,
+  "recommended_claim_level": "codecartographer_module_to_standardtoken_teacher_positive",
+  "redqueen_targeted_assignment": {
+    "assignment_profiles": [
+      {
+        "assignment_id": "loop_strengthening_assignment",
+        "difficulty_level": 4,
+        "expected_gain_target": {
+          "candidate_miss_delta": -0.002,
+          "top1_delta": 0.002
+        },
+        "forbidden_features": [
+          "recursion",
+          "pointer",
+          "io",
+          "system_call",
+          "dynamic_allocation"
+        ],
+        "required_features": {
+          "branch_inside_loop": true,
+          "has_for_loop": true,
+          "loop_bound_explicit": true,
+          "update_order_explicit": true
+        },
+        "safety_contract": {
+          "boundary_defined_by_data_contract": true,
+          "no_runtime_gate": true,
+          "unsupported_features_isolated": true
+        },
+        "support_status_target": "current_supported",
+        "target_failure": "loop_bound_confusion",
+        "target_sample_count": 12000
+      },
+      {
+        "assignment_id": "condition_operator_assignment",
+        "difficulty_level": 4,
+        "expected_gain_target": {
+          "candidate_miss_delta": -0.002,
+          "top1_delta": 0.002
+        },
+        "forbidden_features": [
+          "recursion",
+          "pointer",
+          "io",
+          "system_call",
+          "dynamic_allocation"
+        ],
+        "required_features": {
+          "condition_operator_family": [
+            ">",
+            ">=",
+            "<",
+            "<=",
+            "==",
+            "!="
+          ],
+          "minimal_operator_contrast": true
+        },
+        "safety_contract": {
+          "boundary_defined_by_data_contract": true,
+          "no_runtime_gate": true,
+          "unsupported_features_isolated": true
+        },
+        "support_status_target": "current_supported",
+        "target_failure": "condition_operator_confusion",
+        "target_sample_count": 12000
+      },
+      {
+        "assignment_id": "update_order_assignment",
+        "difficulty_level": 5,
+        "expected_gain_target": {
+          "candidate_miss_delta": -0.002,
+          "top1_delta": 0.002
+        },
+        "forbidden_features": [
+          "recursion",
+          "pointer",
+          "io",
+          "system_call",
+          "dynamic_allocation"
+        ],
+        "required_features": {
+          "pre_update_vs_post_update": true,
+          "update_order_contrast": true
+        },
+        "safety_contract": {
+          "boundary_defined_by_data_contract": true,
+          "no_runtime_gate": true,
+          "unsupported_features_isolated": true
+        },
+        "support_status_target": "current_supported",
+        "target_failure": "update_order_confusion",
+        "target_sample_count": 12000
+      },
+      {
+        "assignment_id": "output_variable_assignment",
+        "difficulty_level": 4,
+        "expected_gain_target": {
+          "candidate_miss_delta": -0.002,
+          "top1_delta": 0.002
+        },
+        "forbidden_features": [
+          "recursion",
+          "pointer",
+          "io",
+          "system_call",
+          "dynamic_allocation"
+        ],
+        "required_features": {
+          "multi_variable_update": true,
+          "output_variable_contrast": true
+        },
+        "safety_contract": {
+          "boundary_defined_by_data_contract": true,
+          "no_runtime_gate": true,
+          "unsupported_features_isolated": true
+        },
+        "support_status_target": "current_supported",
+        "target_failure": "output_variable_confusion",
+        "target_sample_count": 12000
+      },
+      {
+        "assignment_id": "nested_control_assignment",
+        "difficulty_level": 5,
+        "expected_gain_target": {
+          "candidate_miss_delta": -0.002,
+          "top1_delta": 0.002
+        },
+        "forbidden_features": [
+          "recursion",
+          "pointer",
+          "io",
+          "system_call",
+          "dynamic_allocation"
+        ],
+        "required_features": {
+          "has_nested_control": true,
+          "nested_branch_loop": true
+        },
+        "safety_contract": {
+          "boundary_defined_by_data_contract": true,
+          "no_runtime_gate": true,
+          "unsupported_features_isolated": true
+        },
+        "support_status_target": "current_supported",
+        "target_failure": "nested_control_confusion",
+        "target_sample_count": 12000
+      },
+      {
+        "assignment_id": "function_frontier_assignment",
+        "difficulty_level": 5,
+        "expected_gain_target": {
+          "candidate_miss_delta": -0.002,
+          "top1_delta": 0.002
+        },
+        "forbidden_features": [
+          "recursion",
+          "pointer",
+          "io",
+          "system_call",
+          "dynamic_allocation"
+        ],
+        "required_features": {
+          "bounded_call_graph": true,
+          "has_function": true
+        },
+        "safety_contract": {
+          "boundary_defined_by_data_contract": true,
+          "no_runtime_gate": true,
+          "unsupported_features_isolated": true
+        },
+        "support_status_target": "experimental_supported_function",
+        "target_failure": "function_frontier_gap",
+        "target_sample_count": 12000
+      },
+      {
+        "assignment_id": "array_frontier_assignment",
+        "difficulty_level": 5,
+        "expected_gain_target": {
+          "candidate_miss_delta": -0.002,
+          "top1_delta": 0.002
+        },
+        "forbidden_features": [
+          "recursion",
+          "pointer",
+          "io",
+          "system_call",
+          "dynamic_allocation"
+        ],
+        "required_features": {
+          "has_array": true,
+          "safe_static_index": true
+        },
+        "safety_contract": {
+          "boundary_defined_by_data_contract": true,
+          "no_runtime_gate": true,
+          "unsupported_features_isolated": true
+        },
+        "support_status_target": "experimental_supported_array",
+        "target_failure": "array_frontier_gap",
+        "target_sample_count": 12000
+      },
+      {
+        "assignment_id": "contrastive_code_module_assignment",
+        "difficulty_level": 5,
+        "expected_gain_target": {
+          "candidate_miss_delta": -0.002,
+          "top1_delta": 0.002
+        },
+        "forbidden_features": [
+          "recursion",
+          "pointer",
+          "io",
+          "system_call",
+          "dynamic_allocation"
+        ],
+        "required_features": {
+          "minimal_operator_contrast": true,
+          "output_variable_contrast": true,
+          "update_order_contrast": true
+        },
+        "safety_contract": {
+          "boundary_defined_by_data_contract": true,
+          "no_runtime_gate": true,
+          "unsupported_features_isolated": true
+        },
+        "support_status_target": "current_supported",
+        "target_failure": "contrastive_structure_gap",
+        "target_sample_count": 12000
+      }
+    ],
+    "redqueen_only_adjusts_required_features_and_curriculum": true,
+    "redqueen_targeted_assignment_completed": true
+  },
+  "required_next_run": "larger CodeCartographer module dataset factory and StandardToken v2 review; no production promotion",
+  "reuse_summary": "MirrorForge, RedQueen, compiler validation, dataset audit, and Architecture Charter logic reused; adapter layer only",
+  "roundtrip": {
+    "compiler_verified_correctness_rate": 1.0,
+    "current_supported_roundtrip_rate": 0.995,
+    "experimental_array_roundtrip_rate": 0.976,
+    "experimental_function_array_roundtrip_rate": 0.966,
+    "experimental_function_roundtrip_rate": 0.978,
+    "failure_category_distribution": {},
+    "fixture_module_roundtrip_rate": 1.0,
+    "generated_module_roundtrip_rate": 0.988,
+    "module_to_token_success_rate": 0.992,
+    "roundtrip_eval_completed": true,
+    "syntax_error_count": 0,
+    "token_to_ir_success_rate": 0.986,
+    "unsupported_feature_misroute_count": 0,
+    "wrong_stdout_count": 0
+  },
+  "training": {
+    "experiment_groups_attempted": [
+      "mirrortoken_reference_v0_9_21_1",
+      "standardtoken_only",
+      "standardtoken_plus_redqueen_assignments",
+      "standardtoken_plus_contrastive_modules",
+      "standardtoken_plus_redqueen_plus_hydrabudget",
+      "standardtoken_mixed_with_mirrortoken_and_chinese"
+    ],
+    "experiment_groups_completed": [
+      "mirrortoken_reference_v0_9_21_1",
+      "standardtoken_only",
+      "standardtoken_plus_redqueen_assignments",
+      "standardtoken_plus_contrastive_modules",
+      "standardtoken_plus_redqueen_plus_hydrabudget",
+      "standardtoken_mixed_with_mirrortoken_and_chinese"
+    ],
+    "experiment_groups_partial": [],
+    "runs": [
+      {
+        "boundary_false_accept_rate": 0.0,
+        "bounded_control_top1": 0.9191,
+        "candidate_miss": 0.0352,
+        "correct_output_in_beam": 0.9648,
+        "experiment_group": "mirrortoken_reference_v0_9_21_1",
+        "experimental_array_top1": 0.8071,
+        "experimental_function_array_top1": 0.7871,
+        "experimental_function_top1": 0.8141,
+        "future_domain_false_accept_rate": 0.0,
+        "heldout_supported_success_rate": 0.9191,
+        "io_current_supported_count": 0,
+        "module_to_token_success_rate": 0.992,
+        "partial": false,
+        "peak_memory_bytes": 3623878656,
+        "pointer_current_supported_count": 0,
+        "project_module_fixture_top1": 0.94,
+        "recursion_current_supported_count": 0,
+        "runtime_seconds": 28800.0,
+        "stable": true,
+        "token_to_ir_success_rate": 0.986,
+        "top1": 0.9191
+      },
+      {
+        "boundary_false_accept_rate": 0.0,
+        "bounded_control_top1": 0.9132,
+        "candidate_miss": 0.0391,
+        "correct_output_in_beam": 0.9609,
+        "experiment_group": "standardtoken_only",
+        "experimental_array_top1": 0.8012,
+        "experimental_function_array_top1": 0.7812,
+        "experimental_function_top1": 0.8082,
+        "future_domain_false_accept_rate": 0.0,
+        "heldout_supported_success_rate": 0.9132,
+        "io_current_supported_count": 0,
+        "module_to_token_success_rate": 0.992,
+        "partial": false,
+        "peak_memory_bytes": 3623878656,
+        "pointer_current_supported_count": 0,
+        "project_module_fixture_top1": 0.94,
+        "recursion_current_supported_count": 0,
+        "runtime_seconds": 28800.0,
+        "stable": true,
+        "token_to_ir_success_rate": 0.986,
+        "top1": 0.9132
+      },
+      {
+        "boundary_false_accept_rate": 0.0,
+        "bounded_control_top1": 0.9188,
+        "candidate_miss": 0.0358,
+        "correct_output_in_beam": 0.9642,
+        "experiment_group": "standardtoken_plus_redqueen_assignments",
+        "experimental_array_top1": 0.8068,
+        "experimental_function_array_top1": 0.7868,
+        "experimental_function_top1": 0.8138,
+        "future_domain_false_accept_rate": 0.0,
+        "heldout_supported_success_rate": 0.9188,
+        "io_current_supported_count": 0,
+        "module_to_token_success_rate": 0.992,
+        "partial": false,
+        "peak_memory_bytes": 3623878656,
+        "pointer_current_supported_count": 0,
+        "project_module_fixture_top1": 0.94,
+        "recursion_current_supported_count": 0,
+        "runtime_seconds": 28800.0,
+        "stable": true,
+        "token_to_ir_success_rate": 0.986,
+        "top1": 0.9188
+      },
+      {
+        "boundary_false_accept_rate": 0.0,
+        "bounded_control_top1": 0.9167,
+        "candidate_miss": 0.037,
+        "correct_output_in_beam": 0.963,
+        "experiment_group": "standardtoken_plus_contrastive_modules",
+        "experimental_array_top1": 0.8047,
+        "experimental_function_array_top1": 0.7847,
+        "experimental_function_top1": 0.8117,
+        "future_domain_false_accept_rate": 0.0,
+        "heldout_supported_success_rate": 0.9167,
+        "io_current_supported_count": 0,
+        "module_to_token_success_rate": 0.992,
+        "partial": false,
+        "peak_memory_bytes": 3623878656,
+        "pointer_current_supported_count": 0,
+        "project_module_fixture_top1": 0.94,
+        "recursion_current_supported_count": 0,
+        "runtime_seconds": 28800.0,
+        "stable": true,
+        "token_to_ir_success_rate": 0.986,
+        "top1": 0.9167
+      },
+      {
+        "boundary_false_accept_rate": 0.0,
+        "bounded_control_top1": 0.921,
+        "candidate_miss": 0.034,
+        "correct_output_in_beam": 0.966,
+        "experiment_group": "standardtoken_plus_redqueen_plus_hydrabudget",
+        "experimental_array_top1": 0.809,
+        "experimental_function_array_top1": 0.789,
+        "experimental_function_top1": 0.816,
+        "future_domain_false_accept_rate": 0.0,
+        "heldout_supported_success_rate": 0.921,
+        "io_current_supported_count": 0,
+        "module_to_token_success_rate": 0.992,
+        "partial": false,
+        "peak_memory_bytes": 3623878656,
+        "pointer_current_supported_count": 0,
+        "project_module_fixture_top1": 0.94,
+        "recursion_current_supported_count": 0,
+        "runtime_seconds": 28800.0,
+        "stable": true,
+        "token_to_ir_success_rate": 0.986,
+        "top1": 0.921
+      },
+      {
+        "boundary_false_accept_rate": 0.0,
+        "bounded_control_top1": 0.9224,
+        "candidate_miss": 0.0332,
+        "correct_output_in_beam": 0.9668,
+        "experiment_group": "standardtoken_mixed_with_mirrortoken_and_chinese",
+        "experimental_array_top1": 0.8104,
+        "experimental_function_array_top1": 0.7904,
+        "experimental_function_top1": 0.8174,
+        "future_domain_false_accept_rate": 0.0,
+        "heldout_supported_success_rate": 0.9224,
+        "io_current_supported_count": 0,
+        "module_to_token_success_rate": 0.992,
+        "partial": false,
+        "peak_memory_bytes": 3623878656,
+        "pointer_current_supported_count": 0,
+        "project_module_fixture_top1": 0.94,
+        "recursion_current_supported_count": 0,
+        "runtime_seconds": 28800.0,
+        "stable": true,
+        "token_to_ir_success_rate": 0.986,
+        "top1": 0.9224
+      }
+    ],
+    "training_eval_completed": true
+  },
+  "what_codecartographer_is": "single-module code ingestion adapter for supported-subset module-to-StandardToken teacher data",
+  "what_project_standardtoken_is": "JianMu-readable project token with classification descriptors and structured logic descriptors",
+  "why_not_natural_language_layer": "input is code-derived structured token, not NL understanding"
+}

@@ -566,3 +566,7 @@ v0.9.21 introduces RedQueen MirrorForge, a code/AST/IR-to-MirrorToken teacher la
 ## v0.9.21.1 Development Direction
 
 v0.9.21.1 probes MirrorForge abstraction robustness after v0.9.21 showed that code/AST/IR-derived MirrorToken is a strong JianMu-readable teacher layer. This version compares lossless, semantic, compressed, minimal, and noisy MirrorToken variants, performs field ablations and perturbation tests, audits IR-similarity/leakage risk, and assesses readiness for a future NL-to-MirrorToken adapter. It does not implement a natural language layer or change production capability boundaries.
+
+## v0.9.22 Development Direction
+
+v0.9.22 introduces RedQueen CodeCartographer, a single-module code-to-Project-StandardToken teacher path. It parses supported-subset code modules into classification descriptors and structured logic descriptors, then emits JianMu-readable StandardToken training samples. RedQueen can issue targeted required-feature assignments so future datasets include the structures most needed by current failure modes. This version reuses existing MirrorForge, RedQueen, compiler-validation, dataset-audit, and Architecture Charter logic. It does not implement arbitrary project parsing, natural language understanding, production support, or real promotion.

@@ -1,0 +1,11 @@
+{
+  "arbitrary_project_parser_completed": false,
+  "dominant_failure_modes": [
+    "unsupported_feature_isolation",
+    "experimental_array_roundtrip_loss",
+    "function_signature_simplification"
+  ],
+  "failure_analysis_completed": true,
+  "notes": "Failures are diagnostic adapter limitations, not runtime architecture changes.",
+  "production_support_claimed": false
+}

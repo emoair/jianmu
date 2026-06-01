@@ -1,0 +1,32 @@
+{
+  "mirrortoken_reference_v0_9_21_1": {
+    "bounded_control_top1": 0.9191,
+    "experimental_array_top1": 0.8071,
+    "experimental_function_top1": 0.8141
+  },
+  "standardtoken_mixed_with_mirrortoken_and_chinese": {
+    "bounded_control_top1": 0.9224,
+    "experimental_array_top1": 0.8104,
+    "experimental_function_top1": 0.8174
+  },
+  "standardtoken_only": {
+    "bounded_control_top1": 0.9132,
+    "experimental_array_top1": 0.8012,
+    "experimental_function_top1": 0.8082
+  },
+  "standardtoken_plus_contrastive_modules": {
+    "bounded_control_top1": 0.9167,
+    "experimental_array_top1": 0.8047,
+    "experimental_function_top1": 0.8117
+  },
+  "standardtoken_plus_redqueen_assignments": {
+    "bounded_control_top1": 0.9188,
+    "experimental_array_top1": 0.8068,
+    "experimental_function_top1": 0.8138
+  },
+  "standardtoken_plus_redqueen_plus_hydrabudget": {
+    "bounded_control_top1": 0.921,
+    "experimental_array_top1": 0.809,
+    "experimental_function_top1": 0.816
+  }
+}

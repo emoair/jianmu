@@ -1,0 +1,43 @@
+{
+  "audit_passed": true,
+  "duplicate_token_count": 0,
+  "feature_classification_correctness_rate": 1.0,
+  "function_count_total": 110000,
+  "future_domain_in_train_current_count": 0,
+  "io_current_supported_count": 0,
+  "max_shard_size_mb": 43.655821,
+  "module_count": 100000,
+  "module_parse_correctness_rate": 1.0,
+  "module_parse_failure_count": 0,
+  "module_parse_success_count": 100000,
+  "over_45mb_shard_count": 0,
+  "pointer_current_supported_count": 0,
+  "recursion_current_supported_count": 0,
+  "required_feature_satisfaction_rate": 0.982,
+  "reversible_to_ir_rate": 0.9,
+  "shard_counts": 18,
+  "source_kind_counts": {
+    "generated_c_module": 100000
+  },
+  "split_counts": {
+    "eval": 15000,
+    "heldout": 5000,
+    "test": 10000,
+    "train": 70000
+  },
+  "standard_token_generation_correctness_rate": 1.0,
+  "support_status_counts": {
+    "current_supported": 70000,
+    "experimental_supported_array": 10000,
+    "experimental_supported_function": 10000,
+    "unsupported": 10000
+  },
+  "target_ir_contains_c_source_count": 0,
+  "token_contains_c_source_count": 0,
+  "token_contains_expected_output_count": 0,
+  "token_contains_raw_target_ir_json_count": 0,
+  "total_samples": 100000,
+  "train_eval_leakage_count": 0,
+  "unsupported_has_expected_output_count": 0,
+  "unsupported_has_targetir_count": 0
+}

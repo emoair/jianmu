@@ -1,0 +1,232 @@
+{
+  "assignment_profiles": [
+    {
+      "assignment_id": "loop_strengthening_assignment",
+      "difficulty_level": 4,
+      "expected_gain_target": {
+        "candidate_miss_delta": -0.002,
+        "top1_delta": 0.002
+      },
+      "forbidden_features": [
+        "recursion",
+        "pointer",
+        "io",
+        "system_call",
+        "dynamic_allocation"
+      ],
+      "required_features": {
+        "branch_inside_loop": true,
+        "has_for_loop": true,
+        "loop_bound_explicit": true,
+        "update_order_explicit": true
+      },
+      "safety_contract": {
+        "boundary_defined_by_data_contract": true,
+        "no_runtime_gate": true,
+        "unsupported_features_isolated": true
+      },
+      "support_status_target": "current_supported",
+      "target_failure": "loop_bound_confusion",
+      "target_sample_count": 12000
+    },
+    {
+      "assignment_id": "condition_operator_assignment",
+      "difficulty_level": 4,
+      "expected_gain_target": {
+        "candidate_miss_delta": -0.002,
+        "top1_delta": 0.002
+      },
+      "forbidden_features": [
+        "recursion",
+        "pointer",
+        "io",
+        "system_call",
+        "dynamic_allocation"
+      ],
+      "required_features": {
+        "condition_operator_family": [
+          ">",
+          ">=",
+          "<",
+          "<=",
+          "==",
+          "!="
+        ],
+        "minimal_operator_contrast": true
+      },
+      "safety_contract": {
+        "boundary_defined_by_data_contract": true,
+        "no_runtime_gate": true,
+        "unsupported_features_isolated": true
+      },
+      "support_status_target": "current_supported",
+      "target_failure": "condition_operator_confusion",
+      "target_sample_count": 12000
+    },
+    {
+      "assignment_id": "update_order_assignment",
+      "difficulty_level": 5,
+      "expected_gain_target": {
+        "candidate_miss_delta": -0.002,
+        "top1_delta": 0.002
+      },
+      "forbidden_features": [
+        "recursion",
+        "pointer",
+        "io",
+        "system_call",
+        "dynamic_allocation"
+      ],
+      "required_features": {
+        "pre_update_vs_post_update": true,
+        "update_order_contrast": true
+      },
+      "safety_contract": {
+        "boundary_defined_by_data_contract": true,
+        "no_runtime_gate": true,
+        "unsupported_features_isolated": true
+      },
+      "support_status_target": "current_supported",
+      "target_failure": "update_order_confusion",
+      "target_sample_count": 12000
+    },
+    {
+      "assignment_id": "output_variable_assignment",
+      "difficulty_level": 4,
+      "expected_gain_target": {
+        "candidate_miss_delta": -0.002,
+        "top1_delta": 0.002
+      },
+      "forbidden_features": [
+        "recursion",
+        "pointer",
+        "io",
+        "system_call",
+        "dynamic_allocation"
+      ],
+      "required_features": {
+        "multi_variable_update": true,
+        "output_variable_contrast": true
+      },
+      "safety_contract": {
+        "boundary_defined_by_data_contract": true,
+        "no_runtime_gate": true,
+        "unsupported_features_isolated": true
+      },
+      "support_status_target": "current_supported",
+      "target_failure": "output_variable_confusion",
+      "target_sample_count": 12000
+    },
+    {
+      "assignment_id": "nested_control_assignment",
+      "difficulty_level": 5,
+      "expected_gain_target": {
+        "candidate_miss_delta": -0.002,
+        "top1_delta": 0.002
+      },
+      "forbidden_features": [
+        "recursion",
+        "pointer",
+        "io",
+        "system_call",
+        "dynamic_allocation"
+      ],
+      "required_features": {
+        "has_nested_control": true,
+        "nested_branch_loop": true
+      },
+      "safety_contract": {
+        "boundary_defined_by_data_contract": true,
+        "no_runtime_gate": true,
+        "unsupported_features_isolated": true
+      },
+      "support_status_target": "current_supported",
+      "target_failure": "nested_control_confusion",
+      "target_sample_count": 12000
+    },
+    {
+      "assignment_id": "function_frontier_assignment",
+      "difficulty_level": 5,
+      "expected_gain_target": {
+        "candidate_miss_delta": -0.002,
+        "top1_delta": 0.002
+      },
+      "forbidden_features": [
+        "recursion",
+        "pointer",
+        "io",
+        "system_call",
+        "dynamic_allocation"
+      ],
+      "required_features": {
+        "bounded_call_graph": true,
+        "has_function": true
+      },
+      "safety_contract": {
+        "boundary_defined_by_data_contract": true,
+        "no_runtime_gate": true,
+        "unsupported_features_isolated": true
+      },
+      "support_status_target": "experimental_supported_function",
+      "target_failure": "function_frontier_gap",
+      "target_sample_count": 12000
+    },
+    {
+      "assignment_id": "array_frontier_assignment",
+      "difficulty_level": 5,
+      "expected_gain_target": {
+        "candidate_miss_delta": -0.002,
+        "top1_delta": 0.002
+      },
+      "forbidden_features": [
+        "recursion",
+        "pointer",
+        "io",
+        "system_call",
+        "dynamic_allocation"
+      ],
+      "required_features": {
+        "has_array": true,
+        "safe_static_index": true
+      },
+      "safety_contract": {
+        "boundary_defined_by_data_contract": true,
+        "no_runtime_gate": true,
+        "unsupported_features_isolated": true
+      },
+      "support_status_target": "experimental_supported_array",
+      "target_failure": "array_frontier_gap",
+      "target_sample_count": 12000
+    },
+    {
+      "assignment_id": "contrastive_code_module_assignment",
+      "difficulty_level": 5,
+      "expected_gain_target": {
+        "candidate_miss_delta": -0.002,
+        "top1_delta": 0.002
+      },
+      "forbidden_features": [
+        "recursion",
+        "pointer",
+        "io",
+        "system_call",
+        "dynamic_allocation"
+      ],
+      "required_features": {
+        "minimal_operator_contrast": true,
+        "output_variable_contrast": true,
+        "update_order_contrast": true
+      },
+      "safety_contract": {
+        "boundary_defined_by_data_contract": true,
+        "no_runtime_gate": true,
+        "unsupported_features_isolated": true
+      },
+      "support_status_target": "current_supported",
+      "target_failure": "contrastive_structure_gap",
+      "target_sample_count": 12000
+    }
+  ],
+  "redqueen_only_adjusts_required_features_and_curriculum": true,
+  "redqueen_targeted_assignment_completed": true
+}

@@ -1,0 +1,26 @@
+{
+  "mirrortoken_reference_v0_9_21_1": {
+    "boundary_false_accept_rate": 0.0,
+    "future_domain_false_accept_rate": 0.0
+  },
+  "standardtoken_mixed_with_mirrortoken_and_chinese": {
+    "boundary_false_accept_rate": 0.0,
+    "future_domain_false_accept_rate": 0.0
+  },
+  "standardtoken_only": {
+    "boundary_false_accept_rate": 0.0,
+    "future_domain_false_accept_rate": 0.0
+  },
+  "standardtoken_plus_contrastive_modules": {
+    "boundary_false_accept_rate": 0.0,
+    "future_domain_false_accept_rate": 0.0
+  },
+  "standardtoken_plus_redqueen_assignments": {
+    "boundary_false_accept_rate": 0.0,
+    "future_domain_false_accept_rate": 0.0
+  },
+  "standardtoken_plus_redqueen_plus_hydrabudget": {
+    "boundary_false_accept_rate": 0.0,
+    "future_domain_false_accept_rate": 0.0
+  }
+}

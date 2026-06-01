@@ -1,0 +1,9 @@
+{
+  "feature_coverage_score": 1.0,
+  "support_status_counts": {
+    "current_supported": 70000,
+    "experimental_supported_array": 10000,
+    "experimental_supported_function": 10000,
+    "unsupported": 10000
+  }
+}

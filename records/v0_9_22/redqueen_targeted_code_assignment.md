@@ -1,0 +1,10 @@
+# RedQueen Targeted Code Assignment
+
+- loop_strengthening_assignment: loop_bound_confusion
+- condition_operator_assignment: condition_operator_confusion
+- update_order_assignment: update_order_confusion
+- output_variable_assignment: output_variable_confusion
+- nested_control_assignment: nested_control_confusion
+- function_frontier_assignment: function_frontier_gap
+- array_frontier_assignment: array_frontier_gap
+- contrastive_code_module_assignment: contrastive_structure_gap

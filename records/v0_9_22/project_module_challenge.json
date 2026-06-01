@@ -1,0 +1,15 @@
+{
+  "feature_classification_correctness_rate": 1.0,
+  "fixture_compiler_verified_correctness_rate": 1.0,
+  "fixture_count": 5,
+  "fixture_roundtrip_rate": 1.0,
+  "module_parse_correctness_rate": 1.0,
+  "parsed_fixture_count": 5,
+  "project_module_challenge_completed": true,
+  "project_module_challenge_passed": true,
+  "standard_token_generation_correctness_rate": 1.0,
+  "supported_fixture_count": 4,
+  "unsupported_feature_isolation_correctness_rate": 1.0,
+  "unsupported_fixture_count": 1,
+  "unsupported_fixture_enters_current_supported_count": 0
+}
