@@ -1,0 +1,10 @@
+{
+  "comfort_zone_collapse_detected": false,
+  "dominant_residual_risks": [
+    "future NL alignment ambiguity",
+    "larger heldout module diversity needed"
+  ],
+  "failure_analysis_completed": true,
+  "gan_mode_detected": false,
+  "trunk_only_truth_loop_detected": false
+}

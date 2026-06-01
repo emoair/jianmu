@@ -1,0 +1,67 @@
+{
+  "capability_boundary_changed": false,
+  "comfort_zone_breaker_assignments": [
+    {
+      "difficulty_level": 5,
+      "no_capability_boundary_change": true,
+      "required_features": {
+        "structure_combination_holdout": true,
+        "template_family_holdout": true,
+        "variable_name_holdout": true
+      },
+      "target_component": "both",
+      "target_failure": "comfort_zone_breaker",
+      "target_sample_count": 50000
+    }
+  ],
+  "heldout_generalization_assignments": [
+    {
+      "difficulty_level": 5,
+      "no_capability_boundary_change": true,
+      "required_features": {
+        "structure_combination_holdout": true,
+        "template_family_holdout": true
+      },
+      "target_component": "both",
+      "target_failure": "heldout_generalization",
+      "target_sample_count": 50000
+    }
+  ],
+  "mirror_training_assignments": [
+    {
+      "difficulty_level": 4,
+      "no_capability_boundary_change": true,
+      "required_features": {
+        "branch_inside_loop": true,
+        "has_for_loop": true,
+        "loop_bound_explicit": true,
+        "update_order_explicit": true
+      },
+      "target_component": "mirror",
+      "target_failure": "loop_weakness",
+      "target_sample_count": 50000
+    }
+  ],
+  "redqueen_only_adjusts_curriculum": true,
+  "symbiote_redqueen_assignments_completed": true,
+  "trunk_training_assignments": [
+    {
+      "difficulty_level": 4,
+      "no_capability_boundary_change": true,
+      "required_features": {
+        "condition_operator_family": [
+          ">",
+          ">=",
+          "<",
+          "<=",
+          "==",
+          "!="
+        ],
+        "minimal_operator_contrast": true
+      },
+      "target_component": "trunk",
+      "target_failure": "condition_weakness",
+      "target_sample_count": 50000
+    }
+  ]
+}

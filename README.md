@@ -570,3 +570,7 @@ v0.9.21.1 probes MirrorForge abstraction robustness after v0.9.21 showed that co
 ## v0.9.22 Development Direction
 
 v0.9.22 introduces RedQueen CodeCartographer, a single-module code-to-Project-StandardToken teacher path. It parses supported-subset code modules into classification descriptors and structured logic descriptors, then emits JianMu-readable StandardToken training samples. RedQueen can issue targeted required-feature assignments so future datasets include the structures most needed by current failure modes. This version reuses existing MirrorForge, RedQueen, compiler-validation, dataset-audit, and Architecture Charter logic. It does not implement arbitrary project parsing, natural language understanding, production support, or real promotion.
+
+## v0.9.23 Development Direction
+
+v0.9.23 introduces a RedQueen Symbiote freeze-thaw co-training probe. It treats Mirror/CodeCartographer as a code-structure translator, the main trunk as a StandardToken solver, the compiler as the final verifier, and RedQueen as a curriculum scheduler. The probe alternates frozen-trunk mirror training and frozen-mirror trunk training while checking for comfort-zone collapse and heldout module generalization. This is symbiotic verified co-training, not GAN-style adversarial training, and it does not change production capability boundaries.

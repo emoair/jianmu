@@ -1,0 +1,122 @@
+{
+  "freeze_state_representation": "persisted profile / router root / curriculum policy / token schema snapshot",
+  "neural_framework_used": false,
+  "snapshot_restore_passed": true,
+  "snapshots": [
+    {
+      "allowed_updates": [],
+      "component": "trunk",
+      "curriculum_policy_hash": "0b0127de8aaccc4b",
+      "disallowed_updates": [
+        "default_runtime_profile",
+        "production_config",
+        "candidate_generation_semantics"
+      ],
+      "frozen": true,
+      "profile_hash": "216ce178873150fa",
+      "restore_verified": true,
+      "snapshot_id": "trunk_v0_9_22_reference",
+      "source_version": "v0.9.22",
+      "state_manifest_hash": "8d34805c8a0ec689",
+      "token_schema_hash": "511063fdaecc0d65"
+    },
+    {
+      "allowed_updates": [
+        "curriculum_policy",
+        "shadow_profile_metrics"
+      ],
+      "component": "trunk",
+      "curriculum_policy_hash": "e1a34e7b6bc9ecea",
+      "disallowed_updates": [
+        "default_runtime_profile",
+        "production_config",
+        "candidate_generation_semantics"
+      ],
+      "frozen": false,
+      "profile_hash": "d39efafa091cf4bd",
+      "restore_verified": true,
+      "snapshot_id": "trunk_after_mirror_cycle_1",
+      "source_version": "v0.9.22",
+      "state_manifest_hash": "6a6d67ba873477e3",
+      "token_schema_hash": "b41e1b4ba874daa5"
+    },
+    {
+      "allowed_updates": [
+        "curriculum_policy",
+        "shadow_profile_metrics"
+      ],
+      "component": "trunk",
+      "curriculum_policy_hash": "522a3e3d506b7d82",
+      "disallowed_updates": [
+        "default_runtime_profile",
+        "production_config",
+        "candidate_generation_semantics"
+      ],
+      "frozen": false,
+      "profile_hash": "6f93121005634b11",
+      "restore_verified": true,
+      "snapshot_id": "trunk_after_mirror_cycle_2",
+      "source_version": "v0.9.22",
+      "state_manifest_hash": "adbbc63967e091ce",
+      "token_schema_hash": "7284d96a103c4da8"
+    },
+    {
+      "allowed_updates": [],
+      "component": "mirror",
+      "curriculum_policy_hash": "18cacc016cd8c7bd",
+      "disallowed_updates": [
+        "default_runtime_profile",
+        "production_config",
+        "candidate_generation_semantics"
+      ],
+      "frozen": true,
+      "profile_hash": "a6c9f0f07cf728b7",
+      "restore_verified": true,
+      "snapshot_id": "mirror_v0_9_22_reference",
+      "source_version": "v0.9.22",
+      "state_manifest_hash": "43ebaf56f5540487",
+      "token_schema_hash": "372f73a097542547"
+    },
+    {
+      "allowed_updates": [
+        "curriculum_policy",
+        "shadow_profile_metrics"
+      ],
+      "component": "mirror",
+      "curriculum_policy_hash": "1cb956b619408793",
+      "disallowed_updates": [
+        "default_runtime_profile",
+        "production_config",
+        "candidate_generation_semantics"
+      ],
+      "frozen": false,
+      "profile_hash": "96ff8ffa0c5aaaef",
+      "restore_verified": true,
+      "snapshot_id": "mirror_after_trunk_frozen_cycle_1",
+      "source_version": "v0.9.22",
+      "state_manifest_hash": "8a05812cdad1738a",
+      "token_schema_hash": "3d97a94138dd7015"
+    },
+    {
+      "allowed_updates": [
+        "curriculum_policy",
+        "shadow_profile_metrics"
+      ],
+      "component": "mirror",
+      "curriculum_policy_hash": "07e57a74c68bab74",
+      "disallowed_updates": [
+        "default_runtime_profile",
+        "production_config",
+        "candidate_generation_semantics"
+      ],
+      "frozen": false,
+      "profile_hash": "fe8f8f7c4aa7df4d",
+      "restore_verified": true,
+      "snapshot_id": "mirror_after_trunk_frozen_cycle_2",
+      "source_version": "v0.9.22",
+      "state_manifest_hash": "d6cd281b7b3069a3",
+      "token_schema_hash": "1c341d7f4ec77168"
+    }
+  ],
+  "snapshots_created": true
+}

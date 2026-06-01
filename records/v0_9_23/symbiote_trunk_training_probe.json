@@ -1,0 +1,13 @@
+{
+  "boundary_future_misroute": 0,
+  "bounded_control_top1": 0.9254,
+  "candidate_miss": 0.0309,
+  "capability_balance_score": 0.942,
+  "compiler_verified_correctness_rate": 1.0,
+  "correct_output_in_beam": 0.9691,
+  "experimental_array_top1": 0.814,
+  "experimental_function_array_top1": 0.795,
+  "experimental_function_top1": 0.821,
+  "top1": 0.9254,
+  "trunk_training_with_frozen_mirror_positive": true
+}

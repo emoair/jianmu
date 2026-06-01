@@ -1,0 +1,16 @@
+{
+  "comfort_zone_risk_from_mix": "low",
+  "contrastive_ratio": 0.15,
+  "data_mix_passed": true,
+  "redqueen_targeted_ratio": 0.2,
+  "source_counts": {
+    "contrastive_code_modules": 150000,
+    "deterministic_grammar_ast_modules": 350000,
+    "redqueen_targeted_modules": 200000,
+    "trunk_solved_c_programs": 50000,
+    "unsupported_review_boundary_modules": 50000,
+    "v0_9_22_codecartographer_modules": 200000
+  },
+  "trunk_solved_program_ratio": 0.05,
+  "unsupported_review_ratio": 0.05
+}

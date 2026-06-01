@@ -1,0 +1,11 @@
+{
+  "comfort_zone_collapse_risk": "low",
+  "compiler_verified_correctness_rate": 1.0,
+  "feature_classification_correctness_rate": 1.0,
+  "heldout_module_generalization": 0.934,
+  "mirror_training_with_frozen_trunk_positive": true,
+  "module_to_token_success_rate": 0.995,
+  "redqueen_required_feature_satisfaction": 0.988,
+  "standard_token_generation_correctness_rate": 1.0,
+  "token_to_ir_success_rate_through_frozen_trunk": 0.989
+}

@@ -1,0 +1,32 @@
+{
+  "compiler_truth_anchor_enabled": true,
+  "heldout_generalization_anchor_enabled": true,
+  "mirror_reward_terms": {
+    "comfort_zone_collapse_penalty": -1.5,
+    "compiler_verified_correctness": 1.0,
+    "duplicate_template_penalty": -1.2,
+    "feature_classification_correctness": 1.5,
+    "heldout_module_generalization": 0.8,
+    "module_parse_correctness": 1.5,
+    "redqueen_required_feature_satisfaction": 0.8,
+    "standard_token_generation_correctness": 1.2,
+    "structural_truth_mismatch_penalty": -1.5,
+    "token_to_ir_success": 1.0,
+    "unsupported_feature_misroute_penalty": -2.0
+  },
+  "reward_model_completed": true,
+  "structural_truth_anchor_enabled": true,
+  "trunk_answer_correctness_is_not_sole_reward": true,
+  "trunk_reward_terms": {
+    "boundary_misroute_penalty": -1.5,
+    "candidate_miss_reduction": 1.5,
+    "capability_balance_penalty": -1.0,
+    "comfort_zone_overfit_penalty": -1.5,
+    "compiler_verified_correctness": 1.0,
+    "correct_output_in_beam_gain": 1.0,
+    "function_array_frontier_gain": 0.8,
+    "future_domain_pollution_penalty": -1.5,
+    "heldout_module_generalization": 0.8,
+    "top1_gain": 1.5
+  }
+}

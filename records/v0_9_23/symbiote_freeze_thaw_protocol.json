@@ -1,0 +1,63 @@
+{
+  "cycles": [
+    {
+      "allowed_state_changes": [
+        "records",
+        "shadow_metrics",
+        "curriculum_profile"
+      ],
+      "cycle_id": "cycle_a_freeze_trunk_train_mirror",
+      "disallowed_state_changes": [
+        "production_config",
+        "default_runtime_profile",
+        "main_architecture_semantics"
+      ],
+      "frozen_snapshot": "trunk_v0_9_22_reference",
+      "snapshot_restore_passed": true,
+      "thawed_component": "mirror",
+      "training_target": "StandardToken structural digestibility",
+      "update_scope": "shadow_diagnostic_only"
+    },
+    {
+      "allowed_state_changes": [
+        "records",
+        "shadow_metrics",
+        "curriculum_profile"
+      ],
+      "cycle_id": "cycle_b_freeze_mirror_train_trunk",
+      "disallowed_state_changes": [
+        "production_config",
+        "default_runtime_profile",
+        "main_architecture_semantics"
+      ],
+      "frozen_snapshot": "mirror_after_trunk_frozen_cycle_1",
+      "snapshot_restore_passed": true,
+      "thawed_component": "trunk",
+      "training_target": "StandardToken consumption and synthesis",
+      "update_scope": "shadow_diagnostic_only"
+    },
+    {
+      "allowed_state_changes": [
+        "records",
+        "shadow_metrics",
+        "curriculum_profile"
+      ],
+      "cycle_id": "cycle_c_repeat_limited",
+      "disallowed_state_changes": [
+        "production_config",
+        "default_runtime_profile",
+        "main_architecture_semantics"
+      ],
+      "frozen_snapshot": "trunk_after_mirror_cycle_1",
+      "snapshot_restore_passed": true,
+      "thawed_component": "mirror",
+      "training_target": "heldout module generalization",
+      "update_scope": "shadow_diagnostic_only"
+    }
+  ],
+  "default_profile_changed": false,
+  "freeze_thaw_protocol_completed": true,
+  "not_gan": true,
+  "real_promotion_enabled": false,
+  "trunk_not_used_as_sole_truth_verifier": true
+}

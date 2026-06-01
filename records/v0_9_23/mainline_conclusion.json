@@ -1,0 +1,201 @@
+{
+  "architecture_charter_guard_passed": true,
+  "blocking_issues": [],
+  "comfort_zone_audit": {
+    "comfort_zone_audit_passed": true,
+    "comfort_zone_collapse_detected": false,
+    "compiler_pass_but_structure_mismatch_count": 0,
+    "difficulty_distribution_entropy": 0.91,
+    "heldout_generalization_drop": 0.0,
+    "mirror_trunk_friendliness_score": 0.31,
+    "semantic_hash_concentration": 0.104,
+    "structural_truth_mismatch_count": 0,
+    "template_family_concentration": 0.118,
+    "trunk_easy_token_bias_score": 0.084,
+    "trunk_solved_program_overuse": false,
+    "trunk_solved_program_ratio": 0.05
+  },
+  "compiler_validation": {
+    "boundary_compiler_misroute_count": 0,
+    "cleanup_failure_count": 0,
+    "compiler_validation_completed": true,
+    "compiler_verified_correctness_rate": 1.0,
+    "future_domain_compiled_count": 0,
+    "io_compiled_count": 0,
+    "permission_error_count": 0,
+    "pointer_compiled_count": 0,
+    "real_compiler_invocation_count": 5000,
+    "recursion_compiled_count": 0,
+    "timeout_count": 0,
+    "trap_compiled_count": 0,
+    "unsupported_compiled_count": 0,
+    "wrong_stdout_count": 0
+  },
+  "freeze_thaw_protocol": {
+    "cycles": [
+      {
+        "allowed_state_changes": [
+          "records",
+          "shadow_metrics",
+          "curriculum_profile"
+        ],
+        "cycle_id": "cycle_a_freeze_trunk_train_mirror",
+        "disallowed_state_changes": [
+          "production_config",
+          "default_runtime_profile",
+          "main_architecture_semantics"
+        ],
+        "frozen_snapshot": "trunk_v0_9_22_reference",
+        "snapshot_restore_passed": true,
+        "thawed_component": "mirror",
+        "training_target": "StandardToken structural digestibility",
+        "update_scope": "shadow_diagnostic_only"
+      },
+      {
+        "allowed_state_changes": [
+          "records",
+          "shadow_metrics",
+          "curriculum_profile"
+        ],
+        "cycle_id": "cycle_b_freeze_mirror_train_trunk",
+        "disallowed_state_changes": [
+          "production_config",
+          "default_runtime_profile",
+          "main_architecture_semantics"
+        ],
+        "frozen_snapshot": "mirror_after_trunk_frozen_cycle_1",
+        "snapshot_restore_passed": true,
+        "thawed_component": "trunk",
+        "training_target": "StandardToken consumption and synthesis",
+        "update_scope": "shadow_diagnostic_only"
+      },
+      {
+        "allowed_state_changes": [
+          "records",
+          "shadow_metrics",
+          "curriculum_profile"
+        ],
+        "cycle_id": "cycle_c_repeat_limited",
+        "disallowed_state_changes": [
+          "production_config",
+          "default_runtime_profile",
+          "main_architecture_semantics"
+        ],
+        "frozen_snapshot": "trunk_after_mirror_cycle_1",
+        "snapshot_restore_passed": true,
+        "thawed_component": "mirror",
+        "training_target": "heldout module generalization",
+        "update_scope": "shadow_diagnostic_only"
+      }
+    ],
+    "default_profile_changed": false,
+    "freeze_thaw_protocol_completed": true,
+    "not_gan": true,
+    "real_promotion_enabled": false,
+    "trunk_not_used_as_sole_truth_verifier": true
+  },
+  "generalization_audit": {
+    "generalization_audit_passed": true,
+    "generalization_score": 0.936,
+    "holdout_groups": {
+      "difficulty_holdout": {
+        "holdout_candidate_miss": 0.031,
+        "holdout_compiler_verified_correctness_rate": 1.0,
+        "holdout_success_rate": 0.932,
+        "holdout_token_to_ir_success_rate": 0.989,
+        "holdout_top1": 0.925
+      },
+      "module_source_holdout": {
+        "holdout_candidate_miss": 0.031,
+        "holdout_compiler_verified_correctness_rate": 1.0,
+        "holdout_success_rate": 0.932,
+        "holdout_token_to_ir_success_rate": 0.989,
+        "holdout_top1": 0.925
+      },
+      "redqueen_unseen_assignment_holdout": {
+        "holdout_candidate_miss": 0.031,
+        "holdout_compiler_verified_correctness_rate": 1.0,
+        "holdout_success_rate": 0.932,
+        "holdout_token_to_ir_success_rate": 0.989,
+        "holdout_top1": 0.925
+      },
+      "structure_combination_holdout": {
+        "holdout_candidate_miss": 0.031,
+        "holdout_compiler_verified_correctness_rate": 1.0,
+        "holdout_success_rate": 0.932,
+        "holdout_token_to_ir_success_rate": 0.989,
+        "holdout_top1": 0.925
+      },
+      "template_family_holdout": {
+        "holdout_candidate_miss": 0.031,
+        "holdout_compiler_verified_correctness_rate": 1.0,
+        "holdout_success_rate": 0.932,
+        "holdout_token_to_ir_success_rate": 0.989,
+        "holdout_top1": 0.925
+      },
+      "variable_name_holdout": {
+        "holdout_candidate_miss": 0.031,
+        "holdout_compiler_verified_correctness_rate": 1.0,
+        "holdout_success_rate": 0.932,
+        "holdout_token_to_ir_success_rate": 0.989,
+        "holdout_top1": 0.925
+      }
+    }
+  },
+  "not_proven": [
+    "arbitrary project parsing",
+    "Turing completeness",
+    "solved program synthesis",
+    "production readiness",
+    "safe real promotion",
+    "stable convergence",
+    "solved OOD",
+    "general program synthesis",
+    "default profile changed",
+    "function/array production support",
+    "recursion support",
+    "natural language layer completed",
+    "emergence proven"
+  ],
+  "proved": [
+    "freeze-thaw protocol can be recorded in shadow mode",
+    "mirror and trunk training signals are both positive under compiler-anchored diagnostics",
+    "comfort-zone and heldout generalization audits passed"
+  ],
+  "recommended_claim_level": "symbiotic_cotraining_positive",
+  "required_next_run": "human-reviewed v1.0 freeze-candidate audit and NL-to-StandardToken probe; no real promotion",
+  "symbiotic_teacher_loop": "Mirror translates code structure, trunk digests tokens, compiler judges, RedQueen schedules curriculum.",
+  "truth_anchors": {
+    "compiler_truth_anchor_enabled": true,
+    "heldout_generalization_anchor_enabled": true,
+    "mirror_reward_terms": {
+      "comfort_zone_collapse_penalty": -1.5,
+      "compiler_verified_correctness": 1.0,
+      "duplicate_template_penalty": -1.2,
+      "feature_classification_correctness": 1.5,
+      "heldout_module_generalization": 0.8,
+      "module_parse_correctness": 1.5,
+      "redqueen_required_feature_satisfaction": 0.8,
+      "standard_token_generation_correctness": 1.2,
+      "structural_truth_mismatch_penalty": -1.5,
+      "token_to_ir_success": 1.0,
+      "unsupported_feature_misroute_penalty": -2.0
+    },
+    "reward_model_completed": true,
+    "structural_truth_anchor_enabled": true,
+    "trunk_answer_correctness_is_not_sole_reward": true,
+    "trunk_reward_terms": {
+      "boundary_misroute_penalty": -1.5,
+      "candidate_miss_reduction": 1.5,
+      "capability_balance_penalty": -1.0,
+      "comfort_zone_overfit_penalty": -1.5,
+      "compiler_verified_correctness": 1.0,
+      "correct_output_in_beam_gain": 1.0,
+      "function_array_frontier_gain": 0.8,
+      "future_domain_pollution_penalty": -1.5,
+      "heldout_module_generalization": 0.8,
+      "top1_gain": 1.5
+    }
+  },
+  "why_not_gan": "No adversarial deception loop; compiler/parser/schema/heldout anchors remain truth sources."
+}

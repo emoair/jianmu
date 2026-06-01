@@ -1,0 +1,12 @@
+{
+  "snapshot_count": 6,
+  "snapshot_ids": [
+    "trunk_v0_9_22_reference",
+    "trunk_after_mirror_cycle_1",
+    "trunk_after_mirror_cycle_2",
+    "mirror_v0_9_22_reference",
+    "mirror_after_trunk_frozen_cycle_1",
+    "mirror_after_trunk_frozen_cycle_2"
+  ],
+  "snapshot_restore_passed": true
+}

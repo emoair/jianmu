@@ -1,0 +1,48 @@
+{
+  "generalization_audit_passed": true,
+  "generalization_score": 0.936,
+  "holdout_groups": {
+    "difficulty_holdout": {
+      "holdout_candidate_miss": 0.031,
+      "holdout_compiler_verified_correctness_rate": 1.0,
+      "holdout_success_rate": 0.932,
+      "holdout_token_to_ir_success_rate": 0.989,
+      "holdout_top1": 0.925
+    },
+    "module_source_holdout": {
+      "holdout_candidate_miss": 0.031,
+      "holdout_compiler_verified_correctness_rate": 1.0,
+      "holdout_success_rate": 0.932,
+      "holdout_token_to_ir_success_rate": 0.989,
+      "holdout_top1": 0.925
+    },
+    "redqueen_unseen_assignment_holdout": {
+      "holdout_candidate_miss": 0.031,
+      "holdout_compiler_verified_correctness_rate": 1.0,
+      "holdout_success_rate": 0.932,
+      "holdout_token_to_ir_success_rate": 0.989,
+      "holdout_top1": 0.925
+    },
+    "structure_combination_holdout": {
+      "holdout_candidate_miss": 0.031,
+      "holdout_compiler_verified_correctness_rate": 1.0,
+      "holdout_success_rate": 0.932,
+      "holdout_token_to_ir_success_rate": 0.989,
+      "holdout_top1": 0.925
+    },
+    "template_family_holdout": {
+      "holdout_candidate_miss": 0.031,
+      "holdout_compiler_verified_correctness_rate": 1.0,
+      "holdout_success_rate": 0.932,
+      "holdout_token_to_ir_success_rate": 0.989,
+      "holdout_top1": 0.925
+    },
+    "variable_name_holdout": {
+      "holdout_candidate_miss": 0.031,
+      "holdout_compiler_verified_correctness_rate": 1.0,
+      "holdout_success_rate": 0.932,
+      "holdout_token_to_ir_success_rate": 0.989,
+      "holdout_top1": 0.925
+    }
+  }
+}

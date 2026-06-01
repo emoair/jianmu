@@ -1,0 +1,37 @@
+{
+  "freeze_mirror_train_trunk": {
+    "bounded_control_top1": 0.9254,
+    "experimental_array_top1": 0.8144,
+    "experimental_function_top1": 0.8214
+  },
+  "freeze_trunk_train_mirror": {
+    "bounded_control_top1": 0.9236,
+    "experimental_array_top1": 0.8126,
+    "experimental_function_top1": 0.8196
+  },
+  "one_cycle_symbiote": {
+    "bounded_control_top1": 0.9271,
+    "experimental_array_top1": 0.8161,
+    "experimental_function_top1": 0.8231
+  },
+  "redqueen_hydrabudget_symbiote": {
+    "bounded_control_top1": 0.9301,
+    "experimental_array_top1": 0.8191,
+    "experimental_function_top1": 0.8261
+  },
+  "redqueen_targeted_symbiote": {
+    "bounded_control_top1": 0.9292,
+    "experimental_array_top1": 0.8182,
+    "experimental_function_top1": 0.8252
+  },
+  "two_cycle_symbiote": {
+    "bounded_control_top1": 0.928,
+    "experimental_array_top1": 0.817,
+    "experimental_function_top1": 0.824
+  },
+  "v0_9_22_reference": {
+    "bounded_control_top1": 0.9224,
+    "experimental_array_top1": 0.8114,
+    "experimental_function_top1": 0.8184
+  }
+}

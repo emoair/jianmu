@@ -1,0 +1,30 @@
+{
+  "freeze_mirror_train_trunk": {
+    "boundary_false_accept_rate": 0.0,
+    "future_domain_false_accept_rate": 0.0
+  },
+  "freeze_trunk_train_mirror": {
+    "boundary_false_accept_rate": 0.0,
+    "future_domain_false_accept_rate": 0.0
+  },
+  "one_cycle_symbiote": {
+    "boundary_false_accept_rate": 0.0,
+    "future_domain_false_accept_rate": 0.0
+  },
+  "redqueen_hydrabudget_symbiote": {
+    "boundary_false_accept_rate": 0.0,
+    "future_domain_false_accept_rate": 0.0
+  },
+  "redqueen_targeted_symbiote": {
+    "boundary_false_accept_rate": 0.0,
+    "future_domain_false_accept_rate": 0.0
+  },
+  "two_cycle_symbiote": {
+    "boundary_false_accept_rate": 0.0,
+    "future_domain_false_accept_rate": 0.0
+  },
+  "v0_9_22_reference": {
+    "boundary_false_accept_rate": 0.0,
+    "future_domain_false_accept_rate": 0.0
+  }
+}
