@@ -1,0 +1,104 @@
+{
+  "module_map_completed": true,
+  "modules": [
+    {
+      "allowed_influence": "curriculum / required_features / failure-driven assignment",
+      "forbidden_influence": "production promotion, default profile change, unsupported capability expansion",
+      "freeze_candidate_status": "include in human review bundle",
+      "input": "failure evidence",
+      "maturity_level": "freeze-candidate evidence",
+      "module": "RedQueen",
+      "output": "curriculum assignments",
+      "role": "curriculum / required_features / failure-driven assignment",
+      "truth_anchor": "records and heldout eval"
+    },
+    {
+      "allowed_influence": "shadow budget allocation",
+      "forbidden_influence": "production promotion, default profile change, unsupported capability expansion",
+      "freeze_candidate_status": "include in human review bundle",
+      "input": "profile metrics",
+      "maturity_level": "freeze-candidate evidence",
+      "module": "HydraBudget",
+      "output": "diagnostic budget proposal",
+      "role": "shadow budget allocation",
+      "truth_anchor": "memory/accounting guards"
+    },
+    {
+      "allowed_influence": "minimal semantic difference data",
+      "forbidden_influence": "production promotion, default profile change, unsupported capability expansion",
+      "freeze_candidate_status": "include in human review bundle",
+      "input": "paired samples",
+      "maturity_level": "freeze-candidate evidence",
+      "module": "Contrastive Forge",
+      "output": "contrastive audit records",
+      "role": "minimal semantic difference data",
+      "truth_anchor": "schema/leakage audit"
+    },
+    {
+      "allowed_influence": "code/AST/IR to MirrorToken teacher",
+      "forbidden_influence": "production promotion, default profile change, unsupported capability expansion",
+      "freeze_candidate_status": "include in human review bundle",
+      "input": "supported subset code/IR",
+      "maturity_level": "freeze-candidate evidence",
+      "module": "MirrorForge",
+      "output": "MirrorToken",
+      "role": "code/AST/IR to MirrorToken teacher",
+      "truth_anchor": "roundtrip and compiler"
+    },
+    {
+      "allowed_influence": "code module to Project StandardToken teacher",
+      "forbidden_influence": "production promotion, default profile change, unsupported capability expansion",
+      "freeze_candidate_status": "include in human review bundle",
+      "input": "supported subset modules",
+      "maturity_level": "freeze-candidate evidence",
+      "module": "CodeCartographer",
+      "output": "Project StandardToken",
+      "role": "code module to Project StandardToken teacher",
+      "truth_anchor": "parser/schema/compiler"
+    },
+    {
+      "allowed_influence": "freeze-thaw co-training loop",
+      "forbidden_influence": "production promotion, default profile change, unsupported capability expansion",
+      "freeze_candidate_status": "include in human review bundle",
+      "input": "frozen mirror/trunk snapshots",
+      "maturity_level": "freeze-candidate evidence",
+      "module": "Symbiote",
+      "output": "diagnostic training signal",
+      "role": "freeze-thaw co-training loop",
+      "truth_anchor": "compiler/heldout/generalization"
+    },
+    {
+      "allowed_influence": "compiler verification",
+      "forbidden_influence": "production promotion, default profile change, unsupported capability expansion",
+      "freeze_candidate_status": "include in human review bundle",
+      "input": "candidate C source from supported IR",
+      "maturity_level": "validation protocol",
+      "module": "IronJudge",
+      "output": "compile/run/stdout evidence",
+      "role": "compiler verification",
+      "truth_anchor": "real MSVC cl.exe"
+    },
+    {
+      "allowed_influence": "boundary contract",
+      "forbidden_influence": "production promotion, default profile change, unsupported capability expansion",
+      "freeze_candidate_status": "include in human review bundle",
+      "input": "architecture docs",
+      "maturity_level": "freeze-candidate evidence",
+      "module": "Architecture Charter",
+      "output": "allowed/forbidden influence",
+      "role": "boundary contract",
+      "truth_anchor": "charter guard"
+    },
+    {
+      "allowed_influence": "evidence ledger",
+      "forbidden_influence": "production promotion, default profile change, unsupported capability expansion",
+      "freeze_candidate_status": "include in human review bundle",
+      "input": "datasets and traces",
+      "maturity_level": "freeze-candidate evidence",
+      "module": "Dataset/Audit/Records system",
+      "output": "records/reports",
+      "role": "evidence ledger",
+      "truth_anchor": "leakage and reproducibility audit"
+    }
+  ]
+}

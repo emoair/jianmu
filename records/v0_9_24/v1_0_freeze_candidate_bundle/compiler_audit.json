@@ -1,0 +1,40 @@
+{
+  "accounting_reconciled": true,
+  "boundary_misroute_total": 0,
+  "cleanup_total": 0,
+  "compiler_audit_passed": true,
+  "compiler_correctness_by_version": {
+    "v0_9_17": 1.0,
+    "v0_9_20": 1.0,
+    "v0_9_20_1": 1.0,
+    "v0_9_21": 1.0,
+    "v0_9_21_1": 1.0,
+    "v0_9_22": 1.0,
+    "v0_9_23": 1.0
+  },
+  "future_domain_compiled_total": 0,
+  "invocations_by_version": {
+    "v0_9_17": 500,
+    "v0_9_18": 750,
+    "v0_9_18_1": 0,
+    "v0_9_18_2": 27800,
+    "v0_9_19": 0,
+    "v0_9_20": 5000,
+    "v0_9_20_1": 5000,
+    "v0_9_21": 5000,
+    "v0_9_21_1": 5000,
+    "v0_9_22": 5000,
+    "v0_9_23": 5000
+  },
+  "io_compiled_total": 0,
+  "note": "Compiler validation means real MSVC cl.exe compile/run/stdout verification. Compiler is verifier, not curriculum policy.",
+  "permission_total": 0,
+  "pointer_compiled_total": 0,
+  "recursion_compiled_total": 0,
+  "strongest_compiler_evidence": "v0_9_18_2 cumulative IronJudge plus later 5K clean validations",
+  "timeout_total": 0,
+  "total_real_compiler_invocations_accounted": 59050,
+  "trap_compiled_total": 0,
+  "unsupported_compiled_total": 0,
+  "wrong_stdout_total": 0
+}

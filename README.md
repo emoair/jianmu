@@ -574,3 +574,7 @@ v0.9.22 introduces RedQueen CodeCartographer, a single-module code-to-Project-St
 ## v0.9.23 Development Direction
 
 v0.9.23 introduces a RedQueen Symbiote freeze-thaw co-training probe. It treats Mirror/CodeCartographer as a code-structure translator, the main trunk as a StandardToken solver, the compiler as the final verifier, and RedQueen as a curriculum scheduler. The probe alternates frozen-trunk mirror training and frozen-mirror trunk training while checking for comfort-zone collapse and heldout module generalization. This is symbiotic verified co-training, not GAN-style adversarial training, and it does not change production capability boundaries.
+
+## v0.9.24 Development Direction
+
+v0.9.24 performs a V1.0 freeze-candidate audit after the RedQueen Symbiote freeze-thaw co-training result. It does not add new capabilities. Instead, it aggregates evidence from v0.9.17 through v0.9.23, checks claim discipline, data-contract cleanliness, compiler-validation evidence, Architecture Charter compliance, module roles, and remaining risks. The output is a human-review-ready V1.0 freeze-candidate bundle, not a V1.0 release.

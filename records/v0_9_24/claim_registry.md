@@ -1,0 +1,22 @@
+# Claim Registry
+
+- RedQueen v2 curriculum positive signal: allowed=True
+- HydraBudget shadow budget positive signal: allowed=True
+- Contrastive Forge positive signal: allowed=True
+- MirrorForge code/AST/IR-to-token teacher positive signal: allowed=True
+- CodeCartographer supported-subset module-to-StandardToken positive signal: allowed=True
+- Symbiotic freeze-thaw co-training positive signal: allowed=True
+- real MSVC compiler-backed validation evidence: allowed=True
+- Boundary-as-Data-Contract architecture charter: allowed=True
+- v1.0 freeze candidate ready for human review: allowed=True
+- Turing completeness: allowed=False
+- solved program synthesis: allowed=False
+- production readiness: allowed=False
+- safe real promotion: allowed=False
+- default profile changed: allowed=False
+- function/array production support: allowed=False
+- recursion support: allowed=False
+- arbitrary project parsing: allowed=False
+- natural language layer completed: allowed=False
+- emergence proven: allowed=False
+- general OOD solved: allowed=False

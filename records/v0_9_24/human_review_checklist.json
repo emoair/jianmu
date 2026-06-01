@@ -1,0 +1,69 @@
+{
+  "human_review_checklist_completed": true,
+  "items": [
+    {
+      "completed": false,
+      "item": "Claim wording review"
+    },
+    {
+      "completed": false,
+      "item": "README first-screen review"
+    },
+    {
+      "completed": false,
+      "item": "Paper / technical report wording review"
+    },
+    {
+      "completed": false,
+      "item": "Dataset leakage spot check"
+    },
+    {
+      "completed": false,
+      "item": "Compiler trace spot check"
+    },
+    {
+      "completed": false,
+      "item": "Architecture Charter review"
+    },
+    {
+      "completed": false,
+      "item": "Boundary-as-Data-Contract review"
+    },
+    {
+      "completed": false,
+      "item": "Real promotion disabled review"
+    },
+    {
+      "completed": false,
+      "item": "Default profile unchanged review"
+    },
+    {
+      "completed": false,
+      "item": "Function/array experimental wording review"
+    },
+    {
+      "completed": false,
+      "item": "No natural language layer claim review"
+    },
+    {
+      "completed": false,
+      "item": "CodeCartographer not arbitrary project parser wording review"
+    },
+    {
+      "completed": false,
+      "item": "License / citation review"
+    },
+    {
+      "completed": false,
+      "item": "GitHub large file / shard review"
+    },
+    {
+      "completed": false,
+      "item": "Repro command review"
+    },
+    {
+      "completed": false,
+      "item": "Required before v1.0 release checklist"
+    }
+  ]
+}

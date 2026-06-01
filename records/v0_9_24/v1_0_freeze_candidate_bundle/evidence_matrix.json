@@ -1,0 +1,868 @@
+{
+  "architecture_charter_status": [
+    {
+      "passed": false,
+      "version": "v0_9_17"
+    },
+    {
+      "passed": false,
+      "version": "v0_9_18"
+    },
+    {
+      "passed": false,
+      "version": "v0_9_18_1"
+    },
+    {
+      "passed": false,
+      "version": "v0_9_18_2"
+    },
+    {
+      "passed": false,
+      "version": "v0_9_19"
+    },
+    {
+      "passed": true,
+      "version": "v0_9_20"
+    },
+    {
+      "passed": true,
+      "version": "v0_9_20_1"
+    },
+    {
+      "passed": true,
+      "version": "v0_9_21"
+    },
+    {
+      "passed": true,
+      "version": "v0_9_21_1"
+    },
+    {
+      "passed": true,
+      "version": "v0_9_22"
+    },
+    {
+      "passed": true,
+      "version": "v0_9_23"
+    }
+  ],
+  "best_candidate_miss": 0.0278,
+  "best_top1": 0.9301,
+  "best_version": "v0_9_23",
+  "boundary_cleanliness_progression": [
+    {
+      "boundary_misroute_count": 0,
+      "future_domain_compiled_count": 0,
+      "version": "v0_9_17"
+    },
+    {
+      "boundary_misroute_count": 0,
+      "future_domain_compiled_count": 0,
+      "version": "v0_9_18"
+    },
+    {
+      "boundary_misroute_count": 0,
+      "future_domain_compiled_count": 0,
+      "version": "v0_9_18_1"
+    },
+    {
+      "boundary_misroute_count": 0,
+      "future_domain_compiled_count": 0,
+      "version": "v0_9_18_2"
+    },
+    {
+      "boundary_misroute_count": 0,
+      "future_domain_compiled_count": 0,
+      "version": "v0_9_19"
+    },
+    {
+      "boundary_misroute_count": 0,
+      "future_domain_compiled_count": 0,
+      "version": "v0_9_20"
+    },
+    {
+      "boundary_misroute_count": 0,
+      "future_domain_compiled_count": 0,
+      "version": "v0_9_20_1"
+    },
+    {
+      "boundary_misroute_count": 0,
+      "future_domain_compiled_count": 0,
+      "version": "v0_9_21"
+    },
+    {
+      "boundary_misroute_count": 0,
+      "future_domain_compiled_count": 0,
+      "version": "v0_9_21_1"
+    },
+    {
+      "boundary_misroute_count": 0,
+      "future_domain_compiled_count": 0,
+      "version": "v0_9_22"
+    },
+    {
+      "boundary_misroute_count": 0,
+      "future_domain_compiled_count": 0,
+      "version": "v0_9_23"
+    }
+  ],
+  "candidate_miss_progression": [
+    {
+      "candidate_miss": 0.05846,
+      "version": "v0_9_17"
+    },
+    {
+      "candidate_miss": 0.0428,
+      "version": "v0_9_20"
+    },
+    {
+      "candidate_miss": 0.0392,
+      "version": "v0_9_20_1"
+    },
+    {
+      "candidate_miss": 0.0364,
+      "version": "v0_9_21"
+    },
+    {
+      "candidate_miss": 0.0352,
+      "version": "v0_9_21_1"
+    },
+    {
+      "candidate_miss": 0.0332,
+      "version": "v0_9_22"
+    },
+    {
+      "candidate_miss": 0.0278,
+      "version": "v0_9_23"
+    }
+  ],
+  "compiler_validation_progression": [
+    {
+      "invocations": 500,
+      "rate": 1.0,
+      "version": "v0_9_17"
+    },
+    {
+      "invocations": 750,
+      "rate": null,
+      "version": "v0_9_18"
+    },
+    {
+      "invocations": 0,
+      "rate": null,
+      "version": "v0_9_18_1"
+    },
+    {
+      "invocations": 27800,
+      "rate": null,
+      "version": "v0_9_18_2"
+    },
+    {
+      "invocations": 0,
+      "rate": null,
+      "version": "v0_9_19"
+    },
+    {
+      "invocations": 5000,
+      "rate": 1.0,
+      "version": "v0_9_20"
+    },
+    {
+      "invocations": 5000,
+      "rate": 1.0,
+      "version": "v0_9_20_1"
+    },
+    {
+      "invocations": 5000,
+      "rate": 1.0,
+      "version": "v0_9_21"
+    },
+    {
+      "invocations": 5000,
+      "rate": 1.0,
+      "version": "v0_9_21_1"
+    },
+    {
+      "invocations": 5000,
+      "rate": 1.0,
+      "version": "v0_9_22"
+    },
+    {
+      "invocations": 5000,
+      "rate": 1.0,
+      "version": "v0_9_23"
+    }
+  ],
+  "data_contract_cleanliness_progression": [
+    {
+      "leakage_counts": {
+        "expected_output_leakage_count": 0,
+        "input_contains_expected_output_count": 0,
+        "target_ir_contains_c_source_count": 0
+      },
+      "version": "v0_9_17"
+    },
+    {
+      "leakage_counts": {
+        "expected_output_leakage_count": 0,
+        "input_contains_expected_output_count": 0,
+        "target_ir_contains_c_source_count": 0
+      },
+      "version": "v0_9_18"
+    },
+    {
+      "leakage_counts": {
+        "expected_output_leakage_count": 0,
+        "input_contains_expected_output_count": 0,
+        "target_ir_contains_c_source_count": 0
+      },
+      "version": "v0_9_18_1"
+    },
+    {
+      "leakage_counts": {
+        "expected_output_leakage_count": 0,
+        "input_contains_expected_output_count": 0,
+        "target_ir_contains_c_source_count": 0
+      },
+      "version": "v0_9_18_2"
+    },
+    {
+      "leakage_counts": {
+        "expected_output_leakage_count": 0,
+        "input_contains_expected_output_count": 0,
+        "target_ir_contains_c_source_count": 0
+      },
+      "version": "v0_9_19"
+    },
+    {
+      "leakage_counts": {
+        "expected_output_leakage_count": 0,
+        "input_contains_expected_output_count": 0,
+        "target_ir_contains_c_source_count": 0
+      },
+      "version": "v0_9_20"
+    },
+    {
+      "leakage_counts": {
+        "expected_output_leakage_count": 0,
+        "input_contains_expected_output_count": 0,
+        "target_ir_contains_c_source_count": 0
+      },
+      "version": "v0_9_20_1"
+    },
+    {
+      "leakage_counts": {
+        "expected_output_leakage_count": 0,
+        "input_contains_expected_output_count": 0,
+        "target_ir_contains_c_source_count": 0
+      },
+      "version": "v0_9_21"
+    },
+    {
+      "leakage_counts": {
+        "expected_output_leakage_count": 0,
+        "input_contains_expected_output_count": 0,
+        "target_ir_contains_c_source_count": 0
+      },
+      "version": "v0_9_21_1"
+    },
+    {
+      "leakage_counts": {
+        "expected_output_leakage_count": 0,
+        "input_contains_expected_output_count": 0,
+        "target_ir_contains_c_source_count": 0
+      },
+      "version": "v0_9_22"
+    },
+    {
+      "leakage_counts": {
+        "expected_output_leakage_count": 0,
+        "input_contains_expected_output_count": 0,
+        "target_ir_contains_c_source_count": 0
+      },
+      "version": "v0_9_23"
+    }
+  ],
+  "missing_records": [],
+  "readiness_progression": [
+    {
+      "claim": "redqueen_hydrabudget_combined_positive",
+      "ready_for_freeze": false,
+      "version": "v0_9_17"
+    },
+    {
+      "claim": "frontier_mixed_needs_failure_taxonomy",
+      "ready_for_freeze": false,
+      "version": "v0_9_18"
+    },
+    {
+      "claim": "ironjudge_20k_clean_frontier_evidence_strengthened",
+      "ready_for_freeze": false,
+      "version": "v0_9_18_1"
+    },
+    {
+      "claim": "ironjudge_20k_clean_frontier_evidence_reconciled",
+      "ready_for_freeze": false,
+      "version": "v0_9_18_2"
+    },
+    {
+      "claim": "redqueen_autopsy_complete_ready_for_v2_bandit",
+      "ready_for_freeze": false,
+      "version": "v0_9_19"
+    },
+    {
+      "claim": "redqueen_v2_bandit_contrastive_positive",
+      "ready_for_freeze": true,
+      "version": "v0_9_20"
+    },
+    {
+      "claim": "redqueen_v2_large_loop_reproduced_and_strengthened",
+      "ready_for_freeze": true,
+      "version": "v0_9_20_1"
+    },
+    {
+      "claim": "mirrorforge_code_to_token_teacher_positive",
+      "ready_for_freeze": true,
+      "version": "v0_9_21"
+    },
+    {
+      "claim": "mirrorforge_abstraction_robust_teacher_layer",
+      "ready_for_freeze": true,
+      "version": "v0_9_21_1"
+    },
+    {
+      "claim": "codecartographer_module_to_standardtoken_teacher_positive",
+      "ready_for_freeze": true,
+      "version": "v0_9_22"
+    },
+    {
+      "claim": "symbiotic_cotraining_positive",
+      "ready_for_freeze": true,
+      "version": "v0_9_23"
+    }
+  ],
+  "strongest_code_to_token_evidence_version": "v0_9_22",
+  "strongest_compiler_evidence_version": "v0_9_18_2",
+  "strongest_contrastive_evidence_version": "v0_9_20_1",
+  "strongest_symbiote_evidence_version": "v0_9_23",
+  "top1_progression": [
+    {
+      "top1": 0.8824,
+      "version": "v0_9_17"
+    },
+    {
+      "top1": 0.9042,
+      "version": "v0_9_20"
+    },
+    {
+      "top1": 0.912,
+      "version": "v0_9_20_1"
+    },
+    {
+      "top1": 0.917,
+      "version": "v0_9_21"
+    },
+    {
+      "top1": 0.9191,
+      "version": "v0_9_21_1"
+    },
+    {
+      "top1": 0.9224,
+      "version": "v0_9_22"
+    },
+    {
+      "top1": 0.9301,
+      "version": "v0_9_23"
+    }
+  ],
+  "versions": [
+    {
+      "architecture_charter_passed": false,
+      "blocking_issues": [],
+      "boundary_misroute_count": 0,
+      "branch": "v0.9.17-redqueen-hydrabudget",
+      "candidate_miss": 0.05846,
+      "compiler_correctness_rate": 1.0,
+      "compiler_invocations": 500,
+      "correct_output_in_beam": null,
+      "default_profile_changed": false,
+      "experiment_name": "RedQueen + HydraBudget",
+      "future_domain_compiled_count": 0,
+      "leakage_counts": {
+        "expected_output_leakage_count": 0,
+        "input_contains_expected_output_count": 0,
+        "target_ir_contains_c_source_count": 0
+      },
+      "not_proven_list": [
+        "arbitrary project parsing",
+        "Turing completeness",
+        "solved program synthesis",
+        "production readiness",
+        "safe real promotion",
+        "stable convergence",
+        "solved OOD",
+        "general program synthesis",
+        "default profile changed",
+        "function/array production support",
+        "recursion support",
+        "natural language layer completed",
+        "emergence proven"
+      ],
+      "readiness_for_freeze": false,
+      "real_promotion_enabled": false,
+      "recommended_claim_level": "redqueen_hydrabudget_combined_positive",
+      "recursion_pointer_io_compiled_counts": {
+        "io": 0,
+        "pointer": 0,
+        "recursion": 0
+      },
+      "top1": 0.8824,
+      "version": "v0_9_17",
+      "wrong_stdout_count": 0
+    },
+    {
+      "architecture_charter_passed": false,
+      "blocking_issues": [
+        "ironjudge_gate_5k_partial",
+        "ironjudge_main_20k_partial",
+        "ironjudge_extended_50k_partial"
+      ],
+      "boundary_misroute_count": 0,
+      "branch": "v0.9.18-forgefrontier",
+      "candidate_miss": null,
+      "compiler_correctness_rate": null,
+      "compiler_invocations": 750,
+      "correct_output_in_beam": null,
+      "default_profile_changed": false,
+      "experiment_name": "ForgeFrontier compiler frontier",
+      "future_domain_compiled_count": 0,
+      "leakage_counts": {
+        "expected_output_leakage_count": 0,
+        "input_contains_expected_output_count": 0,
+        "target_ir_contains_c_source_count": 0
+      },
+      "not_proven_list": [
+        "arbitrary project parsing",
+        "Turing completeness",
+        "solved program synthesis",
+        "production readiness",
+        "safe real promotion",
+        "stable convergence",
+        "solved OOD",
+        "general program synthesis",
+        "default profile changed",
+        "function/array production support",
+        "recursion support",
+        "natural language layer completed",
+        "emergence proven"
+      ],
+      "readiness_for_freeze": false,
+      "real_promotion_enabled": false,
+      "recommended_claim_level": "frontier_mixed_needs_failure_taxonomy",
+      "recursion_pointer_io_compiled_counts": {
+        "io": 0,
+        "pointer": 0,
+        "recursion": 0
+      },
+      "top1": null,
+      "version": "v0_9_18",
+      "wrong_stdout_count": 0
+    },
+    {
+      "architecture_charter_passed": false,
+      "blocking_issues": [
+        "extended_50k_partial"
+      ],
+      "boundary_misroute_count": 0,
+      "branch": "v0.9.18.1-ironjudge-scaleup",
+      "candidate_miss": null,
+      "compiler_correctness_rate": null,
+      "compiler_invocations": 0,
+      "correct_output_in_beam": null,
+      "default_profile_changed": false,
+      "experiment_name": "IronJudge scale-up",
+      "future_domain_compiled_count": 0,
+      "leakage_counts": {
+        "expected_output_leakage_count": 0,
+        "input_contains_expected_output_count": 0,
+        "target_ir_contains_c_source_count": 0
+      },
+      "not_proven_list": [
+        "arbitrary project parsing",
+        "Turing completeness",
+        "solved program synthesis",
+        "production readiness",
+        "safe real promotion",
+        "stable convergence",
+        "solved OOD",
+        "general program synthesis",
+        "default profile changed",
+        "function/array production support",
+        "recursion support",
+        "natural language layer completed",
+        "emergence proven"
+      ],
+      "readiness_for_freeze": false,
+      "real_promotion_enabled": false,
+      "recommended_claim_level": "ironjudge_20k_clean_frontier_evidence_strengthened",
+      "recursion_pointer_io_compiled_counts": {
+        "io": 0,
+        "pointer": 0,
+        "recursion": 0
+      },
+      "top1": null,
+      "version": "v0_9_18_1",
+      "wrong_stdout_count": 0
+    },
+    {
+      "architecture_charter_passed": false,
+      "blocking_issues": [],
+      "boundary_misroute_count": 0,
+      "branch": "v0.9.18.2-ironjudge-accounting",
+      "candidate_miss": null,
+      "compiler_correctness_rate": null,
+      "compiler_invocations": 27800,
+      "correct_output_in_beam": null,
+      "default_profile_changed": false,
+      "experiment_name": "IronJudge reconciled accounting",
+      "future_domain_compiled_count": 0,
+      "leakage_counts": {
+        "expected_output_leakage_count": 0,
+        "input_contains_expected_output_count": 0,
+        "target_ir_contains_c_source_count": 0
+      },
+      "not_proven_list": [
+        "arbitrary project parsing",
+        "Turing completeness",
+        "solved program synthesis",
+        "production readiness",
+        "safe real promotion",
+        "stable convergence",
+        "solved OOD",
+        "general program synthesis",
+        "default profile changed",
+        "function/array production support",
+        "recursion support",
+        "natural language layer completed",
+        "emergence proven"
+      ],
+      "readiness_for_freeze": false,
+      "real_promotion_enabled": false,
+      "recommended_claim_level": "ironjudge_20k_clean_frontier_evidence_reconciled",
+      "recursion_pointer_io_compiled_counts": {
+        "io": 0,
+        "pointer": 0,
+        "recursion": 0
+      },
+      "top1": null,
+      "version": "v0_9_18_2",
+      "wrong_stdout_count": 0
+    },
+    {
+      "architecture_charter_passed": false,
+      "blocking_issues": [],
+      "boundary_misroute_count": 0,
+      "branch": "v0.9.19-redqueen-autopsy",
+      "candidate_miss": null,
+      "compiler_correctness_rate": null,
+      "compiler_invocations": 0,
+      "correct_output_in_beam": null,
+      "default_profile_changed": false,
+      "experiment_name": "RedQueen autopsy and contrastive prep",
+      "future_domain_compiled_count": 0,
+      "leakage_counts": {
+        "expected_output_leakage_count": 0,
+        "input_contains_expected_output_count": 0,
+        "target_ir_contains_c_source_count": 0
+      },
+      "not_proven_list": [
+        "arbitrary project parsing",
+        "Turing completeness",
+        "solved program synthesis",
+        "production readiness",
+        "safe real promotion",
+        "stable convergence",
+        "solved OOD",
+        "general program synthesis",
+        "default profile changed",
+        "function/array production support",
+        "recursion support",
+        "natural language layer completed",
+        "emergence proven"
+      ],
+      "readiness_for_freeze": false,
+      "real_promotion_enabled": false,
+      "recommended_claim_level": "redqueen_autopsy_complete_ready_for_v2_bandit",
+      "recursion_pointer_io_compiled_counts": {
+        "io": 0,
+        "pointer": 0,
+        "recursion": 0
+      },
+      "top1": null,
+      "version": "v0_9_19",
+      "wrong_stdout_count": 0
+    },
+    {
+      "architecture_charter_passed": true,
+      "blocking_issues": [],
+      "boundary_misroute_count": 0,
+      "branch": "v0.9.20-redqueen-v2-contrastive-hydrabudget",
+      "candidate_miss": 0.0428,
+      "compiler_correctness_rate": 1.0,
+      "compiler_invocations": 5000,
+      "correct_output_in_beam": null,
+      "default_profile_changed": false,
+      "experiment_name": "RedQueen v2 + Contrastive + HydraBudget",
+      "future_domain_compiled_count": 0,
+      "leakage_counts": {
+        "expected_output_leakage_count": 0,
+        "input_contains_expected_output_count": 0,
+        "target_ir_contains_c_source_count": 0
+      },
+      "not_proven_list": [
+        "arbitrary project parsing",
+        "Turing completeness",
+        "solved program synthesis",
+        "production readiness",
+        "safe real promotion",
+        "stable convergence",
+        "solved OOD",
+        "general program synthesis",
+        "default profile changed",
+        "function/array production support",
+        "recursion support",
+        "natural language layer completed",
+        "emergence proven"
+      ],
+      "readiness_for_freeze": true,
+      "real_promotion_enabled": false,
+      "recommended_claim_level": "redqueen_v2_bandit_contrastive_positive",
+      "recursion_pointer_io_compiled_counts": {
+        "io": 0,
+        "pointer": 0,
+        "recursion": 0
+      },
+      "top1": 0.9042,
+      "version": "v0_9_20",
+      "wrong_stdout_count": 0
+    },
+    {
+      "architecture_charter_passed": true,
+      "blocking_issues": [],
+      "boundary_misroute_count": 0,
+      "branch": "v0.9.20.1-redqueen-v2-large-loop",
+      "candidate_miss": 0.0392,
+      "compiler_correctness_rate": 1.0,
+      "compiler_invocations": 5000,
+      "correct_output_in_beam": null,
+      "default_profile_changed": false,
+      "experiment_name": "RedQueen v2 large loop",
+      "future_domain_compiled_count": 0,
+      "leakage_counts": {
+        "expected_output_leakage_count": 0,
+        "input_contains_expected_output_count": 0,
+        "target_ir_contains_c_source_count": 0
+      },
+      "not_proven_list": [
+        "arbitrary project parsing",
+        "Turing completeness",
+        "solved program synthesis",
+        "production readiness",
+        "safe real promotion",
+        "stable convergence",
+        "solved OOD",
+        "general program synthesis",
+        "default profile changed",
+        "function/array production support",
+        "recursion support",
+        "natural language layer completed",
+        "emergence proven"
+      ],
+      "readiness_for_freeze": true,
+      "real_promotion_enabled": false,
+      "recommended_claim_level": "redqueen_v2_large_loop_reproduced_and_strengthened",
+      "recursion_pointer_io_compiled_counts": {
+        "io": 0,
+        "pointer": 0,
+        "recursion": 0
+      },
+      "top1": 0.912,
+      "version": "v0_9_20_1",
+      "wrong_stdout_count": 0
+    },
+    {
+      "architecture_charter_passed": true,
+      "blocking_issues": [],
+      "boundary_misroute_count": 0,
+      "branch": "v0.9.21-mirrorforge-code-to-token-teacher",
+      "candidate_miss": 0.0364,
+      "compiler_correctness_rate": 1.0,
+      "compiler_invocations": 5000,
+      "correct_output_in_beam": null,
+      "default_profile_changed": false,
+      "experiment_name": "MirrorForge Code-to-Token Teacher",
+      "future_domain_compiled_count": 0,
+      "leakage_counts": {
+        "expected_output_leakage_count": 0,
+        "input_contains_expected_output_count": 0,
+        "target_ir_contains_c_source_count": 0
+      },
+      "not_proven_list": [
+        "arbitrary project parsing",
+        "Turing completeness",
+        "solved program synthesis",
+        "production readiness",
+        "safe real promotion",
+        "stable convergence",
+        "solved OOD",
+        "general program synthesis",
+        "default profile changed",
+        "function/array production support",
+        "recursion support",
+        "natural language layer completed",
+        "emergence proven"
+      ],
+      "readiness_for_freeze": true,
+      "real_promotion_enabled": false,
+      "recommended_claim_level": "mirrorforge_code_to_token_teacher_positive",
+      "recursion_pointer_io_compiled_counts": {
+        "io": 0,
+        "pointer": 0,
+        "recursion": 0
+      },
+      "top1": 0.917,
+      "version": "v0_9_21",
+      "wrong_stdout_count": 0
+    },
+    {
+      "architecture_charter_passed": true,
+      "blocking_issues": [],
+      "boundary_misroute_count": 0,
+      "branch": "v0.9.21.1-mirrorforge-abstraction-robustness",
+      "candidate_miss": 0.0352,
+      "compiler_correctness_rate": 1.0,
+      "compiler_invocations": 5000,
+      "correct_output_in_beam": null,
+      "default_profile_changed": false,
+      "experiment_name": "MirrorForge abstraction robustness",
+      "future_domain_compiled_count": 0,
+      "leakage_counts": {
+        "expected_output_leakage_count": 0,
+        "input_contains_expected_output_count": 0,
+        "target_ir_contains_c_source_count": 0
+      },
+      "not_proven_list": [
+        "Turing completeness",
+        "solved program synthesis",
+        "production readiness",
+        "safe real promotion",
+        "stable convergence",
+        "solved OOD",
+        "general program synthesis",
+        "default profile changed",
+        "function/array production support",
+        "recursion support",
+        "natural language layer completed",
+        "emergence proven"
+      ],
+      "readiness_for_freeze": true,
+      "real_promotion_enabled": false,
+      "recommended_claim_level": "mirrorforge_abstraction_robust_teacher_layer",
+      "recursion_pointer_io_compiled_counts": {
+        "io": 0,
+        "pointer": 0,
+        "recursion": 0
+      },
+      "top1": 0.9191,
+      "version": "v0_9_21_1",
+      "wrong_stdout_count": 0
+    },
+    {
+      "architecture_charter_passed": true,
+      "blocking_issues": [],
+      "boundary_misroute_count": 0,
+      "branch": "v0.9.22-redqueen-codecartographer-module-to-standardtoken-teacher",
+      "candidate_miss": 0.0332,
+      "compiler_correctness_rate": 1.0,
+      "compiler_invocations": 5000,
+      "correct_output_in_beam": null,
+      "default_profile_changed": false,
+      "experiment_name": "CodeCartographer Module-to-StandardToken Teacher",
+      "future_domain_compiled_count": 0,
+      "leakage_counts": {
+        "expected_output_leakage_count": 0,
+        "input_contains_expected_output_count": 0,
+        "target_ir_contains_c_source_count": 0
+      },
+      "not_proven_list": [
+        "arbitrary project parsing",
+        "Turing completeness",
+        "solved program synthesis",
+        "production readiness",
+        "safe real promotion",
+        "stable convergence",
+        "solved OOD",
+        "general program synthesis",
+        "default profile changed",
+        "function/array production support",
+        "recursion support",
+        "natural language layer completed",
+        "emergence proven"
+      ],
+      "readiness_for_freeze": true,
+      "real_promotion_enabled": false,
+      "recommended_claim_level": "codecartographer_module_to_standardtoken_teacher_positive",
+      "recursion_pointer_io_compiled_counts": {
+        "io": 0,
+        "pointer": 0,
+        "recursion": 0
+      },
+      "top1": 0.9224,
+      "version": "v0_9_22",
+      "wrong_stdout_count": 0
+    },
+    {
+      "architecture_charter_passed": true,
+      "blocking_issues": [],
+      "boundary_misroute_count": 0,
+      "branch": "v0.9.23-redqueen-symbiote-freeze-thaw-cotraining",
+      "candidate_miss": 0.0278,
+      "compiler_correctness_rate": 1.0,
+      "compiler_invocations": 5000,
+      "correct_output_in_beam": null,
+      "default_profile_changed": false,
+      "experiment_name": "RedQueen Symbiote Freeze-Thaw Co-Training",
+      "future_domain_compiled_count": 0,
+      "leakage_counts": {
+        "expected_output_leakage_count": 0,
+        "input_contains_expected_output_count": 0,
+        "target_ir_contains_c_source_count": 0
+      },
+      "not_proven_list": [
+        "arbitrary project parsing",
+        "Turing completeness",
+        "solved program synthesis",
+        "production readiness",
+        "safe real promotion",
+        "stable convergence",
+        "solved OOD",
+        "general program synthesis",
+        "default profile changed",
+        "function/array production support",
+        "recursion support",
+        "natural language layer completed",
+        "emergence proven"
+      ],
+      "readiness_for_freeze": true,
+      "real_promotion_enabled": false,
+      "recommended_claim_level": "symbiotic_cotraining_positive",
+      "recursion_pointer_io_compiled_counts": {
+        "io": 0,
+        "pointer": 0,
+        "recursion": 0
+      },
+      "top1": 0.9301,
+      "version": "v0_9_23",
+      "wrong_stdout_count": 0
+    }
+  ]
+}

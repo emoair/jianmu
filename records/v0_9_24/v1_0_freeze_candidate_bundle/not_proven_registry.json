@@ -1,0 +1,83 @@
+{
+  "not_proven": [
+    {
+      "claim": "arbitrary project parsing",
+      "required_future_evidence": "Separate scoped experiments, human review, and compiler/audit-backed records.",
+      "risk_if_overclaimed": "Would misrepresent diagnostic substrate evidence as broader capability.",
+      "why_not_proven": "The evidence chain validates a bounded JianMu substrate slice only."
+    },
+    {
+      "claim": "Turing completeness",
+      "required_future_evidence": "Separate scoped experiments, human review, and compiler/audit-backed records.",
+      "risk_if_overclaimed": "Would misrepresent diagnostic substrate evidence as broader capability.",
+      "why_not_proven": "The evidence chain validates a bounded JianMu substrate slice only."
+    },
+    {
+      "claim": "solved program synthesis",
+      "required_future_evidence": "Separate scoped experiments, human review, and compiler/audit-backed records.",
+      "risk_if_overclaimed": "Would misrepresent diagnostic substrate evidence as broader capability.",
+      "why_not_proven": "The evidence chain validates a bounded JianMu substrate slice only."
+    },
+    {
+      "claim": "production readiness",
+      "required_future_evidence": "Separate scoped experiments, human review, and compiler/audit-backed records.",
+      "risk_if_overclaimed": "Would misrepresent diagnostic substrate evidence as broader capability.",
+      "why_not_proven": "The evidence chain validates a bounded JianMu substrate slice only."
+    },
+    {
+      "claim": "safe real promotion",
+      "required_future_evidence": "Separate scoped experiments, human review, and compiler/audit-backed records.",
+      "risk_if_overclaimed": "Would misrepresent diagnostic substrate evidence as broader capability.",
+      "why_not_proven": "The evidence chain validates a bounded JianMu substrate slice only."
+    },
+    {
+      "claim": "stable convergence",
+      "required_future_evidence": "Separate scoped experiments, human review, and compiler/audit-backed records.",
+      "risk_if_overclaimed": "Would misrepresent diagnostic substrate evidence as broader capability.",
+      "why_not_proven": "The evidence chain validates a bounded JianMu substrate slice only."
+    },
+    {
+      "claim": "solved OOD",
+      "required_future_evidence": "Separate scoped experiments, human review, and compiler/audit-backed records.",
+      "risk_if_overclaimed": "Would misrepresent diagnostic substrate evidence as broader capability.",
+      "why_not_proven": "The evidence chain validates a bounded JianMu substrate slice only."
+    },
+    {
+      "claim": "general program synthesis",
+      "required_future_evidence": "Separate scoped experiments, human review, and compiler/audit-backed records.",
+      "risk_if_overclaimed": "Would misrepresent diagnostic substrate evidence as broader capability.",
+      "why_not_proven": "The evidence chain validates a bounded JianMu substrate slice only."
+    },
+    {
+      "claim": "default profile changed",
+      "required_future_evidence": "Separate scoped experiments, human review, and compiler/audit-backed records.",
+      "risk_if_overclaimed": "Would misrepresent diagnostic substrate evidence as broader capability.",
+      "why_not_proven": "The evidence chain validates a bounded JianMu substrate slice only."
+    },
+    {
+      "claim": "function/array production support",
+      "required_future_evidence": "Separate scoped experiments, human review, and compiler/audit-backed records.",
+      "risk_if_overclaimed": "Would misrepresent diagnostic substrate evidence as broader capability.",
+      "why_not_proven": "The evidence chain validates a bounded JianMu substrate slice only."
+    },
+    {
+      "claim": "recursion support",
+      "required_future_evidence": "Separate scoped experiments, human review, and compiler/audit-backed records.",
+      "risk_if_overclaimed": "Would misrepresent diagnostic substrate evidence as broader capability.",
+      "why_not_proven": "The evidence chain validates a bounded JianMu substrate slice only."
+    },
+    {
+      "claim": "natural language layer completed",
+      "required_future_evidence": "Separate scoped experiments, human review, and compiler/audit-backed records.",
+      "risk_if_overclaimed": "Would misrepresent diagnostic substrate evidence as broader capability.",
+      "why_not_proven": "The evidence chain validates a bounded JianMu substrate slice only."
+    },
+    {
+      "claim": "emergence proven",
+      "required_future_evidence": "Separate scoped experiments, human review, and compiler/audit-backed records.",
+      "risk_if_overclaimed": "Would misrepresent diagnostic substrate evidence as broader capability.",
+      "why_not_proven": "The evidence chain validates a bounded JianMu substrate slice only."
+    }
+  ],
+  "required_items_present": true
+}

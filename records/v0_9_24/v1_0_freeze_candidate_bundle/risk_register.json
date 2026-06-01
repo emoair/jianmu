@@ -1,0 +1,89 @@
+{
+  "risk_register_completed": true,
+  "risks": [
+    {
+      "blocking_for_freeze_candidate": false,
+      "evidence": "Tracked in v0.9.17-v0.9.23 records and v0.9.24 registries.",
+      "mitigation": "Keep freeze candidate human-review only; do not release or promote.",
+      "risk": "overclaim risk",
+      "risk_level": "medium"
+    },
+    {
+      "blocking_for_freeze_candidate": false,
+      "evidence": "Tracked in v0.9.17-v0.9.23 records and v0.9.24 registries.",
+      "mitigation": "Keep freeze candidate human-review only; do not release or promote.",
+      "risk": "dataset leakage risk",
+      "risk_level": "low"
+    },
+    {
+      "blocking_for_freeze_candidate": false,
+      "evidence": "Tracked in v0.9.17-v0.9.23 records and v0.9.24 registries.",
+      "mitigation": "Keep freeze candidate human-review only; do not release or promote.",
+      "risk": "compiler validation accounting risk",
+      "risk_level": "low"
+    },
+    {
+      "blocking_for_freeze_candidate": false,
+      "evidence": "Tracked in v0.9.17-v0.9.23 records and v0.9.24 registries.",
+      "mitigation": "Keep freeze candidate human-review only; do not release or promote.",
+      "risk": "architecture drift risk",
+      "risk_level": "low"
+    },
+    {
+      "blocking_for_freeze_candidate": false,
+      "evidence": "Tracked in v0.9.17-v0.9.23 records and v0.9.24 registries.",
+      "mitigation": "Keep freeze candidate human-review only; do not release or promote.",
+      "risk": "runtime gate creep risk",
+      "risk_level": "low"
+    },
+    {
+      "blocking_for_freeze_candidate": false,
+      "evidence": "Tracked in v0.9.17-v0.9.23 records and v0.9.24 registries.",
+      "mitigation": "Keep freeze candidate human-review only; do not release or promote.",
+      "risk": "comfort-zone collapse risk",
+      "risk_level": "low"
+    },
+    {
+      "blocking_for_freeze_candidate": false,
+      "evidence": "Tracked in v0.9.17-v0.9.23 records and v0.9.24 registries.",
+      "mitigation": "Keep freeze candidate human-review only; do not release or promote.",
+      "risk": "arbitrary project parsing overclaim risk",
+      "risk_level": "low"
+    },
+    {
+      "blocking_for_freeze_candidate": false,
+      "evidence": "Tracked in v0.9.17-v0.9.23 records and v0.9.24 registries.",
+      "mitigation": "Keep freeze candidate human-review only; do not release or promote.",
+      "risk": "function/array promotion confusion risk",
+      "risk_level": "low"
+    },
+    {
+      "blocking_for_freeze_candidate": false,
+      "evidence": "Tracked in v0.9.17-v0.9.23 records and v0.9.24 registries.",
+      "mitigation": "Keep freeze candidate human-review only; do not release or promote.",
+      "risk": "NL layer premature claim risk",
+      "risk_level": "low"
+    },
+    {
+      "blocking_for_freeze_candidate": false,
+      "evidence": "Tracked in v0.9.17-v0.9.23 records and v0.9.24 registries.",
+      "mitigation": "Keep freeze candidate human-review only; do not release or promote.",
+      "risk": "large-file / GitHub shard hygiene risk",
+      "risk_level": "low"
+    },
+    {
+      "blocking_for_freeze_candidate": false,
+      "evidence": "Tracked in v0.9.17-v0.9.23 records and v0.9.24 registries.",
+      "mitigation": "Keep freeze candidate human-review only; do not release or promote.",
+      "risk": "reproducibility risk",
+      "risk_level": "low"
+    },
+    {
+      "blocking_for_freeze_candidate": false,
+      "evidence": "Tracked in v0.9.17-v0.9.23 records and v0.9.24 registries.",
+      "mitigation": "Keep freeze candidate human-review only; do not release or promote.",
+      "risk": "human-review missing risk",
+      "risk_level": "medium"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "architecture_audit_passed": true,
+  "architecture_charter_exists": true,
+  "boundary_as_data_contract_documented": true,
+  "codecartographer_only_supported_subset_adapter": true,
+  "default_profile_unchanged": true,
+  "hydrabudget_only_shadow_budget": true,
+  "ironjudge_compiler_only_validation": true,
+  "mirrorforge_only_adapter_teacher_layer": true,
+  "no_candidate_generation_boundary_hardcode": true,
+  "no_routing_boundary_hardcode": true,
+  "no_runtime_keyword_rejection_gate": true,
+  "real_promotion_disabled_across_versions": true,
+  "redqueen_only_adjusts_curriculum_required_features": true,
+  "symbiote_trunk_not_sole_truth_verifier": true
+}

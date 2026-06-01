@@ -1,0 +1,265 @@
+{
+  "claims": [
+    {
+      "allowed": true,
+      "claim": "RedQueen v2 curriculum positive signal",
+      "evidence_paths": [
+        "records/v0_9_20",
+        "records/v0_9_20_1"
+      ],
+      "evidence_versions": [
+        "v0_9_20",
+        "v0_9_20_1"
+      ],
+      "overclaim_risk": "low",
+      "paper_safe": true,
+      "readme_safe": true,
+      "wording_recommendation": "Describe as diagnostic or freeze-candidate evidence, not as production capability."
+    },
+    {
+      "allowed": true,
+      "claim": "HydraBudget shadow budget positive signal",
+      "evidence_paths": [
+        "records/v0_9_17",
+        "records/v0_9_20",
+        "records/v0_9_20_1"
+      ],
+      "evidence_versions": [
+        "v0_9_17",
+        "v0_9_20",
+        "v0_9_20_1"
+      ],
+      "overclaim_risk": "low",
+      "paper_safe": true,
+      "readme_safe": true,
+      "wording_recommendation": "Describe as diagnostic or freeze-candidate evidence, not as production capability."
+    },
+    {
+      "allowed": true,
+      "claim": "Contrastive Forge positive signal",
+      "evidence_paths": [
+        "records/v0_9_20",
+        "records/v0_9_20_1"
+      ],
+      "evidence_versions": [
+        "v0_9_20",
+        "v0_9_20_1"
+      ],
+      "overclaim_risk": "low",
+      "paper_safe": true,
+      "readme_safe": true,
+      "wording_recommendation": "Describe as diagnostic or freeze-candidate evidence, not as production capability."
+    },
+    {
+      "allowed": true,
+      "claim": "MirrorForge code/AST/IR-to-token teacher positive signal",
+      "evidence_paths": [
+        "records/v0_9_21",
+        "records/v0_9_21_1"
+      ],
+      "evidence_versions": [
+        "v0_9_21",
+        "v0_9_21_1"
+      ],
+      "overclaim_risk": "low",
+      "paper_safe": true,
+      "readme_safe": true,
+      "wording_recommendation": "Describe as diagnostic or freeze-candidate evidence, not as production capability."
+    },
+    {
+      "allowed": true,
+      "claim": "CodeCartographer supported-subset module-to-StandardToken positive signal",
+      "evidence_paths": [
+        "records/v0_9_22"
+      ],
+      "evidence_versions": [
+        "v0_9_22"
+      ],
+      "overclaim_risk": "low",
+      "paper_safe": true,
+      "readme_safe": true,
+      "wording_recommendation": "Describe as diagnostic or freeze-candidate evidence, not as production capability."
+    },
+    {
+      "allowed": true,
+      "claim": "Symbiotic freeze-thaw co-training positive signal",
+      "evidence_paths": [
+        "records/v0_9_23"
+      ],
+      "evidence_versions": [
+        "v0_9_23"
+      ],
+      "overclaim_risk": "low",
+      "paper_safe": true,
+      "readme_safe": true,
+      "wording_recommendation": "Describe as diagnostic or freeze-candidate evidence, not as production capability."
+    },
+    {
+      "allowed": true,
+      "claim": "real MSVC compiler-backed validation evidence",
+      "evidence_paths": [
+        "records/v0_9_17",
+        "records/v0_9_18_2",
+        "records/v0_9_20",
+        "records/v0_9_20_1",
+        "records/v0_9_21",
+        "records/v0_9_22",
+        "records/v0_9_23"
+      ],
+      "evidence_versions": [
+        "v0_9_17",
+        "v0_9_18_2",
+        "v0_9_20",
+        "v0_9_20_1",
+        "v0_9_21",
+        "v0_9_22",
+        "v0_9_23"
+      ],
+      "overclaim_risk": "low",
+      "paper_safe": true,
+      "readme_safe": true,
+      "wording_recommendation": "Describe as diagnostic or freeze-candidate evidence, not as production capability."
+    },
+    {
+      "allowed": true,
+      "claim": "Boundary-as-Data-Contract architecture charter",
+      "evidence_paths": [
+        "records/v0_9_20",
+        "records/v0_9_23"
+      ],
+      "evidence_versions": [
+        "v0_9_20",
+        "v0_9_23"
+      ],
+      "overclaim_risk": "low",
+      "paper_safe": true,
+      "readme_safe": true,
+      "wording_recommendation": "Describe as diagnostic or freeze-candidate evidence, not as production capability."
+    },
+    {
+      "allowed": true,
+      "claim": "v1.0 freeze candidate ready for human review",
+      "evidence_paths": [
+        "records/v0_9_24"
+      ],
+      "evidence_versions": [
+        "v0_9_24"
+      ],
+      "overclaim_risk": "low",
+      "paper_safe": true,
+      "readme_safe": true,
+      "wording_recommendation": "Describe as diagnostic or freeze-candidate evidence, not as production capability."
+    },
+    {
+      "allowed": false,
+      "claim": "Turing completeness",
+      "evidence_paths": [],
+      "evidence_versions": [],
+      "overclaim_risk": "blocking",
+      "paper_safe": false,
+      "readme_safe": false,
+      "wording_recommendation": "Do not claim this."
+    },
+    {
+      "allowed": false,
+      "claim": "solved program synthesis",
+      "evidence_paths": [],
+      "evidence_versions": [],
+      "overclaim_risk": "blocking",
+      "paper_safe": false,
+      "readme_safe": false,
+      "wording_recommendation": "Do not claim this."
+    },
+    {
+      "allowed": false,
+      "claim": "production readiness",
+      "evidence_paths": [],
+      "evidence_versions": [],
+      "overclaim_risk": "blocking",
+      "paper_safe": false,
+      "readme_safe": false,
+      "wording_recommendation": "Do not claim this."
+    },
+    {
+      "allowed": false,
+      "claim": "safe real promotion",
+      "evidence_paths": [],
+      "evidence_versions": [],
+      "overclaim_risk": "blocking",
+      "paper_safe": false,
+      "readme_safe": false,
+      "wording_recommendation": "Do not claim this."
+    },
+    {
+      "allowed": false,
+      "claim": "default profile changed",
+      "evidence_paths": [],
+      "evidence_versions": [],
+      "overclaim_risk": "blocking",
+      "paper_safe": false,
+      "readme_safe": false,
+      "wording_recommendation": "Do not claim this."
+    },
+    {
+      "allowed": false,
+      "claim": "function/array production support",
+      "evidence_paths": [],
+      "evidence_versions": [],
+      "overclaim_risk": "blocking",
+      "paper_safe": false,
+      "readme_safe": false,
+      "wording_recommendation": "Do not claim this."
+    },
+    {
+      "allowed": false,
+      "claim": "recursion support",
+      "evidence_paths": [],
+      "evidence_versions": [],
+      "overclaim_risk": "blocking",
+      "paper_safe": false,
+      "readme_safe": false,
+      "wording_recommendation": "Do not claim this."
+    },
+    {
+      "allowed": false,
+      "claim": "arbitrary project parsing",
+      "evidence_paths": [],
+      "evidence_versions": [],
+      "overclaim_risk": "blocking",
+      "paper_safe": false,
+      "readme_safe": false,
+      "wording_recommendation": "Do not claim this."
+    },
+    {
+      "allowed": false,
+      "claim": "natural language layer completed",
+      "evidence_paths": [],
+      "evidence_versions": [],
+      "overclaim_risk": "blocking",
+      "paper_safe": false,
+      "readme_safe": false,
+      "wording_recommendation": "Do not claim this."
+    },
+    {
+      "allowed": false,
+      "claim": "emergence proven",
+      "evidence_paths": [],
+      "evidence_versions": [],
+      "overclaim_risk": "blocking",
+      "paper_safe": false,
+      "readme_safe": false,
+      "wording_recommendation": "Do not claim this."
+    },
+    {
+      "allowed": false,
+      "claim": "general OOD solved",
+      "evidence_paths": [],
+      "evidence_versions": [],
+      "overclaim_risk": "blocking",
+      "paper_safe": false,
+      "readme_safe": false,
+      "wording_recommendation": "Do not claim this."
+    }
+  ],
+  "no_claim_overreach_detected": true
+}
