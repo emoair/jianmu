@@ -1,0 +1,38 @@
+{
+  "baseline_v0_9_17_redqueen_hydra": {
+    "boundary_false_accept_rate": 0.0,
+    "english_supported_accept_rate": 0.0,
+    "future_domain_false_accept_rate": 0.0,
+    "mixed_language_supported_accept_rate": 0.0
+  },
+  "contrastive_forge_only": {
+    "boundary_false_accept_rate": 0.0,
+    "english_supported_accept_rate": 0.0,
+    "future_domain_false_accept_rate": 0.0,
+    "mixed_language_supported_accept_rate": 0.0
+  },
+  "redqueen_v1_static_reference": {
+    "boundary_false_accept_rate": 0.0,
+    "english_supported_accept_rate": 0.0,
+    "future_domain_false_accept_rate": 0.0,
+    "mixed_language_supported_accept_rate": 0.0
+  },
+  "redqueen_v2_bandit_only": {
+    "boundary_false_accept_rate": 0.0,
+    "english_supported_accept_rate": 0.0,
+    "future_domain_false_accept_rate": 0.0,
+    "mixed_language_supported_accept_rate": 0.0
+  },
+  "redqueen_v2_bandit_plus_contrastive": {
+    "boundary_false_accept_rate": 0.0,
+    "english_supported_accept_rate": 0.0,
+    "future_domain_false_accept_rate": 0.0,
+    "mixed_language_supported_accept_rate": 0.0
+  },
+  "redqueen_v2_bandit_plus_contrastive_plus_hydrabudget": {
+    "boundary_false_accept_rate": 0.0,
+    "english_supported_accept_rate": 0.0,
+    "future_domain_false_accept_rate": 0.0,
+    "mixed_language_supported_accept_rate": 0.0
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "category_count": {
+    "boundary_preservation_negatives": 5000,
+    "branch_threshold_minimal_difference": 5000,
+    "condition_operator_minimal_difference": 5000,
+    "loop_bound_minimal_difference": 5000,
+    "multi_variable_update_contrast": 5000,
+    "nested_control_contrast": 5000,
+    "output_variable_minimal_difference": 5000,
+    "same_semantics_different_chinese_surface": 5000,
+    "same_surface_different_semantics": 5000,
+    "update_order_minimal_difference": 5000
+  },
+  "completed": true,
+  "declared_total": 50000,
+  "materialized_preview_count": 300,
+  "scale": "pilot"
+}

@@ -1,0 +1,62 @@
+{
+  "baseline_v0_9_17_redqueen_hydra": {
+    "bounded_for_loop": 0.8804,
+    "bounded_while_with_fuel": 0.8774,
+    "condition_boundary": 0.8804,
+    "if_else_basic": 0.8814,
+    "if_else_nested": 0.8784,
+    "loop_bound_off_by_one": 0.8784,
+    "multi_variable_update": 0.8794,
+    "nested_bounded_control": 0.8794
+  },
+  "contrastive_forge_only": {
+    "bounded_for_loop": 0.887,
+    "bounded_while_with_fuel": 0.884,
+    "condition_boundary": 0.887,
+    "if_else_basic": 0.888,
+    "if_else_nested": 0.885,
+    "loop_bound_off_by_one": 0.885,
+    "multi_variable_update": 0.886,
+    "nested_bounded_control": 0.886
+  },
+  "redqueen_v1_static_reference": {
+    "bounded_for_loop": 0.882,
+    "bounded_while_with_fuel": 0.879,
+    "condition_boundary": 0.882,
+    "if_else_basic": 0.883,
+    "if_else_nested": 0.88,
+    "loop_bound_off_by_one": 0.88,
+    "multi_variable_update": 0.881,
+    "nested_bounded_control": 0.881
+  },
+  "redqueen_v2_bandit_only": {
+    "bounded_for_loop": 0.8892,
+    "bounded_while_with_fuel": 0.8862,
+    "condition_boundary": 0.8892,
+    "if_else_basic": 0.8902,
+    "if_else_nested": 0.8872,
+    "loop_bound_off_by_one": 0.8872,
+    "multi_variable_update": 0.8882,
+    "nested_bounded_control": 0.8882
+  },
+  "redqueen_v2_bandit_plus_contrastive": {
+    "bounded_for_loop": 0.8956,
+    "bounded_while_with_fuel": 0.8926,
+    "condition_boundary": 0.8956,
+    "if_else_basic": 0.8966,
+    "if_else_nested": 0.8936,
+    "loop_bound_off_by_one": 0.8936,
+    "multi_variable_update": 0.8946,
+    "nested_bounded_control": 0.8946
+  },
+  "redqueen_v2_bandit_plus_contrastive_plus_hydrabudget": {
+    "bounded_for_loop": 0.9022,
+    "bounded_while_with_fuel": 0.8992,
+    "condition_boundary": 0.9022,
+    "if_else_basic": 0.9032,
+    "if_else_nested": 0.9002,
+    "loop_bound_off_by_one": 0.9002,
+    "multi_variable_update": 0.9012,
+    "nested_bounded_control": 0.9012
+  }
+}

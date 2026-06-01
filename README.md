@@ -550,3 +550,7 @@ v0.9.18.2 reconciles IronJudge accounting after v0.9.18.1 produced 27,800 accoun
 ## v0.9.19 Development Direction
 
 v0.9.19 performs a RedQueen Autopsy and Causal Forge analysis after v0.9.17 showed that RedQueen Curriculum and HydraBudget improved bounded-control performance. This version does not add new capabilities. Instead, it attributes RedQueen gains by data-need spec and adversarial pattern, checks template-overfit and pseudo-diversity risks, evaluates contrastive pair coverage, and introduces Regression Sentinel checks to monitor capability balance without using a traditional replay-buffer framing. It prepares a RedQueen v2 bandit-style causal curriculum scheduler.
+
+## v0.9.20 Development Direction
+
+v0.9.20 upgrades RedQueen into a v2 causal bandit curriculum scheduler and introduces Contrastive Forge for minimal semantic-difference training pairs. It also adds an Architecture Charter stating that JianMu capability boundaries are data-contract-defined rather than runtime-hardcoded. Regression Dashboard and Capability Balance Report are offline evaluations, not replay buffers or training-time gates. This version does not claim Turing completeness or production function/array support.

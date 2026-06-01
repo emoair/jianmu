@@ -1,0 +1,11 @@
+{"arm_id": "bounded_for_loop", "audit_penalty_source": "offline_records", "epsilon": 0.2, "reward": 0.03029, "selection_reason": "exploit_high_roi", "step": 0}
+{"arm_id": "if_else_nested", "audit_penalty_source": "offline_records", "epsilon": 0.19, "reward": 0.03029, "selection_reason": "exploit_high_roi", "step": 1}
+{"arm_id": "if_else_basic", "audit_penalty_source": "offline_records", "epsilon": 0.18, "reward": 0.03029, "selection_reason": "exploit_high_roi", "step": 2}
+{"arm_id": "bounded_while_with_fuel", "audit_penalty_source": "offline_records", "epsilon": 0.17, "reward": 0.03029, "selection_reason": "exploit_high_roi", "step": 3}
+{"arm_id": "nested_bounded_control", "audit_penalty_source": "offline_records", "epsilon": 0.16, "reward": 0.02029, "selection_reason": "minimum_exploration", "step": 4}
+{"arm_id": "multi_variable_update", "audit_penalty_source": "offline_records", "epsilon": 0.15, "reward": 0.02029, "selection_reason": "minimum_exploration", "step": 5}
+{"arm_id": "condition_boundary", "audit_penalty_source": "offline_records", "epsilon": 0.14, "reward": 0.02029, "selection_reason": "minimum_exploration", "step": 6}
+{"arm_id": "loop_bound_off_by_one", "audit_penalty_source": "offline_records", "epsilon": 0.13, "reward": 0.02029, "selection_reason": "minimum_exploration", "step": 7}
+{"arm_id": "wrong_top1_contrast_pairs", "audit_penalty_source": "offline_records", "epsilon": 0.12, "reward": 0.03529, "selection_reason": "exploit_high_roi", "step": 8}
+{"arm_id": "candidate_miss_contrast_pairs", "audit_penalty_source": "offline_records", "epsilon": 0.11, "reward": 0.03529, "selection_reason": "exploit_high_roi", "step": 9}
+{"arm_id": "boundary_preservation_negatives", "audit_penalty_source": "offline_records", "epsilon": 0.1, "reward": 0.02029, "selection_reason": "minimum_exploration", "step": 10}

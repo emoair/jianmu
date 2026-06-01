@@ -1,0 +1,20 @@
+{
+  "total_pairs": 300,
+  "anchor_count": 300,
+  "positive_equivalent_count": 300,
+  "negative_minimal_diff_count": 300,
+  "pair_integrity_passed": true,
+  "pair_semantic_difference_verified": true,
+  "pair_expected_output_difference_rate": 0.66,
+  "same_semantics_output_same_rate": 1.0,
+  "same_surface_different_semantics_count": 90,
+  "same_semantics_different_surface_count": 90,
+  "duplicate_pair_count": 0,
+  "leakage_count": 0,
+  "current_supported_non_chinese_count": 0,
+  "future_domain_in_train_count": 0,
+  "function_array_recursion_current_supported_count": 0,
+  "target_ir_contains_c_source_count": 0,
+  "contrastive_coverage_score": 1.0,
+  "audit_passed": true
+}
