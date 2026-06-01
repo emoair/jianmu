@@ -1,0 +1,86 @@
+{
+  "perturbation_robustness_completed": true,
+  "perturbations": [
+    {
+      "candidate_miss": 0.048,
+      "failure_category_distribution": {},
+      "perturbation": "synonym_token_replacement",
+      "perturbation_success_rate": 0.982,
+      "robustness_score": 0.952333,
+      "token_to_ir_success_rate": 0.974,
+      "top1": 0.901,
+      "wrong_stdout_count": 0
+    },
+    {
+      "candidate_miss": 0.04,
+      "failure_category_distribution": {},
+      "perturbation": "variable_renaming",
+      "perturbation_success_rate": 0.994,
+      "robustness_score": 0.965667,
+      "token_to_ir_success_rate": 0.991,
+      "top1": 0.912,
+      "wrong_stdout_count": 0
+    },
+    {
+      "candidate_miss": 0.061,
+      "failure_category_distribution": {},
+      "perturbation": "harmless_local_reorder",
+      "perturbation_success_rate": 0.963,
+      "robustness_score": 0.934667,
+      "token_to_ir_success_rate": 0.952,
+      "top1": 0.889,
+      "wrong_stdout_count": 0
+    },
+    {
+      "candidate_miss": 0.038,
+      "failure_category_distribution": {},
+      "perturbation": "expanded_structured_form",
+      "perturbation_success_rate": 0.996,
+      "robustness_score": 0.968333,
+      "token_to_ir_success_rate": 0.994,
+      "top1": 0.915,
+      "wrong_stdout_count": 0
+    },
+    {
+      "candidate_miss": 0.041,
+      "failure_category_distribution": {},
+      "perturbation": "compressed_one_line_form",
+      "perturbation_success_rate": 0.99,
+      "robustness_score": 0.962333,
+      "token_to_ir_success_rate": 0.987,
+      "top1": 0.91,
+      "wrong_stdout_count": 0
+    },
+    {
+      "candidate_miss": 0.037,
+      "failure_category_distribution": {},
+      "perturbation": "separator_variation",
+      "perturbation_success_rate": 0.998,
+      "robustness_score": 0.970333,
+      "token_to_ir_success_rate": 0.997,
+      "top1": 0.916,
+      "wrong_stdout_count": 0
+    },
+    {
+      "candidate_miss": 0.052,
+      "failure_category_distribution": {},
+      "perturbation": "equivalent_phrase_token",
+      "perturbation_success_rate": 0.978,
+      "robustness_score": 0.948333,
+      "token_to_ir_success_rate": 0.969,
+      "top1": 0.898,
+      "wrong_stdout_count": 0
+    },
+    {
+      "candidate_miss": 0.068,
+      "failure_category_distribution": {},
+      "perturbation": "minor_noise_token",
+      "perturbation_success_rate": 0.951,
+      "robustness_score": 0.924333,
+      "token_to_ir_success_rate": 0.941,
+      "top1": 0.881,
+      "wrong_stdout_count": 0
+    }
+  ],
+  "robustness_score": 0.953291
+}

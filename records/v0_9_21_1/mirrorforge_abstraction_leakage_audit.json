@@ -1,0 +1,15 @@
+{
+  "abstraction_risk_score": 0.622,
+  "c_source_leakage_count": 0,
+  "direct_answer_token_count": 0,
+  "expected_output_leakage_count": 0,
+  "io_current_supported_count": 0,
+  "leakage_audit_passed": true,
+  "mirror_token_contains_c_source_count": 0,
+  "mirror_token_contains_expected_output_count": 0,
+  "mirror_token_contains_raw_target_ir_json_count": 0,
+  "pointer_current_supported_count": 0,
+  "recursion_current_supported_count": 0,
+  "target_ir_structure_similarity_score": 1.0,
+  "unsupported_future_in_train_current_count": 0
+}

@@ -1,0 +1,59 @@
+{
+  "completed": true,
+  "dataset_version": "v0.9.21.1_mirrorforge_abstraction_variants",
+  "partial": false,
+  "shards": {
+    "eval": [
+      {
+        "path": "eval_000.jsonl",
+        "row_count": 15000,
+        "size_bytes": 37399828
+      }
+    ],
+    "heldout": [
+      {
+        "path": "heldout_000.jsonl",
+        "row_count": 5000,
+        "size_bytes": 12457588
+      }
+    ],
+    "test": [
+      {
+        "path": "test_000.jsonl",
+        "row_count": 10000,
+        "size_bytes": 24951192
+      }
+    ],
+    "train": [
+      {
+        "path": "train_000.jsonl",
+        "row_count": 18308,
+        "size_bytes": 45787786
+      },
+      {
+        "path": "train_001.jsonl",
+        "row_count": 18303,
+        "size_bytes": 45787685
+      },
+      {
+        "path": "train_002.jsonl",
+        "row_count": 18310,
+        "size_bytes": 45788436
+      },
+      {
+        "path": "train_003.jsonl",
+        "row_count": 15079,
+        "size_bytes": 37708637
+      }
+    ]
+  },
+  "source_dataset": "datasets\\v0_9_21_mirrorforge_code_to_token",
+  "split_counts": {
+    "eval": 15000,
+    "heldout": 5000,
+    "test": 10000,
+    "train": 70000
+  },
+  "total_count": 100000,
+  "variant": "semantic"
+}

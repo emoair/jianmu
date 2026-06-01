@@ -1,0 +1,140 @@
+{
+  "ablations": [
+    {
+      "ablation": "remove_update_order",
+      "candidate_miss": 0.071,
+      "compiler_verified_correct_rate": 1.0,
+      "correct_output_in_beam": 0.929,
+      "critical_field_score": 0.4875,
+      "performance_drop_vs_lossless": 0.039,
+      "token_to_ir_success_rate": 0.86,
+      "top1": 0.878,
+      "wrong_stdout_count": 0
+    },
+    {
+      "ablation": "remove_loop_bound_explicit",
+      "candidate_miss": 0.089,
+      "compiler_verified_correct_rate": 1.0,
+      "correct_output_in_beam": 0.911,
+      "critical_field_score": 0.7,
+      "performance_drop_vs_lossless": 0.056,
+      "token_to_ir_success_rate": 0.82,
+      "top1": 0.861,
+      "wrong_stdout_count": 0
+    },
+    {
+      "ablation": "remove_condition_operator_explicit",
+      "candidate_miss": 0.078,
+      "compiler_verified_correct_rate": 1.0,
+      "correct_output_in_beam": 0.922,
+      "critical_field_score": 0.5625,
+      "performance_drop_vs_lossless": 0.045,
+      "token_to_ir_success_rate": 0.84,
+      "top1": 0.872,
+      "wrong_stdout_count": 0
+    },
+    {
+      "ablation": "remove_output_variable_explicit",
+      "candidate_miss": 0.066,
+      "compiler_verified_correct_rate": 1.0,
+      "correct_output_in_beam": 0.934,
+      "critical_field_score": 0.4125,
+      "performance_drop_vs_lossless": 0.033,
+      "token_to_ir_success_rate": 0.88,
+      "top1": 0.884,
+      "wrong_stdout_count": 0
+    },
+    {
+      "ablation": "remove_variable_initial_value_explicit",
+      "candidate_miss": 0.097,
+      "compiler_verified_correct_rate": 1.0,
+      "correct_output_in_beam": 0.903,
+      "critical_field_score": 0.8125,
+      "performance_drop_vs_lossless": 0.065,
+      "token_to_ir_success_rate": 0.79,
+      "top1": 0.852,
+      "wrong_stdout_count": 0
+    },
+    {
+      "ablation": "remove_nested_scope_marker",
+      "candidate_miss": 0.055,
+      "compiler_verified_correct_rate": 1.0,
+      "correct_output_in_beam": 0.945,
+      "critical_field_score": 0.275,
+      "performance_drop_vs_lossless": 0.022,
+      "token_to_ir_success_rate": 0.91,
+      "top1": 0.895,
+      "wrong_stdout_count": 0
+    },
+    {
+      "ablation": "remove_else_marker",
+      "candidate_miss": 0.049,
+      "compiler_verified_correct_rate": 1.0,
+      "correct_output_in_beam": 0.951,
+      "critical_field_score": 0.2,
+      "performance_drop_vs_lossless": 0.016,
+      "token_to_ir_success_rate": 0.93,
+      "top1": 0.901,
+      "wrong_stdout_count": 0
+    },
+    {
+      "ablation": "remove_function_signature_detail",
+      "candidate_miss": 0.043,
+      "compiler_verified_correct_rate": 1.0,
+      "correct_output_in_beam": 0.957,
+      "critical_field_score": 0.1125,
+      "performance_drop_vs_lossless": 0.009,
+      "token_to_ir_success_rate": 0.98,
+      "top1": 0.908,
+      "wrong_stdout_count": 0
+    },
+    {
+      "ablation": "remove_array_index_safety_marker",
+      "candidate_miss": 0.044,
+      "compiler_verified_correct_rate": 1.0,
+      "correct_output_in_beam": 0.956,
+      "critical_field_score": 0.125,
+      "performance_drop_vs_lossless": 0.01,
+      "token_to_ir_success_rate": 0.98,
+      "top1": 0.907,
+      "wrong_stdout_count": 0
+    },
+    {
+      "ablation": "remove_all_nonessential_metadata",
+      "candidate_miss": 0.046,
+      "compiler_verified_correct_rate": 1.0,
+      "correct_output_in_beam": 0.954,
+      "critical_field_score": 0.1625,
+      "performance_drop_vs_lossless": 0.013,
+      "token_to_ir_success_rate": 0.95,
+      "top1": 0.904,
+      "wrong_stdout_count": 0
+    }
+  ],
+  "field_ablation_completed": true,
+  "fields_required_for_nl_alignment": [
+    "variable_initial_value_explicit",
+    "loop_bound_explicit",
+    "condition_operator_explicit",
+    "output_variable_explicit",
+    "update_order"
+  ],
+  "fields_too_ir_like": [
+    "PROGRAM_BEGIN/PROGRAM_END structural delimiters",
+    "VAR/INIT op-like marker names"
+  ],
+  "most_critical_fields": [
+    "variable_initial_value_explicit",
+    "loop_bound_explicit",
+    "condition_operator_explicit",
+    "update_order",
+    "output_variable_explicit"
+  ],
+  "reference_candidate_miss": 0.0364,
+  "reference_top1": 0.917,
+  "removable_fields": [
+    "function_signature_detail",
+    "array_index_safety_marker",
+    "nonessential_metadata"
+  ]
+}

@@ -562,3 +562,7 @@ v0.9.20.1 scales RedQueen v2 with a larger six-hour loop and expands Contrastive
 ## v0.9.21 Development Direction
 
 v0.9.21 introduces RedQueen MirrorForge, a code/AST/IR-to-MirrorToken teacher layer. MirrorToken is a JianMu-readable semantic training token format, not natural language and not a raw target_ir dump. The version reuses existing dataset, audit, compiler-validation, RedQueen, Contrastive Forge, and Architecture Charter logic to test whether code-derived semantic tokens can become a lower-level teacher path for future NL-to-token alignment. It does not add production capabilities or change the default profile.
+
+## v0.9.21.1 Development Direction
+
+v0.9.21.1 probes MirrorForge abstraction robustness after v0.9.21 showed that code/AST/IR-derived MirrorToken is a strong JianMu-readable teacher layer. This version compares lossless, semantic, compressed, minimal, and noisy MirrorToken variants, performs field ablations and perturbation tests, audits IR-similarity/leakage risk, and assesses readiness for a future NL-to-MirrorToken adapter. It does not implement a natural language layer or change production capability boundaries.

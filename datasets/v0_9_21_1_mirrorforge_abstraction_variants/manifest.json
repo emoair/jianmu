@@ -1,0 +1,370 @@
+{
+  "abstraction_variants_generated": true,
+  "max_shard_size_mb": 43.668329,
+  "total_variant_rows": 500000,
+  "variant_count": 5,
+  "variant_results": {
+    "compressed": {
+      "audit": {
+        "audit_passed": false,
+        "max_shard_size_mb": 43.668139,
+        "mirror_token_contains_c_source_count": 0,
+        "mirror_token_contains_expected_output_count": 0,
+        "mirror_token_contains_raw_target_ir_json_count": 0,
+        "over_45mb_shard_count": 0,
+        "raw_target_ir_json_overlap_count": 0,
+        "total_count": 100000
+      },
+      "manifest": {
+        "completed": true,
+        "dataset_version": "v0.9.21.1_mirrorforge_abstraction_variants",
+        "partial": false,
+        "shards": {
+          "eval": [
+            {
+              "path": "eval_000.jsonl",
+              "row_count": 15000,
+              "size_bytes": 34759828
+            }
+          ],
+          "heldout": [
+            {
+              "path": "heldout_000.jsonl",
+              "row_count": 5000,
+              "size_bytes": 11577588
+            }
+          ],
+          "test": [
+            {
+              "path": "test_000.jsonl",
+              "row_count": 10000,
+              "size_bytes": 23191192
+            }
+          ],
+          "train": [
+            {
+              "path": "train_000.jsonl",
+              "row_count": 19694,
+              "size_bytes": 45789050
+            },
+            {
+              "path": "train_001.jsonl",
+              "row_count": 19690,
+              "size_bytes": 45789362
+            },
+            {
+              "path": "train_002.jsonl",
+              "row_count": 19696,
+              "size_bytes": 45787988
+            },
+            {
+              "path": "train_003.jsonl",
+              "row_count": 10920,
+              "size_bytes": 25386144
+            }
+          ]
+        },
+        "source_dataset": "datasets\\v0_9_21_mirrorforge_code_to_token",
+        "split_counts": {
+          "eval": 15000,
+          "heldout": 5000,
+          "test": 10000,
+          "train": 70000
+        },
+        "total_count": 100000,
+        "variant": "compressed"
+      }
+    },
+    "lossless": {
+      "audit": {
+        "audit_passed": false,
+        "max_shard_size_mb": 43.667518,
+        "mirror_token_contains_c_source_count": 0,
+        "mirror_token_contains_expected_output_count": 0,
+        "mirror_token_contains_raw_target_ir_json_count": 0,
+        "over_45mb_shard_count": 0,
+        "raw_target_ir_json_overlap_count": 0,
+        "total_count": 100000
+      },
+      "manifest": {
+        "completed": true,
+        "dataset_version": "v0.9.21.1_mirrorforge_abstraction_variants",
+        "partial": false,
+        "shards": {
+          "eval": [
+            {
+              "path": "eval_000.jsonl",
+              "row_count": 15000,
+              "size_bytes": 36184828
+            }
+          ],
+          "heldout": [
+            {
+              "path": "heldout_000.jsonl",
+              "row_count": 5000,
+              "size_bytes": 12052588
+            }
+          ],
+          "test": [
+            {
+              "path": "test_000.jsonl",
+              "row_count": 10000,
+              "size_bytes": 24141192
+            }
+          ],
+          "train": [
+            {
+              "path": "train_000.jsonl",
+              "row_count": 18921,
+              "size_bytes": 45788711
+            },
+            {
+              "path": "train_001.jsonl",
+              "row_count": 18916,
+              "size_bytes": 45787853
+            },
+            {
+              "path": "train_002.jsonl",
+              "row_count": 18923,
+              "size_bytes": 45788658
+            },
+            {
+              "path": "train_003.jsonl",
+              "row_count": 13240,
+              "size_bytes": 32037322
+            }
+          ]
+        },
+        "source_dataset": "datasets\\v0_9_21_mirrorforge_code_to_token",
+        "split_counts": {
+          "eval": 15000,
+          "heldout": 5000,
+          "test": 10000,
+          "train": 70000
+        },
+        "total_count": 100000,
+        "variant": "lossless"
+      }
+    },
+    "minimal": {
+      "audit": {
+        "audit_passed": false,
+        "max_shard_size_mb": 43.668329,
+        "mirror_token_contains_c_source_count": 0,
+        "mirror_token_contains_expected_output_count": 0,
+        "mirror_token_contains_raw_target_ir_json_count": 0,
+        "over_45mb_shard_count": 0,
+        "raw_target_ir_json_overlap_count": 0,
+        "total_count": 100000
+      },
+      "manifest": {
+        "completed": true,
+        "dataset_version": "v0.9.21.1_mirrorforge_abstraction_variants",
+        "partial": false,
+        "shards": {
+          "eval": [
+            {
+              "path": "eval_000.jsonl",
+              "row_count": 15000,
+              "size_bytes": 34459828
+            }
+          ],
+          "heldout": [
+            {
+              "path": "heldout_000.jsonl",
+              "row_count": 5000,
+              "size_bytes": 11477588
+            }
+          ],
+          "test": [
+            {
+              "path": "test_000.jsonl",
+              "row_count": 10000,
+              "size_bytes": 22991192
+            }
+          ],
+          "train": [
+            {
+              "path": "train_000.jsonl",
+              "row_count": 19865,
+              "size_bytes": 45789417
+            },
+            {
+              "path": "train_001.jsonl",
+              "row_count": 19861,
+              "size_bytes": 45789562
+            },
+            {
+              "path": "train_002.jsonl",
+              "row_count": 19867,
+              "size_bytes": 45788162
+            },
+            {
+              "path": "train_003.jsonl",
+              "row_count": 10407,
+              "size_bytes": 23985403
+            }
+          ]
+        },
+        "source_dataset": "datasets\\v0_9_21_mirrorforge_code_to_token",
+        "split_counts": {
+          "eval": 15000,
+          "heldout": 5000,
+          "test": 10000,
+          "train": 70000
+        },
+        "total_count": 100000,
+        "variant": "minimal"
+      }
+    },
+    "noisy": {
+      "audit": {
+        "audit_passed": false,
+        "max_shard_size_mb": 43.667336,
+        "mirror_token_contains_c_source_count": 0,
+        "mirror_token_contains_expected_output_count": 0,
+        "mirror_token_contains_raw_target_ir_json_count": 0,
+        "over_45mb_shard_count": 0,
+        "raw_target_ir_json_overlap_count": 0,
+        "total_count": 100000
+      },
+      "manifest": {
+        "completed": true,
+        "dataset_version": "v0.9.21.1_mirrorforge_abstraction_variants",
+        "partial": false,
+        "shards": {
+          "eval": [
+            {
+              "path": "eval_000.jsonl",
+              "row_count": 15000,
+              "size_bytes": 37129828
+            }
+          ],
+          "heldout": [
+            {
+              "path": "heldout_000.jsonl",
+              "row_count": 5000,
+              "size_bytes": 12367588
+            }
+          ],
+          "test": [
+            {
+              "path": "test_000.jsonl",
+              "row_count": 10000,
+              "size_bytes": 24771192
+            }
+          ],
+          "train": [
+            {
+              "path": "train_000.jsonl",
+              "row_count": 18441,
+              "size_bytes": 45788520
+            },
+            {
+              "path": "train_001.jsonl",
+              "row_count": 18436,
+              "size_bytes": 45788339
+            },
+            {
+              "path": "train_002.jsonl",
+              "row_count": 18442,
+              "size_bytes": 45786608
+            },
+            {
+              "path": "train_003.jsonl",
+              "row_count": 14681,
+              "size_bytes": 36449077
+            }
+          ]
+        },
+        "source_dataset": "datasets\\v0_9_21_mirrorforge_code_to_token",
+        "split_counts": {
+          "eval": 15000,
+          "heldout": 5000,
+          "test": 10000,
+          "train": 70000
+        },
+        "total_count": 100000,
+        "variant": "noisy"
+      }
+    },
+    "semantic": {
+      "audit": {
+        "audit_passed": false,
+        "max_shard_size_mb": 43.667255,
+        "mirror_token_contains_c_source_count": 0,
+        "mirror_token_contains_expected_output_count": 0,
+        "mirror_token_contains_raw_target_ir_json_count": 0,
+        "over_45mb_shard_count": 0,
+        "raw_target_ir_json_overlap_count": 0,
+        "total_count": 100000
+      },
+      "manifest": {
+        "completed": true,
+        "dataset_version": "v0.9.21.1_mirrorforge_abstraction_variants",
+        "partial": false,
+        "shards": {
+          "eval": [
+            {
+              "path": "eval_000.jsonl",
+              "row_count": 15000,
+              "size_bytes": 37399828
+            }
+          ],
+          "heldout": [
+            {
+              "path": "heldout_000.jsonl",
+              "row_count": 5000,
+              "size_bytes": 12457588
+            }
+          ],
+          "test": [
+            {
+              "path": "test_000.jsonl",
+              "row_count": 10000,
+              "size_bytes": 24951192
+            }
+          ],
+          "train": [
+            {
+              "path": "train_000.jsonl",
+              "row_count": 18308,
+              "size_bytes": 45787786
+            },
+            {
+              "path": "train_001.jsonl",
+              "row_count": 18303,
+              "size_bytes": 45787685
+            },
+            {
+              "path": "train_002.jsonl",
+              "row_count": 18310,
+              "size_bytes": 45788436
+            },
+            {
+              "path": "train_003.jsonl",
+              "row_count": 15079,
+              "size_bytes": 37708637
+            }
+          ]
+        },
+        "source_dataset": "datasets\\v0_9_21_mirrorforge_code_to_token",
+        "split_counts": {
+          "eval": 15000,
+          "heldout": 5000,
+          "test": 10000,
+          "train": 70000
+        },
+        "total_count": 100000,
+        "variant": "semantic"
+      }
+    }
+  },
+  "variants": [
+    "lossless",
+    "semantic",
+    "compressed",
+    "minimal",
+    "noisy"
+  ]
+}

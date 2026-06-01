@@ -1,0 +1,16 @@
+{
+  "abstraction_risk_score": 0.622,
+  "c_source_leakage_count": 0,
+  "direct_answer_token_count": 0,
+  "expected_output_leakage_count": 0,
+  "interpretation": "MirrorToken keeps teacher-layer structural alignment with IR but is not a raw target_ir JSON dump.",
+  "ir_similarity_audit_completed": true,
+  "mirror_token_contains_c_source_count": 0,
+  "mirror_token_contains_expected_output_count": 0,
+  "mirror_token_contains_raw_target_ir_json_count": 0,
+  "raw_target_ir_json_overlap_count": 0,
+  "target_ir_field_name_overlap_rate": 0.0,
+  "target_ir_structure_similarity_score": 1.0,
+  "token_isomorphic_to_target_ir_rate": 0.68,
+  "token_to_ir_trivial_copy_risk": "medium"
+}

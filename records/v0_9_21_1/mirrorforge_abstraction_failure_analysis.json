@@ -1,0 +1,12 @@
+{
+  "candidate_generation_failure_detected": false,
+  "compiler_semantic_failure_detected": false,
+  "dominant_failure_modes": [
+    "minimal_token_missing_initial_value",
+    "minimal_token_missing_loop_bound",
+    "local_reorder_scope_ambiguity"
+  ],
+  "failure_analysis_completed": true,
+  "notes": "Failures are diagnostic abstraction losses, not production capability regressions.",
+  "runtime_boundary_gate_detected": false
+}

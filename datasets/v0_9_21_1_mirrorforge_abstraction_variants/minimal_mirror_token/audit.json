@@ -1,0 +1,10 @@
+{
+  "audit_passed": false,
+  "max_shard_size_mb": 43.668329,
+  "mirror_token_contains_c_source_count": 0,
+  "mirror_token_contains_expected_output_count": 0,
+  "mirror_token_contains_raw_target_ir_json_count": 0,
+  "over_45mb_shard_count": 0,
+  "raw_target_ir_json_overlap_count": 0,
+  "total_count": 100000
+}

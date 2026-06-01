@@ -1,0 +1,36 @@
+{
+  "fields_too_ir_like": [
+    "PROGRAM_BEGIN/PROGRAM_END",
+    "VAR/INIT",
+    "raw structural nesting delimiters"
+  ],
+  "minimum_required_nl_dataset_size_estimate": 250000,
+  "natural_language_layer_completed": false,
+  "nl_bridge_diagnostic_completed": true,
+  "ready_for_nl_to_mirrortoken_adapter_probe": true,
+  "recommended_chinese_to_token_training_format": "Chinese NL input paired with semantic MirrorToken, not raw target_ir and not expected_output.",
+  "recommended_nl_annotation_schema": {
+    "alignment_spans": "optional phrase-to-token slots",
+    "expected_action": "train_current/isolate_future/reject/review",
+    "mirror_token_target": "semantic/compressed MirrorToken target",
+    "source_text": "Chinese problem statement",
+    "support_status": "current_supported/future_domain/unsupported/review"
+  },
+  "risks_before_nl_adapter": [
+    "slot binding ambiguity",
+    "loop bound paraphrase errors",
+    "unsupported feature over-acceptance"
+  ],
+  "stable_token_fields_for_nl": [
+    "variable_initial_value",
+    "loop_bound",
+    "condition_operator",
+    "output_variable",
+    "update_order"
+  ],
+  "unstable_token_fields_for_nl": [
+    "minimal_scope_markers",
+    "format separators",
+    "compressed aliases"
+  ]
+}

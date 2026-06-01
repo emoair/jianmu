@@ -1,0 +1,61 @@
+{
+  "abstraction_probe_completed": true,
+  "abstraction_variants_generated": true,
+  "best_candidate_miss": 0.0352,
+  "best_experiment_group": "best_abstraction_mixed_with_chinese",
+  "best_top1": 0.9191,
+  "best_variant": "semantic",
+  "blocking_issues": [],
+  "compiler_validation_clean": true,
+  "compressed_close_to_lossless": true,
+  "critical_fields_identified": true,
+  "field_ablation_completed": true,
+  "fields_too_ir_like_identified": true,
+  "ir_similarity_audit_completed": true,
+  "leakage_audit_passed": true,
+  "lossless_outperforms_all": false,
+  "minimal_viable": true,
+  "noisy_robust": true,
+  "perturbation_robustness_completed": true,
+  "ready_for_mirrortoken_v2_schema": true,
+  "ready_for_nl_to_mirrortoken_adapter_probe": true,
+  "ready_for_v1_0_substrate_freeze_candidate": true,
+  "recommended_claim_level": "mirrorforge_abstraction_robust_teacher_layer",
+  "required_next_run": "MirrorToken v2 semantic schema review and NL-to-MirrorToken adapter probe; no real promotion",
+  "schema_v2_recommendation": {
+    "critical_fields_to_keep": [
+      "variable_initial_value_explicit",
+      "loop_bound_explicit",
+      "condition_operator_explicit",
+      "update_order",
+      "output_variable_explicit"
+    ],
+    "ready_for_mirrortoken_v2_schema": true,
+    "recommended_v2_changes": [
+      "Prefer semantic field names over op-like VAR/INIT markers",
+      "Keep explicit loop bound, condition operator, update order, and output variable",
+      "Keep lossless normalized form only as offline teacher metadata",
+      "Do not expose raw target_ir JSON in token input"
+    ],
+    "robustness_score": 0.953291,
+    "schema_v2_recommendation": "conservative_semantic_v2"
+  },
+  "semantic_close_to_lossless": true,
+  "still_not_proven": [
+    "Turing completeness",
+    "solved program synthesis",
+    "production readiness",
+    "safe real promotion",
+    "stable convergence",
+    "solved OOD",
+    "general program synthesis",
+    "default profile changed",
+    "function/array production support",
+    "recursion support",
+    "natural language layer completed",
+    "emergence proven"
+  ],
+  "training_eval_completed": true,
+  "v0_9_21_reference_candidate_miss": 0.0364,
+  "v0_9_21_reference_top1": 0.917
+}

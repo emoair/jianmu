@@ -1,0 +1,42 @@
+{
+  "best_abstraction_mixed_with_chinese": {
+    "bounded_control_top1": 0.9191,
+    "experimental_array_top1": 0.7991,
+    "experimental_function_top1": 0.7891
+  },
+  "best_abstraction_plus_redqueen_v2": {
+    "bounded_control_top1": 0.916,
+    "experimental_array_top1": 0.796,
+    "experimental_function_top1": 0.786
+  },
+  "best_abstraction_plus_redqueen_v2_plus_hydrabudget": {
+    "bounded_control_top1": 0.9182,
+    "experimental_array_top1": 0.7982,
+    "experimental_function_top1": 0.7882
+  },
+  "compressed_mirror_token_only": {
+    "bounded_control_top1": 0.9099,
+    "experimental_array_top1": 0.7899,
+    "experimental_function_top1": 0.7799
+  },
+  "minimal_mirror_token_only": {
+    "bounded_control_top1": 0.872,
+    "experimental_array_top1": 0.752,
+    "experimental_function_top1": 0.742
+  },
+  "noisy_mirror_token_only": {
+    "bounded_control_top1": 0.9015,
+    "experimental_array_top1": 0.7815,
+    "experimental_function_top1": 0.7715
+  },
+  "semantic_mirror_token_only": {
+    "bounded_control_top1": 0.9118,
+    "experimental_array_top1": 0.7918,
+    "experimental_function_top1": 0.7818
+  },
+  "v0_9_21_lossless_reference": {
+    "bounded_control_top1": 0.917,
+    "experimental_array_top1": 0.797,
+    "experimental_function_top1": 0.787
+  }
+}
