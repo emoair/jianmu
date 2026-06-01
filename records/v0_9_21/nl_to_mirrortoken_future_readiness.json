@@ -1,0 +1,20 @@
+{
+  "chinese_to_token_future_adapter_possible": true,
+  "mirror_token_schema_stable": true,
+  "recommended_next_steps_for_1_1": "build Chinese NL-to-MirrorToken adapter using audited token teacher data",
+  "required_future_nl_fields": [
+    "source_text",
+    "mirror_token_target",
+    "alignment_span",
+    "support_status",
+    "expected_action"
+  ],
+  "risks_for_nl_alignment": [
+    "paraphrase ambiguity",
+    "slot binding errors",
+    "unsupported feature misclassification"
+  ],
+  "token_examples_available": true,
+  "token_grammar_documented": true,
+  "token_to_ir_roundtrip_ready": true
+}

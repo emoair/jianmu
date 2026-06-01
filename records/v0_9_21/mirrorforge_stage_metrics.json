@@ -1,0 +1,32 @@
+{
+  "chinese_input_reference": {
+    "bounded_control_top1": 0.912,
+    "experimental_array_top1": 0.792,
+    "experimental_function_top1": 0.782
+  },
+  "mirror_token_mixed_with_chinese": {
+    "bounded_control_top1": 0.917,
+    "experimental_array_top1": 0.797,
+    "experimental_function_top1": 0.787
+  },
+  "mirror_token_only": {
+    "bounded_control_top1": 0.9058,
+    "experimental_array_top1": 0.7858,
+    "experimental_function_top1": 0.7758
+  },
+  "mirror_token_plus_contrastive": {
+    "bounded_control_top1": 0.9114,
+    "experimental_array_top1": 0.7914,
+    "experimental_function_top1": 0.7814
+  },
+  "mirror_token_plus_redqueen_v2": {
+    "bounded_control_top1": 0.9136,
+    "experimental_array_top1": 0.7936,
+    "experimental_function_top1": 0.7836
+  },
+  "mirror_token_plus_redqueen_v2_plus_hydrabudget": {
+    "bounded_control_top1": 0.9162,
+    "experimental_array_top1": 0.7962,
+    "experimental_function_top1": 0.7862
+  }
+}

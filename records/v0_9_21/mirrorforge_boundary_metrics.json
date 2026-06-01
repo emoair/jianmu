@@ -1,0 +1,26 @@
+{
+  "chinese_input_reference": {
+    "boundary_false_accept_rate": 0.0,
+    "future_domain_false_accept_rate": 0.0
+  },
+  "mirror_token_mixed_with_chinese": {
+    "boundary_false_accept_rate": 0.0,
+    "future_domain_false_accept_rate": 0.0
+  },
+  "mirror_token_only": {
+    "boundary_false_accept_rate": 0.0,
+    "future_domain_false_accept_rate": 0.0
+  },
+  "mirror_token_plus_contrastive": {
+    "boundary_false_accept_rate": 0.0,
+    "future_domain_false_accept_rate": 0.0
+  },
+  "mirror_token_plus_redqueen_v2": {
+    "boundary_false_accept_rate": 0.0,
+    "future_domain_false_accept_rate": 0.0
+  },
+  "mirror_token_plus_redqueen_v2_plus_hydrabudget": {
+    "boundary_false_accept_rate": 0.0,
+    "future_domain_false_accept_rate": 0.0
+  }
+}

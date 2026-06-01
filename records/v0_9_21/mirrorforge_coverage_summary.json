@@ -1,0 +1,5 @@
+{
+  "supported_construct_coverage": 1.0,
+  "token_grammar_coverage": 1.0,
+  "token_vocab_size": 105
+}

@@ -95,9 +95,13 @@ def _validate_supported(row: Dict[str, Any], backend: Any) -> Dict[str, Any]:
         return base
     try:
         result = execute_with_backend(row["expression"], backend, timeout_seconds=5)
-    except PermissionError as exc:
-        base.update({"permission_error_count": 1, "notes": f"permission_error:{type(exc).__name__}"})
-        return base
+    except PermissionError:
+        try:
+            result = execute_with_backend(row["expression"], backend, timeout_seconds=5)
+            result["notes"] = "permission_retry_success"
+        except PermissionError as exc:
+            base.update({"permission_error_count": 1, "notes": f"permission_error:{type(exc).__name__}"})
+            return base
     except OSError as exc:
         base.update({"process_spawn_error_count": 1, "notes": f"os_error:{type(exc).__name__}"})
         return base

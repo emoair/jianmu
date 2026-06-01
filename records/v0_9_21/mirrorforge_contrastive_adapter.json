@@ -1,0 +1,10 @@
+{
+  "contrastive_adapter_completed": true,
+  "contrastive_pair_types": [
+    "token_order_minimal_difference",
+    "loop_bound_token_difference",
+    "condition_operator_token_difference",
+    "output_variable_token_difference"
+  ],
+  "uses_existing_contrastive_logic": true
+}

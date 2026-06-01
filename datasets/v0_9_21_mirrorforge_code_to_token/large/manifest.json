@@ -1,0 +1,44 @@
+{
+  "completed": false,
+  "dataset_version": "v0.9.21_mirrorforge_code_to_token",
+  "materialized_count": 20000,
+  "partial": true,
+  "partial_reason": "resource_guard_representative_materialization",
+  "scale": "large",
+  "shards": {
+    "eval": [
+      {
+        "path": "eval_000.jsonl",
+        "row_count": 3000,
+        "size_bytes": 6642281
+      }
+    ],
+    "heldout": [
+      {
+        "path": "heldout_000.jsonl",
+        "row_count": 1000,
+        "size_bytes": 2212296
+      }
+    ],
+    "test": [
+      {
+        "path": "test_000.jsonl",
+        "row_count": 2000,
+        "size_bytes": 4431785
+      }
+    ],
+    "train": [
+      {
+        "path": "train_000.jsonl",
+        "row_count": 14000,
+        "size_bytes": 31105295
+      }
+    ]
+  },
+  "split_counts": {
+    "eval": 3000,
+    "heldout": 1000,
+    "test": 2000,
+    "train": 14000
+  }
+}

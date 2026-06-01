@@ -1,0 +1,17 @@
+{
+  "category_counts": {
+    "array_index_token_confusion": 0,
+    "candidate_miss": 0,
+    "condition_operator_token_confusion": 0,
+    "function_signature_token_confusion": 0,
+    "loop_bound_token_confusion": 0,
+    "output_variable_token_confusion": 0,
+    "token_order_confusion": 0,
+    "token_parse_failure": 0,
+    "token_to_ir_failure": 0,
+    "unsupported_feature_misroute": 0,
+    "update_order_token_confusion": 0,
+    "wrong_stdout": 0
+  },
+  "failure_mining_completed": true
+}

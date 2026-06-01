@@ -1,0 +1,8 @@
+{
+  "input_contains_expected_output_count": 0,
+  "leakage_audit_passed": true,
+  "mirror_token_contains_c_source_count": 0,
+  "mirror_token_contains_expected_output_count": 0,
+  "mirror_token_contains_raw_target_ir_json_count": 0,
+  "target_ir_contains_c_source_count": 0
+}

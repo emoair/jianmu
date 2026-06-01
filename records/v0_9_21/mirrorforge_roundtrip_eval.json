@@ -1,0 +1,16 @@
+{
+  "bounded_control_roundtrip_rate": 1.0,
+  "compiler_verified_correct_rate": 1.0,
+  "contrastive_pair_roundtrip_rate": 1.0,
+  "current_supported_roundtrip_rate": 1.0,
+  "experimental_array_roundtrip_rate": 1.0,
+  "experimental_function_array_roundtrip_rate": 1.0,
+  "experimental_function_roundtrip_rate": 1.0,
+  "failure_category_distribution": {},
+  "roundtrip_eval_completed": true,
+  "syntax_error_count": 0,
+  "token_to_ir_failure_count": 0,
+  "token_to_ir_success_rate": 1.0,
+  "unsupported_feature_misroute_count": 0,
+  "wrong_stdout_count": 0
+}

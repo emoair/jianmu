@@ -558,3 +558,7 @@ v0.9.20 upgrades RedQueen into a v2 causal bandit curriculum scheduler and intro
 ## v0.9.20.1 Development Direction
 
 v0.9.20.1 scales RedQueen v2 with a larger six-hour loop and expands Contrastive Forge from preview audit to larger materialized contrastive auditing. It checks whether the v0.9.20 top1 >= 0.90 result can be reproduced or improved, while preserving the Architecture Charter: capability boundaries remain data-contract-defined rather than runtime-hardcoded. This version does not add new production capabilities or change the default profile.
+
+## v0.9.21 Development Direction
+
+v0.9.21 introduces RedQueen MirrorForge, a code/AST/IR-to-MirrorToken teacher layer. MirrorToken is a JianMu-readable semantic training token format, not natural language and not a raw target_ir dump. The version reuses existing dataset, audit, compiler-validation, RedQueen, Contrastive Forge, and Architecture Charter logic to test whether code-derived semantic tokens can become a lower-level teacher path for future NL-to-token alignment. It does not add production capabilities or change the default profile.

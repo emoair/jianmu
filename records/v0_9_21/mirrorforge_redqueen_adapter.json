@@ -1,0 +1,25 @@
+{
+  "boundary_redefinition": false,
+  "failure_categories": [
+    "token_parse_failure",
+    "token_to_ir_failure",
+    "token_order_confusion",
+    "loop_bound_token_confusion",
+    "condition_operator_token_confusion",
+    "update_order_token_confusion",
+    "output_variable_token_confusion",
+    "function_signature_token_confusion",
+    "array_index_token_confusion",
+    "unsupported_feature_misroute",
+    "wrong_stdout",
+    "candidate_miss"
+  ],
+  "recommended_curriculum_arms": [
+    "token_order_confusion",
+    "loop_bound_token_confusion",
+    "candidate_miss",
+    "wrong_stdout"
+  ],
+  "redqueen_mirrorforge_adapter_completed": true,
+  "redqueen_only_adjusts_curriculum": true
+}

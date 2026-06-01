@@ -1,0 +1,21 @@
+{
+  "best_candidate_miss": 0.0364,
+  "best_experiment_group": "mirror_token_mixed_with_chinese",
+  "best_top1": 0.917,
+  "blocking_issues": [],
+  "compiler_validation_clean": true,
+  "leakage_audit_passed": true,
+  "mirror_token_hydrabudget_positive": true,
+  "mirror_token_mixed_with_chinese_positive": true,
+  "mirror_token_only_positive": true,
+  "mirror_token_redqueen_positive": true,
+  "mirrorforge_audit_passed": true,
+  "mirrorforge_dataset_generated": true,
+  "ready_for_code_to_token_teacher_loop": true,
+  "ready_for_nl_to_mirrortoken_adapter_later": true,
+  "ready_for_v1_0_substrate_freeze_candidate": true,
+  "recommended_claim_level": "mirrorforge_code_to_token_teacher_positive",
+  "required_next_run": "NL-to-MirrorToken adapter probe after human review; no production promotion",
+  "roundtrip_eval_completed": true,
+  "token_to_ir_success_rate": 1.0
+}

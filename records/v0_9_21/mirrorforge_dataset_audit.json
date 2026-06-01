@@ -1,0 +1,36 @@
+{
+  "audit_passed": true,
+  "duplicate_semantic_hash_count": 0,
+  "duplicate_token_count": 0,
+  "future_domain_in_train_current_count": 0,
+  "io_current_supported_count": 0,
+  "max_shard_size_mb": 43.668633,
+  "over_45mb_shard_count": 0,
+  "pointer_current_supported_count": 0,
+  "recursion_current_supported_count": 0,
+  "reversible_to_ir_count": 100000,
+  "reversible_to_ir_rate": 1.0,
+  "shard_counts": 14,
+  "source_kind_counts": {
+    "generated_ast": 100000
+  },
+  "split_counts": {
+    "eval": 15000,
+    "heldout": 5000,
+    "test": 10000,
+    "train": 70000
+  },
+  "support_status_counts": {
+    "current_supported": 80000,
+    "experimental_supported_array": 8000,
+    "experimental_supported_function": 8000,
+    "review": 4000
+  },
+  "token_grammar_coverage": 1.0,
+  "token_vocab_size": 105,
+  "total_samples": 100000,
+  "train_eval_leakage_count": 0,
+  "train_test_leakage_count": 0,
+  "unsupported_has_expected_output_count": 0,
+  "unsupported_has_targetir_count": 0
+}
