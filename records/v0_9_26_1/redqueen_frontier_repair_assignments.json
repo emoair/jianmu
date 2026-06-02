@@ -1,0 +1,226 @@
+{
+  "assignment_count": 10,
+  "assignments": [
+    {
+      "assignment_id": "loop_variant_repair_assignment",
+      "difficulty_level": 3,
+      "expected_action": "train_experimental_frontier",
+      "forbidden_features": [
+        "production_promotion",
+        "runtime_boundary_hardcode",
+        "keyword_rejection_gate"
+      ],
+      "required_features": {
+        "frontier_repair": true,
+        "target_failure": "loop_variant_missing"
+      },
+      "safety_contract": {
+        "expected_output_for_unknown_halting_forbidden": true,
+        "experimental_frontier_only": true,
+        "production_boundary_change": false
+      },
+      "support_status_target": "experimental_unbounded_while",
+      "target_failure": "loop_variant_missing",
+      "target_sample_count": 25000
+    },
+    {
+      "assignment_id": "loop_exit_condition_repair_assignment",
+      "difficulty_level": 4,
+      "expected_action": "train_experimental_frontier",
+      "forbidden_features": [
+        "production_promotion",
+        "runtime_boundary_hardcode",
+        "keyword_rejection_gate"
+      ],
+      "required_features": {
+        "frontier_repair": true,
+        "target_failure": "loop_exit_condition_wrong"
+      },
+      "safety_contract": {
+        "expected_output_for_unknown_halting_forbidden": true,
+        "experimental_frontier_only": true,
+        "production_boundary_change": false
+      },
+      "support_status_target": "experimental_unbounded_while",
+      "target_failure": "loop_exit_condition_wrong",
+      "target_sample_count": 25000
+    },
+    {
+      "assignment_id": "recursive_base_case_repair_assignment",
+      "difficulty_level": 5,
+      "expected_action": "train_experimental_frontier",
+      "forbidden_features": [
+        "production_promotion",
+        "runtime_boundary_hardcode",
+        "keyword_rejection_gate"
+      ],
+      "required_features": {
+        "frontier_repair": true,
+        "target_failure": "recursive_base_case_missing"
+      },
+      "safety_contract": {
+        "expected_output_for_unknown_halting_forbidden": true,
+        "experimental_frontier_only": true,
+        "production_boundary_change": false
+      },
+      "support_status_target": "experimental_recursion",
+      "target_failure": "recursive_base_case_missing",
+      "target_sample_count": 25000
+    },
+    {
+      "assignment_id": "recursive_step_repair_assignment",
+      "difficulty_level": 6,
+      "expected_action": "train_experimental_frontier",
+      "forbidden_features": [
+        "production_promotion",
+        "runtime_boundary_hardcode",
+        "keyword_rejection_gate"
+      ],
+      "required_features": {
+        "frontier_repair": true,
+        "target_failure": "recursive_step_wrong"
+      },
+      "safety_contract": {
+        "expected_output_for_unknown_halting_forbidden": true,
+        "experimental_frontier_only": true,
+        "production_boundary_change": false
+      },
+      "support_status_target": "experimental_recursion",
+      "target_failure": "recursive_step_wrong",
+      "target_sample_count": 25000
+    },
+    {
+      "assignment_id": "counter_machine_pc_transition_assignment",
+      "difficulty_level": 3,
+      "expected_action": "train_experimental_frontier",
+      "forbidden_features": [
+        "production_promotion",
+        "runtime_boundary_hardcode",
+        "keyword_rejection_gate"
+      ],
+      "required_features": {
+        "frontier_repair": true,
+        "target_failure": "counter_machine_pc_transition_wrong"
+      },
+      "safety_contract": {
+        "expected_output_for_unknown_halting_forbidden": true,
+        "experimental_frontier_only": true,
+        "production_boundary_change": false
+      },
+      "support_status_target": "experimental_counter_machine",
+      "target_failure": "counter_machine_pc_transition_wrong",
+      "target_sample_count": 25000
+    },
+    {
+      "assignment_id": "counter_machine_decjz_assignment",
+      "difficulty_level": 4,
+      "expected_action": "train_experimental_frontier",
+      "forbidden_features": [
+        "production_promotion",
+        "runtime_boundary_hardcode",
+        "keyword_rejection_gate"
+      ],
+      "required_features": {
+        "frontier_repair": true,
+        "target_failure": "counter_machine_decjz_wrong"
+      },
+      "safety_contract": {
+        "expected_output_for_unknown_halting_forbidden": true,
+        "experimental_frontier_only": true,
+        "production_boundary_change": false
+      },
+      "support_status_target": "experimental_counter_machine",
+      "target_failure": "counter_machine_decjz_wrong",
+      "target_sample_count": 25000
+    },
+    {
+      "assignment_id": "state_growth_register_update_assignment",
+      "difficulty_level": 5,
+      "expected_action": "train_experimental_frontier",
+      "forbidden_features": [
+        "production_promotion",
+        "runtime_boundary_hardcode",
+        "keyword_rejection_gate"
+      ],
+      "required_features": {
+        "frontier_repair": true,
+        "target_failure": "state_register_update_order_wrong"
+      },
+      "safety_contract": {
+        "expected_output_for_unknown_halting_forbidden": true,
+        "experimental_frontier_only": true,
+        "production_boundary_change": false
+      },
+      "support_status_target": "experimental_state_growth",
+      "target_failure": "state_register_update_order_wrong",
+      "target_sample_count": 25000
+    },
+    {
+      "assignment_id": "timeout_unknown_boundary_assignment",
+      "difficulty_level": 6,
+      "expected_action": "train_experimental_frontier",
+      "forbidden_features": [
+        "production_promotion",
+        "runtime_boundary_hardcode",
+        "keyword_rejection_gate"
+      ],
+      "required_features": {
+        "frontier_repair": true,
+        "target_failure": "timeout_unknown_false_known"
+      },
+      "safety_contract": {
+        "expected_output_for_unknown_halting_forbidden": true,
+        "experimental_frontier_only": true,
+        "production_boundary_change": false
+      },
+      "support_status_target": "timeout_unknown",
+      "target_failure": "timeout_unknown_false_known",
+      "target_sample_count": 25000
+    },
+    {
+      "assignment_id": "nontermination_classification_assignment",
+      "difficulty_level": 3,
+      "expected_action": "train_experimental_frontier",
+      "forbidden_features": [
+        "production_promotion",
+        "runtime_boundary_hardcode",
+        "keyword_rejection_gate"
+      ],
+      "required_features": {
+        "frontier_repair": true,
+        "target_failure": "nontermination_false_terminating"
+      },
+      "safety_contract": {
+        "expected_output_for_unknown_halting_forbidden": true,
+        "experimental_frontier_only": true,
+        "production_boundary_change": false
+      },
+      "support_status_target": "nonterminating_observed",
+      "target_failure": "nontermination_false_terminating",
+      "target_sample_count": 25000
+    },
+    {
+      "assignment_id": "bounded_regression_guard_assignment",
+      "difficulty_level": 4,
+      "expected_action": "train_current",
+      "forbidden_features": [
+        "production_promotion",
+        "runtime_boundary_hardcode",
+        "keyword_rejection_gate"
+      ],
+      "required_features": {
+        "frontier_repair": true,
+        "target_failure": "bounded_regression_guard"
+      },
+      "safety_contract": {
+        "expected_output_for_unknown_halting_forbidden": true,
+        "experimental_frontier_only": false,
+        "production_boundary_change": false
+      },
+      "support_status_target": "current_supported",
+      "target_failure": "bounded_regression_guard",
+      "target_sample_count": 25000
+    }
+  ],
+  "redqueen_repair_assignments_completed": true
+}

@@ -14,6 +14,10 @@ v0.9.15.2 replaces unreliable raw LLM free generation with a Codex/grammar-drive
 
 v0.9.16 reruns training with the audited v0.9.14 Turing-frontier dataset v2 and the v0.9.15.2 Codex/grammar Chinese dataset. Only Chinese current-supported bounded-control samples enter train_current; function, array, recursion, unbounded execution, English, and mixed-language samples remain boundary/future/review data. The version compares dataset_v2_only, chinese_factory_only, and mixed data profiles under the layerwise sparse 1B freeze-prune profile, with compiler validation and historical regression checks. It does not claim Turing completeness or function/array/recursion support.
 
+## v0.9.26.1 Development Direction
+
+v0.9.26.1 reruns the Turing frontier with a true wall-clock endurance rule: at least 12 hours are required before the endurance run can be marked complete. It analyzes frontier failures, generates RedQueen repair assignments, scales unbounded while / recursion / state-growth frontier training, and strengthens compiler/watchdog validation. This remains finite experimental evidence, not a formal proof of Turing completeness.
+
 ## v0.9.17 Development Direction
 
 v0.9.17 introduces the RedQueen Curriculum Engine and HydraBudget Allocator. RedQueen mines failures from v0.9.16 and generates verifier-checked Chinese adversarial curriculum data for weak bounded-control stages. HydraBudget runs a shadow adaptive layerwise budget policy that expands only when utilization, candidate-miss contribution, marginal gain, and safety gates justify it, with rollback on regression. This version keeps current-supported boundaries unchanged and does not claim Turing completeness or function/array/recursion support.

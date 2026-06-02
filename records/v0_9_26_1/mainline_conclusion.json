@@ -1,0 +1,47 @@
+{
+  "blocking_issues": [],
+  "dominant_failure_type": "loop_variant_missing",
+  "frontier_improved": true,
+  "frontier_reproduced": true,
+  "ready_for_turing_frontier_review": true,
+  "ready_for_turing_substrate_freeze_candidate": true,
+  "ready_for_v1_0_release": false,
+  "recommended_claim_level": "turing_frontier_true_endurance_positive",
+  "required_next_run": "human review before any frontier freeze-candidate wording",
+  "still_not_proven": [
+    "formal Turing completeness proof",
+    "arbitrary project parsing",
+    "solved program synthesis",
+    "production readiness",
+    "safe real promotion",
+    "stable convergence",
+    "solved OOD",
+    "general program synthesis",
+    "default profile changed",
+    "function/array production support",
+    "recursion production support",
+    "natural language layer completed",
+    "emergence proven"
+  ],
+  "true_12h_endurance_completed": true,
+  "what_this_version_did_not_prove": [
+    "formal Turing completeness proof",
+    "arbitrary project parsing",
+    "solved program synthesis",
+    "production readiness",
+    "safe real promotion",
+    "stable convergence",
+    "solved OOD",
+    "general program synthesis",
+    "default profile changed",
+    "function/array production support",
+    "recursion production support",
+    "natural language layer completed",
+    "emergence proven"
+  ],
+  "what_this_version_proved": [
+    "finite experimental endurance evidence for the Turing frontier",
+    "failure taxonomy and RedQueen repair assignments",
+    "data-contract preservation for experimental frontier samples"
+  ]
+}

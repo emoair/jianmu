@@ -1,0 +1,14 @@
+{
+  "nontermination_classification_rate": 0.987,
+  "process_cleanup_success_rate": 1.0,
+  "stale_cl_process_count": 0,
+  "stale_link_process_count": 0,
+  "stale_python_process_count": 0,
+  "timeout_trace_count": 12,
+  "timeout_trace_integrity_passed": true,
+  "timeout_unknown_classification_rate": 0.982,
+  "watchdog_cleanup_failure_count": 0,
+  "watchdog_evaluator_clean": true,
+  "wrong_halting_class_count": 0,
+  "zombie_process_count": 0
+}

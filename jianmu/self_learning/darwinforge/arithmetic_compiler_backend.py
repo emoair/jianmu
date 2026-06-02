@@ -7,6 +7,7 @@ import statistics
 import subprocess
 import sys
 import tempfile
+import threading
 import time
 from dataclasses import dataclass
 from pathlib import Path
@@ -18,6 +19,7 @@ from jianmu.sandbox import build_compile_command, detect_supported_c_compiler
 
 SAFE_EXPRESSION_RE = re.compile(r"^[0-9+\-*/()\s]+$")
 _MSVC_ENV_CACHE: Dict[str, str] | None = None
+_MSVC_ENV_LOCK = threading.Lock()
 
 
 @dataclass(frozen=True)
@@ -165,7 +167,18 @@ def _execute_c_compiler(expression: str, backend: CompilerBackend, timeout_secon
         src = tmp_path / "prog.c"
         exe = tmp_path / ("prog.exe" if os.name == "nt" else "prog")
         src.write_text(program, encoding="utf-8")
-        compile_cmd, compile_env = _build_backend_compile_command(backend, src, exe)
+        try:
+            compile_cmd, compile_env = _build_backend_compile_command(backend, src, exe)
+        except (OSError, subprocess.CalledProcessError, subprocess.TimeoutExpired) as exc:
+            result = _base_result(backend, started)
+            result.update({
+                "compiler_invoked": False,
+                "compile_returncode": -1,
+                "timeout": isinstance(exc, subprocess.TimeoutExpired),
+                "notes": f"compiler_environment_error:{type(exc).__name__}",
+                "latency_ms": round((time.perf_counter() - started) * 1000, 6),
+            })
+            return result
         compile_hash = _hash_command(compile_cmd)
         try:
             compile_proc = subprocess.run(
@@ -333,28 +346,31 @@ def _msvc_environment(vcvars64_path: str) -> Dict[str, str]:
     global _MSVC_ENV_CACHE
     if _MSVC_ENV_CACHE is not None:
         return _MSVC_ENV_CACHE
-    with tempfile.TemporaryDirectory() as tmpdir:
-        env_file = Path(tmpdir) / "env.txt"
-        batch = Path(tmpdir) / "capture_msvc_env.bat"
-        batch.write_text("\n".join([
-            "@echo off",
-            f'call "{vcvars64_path}" >nul',
-            f'set > "{env_file}"',
-            "",
-        ]), encoding="utf-8")
-        subprocess.run([str(batch)], capture_output=True, text=True, timeout=60, errors="replace")
-        env = dict(os.environ)
-        if env_file.exists():
-            for line in env_file.read_text(encoding="utf-8", errors="replace").splitlines():
-                if "=" in line:
-                    key, value = line.split("=", 1)
-                    env[key] = value
-        if "Path" in env:
-            env["PATH"] = env["Path"]
-        elif "PATH" in env:
-            env["Path"] = env["PATH"]
-        _MSVC_ENV_CACHE = env
-        return env
+    with _MSVC_ENV_LOCK:
+        if _MSVC_ENV_CACHE is not None:
+            return _MSVC_ENV_CACHE
+        with tempfile.TemporaryDirectory() as tmpdir:
+            env_file = Path(tmpdir) / "env.txt"
+            batch = Path(tmpdir) / "capture_msvc_env.bat"
+            batch.write_text("\n".join([
+                "@echo off",
+                f'call "{vcvars64_path}" >nul',
+                f'set > "{env_file}"',
+                "",
+            ]), encoding="utf-8")
+            subprocess.run([str(batch)], capture_output=True, text=True, timeout=120, errors="replace", check=True)
+            env = dict(os.environ)
+            if env_file.exists():
+                for line in env_file.read_text(encoding="utf-8", errors="replace").splitlines():
+                    if "=" in line:
+                        key, value = line.split("=", 1)
+                        env[key] = value
+            if "Path" in env:
+                env["PATH"] = env["Path"]
+            elif "PATH" in env:
+                env["Path"] = env["PATH"]
+            _MSVC_ENV_CACHE = env
+            return env
 
 
 def _run_cl_bv(vcvars64_path: str | None, timeout_seconds: int) -> subprocess.CompletedProcess[str]:

@@ -1,0 +1,77 @@
+{
+  "counter_machine_failure_distribution": {
+    "counter_machine_decjz_wrong": 57,
+    "counter_machine_halt_wrong": 16,
+    "counter_machine_pc_transition_wrong": 66
+  },
+  "dominant_failure_type": "loop_variant_missing",
+  "failure_distribution": {
+    "compiler_runtime_mismatch": 0,
+    "counter_machine_decjz_wrong": 57,
+    "counter_machine_halt_wrong": 16,
+    "counter_machine_pc_transition_wrong": 66,
+    "loop_exit_condition_wrong": 94,
+    "loop_update_order_wrong": 31,
+    "loop_variant_missing": 118,
+    "nontermination_false_terminating": 15,
+    "recursion_depth_exceeded": 23,
+    "recursive_base_case_missing": 93,
+    "recursive_base_case_wrong": 51,
+    "recursive_step_wrong": 74,
+    "state_growth_index_wrong": 63,
+    "state_register_update_order_wrong": 82,
+    "timeout_unknown_false_known": 20,
+    "token_to_ir_frontier_parse_failure": 13,
+    "unbounded_loop_false_terminating": 19,
+    "watchdog_misclassification": 9,
+    "while_language_condition_wrong": 42
+  },
+  "recursion_failure_distribution": {
+    "recursion_depth_exceeded": 23,
+    "recursive_base_case_missing": 93,
+    "recursive_base_case_wrong": 51,
+    "recursive_step_wrong": 74
+  },
+  "redqueen_repair_recommendations": [
+    "loop_variant_repair_assignment",
+    "loop_exit_condition_repair_assignment",
+    "recursive_base_case_repair_assignment",
+    "recursive_step_repair_assignment",
+    "counter_machine_pc_transition_assignment",
+    "counter_machine_decjz_assignment",
+    "state_growth_register_update_assignment",
+    "timeout_unknown_boundary_assignment",
+    "nontermination_classification_assignment",
+    "bounded_regression_guard_assignment"
+  ],
+  "source_records_v26": "records/v0_9_26",
+  "state_growth_failure_distribution": {
+    "state_growth_index_wrong": 63,
+    "state_register_update_order_wrong": 82
+  },
+  "taxonomy_completed": true,
+  "top_repair_targets": [
+    "loop_variant_missing",
+    "loop_exit_condition_wrong",
+    "recursive_base_case_missing",
+    "state_register_update_order_wrong",
+    "recursive_step_wrong",
+    "counter_machine_pc_transition_wrong",
+    "state_growth_index_wrong",
+    "counter_machine_decjz_wrong"
+  ],
+  "total_failures_analyzed": 886,
+  "unbounded_failure_distribution": {
+    "loop_exit_condition_wrong": 94,
+    "loop_update_order_wrong": 31,
+    "loop_variant_missing": 118,
+    "nontermination_false_terminating": 15,
+    "timeout_unknown_false_known": 20,
+    "unbounded_loop_false_terminating": 19,
+    "while_language_condition_wrong": 42
+  },
+  "watchdog_failure_distribution": {
+    "timeout_unknown_false_known": 20,
+    "watchdog_misclassification": 9
+  }
+}

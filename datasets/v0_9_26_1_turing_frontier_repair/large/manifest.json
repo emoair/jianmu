@@ -1,0 +1,128 @@
+{
+  "category_counts": {
+    "bounded_regression_guard": 20000,
+    "counter_machine_decjz": 100000,
+    "counter_machine_pc_transition": 100000,
+    "loop_exit_condition_repair": 150000,
+    "loop_variant_repair": 200000,
+    "nontermination_classification": 30000,
+    "recursion_base_case_repair": 150000,
+    "recursion_step_repair": 100000,
+    "state_growth_register_update": 100000,
+    "timeout_unknown_boundary": 50000
+  },
+  "dataset_version": "v0.9.26.1_turing_frontier_repair",
+  "max_shard_size": 41989926,
+  "partial": false,
+  "partial_reason": null,
+  "requested_target_samples": 1000000,
+  "shards": [
+    {
+      "path": "train_000.jsonl",
+      "size_bytes": 41989752
+    },
+    {
+      "path": "train_001.jsonl",
+      "size_bytes": 41989266
+    },
+    {
+      "path": "train_002.jsonl",
+      "size_bytes": 41989147
+    },
+    {
+      "path": "train_003.jsonl",
+      "size_bytes": 41988670
+    },
+    {
+      "path": "train_004.jsonl",
+      "size_bytes": 41988654
+    },
+    {
+      "path": "train_005.jsonl",
+      "size_bytes": 41988874
+    },
+    {
+      "path": "train_006.jsonl",
+      "size_bytes": 41988983
+    },
+    {
+      "path": "train_007.jsonl",
+      "size_bytes": 41988889
+    },
+    {
+      "path": "train_008.jsonl",
+      "size_bytes": 41989926
+    },
+    {
+      "path": "train_009.jsonl",
+      "size_bytes": 41988327
+    },
+    {
+      "path": "train_010.jsonl",
+      "size_bytes": 41988764
+    },
+    {
+      "path": "train_011.jsonl",
+      "size_bytes": 41988935
+    },
+    {
+      "path": "train_012.jsonl",
+      "size_bytes": 41988886
+    },
+    {
+      "path": "train_013.jsonl",
+      "size_bytes": 41988701
+    },
+    {
+      "path": "train_014.jsonl",
+      "size_bytes": 41989071
+    },
+    {
+      "path": "train_015.jsonl",
+      "size_bytes": 3846985
+    },
+    {
+      "path": "eval_000.jsonl",
+      "size_bytes": 41989163
+    },
+    {
+      "path": "eval_001.jsonl",
+      "size_bytes": 41989326
+    },
+    {
+      "path": "eval_002.jsonl",
+      "size_bytes": 41988756
+    },
+    {
+      "path": "eval_003.jsonl",
+      "size_bytes": 9695526
+    },
+    {
+      "path": "test_000.jsonl",
+      "size_bytes": 41989386
+    },
+    {
+      "path": "test_001.jsonl",
+      "size_bytes": 41988779
+    },
+    {
+      "path": "test_002.jsonl",
+      "size_bytes": 6463682
+    },
+    {
+      "path": "heldout_000.jsonl",
+      "size_bytes": 41988536
+    },
+    {
+      "path": "heldout_001.jsonl",
+      "size_bytes": 3382388
+    }
+  ],
+  "split_counts": {
+    "eval": 150000,
+    "heldout": 50000,
+    "test": 100000,
+    "train": 700000
+  },
+  "total_samples": 1000000
+}

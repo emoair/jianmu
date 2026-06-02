@@ -1,0 +1,39 @@
+{
+  "checkpoint_count": 76,
+  "continued_after_sample_target": true,
+  "end_timestamp": "2026-06-02T12:58:26.497493+00:00",
+  "endurance_completed": true,
+  "endurance_partial": false,
+  "endurance_partial_reason": null,
+  "final_window_metrics": {
+    "bounded_candidate_miss": 0.0228,
+    "bounded_top1": 0.9362
+  },
+  "marginal_gain_curve": [
+    0.0004,
+    0.0003,
+    0.0002,
+    0.0001
+  ],
+  "mean_window_metrics": {
+    "bounded_candidate_miss": 0.023,
+    "bounded_top1": 0.9359
+  },
+  "median_window_metrics": {
+    "bounded_candidate_miss": 0.0229,
+    "bounded_top1": 0.936
+  },
+  "partial": false,
+  "plateau_detected": false,
+  "plateau_start_window": null,
+  "resume_count": 1,
+  "rolling_window_count": 25,
+  "sample_target_completed_early": true,
+  "start_timestamp": "2026-06-02T00:09:30.907085+00:00",
+  "wall_clock_hours": 12.815442,
+  "wall_clock_min_hours_required": 12.0,
+  "worst_window_metrics": {
+    "bounded_candidate_miss": 0.0237,
+    "bounded_top1": 0.9351
+  }
+}

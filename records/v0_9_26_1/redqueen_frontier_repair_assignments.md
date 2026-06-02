@@ -1,0 +1,12 @@
+# RedQueen Frontier Repair Assignments
+
+- loop_variant_repair_assignment: loop_variant_missing
+- loop_exit_condition_repair_assignment: loop_exit_condition_wrong
+- recursive_base_case_repair_assignment: recursive_base_case_missing
+- recursive_step_repair_assignment: recursive_step_wrong
+- counter_machine_pc_transition_assignment: counter_machine_pc_transition_wrong
+- counter_machine_decjz_assignment: counter_machine_decjz_wrong
+- state_growth_register_update_assignment: state_register_update_order_wrong
+- timeout_unknown_boundary_assignment: timeout_unknown_false_known
+- nontermination_classification_assignment: nontermination_false_terminating
+- bounded_regression_guard_assignment: bounded_regression_guard

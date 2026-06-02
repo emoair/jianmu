@@ -1,0 +1,15 @@
+{
+  "coverage_score": 1.0,
+  "repair_categories": [
+    "loop_variant_repair",
+    "loop_exit_condition_repair",
+    "recursion_base_case_repair",
+    "recursion_step_repair",
+    "counter_machine_pc_transition",
+    "counter_machine_decjz",
+    "state_growth_register_update",
+    "timeout_unknown_boundary",
+    "nontermination_classification",
+    "bounded_regression_guard"
+  ]
+}
