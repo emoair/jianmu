@@ -1,0 +1,279 @@
+{
+  "assignments": [
+    {
+      "assignment_id": "function_call_argument_repair_assignment",
+      "difficulty_level": "targeted",
+      "expected_action": "repair_curriculum_only",
+      "forbidden_features": [
+        "sample_id_blacklist",
+        "keyword_gate",
+        "route_hardcode",
+        "candidate_generation_hardcode"
+      ],
+      "no_blacklist_policy": true,
+      "no_runtime_gate_policy": true,
+      "required_features": [
+        "contrastive_repair",
+        "full_compile_or_watchdog_verification"
+      ],
+      "safety_contract": "no production boundary change",
+      "support_status_target": "experimental_frontier_or_boundary",
+      "target_failure": "function_call_argument_repair",
+      "target_sample_count": 38461
+    },
+    {
+      "assignment_id": "local_scope_repair_assignment",
+      "difficulty_level": "targeted",
+      "expected_action": "repair_curriculum_only",
+      "forbidden_features": [
+        "sample_id_blacklist",
+        "keyword_gate",
+        "route_hardcode",
+        "candidate_generation_hardcode"
+      ],
+      "no_blacklist_policy": true,
+      "no_runtime_gate_policy": true,
+      "required_features": [
+        "contrastive_repair",
+        "full_compile_or_watchdog_verification"
+      ],
+      "safety_contract": "no production boundary change",
+      "support_status_target": "experimental_frontier_or_boundary",
+      "target_failure": "local_scope_repair",
+      "target_sample_count": 38461
+    },
+    {
+      "assignment_id": "return_value_repair_assignment",
+      "difficulty_level": "targeted",
+      "expected_action": "repair_curriculum_only",
+      "forbidden_features": [
+        "sample_id_blacklist",
+        "keyword_gate",
+        "route_hardcode",
+        "candidate_generation_hardcode"
+      ],
+      "no_blacklist_policy": true,
+      "no_runtime_gate_policy": true,
+      "required_features": [
+        "contrastive_repair",
+        "full_compile_or_watchdog_verification"
+      ],
+      "safety_contract": "no production boundary change",
+      "support_status_target": "experimental_frontier_or_boundary",
+      "target_failure": "return_value_repair",
+      "target_sample_count": 38461
+    },
+    {
+      "assignment_id": "array_index_repair_assignment",
+      "difficulty_level": "targeted",
+      "expected_action": "repair_curriculum_only",
+      "forbidden_features": [
+        "sample_id_blacklist",
+        "keyword_gate",
+        "route_hardcode",
+        "candidate_generation_hardcode"
+      ],
+      "no_blacklist_policy": true,
+      "no_runtime_gate_policy": true,
+      "required_features": [
+        "contrastive_repair",
+        "full_compile_or_watchdog_verification"
+      ],
+      "safety_contract": "no production boundary change",
+      "support_status_target": "experimental_frontier_or_boundary",
+      "target_failure": "array_index_repair",
+      "target_sample_count": 38461
+    },
+    {
+      "assignment_id": "array_write_order_repair_assignment",
+      "difficulty_level": "targeted",
+      "expected_action": "repair_curriculum_only",
+      "forbidden_features": [
+        "sample_id_blacklist",
+        "keyword_gate",
+        "route_hardcode",
+        "candidate_generation_hardcode"
+      ],
+      "no_blacklist_policy": true,
+      "no_runtime_gate_policy": true,
+      "required_features": [
+        "contrastive_repair",
+        "full_compile_or_watchdog_verification"
+      ],
+      "safety_contract": "no production boundary change",
+      "support_status_target": "experimental_frontier_or_boundary",
+      "target_failure": "array_write_order_repair",
+      "target_sample_count": 38461
+    },
+    {
+      "assignment_id": "array_loop_bound_repair_assignment",
+      "difficulty_level": "targeted",
+      "expected_action": "repair_curriculum_only",
+      "forbidden_features": [
+        "sample_id_blacklist",
+        "keyword_gate",
+        "route_hardcode",
+        "candidate_generation_hardcode"
+      ],
+      "no_blacklist_policy": true,
+      "no_runtime_gate_policy": true,
+      "required_features": [
+        "contrastive_repair",
+        "full_compile_or_watchdog_verification"
+      ],
+      "safety_contract": "no production boundary change",
+      "support_status_target": "experimental_frontier_or_boundary",
+      "target_failure": "array_loop_bound_repair",
+      "target_sample_count": 38461
+    },
+    {
+      "assignment_id": "function_array_interop_repair_assignment",
+      "difficulty_level": "targeted",
+      "expected_action": "repair_curriculum_only",
+      "forbidden_features": [
+        "sample_id_blacklist",
+        "keyword_gate",
+        "route_hardcode",
+        "candidate_generation_hardcode"
+      ],
+      "no_blacklist_policy": true,
+      "no_runtime_gate_policy": true,
+      "required_features": [
+        "contrastive_repair",
+        "full_compile_or_watchdog_verification"
+      ],
+      "safety_contract": "no production boundary change",
+      "support_status_target": "experimental_frontier_or_boundary",
+      "target_failure": "function_array_interop_repair",
+      "target_sample_count": 38461
+    },
+    {
+      "assignment_id": "recursion_depth_timeout_repair_assignment",
+      "difficulty_level": "targeted",
+      "expected_action": "repair_curriculum_only",
+      "forbidden_features": [
+        "sample_id_blacklist",
+        "keyword_gate",
+        "route_hardcode",
+        "candidate_generation_hardcode"
+      ],
+      "no_blacklist_policy": true,
+      "no_runtime_gate_policy": true,
+      "required_features": [
+        "contrastive_repair",
+        "full_compile_or_watchdog_verification"
+      ],
+      "safety_contract": "no production boundary change",
+      "support_status_target": "experimental_frontier_or_boundary",
+      "target_failure": "recursion_depth_timeout_repair",
+      "target_sample_count": 38461
+    },
+    {
+      "assignment_id": "loop_variant_timeout_repair_assignment",
+      "difficulty_level": "targeted",
+      "expected_action": "repair_curriculum_only",
+      "forbidden_features": [
+        "sample_id_blacklist",
+        "keyword_gate",
+        "route_hardcode",
+        "candidate_generation_hardcode"
+      ],
+      "no_blacklist_policy": true,
+      "no_runtime_gate_policy": true,
+      "required_features": [
+        "contrastive_repair",
+        "full_compile_or_watchdog_verification"
+      ],
+      "safety_contract": "no production boundary change",
+      "support_status_target": "experimental_frontier_or_boundary",
+      "target_failure": "loop_variant_timeout_repair",
+      "target_sample_count": 38461
+    },
+    {
+      "assignment_id": "state_growth_update_order_repair_assignment",
+      "difficulty_level": "targeted",
+      "expected_action": "repair_curriculum_only",
+      "forbidden_features": [
+        "sample_id_blacklist",
+        "keyword_gate",
+        "route_hardcode",
+        "candidate_generation_hardcode"
+      ],
+      "no_blacklist_policy": true,
+      "no_runtime_gate_policy": true,
+      "required_features": [
+        "contrastive_repair",
+        "full_compile_or_watchdog_verification"
+      ],
+      "safety_contract": "no production boundary change",
+      "support_status_target": "experimental_frontier_or_boundary",
+      "target_failure": "state_growth_update_order_repair",
+      "target_sample_count": 38461
+    },
+    {
+      "assignment_id": "counter_machine_transition_repair_assignment",
+      "difficulty_level": "targeted",
+      "expected_action": "repair_curriculum_only",
+      "forbidden_features": [
+        "sample_id_blacklist",
+        "keyword_gate",
+        "route_hardcode",
+        "candidate_generation_hardcode"
+      ],
+      "no_blacklist_policy": true,
+      "no_runtime_gate_policy": true,
+      "required_features": [
+        "contrastive_repair",
+        "full_compile_or_watchdog_verification"
+      ],
+      "safety_contract": "no production boundary change",
+      "support_status_target": "experimental_frontier_or_boundary",
+      "target_failure": "counter_machine_transition_repair",
+      "target_sample_count": 38461
+    },
+    {
+      "assignment_id": "watchdog_boundary_repair_assignment",
+      "difficulty_level": "targeted",
+      "expected_action": "repair_curriculum_only",
+      "forbidden_features": [
+        "sample_id_blacklist",
+        "keyword_gate",
+        "route_hardcode",
+        "candidate_generation_hardcode"
+      ],
+      "no_blacklist_policy": true,
+      "no_runtime_gate_policy": true,
+      "required_features": [
+        "contrastive_repair",
+        "full_compile_or_watchdog_verification"
+      ],
+      "safety_contract": "no production boundary change",
+      "support_status_target": "experimental_frontier_or_boundary",
+      "target_failure": "watchdog_boundary_repair",
+      "target_sample_count": 38461
+    },
+    {
+      "assignment_id": "bounded_regression_guard_assignment",
+      "difficulty_level": "targeted",
+      "expected_action": "repair_curriculum_only",
+      "forbidden_features": [
+        "sample_id_blacklist",
+        "keyword_gate",
+        "route_hardcode",
+        "candidate_generation_hardcode"
+      ],
+      "no_blacklist_policy": true,
+      "no_runtime_gate_policy": true,
+      "required_features": [
+        "contrastive_repair",
+        "full_compile_or_watchdog_verification"
+      ],
+      "safety_contract": "no production boundary change",
+      "support_status_target": "experimental_frontier_or_boundary",
+      "target_failure": "bounded_regression_guard",
+      "target_sample_count": 38461
+    }
+  ],
+  "assignments_completed": true,
+  "source_unique_failed_sample_count": 5
+}

@@ -1,0 +1,13 @@
+- function_call_argument_repair_assignment
+- local_scope_repair_assignment
+- return_value_repair_assignment
+- array_index_repair_assignment
+- array_write_order_repair_assignment
+- array_loop_bound_repair_assignment
+- function_array_interop_repair_assignment
+- recursion_depth_timeout_repair_assignment
+- loop_variant_timeout_repair_assignment
+- state_growth_update_order_repair_assignment
+- counter_machine_transition_repair_assignment
+- watchdog_boundary_repair_assignment
+- bounded_regression_guard_assignment

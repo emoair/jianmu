@@ -1,0 +1,90 @@
+{
+  "blocking_issues": [],
+  "clean_validation_result": {
+    "boundary_compiler_misroute_count": 0,
+    "cleanup_failure_count": 0,
+    "compiler_verified_correctness_rate": 1.0,
+    "extended_target_attempted": false,
+    "full_compile_extended_target": 50000,
+    "full_compile_invocation_count": 20000,
+    "full_compile_success_count": 20000,
+    "future_domain_compiled_count": 0,
+    "io_compiled_count": 0,
+    "permission_error_count": 0,
+    "pointer_compiled_count": 0,
+    "recursion_production_compiled_count": 0,
+    "run_label": "primary_16",
+    "runtime_success_count": 20000,
+    "stdout_correct_count": 20000,
+    "timeout_count": 0,
+    "validation_clean": true,
+    "watchdog_timeout_count": 0,
+    "wrong_stdout_count": 0
+  },
+  "failure_replay_result": {
+    "failure_distribution": {
+      "timeout": 0,
+      "toolchain": 0,
+      "wrong_stdout": 0
+    },
+    "original_source_available": false,
+    "remaining_replay_failure_count": 0,
+    "replay_attempts_per_sample": 3,
+    "replay_completed": true,
+    "replay_deterministic_failure_count": 0,
+    "replay_flaky_failure_count": 0,
+    "replay_limitation": "Original failed C sources are absent from v0.9.27 trace; replay checks stable real-MSVC execution against hash-level failed sample ids.",
+    "replay_matches_original": false,
+    "replay_success_count": 15,
+    "replay_timeout_count": 0,
+    "replay_toolchain_failure_count": 0,
+    "replay_total_attempts": 15,
+    "replay_wrong_stdout_count": 0
+  },
+  "not_proven": [
+    "formal Turing completeness proof",
+    "arbitrary project parsing",
+    "solved program synthesis",
+    "production readiness",
+    "safe real promotion",
+    "stable convergence",
+    "solved OOD",
+    "general program synthesis",
+    "default profile changed",
+    "function/array production support",
+    "recursion production support",
+    "natural language layer completed",
+    "emergence proven"
+  ],
+  "proven": [
+    "v0.9.27 batch compile failures were taxonomized",
+    "syntax filter limitation documented",
+    "targeted repair dataset generated"
+  ],
+  "ready_for_v1_0_release": false,
+  "recommended_claim_level": "function_array_turing_frontier_clean_review_ready",
+  "required_next_run": "frontier review only; no production support or v1.0 release",
+  "review_readiness_restored": true,
+  "still_not_proven": [
+    "formal Turing completeness proof",
+    "arbitrary project parsing",
+    "solved program synthesis",
+    "production readiness",
+    "safe real promotion",
+    "stable convergence",
+    "solved OOD",
+    "general program synthesis",
+    "default profile changed",
+    "function/array production support",
+    "recursion production support",
+    "natural language layer completed",
+    "emergence proven"
+  ],
+  "why_v0_9_27_failed": "batch_compile_validation_not_clean",
+  "wrong_stdout_timeout_failure_taxonomy": {
+    "expected_terminating_but_timeout": 5,
+    "unknown_toolchain_failure": 0,
+    "watchdog_threshold_too_low": 0,
+    "wrong_stdout_without_timeout": 0
+  }
+}

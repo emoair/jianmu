@@ -1,0 +1,3 @@
+from jianmu.self_learning.darwinforge.batch_compile_failure_taxonomy_clean_rerun import write_function_array_regression_guard
+
+__all__ = ["write_function_array_regression_guard"]

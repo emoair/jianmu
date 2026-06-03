@@ -1,0 +1,9 @@
+{
+  "audit_passed": true,
+  "keyword_gate_used": false,
+  "non_supported_has_expected_output_count": 0,
+  "non_supported_has_targetir_count": 0,
+  "sample_id_blacklist_used": false,
+  "shard_size_passed": false,
+  "total_samples": 500000
+}

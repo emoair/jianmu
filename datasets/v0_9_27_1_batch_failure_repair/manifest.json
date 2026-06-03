@@ -1,0 +1,63 @@
+{
+  "category_counts": {
+    "array_index_repair": 41667,
+    "array_loop_bound_repair": 41667,
+    "array_write_order_repair": 41667,
+    "bounded_regression_guard": 41666,
+    "function_array_interop_repair": 41666,
+    "function_call_argument_repair": 41667,
+    "local_scope_repair": 41667,
+    "return_value_repair": 41667,
+    "timeout_watchdog_repair": 41667,
+    "turing_frontier_timeout_boundary_repair": 41666,
+    "unsupported_review_boundary": 41666,
+    "wrong_stdout_semantic_repair": 41667
+  },
+  "dataset_version": "v0.9.27.1_batch_failure_repair",
+  "max_shard_size": 44063968,
+  "partial": false,
+  "partial_reason": null,
+  "shards": [
+    {
+      "path": "repair_000.jsonl",
+      "row_count": 64173,
+      "size_bytes": 44063519
+    },
+    {
+      "path": "repair_001.jsonl",
+      "row_count": 64111,
+      "size_bytes": 44063700
+    },
+    {
+      "path": "repair_002.jsonl",
+      "row_count": 64055,
+      "size_bytes": 44063968
+    },
+    {
+      "path": "repair_003.jsonl",
+      "row_count": 64055,
+      "size_bytes": 44063946
+    },
+    {
+      "path": "repair_004.jsonl",
+      "row_count": 64055,
+      "size_bytes": 44063959
+    },
+    {
+      "path": "repair_005.jsonl",
+      "row_count": 64055,
+      "size_bytes": 44063948
+    },
+    {
+      "path": "repair_006.jsonl",
+      "row_count": 64055,
+      "size_bytes": 44063949
+    },
+    {
+      "path": "repair_007.jsonl",
+      "row_count": 51441,
+      "size_bytes": 35386625
+    }
+  ],
+  "total_samples": 500000
+}

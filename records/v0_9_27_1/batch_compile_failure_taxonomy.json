@@ -1,0 +1,51 @@
+{
+  "data_contract_failure_count": 0,
+  "dominant_failure_type": "expected_terminating_but_timeout",
+  "failure_by_experiment_group": {
+    "redqueen_hydrabudget_symbiote_function_array_turing_mix": 5
+  },
+  "failure_by_feature_family": {
+    "stdout_or_timeout_validation": 5,
+    "watchdog_timeout_boundary": 5
+  },
+  "failure_by_frontier_category": {
+    "current_supported_compile_validation": 5
+  },
+  "failure_by_support_status": {
+    "current_supported": 5
+  },
+  "failure_distribution": {
+    "expected_terminating_but_timeout": 5,
+    "unknown_toolchain_failure": 0,
+    "watchdog_threshold_too_low": 0,
+    "wrong_stdout_without_timeout": 0
+  },
+  "original_cleanup_count": 0,
+  "original_compiler_verified_correctness_rate": 0.99975,
+  "original_full_compile_invocation_count": 20000,
+  "original_permission_count": 0,
+  "original_timeout_count": 5,
+  "original_wrong_stdout_count": 5,
+  "overlap_count": 5,
+  "semantic_failure_count": 0,
+  "source_trace_has_candidate_source": false,
+  "source_trace_limitation": "v0.9.27 trace stores hashes and compiler outcomes but not replayable C source.",
+  "taxonomy_completed": true,
+  "timeout_sample_ids": [
+    "039634d559f5efef",
+    "2c292c7326da571c",
+    "40075f4d8eca0103",
+    "71c4b0eacc7fea18",
+    "e595f5a3375f607e"
+  ],
+  "toolchain_failure_count": 0,
+  "unique_failed_sample_count": 5,
+  "watchdog_failure_count": 5,
+  "wrong_stdout_sample_ids": [
+    "039634d559f5efef",
+    "2c292c7326da571c",
+    "40075f4d8eca0103",
+    "71c4b0eacc7fea18",
+    "e595f5a3375f607e"
+  ]
+}

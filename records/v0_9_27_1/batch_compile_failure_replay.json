@@ -1,0 +1,20 @@
+{
+  "failure_distribution": {
+    "timeout": 0,
+    "toolchain": 0,
+    "wrong_stdout": 0
+  },
+  "original_source_available": false,
+  "remaining_replay_failure_count": 0,
+  "replay_attempts_per_sample": 3,
+  "replay_completed": true,
+  "replay_deterministic_failure_count": 0,
+  "replay_flaky_failure_count": 0,
+  "replay_limitation": "Original failed C sources are absent from v0.9.27 trace; replay checks stable real-MSVC execution against hash-level failed sample ids.",
+  "replay_matches_original": false,
+  "replay_success_count": 15,
+  "replay_timeout_count": 0,
+  "replay_toolchain_failure_count": 0,
+  "replay_total_attempts": 15,
+  "replay_wrong_stdout_count": 0
+}

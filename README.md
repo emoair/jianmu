@@ -22,6 +22,10 @@ v0.9.26.1 reruns the Turing frontier with a true wall-clock endurance rule: at l
 
 v0.9.27 adds an MSVC frontend syntax-filter protocol for faster training-time screening, followed by batch full-compile validation after training. It also scales function definitions/calls, fixed-array operations, function-array interop, and adds a constructive Turing expressivity proof artifact. Syntax filtering is not treated as correctness evidence; final validation remains full compile/run/stdout or watchdog-based verification.
 
+## v0.9.27.1 Development Direction
+
+v0.9.27.1 analyzes the batch full-compile failures from v0.9.27, replays wrong-stdout and timeout cases, builds RedQueen repair assignments, generates a targeted repair dataset, and reruns full compile validation. The goal is to restore compiler-clean evidence without adding production support, changing runtime boundaries, or treating syntax filtering as correctness evidence.
+
 ## v0.9.17 Development Direction
 
 v0.9.17 introduces the RedQueen Curriculum Engine and HydraBudget Allocator. RedQueen mines failures from v0.9.16 and generates verifier-checked Chinese adversarial curriculum data for weak bounded-control stages. HydraBudget runs a shadow adaptive layerwise budget policy that expands only when utilization, candidate-miss contribution, marginal gain, and safety gates justify it, with rollback on regression. This version keeps current-supported boundaries unchanged and does not claim Turing completeness or function/array/recursion support.

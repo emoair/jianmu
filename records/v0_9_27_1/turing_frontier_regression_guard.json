@@ -1,0 +1,10 @@
+{
+  "blocking_regressions": [],
+  "metric_deltas": {
+    "counter_machine_witness_success_rate": 0.001,
+    "recursion_success_rate": 0.001,
+    "state_growth_success_rate": 0.001,
+    "terminating_unbounded_success_rate": 0.001
+  },
+  "regression_clean": true
+}

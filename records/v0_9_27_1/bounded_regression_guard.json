@@ -1,0 +1,8 @@
+{
+  "blocking_regressions": [],
+  "metric_deltas": {
+    "bounded_candidate_miss": 0.0,
+    "bounded_top1": 0.0
+  },
+  "regression_clean": true
+}

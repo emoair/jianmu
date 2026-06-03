@@ -1,0 +1,17 @@
+{
+  "syntax_filter_bias_by_category": {
+    "array": 0.0,
+    "function": 0.0,
+    "recursion": 0.0,
+    "unbounded": 0.0
+  },
+  "syntax_filter_false_sense_of_correctness_risk": true,
+  "syntax_filter_limitation_audit_completed": true,
+  "syntax_filter_limitation_summary": "cl.exe /Zs checks C syntax only; it does not prove semantics, stdout, halting, or watchdog classification.",
+  "syntax_filter_should_remain_enabled": true,
+  "syntax_filter_used_as_correctness_evidence": false,
+  "syntax_frontend_checked_count": 200000,
+  "syntax_frontend_pass_rate": 1.0,
+  "syntax_pass_but_timeout_count": 5,
+  "syntax_pass_but_wrong_stdout_count": 5
+}

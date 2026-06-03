@@ -1,0 +1,9 @@
+{
+  "blocking_regressions": [],
+  "metric_deltas": {
+    "array_success_rate": 0.001,
+    "function_array_success_rate": 0.007,
+    "function_success_rate": 0.002
+  },
+  "regression_clean": true
+}
