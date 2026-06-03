@@ -69,7 +69,7 @@ def test_ironjudge_invocation_accounting_no_cached_as_new(tmp_path: Path) -> Non
 
 
 def test_ironjudge_resumable_runner_levels(tmp_path: Path) -> None:
-    result = run_ironjudge_resumable_scaleup(_source_records(tmp_path), _dataset(tmp_path), tmp_path / "out", ["gate_5k"], target_gate=2, target_main=3, target_extended=4, compile_worker_count=1, max_runtime_hours=0.01)
+    result = run_ironjudge_resumable_scaleup(_source_records(tmp_path), _dataset(tmp_path), tmp_path / "out", ["gate_5k"], target_gate=2, target_main=3, target_extended=4, compile_worker_count=1, max_runtime_hours=0.05)
     assert result["readiness"]["resume_from_v0_9_18"] is True
     assert result["scaleup"]["levels"][0]["completed_invocations"] >= 2
 

@@ -1,0 +1,3 @@
+{"steps": ["PC0", "INC r0", "HALT"], "terminating": true, "witness": "inc_halt"}
+{"steps": ["x>0", "x=x-1", "repeat"], "terminating": true, "witness": "while_decrement"}
+{"steps": ["loop", "loop"], "terminating": false, "witness": "while_true"}

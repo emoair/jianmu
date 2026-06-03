@@ -1,0 +1,11 @@
+{
+  "array_bounds_static_safety_success_rate": 0.925,
+  "array_frontier_positive": true,
+  "array_initialization_success_rate": 0.931,
+  "array_loop_success_rate": 0.907,
+  "array_read_success_rate": 0.934,
+  "array_success_rate": 0.924,
+  "array_write_success_rate": 0.912,
+  "fixed_array_declaration_success_rate": 0.932,
+  "pointer_like_array_misroute_count": 0
+}

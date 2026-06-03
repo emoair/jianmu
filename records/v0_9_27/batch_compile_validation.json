@@ -1,0 +1,19 @@
+{
+  "batch_compile_validation_completed": true,
+  "boundary_compiler_misroute_count": 0,
+  "cleanup_failure_count": 0,
+  "compiler_verified_correctness_rate": 0.99975,
+  "full_compile_invocation_count": 20000,
+  "full_compile_success_count": 19995,
+  "future_domain_compiled_count": 0,
+  "io_compiled_count": 0,
+  "permission_error_count": 0,
+  "pointer_compiled_count": 0,
+  "queued_after_syntax_pass_count": 20000,
+  "recursion_production_compiled_count": 0,
+  "runtime_success_count": 19995,
+  "stdout_correct_count": 19995,
+  "timeout_count": 5,
+  "watchdog_timeout_count": 512,
+  "wrong_stdout_count": 5
+}

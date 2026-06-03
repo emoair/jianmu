@@ -1,0 +1,32 @@
+{
+  "array_syntax_bias": 0.0,
+  "avg_syntax_check_ms": 20.109924,
+  "function_syntax_bias": 0.0,
+  "invalid_candidate_passed_count": 0,
+  "p50_syntax_check_ms": 20.009194,
+  "p95_syntax_check_ms": 20.871714,
+  "process_spawn_failure_count": 0,
+  "recursion_syntax_bias": 0.0,
+  "syntax_filter_bias_by_category": {
+    "array": 0.0,
+    "function": 0.0,
+    "recursion": 0.0,
+    "unbounded": 0.0
+  },
+  "syntax_filter_false_negative_count": 0,
+  "syntax_filter_false_positive_count": 0,
+  "syntax_filter_overreject_rate": 0.0,
+  "syntax_filter_saved_full_compile_estimate": 0,
+  "syntax_filter_underreject_rate": 0.0,
+  "syntax_filter_used_as_correctness_evidence": false,
+  "syntax_frontend_checked_count": 200000,
+  "syntax_frontend_command": "cl.exe /nologo /TC /WX /Zs candidate.c",
+  "syntax_frontend_enabled": true,
+  "syntax_frontend_fail_count": 0,
+  "syntax_frontend_pass_count": 200000,
+  "syntax_frontend_pass_rate": 1.0,
+  "syntax_frontend_seconds": 4182.64485,
+  "temp_cleanup_failure_count": 0,
+  "unbounded_syntax_bias": 0.0,
+  "valid_candidate_rejected_count": 0
+}

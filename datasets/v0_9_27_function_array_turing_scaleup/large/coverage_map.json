@@ -1,0 +1,14 @@
+{
+  "categories": {
+    "array_loop_update_order": 120000,
+    "counter_machine_while_proof_witness": 50000,
+    "fixed_array_declaration_init_read_write": 180000,
+    "function_array_interop": 100000,
+    "multi_function_call_graph_no_recursion": 120000,
+    "parameter_passing_local_scope": 100000,
+    "pure_function_definition_call": 180000,
+    "turing_frontier_repair_samples": 100000,
+    "unsupported_review_boundary": 50000
+  },
+  "coverage_score": 1.0
+}

@@ -1,0 +1,14 @@
+{
+  "taxonomy_completed": true,
+  "turing_failure_distribution": {
+    "counter_machine_decjz_wrong": 20,
+    "counter_machine_pc_transition_wrong": 18,
+    "loop_exit_condition_wrong": 10,
+    "loop_variant_missing": 8,
+    "nontermination_false_terminating": 24,
+    "recursive_base_case_missing": 12,
+    "recursive_step_wrong": 14,
+    "state_register_update_order_wrong": 16,
+    "timeout_unknown_false_known": 22
+  }
+}

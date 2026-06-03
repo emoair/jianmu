@@ -1,0 +1,60 @@
+{
+  "assignments": [
+    {
+      "assignment_id": "function_signature_repair_assignment",
+      "expected_action": "train_experimental_frontier",
+      "production_boundary_change": false
+    },
+    {
+      "assignment_id": "function_call_argument_repair_assignment",
+      "expected_action": "train_experimental_frontier",
+      "production_boundary_change": false
+    },
+    {
+      "assignment_id": "return_value_repair_assignment",
+      "expected_action": "train_experimental_frontier",
+      "production_boundary_change": false
+    },
+    {
+      "assignment_id": "local_scope_repair_assignment",
+      "expected_action": "train_experimental_frontier",
+      "production_boundary_change": false
+    },
+    {
+      "assignment_id": "fixed_array_initialization_repair_assignment",
+      "expected_action": "train_experimental_frontier",
+      "production_boundary_change": false
+    },
+    {
+      "assignment_id": "array_index_repair_assignment",
+      "expected_action": "train_experimental_frontier",
+      "production_boundary_change": false
+    },
+    {
+      "assignment_id": "array_write_order_repair_assignment",
+      "expected_action": "train_experimental_frontier",
+      "production_boundary_change": false
+    },
+    {
+      "assignment_id": "array_loop_bound_repair_assignment",
+      "expected_action": "train_experimental_frontier",
+      "production_boundary_change": false
+    },
+    {
+      "assignment_id": "function_array_interop_repair_assignment",
+      "expected_action": "train_experimental_frontier",
+      "production_boundary_change": false
+    },
+    {
+      "assignment_id": "pointer_like_array_boundary_assignment",
+      "expected_action": "train_experimental_frontier",
+      "production_boundary_change": false
+    },
+    {
+      "assignment_id": "bounded_regression_guard_assignment",
+      "expected_action": "train_experimental_frontier",
+      "production_boundary_change": false
+    }
+  ],
+  "redqueen_function_array_repair_completed": true
+}

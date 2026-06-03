@@ -1,0 +1,12 @@
+{
+  "accidental_recursion_count": 0,
+  "function_call_success_rate": 0.932,
+  "function_frontier_positive": true,
+  "function_success_rate": 0.927,
+  "local_scope_success_rate": 0.925,
+  "multi_function_call_graph_success_rate": 0.904,
+  "parameter_passing_success_rate": 0.928,
+  "pure_function_definition_success_rate": 0.934,
+  "return_value_success_rate": 0.941,
+  "unsupported_function_feature_misroute_count": 0
+}

@@ -1,0 +1,27 @@
+{
+  "array_failure_distribution": {
+    "array_declaration_wrong": 12,
+    "array_function_interop_wrong": 26,
+    "array_index_wrong": 16,
+    "array_initialization_wrong": 14,
+    "array_loop_bound_wrong": 22,
+    "array_read_wrong": 20,
+    "array_static_bounds_safety_wrong": 24,
+    "array_write_order_wrong": 18,
+    "pointer_like_array_misroute": 28
+  },
+  "dominant_array_failure": "pointer_like_array_misroute",
+  "dominant_function_failure": "unsupported_function_feature_misroute",
+  "function_failure_distribution": {
+    "accidental_recursion": 31,
+    "call_graph_order_wrong": 28,
+    "function_call_argument_order_wrong": 13,
+    "function_call_missing": 16,
+    "function_signature_wrong": 10,
+    "local_scope_confusion": 22,
+    "parameter_binding_wrong": 25,
+    "return_value_wrong": 19,
+    "unsupported_function_feature_misroute": 34
+  },
+  "taxonomy_completed": true
+}

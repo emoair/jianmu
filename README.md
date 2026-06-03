@@ -18,6 +18,10 @@ v0.9.16 reruns training with the audited v0.9.14 Turing-frontier dataset v2 and 
 
 v0.9.26.1 reruns the Turing frontier with a true wall-clock endurance rule: at least 12 hours are required before the endurance run can be marked complete. It analyzes frontier failures, generates RedQueen repair assignments, scales unbounded while / recursion / state-growth frontier training, and strengthens compiler/watchdog validation. This remains finite experimental evidence, not a formal proof of Turing completeness.
 
+## v0.9.27 Development Direction
+
+v0.9.27 adds an MSVC frontend syntax-filter protocol for faster training-time screening, followed by batch full-compile validation after training. It also scales function definitions/calls, fixed-array operations, function-array interop, and adds a constructive Turing expressivity proof artifact. Syntax filtering is not treated as correctness evidence; final validation remains full compile/run/stdout or watchdog-based verification.
+
 ## v0.9.17 Development Direction
 
 v0.9.17 introduces the RedQueen Curriculum Engine and HydraBudget Allocator. RedQueen mines failures from v0.9.16 and generates verifier-checked Chinese adversarial curriculum data for weak bounded-control stages. HydraBudget runs a shadow adaptive layerwise budget policy that expands only when utilization, candidate-miss contribution, marginal gain, and safety gates justify it, with rollback on regression. This version keeps current-supported boundaries unchanged and does not claim Turing completeness or function/array/recursion support.

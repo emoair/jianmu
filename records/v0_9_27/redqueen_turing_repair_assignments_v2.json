@@ -1,0 +1,25 @@
+{
+  "assignments": [
+    {
+      "assignment_id": "function_signature_repair_assignment",
+      "expected_action": "train_experimental_frontier",
+      "production_boundary_change": false
+    },
+    {
+      "assignment_id": "function_call_argument_repair_assignment",
+      "expected_action": "train_experimental_frontier",
+      "production_boundary_change": false
+    },
+    {
+      "assignment_id": "return_value_repair_assignment",
+      "expected_action": "train_experimental_frontier",
+      "production_boundary_change": false
+    },
+    {
+      "assignment_id": "local_scope_repair_assignment",
+      "expected_action": "train_experimental_frontier",
+      "production_boundary_change": false
+    }
+  ],
+  "completed": true
+}

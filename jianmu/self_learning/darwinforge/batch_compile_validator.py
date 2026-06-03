@@ -1,0 +1,3 @@
+from jianmu.self_learning.darwinforge.turing_proof_function_array_frontend_scaleup import run_batch_compile_validation
+
+__all__ = ["run_batch_compile_validation"]

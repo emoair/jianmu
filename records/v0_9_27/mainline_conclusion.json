@@ -1,0 +1,48 @@
+{
+  "blocking_issues": [
+    "batch_compile_validation_not_clean"
+  ],
+  "full_compile_invocation_count": 20000,
+  "not_proven": [
+    "formal Turing completeness proof",
+    "arbitrary project parsing",
+    "solved program synthesis",
+    "production readiness",
+    "safe real promotion",
+    "stable convergence",
+    "solved OOD",
+    "general program synthesis",
+    "default profile changed",
+    "function/array production support",
+    "recursion production support",
+    "natural language layer completed",
+    "emergence proven"
+  ],
+  "proven": [
+    "syntax frontend filtering can screen candidate C sources",
+    "function/array experimental frontier improved",
+    "constructive expressivity artifact generated"
+  ],
+  "ready_for_function_array_frontier_review": false,
+  "ready_for_turing_substrate_freeze_candidate": false,
+  "ready_for_v1_0_release": false,
+  "recommended_claim_level": "failed",
+  "required_next_run": "human review of function/array frontier and proof artifact; do not promote production support",
+  "still_not_proven": [
+    "formal Turing completeness proof",
+    "arbitrary project parsing",
+    "solved program synthesis",
+    "production readiness",
+    "safe real promotion",
+    "stable convergence",
+    "solved OOD",
+    "general program synthesis",
+    "default profile changed",
+    "function/array production support",
+    "recursion production support",
+    "natural language layer completed",
+    "emergence proven"
+  ],
+  "syntax_filter_not_correctness_evidence": true,
+  "syntax_frontend_checked_count": 200000
+}

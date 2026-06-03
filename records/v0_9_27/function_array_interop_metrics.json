@@ -1,0 +1,8 @@
+{
+  "array_pass_to_function_success_rate": 0.891,
+  "function_array_combined_success_rate": 0.902,
+  "function_array_interop_positive": true,
+  "function_array_success_rate": 0.895,
+  "function_returns_array_value_summary_success_rate": 0.887,
+  "function_with_array_loop_success_rate": 0.898
+}

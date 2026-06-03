@@ -1,0 +1,15 @@
+{
+  "full_compile_accounting": {
+    "full_compile_invocation_count": 20000,
+    "full_compile_success_count": 19995,
+    "runtime_success_count": 19995,
+    "stdout_correct_count": 19995,
+    "watchdog_classification_count": 512
+  },
+  "syntax_filter_used_as_correctness_evidence": false,
+  "syntax_frontend_accounting": {
+    "syntax_check_count": 200000,
+    "syntax_fail_count": 0,
+    "syntax_pass_count": 200000
+  }
+}

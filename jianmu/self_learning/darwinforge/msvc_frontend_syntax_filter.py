@@ -1,0 +1,3 @@
+from jianmu.self_learning.darwinforge.turing_proof_function_array_frontend_scaleup import run_msvc_frontend_syntax_filter
+
+__all__ = ["run_msvc_frontend_syntax_filter"]
