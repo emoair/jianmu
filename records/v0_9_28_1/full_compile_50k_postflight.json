@@ -1,0 +1,15 @@
+{
+  "cl_bv_test_passed": true,
+  "cl_zs_test_passed": true,
+  "environment_issue_suspected": false,
+  "known_security_process_detected": false,
+  "os_name": "Windows-11-10.0.22631-SP0",
+  "postflight_passed": true,
+  "process_spawn_stable": true,
+  "stale_cl_process_count": 0,
+  "stale_link_process_count": 0,
+  "stale_python_process_count": 1,
+  "temp_dir_writable": true,
+  "vcvars64_found": true,
+  "vswhere_found": true
+}

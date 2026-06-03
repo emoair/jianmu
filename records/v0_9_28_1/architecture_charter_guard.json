@@ -1,0 +1,12 @@
+{
+  "architecture_charter_exists": true,
+  "boundary_as_data_contract_documented": true,
+  "charter_guard_passed": true,
+  "compiler_only_validation": true,
+  "default_profile_unchanged": true,
+  "no_candidate_generation_boundary_hardcode_added": true,
+  "no_new_production_capability": true,
+  "no_routing_boundary_hardcode_added": true,
+  "no_runtime_keyword_rejection_gate_added": true,
+  "real_promotion_disabled": true
+}

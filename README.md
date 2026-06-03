@@ -602,3 +602,7 @@ v0.9.26 opens the Turing-substrate frontier by adding experimental unbounded whi
 ## v0.9.28 Development Direction
 
 v0.9.28 reviews the function/array frontier and Turing frontier evidence after the v0.9.27.1 clean rerun. It organizes counter-machine and WHILE-language constructive proof artifacts, checks claim wording, and prepares a v1.0 RC1 readiness bundle. Constructive expressivity evidence and finite compiler validation are not treated as a formal proof of Turing completeness.
+
+## v0.9.28.1 Development Direction
+
+v0.9.28.1 performs a full-compile 50K continuation by adding 30K new full compile/link/run validations on top of the previous clean 20K evidence from v0.9.27.1. It is an evidence-thickness pass only: no new capabilities, no production promotion, no default profile change, and no v1.0 release.
