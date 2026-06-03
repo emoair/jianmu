@@ -1,0 +1,12 @@
+{
+  "README_wording_review": true,
+  "claim_wording_review": true,
+  "compiler_trace_spot_check": true,
+  "dataset_leakage_spot_check": true,
+  "function_array_frontier_wording": true,
+  "human_review": true,
+  "license_citation_shard_hygiene": true,
+  "no_production_support_wording": true,
+  "proof_artifact_review": true,
+  "turing_completeness_wording": true
+}

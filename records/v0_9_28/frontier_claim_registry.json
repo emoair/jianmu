@@ -1,0 +1,74 @@
+{
+  "claims": [
+    {
+      "allowed": true,
+      "claim": "function/array frontier clean review-ready",
+      "evidence_paths": [
+        "records/v0_9_28/function_array_frontier_review.json"
+      ],
+      "overclaim_risk": "medium",
+      "safe_wording": "Function/array frontier evidence is review-ready under diagnostic boundaries.",
+      "unsafe_wording": "Function/array production support is complete."
+    },
+    {
+      "allowed": true,
+      "claim": "Turing frontier clean review-ready",
+      "evidence_paths": [
+        "records/v0_9_28/turing_frontier_review.json"
+      ],
+      "overclaim_risk": "high",
+      "safe_wording": "Turing frontier constructive evidence is review-ready.",
+      "unsafe_wording": "Formal Turing completeness is proven."
+    },
+    {
+      "allowed": true,
+      "claim": "constructive Turing expressivity evidence completed",
+      "evidence_paths": [
+        "records/v0_9_28/proof_artifact_review/proof_readiness.json"
+      ],
+      "overclaim_risk": "high",
+      "safe_wording": "Constructive counter-machine and WHILE-language mappings are documented.",
+      "unsafe_wording": "Finite validation proves Turing completeness."
+    },
+    {
+      "allowed": true,
+      "claim": "compiler-backed clean validation evidence",
+      "evidence_paths": [
+        "records/v0_9_27_1/batch_compile_clean_validation.json"
+      ],
+      "overclaim_risk": "medium",
+      "safe_wording": "20K prior full compile validation is clean; 50K continuation is partial unless new invocations are run.",
+      "unsafe_wording": "50K clean validation completed."
+    },
+    {
+      "allowed": true,
+      "claim": "ready_for_v1_0_rc1_branch",
+      "evidence_paths": [
+        "records/v0_9_28/frontier_review_readiness.json"
+      ],
+      "overclaim_risk": "medium",
+      "safe_wording": "Ready to prepare an RC1 branch after human review with conservative wording.",
+      "unsafe_wording": "v1.0 release completed."
+    },
+    {
+      "allowed": false,
+      "claim": "formal Turing completeness proven",
+      "evidence_paths": [
+        "records/v0_9_28/proof_artifact_review/proof_boundary_notice.md"
+      ],
+      "overclaim_risk": "blocking",
+      "safe_wording": "Formal Turing completeness remains unproven.",
+      "unsafe_wording": "Formal Turing completeness proven."
+    }
+  ],
+  "forbidden_claims_blocked": [
+    "production readiness",
+    "solved program synthesis",
+    "function/array production support",
+    "recursion production support",
+    "arbitrary project parsing",
+    "natural language layer completed",
+    "v1.0 release completed"
+  ],
+  "no_claim_overreach_detected": true
+}

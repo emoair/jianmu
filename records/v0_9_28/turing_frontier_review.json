@@ -1,0 +1,21 @@
+{
+  "counter_machine_witness_success_rate": 0.976,
+  "formal_turing_completeness_proven": false,
+  "limitations": [
+    "Turing-frontier evidence is constructive and finite.",
+    "Formal Turing completeness remains unproven.",
+    "Unbounded/recursion/state-growth cases remain outside current_supported production boundary."
+  ],
+  "nontermination_classification_rate": 0.987,
+  "recursion_in_current_supported_count": 0,
+  "recursion_production_support_claimed": false,
+  "recursion_success_rate": 0.918,
+  "review_ready": true,
+  "state_growth_in_current_supported_count": 0,
+  "state_growth_success_rate": 0.92,
+  "terminating_unbounded_success_rate": 0.939,
+  "timeout_unknown_classification_rate": 0.982,
+  "unbounded_in_current_supported_count": 0,
+  "watchdog_evaluator_clean": true,
+  "wrong_halting_class_count": 0
+}

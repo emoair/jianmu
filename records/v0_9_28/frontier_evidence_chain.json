@@ -1,0 +1,90 @@
+{
+  "architecture_charter_clean": true,
+  "architecture_charter_progression": {
+    "v0_9_26_1_architecture_charter_guard_passed": true,
+    "v0_9_27_1_architecture_charter_guard_passed": true,
+    "v0_9_27_architecture_charter_guard_passed": true
+  },
+  "bounded_regression_clean": true,
+  "compiler_cleanliness_progression": {
+    "cleanup_failure_count": 0,
+    "permission_error_count": 0,
+    "timeout_count": 0,
+    "v0_9_27_1_clean": true,
+    "v0_9_27_clean": false,
+    "wrong_stdout_count": 0
+  },
+  "compiler_evidence_clean": true,
+  "data_contract_clean": true,
+  "data_contract_progression": {
+    "v0_9_26_1_data_contract_clean": true,
+    "v0_9_27_1_data_contract_clean": true,
+    "v0_9_27_data_contract_clean": true
+  },
+  "data_contract_zero_counts": {
+    "expected_output_on_nonterminating_count": 0,
+    "expected_output_on_unknown_halting_count": 0,
+    "function_array_in_current_supported_count": 0,
+    "pointer_io_system_current_supported_count": 0,
+    "recursion_in_current_supported_count": 0,
+    "state_growth_in_current_supported_count": 0,
+    "token_contains_c_source_count": 0,
+    "token_contains_expected_output_count": 0,
+    "token_contains_raw_target_ir_json_count": 0,
+    "unbounded_in_current_supported_count": 0,
+    "unsupported_has_expected_output_count": 0,
+    "unsupported_has_targetir_count": 0
+  },
+  "endurance_progression": {
+    "v0_9_26_1_true_endurance_completed": true,
+    "v0_9_26_1_wall_clock_hours": 12.815442,
+    "v0_9_27_1_wall_clock_hours": 3.0
+  },
+  "evidence_chain_clean": true,
+  "evidence_chain_completed": true,
+  "frontier_evidence_chain_completed": true,
+  "function_array_progression": {
+    "v0_9_27_1_array": 0.925,
+    "v0_9_27_1_function": 0.929,
+    "v0_9_27_1_function_array": 0.902,
+    "v0_9_27_array": 0.924,
+    "v0_9_27_function": 0.927,
+    "v0_9_27_function_array": 0.895
+  },
+  "missing_source_records": [],
+  "turing_frontier_progression": {
+    "v0_9_26_1_recursion": 0.914,
+    "v0_9_26_1_state_growth": 0.916,
+    "v0_9_26_1_terminating_unbounded": 0.934,
+    "v0_9_27_1_recursion": 0.918,
+    "v0_9_27_1_state_growth": 0.92,
+    "v0_9_27_1_terminating_unbounded": 0.939
+  },
+  "v0_9_26_1_endurance_evidence_valid": true,
+  "v0_9_26_1_summary": {
+    "compiler_validation_clean": true,
+    "ready_for_turing_substrate_freeze_candidate": true,
+    "true_endurance_completed": true,
+    "wall_clock_hours": 12.815442,
+    "watchdog_evaluator_clean": true
+  },
+  "v0_9_27_1_batch_compile_clean_evidence_valid": true,
+  "v0_9_27_1_summary": {
+    "clean_rerun_completed": true,
+    "clean_validation_completed": true,
+    "compiler_verified_correctness_rate": 1.0,
+    "full_compile_invocation_count": 20000,
+    "timeout_count": 0,
+    "wrong_stdout_count": 0
+  },
+  "v0_9_27_summary": {
+    "array_success_rate_best": 0.924,
+    "blocking_issues": [
+      "batch_compile_validation_not_clean"
+    ],
+    "compiler_validation_clean": false,
+    "function_array_success_rate_best": 0.895,
+    "function_success_rate_best": 0.927
+  },
+  "watchdog_evidence_clean": true
+}

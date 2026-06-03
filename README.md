@@ -598,3 +598,7 @@ v0.9.25 performs a longhaul Symbiote stability test and a machine-assisted human
 ## v0.9.26 Development Direction
 
 v0.9.26 opens the Turing-substrate frontier by adding experimental unbounded while, recursion, and state-growth evidence, together with counter-machine and WHILE-language constructive mappings. Runtime validation remains watchdog-limited, and finite tests are not claimed as a formal proof of Turing completeness. This version also enforces a wall-clock longhaul rule: endurance runs below 6 hours must be marked partial.
+
+## v0.9.28 Development Direction
+
+v0.9.28 reviews the function/array frontier and Turing frontier evidence after the v0.9.27.1 clean rerun. It organizes counter-machine and WHILE-language constructive proof artifacts, checks claim wording, and prepares a v1.0 RC1 readiness bundle. Constructive expressivity evidence and finite compiler validation are not treated as a formal proof of Turing completeness.

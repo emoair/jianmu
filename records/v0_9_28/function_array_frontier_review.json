@@ -1,0 +1,16 @@
+{
+  "accidental_recursion_count": 0,
+  "array_success_rate": 0.925,
+  "function_array_in_current_supported_count": 0,
+  "function_array_regression_clean": true,
+  "function_array_success_rate": 0.902,
+  "function_success_rate": 0.929,
+  "limitations": [
+    "Function and array cases remain frontier/review evidence.",
+    "No function/array production support is claimed.",
+    "No current_supported production boundary expansion is made."
+  ],
+  "pointer_like_array_misroute_count": 0,
+  "production_support_claimed": false,
+  "review_ready": true
+}

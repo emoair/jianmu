@@ -1,0 +1,19 @@
+{
+  "human_review_completed": false,
+  "no_release": true,
+  "no_tag": true,
+  "ready_for_v1_0_rc1_branch": true,
+  "ready_for_v1_0_release": false,
+  "release_blockers": [
+    "human_review",
+    "README_wording_review",
+    "claim_wording_review",
+    "proof_artifact_review",
+    "compiler_trace_spot_check",
+    "dataset_leakage_spot_check",
+    "function_array_frontier_wording",
+    "turing_completeness_wording",
+    "no_production_support_wording",
+    "license_citation_shard_hygiene"
+  ]
+}
