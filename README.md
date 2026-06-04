@@ -606,3 +606,7 @@ v0.9.28 reviews the function/array frontier and Turing frontier evidence after t
 ## v0.9.28.1 Development Direction
 
 v0.9.28.1 performs a full-compile 50K continuation by adding 30K new full compile/link/run validations on top of the previous clean 20K evidence from v0.9.27.1. It is an evidence-thickness pass only: no new capabilities, no production promotion, no default profile change, and no v1.0 release.
+
+## V1.0 Source Review Candidate
+
+This branch is a V1.0 source review candidate. It is not a production release, not a formal proof of Turing completeness, and not an official V1.0 release tag. Human review is still required before any official V1.0 release or tag. The current review evidence includes 50K accounted clean full-compile validation, while preprint or paper materials may still be pending.
