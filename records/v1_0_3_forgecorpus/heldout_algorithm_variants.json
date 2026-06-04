@@ -1,0 +1,28 @@
+{
+  "heldout_algorithm_variant_success_rate": 0.906,
+  "heldout_failure_distribution": {
+    "boundary_value": 12,
+    "loop_direction": 7,
+    "variant_name": 9
+  },
+  "heldout_family_success_rates": {
+    "array": 0.908,
+    "control": 0.91,
+    "recursion": 0.902,
+    "sorting": 0.912
+  },
+  "variant_dimensions": [
+    "different function names",
+    "different variable names",
+    "different array sizes",
+    "different loop direction",
+    "different boundary values",
+    "different recursion base case style",
+    "different pivot choice",
+    "different merge buffer style",
+    "different stack/queue capacity",
+    "different matrix dimensions",
+    "different counter-machine instruction ordering"
+  ],
+  "variant_generalization_passed": true
+}

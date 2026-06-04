@@ -1,0 +1,33 @@
+{
+  "allowed_licenses": [
+    "Apache-2.0",
+    "BSD-2-Clause",
+    "BSD-3-Clause",
+    "CC0",
+    "ISC",
+    "MIT",
+    "Unlicense"
+  ],
+  "blocked_licenses": [
+    "",
+    "AGPL",
+    "GPL",
+    "LGPL",
+    "no license",
+    "proprietary",
+    "unknown"
+  ],
+  "deterministic_generated_allowed": true,
+  "license_audit_passed": true,
+  "manual_dropin_audit": {
+    "manual_dropin_audit_passed": true,
+    "manual_dropin_count": 0,
+    "manual_dropin_dir_exists": false,
+    "missing_metadata_count": 0,
+    "notes": "manual drop-in corpus absent"
+  },
+  "manual_dropin_count": 0,
+  "permissive_verified_count": 0,
+  "quarantined_license_count": 0,
+  "rejected_license_count": 0
+}

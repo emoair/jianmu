@@ -1,0 +1,22 @@
+{
+  "backend_claim_safe": true,
+  "boundary_future_misroute_count": 0,
+  "cleanup_failure_count": 0,
+  "compile_success_count": 20000,
+  "compiler_validation_completed": true,
+  "compiler_verified_correctness_rate": 1.0,
+  "full_compile_target": 20000,
+  "io_production_compiled_count": 0,
+  "p50_latency_ms": 497.36975,
+  "p95_latency_ms": 613.404,
+  "p99_latency_ms": 675.1627,
+  "permission_error_count": 0,
+  "pointer_production_compiled_count": 0,
+  "project_compiler_verified_correctness_rate": 1.0,
+  "real_compiler_invocation_count": 20000,
+  "real_compiler_invocations": 20000,
+  "recursion_production_compiled_count": 0,
+  "runtime_success_count": 20000,
+  "timeout_count": 0,
+  "wrong_stdout_count": 0
+}

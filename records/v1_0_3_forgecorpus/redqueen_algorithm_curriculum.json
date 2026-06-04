@@ -1,0 +1,206 @@
+{
+  "array_write_order_assignment": {
+    "difficulty_level": "medium",
+    "expected_action": "train_current",
+    "forbidden_features": [
+      "malloc",
+      "file_io",
+      "system_call"
+    ],
+    "required_features": [
+      "controlled_c_subset"
+    ],
+    "safety_contract": "Boundary-as-Data-Contract",
+    "sample_count": 1024,
+    "support_status_target": "current_supported",
+    "target_algorithm_family": "array",
+    "target_failure": "heldout_variant_gap"
+  },
+  "binary_search_boundary_assignment": {
+    "difficulty_level": "medium",
+    "expected_action": "train_current",
+    "forbidden_features": [
+      "malloc",
+      "file_io",
+      "system_call"
+    ],
+    "required_features": [
+      "controlled_c_subset"
+    ],
+    "safety_contract": "Boundary-as-Data-Contract",
+    "sample_count": 1024,
+    "support_status_target": "current_supported",
+    "target_algorithm_family": "binary",
+    "target_failure": "heldout_variant_gap"
+  },
+  "bounded_regression_guard_assignment": {
+    "difficulty_level": "medium",
+    "expected_action": "train_current",
+    "forbidden_features": [
+      "malloc",
+      "file_io",
+      "system_call"
+    ],
+    "required_features": [
+      "controlled_c_subset"
+    ],
+    "safety_contract": "Boundary-as-Data-Contract",
+    "sample_count": 1024,
+    "support_status_target": "current_supported",
+    "target_algorithm_family": "bounded",
+    "target_failure": "heldout_variant_gap"
+  },
+  "counter_machine_transition_assignment": {
+    "difficulty_level": "medium",
+    "expected_action": "train_current",
+    "forbidden_features": [
+      "malloc",
+      "file_io",
+      "system_call"
+    ],
+    "required_features": [
+      "controlled_c_subset"
+    ],
+    "safety_contract": "Boundary-as-Data-Contract",
+    "sample_count": 1024,
+    "support_status_target": "current_supported",
+    "target_algorithm_family": "counter",
+    "target_failure": "heldout_variant_gap"
+  },
+  "gcd_state_update_assignment": {
+    "difficulty_level": "medium",
+    "expected_action": "train_current",
+    "forbidden_features": [
+      "malloc",
+      "file_io",
+      "system_call"
+    ],
+    "required_features": [
+      "controlled_c_subset"
+    ],
+    "safety_contract": "Boundary-as-Data-Contract",
+    "sample_count": 1024,
+    "support_status_target": "current_supported",
+    "target_algorithm_family": "gcd",
+    "target_failure": "heldout_variant_gap"
+  },
+  "matrix_nested_loop_assignment": {
+    "difficulty_level": "medium",
+    "expected_action": "train_current",
+    "forbidden_features": [
+      "malloc",
+      "file_io",
+      "system_call"
+    ],
+    "required_features": [
+      "controlled_c_subset"
+    ],
+    "safety_contract": "Boundary-as-Data-Contract",
+    "sample_count": 1024,
+    "support_status_target": "current_supported",
+    "target_algorithm_family": "matrix",
+    "target_failure": "heldout_variant_gap"
+  },
+  "mergesort_merge_assignment": {
+    "difficulty_level": "medium",
+    "expected_action": "train_current",
+    "forbidden_features": [
+      "malloc",
+      "file_io",
+      "system_call"
+    ],
+    "required_features": [
+      "controlled_c_subset"
+    ],
+    "safety_contract": "Boundary-as-Data-Contract",
+    "sample_count": 1024,
+    "support_status_target": "current_supported",
+    "target_algorithm_family": "mergesort",
+    "target_failure": "heldout_variant_gap"
+  },
+  "quicksort_partition_assignment": {
+    "difficulty_level": "medium",
+    "expected_action": "train_current",
+    "forbidden_features": [
+      "malloc",
+      "file_io",
+      "system_call"
+    ],
+    "required_features": [
+      "controlled_c_subset"
+    ],
+    "safety_contract": "Boundary-as-Data-Contract",
+    "sample_count": 1024,
+    "support_status_target": "current_supported",
+    "target_algorithm_family": "quicksort",
+    "target_failure": "heldout_variant_gap"
+  },
+  "recursive_base_case_assignment": {
+    "difficulty_level": "medium",
+    "expected_action": "train_current",
+    "forbidden_features": [
+      "malloc",
+      "file_io",
+      "system_call"
+    ],
+    "required_features": [
+      "controlled_c_subset"
+    ],
+    "safety_contract": "Boundary-as-Data-Contract",
+    "sample_count": 1024,
+    "support_status_target": "current_supported",
+    "target_algorithm_family": "recursive",
+    "target_failure": "heldout_variant_gap"
+  },
+  "sorting_loop_boundary_assignment": {
+    "difficulty_level": "medium",
+    "expected_action": "train_current",
+    "forbidden_features": [
+      "malloc",
+      "file_io",
+      "system_call"
+    ],
+    "required_features": [
+      "controlled_c_subset"
+    ],
+    "safety_contract": "Boundary-as-Data-Contract",
+    "sample_count": 1024,
+    "support_status_target": "current_supported",
+    "target_algorithm_family": "sorting",
+    "target_failure": "heldout_variant_gap"
+  },
+  "stack_queue_state_assignment": {
+    "difficulty_level": "medium",
+    "expected_action": "train_current",
+    "forbidden_features": [
+      "malloc",
+      "file_io",
+      "system_call"
+    ],
+    "required_features": [
+      "controlled_c_subset"
+    ],
+    "safety_contract": "Boundary-as-Data-Contract",
+    "sample_count": 1024,
+    "support_status_target": "current_supported",
+    "target_algorithm_family": "stack",
+    "target_failure": "heldout_variant_gap"
+  },
+  "while_language_loop_variant_assignment": {
+    "difficulty_level": "medium",
+    "expected_action": "train_current",
+    "forbidden_features": [
+      "malloc",
+      "file_io",
+      "system_call"
+    ],
+    "required_features": [
+      "controlled_c_subset"
+    ],
+    "safety_contract": "Boundary-as-Data-Contract",
+    "sample_count": 1024,
+    "support_status_target": "current_supported",
+    "target_algorithm_family": "while",
+    "target_failure": "heldout_variant_gap"
+  }
+}

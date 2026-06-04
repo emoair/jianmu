@@ -1,0 +1,14 @@
+{
+  "algorithm_family_parse_rates": {
+    "array": 1.0,
+    "control": 1.0,
+    "math": 1.0,
+    "matrix": 1.0,
+    "search": 1.0,
+    "sorting": 1.0,
+    "stack_queue": 1.0,
+    "turing_witness": 1.0,
+    "unsupported_review_boundary": 1.0
+  },
+  "algorithm_parse_success_rate": 1.0
+}

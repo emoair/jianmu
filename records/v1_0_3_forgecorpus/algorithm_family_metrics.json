@@ -1,0 +1,20 @@
+{
+  "array_algorithm_success_rate": 0.934,
+  "array_success_rate": 0.934,
+  "bounded_regression_clean": true,
+  "control_algorithm_success_rate": 0.936,
+  "counter_machine_algorithm_success_rate": 0.986,
+  "counter_machine_project_witness_success_rate": 0.986,
+  "function_array_success_rate": 0.921,
+  "function_success_rate": 0.938,
+  "math_success_rate": 0.938,
+  "matrix_algorithm_success_rate": 0.932,
+  "project_substrate_regression_clean": true,
+  "recursion_algorithm_success_rate": 0.932,
+  "recursion_success_rate": 0.932,
+  "search_success_rate": 0.944,
+  "sorting_success_rate": 0.936,
+  "stack_queue_success_rate": 0.931,
+  "state_growth_success_rate": 0.934,
+  "while_language_algorithm_success_rate": 0.982
+}

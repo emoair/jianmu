@@ -1,0 +1,7 @@
+{
+  "malformed_token_count": 0,
+  "project_token_to_candidate_success_rate": 1.0,
+  "schema_violation_count": 0,
+  "supported_roundtrip_count": 45508,
+  "token_to_ir_success_rate": 1.0
+}

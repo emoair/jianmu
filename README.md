@@ -623,6 +623,10 @@ Post-V1.0 development starts from the source review candidate and the baseline g
 
 v1.0.2 hardens the post-V1.0 substrate before the natural-language layer by testing controlled small-project parsing through CodeCartographer / MirrorForge into Project StandardToken, MirrorToken, and TuringToken. It keeps natural-language work on a side alpha path, does not claim arbitrary project parsing, and does not enable production support.
 
+## v1.0.3 Development Direction
+
+v1.0.3 explores ForgeCorpus Classic C Algorithm Substrate. After v1.0.2 validated controlled small-project parsing, this version introduces deterministic classic C algorithm families and optional license-audited manual drop-in corpus, then tests whether Mirror / ProjectCartographer can decompose single-file composite algorithms into Project StandardToken, MirrorToken, and TuringToken. This is not arbitrary project parsing, not production support, and not a formal proof of Turing completeness.
+
 ## Archive
 
 Historical v0.9.x evidence is preserved through archive indexes:

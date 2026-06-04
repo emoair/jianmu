@@ -1,0 +1,28 @@
+{
+  "algorithm_family_count": {
+    "array": 40000,
+    "control": 25000,
+    "math": 30000,
+    "matrix": 25000,
+    "search": 30000,
+    "sorting": 50000,
+    "stack_queue": 20000,
+    "turing_witness": 17500,
+    "unsupported_review_boundary": 12500
+  },
+  "algorithm_variant_count": 505,
+  "arbitrary_project_claim_count": 0,
+  "audit_passed": true,
+  "deterministic_generated_count": 250000,
+  "manual_dropin_count": 0,
+  "permissive_verified_count": 0,
+  "production_support_claim_count": 0,
+  "quarantined_license_count": 0,
+  "rejected_license_count": 0,
+  "token_contains_c_source_count": 0,
+  "token_contains_expected_output_count": 0,
+  "token_contains_raw_target_ir_json_count": 0,
+  "total_count": 250000,
+  "unsupported_has_expected_output_count": 0,
+  "unsupported_has_targetir_count": 0
+}

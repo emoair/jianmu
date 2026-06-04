@@ -1,0 +1,383 @@
+{
+  "algorithm_family_coverage": {
+    "array": 8000,
+    "control": 5000,
+    "math": 6000,
+    "matrix": 5000,
+    "search": 6000,
+    "sorting": 10000,
+    "stack_queue": 4000,
+    "turing_witness": 3500,
+    "unsupported_review_boundary": 2500
+  },
+  "algorithm_to_token_result": {
+    "algorithm_to_mirrortoken_success_rate": 0.950021,
+    "algorithm_to_projecttoken_success_rate": 0.949961,
+    "algorithm_to_token_overall_success_rate": 0.95,
+    "algorithm_to_turingtoken_success_rate": 0.950018,
+    "token_contains_c_source_count": 0,
+    "token_contains_expected_output_count": 0,
+    "token_contains_raw_target_ir_json_count": 0,
+    "token_schema_valid_rate": 1.0
+  },
+  "arbitrary_project_parsing_completed": false,
+  "blocking_issues": [],
+  "comfort_zone_audit": {
+    "algorithm_family_concentration": 0.2,
+    "comfort_zone_audit_passed": true,
+    "comfort_zone_collapse_detected": false,
+    "compiler_pass_but_structure_mismatch_count": 0,
+    "heldout_generalization_drop": 0.018,
+    "mirror_trunk_friendliness_overfit_score": 0.13,
+    "semantic_hash_concentration": 0.07,
+    "token_template_concentration": 0.18
+  },
+  "data_contract_clean": true,
+  "dataset_total_samples": 1300000,
+  "formal_turing_completeness_proven": false,
+  "full_compile_validation": {
+    "backend_claim_safe": true,
+    "boundary_future_misroute_count": 0,
+    "cleanup_failure_count": 0,
+    "compile_success_count": 20000,
+    "compiler_validation_completed": true,
+    "compiler_verified_correctness_rate": 1.0,
+    "full_compile_target": 20000,
+    "io_production_compiled_count": 0,
+    "p50_latency_ms": 497.36975,
+    "p95_latency_ms": 613.404,
+    "p99_latency_ms": 675.1627,
+    "permission_error_count": 0,
+    "pointer_production_compiled_count": 0,
+    "project_compiler_verified_correctness_rate": 1.0,
+    "real_compiler_invocation_count": 20000,
+    "real_compiler_invocations": 20000,
+    "recursion_production_compiled_count": 0,
+    "runtime_success_count": 20000,
+    "timeout_count": 0,
+    "wrong_stdout_count": 0
+  },
+  "heldout_algorithm_variant_generalization": {
+    "heldout_algorithm_variant_success_rate": 0.906,
+    "heldout_failure_distribution": {
+      "boundary_value": 12,
+      "loop_direction": 7,
+      "variant_name": 9
+    },
+    "heldout_family_success_rates": {
+      "array": 0.908,
+      "control": 0.91,
+      "recursion": 0.902,
+      "sorting": 0.912
+    },
+    "variant_dimensions": [
+      "different function names",
+      "different variable names",
+      "different array sizes",
+      "different loop direction",
+      "different boundary values",
+      "different recursion base case style",
+      "different pivot choice",
+      "different merge buffer style",
+      "different stack/queue capacity",
+      "different matrix dimensions",
+      "different counter-machine instruction ordering"
+    ],
+    "variant_generalization_passed": true
+  },
+  "license_audit_summary": {
+    "allowed_licenses": [
+      "Apache-2.0",
+      "BSD-2-Clause",
+      "BSD-3-Clause",
+      "CC0",
+      "ISC",
+      "MIT",
+      "Unlicense"
+    ],
+    "blocked_licenses": [
+      "",
+      "AGPL",
+      "GPL",
+      "LGPL",
+      "no license",
+      "proprietary",
+      "unknown"
+    ],
+    "deterministic_generated_allowed": true,
+    "license_audit_passed": true,
+    "manual_dropin_audit": {
+      "manual_dropin_audit_passed": true,
+      "manual_dropin_count": 0,
+      "manual_dropin_dir_exists": false,
+      "missing_metadata_count": 0,
+      "notes": "manual drop-in corpus absent"
+    },
+    "manual_dropin_count": 0,
+    "permissive_verified_count": 0,
+    "quarantined_license_count": 0,
+    "rejected_license_count": 0
+  },
+  "production_support": false,
+  "ready_for_algorithm_substrate_review": true,
+  "recommended_claim_level": "forgecorpus_algorithm_substrate_positive",
+  "redqueen_algorithm_curriculum": {
+    "array_write_order_assignment": {
+      "difficulty_level": "medium",
+      "expected_action": "train_current",
+      "forbidden_features": [
+        "malloc",
+        "file_io",
+        "system_call"
+      ],
+      "required_features": [
+        "controlled_c_subset"
+      ],
+      "safety_contract": "Boundary-as-Data-Contract",
+      "sample_count": 1024,
+      "support_status_target": "current_supported",
+      "target_algorithm_family": "array",
+      "target_failure": "heldout_variant_gap"
+    },
+    "binary_search_boundary_assignment": {
+      "difficulty_level": "medium",
+      "expected_action": "train_current",
+      "forbidden_features": [
+        "malloc",
+        "file_io",
+        "system_call"
+      ],
+      "required_features": [
+        "controlled_c_subset"
+      ],
+      "safety_contract": "Boundary-as-Data-Contract",
+      "sample_count": 1024,
+      "support_status_target": "current_supported",
+      "target_algorithm_family": "binary",
+      "target_failure": "heldout_variant_gap"
+    },
+    "bounded_regression_guard_assignment": {
+      "difficulty_level": "medium",
+      "expected_action": "train_current",
+      "forbidden_features": [
+        "malloc",
+        "file_io",
+        "system_call"
+      ],
+      "required_features": [
+        "controlled_c_subset"
+      ],
+      "safety_contract": "Boundary-as-Data-Contract",
+      "sample_count": 1024,
+      "support_status_target": "current_supported",
+      "target_algorithm_family": "bounded",
+      "target_failure": "heldout_variant_gap"
+    },
+    "counter_machine_transition_assignment": {
+      "difficulty_level": "medium",
+      "expected_action": "train_current",
+      "forbidden_features": [
+        "malloc",
+        "file_io",
+        "system_call"
+      ],
+      "required_features": [
+        "controlled_c_subset"
+      ],
+      "safety_contract": "Boundary-as-Data-Contract",
+      "sample_count": 1024,
+      "support_status_target": "current_supported",
+      "target_algorithm_family": "counter",
+      "target_failure": "heldout_variant_gap"
+    },
+    "gcd_state_update_assignment": {
+      "difficulty_level": "medium",
+      "expected_action": "train_current",
+      "forbidden_features": [
+        "malloc",
+        "file_io",
+        "system_call"
+      ],
+      "required_features": [
+        "controlled_c_subset"
+      ],
+      "safety_contract": "Boundary-as-Data-Contract",
+      "sample_count": 1024,
+      "support_status_target": "current_supported",
+      "target_algorithm_family": "gcd",
+      "target_failure": "heldout_variant_gap"
+    },
+    "matrix_nested_loop_assignment": {
+      "difficulty_level": "medium",
+      "expected_action": "train_current",
+      "forbidden_features": [
+        "malloc",
+        "file_io",
+        "system_call"
+      ],
+      "required_features": [
+        "controlled_c_subset"
+      ],
+      "safety_contract": "Boundary-as-Data-Contract",
+      "sample_count": 1024,
+      "support_status_target": "current_supported",
+      "target_algorithm_family": "matrix",
+      "target_failure": "heldout_variant_gap"
+    },
+    "mergesort_merge_assignment": {
+      "difficulty_level": "medium",
+      "expected_action": "train_current",
+      "forbidden_features": [
+        "malloc",
+        "file_io",
+        "system_call"
+      ],
+      "required_features": [
+        "controlled_c_subset"
+      ],
+      "safety_contract": "Boundary-as-Data-Contract",
+      "sample_count": 1024,
+      "support_status_target": "current_supported",
+      "target_algorithm_family": "mergesort",
+      "target_failure": "heldout_variant_gap"
+    },
+    "quicksort_partition_assignment": {
+      "difficulty_level": "medium",
+      "expected_action": "train_current",
+      "forbidden_features": [
+        "malloc",
+        "file_io",
+        "system_call"
+      ],
+      "required_features": [
+        "controlled_c_subset"
+      ],
+      "safety_contract": "Boundary-as-Data-Contract",
+      "sample_count": 1024,
+      "support_status_target": "current_supported",
+      "target_algorithm_family": "quicksort",
+      "target_failure": "heldout_variant_gap"
+    },
+    "recursive_base_case_assignment": {
+      "difficulty_level": "medium",
+      "expected_action": "train_current",
+      "forbidden_features": [
+        "malloc",
+        "file_io",
+        "system_call"
+      ],
+      "required_features": [
+        "controlled_c_subset"
+      ],
+      "safety_contract": "Boundary-as-Data-Contract",
+      "sample_count": 1024,
+      "support_status_target": "current_supported",
+      "target_algorithm_family": "recursive",
+      "target_failure": "heldout_variant_gap"
+    },
+    "sorting_loop_boundary_assignment": {
+      "difficulty_level": "medium",
+      "expected_action": "train_current",
+      "forbidden_features": [
+        "malloc",
+        "file_io",
+        "system_call"
+      ],
+      "required_features": [
+        "controlled_c_subset"
+      ],
+      "safety_contract": "Boundary-as-Data-Contract",
+      "sample_count": 1024,
+      "support_status_target": "current_supported",
+      "target_algorithm_family": "sorting",
+      "target_failure": "heldout_variant_gap"
+    },
+    "stack_queue_state_assignment": {
+      "difficulty_level": "medium",
+      "expected_action": "train_current",
+      "forbidden_features": [
+        "malloc",
+        "file_io",
+        "system_call"
+      ],
+      "required_features": [
+        "controlled_c_subset"
+      ],
+      "safety_contract": "Boundary-as-Data-Contract",
+      "sample_count": 1024,
+      "support_status_target": "current_supported",
+      "target_algorithm_family": "stack",
+      "target_failure": "heldout_variant_gap"
+    },
+    "while_language_loop_variant_assignment": {
+      "difficulty_level": "medium",
+      "expected_action": "train_current",
+      "forbidden_features": [
+        "malloc",
+        "file_io",
+        "system_call"
+      ],
+      "required_features": [
+        "controlled_c_subset"
+      ],
+      "safety_contract": "Boundary-as-Data-Contract",
+      "sample_count": 1024,
+      "support_status_target": "current_supported",
+      "target_algorithm_family": "while",
+      "target_failure": "heldout_variant_gap"
+    }
+  },
+  "required_next_run": "v1.1-alpha NL-to-ProjectToken after substrate hardening",
+  "roundtrip_result": {
+    "malformed_token_count": 0,
+    "project_token_to_candidate_success_rate": 1.0,
+    "schema_violation_count": 0,
+    "supported_roundtrip_count": 45508,
+    "token_to_ir_success_rate": 1.0
+  },
+  "still_not_proven": [
+    "arbitrary project parsing",
+    "formal Turing completeness proof",
+    "natural language layer completed",
+    "solved program synthesis",
+    "production readiness",
+    "safe real promotion",
+    "stable convergence",
+    "solved OOD",
+    "general program synthesis",
+    "default profile changed",
+    "production support",
+    "emergence proven"
+  ],
+  "symbiote_result": {
+    "algorithm_symbiote_positive": true,
+    "best_group": "redqueen_algorithm_curriculum",
+    "mirror_training_positive": true,
+    "trunk_training_positive": true
+  },
+  "syntax_frontend_result": {
+    "avg_syntax_check_ms": 135.109765,
+    "p95_syntax_check_ms": 135.109765,
+    "syntax_filter_used_as_correctness_evidence": false,
+    "syntax_frontend_accounting_note": "expanded count covers 200K samples; cl.exe /Zs ran on deduplicated syntax-equivalence source shapes",
+    "syntax_frontend_checked_count": 200000,
+    "syntax_frontend_enabled": true,
+    "syntax_frontend_expanded_sample_count": 200000,
+    "syntax_frontend_pass_rate": 1.0,
+    "syntax_frontend_unique_shape_checked_count": 23,
+    "syntax_frontend_unique_shape_pass_rate": 1.0,
+    "syntax_pass_but_full_compile_fail_count": 0
+  },
+  "what_this_version_did_not_prove": [
+    "arbitrary project parsing",
+    "formal Turing completeness proof",
+    "solved program synthesis",
+    "production readiness"
+  ],
+  "what_this_version_proved": [
+    "deterministic classic C algorithm corpus can feed ProjectToken/MirrorToken/TuringToken diagnostics",
+    "license policy for manual drop-in is enforced before training use",
+    "full compile validation remains the correctness anchor"
+  ],
+  "why_classic_c_algorithm_corpus": "v1.0.2 validated controlled mini projects; v1.0.3 adds classic algorithm structure diversity."
+}

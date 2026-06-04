@@ -1,0 +1,10 @@
+{
+  "algorithm_to_mirrortoken_success_rate": 0.950021,
+  "algorithm_to_projecttoken_success_rate": 0.949961,
+  "algorithm_to_token_overall_success_rate": 0.95,
+  "algorithm_to_turingtoken_success_rate": 0.950018,
+  "token_contains_c_source_count": 0,
+  "token_contains_expected_output_count": 0,
+  "token_contains_raw_target_ir_json_count": 0,
+  "token_schema_valid_rate": 1.0
+}
