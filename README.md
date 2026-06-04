@@ -1,3 +1,7 @@
+## v1.0.3.1 Development Direction
+
+v1.0.3.1 explores ForgeCorpus Algorithm Variant Scale Probe. After v1.0.3 introduced deterministic classic C algorithm families, this version adds requirement-driven variants such as variable renaming, function renaming, array-size changes, loop-direction changes, boundary-value changes, sorting-order changes, helper-function splitting, and recursion base-case variants. It also audits metric freshness and sample accounting to ensure the algorithm evidence is fresh and not inherited from earlier summaries.
+
 ## v0.9.3.1 Development Direction
 
 v0.9.3.1 audits the v0.9.3 arithmetic positive signal. It checks metric provenance, forbidden-field leakage, heldout group separation, baseline/ablation evidence, and failure examples. It does not introduce new architecture claims and does not claim solved arithmetic.

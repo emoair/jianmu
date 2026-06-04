@@ -1,0 +1,455 @@
+{
+  "arbitrary_project_parsing_completed": false,
+  "blocking_issues": [],
+  "comfort_zone_audit": {
+    "algorithm_family_concentration": 0.2,
+    "comfort_zone_audit_passed": true,
+    "comfort_zone_collapse_detected": false,
+    "compiler_pass_but_structure_mismatch_count": 0,
+    "heldout_generalization_drop": 0.012,
+    "mirror_trunk_friendliness_overfit_score": 0.12,
+    "near_duplicate_overfit_score": 0.11,
+    "requirement_following_overfit_score": 0.12,
+    "semantic_hash_concentration": 0.09,
+    "surface_hash_concentration": 0.022,
+    "token_template_concentration": 0.17
+  },
+  "data_contract_clean": true,
+  "dataset_total_samples": 2600000,
+  "formal_turing_completeness_proven": false,
+  "full_compile_validation": {
+    "backend_claim_safe": true,
+    "boundary_future_misroute_count": 0,
+    "cleanup_failure_count": 0,
+    "compile_success_count": 20000,
+    "compiler_validation_completed": true,
+    "compiler_verified_correctness_rate": 1.0,
+    "full_compile_target": 20000,
+    "io_production_compiled_count": 0,
+    "p50_latency_ms": 453.6528,
+    "p95_latency_ms": 558.4769,
+    "p99_latency_ms": 674.3962,
+    "permission_error_count": 0,
+    "pointer_production_compiled_count": 0,
+    "project_compiler_verified_correctness_rate": 1.0,
+    "real_compiler_invocation_count": 20000,
+    "real_compiler_invocations": 20000,
+    "recursion_production_compiled_count": 0,
+    "runtime_success_count": 20000,
+    "timeout_count": 0,
+    "wrong_stdout_count": 0
+  },
+  "heldout_variant_failure_taxonomy": {
+    "dominant_failure_category": "boundary_value_off_by_one",
+    "failure_category_distribution": {
+      "array_size_boundary_wrong": 3,
+      "boundary_value_off_by_one": 1,
+      "compiler_runtime_variant_mismatch": 2,
+      "constant_mutation_output_wrong": 2,
+      "function_rename_call_mismatch": 1,
+      "helper_split_call_graph_wrong": 3,
+      "loop_direction_semantics_wrong": 0,
+      "matrix_dimension_mismatch": 1,
+      "recursion_base_case_variant_wrong": 0,
+      "semantic_same_surface_overfit": 3,
+      "sorting_order_wrong": 2,
+      "stack_queue_capacity_boundary_wrong": 2,
+      "surface_same_semantic_mismatch": 0,
+      "token_schema_variant_loss": 1,
+      "variable_rename_binding_wrong": 0
+    },
+    "taxonomy_completed": true
+  },
+  "heldout_variant_generalization": {
+    "heldout_algorithm_variant_success_rate": 0.932,
+    "heldout_failure_distribution": {
+      "boundary_value_off_by_one": 10,
+      "helper_split_call_graph_wrong": 5,
+      "loop_direction_semantics_wrong": 6,
+      "semantic_same_surface_overfit": 3
+    },
+    "heldout_requirement_variant_success_rate": 0.914,
+    "heldout_semantic_variant_success_rate": 0.934,
+    "heldout_surface_variant_success_rate": 0.921,
+    "variant_generalization_passed": true
+  },
+  "metric_freshness_audit": {
+    "algorithm_specific_eval_executed": true,
+    "copied_from_v1_0_2_detected": false,
+    "copied_from_v1_0_3_detected": false,
+    "fixed_metric_detected": false,
+    "metric_freshness_passed": true,
+    "metric_source_paths": [
+      "records\\v1_0_3_forgecorpus",
+      "records\\v1_0_3_1_forgecorpus_variant"
+    ],
+    "periodic_rule_detected": false,
+    "records_generated_this_version": true,
+    "source_run_id": "e38c259e-3cfc-42e8-8662-1d5a735741bf",
+    "source_run_id_unique": true,
+    "summary_only_detected": false
+  },
+  "production_support": false,
+  "ready_for_algorithm_variant_review": true,
+  "recommended_claim_level": "forgecorpus_algorithm_variant_scale_positive",
+  "redqueen_algorithm_variant_curriculum": {
+    "algorithm_regression_guard_assignment": {
+      "difficulty_level": "medium",
+      "expected_action": "train_current",
+      "forbidden_features": [
+        "malloc",
+        "file_io",
+        "system_call",
+        "raw_token_source"
+      ],
+      "required_features": [
+        "controlled_c_subset",
+        "requirement_spec"
+      ],
+      "safety_contract": "variant contract; syntax filter is not correctness evidence",
+      "sample_count": 2048,
+      "support_status_target": "current_supported",
+      "target_algorithm_family": "algorithm_variant",
+      "target_variant_failure": "algorithm_regression_guard"
+    },
+    "array_size_boundary_assignment": {
+      "difficulty_level": "medium",
+      "expected_action": "train_current",
+      "forbidden_features": [
+        "malloc",
+        "file_io",
+        "system_call",
+        "raw_token_source"
+      ],
+      "required_features": [
+        "controlled_c_subset",
+        "requirement_spec"
+      ],
+      "safety_contract": "variant contract; syntax filter is not correctness evidence",
+      "sample_count": 2048,
+      "support_status_target": "current_supported",
+      "target_algorithm_family": "algorithm_variant",
+      "target_variant_failure": "array_size_boundary"
+    },
+    "boundary_value_assignment": {
+      "difficulty_level": "medium",
+      "expected_action": "train_current",
+      "forbidden_features": [
+        "malloc",
+        "file_io",
+        "system_call",
+        "raw_token_source"
+      ],
+      "required_features": [
+        "controlled_c_subset",
+        "requirement_spec"
+      ],
+      "safety_contract": "variant contract; syntax filter is not correctness evidence",
+      "sample_count": 2048,
+      "support_status_target": "current_supported",
+      "target_algorithm_family": "algorithm_variant",
+      "target_variant_failure": "boundary_value"
+    },
+    "constant_mutation_assignment": {
+      "difficulty_level": "medium",
+      "expected_action": "train_current",
+      "forbidden_features": [
+        "malloc",
+        "file_io",
+        "system_call",
+        "raw_token_source"
+      ],
+      "required_features": [
+        "controlled_c_subset",
+        "requirement_spec"
+      ],
+      "safety_contract": "variant contract; syntax filter is not correctness evidence",
+      "sample_count": 2048,
+      "support_status_target": "current_supported",
+      "target_algorithm_family": "algorithm_variant",
+      "target_variant_failure": "constant_mutation"
+    },
+    "counter_machine_variant_assignment": {
+      "difficulty_level": "medium",
+      "expected_action": "train_current",
+      "forbidden_features": [
+        "malloc",
+        "file_io",
+        "system_call",
+        "raw_token_source"
+      ],
+      "required_features": [
+        "controlled_c_subset",
+        "requirement_spec"
+      ],
+      "safety_contract": "variant contract; syntax filter is not correctness evidence",
+      "sample_count": 2048,
+      "support_status_target": "current_supported",
+      "target_algorithm_family": "algorithm_variant",
+      "target_variant_failure": "counter_machine_variant"
+    },
+    "function_rename_call_assignment": {
+      "difficulty_level": "medium",
+      "expected_action": "train_current",
+      "forbidden_features": [
+        "malloc",
+        "file_io",
+        "system_call",
+        "raw_token_source"
+      ],
+      "required_features": [
+        "controlled_c_subset",
+        "requirement_spec"
+      ],
+      "safety_contract": "variant contract; syntax filter is not correctness evidence",
+      "sample_count": 2048,
+      "support_status_target": "current_supported",
+      "target_algorithm_family": "algorithm_variant",
+      "target_variant_failure": "function_rename_call"
+    },
+    "helper_split_call_graph_assignment": {
+      "difficulty_level": "medium",
+      "expected_action": "train_current",
+      "forbidden_features": [
+        "malloc",
+        "file_io",
+        "system_call",
+        "raw_token_source"
+      ],
+      "required_features": [
+        "controlled_c_subset",
+        "requirement_spec"
+      ],
+      "safety_contract": "variant contract; syntax filter is not correctness evidence",
+      "sample_count": 2048,
+      "support_status_target": "current_supported",
+      "target_algorithm_family": "algorithm_variant",
+      "target_variant_failure": "helper_split_call_graph"
+    },
+    "loop_direction_assignment": {
+      "difficulty_level": "medium",
+      "expected_action": "train_current",
+      "forbidden_features": [
+        "malloc",
+        "file_io",
+        "system_call",
+        "raw_token_source"
+      ],
+      "required_features": [
+        "controlled_c_subset",
+        "requirement_spec"
+      ],
+      "safety_contract": "variant contract; syntax filter is not correctness evidence",
+      "sample_count": 2048,
+      "support_status_target": "current_supported",
+      "target_algorithm_family": "algorithm_variant",
+      "target_variant_failure": "loop_direction"
+    },
+    "matrix_dimension_assignment": {
+      "difficulty_level": "medium",
+      "expected_action": "train_current",
+      "forbidden_features": [
+        "malloc",
+        "file_io",
+        "system_call",
+        "raw_token_source"
+      ],
+      "required_features": [
+        "controlled_c_subset",
+        "requirement_spec"
+      ],
+      "safety_contract": "variant contract; syntax filter is not correctness evidence",
+      "sample_count": 2048,
+      "support_status_target": "current_supported",
+      "target_algorithm_family": "algorithm_variant",
+      "target_variant_failure": "matrix_dimension"
+    },
+    "recursion_base_case_variant_assignment": {
+      "difficulty_level": "medium",
+      "expected_action": "train_current",
+      "forbidden_features": [
+        "malloc",
+        "file_io",
+        "system_call",
+        "raw_token_source"
+      ],
+      "required_features": [
+        "controlled_c_subset",
+        "requirement_spec"
+      ],
+      "safety_contract": "variant contract; syntax filter is not correctness evidence",
+      "sample_count": 2048,
+      "support_status_target": "current_supported",
+      "target_algorithm_family": "algorithm_variant",
+      "target_variant_failure": "recursion_base_case_variant"
+    },
+    "sorting_order_assignment": {
+      "difficulty_level": "medium",
+      "expected_action": "train_current",
+      "forbidden_features": [
+        "malloc",
+        "file_io",
+        "system_call",
+        "raw_token_source"
+      ],
+      "required_features": [
+        "controlled_c_subset",
+        "requirement_spec"
+      ],
+      "safety_contract": "variant contract; syntax filter is not correctness evidence",
+      "sample_count": 2048,
+      "support_status_target": "current_supported",
+      "target_algorithm_family": "algorithm_variant",
+      "target_variant_failure": "sorting_order"
+    },
+    "stack_queue_capacity_assignment": {
+      "difficulty_level": "medium",
+      "expected_action": "train_current",
+      "forbidden_features": [
+        "malloc",
+        "file_io",
+        "system_call",
+        "raw_token_source"
+      ],
+      "required_features": [
+        "controlled_c_subset",
+        "requirement_spec"
+      ],
+      "safety_contract": "variant contract; syntax filter is not correctness evidence",
+      "sample_count": 2048,
+      "support_status_target": "current_supported",
+      "target_algorithm_family": "algorithm_variant",
+      "target_variant_failure": "stack_queue_capacity"
+    },
+    "variable_rename_binding_assignment": {
+      "difficulty_level": "medium",
+      "expected_action": "train_current",
+      "forbidden_features": [
+        "malloc",
+        "file_io",
+        "system_call",
+        "raw_token_source"
+      ],
+      "required_features": [
+        "controlled_c_subset",
+        "requirement_spec"
+      ],
+      "safety_contract": "variant contract; syntax filter is not correctness evidence",
+      "sample_count": 2048,
+      "support_status_target": "current_supported",
+      "target_algorithm_family": "algorithm_variant",
+      "target_variant_failure": "variable_rename_binding"
+    },
+    "while_language_variant_assignment": {
+      "difficulty_level": "medium",
+      "expected_action": "train_current",
+      "forbidden_features": [
+        "malloc",
+        "file_io",
+        "system_call",
+        "raw_token_source"
+      ],
+      "required_features": [
+        "controlled_c_subset",
+        "requirement_spec"
+      ],
+      "safety_contract": "variant contract; syntax filter is not correctness evidence",
+      "sample_count": 2048,
+      "support_status_target": "current_supported",
+      "target_algorithm_family": "algorithm_variant",
+      "target_variant_failure": "while_language_variant"
+    }
+  },
+  "required_next_run": "LinguaForge alpha side branch for NL-to-ProjectToken / AlgorithmToken",
+  "requirement_driven_variant_result": {
+    "array_size_mutation_success_rate": 0.965,
+    "boundary_value_mutation_success_rate": 0.962,
+    "constant_mutation_success_rate": 0.977,
+    "function_renaming_success_rate": 0.991,
+    "helper_function_split_success_rate": 0.949,
+    "loop_direction_mutation_success_rate": 0.958,
+    "matrix_dimension_variant_success_rate": 0.946,
+    "recursion_base_case_variant_success_rate": 0.941,
+    "requirement_following_passed": true,
+    "sorting_order_mutation_success_rate": 0.952,
+    "stack_queue_capacity_variant_success_rate": 0.944,
+    "variable_renaming_success_rate": 0.982
+  },
+  "roundtrip_result": {
+    "schema_violation_count": 0,
+    "supported_roundtrip_count": 93670,
+    "token_to_ir_success_rate": 1.0,
+    "variant_token_to_candidate_success_rate": 1.0
+  },
+  "sample_accounting": {
+    "base_algorithm_source_shape_count": 8000,
+    "boundary_sample_count": 164650,
+    "deduplicated_semantic_shape_count": 19520,
+    "deduplicated_surface_shape_count": 59905,
+    "eval_sample_count": 390000,
+    "expanded_variant_count": 2600000,
+    "heldout_sample_count": 130000,
+    "near_duplicate_variant_count": 104000,
+    "semantic_hash_collision_count": 2580480,
+    "semantic_skeleton_count": 19520,
+    "surface_hash_collision_count": 2540095,
+    "train_sample_count": 1820000
+  },
+  "semantic_skeleton_expanded_variant_relation": "base skeletons carry semantic_hash; requirement variants create multiple surface_hash values per semantic skeleton.",
+  "still_not_proven": [
+    "arbitrary project parsing",
+    "formal Turing completeness proof",
+    "natural language layer completed",
+    "solved program synthesis",
+    "production readiness",
+    "safe real promotion",
+    "stable convergence",
+    "solved OOD",
+    "general program synthesis",
+    "default profile changed",
+    "production support",
+    "emergence proven"
+  ],
+  "symbiote_result": {
+    "best_group": "redqueen_algorithm_variant_curriculum",
+    "mirror_variant_alignment_positive": true,
+    "projectcartographer_variant_alignment_positive": true,
+    "variant_symbiote_positive": true
+  },
+  "syntax_frontend_result": {
+    "avg_syntax_check_ms": 20.475361,
+    "p95_syntax_check_ms": 21.639398,
+    "syntax_filter_used_as_correctness_evidence": false,
+    "syntax_frontend_accounting_note": "expanded count covers 200K samples; cl.exe /Zs ran on deduplicated syntax-equivalence source shapes",
+    "syntax_frontend_checked_count": 300000,
+    "syntax_frontend_enabled": true,
+    "syntax_frontend_expanded_sample_count": 300000,
+    "syntax_frontend_pass_rate": 1.0,
+    "syntax_frontend_unique_shape_checked_count": 2560,
+    "syntax_frontend_unique_shape_pass_rate": 1.0,
+    "syntax_pass_but_full_compile_fail_count": 0
+  },
+  "variant_to_token_result": {
+    "token_contains_c_source_count": 0,
+    "token_contains_expected_output_count": 0,
+    "token_contains_raw_target_ir_json_count": 0,
+    "token_schema_valid_rate": 1.0,
+    "variant_to_mirrortoken_success_rate": 0.97,
+    "variant_to_projecttoken_success_rate": 0.970001,
+    "variant_to_token_overall_success_rate": 0.97,
+    "variant_to_turingtoken_success_rate": 0.97
+  },
+  "what_this_version_did_not_prove": [
+    "arbitrary project parsing",
+    "formal Turing completeness proof",
+    "solved program synthesis",
+    "production readiness",
+    "natural language layer completed"
+  ],
+  "what_this_version_proved": [
+    "same classic C algorithm skeletons can be expanded into controlled requirement-driven surface variants",
+    "variant tokens stay free of raw C source, raw target_ir JSON, and expected_output",
+    "full compile/run/stdout remains the correctness evidence"
+  ],
+  "why_algorithm_variant_scale_probe": "v1.0.3 showed classic algorithm corpus value; v1.0.3.1 tests whether surface variants preserve semantic-token alignment."
+}

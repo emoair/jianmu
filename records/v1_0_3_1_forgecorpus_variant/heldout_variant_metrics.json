@@ -1,0 +1,13 @@
+{
+  "heldout_algorithm_variant_success_rate": 0.932,
+  "heldout_failure_distribution": {
+    "boundary_value_off_by_one": 10,
+    "helper_split_call_graph_wrong": 5,
+    "loop_direction_semantics_wrong": 6,
+    "semantic_same_surface_overfit": 3
+  },
+  "heldout_requirement_variant_success_rate": 0.914,
+  "heldout_semantic_variant_success_rate": 0.934,
+  "heldout_surface_variant_success_rate": 0.921,
+  "variant_generalization_passed": true
+}

@@ -1,0 +1,264 @@
+{
+  "completed": true,
+  "dataset_version": "v1.0.3.1_forgecorpus_algorithm_variants",
+  "materialized_count": 500000,
+  "max_shard_size_bytes": 45780990,
+  "partial": false,
+  "scale": "medium",
+  "shards": {
+    "eval": [
+      {
+        "path": "eval_000.jsonl",
+        "row_count": 10791,
+        "size_bytes": 45780923
+      },
+      {
+        "path": "eval_001.jsonl",
+        "row_count": 10771,
+        "size_bytes": 45779385
+      },
+      {
+        "path": "eval_002.jsonl",
+        "row_count": 10772,
+        "size_bytes": 45780185
+      },
+      {
+        "path": "eval_003.jsonl",
+        "row_count": 10773,
+        "size_bytes": 45777783
+      },
+      {
+        "path": "eval_004.jsonl",
+        "row_count": 10817,
+        "size_bytes": 45776360
+      },
+      {
+        "path": "eval_005.jsonl",
+        "row_count": 10769,
+        "size_bytes": 45776390
+      },
+      {
+        "path": "eval_006.jsonl",
+        "row_count": 10307,
+        "size_bytes": 43827414
+      }
+    ],
+    "heldout": [
+      {
+        "path": "heldout_000.jsonl",
+        "row_count": 11786,
+        "size_bytes": 45779407
+      },
+      {
+        "path": "heldout_001.jsonl",
+        "row_count": 11780,
+        "size_bytes": 45777093
+      },
+      {
+        "path": "heldout_002.jsonl",
+        "row_count": 1434,
+        "size_bytes": 5584853
+      }
+    ],
+    "test": [
+      {
+        "path": "test_000.jsonl",
+        "row_count": 11866,
+        "size_bytes": 45779673
+      },
+      {
+        "path": "test_001.jsonl",
+        "row_count": 11857,
+        "size_bytes": 45778988
+      },
+      {
+        "path": "test_002.jsonl",
+        "row_count": 11858,
+        "size_bytes": 45779872
+      },
+      {
+        "path": "test_003.jsonl",
+        "row_count": 11856,
+        "size_bytes": 45778902
+      },
+      {
+        "path": "test_004.jsonl",
+        "row_count": 2563,
+        "size_bytes": 9934926
+      }
+    ],
+    "train": [
+      {
+        "path": "train_000.jsonl",
+        "row_count": 10695,
+        "size_bytes": 45776106
+      },
+      {
+        "path": "train_001.jsonl",
+        "row_count": 10926,
+        "size_bytes": 45777775
+      },
+      {
+        "path": "train_002.jsonl",
+        "row_count": 10745,
+        "size_bytes": 45779265
+      },
+      {
+        "path": "train_003.jsonl",
+        "row_count": 10876,
+        "size_bytes": 45779129
+      },
+      {
+        "path": "train_004.jsonl",
+        "row_count": 10926,
+        "size_bytes": 45777492
+      },
+      {
+        "path": "train_005.jsonl",
+        "row_count": 10675,
+        "size_bytes": 45779499
+      },
+      {
+        "path": "train_006.jsonl",
+        "row_count": 10909,
+        "size_bytes": 45780990
+      },
+      {
+        "path": "train_007.jsonl",
+        "row_count": 10801,
+        "size_bytes": 45779544
+      },
+      {
+        "path": "train_008.jsonl",
+        "row_count": 10781,
+        "size_bytes": 45779386
+      },
+      {
+        "path": "train_009.jsonl",
+        "row_count": 10911,
+        "size_bytes": 45779983
+      },
+      {
+        "path": "train_010.jsonl",
+        "row_count": 10676,
+        "size_bytes": 45780020
+      },
+      {
+        "path": "train_011.jsonl",
+        "row_count": 10910,
+        "size_bytes": 45779817
+      },
+      {
+        "path": "train_012.jsonl",
+        "row_count": 10880,
+        "size_bytes": 45778198
+      },
+      {
+        "path": "train_013.jsonl",
+        "row_count": 10707,
+        "size_bytes": 45780570
+      },
+      {
+        "path": "train_014.jsonl",
+        "row_count": 10909,
+        "size_bytes": 45780548
+      },
+      {
+        "path": "train_015.jsonl",
+        "row_count": 10697,
+        "size_bytes": 45780705
+      },
+      {
+        "path": "train_016.jsonl",
+        "row_count": 10883,
+        "size_bytes": 45780894
+      },
+      {
+        "path": "train_017.jsonl",
+        "row_count": 10910,
+        "size_bytes": 45779298
+      },
+      {
+        "path": "train_018.jsonl",
+        "row_count": 10676,
+        "size_bytes": 45780673
+      },
+      {
+        "path": "train_019.jsonl",
+        "row_count": 10911,
+        "size_bytes": 45780063
+      },
+      {
+        "path": "train_020.jsonl",
+        "row_count": 10777,
+        "size_bytes": 45777568
+      },
+      {
+        "path": "train_021.jsonl",
+        "row_count": 10810,
+        "size_bytes": 45779570
+      },
+      {
+        "path": "train_022.jsonl",
+        "row_count": 10909,
+        "size_bytes": 45779943
+      },
+      {
+        "path": "train_023.jsonl",
+        "row_count": 10673,
+        "size_bytes": 45780677
+      },
+      {
+        "path": "train_024.jsonl",
+        "row_count": 10909,
+        "size_bytes": 45779644
+      },
+      {
+        "path": "train_025.jsonl",
+        "row_count": 10852,
+        "size_bytes": 45775883
+      },
+      {
+        "path": "train_026.jsonl",
+        "row_count": 10731,
+        "size_bytes": 45780683
+      },
+      {
+        "path": "train_027.jsonl",
+        "row_count": 10911,
+        "size_bytes": 45780014
+      },
+      {
+        "path": "train_028.jsonl",
+        "row_count": 10674,
+        "size_bytes": 45775721
+      },
+      {
+        "path": "train_029.jsonl",
+        "row_count": 10911,
+        "size_bytes": 45780137
+      },
+      {
+        "path": "train_030.jsonl",
+        "row_count": 10911,
+        "size_bytes": 45779515
+      },
+      {
+        "path": "train_031.jsonl",
+        "row_count": 10675,
+        "size_bytes": 45779617
+      },
+      {
+        "path": "train_032.jsonl",
+        "row_count": 3853,
+        "size_bytes": 16170223
+      }
+    ]
+  },
+  "split_counts": {
+    "eval": 75000,
+    "heldout": 25000,
+    "test": 50000,
+    "train": 350000
+  }
+}

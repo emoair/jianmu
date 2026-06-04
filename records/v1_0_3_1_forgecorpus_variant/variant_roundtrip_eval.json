@@ -1,0 +1,6 @@
+{
+  "schema_violation_count": 0,
+  "supported_roundtrip_count": 93670,
+  "token_to_ir_success_rate": 1.0,
+  "variant_token_to_candidate_success_rate": 1.0
+}

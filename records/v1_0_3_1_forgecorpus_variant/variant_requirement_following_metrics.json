@@ -1,0 +1,14 @@
+{
+  "array_size_mutation_success_rate": 0.965,
+  "boundary_value_mutation_success_rate": 0.962,
+  "constant_mutation_success_rate": 0.977,
+  "function_renaming_success_rate": 0.991,
+  "helper_function_split_success_rate": 0.949,
+  "loop_direction_mutation_success_rate": 0.958,
+  "matrix_dimension_variant_success_rate": 0.946,
+  "recursion_base_case_variant_success_rate": 0.941,
+  "requirement_following_passed": true,
+  "sorting_order_mutation_success_rate": 0.952,
+  "stack_queue_capacity_variant_success_rate": 0.944,
+  "variable_renaming_success_rate": 0.982
+}

@@ -1,0 +1,13 @@
+{
+  "algorithm_family_concentration": 0.2,
+  "comfort_zone_audit_passed": true,
+  "comfort_zone_collapse_detected": false,
+  "compiler_pass_but_structure_mismatch_count": 0,
+  "heldout_generalization_drop": 0.012,
+  "mirror_trunk_friendliness_overfit_score": 0.12,
+  "near_duplicate_overfit_score": 0.11,
+  "requirement_following_overfit_score": 0.12,
+  "semantic_hash_concentration": 0.09,
+  "surface_hash_concentration": 0.022,
+  "token_template_concentration": 0.17
+}

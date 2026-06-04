@@ -1,0 +1,19 @@
+{
+  "algorithm_substrate_regression_clean": true,
+  "array_success_rate": 0.941,
+  "array_variant_success_rate": 0.941,
+  "control_variant_success_rate": 0.941,
+  "counter_machine_project_witness_success_rate": 0.988,
+  "counter_machine_variant_success_rate": 0.988,
+  "function_array_success_rate": 0.925,
+  "function_success_rate": 0.94,
+  "math_variant_success_rate": 0.942,
+  "matrix_variant_success_rate": 0.937,
+  "recursion_success_rate": 0.94,
+  "recursion_variant_success_rate": 0.94,
+  "search_variant_success_rate": 0.948,
+  "sorting_variant_success_rate": 0.944,
+  "stack_queue_variant_success_rate": 0.936,
+  "state_growth_success_rate": 0.936,
+  "while_language_variant_success_rate": 0.984
+}

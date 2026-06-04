@@ -1,0 +1,14 @@
+{
+  "base_algorithm_source_shape_count": 8000,
+  "boundary_sample_count": 164650,
+  "deduplicated_semantic_shape_count": 19520,
+  "deduplicated_surface_shape_count": 59905,
+  "eval_sample_count": 390000,
+  "expanded_variant_count": 2600000,
+  "heldout_sample_count": 130000,
+  "near_duplicate_variant_count": 104000,
+  "semantic_hash_collision_count": 2580480,
+  "semantic_skeleton_count": 19520,
+  "surface_hash_collision_count": 2540095,
+  "train_sample_count": 1820000
+}

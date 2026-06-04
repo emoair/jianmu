@@ -1,0 +1,21 @@
+{
+  "dominant_failure_category": "boundary_value_off_by_one",
+  "failure_category_distribution": {
+    "array_size_boundary_wrong": 3,
+    "boundary_value_off_by_one": 1,
+    "compiler_runtime_variant_mismatch": 2,
+    "constant_mutation_output_wrong": 2,
+    "function_rename_call_mismatch": 1,
+    "helper_split_call_graph_wrong": 3,
+    "loop_direction_semantics_wrong": 0,
+    "matrix_dimension_mismatch": 1,
+    "recursion_base_case_variant_wrong": 0,
+    "semantic_same_surface_overfit": 3,
+    "sorting_order_wrong": 2,
+    "stack_queue_capacity_boundary_wrong": 2,
+    "surface_same_semantic_mismatch": 0,
+    "token_schema_variant_loss": 1,
+    "variable_rename_binding_wrong": 0
+  },
+  "taxonomy_completed": true
+}

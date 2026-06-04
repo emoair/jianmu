@@ -1,0 +1,16 @@
+{
+  "algorithm_specific_eval_executed": true,
+  "copied_from_v1_0_2_detected": false,
+  "copied_from_v1_0_3_detected": false,
+  "fixed_metric_detected": false,
+  "metric_freshness_passed": true,
+  "metric_source_paths": [
+    "records\\v1_0_3_forgecorpus",
+    "records\\v1_0_3_1_forgecorpus_variant"
+  ],
+  "periodic_rule_detected": false,
+  "records_generated_this_version": true,
+  "source_run_id": "e38c259e-3cfc-42e8-8662-1d5a735741bf",
+  "source_run_id_unique": true,
+  "summary_only_detected": false
+}

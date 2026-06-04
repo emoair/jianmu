@@ -1,0 +1,268 @@
+{
+  "algorithm_regression_guard_assignment": {
+    "difficulty_level": "medium",
+    "expected_action": "train_current",
+    "forbidden_features": [
+      "malloc",
+      "file_io",
+      "system_call",
+      "raw_token_source"
+    ],
+    "required_features": [
+      "controlled_c_subset",
+      "requirement_spec"
+    ],
+    "safety_contract": "variant contract; syntax filter is not correctness evidence",
+    "sample_count": 2048,
+    "support_status_target": "current_supported",
+    "target_algorithm_family": "algorithm_variant",
+    "target_variant_failure": "algorithm_regression_guard"
+  },
+  "array_size_boundary_assignment": {
+    "difficulty_level": "medium",
+    "expected_action": "train_current",
+    "forbidden_features": [
+      "malloc",
+      "file_io",
+      "system_call",
+      "raw_token_source"
+    ],
+    "required_features": [
+      "controlled_c_subset",
+      "requirement_spec"
+    ],
+    "safety_contract": "variant contract; syntax filter is not correctness evidence",
+    "sample_count": 2048,
+    "support_status_target": "current_supported",
+    "target_algorithm_family": "algorithm_variant",
+    "target_variant_failure": "array_size_boundary"
+  },
+  "boundary_value_assignment": {
+    "difficulty_level": "medium",
+    "expected_action": "train_current",
+    "forbidden_features": [
+      "malloc",
+      "file_io",
+      "system_call",
+      "raw_token_source"
+    ],
+    "required_features": [
+      "controlled_c_subset",
+      "requirement_spec"
+    ],
+    "safety_contract": "variant contract; syntax filter is not correctness evidence",
+    "sample_count": 2048,
+    "support_status_target": "current_supported",
+    "target_algorithm_family": "algorithm_variant",
+    "target_variant_failure": "boundary_value"
+  },
+  "constant_mutation_assignment": {
+    "difficulty_level": "medium",
+    "expected_action": "train_current",
+    "forbidden_features": [
+      "malloc",
+      "file_io",
+      "system_call",
+      "raw_token_source"
+    ],
+    "required_features": [
+      "controlled_c_subset",
+      "requirement_spec"
+    ],
+    "safety_contract": "variant contract; syntax filter is not correctness evidence",
+    "sample_count": 2048,
+    "support_status_target": "current_supported",
+    "target_algorithm_family": "algorithm_variant",
+    "target_variant_failure": "constant_mutation"
+  },
+  "counter_machine_variant_assignment": {
+    "difficulty_level": "medium",
+    "expected_action": "train_current",
+    "forbidden_features": [
+      "malloc",
+      "file_io",
+      "system_call",
+      "raw_token_source"
+    ],
+    "required_features": [
+      "controlled_c_subset",
+      "requirement_spec"
+    ],
+    "safety_contract": "variant contract; syntax filter is not correctness evidence",
+    "sample_count": 2048,
+    "support_status_target": "current_supported",
+    "target_algorithm_family": "algorithm_variant",
+    "target_variant_failure": "counter_machine_variant"
+  },
+  "function_rename_call_assignment": {
+    "difficulty_level": "medium",
+    "expected_action": "train_current",
+    "forbidden_features": [
+      "malloc",
+      "file_io",
+      "system_call",
+      "raw_token_source"
+    ],
+    "required_features": [
+      "controlled_c_subset",
+      "requirement_spec"
+    ],
+    "safety_contract": "variant contract; syntax filter is not correctness evidence",
+    "sample_count": 2048,
+    "support_status_target": "current_supported",
+    "target_algorithm_family": "algorithm_variant",
+    "target_variant_failure": "function_rename_call"
+  },
+  "helper_split_call_graph_assignment": {
+    "difficulty_level": "medium",
+    "expected_action": "train_current",
+    "forbidden_features": [
+      "malloc",
+      "file_io",
+      "system_call",
+      "raw_token_source"
+    ],
+    "required_features": [
+      "controlled_c_subset",
+      "requirement_spec"
+    ],
+    "safety_contract": "variant contract; syntax filter is not correctness evidence",
+    "sample_count": 2048,
+    "support_status_target": "current_supported",
+    "target_algorithm_family": "algorithm_variant",
+    "target_variant_failure": "helper_split_call_graph"
+  },
+  "loop_direction_assignment": {
+    "difficulty_level": "medium",
+    "expected_action": "train_current",
+    "forbidden_features": [
+      "malloc",
+      "file_io",
+      "system_call",
+      "raw_token_source"
+    ],
+    "required_features": [
+      "controlled_c_subset",
+      "requirement_spec"
+    ],
+    "safety_contract": "variant contract; syntax filter is not correctness evidence",
+    "sample_count": 2048,
+    "support_status_target": "current_supported",
+    "target_algorithm_family": "algorithm_variant",
+    "target_variant_failure": "loop_direction"
+  },
+  "matrix_dimension_assignment": {
+    "difficulty_level": "medium",
+    "expected_action": "train_current",
+    "forbidden_features": [
+      "malloc",
+      "file_io",
+      "system_call",
+      "raw_token_source"
+    ],
+    "required_features": [
+      "controlled_c_subset",
+      "requirement_spec"
+    ],
+    "safety_contract": "variant contract; syntax filter is not correctness evidence",
+    "sample_count": 2048,
+    "support_status_target": "current_supported",
+    "target_algorithm_family": "algorithm_variant",
+    "target_variant_failure": "matrix_dimension"
+  },
+  "recursion_base_case_variant_assignment": {
+    "difficulty_level": "medium",
+    "expected_action": "train_current",
+    "forbidden_features": [
+      "malloc",
+      "file_io",
+      "system_call",
+      "raw_token_source"
+    ],
+    "required_features": [
+      "controlled_c_subset",
+      "requirement_spec"
+    ],
+    "safety_contract": "variant contract; syntax filter is not correctness evidence",
+    "sample_count": 2048,
+    "support_status_target": "current_supported",
+    "target_algorithm_family": "algorithm_variant",
+    "target_variant_failure": "recursion_base_case_variant"
+  },
+  "sorting_order_assignment": {
+    "difficulty_level": "medium",
+    "expected_action": "train_current",
+    "forbidden_features": [
+      "malloc",
+      "file_io",
+      "system_call",
+      "raw_token_source"
+    ],
+    "required_features": [
+      "controlled_c_subset",
+      "requirement_spec"
+    ],
+    "safety_contract": "variant contract; syntax filter is not correctness evidence",
+    "sample_count": 2048,
+    "support_status_target": "current_supported",
+    "target_algorithm_family": "algorithm_variant",
+    "target_variant_failure": "sorting_order"
+  },
+  "stack_queue_capacity_assignment": {
+    "difficulty_level": "medium",
+    "expected_action": "train_current",
+    "forbidden_features": [
+      "malloc",
+      "file_io",
+      "system_call",
+      "raw_token_source"
+    ],
+    "required_features": [
+      "controlled_c_subset",
+      "requirement_spec"
+    ],
+    "safety_contract": "variant contract; syntax filter is not correctness evidence",
+    "sample_count": 2048,
+    "support_status_target": "current_supported",
+    "target_algorithm_family": "algorithm_variant",
+    "target_variant_failure": "stack_queue_capacity"
+  },
+  "variable_rename_binding_assignment": {
+    "difficulty_level": "medium",
+    "expected_action": "train_current",
+    "forbidden_features": [
+      "malloc",
+      "file_io",
+      "system_call",
+      "raw_token_source"
+    ],
+    "required_features": [
+      "controlled_c_subset",
+      "requirement_spec"
+    ],
+    "safety_contract": "variant contract; syntax filter is not correctness evidence",
+    "sample_count": 2048,
+    "support_status_target": "current_supported",
+    "target_algorithm_family": "algorithm_variant",
+    "target_variant_failure": "variable_rename_binding"
+  },
+  "while_language_variant_assignment": {
+    "difficulty_level": "medium",
+    "expected_action": "train_current",
+    "forbidden_features": [
+      "malloc",
+      "file_io",
+      "system_call",
+      "raw_token_source"
+    ],
+    "required_features": [
+      "controlled_c_subset",
+      "requirement_spec"
+    ],
+    "safety_contract": "variant contract; syntax filter is not correctness evidence",
+    "sample_count": 2048,
+    "support_status_target": "current_supported",
+    "target_algorithm_family": "algorithm_variant",
+    "target_variant_failure": "while_language_variant"
+  }
+}
