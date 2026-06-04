@@ -1,0 +1,15 @@
+{
+  "controlled_small_project_coverage_score": 1.0,
+  "project_type_count": {
+    "counter_machine_mini_project": 100000,
+    "function_array_project": 120000,
+    "loop_heavy_project": 100000,
+    "mixed_frontier_project": 70000,
+    "multi_function_call_graph": 150000,
+    "recursion_frontier_project": 80000,
+    "single_function_mini_project": 150000,
+    "state_update_project": 100000,
+    "unsupported_review_boundary": 50000,
+    "while_language_mini_project": 80000
+  }
+}

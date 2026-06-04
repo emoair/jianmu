@@ -1,0 +1,29 @@
+{
+  "arbitrary_project_claim_count": 0,
+  "audit_passed": true,
+  "future_domain_in_train_current": 0,
+  "production_support_claim_count": 0,
+  "project_token_contains_c_source": 0,
+  "project_token_contains_raw_target_ir_json": 0,
+  "project_type_count": {
+    "counter_machine_mini_project": 100000,
+    "function_array_project": 120000,
+    "loop_heavy_project": 100000,
+    "mixed_frontier_project": 70000,
+    "multi_function_call_graph": 150000,
+    "recursion_frontier_project": 80000,
+    "single_function_mini_project": 150000,
+    "state_update_project": 100000,
+    "unsupported_review_boundary": 50000,
+    "while_language_mini_project": 80000
+  },
+  "support_status_count": {
+    "current_supported": 800000,
+    "future_domain": 150000,
+    "unsupported": 50000
+  },
+  "token_contains_expected_output": 0,
+  "total_count": 1000000,
+  "unsupported_has_expected_output": 0,
+  "unsupported_has_targetir": 0
+}

@@ -1,0 +1,9 @@
+{
+  "avg_syntax_check_ms": 20.470708,
+  "p95_syntax_check_ms": 22.671829,
+  "syntax_filter_used_as_correctness_evidence": false,
+  "syntax_frontend_checked_count": 200000,
+  "syntax_frontend_enabled": true,
+  "syntax_frontend_pass_rate": 1.0,
+  "syntax_pass_but_full_compile_fail_count": 0
+}

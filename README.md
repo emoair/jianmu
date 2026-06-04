@@ -619,6 +619,10 @@ JianMu V1.0 Source Review Candidate is a public review candidate, not an officia
 
 Post-V1.0 development starts from the source review candidate and the baseline guide in [POST_V1_0_DEVELOPMENT_BASELINE.md](docs/development/POST_V1_0_DEVELOPMENT_BASELINE.md).
 
+## v1.0.2 Development Direction
+
+v1.0.2 hardens the post-V1.0 substrate before the natural-language layer by testing controlled small-project parsing through CodeCartographer / MirrorForge into Project StandardToken, MirrorToken, and TuringToken. It keeps natural-language work on a side alpha path, does not claim arbitrary project parsing, and does not enable production support.
+
 ## Archive
 
 Historical v0.9.x evidence is preserved through archive indexes:

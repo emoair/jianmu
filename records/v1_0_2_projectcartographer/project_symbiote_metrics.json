@@ -1,0 +1,30 @@
+{
+  "array_success_rate": 0.932,
+  "best_experiment_group": "redqueen_hydrabudget_project_symbiote",
+  "comfort_zone_collapse_detected": false,
+  "counter_machine_project_witness_success_rate": 0.981,
+  "experiment_groups": [
+    "baseline_v1_0_1",
+    "projectcartographer_only",
+    "mirror_project_to_token_only",
+    "trunk_training_from_frozen_mirror",
+    "mirror_training_from_frozen_trunk",
+    "redqueen_project_curriculum",
+    "redqueen_hydrabudget_project_symbiote"
+  ],
+  "function_array_success_rate": 0.918,
+  "function_success_rate": 0.936,
+  "heldout_array_success_rate": 0.916,
+  "heldout_call_graph_success_rate": 0.918,
+  "heldout_project_success_rate": 0.914,
+  "heldout_recursion_success_rate": 0.903,
+  "heldout_state_success_rate": 0.921,
+  "mirror_training_positive": true,
+  "project_symbiote_positive": true,
+  "recursion_success_rate": 0.928,
+  "state_growth_success_rate": 0.931,
+  "symbiote_project_positive": true,
+  "terminating_unbounded_success_rate": 0.941,
+  "trunk_training_positive": true,
+  "while_language_project_witness_success_rate": 0.976
+}

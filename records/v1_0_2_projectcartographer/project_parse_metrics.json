@@ -1,0 +1,10 @@
+{
+  "array_usage_extraction_rate": 1.0,
+  "control_flow_extraction_rate": 1.0,
+  "function_graph_extraction_rate": 1.0,
+  "module_boundary_detection_rate": 1.0,
+  "project_parse_success_rate": 1.0,
+  "recursion_detection_rate": 1.0,
+  "state_update_extraction_rate": 1.0,
+  "variable_scope_extraction_rate": 1.0
+}

@@ -1,0 +1,48 @@
+{
+  "arbitrary_project_parsing_completed": false,
+  "blocking_issues": [],
+  "comfort_zone_audit_passed": true,
+  "compiler_validation_clean": true,
+  "counter_machine_project_witness_success_rate": 0.981,
+  "data_contract_clean": true,
+  "dataset_total_samples": 1300000,
+  "formal_turing_completeness_proven": false,
+  "function_array_success_rate": 0.918,
+  "heldout_project_success_rate": 0.914,
+  "project_parse_success_rate": 1.0,
+  "project_to_token_overall_success_rate": 0.95,
+  "ready_for_linguaforge_alpha_side_branch": true,
+  "recommended_claim_level": "projectcartographer_substrate_hardening_positive",
+  "recursion_success_rate": 0.928,
+  "required_next_run": "v1.1-alpha LinguaForge side branch",
+  "state_growth_success_rate": 0.931,
+  "still_not_proven": [
+    "arbitrary project parsing",
+    "formal Turing completeness proof",
+    "natural language layer completed",
+    "solved program synthesis",
+    "production readiness",
+    "safe real promotion",
+    "stable convergence",
+    "solved OOD",
+    "general program synthesis",
+    "default profile changed",
+    "production support",
+    "emergence proven"
+  ],
+  "syntax_filter_used_as_correctness_evidence": false,
+  "syntax_frontend_checked_count": 200000,
+  "token_to_ir_success_rate": 1.0,
+  "what_this_version_did_not_prove": [
+    "arbitrary project parsing",
+    "formal Turing completeness proof",
+    "natural language layer completed",
+    "production support"
+  ],
+  "what_this_version_proved": [
+    "controlled small-project parsing can feed Project StandardToken/MirrorToken/TuringToken diagnostics",
+    "syntax frontend can filter grammar without being counted as correctness",
+    "full compile validation remains the correctness anchor"
+  ],
+  "why_before_nl": "project-level substrate hardening gives a stable token and compiler-backed base before NL adapters."
+}
