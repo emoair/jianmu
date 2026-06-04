@@ -1,0 +1,47 @@
+{
+  "bounded_regression_guard_assignment": {
+    "enabled": true,
+    "mode": "deterministic_shadow_curriculum",
+    "real_promotion": false
+  },
+  "nl_array_index_trap_assignment": {
+    "enabled": true,
+    "mode": "deterministic_shadow_curriculum",
+    "real_promotion": false
+  },
+  "nl_condition_ambiguity_assignment": {
+    "enabled": true,
+    "mode": "deterministic_shadow_curriculum",
+    "real_promotion": false
+  },
+  "nl_counter_machine_description_assignment": {
+    "enabled": true,
+    "mode": "deterministic_shadow_curriculum",
+    "real_promotion": false
+  },
+  "nl_function_argument_order_assignment": {
+    "enabled": true,
+    "mode": "deterministic_shadow_curriculum",
+    "real_promotion": false
+  },
+  "nl_loop_boundary_assignment": {
+    "enabled": true,
+    "mode": "deterministic_shadow_curriculum",
+    "real_promotion": false
+  },
+  "nl_recursion_base_case_assignment": {
+    "enabled": true,
+    "mode": "deterministic_shadow_curriculum",
+    "real_promotion": false
+  },
+  "nl_unbounded_timeout_boundary_assignment": {
+    "enabled": true,
+    "mode": "deterministic_shadow_curriculum",
+    "real_promotion": false
+  },
+  "nl_variable_assignment_rewrite_assignment": {
+    "enabled": true,
+    "mode": "deterministic_shadow_curriculum",
+    "real_promotion": false
+  }
+}

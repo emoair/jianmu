@@ -1,0 +1,44 @@
+{
+  "blocking_issues": [],
+  "comfort_zone_audit_passed": true,
+  "compiler_validation_clean": true,
+  "data_contract_clean": true,
+  "dataset_total_samples": 800000,
+  "mirrortoken_success_rate": 1.0,
+  "natural_language_layer_completed": false,
+  "nl_goes_through_token": true,
+  "paraphrase_generalization_score": 0.91,
+  "production_nl_interface": false,
+  "ready_for_nl_adapter_review": true,
+  "recommended_claim_level": "linguaforge_nl_adapter_alpha_positive",
+  "required_next_run": "v1.1-alpha.2 larger Chinese paraphrase dataset",
+  "roundtrip_success_rate": 1.0,
+  "standardtoken_success_rate": 1.0,
+  "still_not_proven": [
+    "natural language layer completed",
+    "general natural language understanding",
+    "production NL interface",
+    "formal Turing completeness proof",
+    "arbitrary project parsing",
+    "solved program synthesis",
+    "production readiness",
+    "safe real promotion",
+    "stable convergence",
+    "solved OOD",
+    "default profile changed",
+    "emergence proven"
+  ],
+  "substrate_lock_passed": true,
+  "what_this_version_did_not_prove": [
+    "natural language layer completed",
+    "general natural language understanding",
+    "production NL interface",
+    "formal Turing completeness proof",
+    "solved program synthesis"
+  ],
+  "what_this_version_proved": [
+    "Chinese NL can be deterministically mapped to StandardToken and MirrorToken in an alpha adapter path.",
+    "The adapter path uses NL -> Token -> IR/Candidate -> compiler/watchdog; direct NL C/IR generation remains disabled.",
+    "Frozen V1.0 substrate evidence references are preserved."
+  ]
+}

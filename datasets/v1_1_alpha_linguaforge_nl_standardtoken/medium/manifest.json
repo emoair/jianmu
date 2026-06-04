@@ -1,0 +1,95 @@
+{
+  "completed": true,
+  "dataset_version": "v1.1_alpha_linguaforge",
+  "materialized_count": 250000,
+  "max_shard_size_mb": 43.668644,
+  "partial": false,
+  "partial_reason": "",
+  "scale": "medium",
+  "shards": {
+    "eval": [
+      {
+        "path": "eval_000.jsonl",
+        "row_count": 20083,
+        "size_bytes": 45789174
+      },
+      {
+        "path": "eval_001.jsonl",
+        "row_count": 17417,
+        "size_bytes": 39707117
+      }
+    ],
+    "heldout": [
+      {
+        "path": "heldout_000.jsonl",
+        "row_count": 12500,
+        "size_bytes": 23350199
+      }
+    ],
+    "test": [
+      {
+        "path": "test_000.jsonl",
+        "row_count": 19777,
+        "size_bytes": 45789615
+      },
+      {
+        "path": "test_001.jsonl",
+        "row_count": 5223,
+        "size_bytes": 12089098
+      }
+    ],
+    "train": [
+      {
+        "path": "train_000.jsonl",
+        "row_count": 20232,
+        "size_bytes": 45789770
+      },
+      {
+        "path": "train_001.jsonl",
+        "row_count": 20232,
+        "size_bytes": 45789748
+      },
+      {
+        "path": "train_002.jsonl",
+        "row_count": 20232,
+        "size_bytes": 45789736
+      },
+      {
+        "path": "train_003.jsonl",
+        "row_count": 20232,
+        "size_bytes": 45789740
+      },
+      {
+        "path": "train_004.jsonl",
+        "row_count": 20232,
+        "size_bytes": 45789785
+      },
+      {
+        "path": "train_005.jsonl",
+        "row_count": 20232,
+        "size_bytes": 45789892
+      },
+      {
+        "path": "train_006.jsonl",
+        "row_count": 20232,
+        "size_bytes": 45789740
+      },
+      {
+        "path": "train_007.jsonl",
+        "row_count": 20231,
+        "size_bytes": 45786714
+      },
+      {
+        "path": "train_008.jsonl",
+        "row_count": 13145,
+        "size_bytes": 29729303
+      }
+    ]
+  },
+  "split_counts": {
+    "eval": 37500,
+    "heldout": 12500,
+    "test": 25000,
+    "train": 175000
+  }
+}

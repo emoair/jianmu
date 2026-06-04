@@ -1,0 +1,28 @@
+{
+  "active_core_manifest_present": true,
+  "active_frontier_manifest_present": true,
+  "array_success_rate": 1.0,
+  "bounded_candidate_miss": 0.1048,
+  "bounded_top1": 0.8274,
+  "counter_machine_witness_success_rate": 1.0,
+  "default_profile_unchanged": true,
+  "full_compile_50k_accounting_present": true,
+  "full_compile_50k_continuation_present": true,
+  "function_array_success_rate": 1.0,
+  "function_success_rate": 1.0,
+  "missing_evidence_paths": [],
+  "real_promotion_enabled": false,
+  "recursion_success_rate": 1.0,
+  "state_growth_success_rate": 1.0,
+  "substrate_lock_passed": true,
+  "substrate_regression_count": 0,
+  "terminating_unbounded_success_rate": 1.0,
+  "v1_0_evidence_paths_checked": [
+    "records\\v1_0_1_forgeclean\\active_core_manifest.json",
+    "records\\v1_0_1_forgeclean\\active_frontier_manifest.json",
+    "records\\v1_0_1_forgeclean\\post_v1_0_baseline_readiness.json",
+    "records\\v0_9_28_1\\full_compile_50k_accounting.json",
+    "records\\v0_9_28_1\\full_compile_50k_continuation.json"
+  ],
+  "v1_0_substrate_frozen": true
+}

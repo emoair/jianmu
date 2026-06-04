@@ -1,0 +1,14 @@
+{
+  "array_index_trap_success_rate": 0.86,
+  "contrastive_nl_pair_success_rate": 0.89,
+  "counter_machine_natural_description_success_rate": 0.88,
+  "function_parameter_order_perturbation_success_rate": 0.87,
+  "heldout_paraphrase_success_rate": 0.91,
+  "loop_boundary_rewrite_success_rate": 0.9,
+  "missing_recursion_base_case_detection_rate": 0.93,
+  "omitted_subject_success_rate": 0.88,
+  "order_change_success_rate": 0.9,
+  "paraphrase_generalization_passed": true,
+  "paraphrase_generalization_score": 0.91,
+  "synonym_rewrite_success_rate": 0.92
+}

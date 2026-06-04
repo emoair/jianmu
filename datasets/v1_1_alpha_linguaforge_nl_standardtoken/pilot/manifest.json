@@ -1,0 +1,50 @@
+{
+  "completed": true,
+  "dataset_version": "v1.1_alpha_linguaforge",
+  "materialized_count": 50000,
+  "max_shard_size_mb": 43.665972,
+  "partial": false,
+  "partial_reason": "",
+  "scale": "pilot",
+  "shards": {
+    "eval": [
+      {
+        "path": "eval_000.jsonl",
+        "row_count": 7500,
+        "size_bytes": 17091773
+      }
+    ],
+    "heldout": [
+      {
+        "path": "heldout_000.jsonl",
+        "row_count": 2500,
+        "size_bytes": 4667546
+      }
+    ],
+    "test": [
+      {
+        "path": "test_000.jsonl",
+        "row_count": 5000,
+        "size_bytes": 11570759
+      }
+    ],
+    "train": [
+      {
+        "path": "train_000.jsonl",
+        "row_count": 20237,
+        "size_bytes": 45787090
+      },
+      {
+        "path": "train_001.jsonl",
+        "row_count": 14763,
+        "size_bytes": 33386762
+      }
+    ]
+  },
+  "split_counts": {
+    "eval": 7500,
+    "heldout": 2500,
+    "test": 5000,
+    "train": 35000
+  }
+}

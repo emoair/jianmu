@@ -1,0 +1,24 @@
+{
+  "audit_passed": true,
+  "direct_code_generation_path_count": 0,
+  "future_domain_in_train_current": 0,
+  "language_count": {
+    "zh": 500000
+  },
+  "malformed_token_count": 0,
+  "nl_direct_c_generation_count": 0,
+  "nl_direct_target_ir_generation_count": 0,
+  "schema_violation_count": 0,
+  "support_status_count": {
+    "current_supported": 195000,
+    "future_domain": 265000,
+    "review": 25000,
+    "unsupported": 15000
+  },
+  "token_contains_c_source": 0,
+  "token_contains_expected_output": 0,
+  "token_contains_raw_target_ir_json": 0,
+  "total_count": 500000,
+  "unsupported_has_expected_output": 0,
+  "unsupported_has_targetir": 0
+}

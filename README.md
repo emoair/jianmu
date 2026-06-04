@@ -619,6 +619,10 @@ JianMu V1.0 Source Review Candidate is a public review candidate, not an officia
 
 Post-V1.0 development starts from the source review candidate and the baseline guide in [POST_V1_0_DEVELOPMENT_BASELINE.md](docs/development/POST_V1_0_DEVELOPMENT_BASELINE.md).
 
+## v1.1-alpha Development Direction
+
+v1.1-alpha introduces LinguaForge, a Chinese natural-language adapter that maps structured NL task descriptions into StandardToken / MirrorToken before using the frozen V1.0 substrate. It does not allow NL to bypass the token layer, does not directly generate C/IR, and does not claim a completed natural-language interface.
+
 ## Archive
 
 Historical v0.9.x evidence is preserved through archive indexes:

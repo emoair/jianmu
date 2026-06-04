@@ -1,0 +1,16 @@
+{
+  "allowed_claims": [
+    "Chinese NL-to-StandardToken adapter alpha evidence",
+    "NL-to-MirrorToken bridge positive if validation passes",
+    "NL paraphrase generalization evidence",
+    "compiler-backed NL-token-candidate validation evidence",
+    "frozen V1.0 substrate preserved"
+  ],
+  "forbidden_claims": [
+    "natural language layer completed",
+    "general NL understanding",
+    "production NL interface",
+    "solved program synthesis",
+    "formal Turing completeness proven"
+  ]
+}

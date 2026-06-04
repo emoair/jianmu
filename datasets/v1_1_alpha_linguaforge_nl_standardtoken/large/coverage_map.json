@@ -1,0 +1,23 @@
+{
+  "category_count": {
+    "MirrorToken:ambiguous_review": 10000,
+    "MirrorToken:bounded_loop": 40000,
+    "MirrorToken:fixed_array_operations": 50000,
+    "MirrorToken:function_definition_call": 30000,
+    "MirrorToken:if_else": 30000,
+    "MirrorToken:recursion_description": 20000,
+    "MirrorToken:unbounded_while_description": 20000,
+    "MirrorToken:variable_assignment_arithmetic": 50000,
+    "StandardToken:ambiguous_review": 15000,
+    "StandardToken:bounded_loop": 35000,
+    "StandardToken:fixed_array_operations": 50000,
+    "StandardToken:function_definition_call": 30000,
+    "StandardToken:if_else": 30000,
+    "StandardToken:recursion_description": 20000,
+    "StandardToken:unbounded_while_description": 20000,
+    "StandardToken:variable_assignment_arithmetic": 50000
+  },
+  "chinese_nl_coverage_score": 1.0,
+  "mirrortoken_coverage_score": 1.0,
+  "standardtoken_coverage_score": 1.0
+}
