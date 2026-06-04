@@ -610,3 +610,19 @@ v0.9.28.1 performs a full-compile 50K continuation by adding 30K new full compil
 ## V1.0 Source Review Candidate
 
 This branch is a V1.0 source review candidate. It is not a production release, not a formal proof of Turing completeness, and not an official V1.0 release tag. Human review is still required before any official V1.0 release or tag. The current review evidence includes 50K accounted clean full-compile validation, while preprint or paper materials may still be pending.
+
+## Current Status
+
+JianMu V1.0 Source Review Candidate is a public review candidate, not an official release and not production ready. It has 50K clean full-compile evidence, while human review is still required before any official release or tag.
+
+## Development Baseline
+
+Post-V1.0 development starts from the source review candidate and the baseline guide in [POST_V1_0_DEVELOPMENT_BASELINE.md](docs/development/POST_V1_0_DEVELOPMENT_BASELINE.md).
+
+## Archive
+
+Historical v0.9.x evidence is preserved through archive indexes:
+
+- [V0_9_EXPERIMENT_ARCHIVE_INDEX.md](docs/archive/V0_9_EXPERIMENT_ARCHIVE_INDEX.md)
+- [V0_9_RECORDS_EVIDENCE_MAP.md](docs/archive/V0_9_RECORDS_EVIDENCE_MAP.md)
+- [V1_0_EVIDENCE_PRESERVATION.md](docs/archive/V1_0_EVIDENCE_PRESERVATION.md)

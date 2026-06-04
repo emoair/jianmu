@@ -1,0 +1,19 @@
+{
+  "all_critical_evidence_present": true,
+  "critical_evidence_paths": [
+    "records/v0_9_28_1/full_compile_50k_accounting.json",
+    "records/v0_9_28_1/full_compile_50k_continuation.json",
+    "records/v0_9_28_1/full_compile_50k_readiness.json",
+    "records/v0_9_28_1/mainline_conclusion.md",
+    "docs/release_prep/V1_0_SOURCE_REVIEW_NOTICE.md",
+    "docs/release_prep/V1_0_PUBLIC_REVIEW_CLAIM_BOUNDARY.md",
+    "docs/release_prep/V1_0_NOT_PROVEN_NOTICE.md",
+    "docs/release_prep/V1_0_PROJECT_TIMELINE.md",
+    "docs/release_prep/V1_0_SOURCE_PACKAGE_MANIFEST.md"
+  ],
+  "evidence_paths_stable": true,
+  "evidence_preservation_passed": true,
+  "missing_critical_evidence": [],
+  "no_deleted_critical_evidence": true,
+  "no_release_or_tag_created": true
+}

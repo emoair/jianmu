@@ -1,0 +1,24 @@
+{
+  "active_core_docs": [
+    "README.md",
+    "docs/development/POST_V1_0_DEVELOPMENT_BASELINE.md",
+    "docs/release_prep/V1_0_PUBLIC_REVIEW_CLAIM_BOUNDARY.md"
+  ],
+  "active_core_entrypoints": [
+    "examples/run_full_compile_50k_continuation.py",
+    "examples/run_frontier_review_proof_readiness_rc_prep.py"
+  ],
+  "active_core_modules": [
+    "jianmu/self_learning/darwinforge/arithmetic_compiler_backend.py",
+    "jianmu/self_learning/darwinforge/bounded_substrate_compiler_temp_manager.py",
+    "jianmu/self_learning/darwinforge/architecture_charter_guard.py",
+    "jianmu/self_learning/darwinforge/workload_trace.py"
+  ],
+  "active_core_tests": [
+    "tests/test_architecture_charter_guard.py",
+    "tests/test_full_compile_50k_readiness.py",
+    "tests/test_full_compile_50k_accounting.py"
+  ],
+  "missing_active_core_paths": [],
+  "why_active": "These files anchor compiler verification, architecture-charter checks, review evidence accounting, and post-V1.0 development orientation."
+}

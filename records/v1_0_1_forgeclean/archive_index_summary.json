@@ -1,0 +1,157 @@
+{
+  "archive_index_generated": true,
+  "checksum_needed": true,
+  "critical_records_to_preserve": [
+    "records/v0_9_28_1/full_compile_50k_accounting.json",
+    "records/v0_9_28_1/full_compile_50k_continuation.json",
+    "records/v0_9_28_1/full_compile_50k_readiness.json",
+    "records/v0_9_28_1/mainline_conclusion.md"
+  ],
+  "dataset_archive_index": [
+    "datasets/v0_5_6",
+    "datasets/v0_5_8",
+    "datasets/v0_6_8",
+    "datasets/v0_7_0",
+    "datasets/v0_8_4_ood_boundary_candidates",
+    "datasets/v0_8_5_boundary_aware",
+    "datasets/v0_9_14_turing_frontier_v2",
+    "datasets/v0_9_15_1_multiagent_active_generation_audit",
+    "datasets/v0_9_15_2_codex_grammar_chinese_dataset",
+    "datasets/v0_9_15_active_generation_pilot",
+    "datasets/v0_9_17_redqueen_curriculum",
+    "datasets/v0_9_18_forgefrontier_function_array",
+    "datasets/v0_9_20_1_redqueen_v2_contrastive_full",
+    "datasets/v0_9_20_redqueen_v2_contrastive_curriculum",
+    "datasets/v0_9_21_1_mirrorforge_abstraction_variants",
+    "datasets/v0_9_21_mirrorforge_code_to_token",
+    "datasets/v0_9_22_codecartographer_standardtoken",
+    "datasets/v0_9_26_1_turing_frontier_repair",
+    "datasets/v0_9_26_turing_frontier",
+    "datasets/v0_9_27_1_batch_failure_repair",
+    "datasets/v0_9_27_function_array_turing_scaleup",
+    "datasets/v0_9_2_arithmetic_curriculum",
+    "datasets/v0_9_6_turing_substrate_curriculum",
+    "datasets/v0_9_9_turing_frontier_curriculum"
+  ],
+  "evidence_archive": [
+    [
+      "v0.9.17",
+      "RedQueen/HydraBudget evidence"
+    ],
+    [
+      "v0.9.18",
+      "IronJudge compiler validation"
+    ],
+    [
+      "v0.9.20",
+      "Architecture Charter and RedQueen v2"
+    ],
+    [
+      "v0.9.21",
+      "MirrorForge"
+    ],
+    [
+      "v0.9.22",
+      "CodeCartographer"
+    ],
+    [
+      "v0.9.23",
+      "Symbiote"
+    ],
+    [
+      "v0.9.24",
+      "freeze candidate audit"
+    ],
+    [
+      "v0.9.25",
+      "longhaul diagnostic"
+    ],
+    [
+      "v0.9.26/26.1",
+      "Turing frontier"
+    ],
+    [
+      "v0.9.27/27.1",
+      "function-array + clean rerun"
+    ],
+    [
+      "v0.9.28/28.1",
+      "frontier review + 50K continuation"
+    ],
+    [
+      "v1.0 source review candidate",
+      "public review docs"
+    ]
+  ],
+  "optional_large_records_to_exclude_from_future_packages": [
+    "full JSONL traces",
+    "large dataset shards",
+    "temporary compiler outputs"
+  ],
+  "records_archive_index": [
+    "records/v0_9_0",
+    "records/v0_9_1",
+    "records/v0_9_10",
+    "records/v0_9_11",
+    "records/v0_9_12",
+    "records/v0_9_12_1",
+    "records/v0_9_12_2",
+    "records/v0_9_12_3",
+    "records/v0_9_13",
+    "records/v0_9_14",
+    "records/v0_9_15",
+    "records/v0_9_15_1",
+    "records/v0_9_15_2",
+    "records/v0_9_16",
+    "records/v0_9_17",
+    "records/v0_9_18",
+    "records/v0_9_18_1",
+    "records/v0_9_18_2",
+    "records/v0_9_19",
+    "records/v0_9_1_1",
+    "records/v0_9_1_2",
+    "records/v0_9_2",
+    "records/v0_9_20",
+    "records/v0_9_20_1",
+    "records/v0_9_21",
+    "records/v0_9_21_1",
+    "records/v0_9_22",
+    "records/v0_9_23",
+    "records/v0_9_24",
+    "records/v0_9_25",
+    "records/v0_9_26",
+    "records/v0_9_26_1",
+    "records/v0_9_27",
+    "records/v0_9_27_1",
+    "records/v0_9_28",
+    "records/v0_9_28_1",
+    "records/v0_9_3",
+    "records/v0_9_3_1",
+    "records/v0_9_3_2",
+    "records/v0_9_4",
+    "records/v0_9_4_1",
+    "records/v0_9_4_2",
+    "records/v0_9_4_3",
+    "records/v0_9_5",
+    "records/v0_9_5_1",
+    "records/v0_9_6",
+    "records/v0_9_7",
+    "records/v0_9_7_1",
+    "records/v0_9_7_2",
+    "records/v0_9_7_3",
+    "records/v0_9_8",
+    "records/v0_9_8_1",
+    "records/v0_9_9"
+  ],
+  "reproduction_paths": [
+    "records/v0_9_28_1/full_compile_50k_accounting.json",
+    "records/v0_9_28_1/full_compile_50k_continuation.json",
+    "records/v0_9_28_1/full_compile_50k_readiness.json",
+    "records/v0_9_28_1/mainline_conclusion.md",
+    "docs/release_prep/V1_0_SOURCE_REVIEW_NOTICE.md",
+    "docs/release_prep/V1_0_PUBLIC_REVIEW_CLAIM_BOUNDARY.md",
+    "docs/release_prep/V1_0_NOT_PROVEN_NOTICE.md",
+    "docs/release_prep/V1_0_PROJECT_TIMELINE.md",
+    "docs/release_prep/V1_0_SOURCE_PACKAGE_MANIFEST.md"
+  ]
+}

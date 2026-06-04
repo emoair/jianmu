@@ -1,0 +1,64 @@
+{
+  "active_frontier_modules": {
+    "array_frontier": [
+      "jianmu/self_learning/darwinforge/array_frontier_scaleup.py",
+      "jianmu/self_learning/darwinforge/forgefrontier_array_grammar.py"
+    ],
+    "codecartographer": [
+      "jianmu/self_learning/darwinforge/codecartographer_runner.py",
+      "jianmu/self_learning/darwinforge/codecartographer_standard_token.py"
+    ],
+    "function_array_interop": [
+      "jianmu/self_learning/darwinforge/function_array_interop_scaleup.py",
+      "jianmu/self_learning/darwinforge/function_array_regression_guard.py"
+    ],
+    "function_frontier": [
+      "jianmu/self_learning/darwinforge/function_frontier_scaleup.py",
+      "jianmu/self_learning/darwinforge/forgefrontier_function_grammar.py"
+    ],
+    "hydrabudget": [
+      "jianmu/self_learning/darwinforge/hydrabudget_allocator.py",
+      "jianmu/self_learning/darwinforge/redqueen_hydrabudget_probe.py"
+    ],
+    "ironjudge_compiler_validation": [
+      "jianmu/self_learning/darwinforge/ironjudge_compiler_scale_validation.py",
+      "jianmu/self_learning/darwinforge/ironjudge_invocation_accounting.py"
+    ],
+    "mirrorforge": [
+      "jianmu/self_learning/darwinforge/mirrorforge_runner.py",
+      "jianmu/self_learning/darwinforge/mirrorforge_token_schema.py"
+    ],
+    "redqueen": [
+      "jianmu/self_learning/darwinforge/redqueen_v2_bandit_scheduler.py",
+      "jianmu/self_learning/darwinforge/redqueen_causal_curriculum_designer.py"
+    ],
+    "symbiote": [
+      "jianmu/self_learning/darwinforge/longhaul_symbiote_runner.py",
+      "jianmu/self_learning/darwinforge/frontend_batchcompile_symbiote.py"
+    ],
+    "turing_frontier": [
+      "jianmu/self_learning/darwinforge/turing_frontier_true_endurance.py",
+      "jianmu/self_learning/darwinforge/turing_frontier_regression_guard.py",
+      "jianmu/self_learning/darwinforge/turing_expressivity_proof_artifact.py"
+    ]
+  },
+  "frontier_status": {
+    "array_frontier": "review-ready evidence, not production support",
+    "function_frontier": "review-ready evidence, not production support",
+    "teacher_paths": "CodeCartographer and MirrorForge remain active teacher-path evidence",
+    "turing_frontier": "constructive evidence review-ready, formal proof not completed"
+  },
+  "next_development_owner": {
+    "compiler_validation": "IronJudge/full-compile evidence tooling",
+    "frontier": "future 1.1/1.2 review tracks",
+    "teacher_paths": "CodeCartographer/MirrorForge continuation"
+  },
+  "production_supported": {
+    "arbitrary_project_parsing": false,
+    "array": false,
+    "function": false,
+    "natural_language_layer": false,
+    "recursion": false,
+    "unbounded": false
+  }
+}
