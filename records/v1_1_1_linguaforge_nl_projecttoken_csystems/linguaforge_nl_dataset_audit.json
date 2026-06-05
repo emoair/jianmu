@@ -1,0 +1,16 @@
+{
+  "ambiguous_fake_expected_output_count": 0,
+  "data_contract_clean": true,
+  "dataset_audit_passed": true,
+  "nl_bypassed_token_layer_count": 0,
+  "nl_contains_raw_c_source_count": 0,
+  "nl_contains_raw_target_ir_json_count": 0,
+  "nl_direct_c_generation_count": 0,
+  "nl_direct_compiler_path_count": 0,
+  "nl_direct_target_ir_generation_count": 0,
+  "token_contains_raw_c_source_count": 0,
+  "token_contains_raw_target_ir_json_count": 0,
+  "total_samples": 5000000,
+  "unsupported_has_expected_output_count": 0,
+  "unsupported_has_targetir_count": 0
+}

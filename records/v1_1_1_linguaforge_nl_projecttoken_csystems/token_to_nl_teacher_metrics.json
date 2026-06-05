@@ -1,0 +1,7 @@
+{
+  "nl_to_token_reconstruction_success_rate": 0.88,
+  "semantic_hash_preservation_rate": 0.94,
+  "teacher_sample_count": 24000,
+  "token_to_nl_description_success_rate": 0.91,
+  "token_to_nl_semantic_preservation_rate": 0.93
+}

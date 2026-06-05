@@ -1,0 +1,10 @@
+{
+  "algorithm_intent_parse_success_rate": 0.93,
+  "csystems_intent_parse_success_rate": 0.89,
+  "nl_requirement_parse_success_rate": 0.91,
+  "parsed_sample_count": 120000,
+  "project_layout_intent_parse_success_rate": 0.9,
+  "refactor_intent_parse_success_rate": 0.86,
+  "supported_parse_sample_count": 92850,
+  "symbol_binding_intent_parse_success_rate": 0.9
+}

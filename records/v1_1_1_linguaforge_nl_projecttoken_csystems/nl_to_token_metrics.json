@@ -1,0 +1,29 @@
+{
+  "ambiguous_fake_expected_output_count": 0,
+  "data_contract_clean": true,
+  "nl_bypassed_token_layer_count": 0,
+  "nl_contains_raw_c_source_count": 0,
+  "nl_contains_raw_target_ir_json_count": 0,
+  "nl_direct_c_generation_count": 0,
+  "nl_direct_compiler_path_count": 0,
+  "nl_direct_target_ir_generation_count": 0,
+  "nl_to_algorithmtoken_success_rate": 0.91,
+  "nl_to_csystemstoken_success_rate": 0.88,
+  "nl_to_mirrortoken_success_rate": 0.86,
+  "nl_to_projecttoken_success_rate": 0.89,
+  "nl_to_symbolbindingtoken_success_rate": 0.87,
+  "nl_to_token_overall_success_rate": 0.89,
+  "nl_to_turingtoken_success_rate": 0.86,
+  "token_audit_passed": true,
+  "token_contains_raw_c_source_count": 0,
+  "token_contains_raw_target_ir_json_count": 0,
+  "token_schema_valid_rate": 1.0,
+  "token_to_ir_success_rate": 0.96,
+  "token_type_counts": {
+    "algorithmtoken": 28350,
+    "csystemstoken": 33000,
+    "symbolbindingtoken": 31500
+  },
+  "unsupported_has_expected_output_count": 0,
+  "unsupported_has_targetir_count": 0
+}

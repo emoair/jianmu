@@ -1,0 +1,302 @@
+{
+  "bidirectional_alignment_assignment": {
+    "difficulty_level": "alpha",
+    "expected_action": "train_current",
+    "forbidden_features": [
+      "direct C generation",
+      "direct target_ir generation",
+      "token bypass"
+    ],
+    "naturalness_level": "level_2_natural",
+    "required_features": [
+      "Chinese NL parse",
+      "token layer mapping",
+      "frozen substrate validation"
+    ],
+    "safety_contract": "NL does not bypass token layer",
+    "sample_count": 2048,
+    "support_status_target": "current_supported",
+    "target_failure": "bidirectional_alignment_failure",
+    "target_nl_family": "bidirectional_alignment"
+  },
+  "nl_adversarial_boundary_assignment": {
+    "difficulty_level": "alpha",
+    "expected_action": "review_or_reject",
+    "forbidden_features": [
+      "direct C generation",
+      "direct target_ir generation",
+      "token bypass"
+    ],
+    "naturalness_level": "level_2_natural",
+    "required_features": [
+      "Chinese NL parse",
+      "token layer mapping",
+      "frozen substrate validation"
+    ],
+    "safety_contract": "NL does not bypass token layer",
+    "sample_count": 2048,
+    "support_status_target": "review_or_unsupported",
+    "target_failure": "nl_adversarial_boundary_failure",
+    "target_nl_family": "nl_adversarial_boundary"
+  },
+  "nl_algorithm_requirement_assignment": {
+    "difficulty_level": "alpha",
+    "expected_action": "train_current",
+    "forbidden_features": [
+      "direct C generation",
+      "direct target_ir generation",
+      "token bypass"
+    ],
+    "naturalness_level": "level_2_natural",
+    "required_features": [
+      "Chinese NL parse",
+      "token layer mapping",
+      "frozen substrate validation"
+    ],
+    "safety_contract": "NL does not bypass token layer",
+    "sample_count": 2048,
+    "support_status_target": "current_supported",
+    "target_failure": "nl_algorithm_requirement_failure",
+    "target_nl_family": "nl_algorithm_requirement"
+  },
+  "nl_ambiguous_review_assignment": {
+    "difficulty_level": "alpha",
+    "expected_action": "review_or_reject",
+    "forbidden_features": [
+      "direct C generation",
+      "direct target_ir generation",
+      "token bypass"
+    ],
+    "naturalness_level": "level_2_natural",
+    "required_features": [
+      "Chinese NL parse",
+      "token layer mapping",
+      "frozen substrate validation"
+    ],
+    "safety_contract": "NL does not bypass token layer",
+    "sample_count": 2048,
+    "support_status_target": "review_or_unsupported",
+    "target_failure": "nl_ambiguous_review_failure",
+    "target_nl_family": "nl_ambiguous_review"
+  },
+  "nl_fileio_requirement_assignment": {
+    "difficulty_level": "alpha",
+    "expected_action": "train_current",
+    "forbidden_features": [
+      "direct C generation",
+      "direct target_ir generation",
+      "token bypass"
+    ],
+    "naturalness_level": "level_2_natural",
+    "required_features": [
+      "Chinese NL parse",
+      "token layer mapping",
+      "frozen substrate validation"
+    ],
+    "safety_contract": "NL does not bypass token layer",
+    "sample_count": 2048,
+    "support_status_target": "current_supported",
+    "target_failure": "nl_fileio_requirement_failure",
+    "target_nl_family": "nl_fileio_requirement"
+  },
+  "nl_malloc_requirement_assignment": {
+    "difficulty_level": "alpha",
+    "expected_action": "train_current",
+    "forbidden_features": [
+      "direct C generation",
+      "direct target_ir generation",
+      "token bypass"
+    ],
+    "naturalness_level": "level_2_natural",
+    "required_features": [
+      "Chinese NL parse",
+      "token layer mapping",
+      "frozen substrate validation"
+    ],
+    "safety_contract": "NL does not bypass token layer",
+    "sample_count": 2048,
+    "support_status_target": "current_supported",
+    "target_failure": "nl_malloc_requirement_failure",
+    "target_nl_family": "nl_malloc_requirement"
+  },
+  "nl_multifile_requirement_assignment": {
+    "difficulty_level": "alpha",
+    "expected_action": "train_current",
+    "forbidden_features": [
+      "direct C generation",
+      "direct target_ir generation",
+      "token bypass"
+    ],
+    "naturalness_level": "level_2_natural",
+    "required_features": [
+      "Chinese NL parse",
+      "token layer mapping",
+      "frozen substrate validation"
+    ],
+    "safety_contract": "NL does not bypass token layer",
+    "sample_count": 2048,
+    "support_status_target": "current_supported",
+    "target_failure": "nl_multifile_requirement_failure",
+    "target_nl_family": "nl_multifile_requirement"
+  },
+  "nl_paraphrase_contrast_assignment": {
+    "difficulty_level": "alpha",
+    "expected_action": "train_current",
+    "forbidden_features": [
+      "direct C generation",
+      "direct target_ir generation",
+      "token bypass"
+    ],
+    "naturalness_level": "level_2_natural",
+    "required_features": [
+      "Chinese NL parse",
+      "token layer mapping",
+      "frozen substrate validation"
+    ],
+    "safety_contract": "NL does not bypass token layer",
+    "sample_count": 2048,
+    "support_status_target": "current_supported",
+    "target_failure": "nl_paraphrase_contrast_failure",
+    "target_nl_family": "nl_paraphrase_contrast"
+  },
+  "nl_pointer_requirement_assignment": {
+    "difficulty_level": "alpha",
+    "expected_action": "train_current",
+    "forbidden_features": [
+      "direct C generation",
+      "direct target_ir generation",
+      "token bypass"
+    ],
+    "naturalness_level": "level_2_natural",
+    "required_features": [
+      "Chinese NL parse",
+      "token layer mapping",
+      "frozen substrate validation"
+    ],
+    "safety_contract": "NL does not bypass token layer",
+    "sample_count": 2048,
+    "support_status_target": "current_supported",
+    "target_failure": "nl_pointer_requirement_failure",
+    "target_nl_family": "nl_pointer_requirement"
+  },
+  "nl_project_layout_assignment": {
+    "difficulty_level": "alpha",
+    "expected_action": "train_current",
+    "forbidden_features": [
+      "direct C generation",
+      "direct target_ir generation",
+      "token bypass"
+    ],
+    "naturalness_level": "level_2_natural",
+    "required_features": [
+      "Chinese NL parse",
+      "token layer mapping",
+      "frozen substrate validation"
+    ],
+    "safety_contract": "NL does not bypass token layer",
+    "sample_count": 2048,
+    "support_status_target": "current_supported",
+    "target_failure": "nl_project_layout_failure",
+    "target_nl_family": "nl_project_layout"
+  },
+  "nl_refactor_assignment": {
+    "difficulty_level": "alpha",
+    "expected_action": "train_current",
+    "forbidden_features": [
+      "direct C generation",
+      "direct target_ir generation",
+      "token bypass"
+    ],
+    "naturalness_level": "level_2_natural",
+    "required_features": [
+      "Chinese NL parse",
+      "token layer mapping",
+      "frozen substrate validation"
+    ],
+    "safety_contract": "NL does not bypass token layer",
+    "sample_count": 2048,
+    "support_status_target": "current_supported",
+    "target_failure": "nl_refactor_failure",
+    "target_nl_family": "nl_refactor"
+  },
+  "nl_struct_requirement_assignment": {
+    "difficulty_level": "alpha",
+    "expected_action": "train_current",
+    "forbidden_features": [
+      "direct C generation",
+      "direct target_ir generation",
+      "token bypass"
+    ],
+    "naturalness_level": "level_2_natural",
+    "required_features": [
+      "Chinese NL parse",
+      "token layer mapping",
+      "frozen substrate validation"
+    ],
+    "safety_contract": "NL does not bypass token layer",
+    "sample_count": 2048,
+    "support_status_target": "current_supported",
+    "target_failure": "nl_struct_requirement_failure",
+    "target_nl_family": "nl_struct_requirement"
+  },
+  "nl_symbol_rename_assignment": {
+    "difficulty_level": "alpha",
+    "expected_action": "train_current",
+    "forbidden_features": [
+      "direct C generation",
+      "direct target_ir generation",
+      "token bypass"
+    ],
+    "naturalness_level": "level_2_natural",
+    "required_features": [
+      "Chinese NL parse",
+      "token layer mapping",
+      "frozen substrate validation"
+    ],
+    "safety_contract": "NL does not bypass token layer",
+    "sample_count": 2048,
+    "support_status_target": "current_supported",
+    "target_failure": "nl_symbol_rename_failure",
+    "target_nl_family": "nl_symbol_rename"
+  },
+  "substrate_regression_guard_assignment": {
+    "difficulty_level": "alpha",
+    "expected_action": "train_current",
+    "forbidden_features": [
+      "direct C generation",
+      "direct target_ir generation",
+      "token bypass"
+    ],
+    "naturalness_level": "level_2_natural",
+    "required_features": [
+      "Chinese NL parse",
+      "token layer mapping",
+      "frozen substrate validation"
+    ],
+    "safety_contract": "NL does not bypass token layer",
+    "sample_count": 2048,
+    "support_status_target": "current_supported",
+    "target_failure": "substrate_regression_guard_failure",
+    "target_nl_family": "substrate_regression_guard"
+  },
+  "token_to_nl_teacher_assignment": {
+    "difficulty_level": "alpha",
+    "expected_action": "train_current",
+    "forbidden_features": [
+      "direct C generation",
+      "direct target_ir generation",
+      "token bypass"
+    ],
+    "naturalness_level": "level_2_natural",
+    "required_features": [
+      "Chinese NL parse",
+      "token layer mapping",
+      "frozen substrate validation"
+    ],
+    "safety_contract": "NL does not bypass token layer",
+    "sample_count": 2048,
+    "support_status_target": "current_supported",
+    "target_failure": "token_to_nl_teacher_failure",
+    "target_nl_family": "token_to_nl_teacher"
+  }
+}

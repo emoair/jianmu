@@ -1,3 +1,7 @@
+## v1.1.1 Development Direction
+
+v1.1.1 explores LinguaForge NL-to-ProjectToken CSystems Alpha. After v1.0.4.1 strengthened symbol binding, this version tests whether more natural Chinese requirements can be mapped into ProjectToken, AlgorithmToken, CSystemsToken, and SymbolBindingToken while keeping the V1.0 substrate frozen. Natural language does not bypass the token layer and this version does not claim a completed natural-language interface.
+
 ## v1.0.4 Development Direction
 
 v1.0.4 explores CSystems Frontier Substrate Probe. After v1.0.3.1 validated classic algorithm variants, this version tests controlled C systems features including pointer basics, malloc/free lifecycle, sandboxed file IO, multi-file compile/link, and simple struct patterns. This is not arbitrary project parsing, not production support, not memory-safety proof, and not a formal proof of Turing completeness.

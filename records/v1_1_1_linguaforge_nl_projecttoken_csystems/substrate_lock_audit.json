@@ -1,0 +1,8 @@
+{
+  "frozen_substrate_version": "v1.0.4.1",
+  "source_records": "records/v1_0_4_1_symbol_binding_longhaul",
+  "substrate_lock_passed": true,
+  "substrate_modified": false,
+  "v1_0_4_1_compiler_verified_correctness_rate": 1.0,
+  "v1_0_4_1_symbol_binding_success_rate": 0.9
+}

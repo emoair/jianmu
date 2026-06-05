@@ -1,0 +1,20 @@
+{
+  "contrastive_nl_pair_success_rate": 0.86,
+  "heldout_natural_nl_success_rate": 0.85,
+  "heldout_paraphrase_success_rate": 0.88,
+  "level_0_success_rate": 0.94,
+  "level_1_success_rate": 0.92,
+  "level_2_success_rate": 0.86,
+  "level_3_success_rate": 0.83,
+  "level_4_safe_review_rate": 0.94,
+  "level_5_safe_rejection_rate": 0.97,
+  "nl_algorithm_requirement_success_rate": 0.91,
+  "nl_fileio_requirement_success_rate": 0.84,
+  "nl_malloc_requirement_success_rate": 0.86,
+  "nl_multifile_requirement_success_rate": 0.83,
+  "nl_pointer_requirement_success_rate": 0.87,
+  "nl_project_layout_requirement_success_rate": 0.88,
+  "nl_refactor_requirement_success_rate": 0.82,
+  "nl_struct_requirement_success_rate": 0.86,
+  "nl_symbol_rename_requirement_success_rate": 0.88
+}

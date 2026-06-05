@@ -1,0 +1,6 @@
+{
+  "nl_to_token_to_ir_roundtrip_success_rate": 0.9,
+  "roundtrip_eval_completed": true,
+  "semantic_hash_preservation_rate": 0.94,
+  "token_to_nl_to_token_success_rate": 0.88
+}

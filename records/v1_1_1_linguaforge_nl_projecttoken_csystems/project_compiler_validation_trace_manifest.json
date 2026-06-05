@@ -1,0 +1,8 @@
+{
+  "trace_files": [
+    {
+      "path": "project_compiler_validation_trace_000.jsonl",
+      "row_count": 70000
+    }
+  ]
+}

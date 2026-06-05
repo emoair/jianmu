@@ -1,0 +1,43 @@
+{
+  "dataset_generated": true,
+  "dataset_version": "v1.1.1_linguaforge_nl_projecttoken_csystems",
+  "expected_token_type_count": {
+    "algorithmtoken": 1056280,
+    "csystemstoken": 1087520,
+    "mirrortoken": 600000,
+    "projecttoken": 1300000,
+    "symbolbindingtoken": 956200
+  },
+  "family_count": {
+    "adversarial_boundary_nl": 250000,
+    "algorithm_nl": 900000,
+    "ambiguous_boundary_nl": 350000,
+    "csystems_nl": 900000,
+    "project_layout_nl": 700000,
+    "refactor_nl": 600000,
+    "symbol_binding_nl": 800000,
+    "token_to_nl_teacher": 500000
+  },
+  "full_scale_attempted": true,
+  "full_scale_completed": true,
+  "generator": "linguaforge_deterministic_nl_builder",
+  "max_shard_size_bytes": 43999994,
+  "naturalness_count": {
+    "level_0_structured": 750000,
+    "level_1_semistructured": 1250000,
+    "level_2_natural": 1500000,
+    "level_3_refactor_request": 750000,
+    "level_4_ambiguous_or_partial": 500000,
+    "level_5_adversarial_boundary": 250000
+  },
+  "scale": "full",
+  "shard_count": 258,
+  "support_status_count": {
+    "current_supported": 3493654,
+    "future_domain": 156346,
+    "review": 850000,
+    "unsupported": 500000
+  },
+  "target_max_shard_size_bytes": 44000000,
+  "total_samples": 5000000
+}
