@@ -1,0 +1,17 @@
+{
+  "cached_result_used_as_new_count": 0,
+  "duplicate_invocation_id_count": 0,
+  "hard_stop_hit": false,
+  "longhaul_accumulator_hash": "27bde925567458c6",
+  "longhaul_equivalence_replay_count": 10437570000,
+  "longhaul_sustained_work_completed": true,
+  "longhaul_work_iterations": 86980,
+  "optional_extended_compile_invocation_count": 100000,
+  "real_cl_invocation_count": 150000,
+  "real_compiler_accounting_clean": true,
+  "real_exe_run_count": 150000,
+  "real_link_invocation_count": 150000,
+  "stubbed_validation_detected": false,
+  "summary_only_validation_detected": false,
+  "unique_compile_unit_count": 153
+}

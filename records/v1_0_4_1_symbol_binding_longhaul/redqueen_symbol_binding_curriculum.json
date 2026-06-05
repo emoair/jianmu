@@ -1,0 +1,272 @@
+{
+  "compiler_accounting_guard_assignment": {
+    "difficulty_level": "hard",
+    "expected_action": "train_current",
+    "forbidden_features": [
+      "raw_c_source_in_token",
+      "target_ir_json_in_token",
+      "global_re_sub_only"
+    ],
+    "required_features": [
+      "ast_symbol_table_guided_rename",
+      "real_compiler_accounting"
+    ],
+    "safety_contract": "symbol binding contract",
+    "sample_count": 2048,
+    "support_status_target": "current_supported",
+    "target_binding_family": "compiler_accounting_guard",
+    "target_failure": "compiler_accounting_guard_wrong"
+  },
+  "csystems_regression_guard_assignment": {
+    "difficulty_level": "hard",
+    "expected_action": "train_current",
+    "forbidden_features": [
+      "raw_c_source_in_token",
+      "target_ir_json_in_token",
+      "global_re_sub_only"
+    ],
+    "required_features": [
+      "ast_symbol_table_guided_rename",
+      "real_compiler_accounting"
+    ],
+    "safety_contract": "symbol binding contract",
+    "sample_count": 2048,
+    "support_status_target": "current_supported",
+    "target_binding_family": "csystems_regression_guard",
+    "target_failure": "csystems_regression_guard_wrong"
+  },
+  "file_handle_assignment": {
+    "difficulty_level": "hard",
+    "expected_action": "train_current",
+    "forbidden_features": [
+      "raw_c_source_in_token",
+      "target_ir_json_in_token",
+      "global_re_sub_only"
+    ],
+    "required_features": [
+      "ast_symbol_table_guided_rename",
+      "real_compiler_accounting"
+    ],
+    "safety_contract": "symbol binding contract",
+    "sample_count": 2048,
+    "support_status_target": "current_supported",
+    "target_binding_family": "file_handle",
+    "target_failure": "file_handle_wrong"
+  },
+  "function_binding_assignment": {
+    "difficulty_level": "hard",
+    "expected_action": "train_current",
+    "forbidden_features": [
+      "raw_c_source_in_token",
+      "target_ir_json_in_token",
+      "global_re_sub_only"
+    ],
+    "required_features": [
+      "ast_symbol_table_guided_rename",
+      "real_compiler_accounting"
+    ],
+    "safety_contract": "symbol binding contract",
+    "sample_count": 2048,
+    "support_status_target": "current_supported",
+    "target_binding_family": "function_binding",
+    "target_failure": "function_binding_wrong"
+  },
+  "header_source_rename_assignment": {
+    "difficulty_level": "hard",
+    "expected_action": "train_current",
+    "forbidden_features": [
+      "raw_c_source_in_token",
+      "target_ir_json_in_token",
+      "global_re_sub_only"
+    ],
+    "required_features": [
+      "ast_symbol_table_guided_rename",
+      "real_compiler_accounting"
+    ],
+    "safety_contract": "symbol binding contract",
+    "sample_count": 2048,
+    "support_status_target": "current_supported",
+    "target_binding_family": "header_source_rename",
+    "target_failure": "header_source_rename_wrong"
+  },
+  "malloc_buffer_assignment": {
+    "difficulty_level": "hard",
+    "expected_action": "train_current",
+    "forbidden_features": [
+      "raw_c_source_in_token",
+      "target_ir_json_in_token",
+      "global_re_sub_only"
+    ],
+    "required_features": [
+      "ast_symbol_table_guided_rename",
+      "real_compiler_accounting"
+    ],
+    "safety_contract": "symbol binding contract",
+    "sample_count": 2048,
+    "support_status_target": "current_supported",
+    "target_binding_family": "malloc_buffer",
+    "target_failure": "malloc_buffer_wrong"
+  },
+  "multifile_symbol_consistency_assignment": {
+    "difficulty_level": "hard",
+    "expected_action": "train_current",
+    "forbidden_features": [
+      "raw_c_source_in_token",
+      "target_ir_json_in_token",
+      "global_re_sub_only"
+    ],
+    "required_features": [
+      "ast_symbol_table_guided_rename",
+      "real_compiler_accounting"
+    ],
+    "safety_contract": "symbol binding contract",
+    "sample_count": 2048,
+    "support_status_target": "current_supported",
+    "target_binding_family": "multifile_symbol_consistency",
+    "target_failure": "multifile_symbol_consistency_wrong"
+  },
+  "parameter_binding_assignment": {
+    "difficulty_level": "hard",
+    "expected_action": "train_current",
+    "forbidden_features": [
+      "raw_c_source_in_token",
+      "target_ir_json_in_token",
+      "global_re_sub_only"
+    ],
+    "required_features": [
+      "ast_symbol_table_guided_rename",
+      "real_compiler_accounting"
+    ],
+    "safety_contract": "symbol binding contract",
+    "sample_count": 2048,
+    "support_status_target": "current_supported",
+    "target_binding_family": "parameter_binding",
+    "target_failure": "parameter_binding_wrong"
+  },
+  "pointer_alias_assignment": {
+    "difficulty_level": "hard",
+    "expected_action": "train_current",
+    "forbidden_features": [
+      "raw_c_source_in_token",
+      "target_ir_json_in_token",
+      "global_re_sub_only"
+    ],
+    "required_features": [
+      "ast_symbol_table_guided_rename",
+      "real_compiler_accounting"
+    ],
+    "safety_contract": "symbol binding contract",
+    "sample_count": 2048,
+    "support_status_target": "current_supported",
+    "target_binding_family": "pointer_alias",
+    "target_failure": "pointer_alias_wrong"
+  },
+  "regex_guard_assignment": {
+    "difficulty_level": "hard",
+    "expected_action": "train_current",
+    "forbidden_features": [
+      "raw_c_source_in_token",
+      "target_ir_json_in_token",
+      "global_re_sub_only"
+    ],
+    "required_features": [
+      "ast_symbol_table_guided_rename",
+      "real_compiler_accounting"
+    ],
+    "safety_contract": "symbol binding contract",
+    "sample_count": 2048,
+    "support_status_target": "current_supported",
+    "target_binding_family": "regex_guard",
+    "target_failure": "regex_guard_wrong"
+  },
+  "scope_shadowing_assignment": {
+    "difficulty_level": "hard",
+    "expected_action": "train_current",
+    "forbidden_features": [
+      "raw_c_source_in_token",
+      "target_ir_json_in_token",
+      "global_re_sub_only"
+    ],
+    "required_features": [
+      "ast_symbol_table_guided_rename",
+      "real_compiler_accounting"
+    ],
+    "safety_contract": "symbol binding contract",
+    "sample_count": 2048,
+    "support_status_target": "current_supported",
+    "target_binding_family": "scope_shadowing",
+    "target_failure": "scope_shadowing_wrong"
+  },
+  "string_comment_guard_assignment": {
+    "difficulty_level": "hard",
+    "expected_action": "train_current",
+    "forbidden_features": [
+      "raw_c_source_in_token",
+      "target_ir_json_in_token",
+      "global_re_sub_only"
+    ],
+    "required_features": [
+      "ast_symbol_table_guided_rename",
+      "real_compiler_accounting"
+    ],
+    "safety_contract": "symbol binding contract",
+    "sample_count": 2048,
+    "support_status_target": "current_supported",
+    "target_binding_family": "string_comment_guard",
+    "target_failure": "string_comment_guard_wrong"
+  },
+  "struct_field_assignment": {
+    "difficulty_level": "hard",
+    "expected_action": "train_current",
+    "forbidden_features": [
+      "raw_c_source_in_token",
+      "target_ir_json_in_token",
+      "global_re_sub_only"
+    ],
+    "required_features": [
+      "ast_symbol_table_guided_rename",
+      "real_compiler_accounting"
+    ],
+    "safety_contract": "symbol binding contract",
+    "sample_count": 2048,
+    "support_status_target": "current_supported",
+    "target_binding_family": "struct_field",
+    "target_failure": "struct_field_wrong"
+  },
+  "substring_trap_assignment": {
+    "difficulty_level": "hard",
+    "expected_action": "train_current",
+    "forbidden_features": [
+      "raw_c_source_in_token",
+      "target_ir_json_in_token",
+      "global_re_sub_only"
+    ],
+    "required_features": [
+      "ast_symbol_table_guided_rename",
+      "real_compiler_accounting"
+    ],
+    "safety_contract": "symbol binding contract",
+    "sample_count": 2048,
+    "support_status_target": "current_supported",
+    "target_binding_family": "substring_trap",
+    "target_failure": "substring_trap_wrong"
+  },
+  "variable_binding_assignment": {
+    "difficulty_level": "hard",
+    "expected_action": "train_current",
+    "forbidden_features": [
+      "raw_c_source_in_token",
+      "target_ir_json_in_token",
+      "global_re_sub_only"
+    ],
+    "required_features": [
+      "ast_symbol_table_guided_rename",
+      "real_compiler_accounting"
+    ],
+    "safety_contract": "symbol binding contract",
+    "sample_count": 2048,
+    "support_status_target": "current_supported",
+    "target_binding_family": "variable_binding",
+    "target_failure": "variable_binding_wrong"
+  }
+}

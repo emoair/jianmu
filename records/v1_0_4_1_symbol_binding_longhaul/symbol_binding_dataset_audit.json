@@ -1,0 +1,18 @@
+{
+  "dataset_audit_passed": true,
+  "fileio_binding_count": 500000,
+  "identifier_binding_count": 800000,
+  "malloc_binding_count": 600000,
+  "multifile_binding_count": 600000,
+  "pointer_binding_count": 600000,
+  "regex_without_symbol_table_validation_count": 0,
+  "scope_binding_count": 600000,
+  "string_comment_guard_count": 400000,
+  "struct_binding_count": 500000,
+  "token_contains_c_source_count": 0,
+  "token_contains_expected_output_count": 0,
+  "token_contains_raw_target_ir_json_count": 0,
+  "total_count": 5000000,
+  "unsupported_has_expected_output_count": 0,
+  "unsupported_has_targetir_count": 0
+}

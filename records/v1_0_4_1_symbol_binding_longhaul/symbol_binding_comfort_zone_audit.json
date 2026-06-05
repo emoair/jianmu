@@ -1,0 +1,14 @@
+{
+  "comfort_zone_audit_passed": true,
+  "comfort_zone_collapse_detected": false,
+  "compiler_pass_but_binding_mismatch_count": 0,
+  "heldout_generalization_drop": 0.04,
+  "mirror_trunk_friendliness_overfit_score": 0.06,
+  "near_duplicate_overfit_score": 0.04,
+  "rename_pattern_concentration": 0.18,
+  "requirement_following_overfit_score": 0.05,
+  "semantic_hash_concentration": 0.08,
+  "surface_hash_concentration": 0.08,
+  "symbol_name_concentration": 0.17,
+  "token_template_concentration": 0.19
+}

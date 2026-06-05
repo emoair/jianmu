@@ -1,0 +1,11 @@
+{
+  "heldout_file_handle_success_rate": 0.86,
+  "heldout_function_rename_success_rate": 0.92,
+  "heldout_malloc_buffer_success_rate": 0.88,
+  "heldout_multifile_symbol_success_rate": 0.88,
+  "heldout_pointer_alias_success_rate": 0.89,
+  "heldout_scope_shadowing_success_rate": 0.89,
+  "heldout_struct_field_success_rate": 0.89,
+  "heldout_symbol_binding_success_rate": 0.9,
+  "heldout_variable_rename_success_rate": 0.93
+}

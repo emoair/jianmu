@@ -1,0 +1,12 @@
+{
+  "backend_claim_safe": true,
+  "cleanup_failure_count": 0,
+  "compile_success_count": 150000,
+  "compiler_validation_completed": true,
+  "compiler_verified_correctness_rate": 1.0,
+  "full_compile_invocation_count": 150000,
+  "permission_error_count": 0,
+  "runtime_success_count": 150000,
+  "timeout_count": 0,
+  "wrong_stdout_count": 0
+}

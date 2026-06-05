@@ -472,7 +472,7 @@ def syntax_frontend_check(rows: Sequence[Dict[str, Any]], target: int = 200_000)
         "p95_syntax_check_ms": round(ordered[min(len(ordered) - 1, int(len(ordered) * 0.95))], 6),
         "syntax_pass_but_full_compile_fail_count": 0,
         "syntax_filter_used_as_correctness_evidence": False,
-        "syntax_frontend_accounting_note": "expanded count covers 200K samples; cl.exe /Zs ran on deduplicated syntax-equivalence source shapes",
+        "syntax_frontend_accounting_note": f"expanded count covers {len(selected)} samples; cl.exe /Zs ran on deduplicated syntax-equivalence source shapes",
     }
 
 

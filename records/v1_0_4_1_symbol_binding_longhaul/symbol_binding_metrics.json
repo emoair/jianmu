@@ -1,0 +1,13 @@
+{
+  "file_handle_binding_success_rate": 0.89,
+  "function_rename_success_rate": 0.96,
+  "header_source_rename_consistency_rate": 0.92,
+  "identifier_binding_success_rate": 0.96,
+  "malloc_buffer_binding_success_rate": 0.91,
+  "multifile_symbol_consistency_rate": 0.91,
+  "parameter_rename_success_rate": 0.96,
+  "pointer_alias_binding_success_rate": 0.92,
+  "scope_shadowing_resolution_rate": 0.92,
+  "struct_field_binding_success_rate": 0.91,
+  "variable_rename_success_rate": 0.97
+}

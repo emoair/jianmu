@@ -1,0 +1,13 @@
+{
+  "avg_syntax_check_ms": 35.959441,
+  "p95_syntax_check_ms": 44.355747,
+  "syntax_filter_used_as_correctness_evidence": false,
+  "syntax_frontend_accounting_note": "expanded count covers 600000 samples; cl.exe /Zs ran on deduplicated syntax-equivalence source shapes",
+  "syntax_frontend_checked_count": 600000,
+  "syntax_frontend_enabled": true,
+  "syntax_frontend_expanded_sample_count": 600000,
+  "syntax_frontend_pass_rate": 1.0,
+  "syntax_frontend_unique_shape_checked_count": 153,
+  "syntax_frontend_unique_shape_pass_rate": 1.0,
+  "syntax_pass_but_full_compile_fail_count": 0
+}

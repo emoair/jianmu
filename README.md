@@ -642,3 +642,6 @@ Historical v0.9.x evidence is preserved through archive indexes:
 - [V0_9_EXPERIMENT_ARCHIVE_INDEX.md](docs/archive/V0_9_EXPERIMENT_ARCHIVE_INDEX.md)
 - [V0_9_RECORDS_EVIDENCE_MAP.md](docs/archive/V0_9_RECORDS_EVIDENCE_MAP.md)
 - [V1_0_EVIDENCE_PRESERVATION.md](docs/archive/V1_0_EVIDENCE_PRESERVATION.md)
+## v1.0.4.1 Development Direction
+
+v1.0.4.1 explores RedQueen Symbol Binding Longhaul. After v1.0.4 introduced controlled C systems frontier, this version focuses on identifier recognition and semantic binding across variables, functions, parameters, pointers, malloc buffers, FILE handles, struct fields, and multi-file declarations. It uses AST/symbol-table guided rename plus guarded regex-like perturbation, and requires a minimum 6-hour longhaul run with real compiler accounting.

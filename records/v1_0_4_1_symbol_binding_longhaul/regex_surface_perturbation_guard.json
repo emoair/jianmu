@@ -1,0 +1,9 @@
+{
+  "comment_mutation_blocked_count": 0,
+  "identifier_substring_mutation_blocked_count": 24000,
+  "regex_guard_passed": true,
+  "regex_surface_mutation_accepted_count": 96000,
+  "regex_surface_mutation_attempt_count": 120000,
+  "regex_surface_mutation_rejected_count": 24000,
+  "string_literal_mutation_blocked_count": 0
+}
