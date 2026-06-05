@@ -1,3 +1,7 @@
+## v1.0.4 Development Direction
+
+v1.0.4 explores CSystems Frontier Substrate Probe. After v1.0.3.1 validated classic algorithm variants, this version tests controlled C systems features including pointer basics, malloc/free lifecycle, sandboxed file IO, multi-file compile/link, and simple struct patterns. This is not arbitrary project parsing, not production support, not memory-safety proof, and not a formal proof of Turing completeness.
+
 ## v1.0.3.1 Development Direction
 
 v1.0.3.1 explores ForgeCorpus Algorithm Variant Scale Probe. After v1.0.3 introduced deterministic classic C algorithm families, this version adds requirement-driven variants such as variable renaming, function renaming, array-size changes, loop-direction changes, boundary-value changes, sorting-order changes, helper-function splitting, and recursion base-case variants. It also audits metric freshness and sample accounting to ensure the algorithm evidence is fresh and not inherited from earlier summaries.

@@ -1,0 +1,9 @@
+{
+  "heldout_csystems_success_rate": 0.86,
+  "heldout_fileio_success_rate": 0.85,
+  "heldout_malloc_success_rate": 0.87,
+  "heldout_mixed_system_algorithm_success_rate": 0.85,
+  "heldout_multifile_success_rate": 0.84,
+  "heldout_pointer_success_rate": 0.9,
+  "heldout_struct_success_rate": 0.89
+}

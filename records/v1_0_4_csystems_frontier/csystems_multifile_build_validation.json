@@ -1,0 +1,9 @@
+{
+  "cross_file_call_success_rate": 1.0,
+  "header_declaration_match_rate": 1.0,
+  "include_guard_success_rate": 1.0,
+  "multifile_compile_link_success_rate": 1.0,
+  "multifile_contract_passed": true,
+  "real_multifile_link_invocation_count": 100,
+  "static_helper_success_rate": 1.0
+}

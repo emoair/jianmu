@@ -1,0 +1,11 @@
+{
+  "allocation_failure_branch_success_rate": 0.93,
+  "calloc_array_success_rate": 0.91,
+  "double_free_detected_count": 0,
+  "free_lifecycle_success_rate": 0.94,
+  "leak_contract_violation_count": 0,
+  "malloc_array_success_rate": 0.92,
+  "memory_contract_passed": true,
+  "realloc_controlled_success_rate": 0.9,
+  "use_after_free_detected_count": 0
+}

@@ -1,0 +1,287 @@
+{
+  "algorithm_regression_guard_assignment": {
+    "difficulty_level": "hard",
+    "expected_action": "train_current",
+    "forbidden_features": [
+      "network",
+      "system",
+      "remove",
+      "rename",
+      "arbitrary_path"
+    ],
+    "required_features": [
+      "controlled_csystems"
+    ],
+    "safety_contract": "sandboxed CSystems frontier contract",
+    "sample_count": 2048,
+    "support_status_target": "current_supported",
+    "target_failure": "algorithm_regression_guard",
+    "target_feature_family": "algorithm"
+  },
+  "allocation_failure_branch_assignment": {
+    "difficulty_level": "hard",
+    "expected_action": "train_current",
+    "forbidden_features": [
+      "network",
+      "system",
+      "remove",
+      "rename",
+      "arbitrary_path"
+    ],
+    "required_features": [
+      "controlled_csystems"
+    ],
+    "safety_contract": "sandboxed CSystems frontier contract",
+    "sample_count": 2048,
+    "support_status_target": "current_supported",
+    "target_failure": "allocation_failure_branch",
+    "target_feature_family": "allocation"
+  },
+  "fileio_fopen_fclose_assignment": {
+    "difficulty_level": "hard",
+    "expected_action": "train_current",
+    "forbidden_features": [
+      "network",
+      "system",
+      "remove",
+      "rename",
+      "arbitrary_path"
+    ],
+    "required_features": [
+      "controlled_csystems"
+    ],
+    "safety_contract": "sandboxed CSystems frontier contract",
+    "sample_count": 2048,
+    "support_status_target": "current_supported",
+    "target_failure": "fileio_fopen_fclose",
+    "target_feature_family": "fileio"
+  },
+  "fileio_read_sort_write_assignment": {
+    "difficulty_level": "hard",
+    "expected_action": "train_current",
+    "forbidden_features": [
+      "network",
+      "system",
+      "remove",
+      "rename",
+      "arbitrary_path"
+    ],
+    "required_features": [
+      "controlled_csystems"
+    ],
+    "safety_contract": "sandboxed CSystems frontier contract",
+    "sample_count": 2048,
+    "support_status_target": "current_supported",
+    "target_failure": "fileio_read_sort_write",
+    "target_feature_family": "fileio"
+  },
+  "malloc_free_lifecycle_assignment": {
+    "difficulty_level": "hard",
+    "expected_action": "train_current",
+    "forbidden_features": [
+      "network",
+      "system",
+      "remove",
+      "rename",
+      "arbitrary_path"
+    ],
+    "required_features": [
+      "controlled_csystems"
+    ],
+    "safety_contract": "sandboxed CSystems frontier contract",
+    "sample_count": 2048,
+    "support_status_target": "current_supported",
+    "target_failure": "malloc_free_lifecycle",
+    "target_feature_family": "malloc"
+  },
+  "mixed_system_algorithm_assignment": {
+    "difficulty_level": "hard",
+    "expected_action": "train_current",
+    "forbidden_features": [
+      "network",
+      "system",
+      "remove",
+      "rename",
+      "arbitrary_path"
+    ],
+    "required_features": [
+      "controlled_csystems"
+    ],
+    "safety_contract": "sandboxed CSystems frontier contract",
+    "sample_count": 2048,
+    "support_status_target": "current_supported",
+    "target_failure": "mixed_system_algorithm",
+    "target_feature_family": "mixed"
+  },
+  "multifile_cross_call_assignment": {
+    "difficulty_level": "hard",
+    "expected_action": "train_current",
+    "forbidden_features": [
+      "network",
+      "system",
+      "remove",
+      "rename",
+      "arbitrary_path"
+    ],
+    "required_features": [
+      "controlled_csystems"
+    ],
+    "safety_contract": "sandboxed CSystems frontier contract",
+    "sample_count": 2048,
+    "support_status_target": "current_supported",
+    "target_failure": "multifile_cross_call",
+    "target_feature_family": "multifile"
+  },
+  "multifile_header_source_assignment": {
+    "difficulty_level": "hard",
+    "expected_action": "train_current",
+    "forbidden_features": [
+      "network",
+      "system",
+      "remove",
+      "rename",
+      "arbitrary_path"
+    ],
+    "required_features": [
+      "controlled_csystems"
+    ],
+    "safety_contract": "sandboxed CSystems frontier contract",
+    "sample_count": 2048,
+    "support_status_target": "current_supported",
+    "target_failure": "multifile_header_source",
+    "target_feature_family": "multifile"
+  },
+  "pointer_array_traversal_assignment": {
+    "difficulty_level": "hard",
+    "expected_action": "train_current",
+    "forbidden_features": [
+      "network",
+      "system",
+      "remove",
+      "rename",
+      "arbitrary_path"
+    ],
+    "required_features": [
+      "controlled_csystems"
+    ],
+    "safety_contract": "sandboxed CSystems frontier contract",
+    "sample_count": 2048,
+    "support_status_target": "current_supported",
+    "target_failure": "pointer_array_traversal",
+    "target_feature_family": "pointer"
+  },
+  "pointer_dereference_assignment": {
+    "difficulty_level": "hard",
+    "expected_action": "train_current",
+    "forbidden_features": [
+      "network",
+      "system",
+      "remove",
+      "rename",
+      "arbitrary_path"
+    ],
+    "required_features": [
+      "controlled_csystems"
+    ],
+    "safety_contract": "sandboxed CSystems frontier contract",
+    "sample_count": 2048,
+    "support_status_target": "current_supported",
+    "target_failure": "pointer_dereference",
+    "target_feature_family": "pointer"
+  },
+  "pointer_parameter_swap_assignment": {
+    "difficulty_level": "hard",
+    "expected_action": "train_current",
+    "forbidden_features": [
+      "network",
+      "system",
+      "remove",
+      "rename",
+      "arbitrary_path"
+    ],
+    "required_features": [
+      "controlled_csystems"
+    ],
+    "safety_contract": "sandboxed CSystems frontier contract",
+    "sample_count": 2048,
+    "support_status_target": "current_supported",
+    "target_failure": "pointer_parameter_swap",
+    "target_feature_family": "pointer"
+  },
+  "realloc_controlled_assignment": {
+    "difficulty_level": "hard",
+    "expected_action": "train_current",
+    "forbidden_features": [
+      "network",
+      "system",
+      "remove",
+      "rename",
+      "arbitrary_path"
+    ],
+    "required_features": [
+      "controlled_csystems"
+    ],
+    "safety_contract": "sandboxed CSystems frontier contract",
+    "sample_count": 2048,
+    "support_status_target": "current_supported",
+    "target_failure": "realloc_controlled",
+    "target_feature_family": "realloc"
+  },
+  "struct_field_access_assignment": {
+    "difficulty_level": "hard",
+    "expected_action": "train_current",
+    "forbidden_features": [
+      "network",
+      "system",
+      "remove",
+      "rename",
+      "arbitrary_path"
+    ],
+    "required_features": [
+      "controlled_csystems"
+    ],
+    "safety_contract": "sandboxed CSystems frontier contract",
+    "sample_count": 2048,
+    "support_status_target": "current_supported",
+    "target_failure": "struct_field_access",
+    "target_feature_family": "struct"
+  },
+  "struct_stack_queue_assignment": {
+    "difficulty_level": "hard",
+    "expected_action": "train_current",
+    "forbidden_features": [
+      "network",
+      "system",
+      "remove",
+      "rename",
+      "arbitrary_path"
+    ],
+    "required_features": [
+      "controlled_csystems"
+    ],
+    "safety_contract": "sandboxed CSystems frontier contract",
+    "sample_count": 2048,
+    "support_status_target": "current_supported",
+    "target_failure": "struct_stack_queue",
+    "target_feature_family": "struct"
+  },
+  "unsafe_boundary_guard_assignment": {
+    "difficulty_level": "hard",
+    "expected_action": "train_current",
+    "forbidden_features": [
+      "network",
+      "system",
+      "remove",
+      "rename",
+      "arbitrary_path"
+    ],
+    "required_features": [
+      "controlled_csystems"
+    ],
+    "safety_contract": "sandboxed CSystems frontier contract",
+    "sample_count": 2048,
+    "support_status_target": "current_supported",
+    "target_failure": "unsafe_boundary_guard",
+    "target_feature_family": "unsafe"
+  }
+}

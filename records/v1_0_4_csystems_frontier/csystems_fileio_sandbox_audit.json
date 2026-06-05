@@ -1,0 +1,10 @@
+{
+  "fileio_contract_passed": true,
+  "fopen_fclose_lifecycle_success_rate": 0.93,
+  "fprintf_success_rate": 0.91,
+  "fscanf_success_rate": 0.91,
+  "read_sort_write_success_rate": 0.89,
+  "sandbox_escape_attempt_count": 0,
+  "sandboxed_fileio_success_rate": 0.9,
+  "unsafe_path_blocked_count": 500
+}

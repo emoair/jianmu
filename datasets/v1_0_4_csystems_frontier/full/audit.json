@@ -1,0 +1,17 @@
+{
+  "arbitrary_project_claim_count": 0,
+  "dataset_audit_passed": true,
+  "fileio_sample_count": 700000,
+  "malloc_sample_count": 800000,
+  "mixed_system_algorithm_count": 900000,
+  "multifile_sample_count": 800000,
+  "pointer_sample_count": 800000,
+  "production_support_claim_count": 0,
+  "struct_sample_count": 500000,
+  "token_contains_c_source_count": 0,
+  "token_contains_expected_output_count": 0,
+  "token_contains_raw_target_ir_json_count": 0,
+  "total_count": 5000000,
+  "unsupported_has_expected_output_count": 0,
+  "unsupported_has_targetir_count": 0
+}

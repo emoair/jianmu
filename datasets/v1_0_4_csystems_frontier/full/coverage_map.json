@@ -1,0 +1,12 @@
+{
+  "feature_family_count": {
+    "adversarial_unsafe_boundary": 250000,
+    "fileio_frontier": 700000,
+    "malloc_frontier": 800000,
+    "mixed_system_algorithm": 900000,
+    "multifile_frontier": 800000,
+    "pointer_frontier": 800000,
+    "struct_frontier": 500000,
+    "unsupported_review_boundary": 250000
+  }
+}

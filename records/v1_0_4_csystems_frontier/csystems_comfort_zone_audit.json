@@ -1,0 +1,9 @@
+{
+  "comfort_zone_audit_passed": true,
+  "comfort_zone_collapse_detected": false,
+  "compiler_pass_but_structure_mismatch_count": 0,
+  "feature_family_concentration": 0.18,
+  "heldout_generalization_drop": 0.04,
+  "semantic_hash_concentration": 0.08,
+  "token_template_concentration": 0.19
+}
