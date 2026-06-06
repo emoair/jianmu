@@ -1,0 +1,21 @@
+{
+  "current_workspace_traces": [
+    {
+      "artifact_path": "records\\v1_0_5_reconciliation\\evidence_trace_pack\\full_compile_50k_trace_000.jsonl",
+      "external_artifact_required": false,
+      "name": "full_compile_50k_trace_000.jsonl",
+      "sha256": "597c3c5d77be12655e9b4aedebee61adae78dd46a8f5eb8df9c3f7e6016a4e30",
+      "size_bytes": 18050483,
+      "trace_source_path": "records\\v0_9_28_1\\full_compile_50k_trace_000.jsonl"
+    },
+    {
+      "artifact_path": "records\\v1_0_5_reconciliation\\evidence_trace_pack\\full_compile_50k_trace_manifest.json",
+      "external_artifact_required": false,
+      "name": "full_compile_50k_trace_manifest.json",
+      "sha256": "8fec52009071505150f3a0b73e838c405252eb9fea1daf7db5720a795badcd7b",
+      "size_bytes": 220,
+      "trace_source_path": "records\\v0_9_28_1\\full_compile_50k_trace_manifest.json"
+    }
+  ],
+  "package_traces": []
+}

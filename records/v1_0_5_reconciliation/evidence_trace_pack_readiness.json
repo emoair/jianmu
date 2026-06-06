@@ -1,0 +1,10 @@
+{
+  "blocking_issues": [
+    "raw_trace_missing"
+  ],
+  "evidence_trace_pack_generated": true,
+  "external_artifact_required": false,
+  "package_contains_replayable_full_trace": false,
+  "raw_trace_available_in_current_workspace": true,
+  "raw_trace_available_in_v1_package": false
+}

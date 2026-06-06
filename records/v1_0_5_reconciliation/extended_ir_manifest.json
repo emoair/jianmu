@@ -1,0 +1,26 @@
+{
+  "array_ir_added": true,
+  "function_ir_added": true,
+  "nodes": [
+    "Expr",
+    "IntLiteral",
+    "VarRef",
+    "BinaryOp",
+    "CallExpr",
+    "ArrayRef",
+    "Statement",
+    "VarDecl",
+    "Assign",
+    "Return",
+    "Print",
+    "If",
+    "For",
+    "WhileBounded",
+    "FunctionDecl",
+    "FunctionCallProgram",
+    "ArrayProgram",
+    "FunctionArrayProgram",
+    "RecursiveFunctionProgram"
+  ],
+  "recursive_ir_added": true
+}

@@ -1,3 +1,9 @@
+## v1.0.5 Production Path Reconciliation Fixpack
+
+The V1.0 source review package is treated as bounded runtime plus frontier evidence. It did not establish production function/array/recursion support. v1.0.5 begins reconciling that gap with an experimental active `ExtendedIR -> ExtendedEmitterC -> AtomicSynthesis policy -> compiler trace` bridge for a minimal function/array/structured-recursion subset, while keeping default production promotion disabled.
+
+This fixpack also repairs evidence provenance: 50K evidence remains accounted summary evidence unless a replayable raw trace pack is present, fixed/readiness metrics must be classified by `metric_source`, and frontier validation is not rebranded as production synthesis.
+
 ## v1.0.4 Development Direction
 
 v1.0.4 explores CSystems Frontier Substrate Probe. After v1.0.3.1 validated classic algorithm variants, this version tests controlled C systems features including pointer basics, malloc/free lifecycle, sandboxed file IO, multi-file compile/link, and simple struct patterns. This is not arbitrary project parsing, not production support, not memory-safety proof, and not a formal proof of Turing completeness.

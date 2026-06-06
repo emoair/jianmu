@@ -1,0 +1,10 @@
+{
+  "shards": [
+    {
+      "path": "real_ir_compiler_trace_000.jsonl",
+      "row_count": 60,
+      "sha256": "f5531db43cf335daf096437ee78d8e5d6c1964fbbad64850340daf1c2372b0ec"
+    }
+  ],
+  "total_rows": 60
+}

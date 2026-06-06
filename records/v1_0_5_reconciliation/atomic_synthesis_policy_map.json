@@ -1,0 +1,22 @@
+{
+  "canonical_arithmetic_targetir": {
+    "production_baseline": true
+  },
+  "canonical_array_targetir": {
+    "experimental_active_path": true,
+    "production_supported": false
+  },
+  "canonical_function_array_targetir": {
+    "experimental_active_path": true,
+    "production_supported": false
+  },
+  "canonical_function_targetir": {
+    "experimental_active_path": true,
+    "production_supported": false
+  },
+  "canonical_structured_recursion_targetir": {
+    "experimental_active_path": true,
+    "production_supported": false,
+    "recursion_mode": "bounded_structural_recursion_validation"
+  }
+}

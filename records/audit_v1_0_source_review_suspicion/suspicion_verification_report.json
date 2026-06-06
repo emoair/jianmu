@@ -1,0 +1,368 @@
+{
+  "audit_version": "v1_0_source_review_suspicion_verification",
+  "package_audited": true,
+  "current_workspace_audited": true,
+  "source_review_package_zip_not_found": false,
+  "overall_risk_level": "high",
+  "pytest": {
+    "command": "python -m pytest tests/ -q",
+    "status": "pytest_failed",
+    "failure_type": "collection_error",
+    "summary": "Collection failed in full_compile_50k preflight/postflight tests because active Python rejects str | Path annotations."
+  },
+  "p0": [
+    {
+      "id": "P0-1",
+      "title": "Main IR / emitter only supports arithmetic / sum scaffold",
+      "status": "confirmed",
+      "confidence": "high",
+      "evidence_paths": [
+        "jianmu/ir.py:5",
+        "jianmu/ir.py:19",
+        "jianmu/ir.py:31",
+        "jianmu/emitter_c.py:4",
+        "jianmu/emitter_c.py:8"
+      ],
+      "affected_claims": [
+        "production runtime supports functions",
+        "production runtime supports arrays",
+        "production runtime supports recursion"
+      ],
+      "recommended_fix": "Add real production IR and CEmitter support for functions, arrays, blocks, returns, calls, and recursion."
+    },
+    {
+      "id": "P0-2",
+      "title": "Runtime to CandidateExecutor to CEmitter production path",
+      "status": "confirmed",
+      "confidence": "high",
+      "evidence_paths": [
+        "jianmu/runtime.py:47",
+        "jianmu/runtime.py:112",
+        "jianmu/runtime.py:142",
+        "jianmu/candidate_executor.py:37",
+        "jianmu/candidate_executor.py:48",
+        "jianmu/candidate_executor.py:76",
+        "jianmu/intent_router.py:1",
+        "jianmu/intent_router.py:40"
+      ],
+      "affected_claims": [
+        "production runtime supports functions",
+        "production runtime supports arrays",
+        "production runtime supports recursion",
+        "legacy regex/router removed from runtime path"
+      ],
+      "recommended_fix": "Add production executor actions for non-arithmetic IR or keep claims bounded to sum/expression runtime."
+    },
+    {
+      "id": "P0-3",
+      "title": "AtomicSynthesis target_builder_policy only accepts canonical_arithmetic_targetir",
+      "status": "confirmed",
+      "confidence": "high",
+      "evidence_paths": [
+        "jianmu/self_learning/darwinforge/atomic_synthesis.py:19",
+        "jianmu/self_learning/darwinforge/atomic_synthesis.py:20",
+        "jianmu/self_learning/darwinforge/atomic_synthesis.py:29",
+        "jianmu/self_learning/darwinforge/atomic_synthesis.py:52"
+      ],
+      "affected_claims": [
+        "AtomicSynthesis non-arithmetic support",
+        "function synthesis",
+        "array synthesis",
+        "recursion synthesis"
+      ],
+      "recommended_fix": "Add explicit target builders and compiler-backed synthesis traces for non-arithmetic policies."
+    },
+    {
+      "id": "P0-4",
+      "title": "Turing frontier recursion C generation",
+      "status": "confirmed",
+      "confidence": "high",
+      "evidence_paths": [
+        "jianmu/self_learning/darwinforge/turing_frontier_schema.py:107",
+        "jianmu/self_learning/darwinforge/turing_frontier_schema.py:264",
+        "jianmu/self_learning/darwinforge/turing_substrate_grammar.py:61",
+        "jianmu/self_learning/darwinforge/turing_substrate_grammar.py:105",
+        "jianmu/self_learning/darwinforge/turing_proof_function_array_frontend_scaleup.py:217",
+        "jianmu/self_learning/darwinforge/turing_proof_function_array_frontend_scaleup.py:338"
+      ],
+      "affected_claims": [
+        "recursion production support",
+        "formal Turing completeness proven",
+        "recursion frontier review-ready as C generation"
+      ],
+      "recommended_fix": "Add recursive C generation and raw compiler traces, or keep recursion as token/contract/frontier evidence only."
+    },
+    {
+      "id": "P0-5",
+      "title": "ForgeFrontier function/array marker IR plus template renderer",
+      "status": "confirmed",
+      "confidence": "high",
+      "evidence_paths": [
+        "jianmu/self_learning/darwinforge/forgefrontier_compiler_validation.py:16",
+        "jianmu/self_learning/darwinforge/forgefrontier_compiler_validation.py:17",
+        "jianmu/self_learning/darwinforge/forgefrontier_compiler_validation.py:19",
+        "jianmu/self_learning/darwinforge/forgefrontier_compiler_validation.py:71",
+        "jianmu/self_learning/darwinforge/forgefrontier_eval.py:8"
+      ],
+      "affected_claims": [
+        "function/array frontier review-ready",
+        "production runtime supports functions",
+        "production runtime supports arrays"
+      ],
+      "recommended_fix": "Add provenance distinguishing generated IR from renderer templates and connect any real IR to production emitter/compiler traces."
+    },
+    {
+      "id": "P0-6",
+      "title": "50K full compile raw trace replayability",
+      "status": "partial",
+      "confidence": "high",
+      "evidence_paths": [
+        "records/v0_9_28_1/full_compile_50k_accounting.json:7",
+        "records/v0_9_28_1/full_compile_50k_accounting.json:10",
+        "records/v0_9_28_1/full_compile_50k_readiness.json:17",
+        "records/v0_9_28_1/full_compile_50k_trace_000.jsonl",
+        "records/v0_9_28_1/full_compile_50k_trace_manifest.json"
+      ],
+      "affected_claims": [
+        "50K clean compiler validation",
+        "50K replayable raw trace package"
+      ],
+      "recommended_fix": "Include raw trace shards, manifest, previous evidence, and replay provenance in the V1.0 review package."
+    },
+    {
+      "id": "P0-7",
+      "title": "Fixed metrics / readiness scaffold",
+      "status": "confirmed",
+      "confidence": "high",
+      "evidence_paths": [
+        "jianmu/self_learning/darwinforge/forgefrontier_eval.py:8",
+        "jianmu/self_learning/darwinforge/forgefrontier_eval.py:35",
+        "jianmu/self_learning/darwinforge/adaptive_layerwise_eval.py:28",
+        "jianmu/self_learning/darwinforge/turing_proof_function_array_frontend_scaleup.py:372",
+        "jianmu/self_learning/darwinforge/turing_proof_function_array_frontend_scaleup.py:582",
+        "jianmu/self_learning/darwinforge/v0_9_14_readiness.py:35"
+      ],
+      "affected_claims": [
+        "readiness metrics computed from raw predictions",
+        "function/array frontier review-ready",
+        "Turing frontier review-ready"
+      ],
+      "recommended_fix": "Require metric_source and raw-trace provenance for published readiness metrics."
+    },
+    {
+      "id": "P0-8",
+      "title": "v1.1-alpha NL claim support in V1.0 package",
+      "status": "partial",
+      "confidence": "medium",
+      "evidence_paths": [
+        "NOT_PROVEN.md:14",
+        "V1_0_CLAIM_BOUNDARY.md:21",
+        "README.md:576",
+        "README.md:584",
+        "records/v0_9_28_1/mainline_conclusion.md:25"
+      ],
+      "affected_claims": [
+        "natural language layer completed",
+        "v1.1-alpha NL metrics supported by V1.0 package"
+      ],
+      "recommended_fix": "Keep V1.0 package claims bounded and audit v1.1-alpha NL evidence separately."
+    }
+  ],
+  "p1": [
+    {
+      "id": "P1-1",
+      "title": "Turing substrate is bounded-only in production renderer",
+      "status": "confirmed",
+      "confidence": "high",
+      "evidence_paths": [
+        "jianmu/self_learning/darwinforge/turing_substrate_grammar.py:7",
+        "jianmu/self_learning/darwinforge/turing_substrate_grammar.py:61",
+        "jianmu/self_learning/darwinforge/turing_substrate_grammar.py:105"
+      ],
+      "affected_claims": [
+        "bounded substrate evidence",
+        "formal Turing completeness proven"
+      ],
+      "recommended_fix": "Keep substrate claims bounded or add real unbounded/recursion/function/array renderer evidence."
+    },
+    {
+      "id": "P1-2",
+      "title": "turing_frontier_v2 feature metadata and target_ir mismatch",
+      "status": "confirmed",
+      "confidence": "high",
+      "evidence_paths": [
+        "jianmu/self_learning/darwinforge/turing_frontier_v2_generator.py:45",
+        "jianmu/self_learning/darwinforge/turing_frontier_v2_generator.py:83",
+        "jianmu/self_learning/darwinforge/turing_frontier_v2_generator.py:117"
+      ],
+      "affected_claims": [
+        "turing_frontier_v2 target_ir represents feature structure"
+      ],
+      "recommended_fix": "Align executable target_ir with feature metadata or label features as non-executable frontier metadata."
+    },
+    {
+      "id": "P1-3",
+      "title": "Legacy regex / handcrafted router reachable in runtime path",
+      "status": "confirmed",
+      "confidence": "high",
+      "evidence_paths": [
+        "jianmu/runtime.py:47",
+        "jianmu/runtime.py:182",
+        "jianmu/intent_router.py:1",
+        "jianmu/intent_router.py:40",
+        "jianmu/intent_router.py:166"
+      ],
+      "affected_claims": [
+        "old regex/router removed from runtime speculative path"
+      ],
+      "recommended_fix": "Add explicit production/legacy profile separation and reachability tests."
+    },
+    {
+      "id": "P1-4",
+      "title": "String guard tests are shallow",
+      "status": "confirmed",
+      "confidence": "high",
+      "evidence_paths": [
+        "tests/test_runtime.py:106",
+        "tests/test_active_generation_pilot.py:138",
+        "tests/test_adaptive_layerwise_readiness.py:72",
+        "tests/test_turing_substrate_compiler_validation.py:69"
+      ],
+      "affected_claims": [
+        "no handcrafted leakage",
+        "no external API",
+        "no oracle dependence"
+      ],
+      "recommended_fix": "Add architecture and reachability tests beyond token/string absence checks."
+    }
+  ],
+  "claim_impact_matrix": [
+    {
+      "claim": "production runtime supports functions",
+      "supported": false,
+      "evidence": "ProgramIR/CEmitter/CandidateExecutor only support sum-shaped production path.",
+      "risk": "high",
+      "required_fix": "Real production function IR/emitter/compiler traces."
+    },
+    {
+      "claim": "production runtime supports arrays",
+      "supported": false,
+      "evidence": "No production array IR or emitter path observed.",
+      "risk": "high",
+      "required_fix": "Real production array IR/emitter/compiler traces."
+    },
+    {
+      "claim": "production runtime supports recursion",
+      "supported": false,
+      "evidence": "Recursion appears as unsupported/future/frontier, with production compiled count 0.",
+      "risk": "high",
+      "required_fix": "Recursive function IR/emitter/compiler traces."
+    },
+    {
+      "claim": "function/array frontier review-ready",
+      "supported": "partial",
+      "evidence": "Template-rendered function/array C is compiler validated.",
+      "risk": "medium",
+      "required_fix": "Provenance and raw traces separating generated IR from templates."
+    },
+    {
+      "claim": "recursion frontier review-ready",
+      "supported": "partial",
+      "evidence": "Token/contract evidence exists, recursive C generation not established.",
+      "risk": "high",
+      "required_fix": "Raw recursive C generation and compiler traces."
+    },
+    {
+      "claim": "formal Turing completeness proven",
+      "supported": false,
+      "evidence": "Bounded renderer and unsupported unbounded/recursion templates.",
+      "risk": "high",
+      "required_fix": "Formal proof and executable unbounded/recursion evidence."
+    },
+    {
+      "claim": "50K clean compiler validation",
+      "supported": "partial",
+      "evidence": "Package has accounting; current workspace has raw trace.",
+      "risk": "medium",
+      "required_fix": "Include all raw evidence in package."
+    },
+    {
+      "claim": "50K replayable raw trace package",
+      "supported": false,
+      "evidence": "Package lacks trace shards/manifests.",
+      "risk": "high",
+      "required_fix": "Add raw shards and replay manifest to package."
+    },
+    {
+      "claim": "natural language layer completed",
+      "supported": false,
+      "evidence": "V1.0 NOT_PROVEN and claim boundary list NL completion as not proven.",
+      "risk": "high",
+      "required_fix": "Separate v1.1-alpha audit or keep V1.0 claim bounded."
+    },
+    {
+      "claim": "bounded substrate evidence",
+      "supported": true,
+      "evidence": "Bounded variable/control-flow substrate renderer exists.",
+      "risk": "medium",
+      "required_fix": "Do not extend bounded evidence to Turing completeness."
+    }
+  ],
+  "evidence_provenance_matrix": [
+    {
+      "metric_or_evidence": "Main ProgramIR fields",
+      "source_type": "computed_from_raw_trace",
+      "raw_trace": false,
+      "summary_only": false,
+      "fixed_scaffold": false,
+      "path": "jianmu/ir.py"
+    },
+    {
+      "metric_or_evidence": "ForgeFrontier GROUP_DELTAS",
+      "source_type": "fixed_readiness_scaffold",
+      "raw_trace": false,
+      "summary_only": false,
+      "fixed_scaffold": true,
+      "path": "jianmu/self_learning/darwinforge/forgefrontier_eval.py"
+    },
+    {
+      "metric_or_evidence": "Package 50K accounting",
+      "source_type": "summary_accounting",
+      "raw_trace": false,
+      "summary_only": true,
+      "fixed_scaffold": false,
+      "path": "records/v0_9_28_1/full_compile_50k_accounting.json"
+    },
+    {
+      "metric_or_evidence": "Current 50K trace",
+      "source_type": "computed_from_raw_trace",
+      "raw_trace": true,
+      "summary_only": false,
+      "fixed_scaffold": false,
+      "path": "records/v0_9_28_1/full_compile_50k_trace_000.jsonl"
+    },
+    {
+      "metric_or_evidence": "NL completed claim boundary",
+      "source_type": "loaded_from_prior_records",
+      "raw_trace": false,
+      "summary_only": false,
+      "fixed_scaffold": false,
+      "path": "NOT_PROVEN.md"
+    }
+  ],
+  "recommended_next_action": "Repair claim boundaries and evidence pack before v1.0 tag; do not claim production function/array/recursion support without real IR/emitter/compiler traces.",
+  "blocking_issues": [
+    "Production function/array/recursion support is not established.",
+    "V1.0 package lacks replayable raw 50K trace evidence.",
+    "Readiness metrics include fixed/scaffold candidates without universal metric_source provenance."
+  ],
+  "not_proven_still": [
+    "production runtime function support",
+    "production runtime array support",
+    "production runtime recursion support",
+    "AtomicSynthesis non-arithmetic synthesis",
+    "formal Turing completeness",
+    "V1.0 package replayable 50K raw trace",
+    "natural language layer completed"
+  ]
+}

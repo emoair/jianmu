@@ -24,4 +24,11 @@
 - recursion production support
 - safe real promotion
 - emergence proven
+## v1.0.5 Reconciliation Boundary
+
+The V1.0 source review package did not establish production function/array/recursion support. v1.0.5 may add an experimental active IR/emitter/synthesis bridge for a minimal function/array/structured-recursion subset, while keeping production promotion disabled.
+
+Allowed after v1.0.5: bounded production runtime baseline, experimental active bridge evidence, frontier evidence preserved, repaired trace/provenance records.
+
+Forbidden after v1.0.5: production function support completed, production array support completed, production recursion support completed, arbitrary project parsing completed, formal Turing completeness proven, production readiness, solved program synthesis, natural language layer completed.
 

@@ -1,0 +1,26 @@
+{
+  "allowed_after_v1_0_5": [
+    "bounded production runtime baseline",
+    "experimental active FunctionIR / ArrayIR / RecursiveIR bridge if validation passes",
+    "frontier evidence preserved",
+    "V1.0 package evidence provenance repaired",
+    "50K accounted summary evidence unless raw trace pack is present",
+    "real IR to C to compiler trace for v1.0.5 subset if generated"
+  ],
+  "claim_boundary_fix_completed": true,
+  "default_profile_unchanged": true,
+  "forbidden_after_v1_0_5": [
+    "production function support completed",
+    "production array support completed",
+    "production recursion support completed",
+    "arbitrary project parsing completed",
+    "formal Turing completeness proven",
+    "production readiness",
+    "solved program synthesis",
+    "natural language layer completed"
+  ],
+  "production_array_support_completed": false,
+  "production_function_support_completed": false,
+  "production_recursion_support_completed": false,
+  "real_promotion_disabled": true
+}

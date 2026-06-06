@@ -1,0 +1,2 @@
+{"artifact_path": "records\\v1_0_5_reconciliation\\evidence_trace_pack\\full_compile_50k_trace_000.jsonl", "external_artifact_required": false, "trace_source_path": "records\\v0_9_28_1\\full_compile_50k_trace_000.jsonl"}
+{"artifact_path": "records\\v1_0_5_reconciliation\\evidence_trace_pack\\full_compile_50k_trace_manifest.json", "external_artifact_required": false, "trace_source_path": "records\\v0_9_28_1\\full_compile_50k_trace_manifest.json"}

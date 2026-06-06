@@ -30,7 +30,7 @@ def generate_paper_figures(figure_data_dir: str | Path, records_figure_dir: str 
 
         matplotlib.use("Agg")
         import matplotlib.pyplot as plt
-    except ModuleNotFoundError:
+    except (ImportError, ModuleNotFoundError):
         matplotlib_available = False
         plt = None
 

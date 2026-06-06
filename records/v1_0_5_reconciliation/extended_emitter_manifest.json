@@ -1,0 +1,10 @@
+{
+  "default_c_emitter_unchanged": true,
+  "emits": [
+    "function_program",
+    "array_program",
+    "function_array_program",
+    "structured_recursion_program"
+  ],
+  "extended_emitter_added": true
+}

@@ -1,0 +1,8 @@
+{
+  "full_requested_compiler_validation_target": 25000,
+  "full_requested_attempt_status": "timeout_after_1200_seconds",
+  "full_requested_attempt_completed": false,
+  "completed_validation_target": 60,
+  "completed_validation_reason": "small completed path validation after full 25K attempt exceeded available turn runtime",
+  "must_not_claim_25k_completed": true
+}

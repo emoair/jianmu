@@ -1,0 +1,6 @@
+{
+  "default_profile_unchanged": true,
+  "experimental_active_bridge": "ExtendedIR -> ExtendedEmitterC -> existing compiler backend",
+  "production_runtime_before": "ProgramIR/CEmitter arithmetic sum baseline",
+  "real_promotion_disabled": true
+}

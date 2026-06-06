@@ -1,7 +1,9 @@
 from typing import Dict, Optional, Tuple
 
 from jianmu.self_learning.branchchain.branch_types import BranchPath
+from jianmu.self_learning.darwinforge.atomic_synthesis_policy_bridge import build_extended_target
 from jianmu.self_learning.darwinforge.candidate import CandidateGenome, CandidatePhenotype
+from jianmu.self_learning.darwinforge.production_path_reconciliation_schema import EXPERIMENTAL_POLICIES
 
 
 class AtomicSynthesis:
@@ -16,6 +18,15 @@ class AtomicSynthesis:
                 ] if part
             ]
             return CandidatePhenotype(genome.genome_id, None, None, None, True, ":".join(reason_parts) or genome.branch_path.unsupported_reason)
+        if genome.target_builder_policy in EXPERIMENTAL_POLICIES:
+            try:
+                canonical, c_program, expected, meta = build_extended_target(genome.target_builder_policy, features)
+                annotated = canonical + "|experimental_active_path=true|production_supported=false"
+                if meta.get("recursion_mode"):
+                    annotated += f"|recursion_mode={meta['recursion_mode']}"
+                return CandidatePhenotype(genome.genome_id, annotated, c_program, expected, False, None)
+            except Exception as exc:
+                return CandidatePhenotype(genome.genome_id, None, None, None, False, f"invalid_extended_targetir:{type(exc).__name__}")
         if genome.target_builder_policy != "canonical_arithmetic_targetir":
             return CandidatePhenotype(genome.genome_id, None, None, None, False, "unsupported_target_builder")
         try:
