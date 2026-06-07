@@ -1,0 +1,19 @@
+{
+  "max_trace_file_size_bytes": 44000000,
+  "scale_trace_manifest_generated": true,
+  "shards": [
+    {
+      "path": "policy_path_trace_000.jsonl",
+      "row_count": 58794,
+      "sha256": "faf848b097db4faa03f364eee943a460ae8a2048ccba5da41c7430ca28efc966",
+      "size_bytes": 42058077
+    },
+    {
+      "path": "policy_path_trace_001.jsonl",
+      "row_count": 14036,
+      "sha256": "1a4b5b067b0f8f3c427fd4a94197979a40e9365c547d898db08f73df7914a547",
+      "size_bytes": 9931746
+    }
+  ],
+  "total_rows": 72830
+}

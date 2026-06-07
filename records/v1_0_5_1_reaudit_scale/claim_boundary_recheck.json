@@ -1,0 +1,7 @@
+{
+  "claim_boundary_still_safe": true,
+  "production_array_support_completed": false,
+  "production_function_support_completed": false,
+  "production_recursion_support_completed": false,
+  "ready_for_official_release": false
+}

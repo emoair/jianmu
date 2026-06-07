@@ -1,0 +1,79 @@
+{
+  "paths": [
+    {
+      "builder": "function_builder",
+      "c_source_generated": true,
+      "canonical": "function(5)",
+      "emitter": "ExtendedEmitterC",
+      "expected_stdout": "5\n",
+      "extended_ir": true,
+      "ir_kind": "function",
+      "metadata": {
+        "experimental_active_path": true,
+        "kind": "function",
+        "policy": "canonical_function_targetir",
+        "production_supported": false,
+        "supported": true
+      },
+      "source_sha256": "b9b6dfa3bfd1416aa670f1d9413f8280afcb2530010a0d17bbaddc53349fc9e3",
+      "target_builder_policy": "canonical_function_targetir"
+    },
+    {
+      "builder": "array_builder",
+      "c_source_generated": true,
+      "canonical": "array(6)",
+      "emitter": "ExtendedEmitterC",
+      "expected_stdout": "6\n",
+      "extended_ir": true,
+      "ir_kind": "array",
+      "metadata": {
+        "experimental_active_path": true,
+        "kind": "array",
+        "policy": "canonical_array_targetir",
+        "production_supported": false,
+        "supported": true
+      },
+      "source_sha256": "a805554385fcf7c3d6d0ad2062281916804338e393fcd1d1886bc9a3f1d452b3",
+      "target_builder_policy": "canonical_array_targetir"
+    },
+    {
+      "builder": "function_array_builder",
+      "c_source_generated": true,
+      "canonical": "function_array(7)",
+      "emitter": "ExtendedEmitterC",
+      "expected_stdout": "7\n",
+      "extended_ir": true,
+      "ir_kind": "function_array",
+      "metadata": {
+        "experimental_active_path": true,
+        "kind": "function_array",
+        "policy": "canonical_function_array_targetir",
+        "production_supported": false,
+        "supported": true
+      },
+      "source_sha256": "6e39582de3c75ce942fa70d8ba6536e467b86498d2bb8ef22030a23865739ed7",
+      "target_builder_policy": "canonical_function_array_targetir"
+    },
+    {
+      "builder": "structured_recursion_builder",
+      "c_source_generated": true,
+      "canonical": "structured_recursion(8)",
+      "emitter": "ExtendedEmitterC",
+      "expected_stdout": "40320\n",
+      "extended_ir": true,
+      "ir_kind": "structured_recursion",
+      "metadata": {
+        "experimental_active_path": true,
+        "kind": "structured_recursion",
+        "policy": "canonical_structured_recursion_targetir",
+        "production_recursion_support": false,
+        "production_supported": false,
+        "recursion_mode": "bounded_structural_recursion_validation",
+        "supported": true
+      },
+      "source_sha256": "ef35d26ce5de56969effd571c22b450f2ce433e53f2397728706b4324ec9e3f2",
+      "target_builder_policy": "canonical_structured_recursion_targetir"
+    }
+  ],
+  "policy_path_trace_generated": true
+}

@@ -1,0 +1,12 @@
+{
+  "command": "python -m pytest tests/ -q",
+  "environment": {
+    "python_version": "3.9.13",
+    "pytest_disable_plugin_autoload": true
+  },
+  "result": "passed",
+  "passed": 1547,
+  "skipped": 28,
+  "failed": 0,
+  "duration_seconds": 691.87
+}

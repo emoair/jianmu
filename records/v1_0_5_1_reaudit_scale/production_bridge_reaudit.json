@@ -1,0 +1,37 @@
+{
+  "arithmetic_regression_path_confirmed": true,
+  "array_ir_path_confirmed": true,
+  "atomic_policy_bridge_confirmed": true,
+  "atomic_policy_details": {
+    "accepted": {
+      "canonical_array_targetir": true,
+      "canonical_function_array_targetir": true,
+      "canonical_function_targetir": true,
+      "canonical_structured_recursion_targetir": true
+    },
+    "arithmetic_regression_path_confirmed": true,
+    "atomic_policy_bridge_confirmed": true,
+    "unknown_policy_rejected": true
+  },
+  "claim_boundary_still_safe": true,
+  "expr_statement_nodes_confirmed": true,
+  "function_array_ir_path_confirmed": true,
+  "function_ir_path_confirmed": true,
+  "marker_ir_direct_compile_detected": false,
+  "phase_a_blocking_issues": [],
+  "phase_a_passed": true,
+  "policy_path_trace_generated": true,
+  "reaudit_completed": true,
+  "recursion_ir_path_confirmed": true,
+  "reuse_existing_logic_confirmed": true,
+  "rewrite_violation_detected": false,
+  "summary_only_validation_detected": false,
+  "template_bypass_details": {
+    "extended_ir_emitter_path_allowed": true,
+    "hardcoded_stdout_only_c_program_detected": false,
+    "marker_ir_direct_compile_detected": false,
+    "summary_only_validation_detected": false,
+    "template_bypass_detected": false
+  },
+  "template_bypass_detected": false
+}

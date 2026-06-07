@@ -1,0 +1,34 @@
+{
+  "all_policy_categories_represented": true,
+  "arithmetic_regression_compile_success_rate": 1.0,
+  "array_ir_compile_success_rate": 1.0,
+  "backend_type": "real_c_compiler",
+  "category_counts": {
+    "arithmetic": 10000,
+    "array": 13208,
+    "function": 13208,
+    "function_array": 13207,
+    "mixed_extended": 13207,
+    "structured_recursion": 10000
+  },
+  "compiler_name": "cl",
+  "compiler_verified_correctness_rate": 1.0,
+  "function_array_ir_compile_success_rate": 1.0,
+  "function_ir_compile_success_rate": 1.0,
+  "hard_stop_hit": false,
+  "mixed_extended_ir_compile_success_rate": 1.0,
+  "phase_b_completed": true,
+  "phase_b_started": true,
+  "real_compiler_invocations": 72830,
+  "structured_recursion_ir_compile_success_rate": 1.0,
+  "target_counts": {
+    "arithmetic": 10000,
+    "array": 15000,
+    "function": 15000,
+    "function_array": 15000,
+    "mixed_extended": 15000,
+    "structured_recursion": 10000
+  },
+  "wall_clock_hours": 4.000025,
+  "wall_clock_minimum_satisfied": true
+}

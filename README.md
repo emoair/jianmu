@@ -1,3 +1,7 @@
+## v1.0.5.1 Development Direction
+
+v1.0.5.1 reaudits the v1.0.5 experimental production bridge before scale validation. It checks that FunctionIR, ArrayIR, and RecursiveIR really pass through AtomicSynthesis, ExtendedEmitterC, real compiler invocation, executable run, and stdout comparison, then scales only if the reaudit gate passes. It does not enable production promotion or claim production function/array/recursion support.
+
 ## v1.0.5 Production Path Reconciliation Fixpack
 
 The V1.0 source review package is treated as bounded runtime plus frontier evidence. It did not establish production function/array/recursion support. v1.0.5 begins reconciling that gap with an experimental active `ExtendedIR -> ExtendedEmitterC -> AtomicSynthesis policy -> compiler trace` bridge for a minimal function/array/structured-recursion subset, while keeping default production promotion disabled.
