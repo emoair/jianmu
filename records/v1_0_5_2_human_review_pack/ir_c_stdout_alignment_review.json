@@ -1,0 +1,9 @@
+{
+  "alignment_review_completed": true,
+  "artifact_sha256_manifest_generated": true,
+  "missing_artifact_count": 0,
+  "review_samples_generated": 300,
+  "samples_with_emitted_c": 300,
+  "samples_with_ir_json": 300,
+  "samples_with_stdout_pair": 300
+}

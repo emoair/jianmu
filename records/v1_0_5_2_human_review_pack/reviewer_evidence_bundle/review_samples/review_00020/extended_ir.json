@@ -1,0 +1,5 @@
+{
+  "builder": "existing_arithmetic_compiler_backend",
+  "ir_kind": "arithmetic",
+  "traceable": true
+}

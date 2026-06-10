@@ -1,3 +1,7 @@
+## v1.0.5.2 Development Direction
+
+v1.0.5.2 packages the v1.0.5.1 experimental active bridge evidence for human review. It samples scale traces, replays selected paths through ExtendedIR, ExtendedEmitterC, cl.exe, executable run, and stdout comparison, then emits reviewer-facing artifacts and a production dry-run precheck. It does not run a production dry-run, enable promotion, or claim production function/array/recursion support.
+
 ## v1.0.5.1 Development Direction
 
 v1.0.5.1 reaudits the v1.0.5 experimental production bridge before scale validation. It checks that FunctionIR, ArrayIR, and RecursiveIR really pass through AtomicSynthesis, ExtendedEmitterC, real compiler invocation, executable run, and stdout comparison, then scales only if the reaudit gate passes. It does not enable production promotion or claim production function/array/recursion support.

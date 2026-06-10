@@ -1,0 +1,171 @@
+{
+  "alignment": {
+    "alignment_review_completed": true,
+    "artifact_sha256_manifest_generated": true,
+    "missing_artifact_count": 0,
+    "review_samples_generated": 300,
+    "samples_with_emitted_c": 300,
+    "samples_with_ir_json": 300,
+    "samples_with_stdout_pair": 300
+  },
+  "config": {
+    "accounting_lock": true,
+    "compiler_workers": 16,
+    "policy_targets": {
+      "canonical_arithmetic_targetir": 40,
+      "canonical_array_targetir": 60,
+      "canonical_function_array_targetir": 60,
+      "canonical_function_targetir": 60,
+      "canonical_structured_recursion_targetir": 40,
+      "mixed_extended_ir_path": 40
+    },
+    "replay_minimum_required": 300,
+    "replay_must_include_all_policies": true,
+    "replay_validation_samples": 1000,
+    "seed": 197,
+    "temp_dir_mode": "per_sample",
+    "total_review_samples": 300,
+    "trace_writer_mode": "sharded",
+    "workers": 16
+  },
+  "interface": {
+    "atomic_policy_interfaces_valid": true,
+    "builder_interfaces_valid": true,
+    "cached_result_used_as_new_detected": false,
+    "compiler_interfaces_valid": true,
+    "extended_emitter_interfaces_valid": true,
+    "extended_ir_interfaces_valid": true,
+    "interface_landing_review_completed": true,
+    "marker_ir_direct_compile_detected": false,
+    "policy_details": {
+      "arithmetic_policy_unchanged": true,
+      "atomic_policy_interfaces_valid": true,
+      "policies": {
+        "canonical_arithmetic_targetir": {
+          "experimental_policy_marked_non_production": false,
+          "policy_accepts_expected_input": true,
+          "policy_registered": true
+        },
+        "canonical_array_targetir": {
+          "experimental_policy_marked_non_production": true,
+          "policy_accepts_expected_input": true,
+          "policy_registered": true
+        },
+        "canonical_function_array_targetir": {
+          "experimental_policy_marked_non_production": true,
+          "policy_accepts_expected_input": true,
+          "policy_registered": true
+        },
+        "canonical_function_targetir": {
+          "experimental_policy_marked_non_production": true,
+          "policy_accepts_expected_input": true,
+          "policy_registered": true
+        },
+        "canonical_structured_recursion_targetir": {
+          "experimental_policy_marked_non_production": true,
+          "policy_accepts_expected_input": true,
+          "policy_registered": true
+        }
+      },
+      "policy_interface_landing_audit_completed": true,
+      "unknown_policy_rejected": true
+    },
+    "summary_only_validation_detected": false,
+    "template_bypass_detected": false
+  },
+  "precheck": {
+    "blockers_before_dry_run": [],
+    "production_dry_run_executed": false,
+    "production_ready": false,
+    "ready_for_production_dry_run_candidate": true,
+    "required_before_dry_run": [
+      "human review signoff",
+      "production profile integration design",
+      "rollback plan",
+      "claim boundary approval"
+    ],
+    "required_human_review_items": [
+      "policy path",
+      "ExtendedIR",
+      "ExtendedEmitterC",
+      "cl.exe invocation",
+      "stdout match",
+      "trace replay",
+      "no template bypass",
+      "no production overclaim"
+    ],
+    "suggested_next_branch": "v1.0.6-production-profile-dry-run-candidate"
+  },
+  "readiness": {
+    "artifact_sha256_manifest_generated": true,
+    "atomic_policy_interfaces_valid": true,
+    "blocking_issues": [],
+    "builder_interfaces_valid": true,
+    "cached_result_used_as_new_detected": false,
+    "claim_boundary_review_completed": true,
+    "compiler_interfaces_valid": true,
+    "downgrade_reason": "",
+    "extended_emitter_interfaces_valid": true,
+    "extended_ir_interfaces_valid": true,
+    "interface_landing_review_completed": true,
+    "ir_c_stdout_alignment_completed": true,
+    "marker_ir_direct_compile_detected": false,
+    "production_array_support_completed": false,
+    "production_dry_run_executed": false,
+    "production_function_support_completed": false,
+    "production_recursion_support_completed": false,
+    "ready_for_official_release": false,
+    "ready_for_production_dry_run_candidate": true,
+    "recommended_claim_level": "human_review_pack_ready",
+    "replay_fail_count": 0,
+    "replay_policy_path_drift_count": 0,
+    "replay_sample_count": 1000,
+    "replay_source_hash_drift_count": 0,
+    "replay_stdout_mismatch_count": 0,
+    "replay_success_rate": 1.0,
+    "replay_validation_completed": true,
+    "required_next_run": "Human review of this bundle, then v1.0.6 production-profile dry-run candidate only if reviewers approve.",
+    "review_sample_count": 300,
+    "review_samples_generated": 300,
+    "reviewer_evidence_bundle_generated": true,
+    "samples_with_emitted_c": 300,
+    "samples_with_ir_json": 300,
+    "samples_with_stdout_pair": 300,
+    "source_trace_pack_found": true,
+    "source_trace_pack_replayable": true,
+    "still_not_proven": [
+      "production function support",
+      "production array support",
+      "production recursion support",
+      "arbitrary project parsing",
+      "formal Turing completeness proof",
+      "solved program synthesis",
+      "production readiness",
+      "natural language layer completed",
+      "safe real promotion",
+      "stable convergence",
+      "solved OOD",
+      "emergence proven"
+    ],
+    "summary_only_validation_detected": false,
+    "template_bypass_detected": false,
+    "workers_requested": 16,
+    "workers_used": 16
+  },
+  "replay": {
+    "downgrade_reason": "",
+    "replay_compile_failure_count": 0,
+    "replay_fail_count": 0,
+    "replay_ir_kind_drift_count": 0,
+    "replay_pass_count": 1000,
+    "replay_policy_path_drift_count": 0,
+    "replay_sample_count": 1000,
+    "replay_source_hash_drift_count": 0,
+    "replay_stdout_mismatch_count": 0,
+    "replay_success_rate": 1.0,
+    "replay_timeout_count": 0,
+    "replay_validation_completed": true,
+    "workers_requested": 16,
+    "workers_used": 16
+  }
+}

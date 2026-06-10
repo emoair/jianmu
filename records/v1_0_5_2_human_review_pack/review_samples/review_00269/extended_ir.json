@@ -1,0 +1,5 @@
+{
+  "builder": "build_array_program",
+  "ir_kind": "mixed_array",
+  "traceable": true
+}

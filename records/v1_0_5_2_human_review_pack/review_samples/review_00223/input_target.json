@@ -1,0 +1,5 @@
+{
+  "builder": "build_factorial_program",
+  "policy": "canonical_structured_recursion_targetir",
+  "source_trace_id": "v1_0_5_1_structured_recursion_00010155"
+}

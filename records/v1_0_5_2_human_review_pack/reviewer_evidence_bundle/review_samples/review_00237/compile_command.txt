@@ -1,0 +1,1 @@
+cl /nologo /TC emitted.c /Fe:program.exe /Fo:program.obj

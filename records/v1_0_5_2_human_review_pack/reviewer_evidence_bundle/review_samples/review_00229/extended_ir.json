@@ -1,0 +1,5 @@
+{
+  "builder": "build_factorial_program",
+  "ir_kind": "RecursiveFunctionProgram",
+  "traceable": true
+}

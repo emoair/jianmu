@@ -1,0 +1,5 @@
+{
+  "builder": "build_function_program",
+  "ir_kind": "mixed_function",
+  "traceable": true
+}

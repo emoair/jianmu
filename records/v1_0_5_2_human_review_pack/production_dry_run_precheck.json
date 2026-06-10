@@ -1,0 +1,23 @@
+{
+  "blockers_before_dry_run": [],
+  "production_dry_run_executed": false,
+  "production_ready": false,
+  "ready_for_production_dry_run_candidate": true,
+  "required_before_dry_run": [
+    "human review signoff",
+    "production profile integration design",
+    "rollback plan",
+    "claim boundary approval"
+  ],
+  "required_human_review_items": [
+    "policy path",
+    "ExtendedIR",
+    "ExtendedEmitterC",
+    "cl.exe invocation",
+    "stdout match",
+    "trace replay",
+    "no template bypass",
+    "no production overclaim"
+  ],
+  "suggested_next_branch": "v1.0.6-production-profile-dry-run-candidate"
+}
