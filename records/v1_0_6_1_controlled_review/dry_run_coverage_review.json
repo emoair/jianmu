@@ -1,0 +1,37 @@
+{
+  "arithmetic_coverage_ok": true,
+  "array_coverage_ok": true,
+  "category_all_represented": true,
+  "compile_invocation_unique_count": 86704,
+  "coverage_review_completed": true,
+  "coverage_review_notes": [],
+  "coverage_skew_detected": false,
+  "duplicate_compile_invocation_id_count": 0,
+  "function_array_coverage_ok": true,
+  "function_coverage_ok": true,
+  "ir_kind_distribution": {
+    "ArrayProgram": 14451,
+    "FunctionArrayProgram": 14451,
+    "FunctionCallProgram": 14451,
+    "RecursiveFunctionProgram": 14450,
+    "arithmetic": 14451,
+    "mixed_array": 4817,
+    "mixed_function": 4817,
+    "mixed_function_array": 4816
+  },
+  "mixed_coverage_ok": true,
+  "policy_distribution": {
+    "canonical_arithmetic_targetir": 14451,
+    "canonical_array_targetir": 14451,
+    "canonical_function_array_targetir": 14451,
+    "canonical_function_targetir": 14451,
+    "canonical_structured_recursion_targetir": 14450,
+    "mixed_extended_ir_path": 14450
+  },
+  "repeated_shape_risk_level": "low",
+  "source_sha256_unique_count": 9896,
+  "structured_recursion_coverage_ok": true,
+  "total_invocations": 86704,
+  "trace_shard_count": 3,
+  "unique_compile_unit_count": 9896
+}

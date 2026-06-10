@@ -1,0 +1,9 @@
+{
+  "adapter_interface_valid": true,
+  "adapter_review_issues": [],
+  "direct_template_path_detected": false,
+  "interface_adapter_review_completed": true,
+  "marker_ir_direct_compile_detected": false,
+  "static_scan_completed": true,
+  "summary_only_validation_detected": false
+}

@@ -1,0 +1,8 @@
+{
+  "extra_consecutive_full_pytest_runs": 2,
+  "full_pytest_run_1": "1601 passed, 28 skipped in 636.05s (0:10:36)",
+  "full_pytest_run_2": "1601 passed, 28 skipped in 640.95s (0:10:40)",
+  "new_tests": "18 passed",
+  "result": "passed",
+  "windows_transient_records_write_reproduced": false
+}

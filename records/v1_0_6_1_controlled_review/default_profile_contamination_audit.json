@@ -1,0 +1,12 @@
+{
+  "contamination_blocking_issues": [],
+  "default_arithmetic_path_unchanged": true,
+  "default_candidate_executor_unchanged": true,
+  "default_profile_contamination_audit_completed": true,
+  "default_profile_contamination_detected": false,
+  "default_route_to_shadow_detected": false,
+  "default_runtime_path_unchanged": true,
+  "production_flags_auto_enabled_detected": false,
+  "staged_opt_in_enabled_detected": false,
+  "user_facing_shadow_route_detected": false
+}

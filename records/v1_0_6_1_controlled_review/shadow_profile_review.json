@@ -1,0 +1,11 @@
+{
+  "audit_trace_required_confirmed": true,
+  "default_profile_false_confirmed": true,
+  "explicit_opt_in_confirmed": true,
+  "real_promotion_false_confirmed": true,
+  "rollback_required_confirmed": true,
+  "shadow_profile_review_completed": true,
+  "shadow_profile_review_issues": [],
+  "shadow_profile_valid": true,
+  "user_facing_false_confirmed": true
+}

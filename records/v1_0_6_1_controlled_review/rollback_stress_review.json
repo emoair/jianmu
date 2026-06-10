@@ -1,0 +1,10 @@
+{
+  "default_profile_after_each_cycle_unchanged": true,
+  "production_flags_after_each_cycle_false": true,
+  "rollback_cycle_fail_count": 0,
+  "rollback_cycle_pass_count": 100,
+  "rollback_cycles": 100,
+  "rollback_stress_completed": true,
+  "rollback_stress_passed": true,
+  "shadow_disable_pass_count": 100
+}

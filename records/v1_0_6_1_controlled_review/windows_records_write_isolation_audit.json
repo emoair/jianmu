@@ -1,0 +1,22 @@
+{
+  "atomic_write_required": true,
+  "concurrent_write_risk_detected": false,
+  "historical_records_write_detected": false,
+  "isolation_fix_applied": true,
+  "isolation_fix_files": [
+    "jianmu/self_learning/darwinforge/windows_records_write_isolation_audit.py"
+  ],
+  "remaining_notes": [
+    "Future legacy tests should prefer tmp_path over historical records directories.",
+    "Controlled review records use a new v1_0_6_1 output directory and atomic helper for audit writes."
+  ],
+  "reproduction_after_fix_passed": true,
+  "reproduction_attempted": true,
+  "shared_records_path_detected": false,
+  "suspected_root_cause": "Initial v1.0.6 full pytest hit transient Windows OSError 22 while old tests wrote shared historical records/v0_6_7 files; targeted rerun and second full run passed. Risk is isolated to test-side historical records writes, not v1.0.6 dry-run records.",
+  "tmp_path_isolation_required": true,
+  "transient_failure_observed_in_v1_0_6": true,
+  "unclosed_file_handle_risk_detected": false,
+  "windows_records_write_audit_completed": true,
+  "windows_write_isolation_passed": true
+}

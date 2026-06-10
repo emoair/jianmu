@@ -1,3 +1,7 @@
+## v1.0.6.1 Development Direction
+
+v1.0.6.1 performs a controlled profile review of the v1.0.6 production shadow dry-run records before any staged opt-in work. It reviews shadow profile boundaries, default profile contamination risk, adapter reuse, coverage, Windows records write isolation, targeted replay, rollback stress, and staged opt-in precheck. It does not enable staged opt-in, modify the default profile, enable real promotion, or claim production function/array/recursion support.
+
 ## v1.0.6 Development Direction
 
 v1.0.6 creates an explicit opt-in production-shadow dry-run candidate for the experimental FunctionIR, ArrayIR, FunctionArrayIR, and StructuredRecursion bridge validated in v1.0.5.1 and packaged for review in v1.0.5.2. It checks guard rails, adapter reuse, compiler-backed dry-run execution, regression safety, rollback, and trace replayability without modifying the default profile, enabling real promotion, or claiming production function/array/recursion support.
