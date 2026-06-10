@@ -1,0 +1,47 @@
+{
+  "audit_trace_required": true,
+  "claim_boundary": {
+    "allowed_positive_claim": "ready_for_controlled_profile_review",
+    "production_array_support_completed": false,
+    "production_function_support_completed": false,
+    "production_ready": false,
+    "production_recursion_support_completed": false,
+    "ready_for_official_release": false,
+    "still_not_proven": [
+      "production function support completed",
+      "production array support completed",
+      "production recursion support completed",
+      "arbitrary project parsing",
+      "formal Turing completeness proof",
+      "solved program synthesis",
+      "production readiness",
+      "natural language layer completed",
+      "safe real promotion",
+      "stable convergence",
+      "solved OOD",
+      "emergence proven"
+    ]
+  },
+  "compiler_validation_required": true,
+  "default_profile": false,
+  "default_profile_unchanged": true,
+  "disabled_policies": [],
+  "dry_run_enabled": true,
+  "enabled_policies": [
+    "canonical_function_targetir",
+    "canonical_array_targetir",
+    "canonical_function_array_targetir",
+    "canonical_structured_recursion_targetir"
+  ],
+  "experimental_active_bridge": true,
+  "explicitly_opt_in": true,
+  "production_support_claim_enabled": false,
+  "production_supported": false,
+  "profile_name": "production_shadow_dry_run_v1_0_6",
+  "real_promotion_enabled": false,
+  "release_enabled": false,
+  "rollback_mode": "disable_shadow_profile_without_touching_default",
+  "rollback_required": true,
+  "shadow_profile_created": true,
+  "user_facing_enabled": false
+}

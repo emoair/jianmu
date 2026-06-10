@@ -1,0 +1,9 @@
+{
+  "default_profile_after_rollback_unchanged": true,
+  "production_flags_after_rollback_false": true,
+  "rollback_audit_passed": true,
+  "rollback_path_exists": true,
+  "rollback_test_executed": true,
+  "rollback_test_passed": true,
+  "shadow_profile_disable_test_passed": true
+}

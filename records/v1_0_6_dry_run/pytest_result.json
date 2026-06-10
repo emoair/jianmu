@@ -1,0 +1,7 @@
+{
+  "final_full_run": "1583 passed, 28 skipped",
+  "initial_full_run": "2 failed, 1581 passed, 28 skipped due transient Windows OSError 22 while writing records/v0_6_7/perfect_layer_backtracking_candidates.jsonl",
+  "result": "passed",
+  "summary": "1583 passed, 28 skipped in 835.36s (0:13:55)",
+  "targeted_rerun": "2 passed"
+}

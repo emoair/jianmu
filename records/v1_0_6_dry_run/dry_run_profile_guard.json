@@ -1,0 +1,16 @@
+{
+  "blocking_issues": [],
+  "default_profile_unchanged": true,
+  "dry_run_profile_guard_passed": true,
+  "guard_passed": true,
+  "no_external_api_or_llm_api": true,
+  "no_natural_language_layer_activation": true,
+  "production_support_flags_false": true,
+  "real_promotion_off": true,
+  "recommended_claim_level": "guard_passed",
+  "release_tag_disabled": true,
+  "results_records_only": true,
+  "rollback_path_exists": true,
+  "shadow_profile_not_default": true,
+  "user_facing_enablement_false": true
+}

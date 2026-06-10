@@ -1,0 +1,25 @@
+{
+  "dry_run_trace_manifest_generated": true,
+  "max_trace_file_size_bytes": 44000000,
+  "shards": [
+    {
+      "path": "dry_run_policy_path_trace_000.jsonl",
+      "row_count": 38342,
+      "sha256": "3948f9eebf877176a9a5eb43d317b5581edeffd33b8c4fceb744e9f44c040151",
+      "size_bytes": 42037674
+    },
+    {
+      "path": "dry_run_policy_path_trace_001.jsonl",
+      "row_count": 38321,
+      "sha256": "59f9794c0b5a656f0dde87998f9717914368fec70fecd8eca2ff4e4512b6f334",
+      "size_bytes": 42037330
+    },
+    {
+      "path": "dry_run_policy_path_trace_002.jsonl",
+      "row_count": 10041,
+      "sha256": "07aba9af26a3b17996ba8a1f890ee17f6e1970adbe2f3391aa93dcc902fc4c4c",
+      "size_bytes": 11020101
+    }
+  ],
+  "total_rows": 86704
+}

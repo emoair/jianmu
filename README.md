@@ -1,3 +1,7 @@
+## v1.0.6 Development Direction
+
+v1.0.6 creates an explicit opt-in production-shadow dry-run candidate for the experimental FunctionIR, ArrayIR, FunctionArrayIR, and StructuredRecursion bridge validated in v1.0.5.1 and packaged for review in v1.0.5.2. It checks guard rails, adapter reuse, compiler-backed dry-run execution, regression safety, rollback, and trace replayability without modifying the default profile, enabling real promotion, or claiming production function/array/recursion support.
+
 ## v1.0.5.2 Development Direction
 
 v1.0.5.2 packages the v1.0.5.1 experimental active bridge evidence for human review. It samples scale traces, replays selected paths through ExtendedIR, ExtendedEmitterC, cl.exe, executable run, and stdout comparison, then emits reviewer-facing artifacts and a production dry-run precheck. It does not run a production dry-run, enable promotion, or claim production function/array/recursion support.

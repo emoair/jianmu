@@ -1,0 +1,35 @@
+{
+  "all_policy_categories_represented": true,
+  "arithmetic_regression_compile_success_rate": 1.0,
+  "array_dry_run_success_rate": 1.0,
+  "backend_type": "real_c_compiler",
+  "category_counts": {
+    "arithmetic": 14451,
+    "array": 14451,
+    "function": 14451,
+    "function_array": 14451,
+    "mixed": 14450,
+    "structured_recursion": 14450
+  },
+  "compiler_name": "cl",
+  "compiler_verified_correctness_rate": 1.0,
+  "downgrade_reason": "",
+  "function_array_dry_run_success_rate": 1.0,
+  "function_dry_run_success_rate": 1.0,
+  "hard_stop_hit": false,
+  "mixed_dry_run_success_rate": 1.0,
+  "production_dry_run_executed": true,
+  "structured_recursion_dry_run_success_rate": 1.0,
+  "target_counts": {
+    "arithmetic": 20000,
+    "array": 20000,
+    "function": 20000,
+    "function_array": 20000,
+    "mixed": 25000,
+    "structured_recursion": 15000
+  },
+  "wall_clock_hours": 4.000011,
+  "wall_clock_minimum_satisfied": true,
+  "workers_requested": 16,
+  "workers_used": 16
+}
