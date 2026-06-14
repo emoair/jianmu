@@ -1,0 +1,17 @@
+{
+  "blocking_issues": [],
+  "bridge_blocked_without_opt_in": true,
+  "default_profile_unchanged": true,
+  "explicit_flag_required": true,
+  "no_external_api_or_llm_api": true,
+  "no_natural_language_layer_activation": true,
+  "official_release_false": true,
+  "production_support_flags_false": true,
+  "real_promotion_off": true,
+  "recommended_claim_level": "guard_passed",
+  "rollback_path_exists": true,
+  "staged_opt_in_guard_passed": true,
+  "staged_opt_in_profile_not_default": true,
+  "trace_required": true,
+  "user_facing_enablement_false": true
+}

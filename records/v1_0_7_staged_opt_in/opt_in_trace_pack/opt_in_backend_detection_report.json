@@ -1,0 +1,5 @@
+{
+  "backend_type": "real_c_compiler",
+  "compiler_environment": "msvc_vcvars64",
+  "compiler_name": "cl"
+}

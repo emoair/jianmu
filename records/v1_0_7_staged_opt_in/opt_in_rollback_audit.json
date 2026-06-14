@@ -1,0 +1,11 @@
+{
+  "arithmetic_baseline_after_each_cycle_clean": true,
+  "default_profile_after_each_cycle_unchanged": true,
+  "opt_in_cycle_fail_count": 0,
+  "opt_in_cycle_pass_count": 200,
+  "opt_in_rollback_completed": true,
+  "opt_in_rollback_cycles": 200,
+  "opt_in_rollback_passed": true,
+  "opt_out_blocks_bridge_after_each_cycle": true,
+  "production_flags_after_each_cycle_false": true
+}

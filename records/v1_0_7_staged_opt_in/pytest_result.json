@@ -1,0 +1,7 @@
+{
+  "extra_consecutive_full_pytest_runs": 2,
+  "full_pytest_run_1": "1622 passed, 28 skipped in 788.89s (0:13:08)",
+  "full_pytest_run_2": "1622 passed, 28 skipped in 767.34s (0:12:47)",
+  "new_tests": "21 passed",
+  "result": "passed"
+}

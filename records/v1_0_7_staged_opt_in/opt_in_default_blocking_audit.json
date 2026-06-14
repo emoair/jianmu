@@ -1,0 +1,14 @@
+{
+  "blocking_audit_issues": [],
+  "default_blocking_audit_completed": true,
+  "default_blocking_passed": true,
+  "default_profile_array_bridge_reachable": false,
+  "default_profile_bridge_leak_detected": false,
+  "default_profile_function_bridge_reachable": false,
+  "default_profile_mixed_bridge_reachable": false,
+  "default_profile_recursion_bridge_reachable": false,
+  "disabled_opt_in_profile_blocks_bridge": true,
+  "malformed_opt_in_flag_blocks_bridge": true,
+  "missing_opt_in_flag_blocks_bridge": true,
+  "post_rollback_blocks_bridge": true
+}

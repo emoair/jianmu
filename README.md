@@ -1,3 +1,7 @@
+## v1.0.7 Development Direction
+
+v1.0.7 creates an explicit staged opt-in profile candidate for the experimental FunctionIR, ArrayIR, FunctionArrayIR, and StructuredRecursion bridge. The profile requires a manual opt-in flag, blocks the bridge by default, validates opt-in execution and opt-out rollback, and keeps default runtime behavior unchanged. It does not enable real promotion, official release, default production support, or production function/array/recursion support claims.
+
 ## v1.0.6.1 Development Direction
 
 v1.0.6.1 performs a controlled profile review of the v1.0.6 production shadow dry-run records before any staged opt-in work. It reviews shadow profile boundaries, default profile contamination risk, adapter reuse, coverage, Windows records write isolation, targeted replay, rollback stress, and staged opt-in precheck. It does not enable staged opt-in, modify the default profile, enable real promotion, or claim production function/array/recursion support.
