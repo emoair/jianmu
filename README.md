@@ -1,3 +1,7 @@
+## v1.0.7.1 Development Direction
+
+v1.0.7.1 runs an eight-hour controlled opt-in longhaul validation of the v1.0.7 staged opt-in profile. It reuses the existing staged opt-in profile, v1.0.6 dry-run adapter, and v1.0.5.x ExtendedIR / ExtendedEmitterC / AtomicSynthesis bridge, then validates heldout samples, default blocking, malformed flag blocking, opt-in correctness, opt-out rollback, replay, coverage, accounting, and trace replayability. It does not train or update model weights, change the default profile, enable real promotion, or claim production support.
+
 ## v1.0.7 Development Direction
 
 v1.0.7 creates an explicit staged opt-in profile candidate for the experimental FunctionIR, ArrayIR, FunctionArrayIR, and StructuredRecursion bridge. The profile requires a manual opt-in flag, blocks the bridge by default, validates opt-in execution and opt-out rollback, and keeps default runtime behavior unchanged. It does not enable real promotion, official release, default production support, or production function/array/recursion support claims.

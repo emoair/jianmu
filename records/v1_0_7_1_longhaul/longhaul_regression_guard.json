@@ -1,0 +1,12 @@
+{
+  "arithmetic_path_regression_clean": true,
+  "blocking_issues": [],
+  "candidate_executor_compatible": true,
+  "default_route_to_opt_in_detected": false,
+  "external_api_path_detected": false,
+  "nl_path_activated": false,
+  "old_c_emitter_compatible": true,
+  "old_program_ir_compatible": true,
+  "regression_guard_passed": true,
+  "runtime_default_path_unchanged": true
+}

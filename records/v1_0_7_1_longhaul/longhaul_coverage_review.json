@@ -1,0 +1,54 @@
+{
+  "all_categories_represented": true,
+  "category_distribution": {
+    "arithmetic": 25115,
+    "array": 25115,
+    "default_blocking": 20000,
+    "function": 25116,
+    "function_array": 25115,
+    "malformed_opt_in_blocking": 10000,
+    "mixed": 25116,
+    "opt_out_rollback": 25000,
+    "post_rollback_default_blocking": 15000,
+    "structured_recursion": 25000
+  },
+  "coverage_expansion_attempted": true,
+  "coverage_expansion_successful": false,
+  "coverage_floor_satisfied": true,
+  "coverage_review_completed": true,
+  "coverage_skew_detected": false,
+  "ir_kind_distribution": {
+    "ArrayProgram": 25115,
+    "FunctionArrayProgram": 25115,
+    "FunctionCallProgram": 25116,
+    "RecursiveFunctionProgram": 25000,
+    "arithmetic": 25115,
+    "blocked": 70000,
+    "mixed_array": 8372,
+    "mixed_function": 8372,
+    "mixed_function_array": 8372
+  },
+  "notes": [
+    "unique compile units did not exceed recommended 12000 target; claim level capped with coverage notes"
+  ],
+  "policy_distribution": {
+    "canonical_arithmetic_targetir": 25115,
+    "canonical_array_targetir": 25115,
+    "canonical_function_array_targetir": 25115,
+    "canonical_function_targetir": 35116,
+    "canonical_structured_recursion_targetir": 25000,
+    "default_profile_blocking_check": 35000,
+    "mixed_extended_ir_path": 25116,
+    "opt_out_rollback_check": 25000
+  },
+  "repeated_shape_risk_level": "medium",
+  "source_sha256_unique_count": 9896,
+  "source_shape_distribution": {
+    "build_array_program": 33487,
+    "build_factorial_program": 25000,
+    "build_function_array_program": 33487,
+    "build_function_program": 33488,
+    "existing_arithmetic_compiler_backend": 25115
+  },
+  "unique_compile_unit_count": 9896
+}

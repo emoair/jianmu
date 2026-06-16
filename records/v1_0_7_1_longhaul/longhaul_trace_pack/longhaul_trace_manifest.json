@@ -1,0 +1,171 @@
+{
+  "longhaul_trace_manifest_generated": true,
+  "max_trace_file_size_bytes": 44000000,
+  "shard_groups": {
+    "default_blocking_trace": [
+      {
+        "path": "longhaul_default_blocking_trace_000.jsonl",
+        "row_count": 35779,
+        "sha256": "3c386d08d847ae185829f876585338a28694dca28e5bbba9a5c7a794baff5ecb",
+        "size_bytes": 42035662
+      },
+      {
+        "path": "longhaul_default_blocking_trace_001.jsonl",
+        "row_count": 9221,
+        "sha256": "7be4da21f28871292c82d402fb205cf84126387d4e6eff05903b698496aa7e86",
+        "size_bytes": 10670822
+      }
+    ],
+    "invocation_manifest": [
+      {
+        "path": "longhaul_invocation_manifest_000.jsonl",
+        "row_count": 91790,
+        "sha256": "9eb5f47fb9e652f4ffb3866956eabe0da15a2948bc9ac48d1a07b70bd11c60dc",
+        "size_bytes": 42091722
+      },
+      {
+        "path": "longhaul_invocation_manifest_001.jsonl",
+        "row_count": 92538,
+        "sha256": "7d45e8164c338236306cbb00a1c2470bd18e0c82bed3b49cab1c3ca77649df6c",
+        "size_bytes": 42092346
+      },
+      {
+        "path": "longhaul_invocation_manifest_002.jsonl",
+        "row_count": 36249,
+        "sha256": "40e1ce33c004eda189d3a0a8c8c23f9bf356fd8126d72977c2cfa2b31420dafa",
+        "size_bytes": 16422765
+      }
+    ],
+    "policy_path_trace": [
+      {
+        "path": "longhaul_policy_path_trace_000.jsonl",
+        "row_count": 30837,
+        "sha256": "8e1069952b9d6cb8e6b7e698698a5a25281f01e70e895694c3277dded79b22f0",
+        "size_bytes": 42029482
+      },
+      {
+        "path": "longhaul_policy_path_trace_001.jsonl",
+        "row_count": 30830,
+        "sha256": "7cf3446ba579c843c960d7545e83c5f3df6ef8a9a0fdd0f98c2056e3b2c7d3e1",
+        "size_bytes": 42030814
+      },
+      {
+        "path": "longhaul_policy_path_trace_002.jsonl",
+        "row_count": 30830,
+        "sha256": "63591d95d6bd76981bac1203e8fc7472a0b5fd2ef8f6f8763aa2b7b49b0387bd",
+        "size_bytes": 42030774
+      },
+      {
+        "path": "longhaul_policy_path_trace_003.jsonl",
+        "row_count": 30436,
+        "sha256": "69070ae4aba110a653fc70e90177cb996e21dc6144d121bda54532947aae091a",
+        "size_bytes": 42029290
+      },
+      {
+        "path": "longhaul_policy_path_trace_004.jsonl",
+        "row_count": 30191,
+        "sha256": "fdae493b9fe96d1978a3eb04ffa3f8e8c5f65c06a406eddaf12cef8aae65ff1d",
+        "size_bytes": 42028667
+      },
+      {
+        "path": "longhaul_policy_path_trace_005.jsonl",
+        "row_count": 29869,
+        "sha256": "b0ec19e1324d02c83f22f5154896b37506d77430e88ea7af902cc92f468d8761",
+        "size_bytes": 42029526
+      },
+      {
+        "path": "longhaul_policy_path_trace_006.jsonl",
+        "row_count": 29127,
+        "sha256": "49756f31f06ef6f3cfd013fdfe46d9688320ed46aed145eef3cb875760ae3439",
+        "size_bytes": 42028720
+      },
+      {
+        "path": "longhaul_policy_path_trace_007.jsonl",
+        "row_count": 8457,
+        "sha256": "a33bd28cc10049b845ac677561024d9eb42f4b961021d64de992e15822ca351e",
+        "size_bytes": 12246106
+      }
+    ],
+    "rollback_trace": [
+      {
+        "path": "longhaul_rollback_trace_000.jsonl",
+        "row_count": 25000,
+        "sha256": "57bfb3c70729ea6deaac0735aed51b198e954478891e722097baef4cb57bb683",
+        "size_bytes": 28028828
+      }
+    ],
+    "sample_id_hashes": [
+      {
+        "path": "longhaul_sample_id_hashes_000.jsonl",
+        "row_count": 220577,
+        "sha256": "57d1f3d7fa7207b1f39a8c857e1459456b3f9083be8b8cb7d127ae976dfb42cf",
+        "size_bytes": 30105814
+      }
+    ],
+    "stdout_comparison_manifest": [
+      {
+        "path": "longhaul_stdout_comparison_manifest_000.jsonl",
+        "row_count": 210254,
+        "sha256": "a32b8dfa8cf105e86e829e87576d19068cb5bbd52ec1f0ae7b109b4a0b8217bb",
+        "size_bytes": 42210182
+      },
+      {
+        "path": "longhaul_stdout_comparison_manifest_001.jsonl",
+        "row_count": 10323,
+        "sha256": "0dc9776cfe255733fe25aea924c3ee1b9e02b34776cd59c0d8c09eb7f3e0d4dd",
+        "size_bytes": 1927525
+      }
+    ]
+  },
+  "shards": [
+    {
+      "path": "longhaul_policy_path_trace_000.jsonl",
+      "row_count": 30837,
+      "sha256": "8e1069952b9d6cb8e6b7e698698a5a25281f01e70e895694c3277dded79b22f0",
+      "size_bytes": 42029482
+    },
+    {
+      "path": "longhaul_policy_path_trace_001.jsonl",
+      "row_count": 30830,
+      "sha256": "7cf3446ba579c843c960d7545e83c5f3df6ef8a9a0fdd0f98c2056e3b2c7d3e1",
+      "size_bytes": 42030814
+    },
+    {
+      "path": "longhaul_policy_path_trace_002.jsonl",
+      "row_count": 30830,
+      "sha256": "63591d95d6bd76981bac1203e8fc7472a0b5fd2ef8f6f8763aa2b7b49b0387bd",
+      "size_bytes": 42030774
+    },
+    {
+      "path": "longhaul_policy_path_trace_003.jsonl",
+      "row_count": 30436,
+      "sha256": "69070ae4aba110a653fc70e90177cb996e21dc6144d121bda54532947aae091a",
+      "size_bytes": 42029290
+    },
+    {
+      "path": "longhaul_policy_path_trace_004.jsonl",
+      "row_count": 30191,
+      "sha256": "fdae493b9fe96d1978a3eb04ffa3f8e8c5f65c06a406eddaf12cef8aae65ff1d",
+      "size_bytes": 42028667
+    },
+    {
+      "path": "longhaul_policy_path_trace_005.jsonl",
+      "row_count": 29869,
+      "sha256": "b0ec19e1324d02c83f22f5154896b37506d77430e88ea7af902cc92f468d8761",
+      "size_bytes": 42029526
+    },
+    {
+      "path": "longhaul_policy_path_trace_006.jsonl",
+      "row_count": 29127,
+      "sha256": "49756f31f06ef6f3cfd013fdfe46d9688320ed46aed145eef3cb875760ae3439",
+      "size_bytes": 42028720
+    },
+    {
+      "path": "longhaul_policy_path_trace_007.jsonl",
+      "row_count": 8457,
+      "sha256": "a33bd28cc10049b845ac677561024d9eb42f4b961021d64de992e15822ca351e",
+      "size_bytes": 12246106
+    }
+  ],
+  "total_rows": 220577
+}

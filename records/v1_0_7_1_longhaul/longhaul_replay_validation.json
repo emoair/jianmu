@@ -1,0 +1,17 @@
+{
+  "downgrade_reason": "single_worker_replay_after_parallel_timeout_false_negative_check",
+  "replay_all_categories_covered": true,
+  "replay_compile_failure_count": 0,
+  "replay_fail_count": 0,
+  "replay_ir_kind_drift_count": 0,
+  "replay_passed": true,
+  "replay_policy_path_drift_count": 0,
+  "replay_sample_count": 5000,
+  "replay_source_hash_drift_count": 0,
+  "replay_stdout_mismatch_count": 0,
+  "replay_success_rate": 1.0,
+  "replay_timeout_count": 0,
+  "replay_validation_completed": true,
+  "workers_requested": 16,
+  "workers_used": 1
+}

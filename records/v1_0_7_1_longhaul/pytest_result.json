@@ -1,0 +1,7 @@
+﻿{
+    "second_run":  "1637 passed, 28 skipped in 713.87s",
+    "pytest_runs_completed":  2,
+    "note":  "Final full pytest runs after trace sharding fix.",
+    "first_run":  "1637 passed, 28 skipped in 750.14s",
+    "command":  "python -m pytest tests/ -q"
+}

@@ -1,0 +1,12 @@
+{
+  "arithmetic_baseline_after_each_cycle_clean": true,
+  "default_profile_after_each_cycle_unchanged": true,
+  "opt_out_blocks_bridge_after_each_cycle": true,
+  "production_flags_after_each_cycle_false": true,
+  "rollback_cycle_fail_count": 0,
+  "rollback_cycle_pass_count": 500,
+  "rollback_cycles": 500,
+  "rollback_review_completed": true,
+  "rollback_review_passed": true,
+  "rollback_state_leak_detected": false
+}
