@@ -1,0 +1,23 @@
+{
+  "array_shape_count": 4096,
+  "forbidden_boundaries": [
+    "malloc",
+    "free",
+    "file_io",
+    "multi_file",
+    "natural_language",
+    "unbounded_recursion",
+    "mutual_recursion"
+  ],
+  "function_array_shape_count": 4096,
+  "function_shape_count": 4096,
+  "mixed_shape_count": 4096,
+  "no_external_data": true,
+  "no_new_capability_boundary": true,
+  "reused_existing_logic": true,
+  "shape_diversity_expansion_attempted": true,
+  "source_from_existing_generators": true,
+  "structured_recursion_shape_count": 2048,
+  "target_source_sha256_unique": 20000,
+  "target_unique_compile_units": 20000
+}

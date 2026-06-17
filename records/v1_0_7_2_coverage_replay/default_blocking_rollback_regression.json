@@ -1,0 +1,13 @@
+{
+  "default_blocking_passed": true,
+  "default_profile_bridge_leak_detected": false,
+  "default_profile_unchanged": true,
+  "explicit_opt_in_required": true,
+  "malformed_opt_in_blocking_passed": true,
+  "official_release_enabled": false,
+  "opt_out_rollback_passed": true,
+  "post_rollback_default_blocking_passed": true,
+  "real_promotion_enabled": false,
+  "regression_guard_passed": true,
+  "user_facing_enabled": false
+}

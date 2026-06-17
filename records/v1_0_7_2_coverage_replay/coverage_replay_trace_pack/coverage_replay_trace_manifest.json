@@ -1,0 +1,75 @@
+{
+  "coverage_replay_trace_manifest_generated": true,
+  "max_trace_file_size_bytes": 44000000,
+  "shard_groups": {
+    "default_blocking_trace": [
+      {
+        "path": "coverage_replay_default_blocking_trace_000.jsonl",
+        "row_count": 21666,
+        "sha256": "222dc327042f8b4ced899fdf1a0d76009aa4e9b500021a6950b5d0d3f6389479",
+        "size_bytes": 27265994
+      }
+    ],
+    "invocation_manifest": [
+      {
+        "path": "coverage_replay_invocation_manifest_000.jsonl",
+        "row_count": 93191,
+        "sha256": "ea47daa511c83b413b83e36a1e837850a0fcd5ba6d0675e8d896d898fb34eee4",
+        "size_bytes": 38326986
+      }
+    ],
+    "policy_path_trace": [
+      {
+        "path": "coverage_replay_policy_path_trace_000.jsonl",
+        "row_count": 33836,
+        "sha256": "f3b473d7c4746c67ced3f6eafec7a74ac2faf53e361654dee21049b0099c9b29",
+        "size_bytes": 42032877
+      },
+      {
+        "path": "coverage_replay_policy_path_trace_001.jsonl",
+        "row_count": 33997,
+        "sha256": "be043bf1f5a02073549cde308e148b617bd14f2a179be46ed6af0d6aaf3dd2eb",
+        "size_bytes": 42033728
+      },
+      {
+        "path": "coverage_replay_policy_path_trace_002.jsonl",
+        "row_count": 25358,
+        "sha256": "12749c04d43e1fac7cb5d0bfdc08ad5982f1dfe41c09d96ba9e2a656b9fc9e95",
+        "size_bytes": 31316172
+      }
+    ],
+    "rollback_trace": [
+      {
+        "path": "coverage_replay_rollback_trace_000.jsonl",
+        "row_count": 10000,
+        "sha256": "6ecefb920fc3515a9b17a341f2a42e4940c09c08b53caa922f492d870ad670eb",
+        "size_bytes": 12057427
+      }
+    ],
+    "sample_id_hashes": [
+      {
+        "path": "coverage_replay_sample_id_hashes_000.jsonl",
+        "row_count": 93191,
+        "sha256": "9b795fa4c97b0dbffa4e45bc5e8bc1c1814c2712652fb4544352e016614b24bb",
+        "size_bytes": 12739068
+      }
+    ],
+    "shape_signature_manifest": [
+      {
+        "path": "coverage_replay_shape_signature_manifest_000.jsonl",
+        "row_count": 93191,
+        "sha256": "c2cedf66698018c86e56b34dd67fe3143317cf1b8c5bc2ba3324463b87d6b918",
+        "size_bytes": 31507611
+      }
+    ],
+    "stdout_comparison_manifest": [
+      {
+        "path": "coverage_replay_stdout_comparison_manifest_000.jsonl",
+        "row_count": 93191,
+        "sha256": "4aaeb96d1732258117c1479b23d64240783da210b0ba976b54063f6ab0f49ddb",
+        "size_bytes": 18817523
+      }
+    ]
+  },
+  "total_rows": 93191
+}

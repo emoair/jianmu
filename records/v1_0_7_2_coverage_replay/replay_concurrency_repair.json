@@ -1,0 +1,18 @@
+{
+  "accounting_lock_granularity_reduced": true,
+  "duplicate_replay_sample_id_detected": false,
+  "per_sample_temp_dir_confirmed": true,
+  "per_worker_shard_assignment": true,
+  "previous_16_worker_timeout_confirmed": true,
+  "replay_concurrency_ready": true,
+  "replay_concurrency_repair_completed": true,
+  "shard_index_created": true,
+  "sharded_output_manifest_confirmed": true,
+  "suspected_timeout_causes": [
+    "parallel replay overloaded cl.exe process startup",
+    "large trace files lacked replay-specific shard index",
+    "replay manifest writing was not sharded"
+  ],
+  "transient_file_lock_retry_enabled": true,
+  "worker_heartbeat_enabled": true
+}

@@ -1,3 +1,7 @@
+## v1.0.7.2 Development Direction
+
+v1.0.7.2 repairs two bounded validation issues from v1.0.7.1: coverage shape breadth and 16-worker replay concurrency. It expands the staged opt-in validation shape pool through existing ExtendedIR / ExtendedEmitterC paths, keeps the default profile blocked, runs 4-hour coverage validation, and validates replay with 16 workers. It does not train or update model weights, change the default profile, enable real promotion, release, or claim production support.
+
 ## v1.0.7.1 Development Direction
 
 v1.0.7.1 runs an eight-hour controlled opt-in longhaul validation of the v1.0.7 staged opt-in profile. It reuses the existing staged opt-in profile, v1.0.6 dry-run adapter, and v1.0.5.x ExtendedIR / ExtendedEmitterC / AtomicSynthesis bridge, then validates heldout samples, default blocking, malformed flag blocking, opt-in correctness, opt-out rollback, replay, coverage, accounting, and trace replayability. It does not train or update model weights, change the default profile, enable real promotion, or claim production support.

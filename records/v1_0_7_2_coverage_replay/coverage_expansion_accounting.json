@@ -1,0 +1,23 @@
+{
+  "cached_result_used_as_new_count": 0,
+  "cleanup_failure_count": 0,
+  "duplicate_invocation_id_count": 0,
+  "permission_error_count": 0,
+  "real_cl_invocation_count": 61525,
+  "real_compiler_invocations": 61525,
+  "real_exe_run_count": 61525,
+  "real_link_invocation_count": 61525,
+  "real_validation_events": 93191,
+  "replay_worker_timeout_count": 0,
+  "shape_signature_unique_count": 61525,
+  "source_sha256_unique_count": 50888,
+  "stubbed_validation_detected": false,
+  "summary_only_validation_detected": false,
+  "syntax_filter_used_as_correctness_evidence": false,
+  "temp_dir_collision_count": 0,
+  "thread_safety_issue_detected": false,
+  "timeout_count": 0,
+  "trace_write_error_count": 0,
+  "unique_compile_unit_count": 50888,
+  "wrong_stdout_count": 0
+}
