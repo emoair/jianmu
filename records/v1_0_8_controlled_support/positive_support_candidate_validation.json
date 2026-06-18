@@ -1,0 +1,22 @@
+{
+  "array_support_candidate_success_rate": 1.0,
+  "cached_result_used_as_new_count": 0,
+  "cleanup_failure_count": 0,
+  "compiler_verified_correctness_rate": 1.0,
+  "duplicate_invocation_id_count": 0,
+  "function_array_support_candidate_success_rate": 1.0,
+  "function_support_candidate_success_rate": 1.0,
+  "mixed_support_candidate_success_rate": 1.0,
+  "permission_error_count": 0,
+  "positive_validation_completed": true,
+  "positive_validation_events": 60000,
+  "positive_validation_passed": true,
+  "real_compiler_invocations": 50000,
+  "replay_success_rate": 1.0,
+  "rollback_success_rate": 1.0,
+  "structured_recursion_support_candidate_success_rate": 1.0,
+  "stubbed_validation_detected": false,
+  "summary_only_validation_detected": false,
+  "timeout_count": 0,
+  "wrong_stdout_count": 0
+}

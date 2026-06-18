@@ -1,3 +1,7 @@
+## v1.0.8 Development Direction
+
+v1.0.8 reviews whether the existing staged opt-in bridge can be treated as a controlled opt-in support candidate. It defines bounded support scope, unsupported boundaries, failure taxonomy, negative validation, positive compiler validation, trace evidence, rollback checks, and reviewer materials. It does not change the default profile, enable real promotion, release, train a model, or claim production support completed.
+
 ## v1.0.7.2 Development Direction
 
 v1.0.7.2 repairs two bounded validation issues from v1.0.7.1: coverage shape breadth and 16-worker replay concurrency. It expands the staged opt-in validation shape pool through existing ExtendedIR / ExtendedEmitterC paths, keeps the default profile blocked, runs 4-hour coverage validation, and validates replay with 16 workers. It does not train or update model weights, change the default profile, enable real promotion, release, or claim production support.

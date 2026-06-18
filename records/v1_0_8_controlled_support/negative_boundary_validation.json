@@ -1,0 +1,21 @@
+{
+  "bridge_reachable_without_opt_in_count": 0,
+  "default_blocking_success_rate": 1.0,
+  "default_profile_modified_count": 0,
+  "disabled_profile_blocking_success_rate": 1.0,
+  "file_io_rejection_rate": 1.0,
+  "malformed_opt_in_blocking_success_rate": 1.0,
+  "malloc_free_rejection_rate": 1.0,
+  "multifile_rejection_rate": 1.0,
+  "negative_validation_completed": true,
+  "negative_validation_events": 55000,
+  "negative_validation_passed": true,
+  "pointer_heavy_rejection_rate": 1.0,
+  "production_promotion_rejection_rate": 1.0,
+  "real_promotion_enabled_count": 0,
+  "unknown_policy_rejection_rate": 1.0,
+  "unsafe_compile_invoked_count": 0,
+  "unsupported_array_rejection_rate": 1.0,
+  "unsupported_function_rejection_rate": 1.0,
+  "unsupported_recursion_rejection_rate": 1.0
+}

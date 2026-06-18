@@ -1,0 +1,138 @@
+{
+  "production_array_support_completed": false,
+  "production_function_support_completed": false,
+  "production_recursion_support_completed": false,
+  "profile_name": "staged_opt_in_function_array_recursion_v1_0_7",
+  "subsets": [
+    {
+      "allowed_shapes": [
+        "pure int function",
+        "one / two / three int parameters",
+        "return expression",
+        "local variable precompute",
+        "helper split",
+        "static helper",
+        "call from main",
+        "deterministic stdout"
+      ],
+      "default_profile_reachable": false,
+      "failure_behavior": "reject unsupported shapes or classify them before compiler invocation",
+      "forbidden_shapes": [
+        "function pointer",
+        "variadic function",
+        "external library call",
+        "file IO",
+        "malloc/free",
+        "pointer-heavy parameters",
+        "arbitrary user-defined function graph",
+        "mutual recursion",
+        "undefined behavior"
+      ],
+      "production_completed": false,
+      "requires_explicit_opt_in": true,
+      "subset": "function",
+      "support_candidate": true,
+      "trace_required": true,
+      "verified_by_records": [
+        "records/v1_0_7_staged_opt_in/",
+        "records/v1_0_7_1_longhaul/",
+        "records/v1_0_7_2_coverage_replay/"
+      ]
+    },
+    {
+      "allowed_shapes": [
+        "fixed int array",
+        "array length 1..32",
+        "initializer pattern variation",
+        "forward / reverse loop",
+        "sum / max / min / second max",
+        "count positive / count even",
+        "simple write transform",
+        "deterministic stdout"
+      ],
+      "default_profile_reachable": false,
+      "failure_behavior": "reject unsupported shapes or classify them before compiler invocation",
+      "forbidden_shapes": [
+        "dynamic allocation",
+        "out-of-bounds access",
+        "pointer-heavy array manipulation",
+        "multidimensional arrays unless already verified",
+        "file input",
+        "arbitrary array size from user",
+        "unsafe indexing"
+      ],
+      "production_completed": false,
+      "requires_explicit_opt_in": true,
+      "subset": "array",
+      "support_candidate": true,
+      "trace_required": true,
+      "verified_by_records": [
+        "records/v1_0_7_staged_opt_in/",
+        "records/v1_0_7_1_longhaul/",
+        "records/v1_0_7_2_coverage_replay/"
+      ]
+    },
+    {
+      "allowed_shapes": [
+        "helper function consumes supported array shape",
+        "explicit bounded length if already supported",
+        "return int aggregate",
+        "deterministic stdout",
+        "bridge path through ExtendedIR / ExtendedEmitterC"
+      ],
+      "default_profile_reachable": false,
+      "failure_behavior": "reject unsupported shapes or classify them before compiler invocation",
+      "forbidden_shapes": [
+        "malloc arrays",
+        "pointer-heavy mutation beyond verified bridge",
+        "arbitrary pointer aliasing",
+        "external input",
+        "file IO",
+        "multi-file"
+      ],
+      "production_completed": false,
+      "requires_explicit_opt_in": true,
+      "subset": "function_array",
+      "support_candidate": true,
+      "trace_required": true,
+      "verified_by_records": [
+        "records/v1_0_7_staged_opt_in/",
+        "records/v1_0_7_1_longhaul/",
+        "records/v1_0_7_2_coverage_replay/"
+      ]
+    },
+    {
+      "allowed_shapes": [
+        "factorial small n",
+        "gcd small values",
+        "countdown",
+        "triangular number",
+        "bounded structural recursion",
+        "bounded depth validation",
+        "watchdog required",
+        "deterministic stdout"
+      ],
+      "default_profile_reachable": false,
+      "failure_behavior": "reject unsupported shapes or classify them before compiler invocation",
+      "forbidden_shapes": [
+        "unbounded recursion",
+        "mutual recursion",
+        "unknown termination",
+        "recursion over external input",
+        "arbitrary recursive program synthesis",
+        "proof of Turing completeness"
+      ],
+      "production_completed": false,
+      "requires_explicit_opt_in": true,
+      "subset": "structured_recursion",
+      "support_candidate": true,
+      "trace_required": true,
+      "verified_by_records": [
+        "records/v1_0_7_staged_opt_in/",
+        "records/v1_0_7_1_longhaul/",
+        "records/v1_0_7_2_coverage_replay/"
+      ]
+    }
+  ],
+  "support_scope_matrix_generated": true
+}

@@ -1,0 +1,30 @@
+{
+  "CLAIM_BOUNDARY_SUMMARY.md": {
+    "path": "CLAIM_BOUNDARY_SUMMARY.md",
+    "size_bytes": 126
+  },
+  "FAILURE_TAXONOMY.md": {
+    "path": "FAILURE_TAXONOMY.md",
+    "size_bytes": 97
+  },
+  "REVIEWER_README.md": {
+    "path": "REVIEWER_README.md",
+    "size_bytes": 585
+  },
+  "REVIEW_CHECKLIST.md": {
+    "path": "REVIEW_CHECKLIST.md",
+    "size_bytes": 222
+  },
+  "SUPPORT_SCOPE_MATRIX.md": {
+    "path": "SUPPORT_SCOPE_MATRIX.md",
+    "size_bytes": 136
+  },
+  "UNSUPPORTED_BOUNDARY_MATRIX.md": {
+    "path": "UNSUPPORTED_BOUNDARY_MATRIX.md",
+    "size_bytes": 110
+  },
+  "VALIDATION_SUMMARY.md": {
+    "path": "VALIDATION_SUMMARY.md",
+    "size_bytes": 74
+  }
+}

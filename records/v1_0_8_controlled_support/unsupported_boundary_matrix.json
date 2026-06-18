@@ -1,0 +1,185 @@
+{
+  "unsupported_boundary_matrix_generated": true,
+  "unsupported_cases": [
+    {
+      "bridge_reachable": false,
+      "claim_boundary_note": "unsupported boundary evidence is not production support evidence",
+      "compile_invoked": false,
+      "default_profile_modified": false,
+      "expected_behavior": "reject",
+      "real_promotion_enabled": false,
+      "trace_required": true,
+      "unsupported_case": "no explicit opt-in"
+    },
+    {
+      "bridge_reachable": false,
+      "claim_boundary_note": "unsupported boundary evidence is not production support evidence",
+      "compile_invoked": false,
+      "default_profile_modified": false,
+      "expected_behavior": "reject",
+      "real_promotion_enabled": false,
+      "trace_required": true,
+      "unsupported_case": "malformed opt-in flag"
+    },
+    {
+      "bridge_reachable": false,
+      "claim_boundary_note": "unsupported boundary evidence is not production support evidence",
+      "compile_invoked": false,
+      "default_profile_modified": false,
+      "expected_behavior": "reject",
+      "real_promotion_enabled": false,
+      "trace_required": true,
+      "unsupported_case": "disabled opt-in profile"
+    },
+    {
+      "bridge_reachable": false,
+      "claim_boundary_note": "unsupported boundary evidence is not production support evidence",
+      "compile_invoked": false,
+      "default_profile_modified": false,
+      "expected_behavior": "reject",
+      "real_promotion_enabled": false,
+      "trace_required": true,
+      "unsupported_case": "unknown policy"
+    },
+    {
+      "bridge_reachable": "controlled",
+      "claim_boundary_note": "unsupported boundary evidence is not production support evidence",
+      "compile_invoked": false,
+      "default_profile_modified": false,
+      "expected_behavior": "classify_unsupported",
+      "real_promotion_enabled": false,
+      "trace_required": true,
+      "unsupported_case": "unsupported function shape"
+    },
+    {
+      "bridge_reachable": "controlled",
+      "claim_boundary_note": "unsupported boundary evidence is not production support evidence",
+      "compile_invoked": false,
+      "default_profile_modified": false,
+      "expected_behavior": "classify_unsupported",
+      "real_promotion_enabled": false,
+      "trace_required": true,
+      "unsupported_case": "unsupported array shape"
+    },
+    {
+      "bridge_reachable": "controlled",
+      "claim_boundary_note": "unsupported boundary evidence is not production support evidence",
+      "compile_invoked": false,
+      "default_profile_modified": false,
+      "expected_behavior": "classify_unsupported",
+      "real_promotion_enabled": false,
+      "trace_required": true,
+      "unsupported_case": "unsupported recursion shape"
+    },
+    {
+      "bridge_reachable": "controlled",
+      "claim_boundary_note": "unsupported boundary evidence is not production support evidence",
+      "compile_invoked": false,
+      "default_profile_modified": false,
+      "expected_behavior": "classify_unsupported",
+      "real_promotion_enabled": false,
+      "trace_required": true,
+      "unsupported_case": "pointer-heavy request"
+    },
+    {
+      "bridge_reachable": "controlled",
+      "claim_boundary_note": "unsupported boundary evidence is not production support evidence",
+      "compile_invoked": false,
+      "default_profile_modified": false,
+      "expected_behavior": "classify_unsupported",
+      "real_promotion_enabled": false,
+      "trace_required": true,
+      "unsupported_case": "malloc/free request"
+    },
+    {
+      "bridge_reachable": "controlled",
+      "claim_boundary_note": "unsupported boundary evidence is not production support evidence",
+      "compile_invoked": false,
+      "default_profile_modified": false,
+      "expected_behavior": "classify_unsupported",
+      "real_promotion_enabled": false,
+      "trace_required": true,
+      "unsupported_case": "file IO request"
+    },
+    {
+      "bridge_reachable": "controlled",
+      "claim_boundary_note": "unsupported boundary evidence is not production support evidence",
+      "compile_invoked": false,
+      "default_profile_modified": false,
+      "expected_behavior": "classify_unsupported",
+      "real_promotion_enabled": false,
+      "trace_required": true,
+      "unsupported_case": "multi-file request"
+    },
+    {
+      "bridge_reachable": "controlled",
+      "claim_boundary_note": "unsupported boundary evidence is not production support evidence",
+      "compile_invoked": false,
+      "default_profile_modified": false,
+      "expected_behavior": "classify_unsupported",
+      "real_promotion_enabled": false,
+      "trace_required": true,
+      "unsupported_case": "arbitrary project parsing request"
+    },
+    {
+      "bridge_reachable": "controlled",
+      "claim_boundary_note": "unsupported boundary evidence is not production support evidence",
+      "compile_invoked": false,
+      "default_profile_modified": false,
+      "expected_behavior": "classify_unsupported",
+      "real_promotion_enabled": false,
+      "trace_required": true,
+      "unsupported_case": "natural language request"
+    },
+    {
+      "bridge_reachable": "controlled",
+      "claim_boundary_note": "unsupported boundary evidence is not production support evidence",
+      "compile_invoked": false,
+      "default_profile_modified": false,
+      "expected_behavior": "classify_unsupported",
+      "real_promotion_enabled": false,
+      "trace_required": true,
+      "unsupported_case": "external API request"
+    },
+    {
+      "bridge_reachable": "controlled",
+      "claim_boundary_note": "unsupported boundary evidence is not production support evidence",
+      "compile_invoked": false,
+      "default_profile_modified": false,
+      "expected_behavior": "classify_unsupported",
+      "real_promotion_enabled": false,
+      "trace_required": true,
+      "unsupported_case": "unbounded recursion"
+    },
+    {
+      "bridge_reachable": "controlled",
+      "claim_boundary_note": "unsupported boundary evidence is not production support evidence",
+      "compile_invoked": false,
+      "default_profile_modified": false,
+      "expected_behavior": "classify_unsupported",
+      "real_promotion_enabled": false,
+      "trace_required": true,
+      "unsupported_case": "mutual recursion"
+    },
+    {
+      "bridge_reachable": false,
+      "claim_boundary_note": "unsupported boundary evidence is not production support evidence",
+      "compile_invoked": false,
+      "default_profile_modified": false,
+      "expected_behavior": "reject",
+      "real_promotion_enabled": false,
+      "trace_required": true,
+      "unsupported_case": "production promotion request"
+    },
+    {
+      "bridge_reachable": false,
+      "claim_boundary_note": "unsupported boundary evidence is not production support evidence",
+      "compile_invoked": false,
+      "default_profile_modified": false,
+      "expected_behavior": "reject",
+      "real_promotion_enabled": false,
+      "trace_required": true,
+      "unsupported_case": "release request"
+    }
+  ]
+}

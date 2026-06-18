@@ -1,0 +1,527 @@
+{
+  "array_support_candidate_success_rate": 1.0,
+  "artifact_sha256_manifest_generated": true,
+  "blocking_issues": [],
+  "boundary_trace_generated": true,
+  "bridge_reachable_without_opt_in_count": 0,
+  "cached_result_used_as_new_count": 0,
+  "cleanup_failure_count": 0,
+  "compiler_verified_correctness_rate": 1.0,
+  "controlled_opt_in_support_candidate_ready": true,
+  "controlled_support_review_completed": true,
+  "controlled_support_review_started": true,
+  "default_blocking_success_rate": 1.0,
+  "default_profile_bridge_leak_detected": false,
+  "default_profile_modified_count": 0,
+  "default_profile_unchanged": true,
+  "disabled_profile_blocking_success_rate": 1.0,
+  "downgrade_reason": "",
+  "duplicate_invocation_id_count": 0,
+  "explicit_opt_in_required": true,
+  "failure_taxonomy_generated": true,
+  "failures": [
+    {
+      "expected_action": "classify default_blocked and keep default profile blocked",
+      "failure_type": "default_blocked",
+      "production_claim_allowed": false,
+      "severity": "info",
+      "support_candidate_impact": "record and classify",
+      "trace_required": true
+    },
+    {
+      "expected_action": "classify malformed_opt_in_blocked and keep default profile blocked",
+      "failure_type": "malformed_opt_in_blocked",
+      "production_claim_allowed": false,
+      "severity": "info",
+      "support_candidate_impact": "record and classify",
+      "trace_required": true
+    },
+    {
+      "expected_action": "classify disabled_profile_blocked and keep default profile blocked",
+      "failure_type": "disabled_profile_blocked",
+      "production_claim_allowed": false,
+      "severity": "info",
+      "support_candidate_impact": "record and classify",
+      "trace_required": true
+    },
+    {
+      "expected_action": "classify unsupported_policy_rejected and keep default profile blocked",
+      "failure_type": "unsupported_policy_rejected",
+      "production_claim_allowed": false,
+      "severity": "warning",
+      "support_candidate_impact": "record and classify",
+      "trace_required": true
+    },
+    {
+      "expected_action": "classify unsupported_shape_rejected and keep default profile blocked",
+      "failure_type": "unsupported_shape_rejected",
+      "production_claim_allowed": false,
+      "severity": "warning",
+      "support_candidate_impact": "record and classify",
+      "trace_required": true
+    },
+    {
+      "expected_action": "stop or downgrade readiness; investigate compiler_failure",
+      "failure_type": "compiler_failure",
+      "production_claim_allowed": false,
+      "severity": "blocking",
+      "support_candidate_impact": "blocks candidate",
+      "trace_required": true
+    },
+    {
+      "expected_action": "stop or downgrade readiness; investigate stdout_mismatch",
+      "failure_type": "stdout_mismatch",
+      "production_claim_allowed": false,
+      "severity": "blocking",
+      "support_candidate_impact": "blocks candidate",
+      "trace_required": true
+    },
+    {
+      "expected_action": "stop or downgrade readiness; investigate timeout",
+      "failure_type": "timeout",
+      "production_claim_allowed": false,
+      "severity": "blocking",
+      "support_candidate_impact": "blocks candidate",
+      "trace_required": true
+    },
+    {
+      "expected_action": "stop or downgrade readiness; investigate rollback_failure",
+      "failure_type": "rollback_failure",
+      "production_claim_allowed": false,
+      "severity": "blocking",
+      "support_candidate_impact": "blocks candidate",
+      "trace_required": true
+    },
+    {
+      "expected_action": "stop or downgrade readiness; investigate trace_write_failure",
+      "failure_type": "trace_write_failure",
+      "production_claim_allowed": false,
+      "severity": "blocking",
+      "support_candidate_impact": "blocks candidate",
+      "trace_required": true
+    },
+    {
+      "expected_action": "stop or downgrade readiness; investigate replay_drift",
+      "failure_type": "replay_drift",
+      "production_claim_allowed": false,
+      "severity": "blocking",
+      "support_candidate_impact": "blocks candidate",
+      "trace_required": true
+    },
+    {
+      "expected_action": "stop or downgrade readiness; investigate default_profile_contamination",
+      "failure_type": "default_profile_contamination",
+      "production_claim_allowed": false,
+      "severity": "blocking",
+      "support_candidate_impact": "blocks candidate",
+      "trace_required": true
+    },
+    {
+      "expected_action": "stop or downgrade readiness; investigate template_bypass_detected",
+      "failure_type": "template_bypass_detected",
+      "production_claim_allowed": false,
+      "severity": "blocking",
+      "support_candidate_impact": "blocks candidate",
+      "trace_required": true
+    },
+    {
+      "expected_action": "stop or downgrade readiness; investigate marker_ir_direct_compile_detected",
+      "failure_type": "marker_ir_direct_compile_detected",
+      "production_claim_allowed": false,
+      "severity": "blocking",
+      "support_candidate_impact": "blocks candidate",
+      "trace_required": true
+    },
+    {
+      "expected_action": "stop or downgrade readiness; investigate summary_only_validation_detected",
+      "failure_type": "summary_only_validation_detected",
+      "production_claim_allowed": false,
+      "severity": "blocking",
+      "support_candidate_impact": "blocks candidate",
+      "trace_required": true
+    }
+  ],
+  "file_io_rejection_rate": 1.0,
+  "function_array_support_candidate_success_rate": 1.0,
+  "function_support_candidate_success_rate": 1.0,
+  "malformed_opt_in_blocking_success_rate": 1.0,
+  "malloc_free_rejection_rate": 1.0,
+  "mixed_support_candidate_success_rate": 1.0,
+  "multifile_rejection_rate": 1.0,
+  "negative_validation_completed": true,
+  "negative_validation_events": 55000,
+  "negative_validation_passed": true,
+  "no_model_training": true,
+  "no_weight_update": true,
+  "official_release_enabled": false,
+  "opt_in_rollback_passed": true,
+  "permission_error_count": 0,
+  "pointer_heavy_rejection_rate": 1.0,
+  "policy_path_trace_generated": true,
+  "positive_validation_completed": true,
+  "positive_validation_events": 60000,
+  "positive_validation_passed": true,
+  "post_rollback_default_blocking_passed": true,
+  "production_array_support_completed": false,
+  "production_function_support_completed": false,
+  "production_promotion_rejection_rate": 1.0,
+  "production_recursion_support_completed": false,
+  "profile_name": "staged_opt_in_function_array_recursion_v1_0_7",
+  "ready_for_official_release": false,
+  "real_compiler_invocations": 50000,
+  "real_promotion_enabled": false,
+  "real_promotion_enabled_count": 0,
+  "recommended_claim_level": "controlled_opt_in_support_candidate_ready",
+  "regression_guard_passed": true,
+  "replay_success_rate": 1.0,
+  "required_next_run": "controlled opt-in support candidate human review; do not claim production support completed",
+  "reused_existing_logic": true,
+  "reviewer_support_pack_generated": true,
+  "reviewer_support_pack_path": "records\\v1_0_8_controlled_support\\reviewer_support_pack",
+  "rollback_success_rate": 1.0,
+  "staged_opt_in_enabled": true,
+  "still_not_proven": [
+    "production function support completed",
+    "production array support completed",
+    "production recursion support completed",
+    "arbitrary project parsing",
+    "formal Turing completeness proof",
+    "solved program synthesis",
+    "production readiness",
+    "natural language layer completed",
+    "safe real promotion",
+    "stable convergence",
+    "solved OOD",
+    "emergence proven"
+  ],
+  "structured_recursion_support_candidate_success_rate": 1.0,
+  "stubbed_validation_detected": false,
+  "subsets": [
+    {
+      "allowed_shapes": [
+        "pure int function",
+        "one / two / three int parameters",
+        "return expression",
+        "local variable precompute",
+        "helper split",
+        "static helper",
+        "call from main",
+        "deterministic stdout"
+      ],
+      "default_profile_reachable": false,
+      "failure_behavior": "reject unsupported shapes or classify them before compiler invocation",
+      "forbidden_shapes": [
+        "function pointer",
+        "variadic function",
+        "external library call",
+        "file IO",
+        "malloc/free",
+        "pointer-heavy parameters",
+        "arbitrary user-defined function graph",
+        "mutual recursion",
+        "undefined behavior"
+      ],
+      "production_completed": false,
+      "requires_explicit_opt_in": true,
+      "subset": "function",
+      "support_candidate": true,
+      "trace_required": true,
+      "verified_by_records": [
+        "records/v1_0_7_staged_opt_in/",
+        "records/v1_0_7_1_longhaul/",
+        "records/v1_0_7_2_coverage_replay/"
+      ]
+    },
+    {
+      "allowed_shapes": [
+        "fixed int array",
+        "array length 1..32",
+        "initializer pattern variation",
+        "forward / reverse loop",
+        "sum / max / min / second max",
+        "count positive / count even",
+        "simple write transform",
+        "deterministic stdout"
+      ],
+      "default_profile_reachable": false,
+      "failure_behavior": "reject unsupported shapes or classify them before compiler invocation",
+      "forbidden_shapes": [
+        "dynamic allocation",
+        "out-of-bounds access",
+        "pointer-heavy array manipulation",
+        "multidimensional arrays unless already verified",
+        "file input",
+        "arbitrary array size from user",
+        "unsafe indexing"
+      ],
+      "production_completed": false,
+      "requires_explicit_opt_in": true,
+      "subset": "array",
+      "support_candidate": true,
+      "trace_required": true,
+      "verified_by_records": [
+        "records/v1_0_7_staged_opt_in/",
+        "records/v1_0_7_1_longhaul/",
+        "records/v1_0_7_2_coverage_replay/"
+      ]
+    },
+    {
+      "allowed_shapes": [
+        "helper function consumes supported array shape",
+        "explicit bounded length if already supported",
+        "return int aggregate",
+        "deterministic stdout",
+        "bridge path through ExtendedIR / ExtendedEmitterC"
+      ],
+      "default_profile_reachable": false,
+      "failure_behavior": "reject unsupported shapes or classify them before compiler invocation",
+      "forbidden_shapes": [
+        "malloc arrays",
+        "pointer-heavy mutation beyond verified bridge",
+        "arbitrary pointer aliasing",
+        "external input",
+        "file IO",
+        "multi-file"
+      ],
+      "production_completed": false,
+      "requires_explicit_opt_in": true,
+      "subset": "function_array",
+      "support_candidate": true,
+      "trace_required": true,
+      "verified_by_records": [
+        "records/v1_0_7_staged_opt_in/",
+        "records/v1_0_7_1_longhaul/",
+        "records/v1_0_7_2_coverage_replay/"
+      ]
+    },
+    {
+      "allowed_shapes": [
+        "factorial small n",
+        "gcd small values",
+        "countdown",
+        "triangular number",
+        "bounded structural recursion",
+        "bounded depth validation",
+        "watchdog required",
+        "deterministic stdout"
+      ],
+      "default_profile_reachable": false,
+      "failure_behavior": "reject unsupported shapes or classify them before compiler invocation",
+      "forbidden_shapes": [
+        "unbounded recursion",
+        "mutual recursion",
+        "unknown termination",
+        "recursion over external input",
+        "arbitrary recursive program synthesis",
+        "proof of Turing completeness"
+      ],
+      "production_completed": false,
+      "requires_explicit_opt_in": true,
+      "subset": "structured_recursion",
+      "support_candidate": true,
+      "trace_required": true,
+      "verified_by_records": [
+        "records/v1_0_7_staged_opt_in/",
+        "records/v1_0_7_1_longhaul/",
+        "records/v1_0_7_2_coverage_replay/"
+      ]
+    }
+  ],
+  "summary_only_validation_detected": false,
+  "support_scope_matrix_generated": true,
+  "timeout_count": 0,
+  "trace_pack_generated": true,
+  "trace_pack_replayable": true,
+  "unknown_policy_rejection_rate": 1.0,
+  "unsafe_compile_invoked_count": 0,
+  "unsupported_array_rejection_rate": 1.0,
+  "unsupported_boundary_matrix_generated": true,
+  "unsupported_cases": [
+    {
+      "bridge_reachable": false,
+      "claim_boundary_note": "unsupported boundary evidence is not production support evidence",
+      "compile_invoked": false,
+      "default_profile_modified": false,
+      "expected_behavior": "reject",
+      "real_promotion_enabled": false,
+      "trace_required": true,
+      "unsupported_case": "no explicit opt-in"
+    },
+    {
+      "bridge_reachable": false,
+      "claim_boundary_note": "unsupported boundary evidence is not production support evidence",
+      "compile_invoked": false,
+      "default_profile_modified": false,
+      "expected_behavior": "reject",
+      "real_promotion_enabled": false,
+      "trace_required": true,
+      "unsupported_case": "malformed opt-in flag"
+    },
+    {
+      "bridge_reachable": false,
+      "claim_boundary_note": "unsupported boundary evidence is not production support evidence",
+      "compile_invoked": false,
+      "default_profile_modified": false,
+      "expected_behavior": "reject",
+      "real_promotion_enabled": false,
+      "trace_required": true,
+      "unsupported_case": "disabled opt-in profile"
+    },
+    {
+      "bridge_reachable": false,
+      "claim_boundary_note": "unsupported boundary evidence is not production support evidence",
+      "compile_invoked": false,
+      "default_profile_modified": false,
+      "expected_behavior": "reject",
+      "real_promotion_enabled": false,
+      "trace_required": true,
+      "unsupported_case": "unknown policy"
+    },
+    {
+      "bridge_reachable": "controlled",
+      "claim_boundary_note": "unsupported boundary evidence is not production support evidence",
+      "compile_invoked": false,
+      "default_profile_modified": false,
+      "expected_behavior": "classify_unsupported",
+      "real_promotion_enabled": false,
+      "trace_required": true,
+      "unsupported_case": "unsupported function shape"
+    },
+    {
+      "bridge_reachable": "controlled",
+      "claim_boundary_note": "unsupported boundary evidence is not production support evidence",
+      "compile_invoked": false,
+      "default_profile_modified": false,
+      "expected_behavior": "classify_unsupported",
+      "real_promotion_enabled": false,
+      "trace_required": true,
+      "unsupported_case": "unsupported array shape"
+    },
+    {
+      "bridge_reachable": "controlled",
+      "claim_boundary_note": "unsupported boundary evidence is not production support evidence",
+      "compile_invoked": false,
+      "default_profile_modified": false,
+      "expected_behavior": "classify_unsupported",
+      "real_promotion_enabled": false,
+      "trace_required": true,
+      "unsupported_case": "unsupported recursion shape"
+    },
+    {
+      "bridge_reachable": "controlled",
+      "claim_boundary_note": "unsupported boundary evidence is not production support evidence",
+      "compile_invoked": false,
+      "default_profile_modified": false,
+      "expected_behavior": "classify_unsupported",
+      "real_promotion_enabled": false,
+      "trace_required": true,
+      "unsupported_case": "pointer-heavy request"
+    },
+    {
+      "bridge_reachable": "controlled",
+      "claim_boundary_note": "unsupported boundary evidence is not production support evidence",
+      "compile_invoked": false,
+      "default_profile_modified": false,
+      "expected_behavior": "classify_unsupported",
+      "real_promotion_enabled": false,
+      "trace_required": true,
+      "unsupported_case": "malloc/free request"
+    },
+    {
+      "bridge_reachable": "controlled",
+      "claim_boundary_note": "unsupported boundary evidence is not production support evidence",
+      "compile_invoked": false,
+      "default_profile_modified": false,
+      "expected_behavior": "classify_unsupported",
+      "real_promotion_enabled": false,
+      "trace_required": true,
+      "unsupported_case": "file IO request"
+    },
+    {
+      "bridge_reachable": "controlled",
+      "claim_boundary_note": "unsupported boundary evidence is not production support evidence",
+      "compile_invoked": false,
+      "default_profile_modified": false,
+      "expected_behavior": "classify_unsupported",
+      "real_promotion_enabled": false,
+      "trace_required": true,
+      "unsupported_case": "multi-file request"
+    },
+    {
+      "bridge_reachable": "controlled",
+      "claim_boundary_note": "unsupported boundary evidence is not production support evidence",
+      "compile_invoked": false,
+      "default_profile_modified": false,
+      "expected_behavior": "classify_unsupported",
+      "real_promotion_enabled": false,
+      "trace_required": true,
+      "unsupported_case": "arbitrary project parsing request"
+    },
+    {
+      "bridge_reachable": "controlled",
+      "claim_boundary_note": "unsupported boundary evidence is not production support evidence",
+      "compile_invoked": false,
+      "default_profile_modified": false,
+      "expected_behavior": "classify_unsupported",
+      "real_promotion_enabled": false,
+      "trace_required": true,
+      "unsupported_case": "natural language request"
+    },
+    {
+      "bridge_reachable": "controlled",
+      "claim_boundary_note": "unsupported boundary evidence is not production support evidence",
+      "compile_invoked": false,
+      "default_profile_modified": false,
+      "expected_behavior": "classify_unsupported",
+      "real_promotion_enabled": false,
+      "trace_required": true,
+      "unsupported_case": "external API request"
+    },
+    {
+      "bridge_reachable": "controlled",
+      "claim_boundary_note": "unsupported boundary evidence is not production support evidence",
+      "compile_invoked": false,
+      "default_profile_modified": false,
+      "expected_behavior": "classify_unsupported",
+      "real_promotion_enabled": false,
+      "trace_required": true,
+      "unsupported_case": "unbounded recursion"
+    },
+    {
+      "bridge_reachable": "controlled",
+      "claim_boundary_note": "unsupported boundary evidence is not production support evidence",
+      "compile_invoked": false,
+      "default_profile_modified": false,
+      "expected_behavior": "classify_unsupported",
+      "real_promotion_enabled": false,
+      "trace_required": true,
+      "unsupported_case": "mutual recursion"
+    },
+    {
+      "bridge_reachable": false,
+      "claim_boundary_note": "unsupported boundary evidence is not production support evidence",
+      "compile_invoked": false,
+      "default_profile_modified": false,
+      "expected_behavior": "reject",
+      "real_promotion_enabled": false,
+      "trace_required": true,
+      "unsupported_case": "production promotion request"
+    },
+    {
+      "bridge_reachable": false,
+      "claim_boundary_note": "unsupported boundary evidence is not production support evidence",
+      "compile_invoked": false,
+      "default_profile_modified": false,
+      "expected_behavior": "reject",
+      "real_promotion_enabled": false,
+      "trace_required": true,
+      "unsupported_case": "release request"
+    }
+  ],
+  "unsupported_function_rejection_rate": 1.0,
+  "unsupported_recursion_rejection_rate": 1.0,
+  "user_facing_enabled": false,
+  "workers_requested": 16,
+  "workers_used": 16,
+  "wrong_stdout_count": 0
+}

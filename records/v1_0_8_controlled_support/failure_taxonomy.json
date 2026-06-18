@@ -1,0 +1,125 @@
+{
+  "failure_taxonomy_generated": true,
+  "failures": [
+    {
+      "expected_action": "classify default_blocked and keep default profile blocked",
+      "failure_type": "default_blocked",
+      "production_claim_allowed": false,
+      "severity": "info",
+      "support_candidate_impact": "record and classify",
+      "trace_required": true
+    },
+    {
+      "expected_action": "classify malformed_opt_in_blocked and keep default profile blocked",
+      "failure_type": "malformed_opt_in_blocked",
+      "production_claim_allowed": false,
+      "severity": "info",
+      "support_candidate_impact": "record and classify",
+      "trace_required": true
+    },
+    {
+      "expected_action": "classify disabled_profile_blocked and keep default profile blocked",
+      "failure_type": "disabled_profile_blocked",
+      "production_claim_allowed": false,
+      "severity": "info",
+      "support_candidate_impact": "record and classify",
+      "trace_required": true
+    },
+    {
+      "expected_action": "classify unsupported_policy_rejected and keep default profile blocked",
+      "failure_type": "unsupported_policy_rejected",
+      "production_claim_allowed": false,
+      "severity": "warning",
+      "support_candidate_impact": "record and classify",
+      "trace_required": true
+    },
+    {
+      "expected_action": "classify unsupported_shape_rejected and keep default profile blocked",
+      "failure_type": "unsupported_shape_rejected",
+      "production_claim_allowed": false,
+      "severity": "warning",
+      "support_candidate_impact": "record and classify",
+      "trace_required": true
+    },
+    {
+      "expected_action": "stop or downgrade readiness; investigate compiler_failure",
+      "failure_type": "compiler_failure",
+      "production_claim_allowed": false,
+      "severity": "blocking",
+      "support_candidate_impact": "blocks candidate",
+      "trace_required": true
+    },
+    {
+      "expected_action": "stop or downgrade readiness; investigate stdout_mismatch",
+      "failure_type": "stdout_mismatch",
+      "production_claim_allowed": false,
+      "severity": "blocking",
+      "support_candidate_impact": "blocks candidate",
+      "trace_required": true
+    },
+    {
+      "expected_action": "stop or downgrade readiness; investigate timeout",
+      "failure_type": "timeout",
+      "production_claim_allowed": false,
+      "severity": "blocking",
+      "support_candidate_impact": "blocks candidate",
+      "trace_required": true
+    },
+    {
+      "expected_action": "stop or downgrade readiness; investigate rollback_failure",
+      "failure_type": "rollback_failure",
+      "production_claim_allowed": false,
+      "severity": "blocking",
+      "support_candidate_impact": "blocks candidate",
+      "trace_required": true
+    },
+    {
+      "expected_action": "stop or downgrade readiness; investigate trace_write_failure",
+      "failure_type": "trace_write_failure",
+      "production_claim_allowed": false,
+      "severity": "blocking",
+      "support_candidate_impact": "blocks candidate",
+      "trace_required": true
+    },
+    {
+      "expected_action": "stop or downgrade readiness; investigate replay_drift",
+      "failure_type": "replay_drift",
+      "production_claim_allowed": false,
+      "severity": "blocking",
+      "support_candidate_impact": "blocks candidate",
+      "trace_required": true
+    },
+    {
+      "expected_action": "stop or downgrade readiness; investigate default_profile_contamination",
+      "failure_type": "default_profile_contamination",
+      "production_claim_allowed": false,
+      "severity": "blocking",
+      "support_candidate_impact": "blocks candidate",
+      "trace_required": true
+    },
+    {
+      "expected_action": "stop or downgrade readiness; investigate template_bypass_detected",
+      "failure_type": "template_bypass_detected",
+      "production_claim_allowed": false,
+      "severity": "blocking",
+      "support_candidate_impact": "blocks candidate",
+      "trace_required": true
+    },
+    {
+      "expected_action": "stop or downgrade readiness; investigate marker_ir_direct_compile_detected",
+      "failure_type": "marker_ir_direct_compile_detected",
+      "production_claim_allowed": false,
+      "severity": "blocking",
+      "support_candidate_impact": "blocks candidate",
+      "trace_required": true
+    },
+    {
+      "expected_action": "stop or downgrade readiness; investigate summary_only_validation_detected",
+      "failure_type": "summary_only_validation_detected",
+      "production_claim_allowed": false,
+      "severity": "blocking",
+      "support_candidate_impact": "blocks candidate",
+      "trace_required": true
+    }
+  ]
+}

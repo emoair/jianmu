@@ -1,0 +1,4 @@
+{"phase": "controlled_support_review_started"}
+{"events": 55000, "phase": "negative_validation_completed"}
+{"events": 60000, "phase": "positive_validation_completed", "real_compiler_invocations": 50000}
+{"phase": "readiness_completed", "recommended_claim_level": "controlled_opt_in_support_candidate_ready"}

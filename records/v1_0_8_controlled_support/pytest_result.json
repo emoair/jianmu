@@ -1,0 +1,9 @@
+﻿{
+  "initial_full_pytest": "timed out at 30m before v1.0.8 review; process stopped and rerun after review",
+  "controlled_tests": "29 passed in 4.65s",
+  "final_full_run_1": "1669 passed, 28 skipped in 1177.16s",
+  "final_full_run_2_first_attempt": "3 failed, 1666 passed, 28 skipped in 1150.46s; failures were transient OSError writing records/v0_6_7/perfect_layer_backtracking_candidates.jsonl",
+  "targeted_retry_for_failed_tests": "3 passed in 0.75s",
+  "final_full_run_2_clean": "1669 passed, 28 skipped in 1055.53s",
+  "pytest_failed_final": false
+}

@@ -1,0 +1,6 @@
+- [ ] support scope is limited
+- [ ] unsupported boundaries reject safely
+- [ ] positive compiler validation is clean
+- [ ] trace pack is replayable
+- [ ] rollback keeps default blocked
+- [ ] no production overclaim

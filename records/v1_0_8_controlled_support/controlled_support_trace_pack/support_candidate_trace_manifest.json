@@ -1,0 +1,82 @@
+{
+  "max_trace_file_size_bytes": 44000000,
+  "shard_groups": {
+    "boundary_trace": [
+      {
+        "path": "support_candidate_boundary_trace_000.jsonl",
+        "row_count": 44389,
+        "sha256": "ce8e4ccd456a548144b7bf1be00c1aed8d32d011659e0c963b9f3549090005f8",
+        "size_bytes": 42044071
+      },
+      {
+        "path": "support_candidate_boundary_trace_001.jsonl",
+        "row_count": 10611,
+        "sha256": "077d6585c5a2d9ad8c11ba3cbbe4f139717edb0fc5775171b2df9be8b2c7de7a",
+        "size_bytes": 10037289
+      }
+    ],
+    "negative_trace": [
+      {
+        "path": "support_candidate_negative_trace_000.jsonl",
+        "row_count": 44389,
+        "sha256": "ce8e4ccd456a548144b7bf1be00c1aed8d32d011659e0c963b9f3549090005f8",
+        "size_bytes": 42044071
+      },
+      {
+        "path": "support_candidate_negative_trace_001.jsonl",
+        "row_count": 10611,
+        "sha256": "077d6585c5a2d9ad8c11ba3cbbe4f139717edb0fc5775171b2df9be8b2c7de7a",
+        "size_bytes": 10037289
+      }
+    ],
+    "policy_path_trace": [
+      {
+        "path": "support_candidate_policy_path_trace_000.jsonl",
+        "row_count": 60000,
+        "sha256": "0373800187e84b57b4ad3fefe4db66522b5f7b869801a204302df5574f08a911",
+        "size_bytes": 30620000
+      }
+    ],
+    "positive_trace": [
+      {
+        "path": "support_candidate_positive_trace_000.jsonl",
+        "row_count": 36698,
+        "sha256": "7bafdc4fddcca7e5281d26586de734d56227fd3ada5e345f21ad12c77c1132b3",
+        "size_bytes": 42036424
+      },
+      {
+        "path": "support_candidate_positive_trace_001.jsonl",
+        "row_count": 23302,
+        "sha256": "4a93294c8c54b6ad4785245a38fe8b3addb15a70b6cb5b511631092b5bef650a",
+        "size_bytes": 23787056
+      }
+    ],
+    "rollback_trace": [
+      {
+        "path": "support_candidate_rollback_trace_000.jsonl",
+        "row_count": 10000,
+        "sha256": "bbb29a431d4d13f55372bba946a65ec3ccd8734b26feb1c29d2943f7479dd85e",
+        "size_bytes": 8515000
+      }
+    ],
+    "sample_hashes": [
+      {
+        "path": "support_candidate_sample_hashes_000.jsonl",
+        "row_count": 115000,
+        "sha256": "788169892e38aabb31dfa617606ad39b08886e650abbd9b05eb510a9bfe7b3d4",
+        "size_bytes": 17178000
+      }
+    ],
+    "stdout_comparison": [
+      {
+        "path": "support_candidate_stdout_comparison_000.jsonl",
+        "row_count": 60000,
+        "sha256": "0a804ea0085aa12a3809566d876f63e01dc48064a1fd2b9ae1e15445dd4ab7c8",
+        "size_bytes": 11599716
+      }
+    ]
+  },
+  "support_candidate_trace_manifest_generated": true,
+  "total_negative_rows": 55000,
+  "total_positive_rows": 60000
+}
