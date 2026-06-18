@@ -1,3 +1,7 @@
+## v1.0.8.1 Development Direction
+
+v1.0.8.1 reviews the v1.0.8 controlled opt-in support candidate evidence package and runs an approval gate. It audits reviewer materials, support scope, unsupported boundaries, failure taxonomy, trace samples, rollback evidence, and Windows / OneDrive records isolation. Without a real signed review file it can only recommend approval, not mark human approval. It does not change the default profile, enable real promotion, release, train a model, or claim production support completed.
+
 ## v1.0.8 Development Direction
 
 v1.0.8 reviews whether the existing staged opt-in bridge can be treated as a controlled opt-in support candidate. It defines bounded support scope, unsupported boundaries, failure taxonomy, negative validation, positive compiler validation, trace evidence, rollback checks, and reviewer materials. It does not change the default profile, enable real promotion, release, train a model, or claim production support completed.

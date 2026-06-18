@@ -1,0 +1,11 @@
+{
+  "default_reachable_claim_detected": false,
+  "missing_evidence_reference_count": 0,
+  "missing_explicit_opt_in_requirement_count": 0,
+  "notes": [],
+  "overclaim_detected": false,
+  "production_completed_claim_detected": false,
+  "support_scope_audit_completed": true,
+  "support_scope_audit_passed": true,
+  "unsupported_feature_in_scope_count": 0
+}

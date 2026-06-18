@@ -1,0 +1,8 @@
+﻿{
+  "new_approval_tests": "14 passed in 0.33s",
+  "final_full_run_1": "1684 passed, 28 skipped in 1150.75s",
+  "final_full_run_2_first_attempt": "1 failed, 1683 passed, 28 skipped in 1120.42s; transient Windows/OneDrive OSError writing records/v0_6_4/architecture_aligned_dataset_candidates.jsonl",
+  "targeted_retry_for_failed_test": "1 passed in 0.37s",
+  "final_full_run_2_clean": "1684 passed, 28 skipped in 1147.36s",
+  "pytest_failed_final": false
+}

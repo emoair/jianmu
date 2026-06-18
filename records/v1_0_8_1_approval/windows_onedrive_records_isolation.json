@@ -1,0 +1,18 @@
+{
+  "atomic_write_enabled": true,
+  "cleanup_race_fixed": true,
+  "file_lock_retry_enabled": true,
+  "historical_records_write_detected": true,
+  "isolation_fix_applied": true,
+  "no_write_to_historical_records_test_added": true,
+  "notes": [
+    "v1.0.8 transient Windows/OneDrive write failure was isolated as environment/file-lock behavior after targeted retry and clean full reruns.",
+    "v1.0.8.1 approval records are written only under records/v1_0_8_1_approval; historical record paths are treated as read-only inputs for this gate."
+  ],
+  "onedrive_path_detected": true,
+  "shared_records_path_detected": false,
+  "tests_write_real_records_detected": false,
+  "tmp_path_isolation_enabled": true,
+  "windows_onedrive_isolation_audit_completed": true,
+  "windows_onedrive_isolation_passed": true
+}

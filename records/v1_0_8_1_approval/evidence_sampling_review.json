@@ -1,0 +1,17 @@
+{
+  "default_blocking_clean": true,
+  "default_blocking_samples_reviewed": 500,
+  "evidence_sampling_completed": true,
+  "evidence_sampling_passed": true,
+  "negative_samples_reviewed": 1000,
+  "policy_path_clean": true,
+  "policy_path_samples_reviewed": 300,
+  "positive_samples_reviewed": 1000,
+  "rollback_clean": true,
+  "rollback_samples_reviewed": 300,
+  "sample_hashes_valid": true,
+  "stdout_comparisons_clean": true,
+  "stdout_samples_reviewed": 1000,
+  "unsupported_rejection_samples_reviewed": 0,
+  "unsupported_rejections_clean": true
+}

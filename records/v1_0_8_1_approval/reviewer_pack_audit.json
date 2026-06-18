@@ -1,0 +1,15 @@
+{
+  "artifact_sha256_manifest_present": true,
+  "claim_boundary_summary_present": true,
+  "failure_taxonomy_present": true,
+  "missing_files": [],
+  "review_checklist_present": true,
+  "reviewer_pack_audit_passed": true,
+  "reviewer_pack_complete": true,
+  "reviewer_pack_found": true,
+  "reviewer_pack_hashes_valid": true,
+  "reviewer_readme_clear": true,
+  "support_scope_matrix_present": true,
+  "unsupported_boundary_matrix_present": true,
+  "validation_summary_present": true
+}

@@ -1,0 +1,7 @@
+{
+  "historical_records_read_only_policy": true,
+  "historical_records_write_audit_completed": true,
+  "historical_records_write_audit_passed": true,
+  "real_historical_records_write_allowed": false,
+  "uses_tmp_path_for_new_approval_records": true
+}

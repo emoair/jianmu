@@ -1,0 +1,9 @@
+{
+  "blocking_failure_types_marked_blocking": true,
+  "failure_taxonomy_audit_completed": true,
+  "failure_taxonomy_audit_passed": true,
+  "missing_failure_types": [],
+  "present_failure_type_count": 15,
+  "production_claim_allowed_anywhere": false,
+  "required_failure_type_count": 15
+}
