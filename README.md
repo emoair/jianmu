@@ -1,3 +1,7 @@
+## v1.0.8.2 Development Direction
+
+v1.0.8.2 verifies that the controlled opt-in FunctionIR / ArrayIR / FunctionArrayIR / StructuredRecursion bridge is still landed through the existing staged opt-in path, then bootstraps RedQueen as a read-only metrics-driven governance scheduler. RedQueen may allocate review budget, sample push, and validation difficulty, but it does not train models, change the default profile, enable real promotion, release, bypass the existing bridge, or claim production support completed.
+
 ## v1.0.8.1 Development Direction
 
 v1.0.8.1 reviews the v1.0.8 controlled opt-in support candidate evidence package and runs an approval gate. It audits reviewer materials, support scope, unsupported boundaries, failure taxonomy, trace samples, rollback evidence, and Windows / OneDrive records isolation. Without a real signed review file it can only recommend approval, not mark human approval. It does not change the default profile, enable real promotion, release, train a model, or claim production support completed.

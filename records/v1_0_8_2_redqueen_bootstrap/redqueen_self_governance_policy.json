@@ -1,0 +1,36 @@
+{
+  "allowed_actions": [
+    "increase_review_weight",
+    "decrease_review_weight",
+    "increase_difficulty",
+    "decrease_difficulty",
+    "increase_sample_push",
+    "decrease_sample_push",
+    "request_human_review",
+    "require_boundary_recheck",
+    "require_replay_recheck",
+    "require_rollback_recheck",
+    "freeze_promotion",
+    "reject_unsupported",
+    "keep_default_profile_unchanged"
+  ],
+  "bypass_forbidden": true,
+  "default_profile_modification_forbidden": true,
+  "external_api_forbidden": true,
+  "forbidden_actions": [
+    "enable_real_promotion",
+    "modify_default_profile",
+    "mark_production_completed",
+    "enable_user_facing_release",
+    "call_external_api",
+    "train_model_weights",
+    "bypass_atomic_policy",
+    "bypass_extended_ir",
+    "bypass_extended_emitter",
+    "compile_unsupported_dangerous_input"
+  ],
+  "governance_policy_generated": true,
+  "model_training_forbidden": true,
+  "production_promotion_forbidden": true,
+  "self_governance_policy_passed": true
+}

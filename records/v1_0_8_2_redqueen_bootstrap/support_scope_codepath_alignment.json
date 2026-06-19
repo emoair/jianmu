@@ -1,0 +1,12 @@
+{
+  "array_scope_aligned": true,
+  "function_array_scope_aligned": true,
+  "function_scope_aligned": true,
+  "missing_codepath_count": 0,
+  "notes": [],
+  "overclaimed_scope_count": 0,
+  "structured_recursion_scope_aligned": true,
+  "support_scope_alignment_completed": true,
+  "support_scope_codepath_aligned": true,
+  "unsupported_scope_blocked": true
+}

@@ -1,0 +1,8 @@
+﻿{
+  "new_v1_0_8_2_tests": "18 passed in 1.58s",
+  "final_full_run_1": "1730 passed in 1713.72s",
+  "final_full_run_2": "1730 passed in 1054.71s",
+  "final_full_run_after_workers_metadata": "1730 passed in 1546.40s",
+  "pytest_failed_final": false,
+  "note": "full pytest was run through VS vcvars64.bat so MSVC cl.exe is on PATH and old RedQueen compiler tests use the real compiler."
+}

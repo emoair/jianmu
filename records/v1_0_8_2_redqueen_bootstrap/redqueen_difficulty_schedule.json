@@ -1,0 +1,90 @@
+{
+  "difficulty_scheduler_completed": true,
+  "difficulty_scheduler_passed": true,
+  "schedule": [
+    {
+      "active_review_delta": -0.1,
+      "category": "function",
+      "current_difficulty_level": 1,
+      "next_difficulty_level": 2,
+      "reason": "stable category scheduled by linear RedQueen rules",
+      "repeated_shape_reduction_required": false,
+      "sample_push_weight_delta": -0.2,
+      "shape_diversity_push": false,
+      "stability_state": "stable",
+      "success_rate": 1.0
+    },
+    {
+      "active_review_delta": -0.1,
+      "category": "array",
+      "current_difficulty_level": 1,
+      "next_difficulty_level": 2,
+      "reason": "stable category scheduled by linear RedQueen rules",
+      "repeated_shape_reduction_required": false,
+      "sample_push_weight_delta": -0.2,
+      "shape_diversity_push": false,
+      "stability_state": "stable",
+      "success_rate": 1.0
+    },
+    {
+      "active_review_delta": -0.1,
+      "category": "function_array",
+      "current_difficulty_level": 1,
+      "next_difficulty_level": 2,
+      "reason": "stable category scheduled by linear RedQueen rules",
+      "repeated_shape_reduction_required": false,
+      "sample_push_weight_delta": -0.2,
+      "shape_diversity_push": false,
+      "stability_state": "stable",
+      "success_rate": 1.0
+    },
+    {
+      "active_review_delta": -0.1,
+      "category": "structured_recursion",
+      "current_difficulty_level": 1,
+      "next_difficulty_level": 2,
+      "reason": "stable category scheduled by linear RedQueen rules",
+      "repeated_shape_reduction_required": false,
+      "sample_push_weight_delta": -0.2,
+      "shape_diversity_push": false,
+      "stability_state": "stable",
+      "success_rate": 1.0
+    },
+    {
+      "active_review_delta": -0.1,
+      "category": "mixed",
+      "current_difficulty_level": 1,
+      "next_difficulty_level": 2,
+      "reason": "stable category scheduled by linear RedQueen rules",
+      "repeated_shape_reduction_required": false,
+      "sample_push_weight_delta": -0.2,
+      "shape_diversity_push": false,
+      "stability_state": "stable",
+      "success_rate": 1.0
+    },
+    {
+      "active_review_delta": -0.1,
+      "category": "default_blocking",
+      "current_difficulty_level": 1,
+      "next_difficulty_level": 2,
+      "reason": "stable category scheduled by linear RedQueen rules",
+      "repeated_shape_reduction_required": false,
+      "sample_push_weight_delta": -0.2,
+      "shape_diversity_push": false,
+      "stability_state": "stable",
+      "success_rate": 1.0
+    },
+    {
+      "active_review_delta": -0.1,
+      "category": "unsupported_boundary",
+      "current_difficulty_level": 1,
+      "next_difficulty_level": 2,
+      "reason": "stable category scheduled by linear RedQueen rules",
+      "repeated_shape_reduction_required": false,
+      "sample_push_weight_delta": -0.2,
+      "shape_diversity_push": false,
+      "stability_state": "stable",
+      "success_rate": 1.0
+    }
+  ]
+}

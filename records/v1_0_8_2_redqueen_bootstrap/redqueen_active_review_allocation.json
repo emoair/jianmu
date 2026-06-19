@@ -1,0 +1,33 @@
+{
+  "active_review_allocator_completed": true,
+  "active_review_allocator_passed": true,
+  "allocation_reasoning": {
+    "array": "risk=0.0 from success/timeout/stdout/replay/coverage metrics",
+    "default_blocking": "risk=0.05 from success/timeout/stdout/replay/coverage metrics",
+    "function": "risk=0.0 from success/timeout/stdout/replay/coverage metrics",
+    "function_array": "risk=0.0 from success/timeout/stdout/replay/coverage metrics",
+    "mixed": "risk=0.0 from success/timeout/stdout/replay/coverage metrics",
+    "structured_recursion": "risk=0.0 from success/timeout/stdout/replay/coverage metrics",
+    "unsupported_boundary": "risk=0.05 from success/timeout/stdout/replay/coverage metrics"
+  },
+  "category_review_weights": {
+    "array": 1.0,
+    "default_blocking": 1.15,
+    "function": 1.0,
+    "function_array": 1.0,
+    "mixed": 1.0,
+    "structured_recursion": 1.0,
+    "unsupported_boundary": 1.15
+  },
+  "category_risk_scores": {
+    "array": 0.0,
+    "default_blocking": 0.05,
+    "function": 0.0,
+    "function_array": 0.0,
+    "mixed": 0.0,
+    "structured_recursion": 0.0,
+    "unsupported_boundary": 0.05
+  },
+  "highest_risk_category": "default_blocking",
+  "lowest_risk_category": "function"
+}
