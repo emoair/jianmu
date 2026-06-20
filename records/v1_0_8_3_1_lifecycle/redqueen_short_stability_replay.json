@@ -1,0 +1,23 @@
+{
+  "cleanup_failure_count": 0,
+  "compiler_verified_correctness_rate": 1.0,
+  "compiler_workers_requested": 16,
+  "compiler_workers_used": 16,
+  "default_profile_unchanged": true,
+  "direct_template_path_detected": false,
+  "downgrade_reason": "",
+  "events": 20000,
+  "marker_ir_direct_compile_detected": false,
+  "permission_error_count": 0,
+  "plan_follow_rate": 0.983033,
+  "real_compiler_invocations": 15686,
+  "real_promotion_enabled": false,
+  "redqueen_short_replay_completed": true,
+  "redqueen_short_replay_passed": true,
+  "redqueen_short_replay_started": true,
+  "summary_only_validation_detected": false,
+  "timeout_count": 0,
+  "workers_requested": 16,
+  "workers_used": 16,
+  "wrong_stdout_count": 0
+}

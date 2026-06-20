@@ -1,0 +1,23 @@
+{
+  "compiler_cleanup": {
+    "cleanup_attempts": 1,
+    "cleanup_barrier_passed": true,
+    "cleanup_process_names": [
+      "cl.exe",
+      "link.exe"
+    ],
+    "process_count_after_cleanup": 0,
+    "process_count_before_cleanup": 0,
+    "terminated_process_count": 0
+  },
+  "git_cleanup": {
+    "cleanup_attempts": 5,
+    "cleanup_barrier_passed": false,
+    "cleanup_process_names": [
+      "git.exe"
+    ],
+    "process_count_after_cleanup": 5,
+    "process_count_before_cleanup": 1,
+    "terminated_process_count": 0
+  }
+}

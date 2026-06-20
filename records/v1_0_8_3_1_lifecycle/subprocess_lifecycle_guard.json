@@ -1,0 +1,11 @@
+{
+  "compiler_subprocess_guarded": true,
+  "git_subprocess_guarded": true,
+  "handle_close_confirmed": true,
+  "helper_subprocess_guarded": true,
+  "kill_fallback_supported": true,
+  "lingering_subprocess_count_after_run": 0,
+  "subprocess_guard_implemented": true,
+  "subprocess_lifecycle_guard_passed": true,
+  "timeout_termination_supported": true
+}

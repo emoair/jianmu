@@ -1,0 +1,10 @@
+{
+  "file_handle_leak_count": 0,
+  "manifest_files_closed": true,
+  "queue_listener_stopped": true,
+  "trace_files_closed": true,
+  "trace_flush_confirmed": true,
+  "trace_write_error_count": 0,
+  "trace_writer_shutdown_guard_implemented": true,
+  "trace_writer_shutdown_guard_passed": true
+}

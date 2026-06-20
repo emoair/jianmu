@@ -1,0 +1,8 @@
+{"phase": "lifecycle_repair_started"}
+{"phase": "lifecycle_repair_completed", "recommended_claim_level": "lifecycle_blocked_by_lingering_git"}
+{"phase": "lifecycle_repair_started"}
+{"phase": "lifecycle_repair_completed", "recommended_claim_level": "lifecycle_blocked_by_lingering_git"}
+{"phase": "lifecycle_repair_started"}
+{"phase": "lifecycle_repair_completed", "recommended_claim_level": "lifecycle_blocked_by_lingering_git"}
+{"phase": "lifecycle_repair_started"}
+{"phase": "lifecycle_repair_completed", "recommended_claim_level": "redqueen_process_lifecycle_clean"}

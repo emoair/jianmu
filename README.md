@@ -1,3 +1,7 @@
+## v1.0.8.3.1 Development Direction
+
+v1.0.8.3.1 audits and repairs process lifecycle hygiene for RedQueen validation and iteration runs. It adds subprocess, executor, trace writer, git command, orphan-process, and post-run idle sentinel checks, then runs a short RedQueen stability replay while keeping default profile unchanged, real promotion disabled, and production support flags false.
+
 ## v1.0.8.3 Development Direction
 
 v1.0.8.3 runs the first RedQueen governance iteration from the v1.0.8.2 next validation plan. It compares pre/post metrics, audits governance drift and over/under reaction, and emits a next validation plan v2 while keeping default profile unchanged, real promotion disabled, and production support flags false.

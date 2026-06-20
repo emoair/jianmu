@@ -1,0 +1,30 @@
+{
+  "credential_helper_wait_detected": false,
+  "git_cleanup_barrier": {
+    "cleanup_attempts": 3,
+    "cleanup_barrier_passed": true,
+    "cleanup_process_names": [
+      "git.exe",
+      "git"
+    ],
+    "process_count_after_cleanup": 0,
+    "process_count_before_cleanup": 6,
+    "terminated_process_count": 6
+  },
+  "git_command_call_sites_found": [
+    "git status --short"
+  ],
+  "git_command_cleanup_status": "clean",
+  "git_command_pid": 17880,
+  "git_command_returncode": 0,
+  "git_command_timeout_enabled": true,
+  "git_gc_or_maintenance_detected": false,
+  "git_hook_detected": true,
+  "git_index_lock_leftover_detected": false,
+  "git_lifecycle_audit_completed": true,
+  "git_lifecycle_audit_passed": true,
+  "git_lingering_process_count_after_run": 0,
+  "git_lingering_process_count_before_cleanup": 6,
+  "git_returncodes_clean": true,
+  "observed_global_git_process_count_after_run": 0
+}

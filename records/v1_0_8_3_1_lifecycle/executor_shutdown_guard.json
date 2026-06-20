@@ -1,0 +1,11 @@
+{
+  "active_child_process_count_after_run": 0,
+  "executor_shutdown_guard_implemented": true,
+  "executor_shutdown_guard_passed": true,
+  "multiprocessing_children_cleaned": true,
+  "non_daemon_thread_count_after_run": 0,
+  "process_pool_shutdown_confirmed": true,
+  "queue_drained": true,
+  "thread_pool_shutdown_confirmed": true,
+  "worker_heartbeat_stopped": true
+}

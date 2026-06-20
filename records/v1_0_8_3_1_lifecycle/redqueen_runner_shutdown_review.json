@@ -1,0 +1,7 @@
+{
+  "idle_sentinel_passed": true,
+  "idle_sentinel_required": true,
+  "redqueen_runner_shutdown_review_completed": true,
+  "runner_exit_path_reviewed": true,
+  "runner_shutdown_review_passed": true
+}
