@@ -1,0 +1,16 @@
+{
+  "default_profile_modified": false,
+  "direct_template_path_detected": false,
+  "external_api_call_detected": false,
+  "governance_drift_audit_completed": true,
+  "governance_drift_audit_passed": true,
+  "governance_drift_detected": false,
+  "marker_ir_direct_compile_detected": false,
+  "model_training_detected": false,
+  "official_release_enabled": false,
+  "production_support_flag_changed": false,
+  "real_promotion_enabled": false,
+  "summary_only_validation_detected": false,
+  "unsupported_compile_attempted": false,
+  "user_facing_enabled": false
+}

@@ -1,0 +1,7 @@
+{
+  "new_v1_0_8_3_tests": "19 passed in 3.32s",
+  "full_pytest_run_1": "1749 passed in 1597.98s",
+  "full_pytest_run_2": "1749 passed in 1117.40s",
+  "pytest_failed_final": false,
+  "note": "full pytest was run through VS vcvars64.bat so MSVC cl.exe is on PATH for compiler tests."
+}

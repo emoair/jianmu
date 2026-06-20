@@ -1,0 +1,15 @@
+{
+  "boundary_review_zeroed_count": 0,
+  "coverage_gap_shape_diversity_ignored_count": 0,
+  "difficulty_jump_too_large_count": 0,
+  "over_under_reaction_audit_passed": true,
+  "overreaction_audit_completed": true,
+  "overreaction_detected": false,
+  "replay_recheck_ignored_count": 0,
+  "rollback_recheck_ignored_count": 0,
+  "stable_category_zeroed_count": 0,
+  "underreaction_audit_completed": true,
+  "underreaction_detected": false,
+  "weak_category_not_boosted_count": 0,
+  "weight_jump_without_risk_count": 0
+}

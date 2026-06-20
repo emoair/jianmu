@@ -1,3 +1,7 @@
+## v1.0.8.3 Development Direction
+
+v1.0.8.3 runs the first RedQueen governance iteration from the v1.0.8.2 next validation plan. It compares pre/post metrics, audits governance drift and over/under reaction, and emits a next validation plan v2 while keeping default profile unchanged, real promotion disabled, and production support flags false.
+
 ## v1.0.8.2 Development Direction
 
 v1.0.8.2 verifies that the controlled opt-in FunctionIR / ArrayIR / FunctionArrayIR / StructuredRecursion bridge is still landed through the existing staged opt-in path, then bootstraps RedQueen as a read-only metrics-driven governance scheduler. RedQueen may allocate review budget, sample push, and validation difficulty, but it does not train models, change the default profile, enable real promotion, release, bypass the existing bridge, or claim production support completed.
