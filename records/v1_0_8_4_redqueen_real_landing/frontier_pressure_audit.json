@@ -1,0 +1,15 @@
+{
+  "boundary_stress_count": 15783,
+  "boundary_stress_preserved": true,
+  "frontier_heldout_count": 42000,
+  "frontier_pressure_audit_completed": true,
+  "frontier_pressure_audit_passed": true,
+  "frontier_pressure_increased": true,
+  "repeated_shape_risk_after": "low",
+  "repeated_shape_risk_before": "low",
+  "shape_diversity_increased": true,
+  "shape_diversity_status": "maintained_high",
+  "shape_signature_unique_count": 94500,
+  "source_sha256_unique_count": 79800,
+  "unique_compile_unit_count": 79800
+}

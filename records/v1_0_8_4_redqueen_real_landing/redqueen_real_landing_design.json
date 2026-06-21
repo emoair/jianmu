@@ -1,0 +1,13 @@
+{
+  "real_landing_design_passed": true,
+  "redqueen_controls_difficulty": true,
+  "redqueen_controls_frontier_pressure": true,
+  "redqueen_controls_review_allocation": true,
+  "redqueen_controls_shape_diversity": true,
+  "redqueen_controls_validation_distribution": true,
+  "redqueen_does_not_call_external_api": true,
+  "redqueen_does_not_control_default_profile": true,
+  "redqueen_does_not_control_production_flags": true,
+  "redqueen_does_not_control_real_promotion": true,
+  "redqueen_does_not_train_weights": true
+}

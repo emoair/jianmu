@@ -1,0 +1,16 @@
+{
+  "category_weight_changed_across_cycles": false,
+  "cycles_reviewed": 3,
+  "difficulty_changed_across_cycles": true,
+  "distribution_effect_audit_completed": true,
+  "distribution_effect_audit_passed": true,
+  "frontier_pressure_changed_across_cycles": true,
+  "no_fake_weak_category_detected": true,
+  "plan_follow_rate_mean": 0.983019,
+  "planned_vs_actual_distribution_error": 0.016981,
+  "redqueen_controlled_distribution": true,
+  "review_allocation_changed_across_cycles": true,
+  "shape_diversity_pressure_changed_across_cycles": false,
+  "stable_category_annealed_if_present": true,
+  "weak_category_received_more_review_if_present": true
+}

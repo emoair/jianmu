@@ -1,0 +1,10 @@
+{
+  "new_v1_0_8_4_tests": "16 passed in 12.06s",
+  "full_pytest_initial_sandbox_note": "1 failed, 1752 passed, 28 skipped; sandbox denied D:/jianmu-runtime-cache",
+  "full_pytest_initial_escalated_note": "1 failed, 1780 passed; transient OSError 22 on records/v0_6_6/hindsight_reranking_candidates.jsonl",
+  "targeted_transient_rerun": "1 passed",
+  "full_pytest_run_1": "1781 passed in 734.47s",
+  "full_pytest_run_2": "1781 passed in 694.32s",
+  "pytest_failed_final": false,
+  "note": "full pytest was run through VS vcvars64.bat so MSVC cl.exe is on PATH; escalation was required for D:/jianmu-runtime-cache."
+}

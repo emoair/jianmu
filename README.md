@@ -1,3 +1,7 @@
+## v1.0.8.4 Development Direction
+
+v1.0.8.4 runs RedQueen real landing and endurance validation across three staged opt-in governance cycles. It checks whether RedQueen controls validation distribution, updates adaptive curriculum pressure, preserves lifecycle cleanliness, and keeps default profile unchanged, real promotion disabled, and production support flags false.
+
 ## v1.0.8.3.1 Development Direction
 
 v1.0.8.3.1 audits and repairs process lifecycle hygiene for RedQueen validation and iteration runs. It adds subprocess, executor, trace writer, git command, orphan-process, and post-run idle sentinel checks, then runs a short RedQueen stability replay while keeping default profile unchanged, real promotion disabled, and production support flags false.

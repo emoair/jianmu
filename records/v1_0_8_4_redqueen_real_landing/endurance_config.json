@@ -1,0 +1,13 @@
+{
+  "accounting_lock": true,
+  "compiler_workers": 16,
+  "cycle_min_hours": 2.0,
+  "cycles": 3,
+  "minimum_real_compiler_invocations": 90000,
+  "minimum_total_events": 120000,
+  "temp_dir_mode": "per_sample",
+  "total_events_target": 210000,
+  "trace_writer_mode": "sharded",
+  "wall_clock_min_hours": 6.0,
+  "workers": 16
+}

@@ -1,0 +1,8 @@
+{
+  "adaptive_curriculum_rules_passed": true,
+  "all_stable_honesty_rule_enabled": true,
+  "coverage_gap_rule_enabled": true,
+  "no_fake_weak_category_rule_enabled": true,
+  "stable_category_rule_enabled": true,
+  "weak_category_rule_enabled": true
+}
