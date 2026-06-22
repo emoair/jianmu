@@ -1,0 +1,20 @@
+{
+  "affected_files": [
+    "examples/run_redqueen_multiround_controlled_weak_signal.py",
+    "examples/run_redqueen_multiround_stability_msvc_guard.py",
+    "examples/run_redqueen_real_landing_endurance_validation.py"
+  ],
+  "code_audit_completed": true,
+  "code_audit_passed_after_fix": true,
+  "dangerous_time_patterns_found": [
+    "examples/run_redqueen_real_landing_endurance_validation.py: fixed prior planned-as-actual wall_clock_hours assignment",
+    "examples/run_redqueen_multiround_controlled_weak_signal.py: fixed prior planned-as-actual wall_clock_hours assignment",
+    "examples/run_redqueen_multiround_stability_msvc_guard.py: fixed prior planned-as-actual wall_clock_hours assignment"
+  ],
+  "fake_sleep_or_padding_detected": false,
+  "fixes_applied": true,
+  "fixes_required": false,
+  "monotonic_timer_missing": false,
+  "planned_as_actual_assignments": [],
+  "readiness_without_actual_elapsed_check": []
+}

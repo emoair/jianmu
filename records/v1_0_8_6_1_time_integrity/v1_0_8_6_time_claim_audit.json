@@ -1,0 +1,22 @@
+{
+  "actual_end_time_found": false,
+  "actual_start_time_found": false,
+  "audit_notes": "Claimed duration is not accepted without actual monotonic timing evidence.",
+  "claimed_cycles_completed": 8,
+  "claimed_real_compiler_invocations": 239432,
+  "claimed_total_events": 300000,
+  "claimed_vs_reconstructed_mismatch": true,
+  "claimed_wall_clock_hours": 8.0,
+  "cycle_elapsed_seconds_found": false,
+  "downgrade_reason": "v1.0.8.6 lacks monotonic start/end, UTC start/end, cycle elapsed seconds, and heartbeat span evidence for the claimed 8h wall clock.",
+  "heartbeat_timestamps_found": false,
+  "monotonic_timing_found": false,
+  "observed_user_reported_elapsed_minutes": 40.0,
+  "reconstructed_actual_elapsed_seconds": 2400.0,
+  "reconstructed_actual_wall_clock_hours": 0.6666666666666666,
+  "source_records_found": true,
+  "time_claim_integrity_status": "planned_time_used_as_actual",
+  "trace_timestamp_span_found": false,
+  "v1_0_8_6_endurance_claim_accepted": false,
+  "v1_0_8_6_endurance_claim_downgraded": true
+}

@@ -1,0 +1,9 @@
+{
+  "actual_elapsed_required_for_wall_clock_satisfied": true,
+  "cycle_time_uses_actual_elapsed": true,
+  "fake_sleep_padding_rejected": true,
+  "planned_time_rejected_as_actual": true,
+  "readiness_uses_actual_elapsed": true,
+  "time_integrity_guard_implemented": true,
+  "time_integrity_guard_passed": true
+}

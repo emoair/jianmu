@@ -711,3 +711,7 @@ v1.0.8.5 validates RedQueen multi-round governance response to controlled synthe
 ## v1.0.8.6 Development Direction
 
 v1.0.8.6 adds an MSVC environment preflight guard and validates RedQueen multi-round stability across weak-signal, recovery, all-stable, and repeated-perturbation cycles. It keeps synthetic signals out of real compiler correctness, fails fast when `cl.exe` or `link.exe` is unavailable, and does not modify the default profile, enable real promotion, claim production support completed, train model weights, add a natural-language layer, or release.
+
+## v1.0.8.6.1 Development Direction
+
+v1.0.8.6.1 audits and repairs wall-clock time integrity after the v1.0.8.6 records used configured duration where actual monotonic elapsed time was required. It separates planned and actual wall-clock fields, adds monotonic/UTC/cycle/heartbeat timing, downgrades unverified 8-hour evidence, and validates the repair with a real 2-hour wall-clock run without changing production boundaries.

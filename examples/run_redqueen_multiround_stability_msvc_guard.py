@@ -23,12 +23,14 @@ from jianmu.self_learning.darwinforge.redqueen_response_stability_audit import a
 from jianmu.self_learning.darwinforge.redqueen_stability_cycle_runner import run_stability_cycles
 from jianmu.self_learning.darwinforge.redqueen_stability_drift_audit import audit_stability_drift
 from jianmu.self_learning.darwinforge.redqueen_weak_signal_schema import build_weak_signal_scenarios
+from jianmu.self_learning.darwinforge.wallclock_timer import WallClockTimer
 
 
 def main() -> int:
     args = parse_args()
     out = Path(args.output_records)
     out.mkdir(parents=True, exist_ok=True)
+    run_timer = WallClockTimer(args.wall_clock_min_hours).start()
     cfg = RedQueenStabilityConfig(
         profile_name=args.profile_name,
         wall_clock_min_hours=args.wall_clock_min_hours,
@@ -84,8 +86,8 @@ def main() -> int:
     summary = {
         "redqueen_stability_validation_started": True,
         "redqueen_stability_validation_completed": True,
-        "wall_clock_hours": cfg.wall_clock_min_hours,
-        "wall_clock_minimum_satisfied": cfg.wall_clock_min_hours >= 8,
+        **run_timer.stop().record(cfg.wall_clock_min_hours),
+        "planned_wall_clock_hours": cfg.wall_clock_min_hours,
         "hard_stop_hit": False,
         "cycles_completed": cycle_result["cycles_completed"],
         "total_events": sum(cycle["execution"]["events"] for cycle in cycles),

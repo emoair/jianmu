@@ -10,6 +10,7 @@ from jianmu.self_learning.darwinforge.redqueen_cycle_plan_updater import update_
 from jianmu.self_learning.darwinforge.redqueen_iteration_schema import RedQueenIterationConfig
 from jianmu.self_learning.darwinforge.redqueen_metric_delta import review_metric_delta
 from jianmu.self_learning.darwinforge.redqueen_plan_executor import execute_redqueen_plan
+from jianmu.self_learning.darwinforge.wallclock_timer import WallClockTimer
 
 
 def run_endurance_cycles(output_records: str | Path, initial_plan: Dict[str, Any], initial_metrics: Dict[str, Any], config: Any) -> Dict[str, Any]:
@@ -19,6 +20,7 @@ def run_endurance_cycles(output_records: str | Path, initial_plan: Dict[str, Any
     current_plan = dict(initial_plan)
     current_metrics = dict(initial_metrics)
     for cycle_index in range(1, int(config.cycles) + 1):
+        cycle_timer = WallClockTimer(config.cycle_min_hours).start()
         cycle_dir = cycles_root / f"cycle_{cycle_index}"
         cycle_dir.mkdir(parents=True, exist_ok=True)
         (cycle_dir / "cycle_plan.json").write_text(json.dumps(current_plan, ensure_ascii=False, indent=2, sort_keys=True) + "\n", encoding="utf-8")
@@ -38,7 +40,8 @@ def run_endurance_cycles(output_records: str | Path, initial_plan: Dict[str, Any
         execution["cycle_index"] = cycle_index
         execution["cycle_started"] = True
         execution["cycle_completed"] = True
-        execution["wall_clock_hours"] = config.cycle_min_hours
+        execution.update(cycle_timer.stop().record(config.cycle_min_hours))
+        execution["planned_cycle_min_hours"] = config.cycle_min_hours
         execution["events"] = execution["iteration_events"]
         execution["cycle_passed"] = execution["plan_execution_passed"]
         _write_json(cycle_dir / "cycle_execution_metrics.json", execution)

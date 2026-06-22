@@ -1,0 +1,11 @@
+{
+  "first_heartbeat_utc": "2026-06-22T15:20:40.204264Z",
+  "heartbeat_contract_passed": true,
+  "heartbeat_enabled": true,
+  "heartbeat_interval_events": 10000,
+  "heartbeat_interval_seconds": 300,
+  "heartbeat_monotonic_span_seconds": 7200.014999999999,
+  "heartbeat_records_written": 26,
+  "heartbeat_span_matches_actual_elapsed": true,
+  "last_heartbeat_utc": "2026-06-22T17:20:40.229120Z"
+}

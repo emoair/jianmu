@@ -29,12 +29,14 @@ from jianmu.self_learning.darwinforge.redqueen_weak_signal_schema import (
     build_weak_signal_scenarios,
 )
 from jianmu.self_learning.darwinforge.redqueen_weak_signal_response_tracker import audit_weak_signal_response
+from jianmu.self_learning.darwinforge.wallclock_timer import WallClockTimer
 
 
 def main() -> int:
     args = parse_args()
     out = Path(args.output_records)
     out.mkdir(parents=True, exist_ok=True)
+    run_timer = WallClockTimer(args.wall_clock_min_hours).start()
     cfg = RedQueenWeakSignalConfig(
         profile_name=args.profile_name,
         wall_clock_min_hours=args.wall_clock_min_hours,
@@ -84,8 +86,8 @@ def main() -> int:
     summary = {
         "redqueen_weak_signal_validation_started": True,
         "redqueen_weak_signal_validation_completed": True,
-        "wall_clock_hours": cfg.wall_clock_min_hours,
-        "wall_clock_minimum_satisfied": cfg.wall_clock_min_hours >= 6,
+        **run_timer.stop().record(cfg.wall_clock_min_hours),
+        "planned_wall_clock_hours": cfg.wall_clock_min_hours,
         "hard_stop_hit": False,
         "cycles_completed": cycle_result["cycles_completed"],
         "total_events": total_events,

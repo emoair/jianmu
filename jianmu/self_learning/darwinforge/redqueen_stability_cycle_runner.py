@@ -11,6 +11,7 @@ from jianmu.self_learning.darwinforge.redqueen_iteration_schema import RedQueenI
 from jianmu.self_learning.darwinforge.redqueen_multiround_governance_runner import build_governance_safety_audit, build_real_compile_lane_audit
 from jianmu.self_learning.darwinforge.redqueen_multiround_stability_schema import RedQueenStabilityConfig
 from jianmu.self_learning.darwinforge.redqueen_plan_executor import execute_redqueen_plan
+from jianmu.self_learning.darwinforge.wallclock_timer import WallClockTimer
 
 
 def run_stability_cycles(
@@ -30,6 +31,7 @@ def run_stability_cycles(
     per_cycle_events = int(config.total_events_target / max(1, config.cycles))
     per_cycle_min_compiler = int(config.minimum_real_compiler_invocations / max(1, config.cycles))
     for cycle_index in range(config.cycles):
+        cycle_timer = WallClockTimer(config.cycle_min_hours).start()
         cycle_dir = cycles_root / f"cycle_{cycle_index}"
         cycle_dir.mkdir(parents=True, exist_ok=True)
         active_ids = active_signal_ids_for_cycle(cycle_index, weak_signal_schedule)
@@ -61,7 +63,8 @@ def run_stability_cycles(
             "cycle_index": cycle_index,
             "cycle_started": True,
             "cycle_completed": True,
-            "wall_clock_hours": config.cycle_min_hours,
+            **cycle_timer.stop().record(config.cycle_min_hours),
+            "planned_cycle_min_hours": config.cycle_min_hours,
             "events": execution["iteration_events"],
             "real_cl_invocation_count": execution["real_compiler_invocations"],
             "real_link_invocation_count": execution["real_compiler_invocations"],

@@ -1,0 +1,9 @@
+{
+  "cycle_timing_recorded": true,
+  "monotonic_source_used": true,
+  "planned_actual_separated": true,
+  "planned_duration_used_as_actual": false,
+  "utc_timestamps_recorded": true,
+  "wallclock_timer_contract_passed": true,
+  "wallclock_timer_implemented": true
+}
