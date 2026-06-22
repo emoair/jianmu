@@ -1,0 +1,17 @@
+{
+  "production_claim_impact": "none",
+  "real_compile_lane_enabled": true,
+  "real_compiler_correctness_separate": true,
+  "shadow_governance_lane_enabled": true,
+  "supported_weak_signal_categories": [
+    "function",
+    "mixed",
+    "structured_recursion"
+  ],
+  "two_lane_metrics_enabled": true,
+  "weak_signal_affects_real_correctness": false,
+  "weak_signal_affects_scheduling_only": true,
+  "weak_signal_design_created": true,
+  "weak_signal_design_passed": true,
+  "weak_signal_is_synthetic": true
+}

@@ -1,0 +1,9 @@
+{
+  "cycle_index": 0,
+  "cycle_redqueen_response_completed": true,
+  "function_sample_weight": 1.0,
+  "mixed_sample_weight": 1.0,
+  "no_real_compiler_failure_claimed": true,
+  "plan_follow_rate": 0.983015,
+  "weak_signal_injected": false
+}

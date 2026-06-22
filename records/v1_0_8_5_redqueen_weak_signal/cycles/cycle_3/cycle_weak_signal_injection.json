@@ -1,0 +1,30 @@
+{
+  "cycle_index": 3,
+  "injections": [
+    {
+      "affects_real_compiler": false,
+      "affects_real_correctness": false,
+      "category": "mixed",
+      "intended_redqueen_response": [
+        "increase_mixed_review",
+        "increase_replay_recheck",
+        "increase_boundary_stress",
+        "avoid_global_overreaction"
+      ],
+      "must_not_claim": [
+        "real compiler weakness detected",
+        "real compiler weakness fixed",
+        "production support completed",
+        "autonomous governance completed"
+      ],
+      "scenario_id": "mixed_integration_weak_signal",
+      "synthetic_coverage_gap": "medium",
+      "synthetic_replay_drift_rate": 0.01,
+      "synthetic_success_rate": 0.975,
+      "weak_signal_is_synthetic": true
+    }
+  ],
+  "weak_signal_affected_real_correctness": false,
+  "weak_signal_injected": true,
+  "weak_signal_is_synthetic": true
+}

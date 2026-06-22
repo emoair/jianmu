@@ -1,0 +1,8 @@
+{
+  "active_signal_ids": [],
+  "cycle_index": 4,
+  "shadow_governance_metrics_collected": true,
+  "weak_signal_affected_real_correctness": false,
+  "weak_signal_injected": false,
+  "weak_signal_is_synthetic": true
+}

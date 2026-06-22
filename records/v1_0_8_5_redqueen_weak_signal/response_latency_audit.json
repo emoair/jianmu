@@ -1,0 +1,6 @@
+{
+  "function_response_latency_cycles": 1,
+  "mixed_response_latency_cycles": 1,
+  "response_latency_audit_completed": true,
+  "response_latency_audit_passed": true
+}

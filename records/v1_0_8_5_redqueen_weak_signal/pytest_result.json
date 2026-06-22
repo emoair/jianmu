@@ -1,0 +1,6 @@
+﻿{
+    "initial_plain_powershell_full_pytest":  "3 failed, 1764 passed, 28 skipped in 2059.95s; MSVC cl.exe not initialized in plain shell",
+    "msvc_full_pytest_run_1":  "1795 passed in 753.44s",
+    "msvc_full_pytest_run_2":  "1795 passed in 742.36s",
+    "extra_consecutive_full_pytest_twice":  true
+}

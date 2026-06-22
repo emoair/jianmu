@@ -1,0 +1,18 @@
+{
+  "function_active_review_increased": true,
+  "function_difficulty_decreased_or_basic_cases_increased": true,
+  "function_response_latency_cycles": 1,
+  "function_sample_weight_increased": true,
+  "function_shape_diversity_increased": true,
+  "function_signal_detected": true,
+  "mixed_active_review_increased": true,
+  "mixed_boundary_stress_increased": true,
+  "mixed_replay_recheck_increased": true,
+  "mixed_response_latency_cycles": 1,
+  "mixed_signal_detected": true,
+  "no_real_compiler_failure_claimed": true,
+  "recursion_stable_annealing_applied": true,
+  "recursion_weak_signal_fabricated": false,
+  "weak_signal_response_audit_completed": true,
+  "weak_signal_response_audit_passed": true
+}

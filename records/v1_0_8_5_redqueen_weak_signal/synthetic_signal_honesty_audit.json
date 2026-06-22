@@ -1,0 +1,11 @@
+{
+  "affects_real_compiler_anywhere": false,
+  "all_weak_signals_marked_synthetic": true,
+  "honesty_audit_passed": true,
+  "production_claim_influenced_by_synthetic_signal": false,
+  "real_compiler_correctness_remained_clean": true,
+  "real_compiler_correctness_reported_separately": true,
+  "synthetic_signal_claimed_as_real_failure": false,
+  "synthetic_signal_claimed_as_real_fix": false,
+  "synthetic_signal_honesty_audit_completed": true
+}

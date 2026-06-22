@@ -1,0 +1,26 @@
+{
+  "accounting_lock": true,
+  "compiler_workers": 16,
+  "cycles": 5,
+  "minimum_real_compiler_invocations": 90000,
+  "minimum_total_events": 130000,
+  "temp_dir_mode": "per_sample",
+  "total_events_target": 220000,
+  "trace_writer_mode": "sharded",
+  "wall_clock_min_hours": 6.0,
+  "weak_signal_schedule": {
+    "cycle_0": [],
+    "cycle_1": [
+      "function_call_weak_signal"
+    ],
+    "cycle_2": [
+      "function_call_weak_signal",
+      "mixed_integration_weak_signal"
+    ],
+    "cycle_3": [
+      "mixed_integration_weak_signal"
+    ],
+    "cycle_4": []
+  },
+  "workers": 16
+}

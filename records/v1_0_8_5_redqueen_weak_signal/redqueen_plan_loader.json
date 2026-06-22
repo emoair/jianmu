@@ -1,0 +1,15 @@
+{
+  "default_profile_unchanged_required": true,
+  "missing_plan_keys": [],
+  "plan_loader_completed": true,
+  "plan_loader_passed": true,
+  "production_claim_forbidden": true,
+  "promotion_frozen": true,
+  "real_promotion_forbidden": true,
+  "source_allocation_found": true,
+  "source_difficulty_schedule_found": true,
+  "source_governance_policy_found": true,
+  "source_metrics_found": true,
+  "source_next_plan_found": true,
+  "source_plan_loaded": true
+}

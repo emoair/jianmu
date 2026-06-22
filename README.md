@@ -703,3 +703,7 @@ Historical v0.9.x evidence is preserved through archive indexes:
 ## v1.0.4.1 Development Direction
 
 v1.0.4.1 explores RedQueen Symbol Binding Longhaul. After v1.0.4 introduced controlled C systems frontier, this version focuses on identifier recognition and semantic binding across variables, functions, parameters, pointers, malloc buffers, FILE handles, struct fields, and multi-file declarations. It uses AST/symbol-table guided rename plus guarded regex-like perturbation, and requires a minimum 6-hour longhaul run with real compiler accounting.
+
+## v1.0.8.5 Development Direction
+
+v1.0.8.5 validates RedQueen multi-round governance response to controlled synthetic weak signals in a shadow governance metrics lane while keeping the real compile lane separate and clean. It does not modify the default profile, enable real promotion, claim production support completed, train model weights, add a natural-language layer, or release.

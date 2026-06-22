@@ -1,0 +1,15 @@
+{
+  "all_signals_removed_cycle": 4,
+  "annealing_is_gradual": true,
+  "function_signal_removed_cycle": 3,
+  "function_weight_after_removal": 1.1791,
+  "function_weight_during_signal": 1.12,
+  "function_weight_immediately_before_removal": 1.2544,
+  "mixed_weight_after_removal": 1.1374,
+  "mixed_weight_during_signal": 1.1,
+  "mixed_weight_immediately_before_removal": 1.21,
+  "overreaction_detected": false,
+  "recovery_annealing_audit_completed": true,
+  "recovery_annealing_audit_passed": true,
+  "stable_recursion_annealing_passed": true
+}

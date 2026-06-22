@@ -1,0 +1,14 @@
+{
+  "boundary_review_preserved": true,
+  "category_weight_changed_due_to_signal": true,
+  "difficulty_changed_due_to_signal": true,
+  "distribution_response_audit_completed": true,
+  "distribution_response_audit_passed": true,
+  "overreaction_detected": false,
+  "plan_follow_rate_mean": 0.96903,
+  "redqueen_controlled_distribution": true,
+  "review_allocation_changed_due_to_signal": true,
+  "stable_category_not_overboosted": true,
+  "underreaction_detected": false,
+  "weak_category_boosted": true
+}

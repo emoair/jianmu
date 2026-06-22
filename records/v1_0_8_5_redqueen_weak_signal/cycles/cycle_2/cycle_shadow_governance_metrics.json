@@ -1,0 +1,11 @@
+{
+  "active_signal_ids": [
+    "function_call_weak_signal",
+    "mixed_integration_weak_signal"
+  ],
+  "cycle_index": 2,
+  "shadow_governance_metrics_collected": true,
+  "weak_signal_affected_real_correctness": false,
+  "weak_signal_injected": true,
+  "weak_signal_is_synthetic": true
+}

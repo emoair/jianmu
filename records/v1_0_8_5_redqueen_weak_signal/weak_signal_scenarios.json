@@ -1,0 +1,70 @@
+[
+  {
+    "affects_real_compiler": false,
+    "affects_real_correctness": false,
+    "category": "function",
+    "intended_redqueen_response": [
+      "increase_function_samples",
+      "lower_function_difficulty_or_add_basic_cases",
+      "increase_function_active_review",
+      "increase_function_shape_diversity",
+      "anneal_after_signal_removed"
+    ],
+    "must_not_claim": [
+      "real compiler weakness detected",
+      "real compiler weakness fixed",
+      "production support completed",
+      "autonomous governance completed"
+    ],
+    "scenario_id": "function_call_weak_signal",
+    "synthetic_coverage_gap": "medium",
+    "synthetic_success_rate": 0.965,
+    "synthetic_timeout_rate": 0.0,
+    "synthetic_wrong_stdout_rate": 0.0,
+    "weak_signal_is_synthetic": true
+  },
+  {
+    "affects_real_compiler": false,
+    "affects_real_correctness": false,
+    "category": "mixed",
+    "intended_redqueen_response": [
+      "increase_mixed_review",
+      "increase_replay_recheck",
+      "increase_boundary_stress",
+      "avoid_global_overreaction"
+    ],
+    "must_not_claim": [
+      "real compiler weakness detected",
+      "real compiler weakness fixed",
+      "production support completed",
+      "autonomous governance completed"
+    ],
+    "scenario_id": "mixed_integration_weak_signal",
+    "synthetic_coverage_gap": "medium",
+    "synthetic_replay_drift_rate": 0.01,
+    "synthetic_success_rate": 0.975,
+    "weak_signal_is_synthetic": true
+  },
+  {
+    "affects_real_compiler": false,
+    "affects_real_correctness": false,
+    "category": "structured_recursion",
+    "intended_redqueen_response": [
+      "do_not_fabricate_recursion_weakness",
+      "increase_recursion_difficulty_or_frontier",
+      "preserve_recursion_minimum_review"
+    ],
+    "must_not_claim": [
+      "real compiler weakness detected",
+      "real compiler weakness fixed",
+      "production support completed",
+      "autonomous governance completed"
+    ],
+    "repeated_shape_risk": "low",
+    "scenario_id": "structured_recursion_stable_signal",
+    "synthetic_success_rate": 1.0,
+    "synthetic_timeout_rate": 0.0,
+    "synthetic_wrong_stdout_rate": 0.0,
+    "weak_signal_is_synthetic": true
+  }
+]
