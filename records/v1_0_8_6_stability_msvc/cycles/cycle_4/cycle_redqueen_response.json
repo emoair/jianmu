@@ -1,0 +1,10 @@
+{
+  "active_signal_ids": [],
+  "cycle_index": 4,
+  "function_response_active": false,
+  "function_sample_weight": 1.1762,
+  "mixed_response_active": false,
+  "mixed_sample_weight": 1.2937,
+  "no_real_compiler_failure_claimed": true,
+  "plan_follow_rate": 0.9512
+}

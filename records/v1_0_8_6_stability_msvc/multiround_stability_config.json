@@ -1,0 +1,35 @@
+{
+  "accounting_lock": true,
+  "compiler_workers": 16,
+  "cycles": 8,
+  "minimum_real_compiler_invocations": 130000,
+  "minimum_total_events": 180000,
+  "msvc_preflight_required": true,
+  "temp_dir_mode": "per_sample",
+  "total_events_target": 300000,
+  "trace_writer_mode": "sharded",
+  "wall_clock_min_hours": 8.0,
+  "weak_signal_schedule": {
+    "cycle_0": [],
+    "cycle_1": [
+      "function_call_weak_signal"
+    ],
+    "cycle_2": [
+      "function_call_weak_signal",
+      "mixed_integration_weak_signal"
+    ],
+    "cycle_3": [
+      "mixed_integration_weak_signal"
+    ],
+    "cycle_4": [],
+    "cycle_5": [
+      "structured_recursion_stable_signal"
+    ],
+    "cycle_6": [
+      "function_call_weak_signal",
+      "mixed_integration_weak_signal"
+    ],
+    "cycle_7": []
+  },
+  "workers": 16
+}

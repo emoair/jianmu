@@ -1,0 +1,12 @@
+{
+  "active_worker_thread_count": 0,
+  "cycle_index": 3,
+  "cycle_lifecycle_checkpoint_completed": true,
+  "cycle_lifecycle_checkpoint_passed": true,
+  "git_index_lock_leftover_detected": false,
+  "lingering_compiler_process_count": 0,
+  "lingering_generated_exe_count": 0,
+  "lingering_git_process_count": 0,
+  "lingering_python_child_count": 0,
+  "open_manifest_handle_count": 0
+}

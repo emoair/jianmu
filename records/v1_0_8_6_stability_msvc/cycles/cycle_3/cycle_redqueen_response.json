@@ -1,0 +1,12 @@
+{
+  "active_signal_ids": [
+    "mixed_integration_weak_signal"
+  ],
+  "cycle_index": 3,
+  "function_response_active": false,
+  "function_sample_weight": 1.3069,
+  "mixed_response_active": true,
+  "mixed_sample_weight": 1.2937,
+  "no_real_compiler_failure_claimed": true,
+  "plan_follow_rate": 0.942507
+}

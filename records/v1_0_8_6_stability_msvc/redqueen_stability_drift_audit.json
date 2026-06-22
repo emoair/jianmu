@@ -1,0 +1,14 @@
+{
+  "boundary_review_zeroed_count": 0,
+  "category_distribution_drift_detected": false,
+  "cycles_reviewed": 8,
+  "difficulty_drift_detected": false,
+  "governance_drift_detected": false,
+  "plan_follow_rate_trend": "stable",
+  "review_allocation_drift_detected": false,
+  "stability_drift_audit_completed": true,
+  "stability_drift_audit_passed": true,
+  "stable_category_misclassified_as_weak_count": 0,
+  "synthetic_signal_leaked_to_real_lane": false,
+  "weak_signal_removed_but_pressure_not_annealed_count": 0
+}

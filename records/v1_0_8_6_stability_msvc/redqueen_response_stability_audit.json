@@ -1,0 +1,13 @@
+{
+  "function_signal_response_consistent": true,
+  "mixed_signal_response_consistent": true,
+  "overreaction_detected": false,
+  "recovery_response_consistent": true,
+  "repeated_perturbation_response_consistent": true,
+  "response_latency_max_cycles": 1,
+  "response_latency_mean_cycles": 1.0,
+  "response_stability_audit_completed": true,
+  "response_stability_audit_passed": true,
+  "stable_annealing_consistent": true,
+  "underreaction_detected": false
+}

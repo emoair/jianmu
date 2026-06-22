@@ -1,0 +1,11 @@
+{
+  "final_clean_cycle_completed": true,
+  "final_cycle_pressure_annealed": true,
+  "final_cycle_real_correctness_clean": true,
+  "mild_perturbation_injected": true,
+  "no_category_review_zeroed": true,
+  "no_persistent_overreaction": true,
+  "perturbation_recovery_audit_completed": true,
+  "perturbation_recovery_audit_passed": true,
+  "perturbation_response_detected": true
+}

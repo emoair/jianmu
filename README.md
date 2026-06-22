@@ -707,3 +707,7 @@ v1.0.4.1 explores RedQueen Symbol Binding Longhaul. After v1.0.4 introduced cont
 ## v1.0.8.5 Development Direction
 
 v1.0.8.5 validates RedQueen multi-round governance response to controlled synthetic weak signals in a shadow governance metrics lane while keeping the real compile lane separate and clean. It does not modify the default profile, enable real promotion, claim production support completed, train model weights, add a natural-language layer, or release.
+
+## v1.0.8.6 Development Direction
+
+v1.0.8.6 adds an MSVC environment preflight guard and validates RedQueen multi-round stability across weak-signal, recovery, all-stable, and repeated-perturbation cycles. It keeps synthetic signals out of real compiler correctness, fails fast when `cl.exe` or `link.exe` is unavailable, and does not modify the default profile, enable real promotion, claim production support completed, train model weights, add a natural-language layer, or release.

@@ -1,0 +1,6 @@
+﻿{
+    "new_v1_0_8_6_tests":  "12 passed in 9.28s",
+    "msvc_full_pytest_run_1":  "1807 passed in 938.05s",
+    "msvc_full_pytest_run_2":  "1807 passed in 701.01s",
+    "extra_consecutive_full_pytest_twice":  true
+}

@@ -1,0 +1,14 @@
+{
+  "cleanup_failure_count": 0,
+  "compiler_verified_correctness_rate": 1.0,
+  "cycle_index": 2,
+  "permission_error_count": 0,
+  "real_cl_invocation_count": 30042,
+  "real_compile_metrics_collected": true,
+  "real_compiler_invocations": 30042,
+  "real_exe_run_count": 30042,
+  "real_link_invocation_count": 30042,
+  "synthetic_signal_affected_real_lane": false,
+  "timeout_count": 0,
+  "wrong_stdout_count": 0
+}

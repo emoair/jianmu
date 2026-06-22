@@ -1,0 +1,8 @@
+{
+  "active_signal_ids": [
+    "function_call_weak_signal",
+    "mixed_integration_weak_signal"
+  ],
+  "cycle_index": 6,
+  "weak_signal_is_synthetic": true
+}
