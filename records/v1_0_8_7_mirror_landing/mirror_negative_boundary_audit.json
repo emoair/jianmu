@@ -1,0 +1,19 @@
+{
+  "atomic_policy_bypass_blocked": true,
+  "default_profile_blocked": true,
+  "default_profile_modified_count": 0,
+  "direct_template_compile_blocked": true,
+  "extended_ir_bypass_blocked": true,
+  "external_api_blocked": true,
+  "frozen_mutation_blocked": true,
+  "mirror_negative_boundary_audit_completed": true,
+  "mirror_negative_boundary_audit_passed": true,
+  "model_weight_training_blocked": true,
+  "no_opt_in_blocked": true,
+  "production_completed_claim_blocked": true,
+  "real_promotion_blocked": true,
+  "real_promotion_enabled_count": 0,
+  "simultaneous_active_blocked": true,
+  "unsafe_compile_invoked_count": 0,
+  "unsupported_dangerous_input_blocked": true
+}

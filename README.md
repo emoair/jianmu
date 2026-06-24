@@ -715,3 +715,7 @@ v1.0.8.6 adds an MSVC environment preflight guard and validates RedQueen multi-r
 ## v1.0.8.6.1 Development Direction
 
 v1.0.8.6.1 audits and repairs wall-clock time integrity after the v1.0.8.6 records used configured duration where actual monotonic elapsed time was required. It separates planned and actual wall-clock fields, adds monotonic/UTC/cycle/heartbeat timing, downgrades unverified 8-hour evidence, and validates the repair with a real 2-hour wall-clock run without changing production boundaries.
+
+## v1.0.8.7 Development Direction
+
+v1.0.8.7 audits RedQueen against the repaired v1.0.8.6.1 time-integrity foundation, then checks whether mirror alternating-freeze and co-symbiosis paths are landed in source and runtime evidence. It may apply a minimal audit-path landing repair, but it does not restore the old 8-hour claim, change the default profile, enable real promotion, claim production support completed, train model weights, add a natural-language layer, or release.

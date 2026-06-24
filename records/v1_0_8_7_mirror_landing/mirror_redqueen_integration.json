@@ -1,0 +1,12 @@
+{
+  "mirror_metrics_read_by_redqueen": true,
+  "mirror_redqueen_integration_completed": true,
+  "mirror_redqueen_integration_passed": true,
+  "redqueen_adjusts_difficulty_from_mirror_metrics": true,
+  "redqueen_adjusts_review_from_mirror_metrics": true,
+  "redqueen_adjusts_shape_diversity_from_mirror_metrics": true,
+  "redqueen_bypasses_existing_bridge": false,
+  "redqueen_enables_real_promotion": false,
+  "redqueen_modifies_default_profile": false,
+  "redqueen_mutates_frozen_lane": false
+}

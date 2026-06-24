@@ -1,0 +1,18 @@
+{
+  "difficulty_scheduler_completed": true,
+  "difficulty_scheduler_passed": true,
+  "schedule": [
+    {
+      "active_review_delta": -0.1,
+      "category": "mixed",
+      "current_difficulty_level": 1,
+      "next_difficulty_level": 2,
+      "reason": "stable category scheduled by linear RedQueen rules",
+      "repeated_shape_reduction_required": true,
+      "sample_push_weight_delta": 0.05,
+      "shape_diversity_push": true,
+      "stability_state": "stable",
+      "success_rate": 1.0
+    }
+  ]
+}

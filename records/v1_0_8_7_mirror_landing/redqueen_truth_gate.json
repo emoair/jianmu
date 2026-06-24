@@ -1,0 +1,16 @@
+{
+  "blockers": [],
+  "default_profile_unchanged": true,
+  "heartbeat_confirmed": true,
+  "lifecycle_clean_confirmed": true,
+  "monotonic_timing_confirmed": true,
+  "real_promotion_enabled": false,
+  "redqueen_metrics_bus_available": true,
+  "redqueen_scheduler_available": true,
+  "redqueen_truth_gate_completed": true,
+  "redqueen_truth_gate_passed": true,
+  "redqueen_truth_gate_started": true,
+  "redqueen_two_lane_honesty_confirmed": true,
+  "time_integrity_repair_confirmed": true,
+  "v1_0_8_6_old_8h_claim_downgraded": true
+}

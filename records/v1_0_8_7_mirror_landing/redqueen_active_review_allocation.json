@@ -1,0 +1,15 @@
+{
+  "active_review_allocator_completed": true,
+  "active_review_allocator_passed": true,
+  "allocation_reasoning": {
+    "mixed": "risk=0.00475 from success/timeout/stdout/replay/coverage metrics"
+  },
+  "category_review_weights": {
+    "mixed": 1.01425
+  },
+  "category_risk_scores": {
+    "mixed": 0.00475
+  },
+  "highest_risk_category": "mixed",
+  "lowest_risk_category": "mixed"
+}

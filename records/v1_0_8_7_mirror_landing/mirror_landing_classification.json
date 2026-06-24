@@ -1,0 +1,13 @@
+{
+  "docs_only_claim_detected": false,
+  "landing_classification": "partial_landing_repaired",
+  "landing_repair_applied": true,
+  "minimal_landing_repair_scope": "state_machine_metrics_redqueen_integration_runtime_trace_negative_boundary",
+  "mirror_landing_classification_completed": true,
+  "negative_boundary_passed": true,
+  "partial_landing_detected": true,
+  "preexisting_runtime_landing_found": false,
+  "records_only_claim_detected": false,
+  "redqueen_integration_passed": true,
+  "runtime_probe_passed": true
+}

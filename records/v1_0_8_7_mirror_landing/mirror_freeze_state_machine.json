@@ -1,0 +1,56 @@
+{
+  "active_lane_defined": true,
+  "default_profile_reachable": false,
+  "explicit_opt_in_required": true,
+  "frozen_lane_defined": true,
+  "frozen_mutation_rejected": true,
+  "lane_swap_supported": true,
+  "mirror_state_machine_created_or_confirmed": true,
+  "preexisting_state_machine_reused": true,
+  "simultaneous_active_rejected": true,
+  "state_machine_passed": true,
+  "states": [
+    {
+      "active_lane": "lane_a",
+      "active_update_allowed": true,
+      "default_profile_reachable": false,
+      "explicit_opt_in_required": true,
+      "frozen_lane": "lane_b",
+      "frozen_mutation_forbidden": true,
+      "frozen_update_allowed": false,
+      "lane_a_state": "active",
+      "lane_b_state": "frozen",
+      "phase_id": 0,
+      "simultaneous_active_forbidden": true,
+      "swap_allowed": true
+    },
+    {
+      "active_lane": "lane_b",
+      "active_update_allowed": true,
+      "default_profile_reachable": false,
+      "explicit_opt_in_required": true,
+      "frozen_lane": "lane_a",
+      "frozen_mutation_forbidden": true,
+      "frozen_update_allowed": false,
+      "lane_a_state": "frozen",
+      "lane_b_state": "active",
+      "phase_id": 1,
+      "simultaneous_active_forbidden": true,
+      "swap_allowed": true
+    },
+    {
+      "active_lane": null,
+      "active_update_allowed": false,
+      "default_profile_reachable": false,
+      "explicit_opt_in_required": true,
+      "frozen_lane": null,
+      "frozen_mutation_forbidden": true,
+      "frozen_update_allowed": false,
+      "lane_a_state": "frozen",
+      "lane_b_state": "frozen",
+      "phase_id": 2,
+      "simultaneous_active_forbidden": true,
+      "swap_allowed": true
+    }
+  ]
+}
