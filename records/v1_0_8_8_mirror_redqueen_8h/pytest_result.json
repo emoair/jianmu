@@ -1,0 +1,15 @@
+{
+  "full_pytest_runs": [
+    {
+      "command": "python -m pytest tests/ -q",
+      "environment": "VS vcvars64 with PYTEST_DISABLE_PLUGIN_AUTOLOAD=1",
+      "result": "1844 passed in 477.55s"
+    },
+    {
+      "command": "python -m pytest tests/ -q",
+      "environment": "VS vcvars64 with PYTEST_DISABLE_PLUGIN_AUTOLOAD=1",
+      "result": "1844 passed in 468.76s"
+    }
+  ],
+  "targeted_new_tests": "10 passed in 4.93s"
+}

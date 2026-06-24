@@ -1,0 +1,15 @@
+{
+  "active_lane": null,
+  "active_update_allowed": false,
+  "cycle_index": 5,
+  "default_profile_reachable": false,
+  "explicit_opt_in_required": true,
+  "frozen_lane": null,
+  "frozen_mutation_forbidden": true,
+  "frozen_update_allowed": false,
+  "lane_a_state": "frozen",
+  "lane_b_state": "frozen",
+  "phase_id": 5,
+  "simultaneous_active_forbidden": true,
+  "swap_allowed": true
+}

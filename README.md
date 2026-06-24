@@ -719,3 +719,7 @@ v1.0.8.6.1 audits and repairs wall-clock time integrity after the v1.0.8.6 recor
 ## v1.0.8.7 Development Direction
 
 v1.0.8.7 audits RedQueen against the repaired v1.0.8.6.1 time-integrity foundation, then checks whether mirror alternating-freeze and co-symbiosis paths are landed in source and runtime evidence. It may apply a minimal audit-path landing repair, but it does not restore the old 8-hour claim, change the default profile, enable real promotion, claim production support completed, train model weights, add a natural-language layer, or release.
+
+## v1.0.8.8 Development Direction
+
+v1.0.8.8 runs a true monotonic 8-hour validation of the repaired Mirror-RedQueen co-symbiosis path. It validates repeated lane swaps, frozen-lane integrity, mirror feedback into RedQueen scheduling, lifecycle cleanup, compiler correctness, and time-integrity evidence while keeping default profile unchanged, real promotion disabled, production support flags false, and the old v1.0.8.6 8-hour claim downgraded.

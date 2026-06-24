@@ -1,0 +1,65 @@
+{
+  "cycle_index": 5,
+  "design": {
+    "attack": false,
+    "cycle_index": 5,
+    "disagreement": 0.02,
+    "label": "both_frozen_review_only",
+    "mode": "BOTH_FROZEN_REVIEW_ONLY"
+  },
+  "plan": {
+    "active_review_allocations": {
+      "array": 1.01,
+      "default_blocking": 1.15,
+      "function": 1.01,
+      "function_array": 1.01,
+      "mixed": 1.01,
+      "structured_recursion": 1.01,
+      "unsupported_boundary": 1.15
+    },
+    "boundary_recheck_targets": {
+      "default_blocking": 1000,
+      "unsupported_boundary": 1000
+    },
+    "category_weights": {
+      "array": 1.02,
+      "default_blocking": 1.15,
+      "function": 1.02,
+      "function_array": 1.02,
+      "mixed": 1.02,
+      "structured_recursion": 1.02,
+      "unsupported_boundary": 1.15
+    },
+    "default_profile_unchanged_required": true,
+    "difficulty_levels": {
+      "array": 2,
+      "default_blocking": 2,
+      "function": 2,
+      "function_array": 2,
+      "mixed": 2,
+      "structured_recursion": 2,
+      "unsupported_boundary": 2
+    },
+    "human_review_requests": [],
+    "next_plan_generated": true,
+    "next_validation_plan_generated": true,
+    "production_claim_forbidden": true,
+    "promotion_frozen": true,
+    "real_promotion_forbidden": true,
+    "replay_recheck_targets": {
+      "mixed": 500
+    },
+    "rollback_recheck_targets": {
+      "rollback": 500
+    },
+    "shape_diversity_targets": {
+      "array": false,
+      "default_blocking": false,
+      "function": false,
+      "function_array": true,
+      "mixed": true,
+      "structured_recursion": false,
+      "unsupported_boundary": false
+    }
+  }
+}

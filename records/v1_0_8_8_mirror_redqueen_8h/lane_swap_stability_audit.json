@@ -1,0 +1,30 @@
+{
+  "active_lane_history": [
+    "lane_a",
+    "lane_b",
+    "lane_b",
+    "lane_b",
+    "lane_a",
+    null,
+    "lane_a",
+    "lane_a"
+  ],
+  "frozen_lane_history": [
+    "lane_b",
+    "lane_a",
+    "lane_a",
+    "lane_a",
+    "lane_b",
+    null,
+    "lane_b",
+    "lane_b"
+  ],
+  "invalid_both_active_detected": false,
+  "invalid_both_frozen_update_detected": false,
+  "lane_state_drift_detected": false,
+  "lane_swap_count": 2,
+  "lane_swap_failure_count": 0,
+  "lane_swap_stability_audit_completed": true,
+  "lane_swap_stability_audit_passed": true,
+  "lane_swap_success_count": 2
+}

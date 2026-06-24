@@ -1,0 +1,13 @@
+{
+  "feedback_loop_audit_completed": true,
+  "feedback_loop_audit_passed": true,
+  "mirror_disagreement_events_total": 5,
+  "mirror_feedback_events_total": 16899,
+  "mirror_feedback_ignored_count": 0,
+  "mirror_feedback_to_redqueen_latency_cycles": 1,
+  "redqueen_adjustment_events_from_mirror_total": 1406,
+  "redqueen_boundary_recheck_changed_from_mirror": true,
+  "redqueen_difficulty_changed_from_mirror": true,
+  "redqueen_review_weight_changed_from_mirror": true,
+  "redqueen_shape_diversity_changed_from_mirror": true
+}

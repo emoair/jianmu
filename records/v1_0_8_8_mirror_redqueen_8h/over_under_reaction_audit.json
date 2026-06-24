@@ -1,0 +1,10 @@
+{
+  "boundary_review_zeroed": false,
+  "frozen_lane_overcontrolled": false,
+  "mirror_disagreement_ignored": false,
+  "over_under_reaction_audit_completed": true,
+  "over_under_reaction_audit_passed": true,
+  "overreaction_detected": false,
+  "stable_final_cycle_overpressured": false,
+  "underreaction_detected": false
+}

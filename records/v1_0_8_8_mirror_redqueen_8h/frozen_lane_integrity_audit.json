@@ -1,0 +1,10 @@
+{
+  "active_lane_update_allowed": true,
+  "frozen_lane_hash_before_after_match": true,
+  "frozen_lane_integrity_audit_completed": true,
+  "frozen_lane_integrity_audit_passed": true,
+  "frozen_mutation_allowed_count": 0,
+  "frozen_mutation_attempt_count": 7,
+  "redqueen_attempted_frozen_mutation": false,
+  "rejected_frozen_mutation_count": 7
+}

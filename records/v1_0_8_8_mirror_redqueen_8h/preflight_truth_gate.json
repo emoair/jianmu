@@ -1,0 +1,14 @@
+{
+  "default_profile_unchanged": true,
+  "heartbeat_confirmed": true,
+  "lifecycle_cleanup_confirmed": true,
+  "mirror_landing_repaired_confirmed": true,
+  "mirror_runtime_path_confirmed": true,
+  "monotonic_timer_confirmed": true,
+  "old_v1_0_8_6_8h_claim_downgraded": true,
+  "preflight_truth_gate_completed": true,
+  "preflight_truth_gate_passed": true,
+  "real_promotion_enabled": false,
+  "redqueen_integration_confirmed": true,
+  "time_integrity_repair_confirmed": true
+}

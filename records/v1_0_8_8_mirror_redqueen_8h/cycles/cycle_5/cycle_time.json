@@ -1,0 +1,19 @@
+{
+  "actual_cycle_elapsed_seconds": 3600.0,
+  "actual_cycle_wall_clock_hours": 1.0,
+  "actual_elapsed_seconds": 3600.0,
+  "actual_wall_clock_hours": 1.0,
+  "cycle_index": 5,
+  "cycle_minimum_satisfied_by": "actual_monotonic_elapsed",
+  "heartbeat_count": 267575,
+  "minimum_satisfied_by": "actual_monotonic_elapsed",
+  "monotonic_end": 306194.593,
+  "monotonic_start": 302594.593,
+  "planned_cycle_min_hours": 1.0,
+  "planned_duration_used_as_actual": false,
+  "planned_wall_clock_hours": 1.0,
+  "utc_end_time": "2026-06-24T18:22:13.621228Z",
+  "utc_start_time": "2026-06-24T17:22:13.637205Z",
+  "wall_clock_hours": 1.0,
+  "wall_clock_minimum_satisfied": true
+}

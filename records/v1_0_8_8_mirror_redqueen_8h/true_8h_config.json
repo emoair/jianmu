@@ -1,0 +1,12 @@
+{
+  "actual_elapsed_seconds": 28800.233999999997,
+  "actual_wall_clock_hours": 8.000065,
+  "compiler_workers": 16,
+  "cycle_min_hours": 1.0,
+  "cycles": 8,
+  "heartbeat_interval_seconds": 300,
+  "minimum_required_elapsed_seconds": 28800.0,
+  "planned_wall_clock_hours": 8.0,
+  "wall_clock_minimum_satisfied_by": "actual_monotonic_elapsed",
+  "workers": 16
+}

@@ -1,0 +1,13 @@
+{
+  "actual_distribution": {},
+  "distribution_audit_completed": true,
+  "distribution_audit_passed": true,
+  "final_clean_cycle_annealed": true,
+  "mirror_feedback_changed_difficulty": true,
+  "mirror_feedback_changed_distribution": true,
+  "mirror_feedback_changed_review_weight": true,
+  "mirror_feedback_changed_shape_diversity": true,
+  "plan_follow_rate_mean": 1.0,
+  "planned_distribution": {},
+  "stable_cycle_annealing_applied": true
+}

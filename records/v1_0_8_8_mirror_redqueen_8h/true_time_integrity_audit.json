@@ -1,0 +1,21 @@
+{
+  "actual_elapsed_seconds": 28800.233999999997,
+  "actual_wall_clock_hours": 8.000065,
+  "cycle_elapsed_all_satisfied": true,
+  "first_heartbeat_utc": "2026-06-24T12:22:13.361483Z",
+  "heartbeat_monotonic_span_seconds": 28800.233999999997,
+  "heartbeat_records_written": 106,
+  "heartbeat_span_matches_actual_elapsed": true,
+  "last_heartbeat_utc": "2026-06-24T20:22:13.713430Z",
+  "minimum_required_elapsed_seconds": 28800,
+  "minimum_satisfied_by": "actual_monotonic_elapsed",
+  "monotonic_end": 313394.687,
+  "monotonic_start": 284594.453,
+  "planned_time_used_as_actual": false,
+  "planned_wall_clock_hours": 8.0,
+  "time_integrity_audit_completed": true,
+  "true_time_integrity_audit_passed": true,
+  "utc_end_time": "2026-06-24T20:22:13.713430Z",
+  "utc_start_time": "2026-06-24T12:22:13.361483Z",
+  "wall_clock_minimum_satisfied": true
+}

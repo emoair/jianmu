@@ -1,0 +1,6 @@
+{
+  "cycle_index": 5,
+  "frozen_lane_hash_before_after_match": true,
+  "mirror_disagreement_rate": 0.02,
+  "mirror_feedback_events": 1300
+}
