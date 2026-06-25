@@ -1,0 +1,13 @@
+{
+  "antivirus_or_360_suspected": false,
+  "artifact_quarantine_suspected_count": 0,
+  "compile_artifact_missing_count": 0,
+  "executable_blocked_count": 0,
+  "notes": "No current security interference was detected during the short backend validation.",
+  "permission_denied_count": 0,
+  "security_interference_audit_completed": true,
+  "security_interference_classification_clean": true,
+  "security_interference_detected_count": 0,
+  "security_interference_detector_enabled": true,
+  "whitelist_recovery_detected": true
+}

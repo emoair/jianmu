@@ -1,0 +1,13 @@
+{
+  "artifacts_recorded": true,
+  "backend_manifest_contract_passed": true,
+  "backend_manifest_implemented": true,
+  "cached_forbidden": true,
+  "cl_pid_recorded": true,
+  "exe_pid_recorded": true,
+  "link_pid_recorded": true,
+  "monotonic_subprocess_timing_recorded": true,
+  "returncodes_recorded": true,
+  "stdout_comparison_recorded": true,
+  "stubbed_forbidden": true
+}

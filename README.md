@@ -723,3 +723,7 @@ v1.0.8.7 audits RedQueen against the repaired v1.0.8.6.1 time-integrity foundati
 ## v1.0.8.8 Development Direction
 
 v1.0.8.8 runs a true monotonic 8-hour validation of the repaired Mirror-RedQueen co-symbiosis path. It validates repeated lane swaps, frozen-lane integrity, mirror feedback into RedQueen scheduling, lifecycle cleanup, compiler correctness, and time-integrity evidence while keeping default profile unchanged, real promotion disabled, production support flags false, and the old v1.0.8.6 8-hour claim downgraded.
+
+## v1.0.8.8.1 Development Direction
+
+v1.0.8.8.1 audits the v1.0.8.8 compiler invocation counters, separates frontend events from backend `cl/link/exe` verification, restores OPT display and trace, detects security interference, and runs short real backend validation with pid, returncode, artifact, timing, and stdout evidence. It does not change production boundaries, enable real promotion, or claim production support completed.

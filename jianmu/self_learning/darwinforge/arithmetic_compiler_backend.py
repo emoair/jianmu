@@ -84,7 +84,7 @@ def detect_msvc_and_path_compilers(timeout_seconds: int = 15) -> Dict[str, Any]:
     if path_cl:
         proc = _run_cl_bv(None, timeout_seconds)
         report["cl_bv_test_passed"] = _cl_bv_looks_available(proc)
-        report["cl_version_text_tail"] = _tail(proc.stdout + proc.stderr)
+        report["cl_version_text_tail"] = _tail((proc.stdout or "") + (proc.stderr or ""))
         report["detection_conclusion"] = "path_cl_available" if report["cl_bv_test_passed"] else "path_cl_found_but_failed"
         return report
     if path_gcc:
@@ -117,7 +117,7 @@ def detect_msvc_and_path_compilers(timeout_seconds: int = 15) -> Dict[str, Any]:
         return report
     cl_proc = _run_cl_bv(report["vcvars64_path"], timeout_seconds)
     report["cl_bv_test_passed"] = _cl_bv_looks_available(cl_proc)
-    report["cl_version_text_tail"] = _tail(cl_proc.stdout + cl_proc.stderr)
+    report["cl_version_text_tail"] = _tail((cl_proc.stdout or "") + (cl_proc.stderr or ""))
     report["detection_conclusion"] = "msvc_vcvars64_cl_available" if report["cl_bv_test_passed"] else "vcvars64_found_but_cl_failed"
     return report
 
@@ -390,7 +390,7 @@ def _run_cl_bv(vcvars64_path: str | None, timeout_seconds: int) -> subprocess.Co
     else:
         cmd = ["cmd", "/d", "/s", "/c", "cl /Bv"] if os.name == "nt" else ["cl", "/Bv"]
     try:
-        return subprocess.run(cmd, capture_output=True, text=True, timeout=timeout_seconds)
+        return subprocess.run(cmd, capture_output=True, text=True, timeout=timeout_seconds, errors="replace")
     except (OSError, subprocess.TimeoutExpired) as exc:
         return subprocess.CompletedProcess(cmd, -1, "", str(exc))
 

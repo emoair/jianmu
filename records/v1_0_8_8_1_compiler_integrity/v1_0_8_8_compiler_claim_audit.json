@@ -1,0 +1,22 @@
+{
+  "artifact_path_evidence_found": false,
+  "cl_pid_evidence_found": false,
+  "claimed_real_compiler_invocations": 205766,
+  "compiler_claim_integrity_status": "unverified_summary_only",
+  "downgrade_reason": "v1.0.8.8 records contain aggregate compiler counters but no complete per-invocation cl/link/exe pid, returncode, artifact, stdout, and timing evidence.",
+  "exe_pid_evidence_found": false,
+  "frontend_events_counted_as_backend_detected": true,
+  "link_pid_evidence_found": false,
+  "per_invocation_manifest_found": false,
+  "reconstructed_backend_cl_invocations": 0,
+  "reconstructed_backend_exe_runs": 0,
+  "reconstructed_backend_link_invocations": 0,
+  "returncode_evidence_found": false,
+  "source_records_found": true,
+  "source_sha256_evidence_found": false,
+  "stdout_comparison_evidence_found": false,
+  "subprocess_elapsed_evidence_found": false,
+  "summary_counter_only_detected": true,
+  "v1_0_8_8_compiler_claim_accepted": false,
+  "v1_0_8_8_compiler_claim_downgraded": true
+}

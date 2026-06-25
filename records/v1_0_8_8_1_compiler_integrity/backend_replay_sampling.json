@@ -1,0 +1,14 @@
+{
+  "backend_replay_artifact_root": "C:\\Users\\Air\\AppData\\Local\\Temp\\jianmu_compiler_integrity_artifacts\\v1_0_8_8_1_compiler_integrity\\backend_replay_artifacts",
+  "backend_replay_artifacts_stored_outside_git_worktree": true,
+  "backend_replay_completed": true,
+  "backend_replay_passed": true,
+  "replay_cl_invocations": 1000,
+  "replay_exe_runs": 1000,
+  "replay_fail_count": 0,
+  "replay_link_invocations": 1000,
+  "replay_samples": 1000,
+  "replay_security_interference_count": 0,
+  "replay_stdout_mismatch_count": 0,
+  "replay_success_rate": 1.0
+}

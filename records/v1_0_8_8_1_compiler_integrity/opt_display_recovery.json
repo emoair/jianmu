@@ -1,0 +1,12 @@
+{
+  "opt_display_bound_to_backend_manifest": true,
+  "opt_display_bound_to_trace": true,
+  "opt_display_enabled": true,
+  "opt_display_not_used_as_correctness_evidence": true,
+  "opt_display_recovery_completed": true,
+  "opt_display_recovery_passed": true,
+  "opt_display_reports_actual_elapsed": true,
+  "opt_display_reports_frontend_backend_separately": true,
+  "opt_display_reports_security_interference": true,
+  "opt_trace_enabled": true
+}

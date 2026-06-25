@@ -1,0 +1,26 @@
+{
+  "full_pytest_first_valid_pass": {
+    "duration_seconds": 542.13,
+    "result": "1858 passed"
+  },
+  "full_pytest_intermediate_environment_failure": {
+    "classified_as": "transient_windows_file_write_interference",
+    "failure": "Windows OSError Errno 22 writing records/v0_6_6/hindsight_reranking_candidates.jsonl",
+    "result": "1 failed, 1857 passed",
+    "single_test_rerun": "1 passed"
+  },
+  "full_pytest_second_valid_pass": {
+    "duration_seconds": 566.06,
+    "result": "1858 passed"
+  },
+  "msvc_vcvars64": "C:/Program Files/Microsoft Visual Studio/18/Community/VC/Auxiliary/Build/vcvars64.bat",
+  "pytest_disable_plugin_autoload": true,
+  "python_executable": "C:/ProgramData/Anaconda3/python.exe",
+  "representative_legacy_tests_after_msvc_decode_fix": {
+    "result": "23 passed"
+  },
+  "targeted_new_tests": {
+    "command": "pytest compiler integrity tests -q",
+    "result": "14 passed"
+  }
+}

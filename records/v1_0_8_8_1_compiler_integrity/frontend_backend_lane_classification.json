@@ -1,0 +1,12 @@
+{
+  "backend_cl_invocations": 15000,
+  "backend_exe_runs": 15000,
+  "backend_lane_required_for_correctness": true,
+  "backend_link_invocations": 15000,
+  "compiler_verified_correctness_denominator": 15000,
+  "frontend_counted_as_backend": false,
+  "frontend_generated_events": 30000,
+  "frontend_syntax_filtered_events": 30000,
+  "lane_classification_completed": true,
+  "lane_classification_passed": true
+}
