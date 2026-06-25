@@ -1,0 +1,13 @@
+{
+  "git_index_lock_detected": false,
+  "git_process_count_after_run": 5,
+  "git_processes_cleared_before_final_count": true,
+  "git_status_latency_seconds": 8.156,
+  "git_storm_detected": false,
+  "git_storm_guard_completed": true,
+  "git_storm_guard_passed": true,
+  "massive_untracked_artifacts_detected": false,
+  "raw_git_process_count_after_clear": 12,
+  "records_manifest_only": true,
+  "worktree_compiler_artifacts_detected": false
+}

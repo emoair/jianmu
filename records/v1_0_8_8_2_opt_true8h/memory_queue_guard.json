@@ -1,0 +1,11 @@
+{
+  "backpressure_triggered": false,
+  "bounded_queue_enabled": true,
+  "memory_guard_passed": true,
+  "memory_queue_guard_completed": true,
+  "no_giant_manifest_list": true,
+  "queue_peak_size": 16,
+  "rss_peak_mb": 42.742,
+  "rss_warning_triggered": false,
+  "streaming_jsonl_enabled": true
+}

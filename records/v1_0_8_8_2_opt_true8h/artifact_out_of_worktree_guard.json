@@ -1,0 +1,11 @@
+{
+  "artifact_guard_completed": true,
+  "artifact_guard_passed": true,
+  "artifact_root": "C:\\Users\\Air\\AppData\\Local\\Temp\\jianmu_compiler_integrity_artifacts\\v1_0_8_8_2",
+  "artifact_root_outside_worktree": true,
+  "artifact_root_under_temp": true,
+  "git_storm_risk_detected": false,
+  "git_tracked_artifact_count": 0,
+  "records_binary_artifact_count": 0,
+  "worktree_artifact_count": 0
+}

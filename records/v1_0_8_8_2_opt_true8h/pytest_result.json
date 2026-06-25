@@ -1,0 +1,26 @@
+{
+  "full_pytest_first_valid_final_pass": {
+    "duration_seconds": 1479.37,
+    "result": "1870 passed"
+  },
+  "full_pytest_second_valid_final_pass": {
+    "duration_seconds": 1539.75,
+    "result": "1870 passed"
+  },
+  "intermediate_full_pytest_failure": {
+    "failure": "WallClockTimer zero-tick edge on Windows",
+    "fix": "preserve tiny positive elapsed when start/stop occur in same monotonic tick",
+    "result": "1 failed, 1869 passed"
+  },
+  "msvc_vcvars64": "C:/Program Files/Microsoft Visual Studio/18/Community/VC/Auxiliary/Build/vcvars64.bat",
+  "pre_validation_full_pytest": {
+    "duration_seconds": 598.27,
+    "result": "1870 passed"
+  },
+  "pytest_disable_plugin_autoload": true,
+  "python_executable": "C:/ProgramData/Anaconda3/python.exe",
+  "targeted_v1_0_8_8_2_tests": {
+    "duration_seconds": 5.15,
+    "result": "12 passed"
+  }
+}

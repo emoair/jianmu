@@ -1,0 +1,23 @@
+{
+  "manifest_sharded": true,
+  "reason": "keep per-invocation evidence under GitHub single-file limits",
+  "shards": [
+    {
+      "bytes": 84998261,
+      "path": "records/v1_0_8_8_2_opt_true8h/backend_invocation_manifest_shards/backend_invocation_manifest.0001.jsonl",
+      "rows": 40095
+    },
+    {
+      "bytes": 84998064,
+      "path": "records/v1_0_8_8_2_opt_true8h/backend_invocation_manifest_shards/backend_invocation_manifest.0002.jsonl",
+      "rows": 40095
+    },
+    {
+      "bytes": 84866633,
+      "path": "records/v1_0_8_8_2_opt_true8h/backend_invocation_manifest_shards/backend_invocation_manifest.0003.jsonl",
+      "rows": 40033
+    }
+  ],
+  "total_bytes": 254862958,
+  "total_rows": 120223
+}

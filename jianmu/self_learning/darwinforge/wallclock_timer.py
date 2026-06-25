@@ -31,7 +31,10 @@ class WallClockTimer:
     @property
     def actual_elapsed_seconds(self) -> float:
         end = self.monotonic_end or time.monotonic()
-        return max(0.0, end - self.monotonic_start)
+        elapsed = max(0.0, end - self.monotonic_start)
+        if elapsed == 0.0 and self.monotonic_start and self.monotonic_end:
+            return 1e-9
+        return elapsed
 
     @property
     def actual_wall_clock_hours(self) -> float:

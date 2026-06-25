@@ -1,0 +1,12 @@
+{
+  "backend_replay_completed": true,
+  "backend_replay_passed": true,
+  "replay_cl_invocations": 2000,
+  "replay_exe_runs": 2000,
+  "replay_fail_count": 0,
+  "replay_link_invocations": 2000,
+  "replay_samples": 2000,
+  "replay_security_interference_count": 0,
+  "replay_stdout_mismatch_count": 0,
+  "replay_success_rate": 1.0
+}

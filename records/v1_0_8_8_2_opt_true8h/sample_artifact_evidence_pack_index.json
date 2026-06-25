@@ -1,0 +1,19 @@
+{
+  "all_samples_have_manifest_row": true,
+  "all_samples_have_source": true,
+  "all_samples_have_stdout_comparison": true,
+  "categories_covered": [
+    "arithmetic",
+    "array",
+    "frozen mutation negative",
+    "function",
+    "function-array",
+    "mirror lane swap",
+    "mixed",
+    "structured recursion",
+    "unsupported boundary negative"
+  ],
+  "sample_count": 300,
+  "sample_evidence_pack_generated": true,
+  "sample_evidence_pack_passed": true
+}

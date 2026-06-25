@@ -1,0 +1,10 @@
+{
+  "backend_manifest_exists": true,
+  "backend_manifest_path": "records\\v1_0_8_8_2_opt_true8h\\backend_invocation_manifest.jsonl",
+  "backend_manifest_rows": 120223,
+  "opt_backend_manifest_binding_completed": true,
+  "opt_display_bound_to_backend_manifest": true,
+  "opt_trace_exists": true,
+  "opt_trace_path": "records\\v1_0_8_8_2_opt_true8h\\opt_progress_trace.jsonl",
+  "opt_trace_rows": 2868
+}

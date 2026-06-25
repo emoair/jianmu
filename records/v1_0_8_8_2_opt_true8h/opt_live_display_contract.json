@@ -1,0 +1,14 @@
+{
+  "heartbeat_enabled": true,
+  "heartbeat_interval_seconds": 300,
+  "opt_live_display_contract_passed": true,
+  "opt_live_display_implemented": true,
+  "progress_flush_enabled": true,
+  "progress_interval_seconds": 10,
+  "progress_lines_include_artifact_root": true,
+  "progress_lines_include_backend_counts": true,
+  "progress_lines_include_elapsed_time": true,
+  "progress_lines_include_redqueen_mirror_state": true,
+  "progress_lines_include_security_status": true,
+  "stdout_progress_enabled": true
+}
