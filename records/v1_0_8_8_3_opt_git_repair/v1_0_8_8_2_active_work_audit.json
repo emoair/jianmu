@@ -1,0 +1,23 @@
+{
+  "active_work_audit_completed": true,
+  "active_work_integrity_status": "opt_cumulative_only",
+  "actual_wall_clock_hours": 8.000455556,
+  "backend_invocation_time_span_hours": 7.999479167,
+  "backend_invocation_time_span_seconds": 28798.125,
+  "backend_invocations_distributed_across_wallclock": true,
+  "backend_manifest_found": true,
+  "backend_target_reached_early": true,
+  "backend_work_continued_after_target": true,
+  "downgrade_reason": "v1.0.8.8.2 OPT progress was cumulative-only or backend active distribution was not directly observable.",
+  "heartbeat_continued_without_backend_work": false,
+  "idle_padding_seconds_detected": 0.0,
+  "opt_backend_trace_consistent": true,
+  "opt_cumulative_only_detected": true,
+  "opt_progress_trace_found": true,
+  "per_cycle_backend_work_present": true,
+  "source_records_found": true,
+  "too_perfect_output_pattern_detected": false,
+  "v1_0_8_8_2_active_work_claim_accepted": false,
+  "v1_0_8_8_2_active_work_claim_downgraded": true,
+  "zero_delta_progress_window_count": 0
+}

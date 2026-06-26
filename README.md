@@ -728,6 +728,10 @@ v1.0.8.8 runs a true monotonic 8-hour validation of the repaired Mirror-RedQueen
 
 v1.0.8.8.2 restores live OPT progress display before any long backend validation, binds OPT trace rows to backend `cl/link/exe` manifests, keeps large compiler artifacts outside the Git worktree, and runs a gated true 8-hour backend compiler validation only after smoke, Git storm, memory, and artifact guards pass. It does not change the default profile, enable real promotion, restore the old v1.0.8.8 compiler claim, release, or claim production support completed.
 
+## v1.0.8.8.3 Development Direction
+
+v1.0.8.8.3 audits OPT active-work-rate visibility and Git residual process cleanup. It adds backend delta, rate, last-active-age, idle-window, trace consistency, shard cap, and short active backend validation evidence without changing the default profile, enabling real promotion, restoring old compiler claims, releasing, or claiming production support completed.
+
 ## v1.0.8.8.1 Development Direction
 
 v1.0.8.8.1 audits the v1.0.8.8 compiler invocation counters, separates frontend events from backend `cl/link/exe` verification, restores OPT display and trace, detects security interference, and runs short real backend validation with pid, returncode, artifact, timing, and stdout evidence. It does not change production boundaries, enable real promotion, or claim production support completed.

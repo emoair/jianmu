@@ -1,0 +1,11 @@
+{
+  "opt_artifact_root_bound_to_guard": true,
+  "opt_backend_consistency_audit_completed": true,
+  "opt_backend_consistency_audit_passed": true,
+  "opt_correctness_bound_to_stdout_comparison": true,
+  "opt_counts_match_backend_manifest": true,
+  "opt_delta_matches_manifest_window": true,
+  "opt_git_status_bound_to_git_audit": true,
+  "opt_last_backend_age_verified": true,
+  "opt_security_bound_to_detector": true
+}

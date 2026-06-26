@@ -53,19 +53,31 @@ class OptProgressEmitter:
         cycle = payload.get("cycle", "0/0")
         phase = payload.get("phase", "backend_validation")
         ok = payload.get("compiler_verified_correctness_rate", 0.0)
+        frontend_delta = payload.get("frontend_delta", 0)
+        backend_delta = payload.get("backend_cl_delta", 0)
+        link_delta = payload.get("backend_link_delta", 0)
+        exe_delta = payload.get("backend_exe_delta", 0)
+        rate = payload.get("backend_rate_per_min", payload.get("backend_rate_per_sec", 0.0))
+        last_age = payload.get("last_backend_age_sec", 0.0)
+        state = payload.get("active_state", "unknown")
+        idle_windows = payload.get("idle_windows", 0)
+        active_ratio = payload.get("active_window_ratio", 0.0)
+        git_proc = payload.get("git_process_count", 0)
         return (
-            f"[OPT][elapsed={elapsed}][cycle={cycle}][phase={phase}] "
-            f"frontend={payload.get('frontend_generated_events', 0)} "
+            f"[OPT][elapsed={elapsed}][cycle={cycle}][phase={phase}][state={state}] "
+            f"frontend={payload.get('frontend_generated_events', 0)}(+{frontend_delta}) "
             f"syntax={payload.get('frontend_syntax_filtered_events', 0)} "
-            f"backend_cl={payload.get('backend_cl_invocations', 0)} "
-            f"link={payload.get('backend_link_invocations', 0)} "
-            f"exe={payload.get('backend_exe_runs', 0)} ok={ok:.3f} "
+            f"backend_cl={payload.get('backend_cl_invocations', 0)}(+{backend_delta}) "
+            f"link={payload.get('backend_link_invocations', 0)}(+{link_delta}) "
+            f"exe={payload.get('backend_exe_runs', 0)}(+{exe_delta}) "
+            f"rate={float(rate):.3f}/min last_backend={float(last_age):.3f}s ok={ok:.3f} "
             f"mirror={payload.get('mirror_state', 'A_active/B_frozen')} "
             f"feedback={payload.get('mirror_feedback_events', 0)} "
             f"rq_adjust={payload.get('redqueen_adjustment_events', 0)} "
             f"lane_swaps={payload.get('lane_swaps', 0)} "
             f"artifact_root={payload.get('artifact_root', '')} "
-            f"git_guard={payload.get('git_guard', 'unknown')} "
+            f"git_proc={git_proc} git_guard={payload.get('git_guard', 'unknown')} "
             f"security={payload.get('security_status', 'unknown')} "
-            f"rss_mb={payload.get('rss_mb', 0)} queue={payload.get('queue_status', 'normal')}"
+            f"rss_mb={payload.get('rss_mb', 0)} queue={payload.get('queue_status', 'normal')} "
+            f"idle_windows={idle_windows} active_ratio={float(active_ratio):.3f}"
         )

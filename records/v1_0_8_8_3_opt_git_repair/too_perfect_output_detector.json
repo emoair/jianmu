@@ -1,0 +1,11 @@
+{
+  "counter_pattern_without_manifest_support": false,
+  "exact_config_duration_pattern_detected": false,
+  "fixed_progress_without_work_detected": false,
+  "opt_trace_timestamps_lack_jitter": false,
+  "planned_as_actual_detected": false,
+  "summary_detail_mismatch_detected": false,
+  "too_perfect_output_detected": false,
+  "too_perfect_output_detector_completed": true,
+  "too_perfect_output_detector_passed": true
+}

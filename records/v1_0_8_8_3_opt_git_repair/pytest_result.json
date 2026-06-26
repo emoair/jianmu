@@ -1,0 +1,9 @@
+﻿{
+  "targeted_new_tests": "12 passed in 51.41s",
+  "pre_validation_plain_powershell_pytest": "20 failed, 1833 passed, 28 skipped in 2895.85s; failures were MSVC cl/link unavailable in plain PowerShell",
+  "final_full_pytest_vs_developer_pass_1": "1881 passed in 659.81s",
+  "final_full_pytest_vs_developer_pass_2": "1881 passed in 615.50s",
+  "full_pytest_ran_twice_after_validation": true,
+  "python_launcher_used": "py",
+  "msvc_environment": "Visual Studio 18 Community vcvars64.bat"
+}

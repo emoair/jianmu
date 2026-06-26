@@ -1,0 +1,20 @@
+{
+  "git_for_windows_residual_detected": true,
+  "git_index_lock_detected": false,
+  "git_processes_after": 8,
+  "git_processes_after_idle": 9,
+  "git_processes_before": 7,
+  "git_residual_audit_completed": true,
+  "git_residual_audit_passed": true,
+  "git_residual_root_cause": "records_large_shard_storm",
+  "git_status_latency_seconds": 13.063,
+  "records_large_file_count": 4,
+  "suspected_git_storm_sources": [
+    "records\\v1_0_8_8_2_opt_true8h\\backend_invocation_manifest_shards\\backend_invocation_manifest.0001.jsonl",
+    "records\\v1_0_8_8_2_opt_true8h\\backend_invocation_manifest_shards\\backend_invocation_manifest.0002.jsonl",
+    "records\\v1_0_8_8_2_opt_true8h\\backend_invocation_manifest_shards\\backend_invocation_manifest.0003.jsonl",
+    "records\\v1_0_8_controlled_support\\negative_boundary_trace.jsonl"
+  ],
+  "untracked_artifact_count": 0,
+  "worktree_artifact_count": 0
+}

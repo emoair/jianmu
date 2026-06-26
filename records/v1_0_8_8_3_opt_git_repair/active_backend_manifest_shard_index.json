@@ -1,0 +1,9 @@
+{
+  "shards": [
+    {
+      "path": "records\\v1_0_8_8_3_opt_git_repair\\active_backend_manifest\\active_backend_manifest.0001.jsonl",
+      "size_bytes": 27124470
+    }
+  ],
+  "total_rows": 12795
+}

@@ -1,0 +1,11 @@
+{
+  "active_state_displayed": true,
+  "backend_delta_displayed": true,
+  "backend_rate_displayed": true,
+  "git_process_count_displayed": true,
+  "idle_window_displayed": true,
+  "last_backend_age_displayed": true,
+  "opt_active_work_rate_contract_passed": true,
+  "opt_active_work_rate_implemented": true,
+  "rss_queue_displayed": true
+}
