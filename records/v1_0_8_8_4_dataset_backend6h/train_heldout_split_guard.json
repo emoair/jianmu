@@ -1,0 +1,13 @@
+{
+  "heldout_used_for_training_count": 0,
+  "leakage_detected": false,
+  "manifest_rows_scanned": 500000,
+  "near_duplicate_risk_level": "low",
+  "negative_used_as_positive_count": 0,
+  "split_guard_completed": true,
+  "split_guard_passed": true,
+  "split_guard_streaming_scan": true,
+  "train_heldout_sample_id_overlap_count": 0,
+  "train_heldout_sha256_overlap_count": 0,
+  "train_replay_overlap_count": 0
+}

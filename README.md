@@ -732,6 +732,10 @@ v1.0.8.8.2 restores live OPT progress display before any long backend validation
 
 v1.0.8.8.3 audits OPT active-work-rate visibility and Git residual process cleanup. It adds backend delta, rate, last-active-age, idle-window, trace consistency, shard cap, and short active backend validation evidence without changing the default profile, enabling real promotion, restoring old compiler claims, releasing, or claiming production support completed.
 
+## v1.0.8.8.4 Development Direction
+
+v1.0.8.8.4 calibrates active-work backend thresholds from observed MSVC throughput, builds an incremental curriculum dataset with separated train/heldout/replay/negative lanes, and runs true 6-hour backend validation. It does not update model weights, change the default profile, enable real promotion, restore old compiler claims, release, or claim production support completed.
+
 ## v1.0.8.8.1 Development Direction
 
 v1.0.8.8.1 audits the v1.0.8.8 compiler invocation counters, separates frontend events from backend `cl/link/exe` verification, restores OPT display and trace, detects security interference, and runs short real backend validation with pid, returncode, artifact, timing, and stdout evidence. It does not change production boundaries, enable real promotion, or claim production support completed.

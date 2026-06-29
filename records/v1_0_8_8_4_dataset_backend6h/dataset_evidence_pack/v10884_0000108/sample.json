@@ -1,0 +1,14 @@
+{
+  "category": "unsupported boundary negative",
+  "compiled": false,
+  "difficulty": "easy",
+  "heldout": false,
+  "leakage_guard_hash": "b574bcbfe56b3379d28bf0717debc3b8ad57134407cee7354d565ca25c573a42",
+  "mirror_feedback_source": "mirror_dataset_feedback_v1_0_8_8_4",
+  "provenance": "synthetic_curriculum_no_external_api",
+  "redqueen_weight": 0.1,
+  "sample_id": "v10884_0000108",
+  "sha256": "84296cbf83330997cf82d1a802362688e2ebbde3e69ec3107a5b36523fdc6d4a",
+  "source_generator": "incremental_curriculum_v1_0_8_8_4",
+  "split": "train"
+}

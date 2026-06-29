@@ -1,0 +1,49 @@
+{
+  "heldout": 75000,
+  "manifest_shards": [
+    {
+      "path": "records\\v1_0_8_8_4_dataset_backend6h\\dataset_manifest_shards\\dataset_manifest.0001.jsonl",
+      "rows": 50000
+    },
+    {
+      "path": "records\\v1_0_8_8_4_dataset_backend6h\\dataset_manifest_shards\\dataset_manifest.0002.jsonl",
+      "rows": 50000
+    },
+    {
+      "path": "records\\v1_0_8_8_4_dataset_backend6h\\dataset_manifest_shards\\dataset_manifest.0003.jsonl",
+      "rows": 50000
+    },
+    {
+      "path": "records\\v1_0_8_8_4_dataset_backend6h\\dataset_manifest_shards\\dataset_manifest.0004.jsonl",
+      "rows": 50000
+    },
+    {
+      "path": "records\\v1_0_8_8_4_dataset_backend6h\\dataset_manifest_shards\\dataset_manifest.0005.jsonl",
+      "rows": 50000
+    },
+    {
+      "path": "records\\v1_0_8_8_4_dataset_backend6h\\dataset_manifest_shards\\dataset_manifest.0006.jsonl",
+      "rows": 50000
+    },
+    {
+      "path": "records\\v1_0_8_8_4_dataset_backend6h\\dataset_manifest_shards\\dataset_manifest.0007.jsonl",
+      "rows": 50000
+    },
+    {
+      "path": "records\\v1_0_8_8_4_dataset_backend6h\\dataset_manifest_shards\\dataset_manifest.0008.jsonl",
+      "rows": 50000
+    },
+    {
+      "path": "records\\v1_0_8_8_4_dataset_backend6h\\dataset_manifest_shards\\dataset_manifest.0009.jsonl",
+      "rows": 50000
+    },
+    {
+      "path": "records\\v1_0_8_8_4_dataset_backend6h\\dataset_manifest_shards\\dataset_manifest.0010.jsonl",
+      "rows": 50000
+    }
+  ],
+  "negative_boundary": 25000,
+  "replay": 50000,
+  "total_dataset_samples": 500000,
+  "train": 350000
+}

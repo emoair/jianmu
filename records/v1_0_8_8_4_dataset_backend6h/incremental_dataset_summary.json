@@ -1,0 +1,16 @@
+{
+  "categories_covered": true,
+  "dataset_artifacts_outside_worktree": true,
+  "dataset_training_completed": true,
+  "dataset_training_passed": true,
+  "dataset_training_started": true,
+  "heldout_samples": 75000,
+  "mirror_feedback_applied": true,
+  "negative_boundary_samples": 25000,
+  "no_model_weight_update": true,
+  "redqueen_weighting_applied": true,
+  "replay_samples": 50000,
+  "target_dataset_samples": 500000,
+  "total_dataset_samples": 500000,
+  "train_samples": 350000
+}

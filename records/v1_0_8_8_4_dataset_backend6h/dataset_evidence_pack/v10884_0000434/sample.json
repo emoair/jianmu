@@ -1,0 +1,14 @@
+{
+  "category": "structured recursion",
+  "compiled": false,
+  "difficulty": "hard",
+  "heldout": false,
+  "leakage_guard_hash": "281d34f89999667414030f8b01de0a6b94802c8cb8de0a7171ff3b92d20d06fc",
+  "mirror_feedback_source": "mirror_dataset_feedback_v1_0_8_8_4",
+  "provenance": "synthetic_curriculum_no_external_api",
+  "redqueen_weight": 0.1,
+  "sample_id": "v10884_0000434",
+  "sha256": "21ed71fc74feece4cdfaca57ea077829b917956d55638fc7d1b23276a32a7ce2",
+  "source_generator": "incremental_curriculum_v1_0_8_8_4",
+  "split": "train"
+}

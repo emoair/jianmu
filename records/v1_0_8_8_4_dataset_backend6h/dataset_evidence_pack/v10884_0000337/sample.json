@@ -1,0 +1,14 @@
+{
+  "category": "frozen mutation negative",
+  "compiled": false,
+  "difficulty": "medium",
+  "heldout": false,
+  "leakage_guard_hash": "7122f66e7fdaaed60a4ed8a3c79b1fba8286ce726a40070fb2ff79dc9e0752a2",
+  "mirror_feedback_source": "mirror_dataset_feedback_v1_0_8_8_4",
+  "provenance": "synthetic_curriculum_no_external_api",
+  "redqueen_weight": 0.1,
+  "sample_id": "v10884_0000337",
+  "sha256": "b896dc4c43c7959820031af173df639b44bfa67ed306c3a4484ae3a54ce65c95",
+  "source_generator": "incremental_curriculum_v1_0_8_8_4",
+  "split": "train"
+}

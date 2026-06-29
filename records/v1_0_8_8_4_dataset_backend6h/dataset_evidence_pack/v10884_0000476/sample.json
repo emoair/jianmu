@@ -1,0 +1,14 @@
+{
+  "category": "mirror lane swap",
+  "compiled": false,
+  "difficulty": "hard",
+  "heldout": false,
+  "leakage_guard_hash": "931941face81b4f63ae856ae97607f582ace6af77413da2bf92a96dd530ab32e",
+  "mirror_feedback_source": "mirror_dataset_feedback_v1_0_8_8_4",
+  "provenance": "synthetic_curriculum_no_external_api",
+  "redqueen_weight": 0.1,
+  "sample_id": "v10884_0000476",
+  "sha256": "6302752a504b921e64e30ac75ec52954edc624460a64022fb19108b05eca13aa",
+  "source_generator": "incremental_curriculum_v1_0_8_8_4",
+  "split": "train"
+}

@@ -1,0 +1,25 @@
+{
+  "allowed_idle_phases": [
+    "initialization",
+    "cleanup",
+    "final_lifecycle_guard",
+    "git_push_manual_outside_runner",
+    "post_run_idle_sentinel"
+  ],
+  "disallowed_idle_phases": [
+    "smoke_gate active work",
+    "true8h_backend_validation",
+    "backend_replay",
+    "mirror/redqueen validation active phase",
+    "active_backend_validation"
+  ],
+  "idle_padding_detected": false,
+  "idle_padding_detector_implemented": true,
+  "idle_padding_detector_passed": true,
+  "idle_padding_seconds_detected": 0.0,
+  "last_backend_age_rule_enabled": true,
+  "max_consecutive_zero_delta_windows": 1,
+  "target_reached_continue_work_rule_enabled": true,
+  "zero_delta_progress_window_count": 1,
+  "zero_delta_window_rule_enabled": true
+}

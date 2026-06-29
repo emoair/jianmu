@@ -1,0 +1,14 @@
+{
+  "frozen_lane_mutation_attempts": 256,
+  "frozen_lane_mutation_rejections": 256,
+  "mirror_dataset_feedback_completed": true,
+  "mirror_disagreement_categories": [
+    "mirror lane swap",
+    "frozen mutation negative",
+    "unsupported boundary negative"
+  ],
+  "mirror_feedback_adjusted_dataset_weights": true,
+  "mirror_feedback_events": 1024,
+  "mirror_feedback_notes": "Mirror feedback adjusts dataset distribution only; it does not mutate frozen production behavior.",
+  "mirror_feedback_passed": true
+}

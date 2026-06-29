@@ -1,0 +1,20 @@
+{
+  "categories_covered": [
+    "RedQueen weak-signal synthetic",
+    "arithmetic",
+    "array",
+    "frozen mutation negative",
+    "function",
+    "function-array",
+    "mirror lane swap",
+    "mixed",
+    "structured recursion",
+    "unsupported boundary negative"
+  ],
+  "dataset_evidence_pack_generated": true,
+  "dataset_evidence_pack_passed": true,
+  "sample_evidence_count": 500,
+  "splits_covered": [
+    "train"
+  ]
+}

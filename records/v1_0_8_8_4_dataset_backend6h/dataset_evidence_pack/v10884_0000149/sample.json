@@ -1,0 +1,14 @@
+{
+  "category": "RedQueen weak-signal synthetic",
+  "compiled": false,
+  "difficulty": "hard",
+  "heldout": false,
+  "leakage_guard_hash": "7cbc45818914a24ed3c00ba9fb474771a06c0847ad9415ddfb86f9f1a814a49c",
+  "mirror_feedback_source": "mirror_dataset_feedback_v1_0_8_8_4",
+  "provenance": "synthetic_curriculum_no_external_api",
+  "redqueen_weight": 0.1,
+  "sample_id": "v10884_0000149",
+  "sha256": "e6afa812f11c8bc900cd5dfd51effaf96dbe8669a588763d4860b3e413cc0737",
+  "source_generator": "incremental_curriculum_v1_0_8_8_4",
+  "split": "train"
+}

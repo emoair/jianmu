@@ -1,0 +1,41 @@
+{
+  "shards": [
+    {
+      "path": "records\\v1_0_8_8_4_dataset_backend6h\\backend6h_invocation_manifest\\backend6h_invocation_manifest.0001.jsonl",
+      "size_bytes": 43998056
+    },
+    {
+      "path": "records\\v1_0_8_8_4_dataset_backend6h\\backend6h_invocation_manifest\\backend6h_invocation_manifest.0002.jsonl",
+      "size_bytes": 43999720
+    },
+    {
+      "path": "records\\v1_0_8_8_4_dataset_backend6h\\backend6h_invocation_manifest\\backend6h_invocation_manifest.0003.jsonl",
+      "size_bytes": 43998299
+    },
+    {
+      "path": "records\\v1_0_8_8_4_dataset_backend6h\\backend6h_invocation_manifest\\backend6h_invocation_manifest.0004.jsonl",
+      "size_bytes": 43998009
+    },
+    {
+      "path": "records\\v1_0_8_8_4_dataset_backend6h\\backend6h_invocation_manifest\\backend6h_invocation_manifest.0005.jsonl",
+      "size_bytes": 43998256
+    },
+    {
+      "path": "records\\v1_0_8_8_4_dataset_backend6h\\backend6h_invocation_manifest\\backend6h_invocation_manifest.0006.jsonl",
+      "size_bytes": 43998353
+    },
+    {
+      "path": "records\\v1_0_8_8_4_dataset_backend6h\\backend6h_invocation_manifest\\backend6h_invocation_manifest.0007.jsonl",
+      "size_bytes": 43998285
+    },
+    {
+      "path": "records\\v1_0_8_8_4_dataset_backend6h\\backend6h_invocation_manifest\\backend6h_invocation_manifest.0008.jsonl",
+      "size_bytes": 43998190
+    },
+    {
+      "path": "records\\v1_0_8_8_4_dataset_backend6h\\backend6h_invocation_manifest\\backend6h_invocation_manifest.0009.jsonl",
+      "size_bytes": 269818
+    }
+  ],
+  "total_rows": 161916
+}

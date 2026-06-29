@@ -1,0 +1,8 @@
+{
+  "dataset_artifact_root": "C:\\Users\\Air\\AppData\\Local\\Temp\\jianmu_dataset_artifacts\\v1_0_8_8_4",
+  "dataset_artifacts_outside_worktree": true,
+  "external_api_used": false,
+  "mirror_feedback": "mirror_dataset_feedback.json",
+  "no_model_weight_update": true,
+  "redqueen_schedule": "redqueen_dataset_schedule.json"
+}

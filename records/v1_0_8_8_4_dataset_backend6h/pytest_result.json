@@ -1,0 +1,9 @@
+{
+  "full_pytest_consecutive_runs_completed": true,
+  "full_pytest_run_1": "1892 passed in 906.96s (0:15:06)",
+  "full_pytest_run_2": "1892 passed in 914.48s (0:15:14)",
+  "memory_overflow_repair": "train_heldout_split_guard uses streaming manifest scan instead of loading all rows into memory",
+  "post_retry_targeted_tests": "2 passed, 2 warnings in 0.33s",
+  "targeted_tests_after_memory_fix": "11 passed, 2 warnings in 0.21s",
+  "vs_developer_environment_used": true
+}

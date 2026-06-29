@@ -1,0 +1,14 @@
+{
+  "category": "mixed",
+  "compiled": false,
+  "difficulty": "easy",
+  "heldout": false,
+  "leakage_guard_hash": "f597a675b7b070c753727cee2a197d6fbed9ea328d1b6ba56e6de43c1aa749a6",
+  "mirror_feedback_source": "mirror_dataset_feedback_v1_0_8_8_4",
+  "provenance": "synthetic_curriculum_no_external_api",
+  "redqueen_weight": 0.1,
+  "sample_id": "v10884_0000075",
+  "sha256": "a3385a1c8a655b4b482bdb7a4357d2066ef09be4d2d9034f92cf30ef53cc40c9",
+  "source_generator": "incremental_curriculum_v1_0_8_8_4",
+  "split": "train"
+}

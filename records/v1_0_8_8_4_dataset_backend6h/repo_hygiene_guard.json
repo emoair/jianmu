@@ -1,0 +1,7 @@
+{
+  "dataset_artifacts_outside_worktree": true,
+  "git_index_lock_detected": false,
+  "repo_hygiene_guard_completed": true,
+  "repo_hygiene_guard_passed": true,
+  "worktree_dataset_artifacts_detected": false
+}
