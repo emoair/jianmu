@@ -1,0 +1,10 @@
+{
+  "shards": [
+    {
+      "path": "records\\v1_0_8_8_5_memory_repair\\opt_progress_trace\\opt_progress_trace.0001.jsonl",
+      "rows": 538,
+      "size_bytes": 110318
+    }
+  ],
+  "total_rows": 538
+}

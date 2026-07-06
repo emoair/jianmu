@@ -1,0 +1,11 @@
+{
+  "backpressure_event_count": 0,
+  "bounded_queue_backpressure_passed": true,
+  "bounded_queue_implemented": true,
+  "correctness_evidence_never_dropped": true,
+  "display_only_drop_policy": "drop_when_full",
+  "producer_backpressure_enabled": true,
+  "queue_drained_at_shutdown": true,
+  "queue_maxsize": 64,
+  "queue_peak_size": 16
+}

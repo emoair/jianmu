@@ -1,0 +1,8 @@
+{
+  "final_full_pytest_consecutive_runs_completed": true,
+  "final_full_pytest_run_1": "1902 passed in 1403.27s (0:23:23)",
+  "final_full_pytest_run_2": "1902 passed in 1289.84s (0:21:29)",
+  "initial_full_pytest": "1902 passed in 1428.54s (0:23:48)",
+  "targeted_memory_tests": "12 passed in 20.01s; RSS fallback test 2 passed in 3.97s",
+  "vs_developer_environment_used": true
+}

@@ -1,0 +1,10 @@
+{
+  "cl_stdout_stderr_streamed_to_file": true,
+  "exe_stdout_streamed_or_bounded": true,
+  "file_handles_closed": true,
+  "link_stdout_stderr_streamed_to_file": true,
+  "max_preview_bytes": 4096,
+  "no_large_output_buffer": true,
+  "subprocess_output_streaming_implemented": true,
+  "subprocess_output_streaming_passed": true
+}

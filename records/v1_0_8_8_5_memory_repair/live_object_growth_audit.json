@@ -1,0 +1,8 @@
+{
+  "allocator_high_water_distinguished_from_live_leak": true,
+  "gc_after_object_count": 15049,
+  "gc_before_object_count": 14609,
+  "live_object_growth_audit_completed": true,
+  "live_object_growth_bounded": true,
+  "live_object_growth_count": 440
+}

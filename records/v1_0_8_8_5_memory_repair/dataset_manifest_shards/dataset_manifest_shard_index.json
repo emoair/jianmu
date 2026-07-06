@@ -1,0 +1,20 @@
+{
+  "shards": [
+    {
+      "path": "records\\v1_0_8_8_5_memory_repair\\dataset_manifest_shards\\dataset_manifest\\dataset_manifest.0001.jsonl",
+      "rows": 84816,
+      "size_bytes": 43999679
+    },
+    {
+      "path": "records\\v1_0_8_8_5_memory_repair\\dataset_manifest_shards\\dataset_manifest\\dataset_manifest.0002.jsonl",
+      "rows": 84816,
+      "size_bytes": 43999734
+    },
+    {
+      "path": "records\\v1_0_8_8_5_memory_repair\\dataset_manifest_shards\\dataset_manifest\\dataset_manifest.0003.jsonl",
+      "rows": 80368,
+      "size_bytes": 42049340
+    }
+  ],
+  "total_rows": 250000
+}

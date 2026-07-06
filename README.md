@@ -739,3 +739,7 @@ v1.0.8.8.4 calibrates active-work backend thresholds from observed MSVC throughp
 ## v1.0.8.8.1 Development Direction
 
 v1.0.8.8.1 audits the v1.0.8.8 compiler invocation counters, separates frontend events from backend `cl/link/exe` verification, restores OPT display and trace, detects security interference, and runs short real backend validation with pid, returncode, artifact, timing, and stdout evidence. It does not change production boundaries, enable real promotion, or claim production support completed.
+
+## v1.0.8.8.5 Development Direction
+
+Memory lifecycle repair focuses on streaming dataset, manifest, trace, subprocess output, bounded queues, cleanup barriers, and short memory stress validation. It does not change default production profile or enable real promotion.

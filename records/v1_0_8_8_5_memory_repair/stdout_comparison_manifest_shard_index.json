@@ -1,0 +1,10 @@
+{
+  "shards": [
+    {
+      "path": "records\\v1_0_8_8_5_memory_repair\\stdout_comparison_manifest\\stdout_comparison_manifest.0001.jsonl",
+      "rows": 22169,
+      "size_bytes": 2965862
+    }
+  ],
+  "total_rows": 22169
+}

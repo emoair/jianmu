@@ -1,0 +1,15 @@
+{
+  "shards": [
+    {
+      "path": "records\\v1_0_8_8_5_memory_repair\\backend_manifest\\backend_manifest.0001.jsonl",
+      "rows": 19398,
+      "size_bytes": 43999354
+    },
+    {
+      "path": "records\\v1_0_8_8_5_memory_repair\\backend_manifest\\backend_manifest.0002.jsonl",
+      "rows": 2771,
+      "size_bytes": 6285621
+    }
+  ],
+  "total_rows": 22169
+}

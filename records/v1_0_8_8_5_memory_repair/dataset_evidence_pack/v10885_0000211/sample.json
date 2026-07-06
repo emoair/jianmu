@@ -1,0 +1,14 @@
+{
+  "category": "function",
+  "compiled": false,
+  "difficulty": "medium",
+  "heldout": false,
+  "leakage_guard_hash": "fbfb47759b4e2643ee4f54f5241d9cb0e4078b2b7cede9e2cd9d682d76185a21",
+  "mirror_feedback_source": "mirror_dataset_feedback_v1_0_8_8_5",
+  "provenance": "synthetic_curriculum_no_external_api",
+  "redqueen_weight": 0.1,
+  "sample_id": "v10885_0000211",
+  "sha256": "dd0c61d008eae0680c353b4ea8537ae9010ef1f552aca248cae0c880c6e9d72e",
+  "source_generator": "incremental_curriculum_streaming_v1_0_8_8_5",
+  "split": "train"
+}

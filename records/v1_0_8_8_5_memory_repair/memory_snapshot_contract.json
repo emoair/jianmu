@@ -1,0 +1,11 @@
+{
+  "gc_object_count_recorded": true,
+  "memory_snapshot_contract_passed": true,
+  "memory_snapshot_tracker_implemented": true,
+  "queue_size_recorded": true,
+  "rss_recorded": true,
+  "top_allocation_sources_recorded": true,
+  "tracemalloc_enabled": true,
+  "uss_recorded_or_not_available_recorded": true,
+  "writer_buffer_size_recorded": true
+}

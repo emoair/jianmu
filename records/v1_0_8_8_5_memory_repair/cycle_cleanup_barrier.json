@@ -1,0 +1,10 @@
+{
+  "batch_refs_released": true,
+  "cycle_cleanup_barrier_implemented": true,
+  "cycle_cleanup_barrier_passed": true,
+  "gc_collect_called": true,
+  "live_object_growth_bounded": true,
+  "post_cleanup_snapshot_recorded": true,
+  "queues_drained": true,
+  "writers_flushed": true
+}

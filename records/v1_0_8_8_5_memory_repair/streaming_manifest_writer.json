@@ -1,0 +1,11 @@
+{
+  "hard_fail_shard_size_bytes": 50000000,
+  "max_shard_size_bytes": 44000000,
+  "periodic_flush_enabled": true,
+  "shard_rotation_enabled": true,
+  "streaming_jsonl_enabled": true,
+  "streaming_manifest_writer_implemented": true,
+  "streaming_manifest_writer_passed": true,
+  "writer_buffer_bounded": true,
+  "writer_close_confirmed": true
+}

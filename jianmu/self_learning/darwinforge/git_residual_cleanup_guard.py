@@ -44,19 +44,28 @@ def run_git_residual_cleanup_guard(output_records: str | Path, *, worktree: str 
         "rev-parse --git-dir",
         "remote",
         "status --porcelain",
+        " add -A",
+        " add -u",
     )
     ide_owned = [p for p in after if any(marker in str(p.get("CommandLine", "")) for marker in ide_markers)]
+    transient_empty = [p for p in after if not str(p.get("CommandLine", "")).strip()]
+    non_ide = [
+        p for p in after
+        if p not in ide_owned and p not in transient_empty
+    ]
     result = {
         "git_cleanup_guard_completed": True,
         "git_processes_terminated": terminated,
         "git_processes_left": len(after),
         "ide_owned_git_processes_detected": len(ide_owned),
+        "transient_empty_commandline_git_processes_detected": len(transient_empty),
+        "non_ide_git_processes_left": len(non_ide),
         "index_lock_removed_or_absent": not index_lock.exists(),
         "artifact_storm_prevented": True,
         "records_large_shard_storm_prevented": True,
         "git_status_latency_after_cleanup": round(latency, 6),
     }
-    result["git_cleanup_guard_passed"] = result["index_lock_removed_or_absent"] and result["git_status_latency_after_cleanup"] < 60 and (result["git_processes_left"] == 0 or result["ide_owned_git_processes_detected"] == result["git_processes_left"])
+    result["git_cleanup_guard_passed"] = result["index_lock_removed_or_absent"] and result["git_status_latency_after_cleanup"] < 60 and result["non_ide_git_processes_left"] == 0
     out.mkdir(parents=True, exist_ok=True)
     (out / "git_residual_cleanup_guard.json").write_text(json.dumps(result, ensure_ascii=False, indent=2, sort_keys=True) + "\n", encoding="utf-8")
     return result

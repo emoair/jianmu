@@ -1,0 +1,27 @@
+{
+  "backend_manifest_full_buffer_detected": false,
+  "dataset_full_list_detected": false,
+  "downgrade_reason": "v1.0.8.8.4 completed backend6h but lacked memory lifecycle evidence and user observed near-OOM pressure.",
+  "evidence_pack_cache_detected": false,
+  "forced_completion_reported": false,
+  "gc_barrier_missing": true,
+  "manifest_full_buffer_detected": false,
+  "memory_pressure_audit_completed": true,
+  "memory_pressure_root_causes": [
+    "v1.0.8.8.4 lacked run-wide tracemalloc/RSS/USS timeline",
+    "v1.0.8.8.4 did not record per-cycle cleanup barriers",
+    "backend progress rows were retained in memory until summary",
+    "subprocess output was file-backed, but no dedicated no-large-buffer contract existed"
+  ],
+  "mirror_feedback_growth_detected": false,
+  "oom_risk_detected": true,
+  "redqueen_metrics_growth_detected": false,
+  "source_backend6h_passed": true,
+  "source_backend_manifest_shard_count": 9,
+  "source_dataset_manifest_shard_count": 10,
+  "source_records_found": true,
+  "stdout_stderr_memory_capture_detected": false,
+  "unbounded_queue_detected": false,
+  "v1_0_8_8_4_memory_clean_claim_accepted": false,
+  "v1_0_8_8_4_memory_clean_claim_downgraded": true
+}

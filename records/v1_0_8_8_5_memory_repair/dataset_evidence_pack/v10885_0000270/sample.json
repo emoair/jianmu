@@ -1,0 +1,14 @@
+{
+  "category": "arithmetic",
+  "compiled": false,
+  "difficulty": "easy",
+  "heldout": false,
+  "leakage_guard_hash": "41eea6405098e45c18dda8fd4e3a9bdeb517cae7a8bd7ef60f134d5d5f065f06",
+  "mirror_feedback_source": "mirror_dataset_feedback_v1_0_8_8_5",
+  "provenance": "synthetic_curriculum_no_external_api",
+  "redqueen_weight": 0.1,
+  "sample_id": "v10885_0000270",
+  "sha256": "cf47706d68ec4fb9e12720ca36fa29e43533c3edad5657d246da28bfdefcbbfd",
+  "source_generator": "incremental_curriculum_streaming_v1_0_8_8_5",
+  "split": "train"
+}

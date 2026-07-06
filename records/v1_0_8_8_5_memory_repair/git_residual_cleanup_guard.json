@@ -1,0 +1,13 @@
+{
+  "artifact_storm_prevented": true,
+  "git_cleanup_guard_completed": true,
+  "git_cleanup_guard_passed": true,
+  "git_processes_left": 10,
+  "git_processes_terminated": 14,
+  "git_status_latency_after_cleanup": 2.844,
+  "ide_owned_git_processes_detected": 10,
+  "index_lock_removed_or_absent": true,
+  "non_ide_git_processes_left": 0,
+  "records_large_shard_storm_prevented": true,
+  "transient_empty_commandline_git_processes_detected": 0
+}

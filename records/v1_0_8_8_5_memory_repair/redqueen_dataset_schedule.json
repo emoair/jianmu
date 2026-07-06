@@ -1,0 +1,27 @@
+{
+  "category_weights": {
+    "RedQueen weak-signal synthetic": 0.1,
+    "arithmetic": 0.1,
+    "array": 0.1,
+    "frozen mutation negative": 0.1,
+    "function": 0.1,
+    "function-array": 0.1,
+    "mirror lane swap": 0.1,
+    "mixed": 0.1,
+    "structured recursion": 0.1,
+    "unsupported boundary negative": 0.1
+  },
+  "difficulty_distribution": {
+    "easy": 0.3,
+    "hard": 0.25,
+    "medium": 0.45
+  },
+  "frontier_ratio": 0.25,
+  "frozen_mutation_negative_weight": 0.1,
+  "mirror_lane_swap_weight": 0.1,
+  "negative_boundary_ratio": 0.05,
+  "redqueen_dataset_scheduler_completed": true,
+  "redqueen_dataset_scheduler_passed": true,
+  "replay_ratio": 0.1,
+  "scheduler_reasoning": "Weights keep every category non-zero and preserve boundary/replay coverage while using prior active-work metrics only as curriculum distribution input."
+}

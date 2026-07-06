@@ -1,0 +1,11 @@
+{
+  "corrupted_manifest_detected": false,
+  "emergency_checkpoint_written": false,
+  "graceful_stop_supported": true,
+  "hard_threshold_mb": 6963.2,
+  "memory_hard_stop_triggered": false,
+  "memory_pressure_checkpoint_implemented": true,
+  "memory_pressure_checkpoint_passed": true,
+  "memory_warning_triggered": false,
+  "warning_threshold_mb": 5734.4
+}
