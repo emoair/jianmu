@@ -1,0 +1,14 @@
+{
+  "cache_remained_high": false,
+  "decay_observer_completed": true,
+  "decay_observer_passed": true,
+  "external_processes_remained_active": false,
+  "likely_file_cache_or_standby": false,
+  "likely_pool_leak": false,
+  "likely_process_leak": false,
+  "observation_seconds": 180,
+  "process_tree_clean": true,
+  "runner_memory_recovered": true,
+  "system_memory_recovered": true,
+  "unclassified_memory_pressure": false
+}

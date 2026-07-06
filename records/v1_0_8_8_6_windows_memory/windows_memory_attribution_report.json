@@ -1,0 +1,28 @@
+{
+  "attribution_completed": true,
+  "attribution_confidence": "medium",
+  "attribution_passed": true,
+  "defender_or_360_pressure_detected": true,
+  "file_cache_pressure_detected": true,
+  "git_or_ide_pressure_detected": true,
+  "memory_compression_pressure_detected": false,
+  "nonpaged_pool_pressure_detected": false,
+  "onedrive_pressure_detected": false,
+  "paged_pool_pressure_detected": false,
+  "primary_attribution": "defender_360_scan_pressure",
+  "process_tree_leak_detected": false,
+  "python_heap_leak_detected": false,
+  "recommended_fixes": [
+    "keep dataset/backend manifests streaming and bounded",
+    "keep compiler artifacts outside OneDrive/worktree and consider excluding temp artifact roots from real-time scanning",
+    "exclude transient compiler artifact roots from OneDrive/security scanner if acceptable",
+    "pause IDE git status scans during long validation or keep large records out of watched views"
+  ],
+  "runner_process_leak_detected": false,
+  "secondary_attributions": [
+    "defender_360_scan_pressure",
+    "file_cache_standby_pressure",
+    "git_ide_storm"
+  ],
+  "unaccounted_memory_pressure_detected": false
+}

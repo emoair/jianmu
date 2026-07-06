@@ -1,0 +1,23 @@
+{
+  "antivirus_360_activity_detected": true,
+  "classification_counts": {
+    "antivirus_360": 200,
+    "git": 6,
+    "ide": 1561,
+    "system": 125,
+    "unknown": 628
+  },
+  "classifier_completed": true,
+  "classifier_passed": true,
+  "defender_activity_detected": false,
+  "git_activity_detected": true,
+  "ide_git_activity_detected": true,
+  "onedrive_activity_detected": false,
+  "suspected_external_memory_pressure_sources": [
+    "antivirus_360",
+    "git",
+    "ide",
+    "system"
+  ],
+  "windows_indexer_activity_detected": true
+}

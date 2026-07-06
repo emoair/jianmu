@@ -1,0 +1,11 @@
+{
+  "hard_fail_threshold_bytes": 50000000,
+  "largest_shard_bytes": 43999950,
+  "max_trace_shard_size_bytes": 44000000,
+  "oversized_shard_count": 0,
+  "oversized_shards": [],
+  "shard_rotation_triggered": true,
+  "trace_shard_cap_implemented": true,
+  "trace_shard_size_cap_passed": true,
+  "warning_threshold_bytes": 40000000
+}

@@ -1,0 +1,11 @@
+{
+  "child_processes_recorded": true,
+  "cl_link_exe_children_tracked": true,
+  "git_children_tracked": true,
+  "parent_pid_recorded": true,
+  "process_tree_peak_private_mb": 73.344,
+  "process_tree_peak_rss_mb": 104.003,
+  "process_tree_peak_uss_mb_or_not_available": null,
+  "process_tree_sampler_implemented": true,
+  "process_tree_sampler_passed": true
+}

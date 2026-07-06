@@ -1,0 +1,10 @@
+{
+  "shards": [
+    {
+      "path": "records\\v1_0_8_8_6_windows_memory\\stdout_comparison_manifest\\stdout_comparison_manifest.0001.jsonl",
+      "rows": 892,
+      "size_bytes": 119320
+    }
+  ],
+  "total_rows": 892
+}

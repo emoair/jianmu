@@ -743,3 +743,7 @@ v1.0.8.8.1 audits the v1.0.8.8 compiler invocation counters, separates frontend 
 ## v1.0.8.8.5 Development Direction
 
 Memory lifecycle repair focuses on streaming dataset, manifest, trace, subprocess output, bounded queues, cleanup barriers, and short memory stress validation. It does not change default production profile or enable real promotion.
+
+## v1.0.8.8.6 Development Direction
+
+Windows memory attribution distinguishes runner heap/RSS from process tree, system commit/cache/pool, file cache, Git/IDE/OneDrive/security scanner pressure, and unaccounted memory. It does not change default production profile or enable real promotion.

@@ -1,0 +1,15 @@
+{
+  "artifact_cache_audit_completed": true,
+  "artifact_cache_audit_passed": true,
+  "artifact_root_outside_worktree": true,
+  "compiler_artifact_file_count": 8064,
+  "compiler_artifact_total_mb": 120.323,
+  "dataset_artifact_file_count": 3,
+  "dataset_artifact_total_mb": 22.221,
+  "file_cache_pressure_suspected": true,
+  "file_churn_rate_per_minute": 8188,
+  "largest_trace_shard_mb": 41.962,
+  "onedrive_watched_path_involved": true,
+  "records_total_mb": 53.247,
+  "trace_total_mb": 53.185
+}

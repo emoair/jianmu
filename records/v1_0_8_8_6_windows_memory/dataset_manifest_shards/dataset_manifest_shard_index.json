@@ -1,0 +1,15 @@
+{
+  "shards": [
+    {
+      "path": "records\\v1_0_8_8_6_windows_memory\\dataset_manifest_shards\\dataset_manifest\\dataset_manifest.0001.jsonl",
+      "rows": 84788,
+      "size_bytes": 43999950
+    },
+    {
+      "path": "records\\v1_0_8_8_6_windows_memory\\dataset_manifest_shards\\dataset_manifest\\dataset_manifest.0002.jsonl",
+      "rows": 15212,
+      "size_bytes": 8019553
+    }
+  ],
+  "total_rows": 100000
+}

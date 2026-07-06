@@ -1,0 +1,146 @@
+{
+  "actual_elapsed_seconds": 1983.125,
+  "antivirus_360_activity_detected": true,
+  "available_physical_mb": 1848.137,
+  "backend_cl_invocations": 892,
+  "backend_exe_runs": 892,
+  "backend_link_invocations": 892,
+  "cache_bytes_mb": 1728.371,
+  "cache_peak_mb": 3951.227,
+  "cache_recorded": true,
+  "child_processes_recorded": true,
+  "cl_link_exe_children_tracked": true,
+  "classification_counts": {
+    "antivirus_360": 200,
+    "git": 6,
+    "ide": 1561,
+    "system": 125,
+    "unknown": 628
+  },
+  "classifier_completed": true,
+  "classifier_passed": true,
+  "commit_limit_mb": 50985.641,
+  "commit_recorded": true,
+  "commit_total_mb": 27275.145,
+  "commit_used_percent": 53.496,
+  "compiler_verified_correctness_rate": 1.0,
+  "compression_recorded_or_not_available": true,
+  "dataset_samples_generated": 100000,
+  "defender_activity_detected": false,
+  "git_activity_detected": true,
+  "git_children_tracked": true,
+  "ide_git_activity_detected": true,
+  "memory_compression_mb": null,
+  "memory_compression_peak_mb_or_not_available": null,
+  "memory_workload_replay_passed": false,
+  "modified_page_list_mb": null,
+  "monotonic": 436289.531,
+  "nonpaged_pool_mb": 1622.402,
+  "nonpaged_pool_peak_mb": 1622.402,
+  "onedrive_activity_detected": false,
+  "paged_pool_mb": 2649.957,
+  "paged_pool_peak_mb": 2661.066,
+  "pagefile_usage_mb": 27275.145,
+  "parent_pid_recorded": true,
+  "permission_error_count": 0,
+  "phase": "after",
+  "physical_memory_recorded": true,
+  "pool_recorded": true,
+  "post_run_memory_recovered": true,
+  "process_tree_peak_private_mb": 73.344,
+  "process_tree_peak_rss_mb": 104.003,
+  "process_tree_peak_uss_mb_or_not_available": null,
+  "process_tree_sampler_implemented": true,
+  "process_tree_sampler_passed": true,
+  "record_top_processes": 20,
+  "runner_python_heap_peak_mb": 0.0,
+  "runner_rss_peak_mb": 26.508,
+  "sampler_fallbacks_used": [],
+  "standby_cache_mb": null,
+  "suspected_external_memory_pressure_sources": [
+    "antivirus_360",
+    "git",
+    "ide",
+    "system"
+  ],
+  "system_commit_peak_mb": 28445.473,
+  "system_memory_pressure_level": "high",
+  "system_memory_sampler_implemented": true,
+  "system_memory_sampler_passed": true,
+  "system_used_memory_peak_mb": 22548.879,
+  "timeout_count": 0,
+  "timestamp": "2026-07-06T15:59:17.219989+00:00",
+  "top_external_memory_processes": [
+    {
+      "classification": "ide",
+      "name": "git.exe",
+      "pid": 239824,
+      "rss_mb": 2159.016
+    },
+    {
+      "classification": "ide",
+      "name": "git.exe",
+      "pid": 63380,
+      "rss_mb": 2116.594
+    },
+    {
+      "classification": "ide",
+      "name": "git.exe",
+      "pid": 17900,
+      "rss_mb": 2079.195
+    },
+    {
+      "classification": "ide",
+      "name": "git.exe",
+      "pid": 106532,
+      "rss_mb": 1939.27
+    },
+    {
+      "classification": "ide",
+      "name": "git.exe",
+      "pid": 147852,
+      "rss_mb": 1934.359
+    },
+    {
+      "classification": "ide",
+      "name": "git.exe",
+      "pid": 64864,
+      "rss_mb": 1899.309
+    },
+    {
+      "classification": "ide",
+      "name": "git.exe",
+      "pid": 203576,
+      "rss_mb": 1889.621
+    },
+    {
+      "classification": "ide",
+      "name": "git.exe",
+      "pid": 217940,
+      "rss_mb": 1886.762
+    },
+    {
+      "classification": "ide",
+      "name": "git.exe",
+      "pid": 156316,
+      "rss_mb": 1883.41
+    },
+    {
+      "classification": "ide",
+      "name": "git.exe",
+      "pid": 75380,
+      "rss_mb": 1872.898
+    }
+  ],
+  "top_process_snapshot_implemented": true,
+  "top_process_snapshot_passed": true,
+  "top_process_timeline_rows": 126,
+  "total_physical_mb": 23337.641,
+  "unaccounted_memory_mb": 18493.649,
+  "used_physical_mb": 21489.504,
+  "windows_indexer_activity_detected": true,
+  "workload_replay_completed": true,
+  "workload_replay_passed": false,
+  "workload_replay_started": true,
+  "wrong_stdout_count": 0
+}
